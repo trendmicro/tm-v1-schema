@@ -9,11 +9,11 @@
     1. Support Trend Micro Vision One Search app UI usage
 
 # Log Mapping
-| Log                    |  Document                |
+| Search Method          |  Document                |
 |------------------------|--------------------------|
 | Endpoint Activity Data |  doc/telemetry.yaml      |
 | Detections             |  doc/detection.yaml      |
-| Message Activity Data  |  doc/messaging.yaml      |
+| Email Activity Data    |  doc/messaging.yaml      |
 | Cloud Activity Data    |  doc/cloudtrail.yaml     |
 
 # Property Description
