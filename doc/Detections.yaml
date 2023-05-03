@@ -1822,6 +1822,26 @@
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
+- Name: partitionKey
+  ProductCode:
+  - ALL
+  Description_EN: The partition key for a management scope
+  Sample:
+  - ebb418f0-43b7-fd1e-a8f4-3a1261720071
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: mgmtInstanceId
+  ProductCode:
+  - ALL
+  Description_EN: The instance ID for a management scope, which is the same as tenantGuid.
+  Sample:
+  - f41a9efa-beee-6ff7-319d-e4ffa63f21df
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
 - Name: aggregatedCount
   ProductCode:
   - pdi
@@ -3011,22 +3031,6 @@
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
-- Name: processName
-  ProductCode:
-  - sds
-  - xes
-  - pds
-  - scs
-  Description_EN: The process that triggered by BM event
-  Sample:
-  - c:\windows\system32\svchost.exe
-  - /usr/bin/python2.7
-  - /usr/bin/sed
-  DL_Type: string
-  DL_CommonKey:
-  - ProcessName
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: processPid
   ProductCode:
   - sds
@@ -3677,6 +3681,7 @@
   ProductCode:
   - sao
   - scs
+  - xes
   Description_EN: The source type
   Sample:
   - user defined
@@ -4055,6 +4060,7 @@
   ProductCode:
   - sds
   - pds
+  - xes
   Description_EN: The target object type
   Sample:
   - File System
@@ -4277,6 +4283,21 @@
   Description_EN: SHA-256 of User-Defined Suspicious Object
   Sample:
   - 757E5C8823CAA7406030A7E26AED2A2C95D16F69C5A14C884C8CAA72A0C001C3
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processImagePath
+  ProductCode:
+  - sds
+  - xes
+  - pds
+  - scs
+  Description_EN: The process triggered by a file event
+  Sample:
+  - c:\windows\system32\svchost.exe
+  - /usr/bin/python2.7
+  - /usr/bin/sed
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

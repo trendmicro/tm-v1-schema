@@ -33,7 +33,7 @@
 - Name: productCode
   ProductCode:
   - ALL
-  Description_EN: Internal product code
+  Description_EN: Internal product code (sct = Trend Micro Cloud One CloudTrail)
   Sample:
   - sct
   DL_Type: string

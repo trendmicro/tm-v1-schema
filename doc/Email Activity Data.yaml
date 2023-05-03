@@ -1,1152 +1,414 @@
-# All message related .proto fields should be listed here
-#       proto:
-#           message/*.proto
-#       except the following deprecated fields:
-#           non-searchable and no product code found by SAE on production ES: might be deprecated so we bypass them for now
-#           field name start with _ or has _ in between: these fields are used only for deprecated luwak feature
 - Name: uuid
   ProductCode:
-  - sae
+  - ALL
   Description_EN: Unique key of the log entry
-  Description_EN_Reviewed: true
   Sample:
   - 00008a58-5c57-46b2-ad06-335035989d08
   - 0000ca1e-abfa-4013-9213-2dcf5cf1c4d0
   - 0001469c-dc16-469f-8e44-3d02d2057250
-  Type: string
-  Require: true
-  DL_AdxType: string
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: eventTime
   ProductCode:
   - sca
   - sem
   Description_EN: Event generation time on the agent endpoint
-  Description_EN_Reviewed: true
   Sample:
   - 1657135700000
-  Type: int64
-  Require: true
-  DL_AdxType: real
+  DL_Type: real
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: tags
   ProductCode:
-  - sae
+  - ALL
   Description_EN: ID of the MITRE technique detected based on the alert
-  Description_EN_Reviewed: true
   Sample:
   - MITREV9.T1057
   - MITREV9.T1059.003
   - XSAE.F2924
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
-  DL_Deployed: true
 - Name: productCode
   ProductCode:
-  - sae
+  - ALL
   Description_EN: Product code of the product that sent the log
-  Description_EN_Reviewed: true
   Sample:
   - sca
   - sem
-  Type: string
-  Require: false
-  DL_AdxType: string
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: filterRiskLevel
   ProductCode:
-  - sae
+  - ALL
   Description_EN: Top-level risk level of the event
-  Description_EN_Reviewed: true
   Sample:
   - info
   - low
   - medium
-  Type: string
-  Require: false
-  DL_AdxType: string
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
-  DL_Deployed: true
 - Name: pname
   ProductCode:
   - sca
   - sem
   Description_EN: Internal product code (depricated)
-  Description_EN_Reviewed: true
   Sample:
-  - "733"
-  - "742"
-  Type: string
-  Require: false
-  DL_AdxType: string
+  - '733'
+  - '742'
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
-  DL_Deployed: true
 - Name: msgUuid
   ProductCode:
   - sca
   - sem
   Description_EN: Internal email UUID to identify each email message
-  Description_EN_Reviewed: true
   Sample:
   - 00004c28-bda5-496d-ae90-5182d36e9396
   - 002ac78d-862a-408f-80c2-34bd52a2adaa
   - 004f276e-8588-49b2-a7ed-eb86567bf2d7
-  Type: string
-  Require: true
-  DL_AdxType: string
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: mailbox
   ProductCode:
   - sca
   Description_EN: Primary email address
-  Description_EN_Reviewed: true
   Sample:
   - luis.sanchezl@arus.com.co
   - acbaylon@ngcp.ph
   - gabriel.andre@bancobmg.com.br
-  Type: string
-  Require: false
-  DL_AdxType: string
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
-  DL_Deployed: true
 - Name: mailDirection
   ProductCode:
   - sca
   - sem
   Description_EN: Email traffic direction
-  Description_EN_Reviewed: true
   Sample:
   - 1
   - 3
   - 25
-  Type: int32
-  Require: false
-  DL_AdxType: int
+  DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: mailFromAddresses
   ProductCode:
   - sca
   - sem
   Description_EN: Mail from address in email header
-  Description_EN_Reviewed: true
   Sample:
   - noreply@email.teams.microsoft.com
   - viva-noreply@microsoft.com
   - notification@fbworkmail.com
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   - EmailSender
   DL_Searchable: true
   DL_Aggregable: true
-  DL_Deployed: true
 - Name: mailToAddresses
   ProductCode:
   - sca
   - sem
   Description_EN: Mail To address in the email header
-  Description_EN_Reviewed: true
   Sample:
   - jesada.gonkratoke@scb.co.th
   - daniel.goncalves@bancobmg.com.br
   - jefferson.molino@bancobmg.com.br
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   - EmailRecipient
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: mailMsgSubject
   ProductCode:
   - sca
   - sem
   Description_EN: Email subject
-  Description_EN_Reviewed: true
   Sample:
   - Your daily briefing
-  - "Security alert for DeleteSecurityGroup on Account 549918006255 in Region: ap-southeast-1"
-  Type: string
-  Require: false
-  DL_AdxType: string
+  - 'Security alert for DeleteSecurityGroup on Account 549918006255 in Region: ap-southeast-1'
+  DL_Type: string
   DL_CommonKey:
   - EmailSubject
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: mailMsgId
   ProductCode:
   - sca
   - sem
   Description_EN: Email ID
-  Description_EN_Reviewed: true
   Sample:
   - <01000181c6c8054d-a28e440d-23d0-4427-845e-a5af5a7aac60-000000@email.amazonses.com>
   - <01000181fe0a3ce6-ff51a59e-0c83-461e-9ca9-ef55aa4089b5-000000@email.amazonses.com>
-  Type: string
-  Require: false
-  DL_AdxType: string
+  DL_Type: string
   DL_CommonKey:
   - EmailMessageID
   DL_Searchable: true
   DL_Aggregable: true
-  DL_Deployed: true
 - Name: mailCcAddresses
   ProductCode:
   - sca
   - sem
   Description_EN: Mail CC address in the email header
-  Description_EN_Reviewed: true
   Sample:
   - <ListaVerdecard-MIS@quero-quero.com.br>
   - produccion@bancoppel.com
   - sbastidas@bancoppel.com
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   - EmailRecipient
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: mailBccAddresses
   ProductCode:
   - sem
   - sca
   Description_EN: Mail BCC address in the email header
-  Description_EN_Reviewed: true
   Sample:
   - customermarketing@flowserve.com
   - diego.sales@quero-quero.com.br
   - guilherme.cardoso@verdecard.com.br
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   - EmailRecipient
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: mailSenderIp
   ProductCode:
   - sca
   - sem
   Description_EN: Email sender IP address
-  Description_EN_Reviewed: true
   Sample:
   - 255.255.255.255
   - 200.196.154.13
-  Type: string
-  Require: false
-  DL_AdxType: string
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
-  DL_Deployed: true
 - Name: mailAttachmentHash
   ProductCode:
   - sca
   - sem
   Description_EN: Hash value of the email attachment
-  Description_EN_Reviewed: true
   Sample:
   - 02ab50ee0bccadb43d6cc504928f2ff2
   - 0a0f335fb04f1acebb7500d5358321c0
-  Type: string
-  Require: false
-  DL_AdxType: string
+  DL_Type: string
   DL_CommonKey:
-  - FileSHA1
+  - FileMD5
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: mailUrlsRealLink
   ProductCode:
   - sca
   - sem
   Description_EN: URL extracted from the email content
-  Description_EN_Reviewed: true
   Sample:
   - https://aka.ms/JoinTeamsMeeting
   - http://go.microsoft.com/fwlink/p/?LinkID=512132
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
+  - URL
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: mailSourceDomain
   ProductCode:
   - sca
   Description_EN: Email domain of the sender
-  Description_EN_Reviewed: true
   Sample:
   - itau-unibanco.com.br
   - coppel.com
   - ehi.com
-  Type: string
-  Require: false
-  DL_AdxType: string
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
-  DL_Deployed: true
 - Name: mailUrlsVisibleLink
   ProductCode:
   - sca
   - sem
   Description_EN: URL extracted from the email content
-  Description_EN_Reviewed: true
   Sample:
   - Unsubscribe
   - Android
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
+  - URL
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: orgId
   ProductCode:
   - sca
   Description_EN: Cloud App Security orgnization ID
-  Description_EN_Reviewed: true
   Sample:
   - 182a3fa0-a3a7-11eb-8590-8d526fa1feaa
   - 4da1fde0-b022-11ea-aa58-cf3ff4ef7956
   - 784a57b0-336d-11e8-887d-8f04f83dbb5b
-  Type: string
-  Require: false
-  DL_AdxType: string
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: attachmentFileName
   ProductCode:
   - sca
   - sem
   Description_EN: File name of the email attachment
-  Description_EN_Reviewed: true
   Sample:
   - image001.png
   - image002.png
   - image003.png
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   - FileName
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: attachmentSha1
   ProductCode:
   - sca
   - sem
   Description_EN: SHA-1 hash of the email attachment
-  Description_EN_Reviewed: true
   Sample:
   - 03d8fb85556edf397d8afcafc0b13f11ecbde50c
   - 056a2975edffe7188c03c324ae4335f9380b57e3
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   - FileSHA1
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: attachmentMd5
   ProductCode:
   - sca
   - sem
   Description_EN: MD5 hash of the email attachment
-  Description_EN_Reviewed: true
   Sample:
   - 003fa299ab119219596f952c68029810
   - 03aeabf6a745cb627ee29c05a22e58cb
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   - FileMD5
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: attachmentSha256
   ProductCode:
   - sca
   - sem
   Description_EN: SHA-256 hash of the email attachment
-  Description_EN_Reviewed: true
   Sample:
   - 29d72af5608ee5eade7c4346d3c32dfcc6b54f8fb43d977ff0306ad68b255a01
   - cb0628092ddea96bb040221b5c793dbbb792a67d0621bdfba170c07374d85801
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   - FileSHA2
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: attachmentUrls
   ProductCode:
   - sem
   Description_EN: URLs extracted from the email attachment
-  Description_EN_Reviewed: true
   Sample: []
-  Type: AttachmentUrl[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: attachmentFileHashes
   ProductCode:
   - sca
   - sem
   Description_EN: SHA-1 hash of the email attachment
-  Description_EN_Reviewed: true
   Sample:
   - acedb7898338a46f38d148d1d0456e644576d41b
   - ea6fcc4c0c1f10d71742b29e98a977d995473dd1
   - 03d8fb85556edf397d8afcafc0b13f11ecbde50c
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   - FileSHA1
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: attachmentFileHashSha256s
   ProductCode:
   - sca
   - sem
   Description_EN: SHA-256 hash of the email attachment
-  Description_EN_Reviewed: true
   Sample:
   - 0570dfd156ee00cb7bc2a94998157cb3a29292b9e9feed82d4b6c7d2c6bdd9d4
   - 2d96ebbbc5a5687b0f18fd5620e4e5489d49a877430146bbca447fabe9c47a6e
   - 20d27422610967122439735cbcb48e4382a16e94a8b29c068e6b7d0e40466427
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   - FileSHA2
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: mailSmtpOriginalRecipients
   ProductCode:
   - sem
   Description_EN: Original email recipients in the SMTP envelope
-  Description_EN_Reviewed: true
   Sample:
   - jesada.gonkratoke@scb.co.th
   - central.transportes_al@braskem.com
   - centraltransporte.al@grupopredial.com.br
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: mailSmtpRecipients
   ProductCode:
   - sem
   Description_EN: Email recipients in the SMTP envelope after scanning
-  Description_EN_Reviewed: true
   Sample:
   - jesada.gonkratoke@scb.co.th
   - central.transportes_al@braskem.com
   - centraltransporte.al@grupopredial.com.br
-  Type: string[]
-  Require: false
-  DL_AdxType: dynamic
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-  DL_Deployed: true
-- Name: version
-  ProductCode:
-  - sae
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - "1.1"
-  Type: string
-  Require: true
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: customerId
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - df1fd66c-dea3-40fb-a78b-1442d6154ecc
-  - e0f6a485-204f-4988-9253-f02b6481c205
-  - b48f2239-d797-4967-bf8a-d0861ebb94e9
-  Type: string
-  Require: true
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
 - Name: receivedTime
   ProductCode:
-  - sae
+  - ALL
   Description_EN: Time the log was received
-  Description_EN_Reviewed: true
   Sample:
   - 1656324260000
-  Type: uint64
-  Require: false
-  DL_AdxType: real
+  DL_Type: real
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
-  DL_Deployed: true
-- Name: packageTraceId
-  ProductCode:
-  - sae
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - 00001008-d7ef-4066-9d93-55c3d450bf76
-  - 0000202f-92ec-4b8d-8df1-5c8551f33e4b
-  - 00002778-c203-4d2e-ac0f-d6c84ea9451b
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: groupId
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - 00000000-0000-0000-0000-000000000000
-  Type: string
-  Require: false
-  DL_AdxType: string
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: tenantGuid
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - 00000000-0000-0000-0000-000000000000
-  Type: string
-  Require: false
-  DL_AdxType: string
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
 - Name: bitwiseFilterRiskLevel
   ProductCode:
-  - sae
+  - ALL
   Description_EN: Bitwise risk-level filter search
-  Description_EN_Reviewed: true
   Sample:
   - 1
   - 2
   - 8
-  Type: uint32
-  Require: false
-  DL_AdxType: int
+  DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
-  DL_Deployed: true
 - Name: scanType
   ProductCode:
   - sca
   - sem
   Description_EN: Manual or real-time scan
-  Description_EN_Reviewed: true
   Sample:
   - realtime_mailmeta-exchange
   - realtime_mailmeta-gmail
   - gateway_mailmetadata
-  Type: string
-  Require: false
-  DL_AdxType: string
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailFolder
-  ProductCode:
-  - sca
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - Inbox
-  - Bandeja de entrada
-  - Sent Items
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: msgUuidChain
-  ProductCode:
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - 00004c28-bda5-496d-ae90-5182d36e9396;00004c28-bda5-496d-ae90-5182d36e9396
-  - 002ac78d-862a-408f-80c2-34bd52a2adaa;002ac78d-862a-408f-80c2-34bd52a2adaa
-  - 004f276e-8588-49b2-a7ed-eb86567bf2d7;004f276e-8588-49b2-a7ed-eb86567bf2d7
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailMetaTraceId
-  ProductCode:
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - ""
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mExternalUid
-  ProductCode:
-  - sca
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - 00001300@jasperengines.com@@<DS7PR19MB62774CC3DB9201971B5BCE63A0909@DS7PR19MB6277.namprd19.prod.outlook.com>@@69cd4d99e0ab75eadd9b987191c66b4e@@1
-  - 00001389@jasperengines.com@@<c332bb6e-ba21-4fae-bfd1-1f548a571587>@@5245531282021f313d11e5d5422436cb@@1
-  - 00001392@jasperengines.com@@<573186405.1072205.1658257233431.JavaMail.cloud@p2-elasticrender-0bea27432cfd6429e>@@9857ba30b94835e87dedf3aa00a85784@@1
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailMetaData
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - '[{" ":1},{"\n":1}]'
-  - '[{"\n":1}]'
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailTagHashRawSignature
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0gY29udGVudD0gY2hhcnNldD0gPjxtZXRhIG5hbWU9IGNvbnRlbnQ9ID48c3R5bGU+PCEtLS0tPjwvc3R5bGU+PC9oZWFkPjxib2R5IGxhbmc9IGxpbms9IHZsaW5rPSBzdHlsZT0gPjxkaXYgY2xhc3M9ID48cCBjbGFzcz0gPjxURVhUPjwvcD48L2Rpdj48L2JvZHk+PC9odG1sPg==
-  - PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0gY29udGVudD0gY2hhcnNldD0gPjwvaGVhZD48Ym9keT48VEVYVD48L2JvZHk+PC9odG1sPg==
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailXMailer
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - Microsoft Outlook 16.0
-  - Microsoft CDO for Windows 2000
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailUserAgent
-  ProductCode:
-  - sem
-  - sca
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - Mutt/1.4.2.2i
-  - Heirloom mailx 12.5 7/5/10
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailFeatureId
-  ProductCode:
-  - sem
-  - sca
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample: []
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailRuleId
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - "42003"
-  - "148036"
-  - "148140"
-  Type: string[]
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailTagHash
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - 9ce01ebc63f408264876646e20905349
-  - cf679dc99042b781106cbaccd4045ed3
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailTextHash
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - 221bab3766f6d2a2c6fcc37056511d53
-  - f26f3a415103ea083ac49be6bb60f337
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailUrlHash
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - ca52197d96e4a00ce19eaf34b20c8937
-  - ad50776a891bead6bf222e2b7be17724
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailHeaderHash
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - 43f8bfc02d8f78f069c254bc17eba80b
-  - aa5d16ca145f91471e482d235843aac5
-  - ad8776382ea4b7cffd0961c70223162e
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailScore
-  ProductCode:
-  - sem
-  - sca
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample: []
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailWantedHeaderName
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - CC
-  - X-TM-Product-Ver
-  - Received
-  Type: string[]
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailWantedHeaderValue
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - cloud-app-security-5.0
-  - BCL:0;
-  Type: string[]
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailReplyToAddresses
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - noreply@fbworkmail.com
-  - itau@service-now.com
-  - no-reply@sharepointonline.com
-  Type: string[]
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailSmtpFromAddresses
-  ProductCode:
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - nullsender@tmes.trendmicro.com
-  - notification@fbworkmail.com
-  - noreply@email.teams.microsoft.com
-  Type: string[]
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailThreatType
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - suspected
-  - suspected,
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailWholeHeader
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - '"Microsoft Viva"<viva-noreply@microsoft.com>'
-  - '"AWS CloudWatch Event Rule Security Alert!" <no-reply@sns.amazonaws.com>'
-  - <EMAILAUTOMATICO@CORREIO.ITAU.COM.BR>
-  Type: string[]
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailHelo
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - HELO inpost.tmes.trendmicro.com
-  - HELO edge.itau-unibanco.com.br
-  - HELO us-smtp-1.mimecast.com
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: attachmentTlsh
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - 0FE18E0807B75799EF3ADD7A98D62411FEB31DAB419C913C058068A3A6B33BD114EA39
-  - 7C31C9827A71A905CC6B0A73B10FE80C06F01E814AA396347F8B6F979690E9C3D75147
-  Type: string[]
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: attachmentSize
-  ProductCode:
-  - sem
-  - sca
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample: []
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: attachmentSource
-  ProductCode:
-  - sca
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - TMASE
-  - PRODUCT
-  Type: string[]
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailSmtpTls
-  ProductCode:
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - TLS 1.2
-  - TLS 1.3
-  - noTLS
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: attachmentFileTlshes
-  ProductCode:
-  - sem
-  - sca
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample: []
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: eventSourceType
-  ProductCode:
-  - sae
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - EVENT_SOURCE_EMAIL_META
-  Type: CommonHeader.EVENT_SOURCE_TYPE
-  Require: true
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailMetaText
-  ProductCode:
-  - sem
-  Description_EN:
-  Description_EN_Reviewed: false
-  Sample:
-  - ""
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: true
-- Name: mailEurekaRuleIds
-  ProductCode:
-  - sem
-  - sca
-  Description_EN: "a list of tmase eureka scanned rule ids"
-  Description_EN_Reviewed: false
-  Sample:
-  - "661030"
-  - "661230"
-  - "661267"
-  Type: string[]
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: false
-- Name: scanTs
-  ProductCode:
-  - sca
-  Description_EN: The time that mail is scanned by CAS
-  Description_EN_Reviewed: false
-  Sample:
-  - 1657135700000
-  Type: int64
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: false
-- Name: mailCacheId
-  ProductCode:
-  - sca
-  Description_EN: Internal email cache Id to identify email message in the same group
-    mails
-  Description_EN_Reviewed: false
-  Sample:
-  - "<CAAQw8Mj0mFrshPQwS5dwEtFHwdEp2MJfFmMVxe@mail.gmail.com>"
-  Type: string
-  Require: false
-  DL_AdxType: None
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Deployed: false
-- Name: customFilterTags
-  ProductCode:
-    - sae
-  Description_EN: Filter ID matched by XDR based on custom filter
-  Description_EN_Reviewed: false
-  Sample:
-    - XCUS.CF0131
-    - USER.HELLOWORLD
-  Type: string[]
-  Require: false
-- Name: customFilterRiskLevel
-  ProductCode:
-    - sae
-  Description_EN: Top-level risk level of the event by custom filter
-  Description_EN_Reviewed: false
-  Sample:
-    - info
-    - low
-    - medium
-    - high
-    - critical
-  Type: string
-  Require: false

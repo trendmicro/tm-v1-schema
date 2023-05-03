@@ -111,7 +111,7 @@
   - sds
   - xes
   - sao
-  Description_EN: The logon user name
+  Description_EN: The logon user name
   Sample:
   - root
   - SISTEMA
@@ -155,7 +155,7 @@
   - sds
   - xes
   - sao
-  Description_EN: The md5 hash of target process image or target file
+  Description_EN: The md5 hash of target process image or target file
   Sample:
   - 7ac47235c7bb452a03d3afd872f44c9e
   - c9873d83a969645a97f21adc1b164cc5
@@ -185,7 +185,7 @@
   - sds
   - xes
   - sao
-  Description_EN: The SHA256 hash of target process image or target file
+  Description_EN: The SHA256 hash of target process image or target file
   Sample:
   - 39109eef00821658893b45634fe2f4664f880da9242712df907f1327d4ceefb8
   - 49fa3e206abf6a1f4546417dbe09f3f06b38847866a4a66de75bd90f39cb6c1c
@@ -200,7 +200,7 @@
   - sds
   - xes
   - sao
-  Description_EN: File path location of target process image or target file
+  Description_EN: File path location of target process image or target file
   Sample:
   - /usr/bin/bash
   - /bin/bash
@@ -758,7 +758,7 @@
   - sds
   - xes
   - sao
-  Description_EN: The source address of network connection
+  Description_EN: The source address of network connection
   Sample:
   - '::'
   - 172.20.0.10
@@ -868,7 +868,9 @@
 - Name: productCode
   ProductCode:
   - ALL
-  Description_EN: Product which sent the log
+  Description_EN: Internal product code (sds = Trend Micro Cloud One Endpoint & Workload
+    Security, xes =  Trend Micro Vision One Endpoint Sensor, sao =  Apex One as a
+    Service)
   Sample:
   - sds
   - xes
@@ -978,6 +980,40 @@
   Sample:
   - 1657781088000
   DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: partitionKey
+  ProductCode:
+  - ALL
+  Description_EN: The partition key for a management scope
+  Sample:
+  - ebb418f0-43b7-fd1e-a8f4-3a1261720071
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: mgmtInstanceId
+  ProductCode:
+  - ALL
+  Description_EN: The instance ID for a management scope, which is the same as tenantGuid.
+  Sample:
+  - f41a9efa-beee-6ff7-319d-e4ffa63f21df
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: parentName
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The image name of the parent process
+  Sample:
+  - c:\windows\system32\services.exe
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
+  DL_Type: None
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false

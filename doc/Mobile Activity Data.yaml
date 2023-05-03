@@ -71,7 +71,7 @@
 - Name: logonUser
   ProductCode:
   - ams
-  Description_EN: The logon user name
+  Description_EN: The logon user name
   Sample:
   - root
   - SISTEMA
@@ -84,7 +84,7 @@
 - Name: objectFileHashSha256
   ProductCode:
   - ams
-  Description_EN: The SHA256 hash of target process image or target file
+  Description_EN: The SHA256 hash of target process image or target file
   Sample:
   - 39109eef00821658893b45634fe2f4664f880da9242712df907f1327d4ceefb8
   - 49fa3e206abf6a1f4546417dbe09f3f06b38847866a4a66de75bd90f39cb6c1c
@@ -97,7 +97,7 @@
 - Name: objectFilePath
   ProductCode:
   - ams
-  Description_EN: File path location of target process image or target file
+  Description_EN: File path location of target process image or target file
   Sample:
   - /usr/bin/bash
   - /bin/bash
@@ -188,7 +188,8 @@
 - Name: productCode
   ProductCode:
   - ALL
-  Description_EN: Product which sent the log
+  Description_EN: Internal product code (sds = Trend Micro Cloud One Endpoint & Workload
+    Security, xes = Trend Micro Vision One Endpoint Sensor, sao = Apex One as a Service)
   Sample:
   - sds
   - xes
