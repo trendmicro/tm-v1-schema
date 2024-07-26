@@ -485,19 +485,6 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: mailMetaData
-  ProductCode:
-  - sca
-  - sem
-  - xms
-  Description_EN: The email metadata
-  Sample:
-  - '[{" ":1},{"\n":1}]'
-  - '[{"\n":1}]'
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: mailTagHashRawSignature
   ProductCode:
   - sca
@@ -870,3 +857,271 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: applicationId
+  ProductCode:
+  - xca
+  Description_EN: The application ID
+  Sample:
+  - 8ee8fdad-f234-4243-8f3b-15c294843740
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientIp
+  ProductCode:
+  - xca
+  Description_EN: The client IP
+  Sample:
+  - 10.10.10.10
+  - 123.123.123.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: correlationId
+  ProductCode:
+  - xca
+  Description_EN: The correlation ID
+  Sample:
+  - 7f545dec-5f3b-443f-9f2e-282499deaaef
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: extraInfo
+  ProductCode:
+  - xca
+  Description_EN: The additional information about the sharing action
+  Sample:
+  - <ClientType>SPHomePagesWeb</ClientType>
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isExternalAccess
+  ProductCode:
+  - xca
+  Description_EN: Whether the cmdlet was run by an external user (True=external user,
+    False=internal user in your organization)
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: targetType
+  ProductCode:
+  - xca
+  Description_EN: The type of object that was accessed or modified
+  Sample:
+  - File
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: target
+  ProductCode:
+  - xca
+  Description_EN: The object accessed by a user or application
+  Sample:
+  - APCPR000000.PROD.OUTLOOK.COM/Microsoft Exchange Hosted
+  - Organizations/test.onmicrosoft.com/test\\testRule001
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actionName
+  ProductCode:
+  - xca
+  Description_EN: The user or service action
+  Sample:
+  - UserLoggedIn
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: orgName
+  ProductCode:
+  - xca
+  Description_EN: The tenant name
+  Sample:
+  - test.onmicrosoft.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: originatingServer
+  ProductCode:
+  - xca
+  Description_EN: The server where the operation originated
+  Sample:
+  - TY0PR03MB6449 (15.20.5746.023)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parameters
+  ProductCode:
+  - xca
+  Description_EN: The names and values of all parameters used in the cmdlet identified
+    in the Operations property
+  Sample:
+  - '[{"Name": "AlwaysDeleteOutlookRulesBlob","Value": "False"},{"Name" : "Force","Value":
+    "False"}]'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: recordType
+  ProductCode:
+  - xca
+  Description_EN: The operation type
+  Sample:
+  - 1
+  - 2
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actResult
+  ProductCode:
+  - xca
+  Description_EN: The action result
+  Sample:
+  - Success
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isSensitiveInfo
+  ProductCode:
+  - xca
+  Description_EN: Whether the event contains sensitive information
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userSessionId
+  ProductCode:
+  - xca
+  Description_EN: The user session ID
+  Sample:
+  - d45aa435-d768-4f13-9d54-cd8f596d2641
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudStorageId
+  ProductCode:
+  - xca
+  Description_EN: The file or folder location ID
+  Sample:
+  - 3d8752ef-a57b-4c7e-8b07-0d7deeb90eb9
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudStorageName
+  ProductCode:
+  - xca
+  Description_EN: The file or folder URL
+  Sample:
+  - https://test.sharepoint.com/sites/FILA
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileExt
+  ProductCode:
+  - xca
+  Description_EN: The file extension (If the object is a folder, there is no value
+    for this field.)
+  Sample:
+  - jpg
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileName
+  ProductCode:
+  - xca
+  Description_EN: The file or folder name
+  Sample:
+  - test.pdf
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: userAgent
+  ProductCode:
+  - xca
+  Description_EN: The user agent
+  Sample:
+  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+    Chrome/105.0.0.0 Safari/537.36
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: principalName
+  ProductCode:
+  - xca
+  Description_EN: The User Principal Name
+  Sample:
+  - clark@company.com
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userType
+  ProductCode:
+  - xca
+  Description_EN: The user type
+  Sample:
+  - Regular
+  - Reserved
+  - Admin
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: service
+  ProductCode:
+  - xca
+  Description_EN: The Microsoft 365 service where the activity occurred
+  Sample:
+  - SecurityComplianceCenter
+  - AzureActiveDirectory
+  - SharePoint
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventName
+  ProductCode:
+  - xca
+  Description_EN: The event type
+  Sample:
+  - COLLABORATION_APP_ACTIVITY
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSubName
+  ProductCode:
+  - xca
+  Description_EN: The event type sub-name
+  Sample:
+  - Audit.Exchange
+  - Audit.Sharepoint
+  - Audit.General
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true

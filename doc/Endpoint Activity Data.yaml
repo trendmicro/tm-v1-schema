@@ -225,6 +225,20 @@
   - DomainName
   DL_Searchable: true
   DL_Aggregable: true
+- Name: httpReferer
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The HTTP header referer
+  Sample:
+  - http://201.174.161.181/
+  - http://info2/home/
+  - http://lpcare.corp.pvt/loopcare/CircuitTest.jsp
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: objectIntegrityLevel
   ProductCode:
   - xes
@@ -417,6 +431,18 @@
     flags
   Sample: []
   DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileExtendedAttribute
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The extended attributes of the file
+  Sample:
+  - com.apple.quarantine
+  - com.apple.metadata:kMDItemWhereFroms
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
@@ -3191,7 +3217,7 @@
   - xes
   Description_EN: The Cloud Identity name used for authorization
   Sample:
-  - AROA4Q6ORBMG4IN3WF5SN:i-0355006acbbde82b8
+  - AWSsampleToken
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

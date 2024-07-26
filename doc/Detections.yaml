@@ -1453,7 +1453,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: isHidden
   ProductCode:
   - pdi
@@ -6029,3 +6029,16 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: target
+  ProductCode:
+  - sds
+  - pds
+  Description_EN: The target object for the behavior
+  Sample:
+  - c:\windows\system32\windowspowershell\v1.0\powershell.exe
+  - zwwritevirtualmemory
+  - /proc/211296/exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
