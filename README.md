@@ -20,26 +20,38 @@
 | DL_CommonKey   | The corresponding field name in General Search |
 
 # ProductCode Mapping
-| Code | Product                                                                                      |
-|------|----------------------------------------------------------------------------------------------|
-| ALL  | All products                                                                                 |
-| pdi  | Trend Micro Deep Discovery Inspector                                                         |
-| sds  | Trend Cloud One - Endpoint & Workload Security <br> Server & Workload Protection (sds_v1_es) |
-| xes  | Endpoint Sensor                                                                              |
-| sao  | Trend Micro Apex One as a Service <br> Standard Endpoint Protection (sao_v1_es)              |
-| pds  | Trend Micro Deep Security Software                                                           |
-| sca  | Trend Micro Cloud App Security <br> Cloud Email and Collaboration Protection (sca_v1_ecs)    |
-| ptp  | TippingPoint Security Management System                                                      |
-| stp  | Trend Cloud One - Network Security                                                           |
-| scs  | Trend Cloud One - Container Security                                                         |
-| sct  | Trend Cloud One - AWS CloudTrail Integration                                                 |
-| sig  | Zero Trust Secure Access - Internet Access                                                   |
-| szn  | Zero Trust Secure Access - Private Access                                                    |
-| sws  | Trend Micro Web Security                                                                     |
-| sem  | Trend Micro Email Security <br> Cloud Email Gateway Protection (sem_v1_ecs)                  |
-| ams  | Mobile Security                                                                              |
-| pts  | TXOne Stellar                                                                                |
-| ptn  | TXOne EdgeOne                                                                                |
+| Code | Product                                                   |
+|------|-----------------------------------------------------------|
+| ALL  | All products                                              |
+| aad  | Microsoft Entra ID                                        |
+| ams  | Trend Vision One Mobile Security                          |
+| opa  | Microsoft Active Directory                                |
+| pao  | Trend Micro Apex One                                      |
+| pdi  | Trend Micro Deep Discovery Inspector                      |
+| pds  | Trend Micro Deep Security                                 |
+| ptn  | TXOne EdgeOne (on-premises)                               |
+| ptp  | TippingPoint Security Management System                   |
+| pts  | TXOne Stellar (on-premises)                               |
+| qpf  | Palo Alto Networks Next-Generation Firewalls              |
+| sao  | Trend Micro Apex One as a Service                         |
+| sca  | Trend Micro Cloud App Security                            |
+| scs  | Trend Cloud One - Container Security                      |
+| sct  | Trend Cloud One - AWS CloudTrail                          |
+| sds  | Trend Cloud One - Endpoint & Workload Security            |
+| sem  | Trend Micro Email Security                                |
+| sfc  | Trend Cloud One – File Storage Security                   |
+| sfs  | Trend Vision One File Security                            |
+| sig  | Trend Vision One Zero Trust Secure Access Internet Access |
+| sna  | XDR add-on: Deep Discovery Inspector                      |
+| sss  | Trend Cloud One - Cloud Sentry                            |
+| stp  | Trend Cloud One - Network Security                        |
+| sws  | Trend Micro Web Security                                  |
+| szn  | Trend Vision One Zero Trust Secure Access Private Access  |
+| vpc  | XDR for Cloud - AWS VPC Flow Logs                         |
+| xca  | Collaboration Sensor                                      |
+| xes  | XDR Endpoint Sensor                                       |
+| xms  | Email Sensor                                              |
+| xns  | Virtual Network Sensor                                    |
 
 # EventId, EventSubId Mapping
 ## Endpoint Activity Data
