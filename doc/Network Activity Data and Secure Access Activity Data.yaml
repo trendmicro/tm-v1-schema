@@ -62,7 +62,7 @@
   ProductCode:
   - ALL
   - qpf
-  Description_EN: The product which sent the log
+  Description_EN: The internal product code
   Sample:
   - sig
   - szn
@@ -73,7 +73,7 @@
 - Name: filterRiskLevel
   ProductCode:
   - ALL
-  Description_EN: The top level filter risk of the event
+  Description_EN: The top-level risk level of the event
   Sample:
   - info
   - low
@@ -228,7 +228,7 @@
   ProductCode:
   - sig
   - szn
-  Description_EN: The user agent
+  Description_EN: The user agent or the agent through which the request was made
   Sample:
   - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0)
   - Chrome/74.0.3729.108 Safari/537.36
@@ -255,7 +255,7 @@
   - xns
   - qpf
   - vpc
-  Description_EN: The log type
+  Description_EN: The name of the log event
   Sample:
   - SWG_ACTIVITY_LOG
   - FIREWALL_ACTIVITY_LOG
@@ -2060,3 +2060,35 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: originUUID
+  ProductCode:
+  - ALL
+  Description_EN: The UUID of the original event which matches the Security Analytics
+    Engine filter
+  Sample:
+  - 5b3a70cb-f338-40fe-b17b-ab8f9aeedee7
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: originEventSourceType
+  ProductCode:
+  - ALL
+  Description_EN: The source type of the original event which matches the Security
+    Analytics Engine filter
+  Sample:
+  - EVENT_SOURCE_NETWORK_ACTIVITY
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isRetroScan
+  ProductCode:
+  - ALL
+  Description_EN: Whether the event matches the Security Analytics Engine filter
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
