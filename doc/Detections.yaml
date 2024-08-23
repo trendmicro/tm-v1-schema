@@ -114,7 +114,7 @@
   - pts
   - scs
   - sss
-  Description_EN: The endpoint host name or node where the event was detected
+  Description_EN: The endpoint hostname or node where the event was detected
   Sample:
   - 10.124.17.69 (swpos-aws-aza02) [i-0fd28720e80225308]
   - 10.124.21.139 (swpos-aws-azc02) [i-07e2c4a803cd0fa93]
