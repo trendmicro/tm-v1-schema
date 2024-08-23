@@ -113,6 +113,7 @@
   - szn
   - pts
   - scs
+  - sss
   Description_EN: The endpoint host name or node where the event was detected
   Sample:
   - 10.124.17.69 (swpos-aws-aza02) [i-0fd28720e80225308]
@@ -1878,6 +1879,7 @@
 - Name: vpcId
   ProductCode:
   - sds
+  - sss
   Description_EN: The virtual private cloud that contains the cloud asset
   Sample:
   - vpc-01234567890abcdef
@@ -3752,6 +3754,7 @@
   - sao
   - xes
   - sds
+  - sss
   Description_EN: The ID of the instance that indicates the meta-cloud or data center
     VM
   Sample:
@@ -6038,6 +6041,17 @@
   - c:\windows\system32\windowspowershell\v1.0\powershell.exe
   - zwwritevirtualmemory
   - /proc/211296/exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processPkgName
+  ProductCode:
+  - xes
+  Description_EN: The process package name
+  Sample:
+  - MSTeams
+  - Microsoft.SkypeApp
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
