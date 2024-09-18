@@ -138,8 +138,24 @@
 | 1003       | TELEMETRY_MEMORY_READ                          |
 | 1101       | TELEMETRY_BM_INVOKE                            |
 | 1102       | TELEMETRY_BM_INVOKE_API                        |
+| 1201       | TELEMETRY_APP_START                            |
+| 1202       | TELEMETRY_APP_STOP                             |
+| 1203       | TELEMETRY_APP_INSTALL                          |
+| 1204       | TELEMETRY_APP_UNINSTALL                        |
+| 1205       | TELEMETRY_APP_BEHAVIOR                         |
+| 1301       | TELEMETRY_SYSTEM_EVENT_ENABLE                  |
+| 1302       | TELEMETRY_SYSTEM_EVENT_DISABLE                 |
+| 1303       | TELEMETRY_SYSTEM_CERTIFICATION_INSTALL         |
+| 1304       | TELEMETRY_SYSTEM_DEVICE_ROOTED                 |
 | 1401       | TELEMETRY_PIPE_CREATE                          |
 | 1402       | TELEMETRY_PIPE_CONNECT                         |
+| 1601       | TELEMETRY_MAC_SYS_LOG_COLLECT                  |
+| 10101      | TELEMETRY_ASSOCIATION_PROCESS_IMAGE_FILE       |
+| 10102      | TELEMETRY_ASSOCIATION_AUTO_RUN_KEY_FULL_PATH   |
+| 10103      | TELEMETRY_ASSOCIATION_HOST_PROC_CMD_FULL_PATH  |
+| 10104      | TELEMETRY_ASSOCIATION_SERVICE_DLL              |
+| 10105      | TELEMETRY_ASSOCIATION_ARCHIVE_FILE             |
+| 10106      | TELEMETRY_ASSOCIATION_BROWSER_PROCESS          |
 
 
 ## Mobile Activity Data
