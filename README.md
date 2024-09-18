@@ -102,6 +102,8 @@
 | 109        | TELEMETRY_FILE_MODIFY                          |
 | 110        | TELEMETRY_FILE_SET_ATTRIBUTES                  |
 | 111        | TELEMETRY_FILE_ENUMERATE                       |
+| 112        | TELEMETRY_FILE_SET_EXTENDED_ATTRIBUTE          |
+| 113        | TELEMETRY_FILE_DELETE_EXTENDED_ATTRIBUTE       |
 | 201        | TELEMETRY_CONNECTION_CONNECT                   |
 | 202        | TELEMETRY_CONNECTION_LISTEN                    |
 | 203        | TELEMETRY_CONNECTION_CONNECT_INBOUND           |
@@ -136,6 +138,7 @@
 | 1102       | TELEMETRY_BM_INVOKE_API                        |
 | 1401       | TELEMETRY_PIPE_CREATE                          |
 | 1402       | TELEMETRY_PIPE_CONNECT                         |
+
 
 ## Mobile Activity Data
 ### eventId
