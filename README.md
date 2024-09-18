@@ -160,7 +160,7 @@
 
 ## Mobile Activity Data
 ### eventId
-| eventId | Data Field Mapping |
+| eventId | Event Type         |
 | ------- | ------------------ |
 | 2       | TELEMETRY_FILE     |
 | 7       | TELEMETRY_INTERNET |
@@ -168,7 +168,7 @@
 | 16      | TELEMETRY_SYSTEM   |
 
 ### eventSubId
-| eventSubId | Data Field Mapping                  |
+| eventSubId | Event Sub-Type                      |
 | ---------- | ----------------------------------- |
 | 101        | TELEMETRY_FILE_CREATE               |
 | 102        | TELEMETRY_FILE_OPEN                 |
