@@ -6045,3 +6045,14 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: processPkgName
+  ProductCode:
+  - xes
+  Description_EN: The process package name
+  Sample:
+  - MSTeams
+  - Microsoft.SkypeApp
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

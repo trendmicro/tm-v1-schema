@@ -1108,7 +1108,7 @@
   - xca
   Description_EN: The event type
   Sample:
-  - COLLABORATION_APP_ACTIVITY
+  - COLLABORATION_ACTIVITY
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1122,6 +1122,20 @@
   - Audit.Sharepoint
   - Audit.General
   DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventId
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  - xca
+  Description_EN: The event ID
+  Sample:
+  - 1 - MESSAGING_EMAIL_META
+  - 2 - MESSAGING_COLLABORATION_ACTIVITY
+  DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
