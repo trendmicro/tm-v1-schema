@@ -121,6 +121,8 @@
 | 502        | TELEMETRY_ACCOUNT_DELETE                       |
 | 503        | TELEMETRY_ACCOUNT_IMPERSONATE                  |
 | 504        | TELEMETRY_ACCOUNT_MODIFY                       |
+| 505        | TELEMETRY_ACCOUNT_LOGIN                        |
+| 506        | TELEMETRY_ACCOUNT_LOGOUT                       |
 | 601        | TELEMETRY_INTERNET_OPEN                        |
 | 602        | TELEMETRY_INTERNET_CONNECT                     |
 | 603        | TELEMETRY_INTERNET_DOWNLOAD                    |
