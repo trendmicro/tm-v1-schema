@@ -1,22 +1,22 @@
 # Preview
-- Please note that these documents are still in preview stage and we do not guarantee any backward compatibility.
+- This document is still in preview and Trend Micro does not guarantee any backward compatibility.
 
 # Background
-- These documents provide Trend Micro Vision One log schema details.
+- These documents provide Trend Vision One log schema details.
 
 # User scenario
 - Currently, these documents only support the following use cases:
-    1. Support Trend Micro Vision One Search app UI usage
+    1. Trend Vision One Search app general and advanced search
 
 # Property Description
 | Property       | Description                                    |
 |----------------|------------------------------------------------|
-| Name           | Field name of log                              |
-| ProductCode    | Products which sends data to this field        |
-| Description_EN | Description of this field                      |
-| Sample         | Sample value of these field                    |
-| DL_Searchable  | If log is searchable by this field             |
-| DL_Type        | Data type of this field                        |
+| Name           | The log field name                             |
+| ProductCode    | The products which send data to this field     |
+| Description_EN | The field description                          |
+| Sample         | The sample values of the field                 |
+| DL_Searchable  | Whether logs are searchable by this field      |
+| DL_Type        | The field data type                            |
 | DL_CommonKey   | The corresponding field name in General Search |
 
 # ProductCode Mapping
@@ -56,7 +56,7 @@
 # EventId, EventSubId Mapping
 ## Endpoint Activity Data
 ### eventId
-| eventId | Data Field Mapping         |
+| eventId | Event Type                 |
 | ------- | -------------------------- |
 | 1       | TELEMETRY_PROCESS          |
 | 2       | TELEMETRY_FILE             |
@@ -72,10 +72,17 @@
 | 12      | TELEMETRY_WMI              |
 | 13      | TELEMETRY_MEMORY           |
 | 14      | TELEMETRY_BM               |
+| 15      | TELEMETRY_APP              |
+| 16      | TELEMETRY_SYSTEM_EVENT     |
+| 17      | TELEMETRY_EVENT_PIPE       |
+| 18      | TELEMETRY_MAC_SYS_LOG      |
+| 19      | TELEMETRY_DDR              |
+| 110     | TELEMETRY_ASSOCIATION      |
 
 ### eventSubId
-| eventSubId | Data Field Mapping                             |
+| eventSubId | Event Sub-Type                                 |
 | ---------- | ---------------------------------------------- |
+| 0          | TELEMETRY_NONE                                 |
 | 1          | TELEMETRY_PROCESS_OPEN                         |
 | 2          | TELEMETRY_PROCESS_CREATE                       |
 | 3          | TELEMETRY_PROCESS_TERMINATE                    |
@@ -83,6 +90,7 @@
 | 5          | TELEMETRY_PROCESS_EXECUTE                      |
 | 6          | TELEMETRY_PROCESS_CONNECT                      |
 | 7          | TELEMETRY_PROCESS_TRACME                       |
+| 8          | TELEMETRY_PROCESS_LOAD_KERNEL_IMAGE            |
 | 101        | TELEMETRY_FILE_CREATE                          |
 | 102        | TELEMETRY_FILE_OPEN                            |
 | 103        | TELEMETRY_FILE_DELETE                          |
@@ -92,6 +100,10 @@
 | 107        | TELEMETRY_FILE_CLOSE                           |
 | 108        | TELEMETRY_FILE_MODIFY_TIMESTAMP                |
 | 109        | TELEMETRY_FILE_MODIFY                          |
+| 110        | TELEMETRY_FILE_SET_ATTRIBUTES                  |
+| 111        | TELEMETRY_FILE_ENUMERATE                       |
+| 112        | TELEMETRY_FILE_SET_EXTENDED_ATTRIBUTE          |
+| 113        | TELEMETRY_FILE_DELETE_EXTENDED_ATTRIBUTE       |
 | 201        | TELEMETRY_CONNECTION_CONNECT                   |
 | 202        | TELEMETRY_CONNECTION_LISTEN                    |
 | 203        | TELEMETRY_CONNECTION_CONNECT_INBOUND           |
@@ -101,10 +113,16 @@
 | 402        | TELEMETRY_REGISTRY_SET                         |
 | 403        | TELEMETRY_REGISTRY_DELETE                      |
 | 404        | TELEMETRY_REGISTRY_RENAME                      |
+| 405        | TELEMETRY_REGISTRY_ENUMERATE                   |
+| 406        | TELEMETRY_REGISTRY_ENUMERATEVALUE              |
+| 407        | TELEMETRY_REGISTRY_QUERYVALUE                  |
+| 408        | TELEMETRY_REGISTRY_SAVE                        |
 | 501        | TELEMETRY_ACCOUNT_ADD                          |
 | 502        | TELEMETRY_ACCOUNT_DELETE                       |
 | 503        | TELEMETRY_ACCOUNT_IMPERSONATE                  |
 | 504        | TELEMETRY_ACCOUNT_MODIFY                       |
+| 505        | TELEMETRY_ACCOUNT_LOGIN                        |
+| 506        | TELEMETRY_ACCOUNT_LOGOUT                       |
 | 601        | TELEMETRY_INTERNET_OPEN                        |
 | 602        | TELEMETRY_INTERNET_CONNECT                     |
 | 603        | TELEMETRY_INTERNET_DOWNLOAD                    |
@@ -120,10 +138,29 @@
 | 1003       | TELEMETRY_MEMORY_READ                          |
 | 1101       | TELEMETRY_BM_INVOKE                            |
 | 1102       | TELEMETRY_BM_INVOKE_API                        |
+| 1201       | TELEMETRY_APP_START                            |
+| 1202       | TELEMETRY_APP_STOP                             |
+| 1203       | TELEMETRY_APP_INSTALL                          |
+| 1204       | TELEMETRY_APP_UNINSTALL                        |
+| 1205       | TELEMETRY_APP_BEHAVIOR                         |
+| 1301       | TELEMETRY_SYSTEM_EVENT_ENABLE                  |
+| 1302       | TELEMETRY_SYSTEM_EVENT_DISABLE                 |
+| 1303       | TELEMETRY_SYSTEM_CERTIFICATION_INSTALL         |
+| 1304       | TELEMETRY_SYSTEM_DEVICE_ROOTED                 |
+| 1401       | TELEMETRY_PIPE_CREATE                          |
+| 1402       | TELEMETRY_PIPE_CONNECT                         |
+| 1601       | TELEMETRY_MAC_SYS_LOG_COLLECT                  |
+| 10101      | TELEMETRY_ASSOCIATION_PROCESS_IMAGE_FILE       |
+| 10102      | TELEMETRY_ASSOCIATION_AUTO_RUN_KEY_FULL_PATH   |
+| 10103      | TELEMETRY_ASSOCIATION_HOST_PROC_CMD_FULL_PATH  |
+| 10104      | TELEMETRY_ASSOCIATION_SERVICE_DLL              |
+| 10105      | TELEMETRY_ASSOCIATION_ARCHIVE_FILE             |
+| 10106      | TELEMETRY_ASSOCIATION_BROWSER_PROCESS          |
+
 
 ## Mobile Activity Data
 ### eventId
-| eventId | Data Field Mapping |
+| eventId | Event Type         |
 | ------- | ------------------ |
 | 2       | TELEMETRY_FILE     |
 | 7       | TELEMETRY_INTERNET |
@@ -131,7 +168,7 @@
 | 16      | TELEMETRY_SYSTEM   |
 
 ### eventSubId
-| eventSubId | Data Field Mapping                  |
+| eventSubId | Event Sub-Type                      |
 | ---------- | ----------------------------------- |
 | 101        | TELEMETRY_FILE_CREATE               |
 | 102        | TELEMETRY_FILE_OPEN                 |
