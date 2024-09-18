@@ -113,7 +113,8 @@
   - szn
   - pts
   - scs
-  Description_EN: The endpoint host name or node where the event was detected
+  - sss
+  Description_EN: The endpoint hostname or node where the event was detected
   Sample:
   - 10.124.17.69 (swpos-aws-aza02) [i-0fd28720e80225308]
   - 10.124.21.139 (swpos-aws-azc02) [i-07e2c4a803cd0fa93]
@@ -1878,6 +1879,7 @@
 - Name: vpcId
   ProductCode:
   - sds
+  - sss
   Description_EN: The virtual private cloud that contains the cloud asset
   Sample:
   - vpc-01234567890abcdef
@@ -3752,6 +3754,7 @@
   - sao
   - xes
   - sds
+  - sss
   Description_EN: The ID of the instance that indicates the meta-cloud or data center
     VM
   Sample:

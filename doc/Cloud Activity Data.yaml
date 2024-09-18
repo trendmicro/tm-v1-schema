@@ -1,7 +1,7 @@
 - Name: uuid
   ProductCode:
   - ALL
-  Description_EN: Unique key of the log entry
+  Description_EN: The unique key of the log
   Sample:
   - 0000116b-ac61-48d2-89e1-3d1ce2d13cdd
   - 000017f4-ac10-43b4-8aef-97158e0f8533
@@ -45,7 +45,7 @@
 - Name: filterRiskLevel
   ProductCode:
   - ALL
-  Description_EN: Top-level risk level of the event
+  Description_EN: The top-level risk level of the event
   Sample:
   - info
   - low
@@ -101,8 +101,7 @@
 - Name: eventName
   ProductCode:
   - sct
-  Description_EN: Name of the requested action (one of the actions in the API for
-    the service)
+  Description_EN: The name of the log event
   Sample:
   - PutObject
   - GetObject
@@ -186,8 +185,7 @@
 - Name: userAgent
   ProductCode:
   - sct
-  Description_EN: The agent through which the request was made (Such as the AWS Management
-    Console, an AWS service, the AWS SDKs, or the AWS CLI)
+  Description_EN: The user agent or the agent through which the request was made
   Sample:
   - signin.amazonaws.com
   - console.amazonaws.com
@@ -279,7 +277,7 @@
 - Name: eventTime
   ProductCode:
   - sct
-  Description_EN: The time the agent detected the event
+  Description_EN: The time the agent or product detected the event
   Sample:
   - 2022-07-06T22:28:06Z
   DL_Type: string
