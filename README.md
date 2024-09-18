@@ -72,7 +72,12 @@
 | 12      | TELEMETRY_WMI              |
 | 13      | TELEMETRY_MEMORY           |
 | 14      | TELEMETRY_BM               |
+| 15      | TELEMETRY_APP              |
+| 16      | TELEMETRY_SYSTEM_EVENT     |
 | 17      | TELEMETRY_EVENT_PIPE       |
+| 18      | TELEMETRY_MAC_SYS_LOG      |
+| 19      | TELEMETRY_DDR              |
+| 110     | TELEMETRY_ASSOCIATION      |
 
 ### eventSubId
 | eventSubId | Event Sub-Type                                 |
