@@ -481,6 +481,7 @@
   - sds
   - xes
   - sao
+  - ddr
   Description_EN: The owner name of the target process or the login user name
   Sample:
   - root
@@ -772,6 +773,7 @@
   - sds
   - xes
   - sao
+  - ddr
   Description_EN: The destination port number
   Sample: []
   DL_Type: int
@@ -784,6 +786,7 @@
   - sds
   - xes
   - sao
+  - ddr
   Description_EN: The destination IP address
   Sample:
   - '::'
@@ -800,6 +803,7 @@
   - sds
   - xes
   - sao
+  - ddr
   Description_EN: The source port number
   Sample:
   - 53
@@ -815,6 +819,7 @@
   - sds
   - xes
   - sao
+  - ddr
   Description_EN: The source address
   Sample:
   - '::'
@@ -1938,6 +1943,7 @@
   - xes
   - sao
   - sds
+  - ddr
   Description_EN: The file size of the object file
   Sample:
   - 0
@@ -2206,6 +2212,7 @@
   - xes
   - sao
   - sds
+  - ddr
   Description_EN: The file size of the source file
   Sample:
   - '0'
@@ -3460,5 +3467,148 @@
   - 260
   DL_Type: long
   DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectUri
+  ProductCode:
+  - ddr
+  Description_EN: Path of target file
+  Sample:
+  - C://path/of/file.txt
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileHash
+  ProductCode:
+  - ddr
+  Description_EN: The cryptographic hash of the target process image or file, with
+    the specific hash algorithm to be determined
+  Sample:
+  - 1ca71017d2fa4775253670e1e55e26912bfdc156
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectServiceType
+  ProductCode:
+  - ddr
+  Description_EN: Type of target file
+  Sample:
+  - local
+  - smb
+  - web
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcUri
+  ProductCode:
+  - ddr
+  Description_EN: Path of source file
+  Sample:
+  - C://path/of/file.txt
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileHash
+  ProductCode:
+  - ddr
+  Description_EN: The cryptographic hash of the source process image or file, with
+    the specific hash algorithm to be determined.
+  Sample:
+  - 1ca71017d2fa4775253670e1e55e26912bfdc156
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcServiceType
+  ProductCode:
+  - ddr
+  Description_EN: Type of source file
+  Sample:
+  - local
+  - smb
+  - web
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcUser
+  ProductCode:
+  - ddr
+  Description_EN: The owner name of the source process or the login user name
+  Sample:
+  - root
+  - SYSTEM
+  - oracle
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyIds
+  ProductCode:
+  - ddr
+  Description_EN: The Ids of DDR’s data policy
+  Sample:
+  - 555a8b4c-c9a7-410c-b218-45517d5cd645
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: metaSrcExtra
+  ProductCode:
+  - ddr
+  Description_EN: The meta for identifying the source of events
+  Sample:
+  - "[{'metaSrcUri': ...]"
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileOriginalName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The original file name of the parent image
+  Sample:
+  - Taskmgr.exe
+  - WINLOGON.EXE
+  - svchost.exe
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileOriginalName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The original file name of the process image
+  Sample:
+  - Taskmgr.exe
+  - WINLOGON.EXE
+  - svchost.exe
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileOriginalName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The original file name of the object image
+  Sample:
+  - Taskmgr.exe
+  - WINLOGON.EXE
+  - svchost.exe
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
   DL_Searchable: true
   DL_Aggregable: false

@@ -341,7 +341,7 @@
   ProductCode:
   - sem
   - xms
-  Description_EN: URLs extracted from the email attachment
+  Description_EN: The URLs and URL sources extracted from the email attachment
   Sample: []
   DL_Type: dynamic
   DL_CommonKey:
