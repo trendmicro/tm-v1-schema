@@ -1,0 +1,1647 @@
+- Name: eventSourceType
+  ProductCode:
+  - ALL
+  Description_EN: The event source type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventTime
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  - qpf
+  - vpc
+  Description_EN: The time the agent or product detected the event
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tags
+  ProductCode:
+  - ALL
+  Description_EN: The detected technique ID based on the alert filter
+  DL_Type: dynamic
+  DL_CommonKey:
+  - Technique
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: uuid
+  ProductCode:
+  - ALL
+  Description_EN: The unique key of the log
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logReceivedTime
+  ProductCode:
+  - ALL
+  Description_EN: The time when the XDR log was received
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: productCode
+  ProductCode:
+  - ALL
+  - qpf
+  Description_EN: The internal product code
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: filterRiskLevel
+  ProductCode:
+  - ALL
+  Description_EN: The top-level risk level of the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: policyTreePath
+  ProductCode:
+  - ALL
+  Description_EN: The policy tree path (endpoint only)
+  DL_Type: string
+  DL_Searchable: true
+- Name: endpointHostName
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The host name of the device on which the event was detected
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: osName
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The host operating system name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dst
+  ProductCode:
+  - sig
+  - szn
+  - qpf
+  - vpc
+  Description_EN: The destination IP address (dstaddr)
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointGuid
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The device GUID
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: principalName
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The User Principal Name
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: request
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  Description_EN: The destination URL that the user is accessing
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: act
+  ProductCode:
+  - sig
+  - szn
+  - qpf
+  Description_EN: The action
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: src
+  ProductCode:
+  - sig
+  - szn
+  - qpf
+  - vpc
+  Description_EN: The source IP address (srcaddr)
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: serverTls
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The TLS version between the Service Gateway and server/website
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serverProtocol
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The version of the HTTP protocol between the Service Gateway and
+    server/website
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userAgent
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The user agent or the agent through which the request was made
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: rt
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The UTC timestamp
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventName
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  - qpf
+  - vpc
+  Description_EN: The name of the log event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: application
+  ProductCode:
+  - sig
+  - szn
+  - qpf
+  Description_EN: The name of the requested application
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: ruleName
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The name of the triggered cloud access rule
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: clientIp
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  Description_EN: The endpoint IP address
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: requestBase
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The URL domain
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  - HostDomain
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: score
+  ProductCode:
+  - sig
+  Description_EN: The WRS score
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: userDomain
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: Active directory domain, domain of username for logging in TMAS
+    adminportal adminportal
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  - AccountDomain
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: suid
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The user name or IP address (IPv4)
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: duration
+  ProductCode:
+  - sig
+  Description_EN: The time it took the scanner to complete the scan, in milliseconds
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventSubName
+  ProductCode:
+  - sig
+  - qpf
+  Description_EN: The Zero Trust Secure Access - Internet Access cloud app action
+    or the Palo Alto Networks firewall log sub-type
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileHash
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The SHA-1 of the file that violated the policy
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileHashSha256
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The SHA-256 of the file that violated the policy
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileName
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The name of the file that violated the policy
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  - FileFullPath
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileSize
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The size of the file that is violating the policy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileType
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The type of file which is violating the policy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: malName
+  ProductCode:
+  - sig
+  Description_EN: The name of the detected malware
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mimeType
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The MIME type or content type of the response body
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sender
+  ProductCode:
+  - sig
+  Description_EN: The roaming users or Trend Micro Web Security gateway where the
+    web traffic passed
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionType
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The scan type
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: profile
+  ProductCode:
+  - sig
+  Description_EN: The name of the triggered Threat Protection template or Data Loss
+    Prevention profile triggered
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userDepartment
+  ProductCode:
+  - sig
+  Description_EN: The user department request method
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestMethod
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The network protocol request method
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: pname
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  - qpf
+  - vpc
+  Description_EN: The product name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pver
+  ProductCode:
+  - sig
+  - qpf
+  Description_EN: The product version
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: deviceGUID
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The non-endpoint object such as a network appliance
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: requestMimeType
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The type of request content
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: failedHTTPSInspection
+  ProductCode:
+  - sig
+  Description_EN: HTTPS traffic inspection failure
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tlsJA3Fingerprint
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The JA3 fingerprint
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: responseSize
+  ProductCode:
+  - sig
+  Description_EN: The response length
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientProtocol
+  ProductCode:
+  - sig
+  Description_EN: The client protocol
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientTls
+  ProductCode:
+  - sig
+  Description_EN: The transport layer security of the client
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: contentEncoding
+  ProductCode:
+  - sig
+  Description_EN: The content encoding of the request or the response
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: authType
+  ProductCode:
+  - sig
+  Description_EN: The authorization type
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestSize
+  ProductCode:
+  - sig
+  Description_EN: The request length
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serverRespTime
+  ProductCode:
+  - sig
+  Description_EN: The time the server took to respond to the request, in milliseconds
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: trafficType
+  ProductCode:
+  - sig
+  Description_EN: The traffic type
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: urlCat
+  ProductCode:
+  - sig
+  - qpf
+  Description_EN: The URL category
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: ruleType
+  ProductCode:
+  - szn
+  Description_EN: The rule type which is applied to the traffic
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: ruleUuid
+  ProductCode:
+  - szn
+  Description_EN: The risk assessment and control design that is defined by Zero Trust
+    Secure Access risk control rules
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectId
+  ProductCode:
+  - szn
+  Description_EN: The UUID of the Zero Trust Secure Access private access application
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: spt
+  ProductCode:
+  - szn
+  - qpf
+  - vpc
+  Description_EN: The virtual port of the source assigned to the Secure Access Module
+    (srcport)
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: policyUuid
+  ProductCode:
+  - szn
+  - qpf
+  Description_EN: The policy UUID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dpt
+  ProductCode:
+  - szn
+  - qpf
+  - vpc
+  Description_EN: The service destination port of the private application server (dstport)
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: companyName
+  ProductCode:
+  - szn
+  Description_EN: The company name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: start
+  ProductCode:
+  - vpc
+  Description_EN: The time when the first data packet was received (in Unix seconds)
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: end
+  ProductCode:
+  - vpc
+  Description_EN: The time when the last data packet was received (in Unix seconds)
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: sessionStart
+  ProductCode:
+  - szn
+  - pdi
+  - xns
+  - qpf
+  Description_EN: The session start time (in seconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sessionEnd
+  ProductCode:
+  - szn
+  - pdi
+  - xns
+  Description_EN: The session end time, in seconds
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyTemplate
+  ProductCode:
+  - sig
+  Description_EN: The Data Loss Prevention template name
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serverIp
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The server IP address
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: clientPort
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The client port number
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: serverPort
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The server port number
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: clientMAC
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The client MAC address
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serverMAC
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The server MAC address
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: flowId
+  ProductCode:
+  - pdi
+  - xns
+  - qpf
+  Description_EN: The network analysis flow ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: status
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The network analysis flow session status
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: app
+  ProductCode:
+  - pdi
+  - xns
+  - qpf
+  Description_EN: The network protocol
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: httpReferer
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The HTTP referrer header
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: httpXForwardedFor
+  ProductCode:
+  - pdi
+  - xns
+  - qpf
+  Description_EN: The HTTP X-Forwarded-For header
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestClientApplication
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The HTTP user agent
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestDate
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The HTTP date header
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestHeaders
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: All HTTP headers without sensitive information
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: overSsl
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: SSL protocol connection
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: respCode
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The network protocol response code
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: respDate
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The HTTP response date header
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: httpLocation
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The HTTP location header
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: respHeaders
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: All HTTP response headers without sensitive information
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: respFileHash
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The SHA-1 of the file detected in the response direction
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: respFileHashSha256
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The SHA-256 of the file detected in the response direction
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: respFileType
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The file type detected in the response direction
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: respArchFiles
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The file information extracted from files detected in response direction
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: httpXForwardedForIp
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The x-forwarded-for IP used by the network appliance
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: httpXForwardedForPort
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The patched HTTP server port when the network appliance selects
+    an x-forwarded-for IP address to use
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: resolvedUrlIp
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The IP address of the FQDN
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: resolvedUrlPort
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The HTTP server port
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: respMethod
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The response method
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: msgId
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The service provider message ID
+  DL_Type: string
+  DL_CommonKey:
+  - EmailMessageID
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailMsgSubject
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The email subject
+  DL_Type: string
+  DL_CommonKey:
+  - EmailSubject
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: suser
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The email sender
+  DL_Type: string
+  DL_CommonKey:
+  - EmailSender
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: duser
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The email recipient
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailRecipient
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requests
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The URLs of the request
+  DL_Type: dynamic
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: direction
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The object transfer direction
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: archFiles
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The file information extracted from detected files
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: hostName
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The host name
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  - HostDomain
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: tlsSelectedCipher
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The selected cipher of the TLS protocol
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertCommonName
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The certificate common name
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  - HostDomain
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: sslCertIssuer
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The issuer of the certificate
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertValidFrom
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The certificate validity start time
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertValidUntil
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The certificate validity end time
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertSerialNumber
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The certificate serial number
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertSANs
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The Subject Alternative Name of the certificate
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertFingerprint
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The certificate fingerprint
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ja3Hash
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The JA3 hash
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ja3sHash
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The JA3S hash
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tlsJA3SFingerprint
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The raw JA3S
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ftpTrans
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The transaction information of the FTP protocol
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dnsQueryType
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The record type requested by the DNS protocol
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectIps
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The IP address resolved by the DNS protocol
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: reqAppVersion
+  ProductCode:
+  - xns
+  Description_EN: The client application version number
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: respAppVersion
+  ProductCode:
+  - xns
+  Description_EN: The server application version number
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: reqScannedBytes
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The data volume transmitted by the client (in bytes)
+  DL_Type: string
+  DL_Searchable: true
+- Name: respScannedBytes
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The data volume transmitted by the server (in bytes)
+  DL_Type: string
+  DL_Searchable: true
+- Name: reqDataSize
+  ProductCode:
+  - xns
+  - qpf
+  Description_EN: The data volume transmitted over the transport layer by the client
+    (in bytes)
+  DL_Type: string
+  DL_Searchable: true
+- Name: respDataSize
+  ProductCode:
+  - xns
+  - qpf
+  Description_EN: The data volume transmitted over the transport layer by the server
+    (in bytes)
+  DL_Type: string
+  DL_Searchable: true
+- Name: clientGroup
+  ProductCode:
+  - xns
+  - pdi
+  Description_EN: The client IP network group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: serverGroup
+  ProductCode:
+  - xns
+  - pdi
+  Description_EN: The server IP network group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: httpXForwardedForGroup
+  ProductCode:
+  - xns
+  - pdi
+  Description_EN: The X-Forwarded-For IP network group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: resolvedUrlGroup
+  ProductCode:
+  - xns
+  - pdi
+  Description_EN: The IP address FQDN network group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: clientHost
+  ProductCode:
+  - xns
+  Description_EN: The client IP host name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serverHost
+  ProductCode:
+  - xns
+  Description_EN: The server IP host name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: httpXForwardedForHost
+  ProductCode:
+  - xns
+  Description_EN: The X-Forwarded-For IP host name
+  DL_Type: string
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: e2eLatency
+  ProductCode:
+  - sig
+  Description_EN: The end-to-end traffic latency time, in milliseconds
+  DL_Type: string
+  DL_Searchable: true
+- Name: rawDataStr
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The raw data string that contains additional information
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: dvc
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The IP address of the Deep Discovery Inspector or Virtual Network
+    Sensor appliance
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dvchost
+  ProductCode:
+  - pdi
+  - xns
+  - qpf
+  Description_EN: The network device hostname
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudAppCat
+  ProductCode:
+  - sig
+  Description_EN: The category of the event in Cloud Reputation Service
+  DL_Type: string
+  DL_Searchable: true
+- Name: eventId
+  ProductCode:
+  - xns
+  - pdi
+  - qpf
+  - vpc
+  Description_EN: The event ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: policyName
+  ProductCode:
+  - qpf
+  Description_EN: The name of the triggered policy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sUser1
+  ProductCode:
+  - qpf
+  Description_EN: The latest sign-in user of the source
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dUser1
+  ProductCode:
+  - qpf
+  Description_EN: The latest logon user of the destination
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vsysName
+  ProductCode:
+  - qpf
+  Description_EN: The Palo Alto Networks virtual system of the session
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcZone
+  ProductCode:
+  - qpf
+  Description_EN: The source zone of the Palo Alto Networks firewall session
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstZone
+  ProductCode:
+  - qpf
+  Description_EN: The destination zone of the Palo Alto Networks firewall session
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cnt
+  ProductCode:
+  - qpf
+  Description_EN: The total number of logs
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sessionElapsedTime
+  ProductCode:
+  - qpf
+  Description_EN: The elapsed time of the session (in seconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: srcLocation
+  ProductCode:
+  - qpf
+  Description_EN: The source country
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstLocation
+  ProductCode:
+  - qpf
+  Description_EN: The destination country
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sessionEndReason
+  ProductCode:
+  - qpf
+  Description_EN: The reason why a session was terminated
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sOSName
+  ProductCode:
+  - qpf
+  Description_EN: The source OS
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: shost
+  ProductCode:
+  - qpf
+  Description_EN: The source hostname
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: smac
+  ProductCode:
+  - qpf
+  Description_EN: The source MAC address
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dOSName
+  ProductCode:
+  - qpf
+  Description_EN: The destination OS
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dhost
+  ProductCode:
+  - qpf
+  Description_EN: The destination hostname
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dmac
+  ProductCode:
+  - qpf
+  Description_EN: The destination MAC address
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vpcFlowLogsVersion
+  ProductCode:
+  - vpc
+  Description_EN: The VPC Flow Logs version (version)
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: cloudAccountId
+  ProductCode:
+  - vpc
+  Description_EN: The owner AWS account ID of the source network interface (account-id)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: networkInterfaceId
+  ProductCode:
+  - vpc
+  Description_EN: The network interface ID (interface-id)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: ipProto
+  ProductCode:
+  - vpc
+  Description_EN: The protocol number (protocol)
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: packets
+  ProductCode:
+  - vpc
+  Description_EN: The number of transmitted data packets
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: bytes
+  ProductCode:
+  - vpc
+  Description_EN: The number of transmitted data bytes
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: action
+  ProductCode:
+  - vpc
+  Description_EN: The traffic processing action
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: logStatus
+  ProductCode:
+  - vpc
+  Description_EN: The VPC Flow Log status
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vpcId
+  ProductCode:
+  - vpc
+  Description_EN: The VPC ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: subnetId
+  ProductCode:
+  - vpc
+  Description_EN: The subnet ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: instanceId
+  ProductCode:
+  - vpc
+  Description_EN: The instance ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: tcpFlags
+  ProductCode:
+  - vpc
+  Description_EN: The bitmask value of the FIN/SYN/RST/SYN-ACK TCP flags
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: flowType
+  ProductCode:
+  - vpc
+  Description_EN: The type of traffic (type)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktSrcAddr
+  ProductCode:
+  - vpc
+  Description_EN: The packet level source IP
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktDstAddr
+  ProductCode:
+  - vpc
+  Description_EN: The packet level destination IP
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: regionCode
+  ProductCode:
+  - vpc
+  Description_EN: The network interface AWS Region
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: azId
+  ProductCode:
+  - vpc
+  Description_EN: The Availability Zone ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: subLocationType
+  ProductCode:
+  - vpc
+  Description_EN: The sublocation type
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: subLocationId
+  ProductCode:
+  - vpc
+  Description_EN: The sublocation ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktSrcCloudServiceName
+  ProductCode:
+  - vpc
+  Description_EN: The subset IP address range name for cloud service source IP (pkt-src-aws-service)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktDstCloudServiceName
+  ProductCode:
+  - vpc
+  Description_EN: The subset IP address range name for cloud service destination IP
+    (pkt-dst-aws-service)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: flowDirection
+  ProductCode:
+  - vpc
+  Description_EN: The network interface traffic direction
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: trafficPath
+  ProductCode:
+  - vpc
+  Description_EN: The egress traffic path number
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isPrivateApp
+  ProductCode:
+  - sig
+  Description_EN: Whether the requested application is private
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: originUUID
+  ProductCode:
+  - ALL
+  Description_EN: The UUID of the original event which matches the Security Analytics
+    Engine filter
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: originEventSourceType
+  ProductCode:
+  - ALL
+  Description_EN: The source type of the original event which matches the Security
+    Analytics Engine filter
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isRetroScan
+  ProductCode:
+  - ALL
+  Description_EN: Whether the event matches the Security Analytics Engine filter
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

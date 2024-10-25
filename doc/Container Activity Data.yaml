@@ -1,0 +1,356 @@
+- Name: endpointHostName
+  ProductCode:
+  - scs
+  Description_EN: The host name of the container or node
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventId
+  ProductCode:
+  - scs
+  Description_EN: Event type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSubId
+  ProductCode:
+  - scs
+  Description_EN: The access type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventTime
+  ProductCode:
+  - scs
+  Description_EN: The time the agent detected the event
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFilePath
+  ProductCode:
+  - scs
+  Description_EN: The file path of the target process image or target file
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFilePath
+  ProductCode:
+  - scs
+  Description_EN: The source file path
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tags
+  ProductCode:
+  - ALL
+  - scs
+  Description_EN: The detected ID based on the alert filter
+  DL_Type: dynamic
+  DL_CommonKey:
+  - Technique
+  - Tactic
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: uuid
+  ProductCode:
+  - ALL
+  Description_EN: Unique key of the log
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: productCode
+  ProductCode:
+  - ALL
+  Description_EN: The internal product code
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: filterRiskLevel
+  ProductCode:
+  - ALL
+  Description_EN: Top-level risk level of the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSourceType
+  ProductCode:
+  - ALL
+  Description_EN: The event source type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: logReceivedTime
+  ProductCode:
+  - ALL
+  Description_EN: The time when the XDR log was received
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pver
+  ProductCode:
+  - scs
+  Description_EN: The product version
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clusterId
+  ProductCode:
+  - scs
+  Description_EN: The cluster ID of the container
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: clusterName
+  ProductCode:
+  - scs
+  Description_EN: The cluster name of the container
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: k8sNamespace
+  ProductCode:
+  - scs
+  Description_EN: The Kubernetes namespace of the container
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: k8sPodName
+  ProductCode:
+  - scs
+  Description_EN: The Kubernetes pod name of the container
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: k8sPodId
+  ProductCode:
+  - scs
+  Description_EN: The Kubernetes pod ID of the container
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: containerName
+  ProductCode:
+  - scs
+  Description_EN: The Kubernetes container name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: containerId
+  ProductCode:
+  - scs
+  Description_EN: The Kubernetes container ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: containerImage
+  ProductCode:
+  - scs
+  Description_EN: The Kubernetes container image
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: containerImageDigest
+  ProductCode:
+  - scs
+  Description_EN: The Kubernetes container image digest
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: ruleIdStr
+  ProductCode:
+  - scs
+  Description_EN: The rule ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: policyId
+  ProductCode:
+  - scs
+  Description_EN: The policy ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: policyName
+  ProductCode:
+  - scs
+  Description_EN: The name of the triggered policy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: processCmd
+  ProductCode:
+  - scs
+  Description_EN: Command line entry of subject process
+  DL_Type: string
+  DL_CommonKey:
+  - CLICommand
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentCmd
+  ProductCode:
+  - scs
+  Description_EN: Command line entry of parent process
+  DL_Type: string
+  DL_CommonKey:
+  - CLICommand
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFilePath
+  ProductCode:
+  - scs
+  Description_EN: The file path of the subject process
+  DL_Type: string
+  DL_CommonKey:
+  - ProcessFullPath
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFilePath
+  ProductCode:
+  - scs
+  Description_EN: The file path of the parent process
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processLaunchTime
+  ProductCode:
+  - scs
+  Description_EN: The time the subject process was launched
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: processName
+  ProductCode:
+  - scs
+  Description_EN: The image name of the process that triggered the event
+  DL_Type: string
+  DL_CommonKey:
+  - ProcessName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: parentName
+  ProductCode:
+  - scs
+  Description_EN: The image name of the parent process
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: parentLaunchTime
+  ProductCode:
+  - scs
+  Description_EN: The time when the parent process was launched
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: processPid
+  ProductCode:
+  - scs
+  Description_EN: The PID of the subject process
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentPid
+  ProductCode:
+  - scs
+  Description_EN: The PID of the parent process
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dpt
+  ProductCode:
+  - scs
+  Description_EN: The destination port number
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dst
+  ProductCode:
+  - scs
+  Description_EN: The destination IP address
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: spt
+  ProductCode:
+  - scs
+  Description_EN: The source port number
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: src
+  ProductCode:
+  - scs
+  Description_EN: The source address
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: proto
+  ProductCode:
+  - scs
+  Description_EN: The protocol type
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: objectUser
+  ProductCode:
+  - scs
+  Description_EN: The owner name of the target process or the login user name
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: osName
+  ProductCode:
+  - scs
+  Description_EN: The host operating system name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false

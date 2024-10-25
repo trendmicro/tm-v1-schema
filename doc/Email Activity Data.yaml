@@ -1,0 +1,866 @@
+- Name: uuid
+  ProductCode:
+  - ALL
+  Description_EN: Unique key of the log entry
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventTime
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The time the agent detected the event
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tags
+  ProductCode:
+  - ALL
+  Description_EN: The detected technique ID based on the alert filter
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: productCode
+  ProductCode:
+  - ALL
+  Description_EN: Product code of the product that sent the log
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: filterRiskLevel
+  ProductCode:
+  - ALL
+  Description_EN: Top-level risk level of the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: pname
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Internal product code (depricated)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: msgUuid
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Internal email UUID to identify each email message
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailbox
+  ProductCode:
+  - sca
+  - xms
+  Description_EN: Primary email address
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: mailDirection
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Email traffic direction
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailFromAddresses
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Mail from address in email header
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailSender
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: mailToAddresses
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Mail To address in the email header
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailRecipient
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailMsgSubject
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Email subject
+  DL_Type: string
+  DL_CommonKey:
+  - EmailSubject
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailMsgId
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Email ID
+  DL_Type: string
+  DL_CommonKey:
+  - EmailMessageID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: mailCcAddresses
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Mail CC address in the email header
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailRecipient
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailBccAddresses
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: Mail BCC address in the email header
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailRecipient
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSenderIp
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Email sender IP address
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: mailAttachmentHash
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Hash value of the email attachment
+  DL_Type: string
+  DL_CommonKey:
+  - FileMD5
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailUrlsRealLink
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: URL extracted from the email content
+  DL_Type: dynamic
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSourceDomain
+  ProductCode:
+  - sca
+  - xms
+  Description_EN: Email domain of the sender
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: mailUrlsVisibleLink
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: URL extracted from the email content
+  DL_Type: dynamic
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: orgId
+  ProductCode:
+  - sca
+  - xms
+  Description_EN: The organization ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileName
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: File name of the email attachment
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentSha1
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: SHA-1 hash of the email attachment
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentMd5
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: MD5 hash of the email attachment
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileMD5
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentSha256
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: SHA-256 hash of the email attachment
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentUrls
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The URLs and URL sources extracted from the email attachment
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileHashes
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: SHA-1 hash of the email attachment
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileHashSha256s
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: SHA-256 hash of the email attachment
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpOriginalRecipients
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: Original email recipients in the SMTP envelope
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpRecipients
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: Email recipients in the SMTP envelope after scanning
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logReceivedTime
+  ProductCode:
+  - ALL
+  Description_EN: The time when the XDR log was received
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyTreePath
+  ProductCode:
+  - ALL
+  Description_EN: The policy tree path (endpoint only)
+  DL_Type: string
+  DL_Searchable: true
+- Name: scanType
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Manual or real-time scan
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailFolder
+  ProductCode:
+  - sca
+  - xms
+  Description_EN: The email folder name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: msgUuidChain
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The internal UUID chain for each email in Trend Micro Feedback Engine
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailMetaTraceId
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The trace ID generated by Trend Micro Feedback Engine
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mExternalUid
+  ProductCode:
+  - sca
+  - xms
+  Description_EN: The unique ID of the email
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailTagHashRawSignature
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The raw signature hash of the email
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailXMailer
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The X-Mailer header of the email
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailUserAgent
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The user agent
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailFeatureId
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The email protocol detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailRuleId
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The rule ID of the matched rule detected by Trend Micro Anti-Spam
+    Engine
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailTagHash
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The email tag hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailTextHash
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The email text hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailUrlHash
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The email URL hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailHeaderHash
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The email header hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailScore
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The score assigned to the email by Trend Micro Anti-Spam Engine
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailWantedHeaderName
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The WantedHeader key name detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailWantedHeaderValue
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The WantedHeader key value detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailReplyToAddresses
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The Reply To address detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpFromAddresses
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The sender email address
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailThreatType
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The type of email detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailWholeHeader
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The name and email address of the sender in the From header detected
+    by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailHelo
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The HELO command detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentTlsh
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The TLSH hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentSize
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The attachment file size
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentSource
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The attachment source
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpTls
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The SMTP TLS version number
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileTlshes
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The TLSH hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventSourceType
+  ProductCode:
+  - ALL
+  Description_EN: The event source type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: mailMetaText
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The postman meta text detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailEurekaRuleIds
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The list of rule IDs scanned by Eureka and detected by Trend Micro
+    Anti-Spam Engine
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: scanTs
+  ProductCode:
+  - sca
+  - xms
+  Description_EN: The time the email was scanned
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailCacheId
+  ProductCode:
+  - sca
+  - xms
+  Description_EN: The internal email cache ID to identify emails in the same group
+    mails
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailReturnPath
+  ProductCode:
+  - sca
+  - xms
+  Description_EN: The hidden email header that indicates where bounced messages are
+    sent
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: mailUrlsOriginalLink
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The original URL extracted from the email content
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: applicationId
+  ProductCode:
+  - xca
+  Description_EN: The application ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientIp
+  ProductCode:
+  - xca
+  Description_EN: The client IP
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: correlationId
+  ProductCode:
+  - xca
+  Description_EN: The correlation ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: extraInfo
+  ProductCode:
+  - xca
+  Description_EN: The additional information about the sharing action
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isExternalAccess
+  ProductCode:
+  - xca
+  Description_EN: Whether the cmdlet was run by an external user (True=external user,
+    False=internal user in your organization)
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: targetType
+  ProductCode:
+  - xca
+  Description_EN: The type of object that was accessed or modified
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: target
+  ProductCode:
+  - xca
+  Description_EN: The object accessed by a user or application
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actionName
+  ProductCode:
+  - xca
+  Description_EN: The user or service action
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: orgName
+  ProductCode:
+  - xca
+  Description_EN: The tenant name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: originatingServer
+  ProductCode:
+  - xca
+  Description_EN: The server where the operation originated
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parameters
+  ProductCode:
+  - xca
+  Description_EN: The names and values of all parameters used in the cmdlet identified
+    in the Operations property
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: recordType
+  ProductCode:
+  - xca
+  Description_EN: The operation type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actResult
+  ProductCode:
+  - xca
+  Description_EN: The action result
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isSensitiveInfo
+  ProductCode:
+  - xca
+  Description_EN: Whether the event contains sensitive information
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userSessionId
+  ProductCode:
+  - xca
+  Description_EN: The user session ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudStorageId
+  ProductCode:
+  - xca
+  Description_EN: The file or folder location ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudStorageName
+  ProductCode:
+  - xca
+  Description_EN: The file or folder URL
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileExt
+  ProductCode:
+  - xca
+  Description_EN: The file extension (If the object is a folder, there is no value
+    for this field.)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileName
+  ProductCode:
+  - xca
+  Description_EN: The file or folder name
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: userAgent
+  ProductCode:
+  - xca
+  Description_EN: The user agent
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: principalName
+  ProductCode:
+  - xca
+  Description_EN: The User Principal Name
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userType
+  ProductCode:
+  - xca
+  Description_EN: The user type
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: service
+  ProductCode:
+  - xca
+  Description_EN: The Microsoft 365 service where the activity occurred
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventName
+  ProductCode:
+  - xca
+  Description_EN: The event type
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSubName
+  ProductCode:
+  - xca
+  Description_EN: The event type sub-name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventId
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  - xca
+  Description_EN: The event ID
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true

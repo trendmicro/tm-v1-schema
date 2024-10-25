@@ -1,0 +1,463 @@
+- Name: uuid
+  ProductCode:
+  - ALL
+  Description_EN: The unique key of the log entry
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventSourceType
+  ProductCode:
+  - ALL
+  Description_EN: The event source type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventTime
+  ProductCode:
+  - aad
+  Description_EN: The time the identity provider detected the event
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tags
+  ProductCode:
+  - ALL
+  Description_EN: The attack technique ID detected by Trend Vision One based on the
+    alert filter
+  DL_Type: dynamic
+  DL_CommonKey:
+  - Technique
+  - Tactic
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: logReceivedTime
+  ProductCode:
+  - ALL
+  Description_EN: The time when the XDR log was received
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: productCode
+  ProductCode:
+  - ALL
+  - aad
+  Description_EN: The internal product code of the identity provider (aad=Microsoft
+    Entra ID, opa=Microsoft Active Directory)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: filterRiskLevel
+  ProductCode:
+  - ALL
+  Description_EN: The top-level risk level of the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventId
+  ProductCode:
+  - aad
+  Description_EN: The identity provider event ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventName
+  ProductCode:
+  - aad
+  Description_EN: The identity provider event name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: idpName
+  ProductCode:
+  - aad
+  Description_EN: The identity provider
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: idpId
+  ProductCode:
+  - aad
+  Description_EN: The internal product code of the identity provider
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationCountry
+  ProductCode:
+  - aad
+  Description_EN: The country where the event happened
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationCity
+  ProductCode:
+  - aad
+  Description_EN: The city where the event happened
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationState
+  ProductCode:
+  - aad
+  Description_EN: The state where the event happened
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationLongitude
+  ProductCode:
+  - aad
+  Description_EN: The longitude of the event location
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationLatitude
+  ProductCode:
+  - aad
+  Description_EN: The latitude of the event location
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientId
+  ProductCode:
+  - aad
+  Description_EN: The unique client device ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientDisplayName
+  ProductCode:
+  - aad
+  Description_EN: The client display name
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientOS
+  ProductCode:
+  - aad
+  Description_EN: The client OS
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientBrowser
+  ProductCode:
+  - aad
+  Description_EN: The client browser
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientApp
+  ProductCode:
+  - aad
+  Description_EN: The app that the client accessed
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ipAddress
+  ProductCode:
+  - aad
+  Description_EN: The client IP
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userId
+  ProductCode:
+  - aad
+  Description_EN: The user ID
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userDisplayName
+  ProductCode:
+  - aad
+  Description_EN: The user display name
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: statusDetail
+  ProductCode:
+  - aad
+  Description_EN: The additional information about sign-in status
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: status
+  ProductCode:
+  - aad
+  Description_EN: The sign-in status result
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: statusReason
+  ProductCode:
+  - aad
+  Description_EN: The sign-in status
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: targetResourceId
+  ProductCode:
+  - aad
+  Description_EN: The target resource ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: targetResourceDisplayName
+  ProductCode:
+  - aad
+  Description_EN: The target resource display name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestMethod
+  ProductCode:
+  - aad
+  Description_EN: The sign-in authentication method
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventAdditionalDetails
+  ProductCode:
+  - aad
+  Description_EN: The raw data string that contains additional information
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventCategory
+  ProductCode:
+  - aad
+  Description_EN: The resource category targeted by the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: initiatedByAppId
+  ProductCode:
+  - aad
+  Description_EN: The resource category targeted by the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: initiatedByAppDisplayName
+  ProductCode:
+  - aad
+  Description_EN: The application display name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: initiatedByServicePrincipalId
+  ProductCode:
+  - aad
+  Description_EN: The unique ID of the service principal
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: initiatedByServicePrincipalName
+  ProductCode:
+  - aad
+  Description_EN: The unique ID of the service principal
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: initiatedByUserId
+  ProductCode:
+  - aad
+  Description_EN: The unique ID of the user who initiated the event
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: initiatedByUserDisplayName
+  ProductCode:
+  - aad
+  Description_EN: The user display name
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: initiatedByUserHomeTenantId
+  ProductCode:
+  - aad
+  Description_EN: The tenant ID of the user
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: initiatedByUserHomeTenantName
+  ProductCode:
+  - aad
+  Description_EN: The tenant ID of the user
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: initiatedByUserIpAddress
+  ProductCode:
+  - aad
+  Description_EN: The client IP of the user
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: initiatedByUserPrincipalName
+  ProductCode:
+  - aad
+  Description_EN: The User Principal Name of the user
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: loggedByService
+  ProductCode:
+  - aad
+  Description_EN: The service that initiated the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: operationType
+  ProductCode:
+  - aad
+  Description_EN: The operation performed in the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: result
+  ProductCode:
+  - aad
+  Description_EN: The event result
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: resultReason
+  ProductCode:
+  - aad
+  Description_EN: The cause of event failure or timeout
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: targetResources
+  ProductCode:
+  - aad
+  Description_EN: The targeted resource of the event
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userAgent
+  ProductCode:
+  - aad
+  Description_EN: The user agent
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pname
+  ProductCode:
+  - aad
+  Description_EN: The internal product ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actionName
+  ProductCode:
+  - aad
+  Description_EN: The user or service action
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: correlationId
+  ProductCode:
+  - aad
+  Description_EN: The correlation id
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyTreePath
+  ProductCode:
+  - ALL
+  Description_EN: The policy tree path (endpoint only)
+  DL_Type: string
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: principalName
+  ProductCode:
+  - aad
+  Description_EN: The User Principal Name
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logBatchId
+  ProductCode:
+  - aad
+  Description_EN: The batch data retrieval process ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: orgId
+  ProductCode:
+  - aad
+  Description_EN: The organization ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tenantId
+  ProductCode:
+  - aad
+  Description_EN: The Microsoft Entra ID Tenant ID of the organization
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
