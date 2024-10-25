@@ -1,0 +1,2685 @@
+- Name: endpointGuid
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: Host GUID of the endpoint on which the event was detected
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointHostName
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The host name of the endpoint on which the event was detected
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointIp
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: IP address of the endpoint on which the event was detected
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventId
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: Event type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSubId
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The access type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventTime
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The time the agent detected the event
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: hostName
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The domain name
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  - HostDomain
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: integrityLevel
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The integrity level of a process
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logonUser
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The logon user name
+  DL_Type: dynamic
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppName
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: Name of the app involved in the AMSI event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectCmd
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: Command line entry of target process
+  DL_Type: string
+  DL_CommonKey:
+  - CLICommand
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileHashMd5
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The md5 hash of target process image or target file
+  DL_Type: string
+  DL_CommonKey:
+  - FileMD5
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileHashSha1
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The SHA1 hash of target process image or target file
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileHashSha256
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The SHA256 hash of target process image or target file
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFilePath
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The file path of the target process image or target file
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectHostName
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: Server name where Internet event was detected
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: httpReferer
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The HTTP header referer
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectIntegrityLevel
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: Integrity level of target process
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectIp
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: IP address of internet event
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectIps
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: IP address list of internet event
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectPid
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The PID of target process
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectPort
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The port number used by internet event
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectProcessHashId
+  ProductCode:
+  - sao
+  - xes
+  - sds
+  Description_EN: FNV of target process
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRawDataStr
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The data contents of the AMSI event
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRegistryData
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The registry value data
+  DL_Type: string
+  DL_CommonKey:
+  - RegistryValueData
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRegistryKeyHandle
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The registry key
+  DL_Type: string
+  DL_CommonKey:
+  - RegistryKey
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRegistryValue
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: Registry value name
+  DL_Type: string
+  DL_CommonKey:
+  - RegistryValue
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSigner
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: Certificate signer of object process or file
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSignerValid
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: Validity of certificate signer
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSignerFlagsAdhoc
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of object process or file signature adhoc flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSignerFlagsRuntime
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of object process or file signature runtime flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSignerFlagsLibValid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of object process or file signature library validation
+    flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileExtendedAttribute
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The extended attributes of the file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSubTrueType
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: File object's true sub-type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectTrueType
+  ProductCode:
+  - sao
+  - xes
+  - sds
+  Description_EN: File object's true major type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectUser
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  - ddr
+  Description_EN: The owner name of the target process or the login user name
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: parentCmd
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: Command line entry of parent process
+  DL_Type: string
+  DL_CommonKey:
+  - CLICommand
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileHashMd5
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The md5 hash of parent process
+  DL_Type: string
+  DL_CommonKey:
+  - FileMD5
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileHashSha1
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The SHA1 hash of parent process
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileHashSha256
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The SHA256 hash of parent process
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFilePath
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The file path of the parent process
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentPid
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The PID of the parent process
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pname
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: Internal product ID (Deprecated, use productCode)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: processCmd
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The command line entry of the subject process
+  DL_Type: string
+  DL_CommonKey:
+  - CLICommand
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileHashMd5
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The md5 hash of subject process image
+  DL_Type: string
+  DL_CommonKey:
+  - FileMD5
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileHashSha1
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The SHA1 hash of subject process image
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileHashSha256
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The SHA256 hash of subject process image
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFilePath
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The file path of the subject process
+  DL_Type: string
+  DL_CommonKey:
+  - ProcessFullPath
+  - ProcessName
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processHashId
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The FNV of subject process
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processName
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The image name of the process that triggered the event
+  DL_Type: string
+  DL_CommonKey:
+  - ProcessName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processPid
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The PID of the subject process
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processUser
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The owner name of subject process image
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: rawDataStr
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: Windows event raw contents
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: request
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: Request URL
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dpt
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  - ddr
+  Description_EN: The destination port number
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dst
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  - ddr
+  Description_EN: The destination IP address
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: spt
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  - ddr
+  Description_EN: The source port number
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: src
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  - ddr
+  Description_EN: The source address
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcFileHashMd5
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The md5 hash of source file
+  DL_Type: string
+  DL_CommonKey:
+  - FileMD5
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileHashSha1
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The SHA1 hash of source file
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileHashSha256
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The SHA256 hash of source file
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFilePath
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The source file path
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tags
+  ProductCode:
+  - ALL
+  Description_EN: The detected technique ID based on the alert filter
+  DL_Type: dynamic
+  DL_CommonKey:
+  - Technique
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: uuid
+  ProductCode:
+  - ALL
+  Description_EN: Unique key of the log
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: winEventId
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: Event ID of Windows event
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: productCode
+  ProductCode:
+  - ALL
+  Description_EN: The internal product code
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: filterRiskLevel
+  ProductCode:
+  - ALL
+  Description_EN: Top-level risk level of the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventDataIpAddress
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The IP address for Windows event 4624 which is "An account was successfully
+    logged on"
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataLogonType
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The logon type for Windows event 4624 which is "An account was successfully
+    logged on"
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataScriptBlockText
+  ProductCode:
+  - sao
+  Description_EN: Windows event 4104, Creating Scriptblock text
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataOperation
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: Windows event 11
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectBmData
+  ProductCode:
+  - sds
+  - xes
+  Description_EN: The data of BM event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osDescription
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The OS version
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventSourceType
+  ProductCode:
+  - ALL
+  Description_EN: The event source type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: logReceivedTime
+  ProductCode:
+  - ALL
+  Description_EN: The time when the XDR log was received
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyTreePath
+  ProductCode:
+  - ALL
+  Description_EN: The policy tree path
+  DL_Type: string
+  DL_Searchable: true
+- Name: instanceId
+  ProductCode:
+  - sds
+  - xes
+  Description_EN: The virtual machine instance ID on the cloud platform
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudProvider
+  ProductCode:
+  - sds
+  - xes
+  Description_EN: The service provider of the cloud asset
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vpcId
+  ProductCode:
+  - sds
+  - xes
+  Description_EN: The virtual private cloud that contains the cloud asset
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: regionId
+  ProductCode:
+  - sds
+  - xes
+  Description_EN: The cloud asset region
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventHashId
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The event hash ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: firstSeen
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The first time the event was seen
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: lastSeen
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The last time the event was seen
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: endpointMacAddress
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The host MAC address
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userDomain
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The user domain name
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: timezone
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The host time zone
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pver
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The product version
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: plang
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The product language
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: pplat
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The product platform
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: osName
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The host operating system name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osVer
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The version of the host operating system
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osType
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The host operating system type
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sessionId
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The session ID
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: processUserDomain
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The process user domain
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processLaunchTime
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The time the subject process was launched
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: authId
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The authorization ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileHashId
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The file hash of the process
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processSigner
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The process file signer
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processSignerValid
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The validity of the process signer
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processSignerFlagsAdhoc
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of process signature adhoc flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processSignerFlagsRuntime
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of process signature runtime flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processSignerFlagsLibValid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of process signature library validation flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileSize
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The file size of the process file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileCreation
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The time the process file was created
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileModifiedTime
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The time the process file was modified
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processTrueType
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The true file type of the process
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processSubTrueType
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The true file subtype of the process
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileCurrentOwnerSid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The owner of the process file current security identifier
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileCurrentOwnerName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The current owner name of the process file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileOwnerSid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The security identifier of the process file owner
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileOwnerName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The process file owner name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileGroupSid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The security identifier of the process file group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileGroupName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The name of the process file user group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileSaclString
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The system access control list of the process file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileDaclString
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The discretionary access control list of the process file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileRemoteAccess
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The remote access to the process file
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentHashId
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The parent hash ID
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentName
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The image name of the parent process
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentSessionId
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The parent session ID
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: parentUser
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The type of user that executed the parent process
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentUserDomain
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The user domain of the parent process
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentLaunchTime
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The time when the parent process was launched
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentAuthId
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The parent authorization ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentIntegrityLevel
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The integrity level of a parent
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileHashId
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The parent file hash ID
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentSigner
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The signer of the parent file
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentSignerValid
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The validity of the parent signer
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentSignerFlagsAdhoc
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of parent process signature adhoc flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentSignerFlagsRuntime
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of parent process signature runtime flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentSignerFlagsLibValid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of parent process signature library validation flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileSize
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The file size of the parent file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileCreation
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The time the parent file was created
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileModifiedTime
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The time the parent file was modified
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentTrueType
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The true file type of the parent file
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentSubTrueType
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The true file subtype of the parent file
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileCurrentOwnerSid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The current security identifier owner of the parent file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileCurrentOwnerName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The current owner name of the parent file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileOwnerSid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The security identifier of the parent file owner
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileOwnerName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The owner name of the parent file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileGroupSid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The security identifier of the parent process file group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileGroupName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The name of the parent file user group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileSaclString
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The system access control list of the parent file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileDaclString
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The discretionary access control list of the parent file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileRemoteAccess
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The remote access to the parent file
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectHashId
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The object hash ID
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: objectFileSize
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  - ddr
+  Description_EN: The file size of the object file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectCurrentFileSize
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: Previous size of modified object file
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileCreation
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The time the object file was created
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileModifiedTime
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The time the object file was modified
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileCurrentOwnerSid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The current security identifier owner of the object file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileCurrentOwnerName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The current owner name of the object file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileOwnerSid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The security identifier of the object file owner
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileOwnerName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The object file owner name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileGroupSid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The security identifier of the object file group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileGroupName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The object file user group name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileSaclString
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The system access control list of the object file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileDaclString
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The discretionary access control list of the object file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileIsRemoteAccess
+  ProductCode:
+  - sao
+  - xes
+  - sds
+  Description_EN: The remote access to the object file
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFirstSeen
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The first time the object was seen
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLastSeen
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The last time the object was seen
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileHashId
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The source file hash ID
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: srcSigner
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The signer of the source file
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcSignerValid
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The validity of the source file signer
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcSignerFlagsAdhoc
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of source file signature adhoc flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcSignerFlagsRuntime
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of source file signature runtime flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcSignerFlagsLibValid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of source file signature library validation flags
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileSize
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  - ddr
+  Description_EN: The file size of the source file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileCreation
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The time the source file was created
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileModifiedTime
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The time the source file was modified
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcTrueType
+  ProductCode:
+  - sao
+  - xes
+  - sds
+  Description_EN: The true file type of the source file
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: srcSubTrueType
+  ProductCode:
+  - sao
+  - xes
+  - sds
+  Description_EN: The true file subtype of the source file
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: srcFileCurrentOwnerSid
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The current security identifier owner of the source file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileCurrentOwnerName
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The current owner name of the source file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileOwnerSid
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The security identifier of the source file owner
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileOwnerName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The source file owner name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileGroupSid
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The security identifier of the source file group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileGroupName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The source file user group name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileSaclString
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The system access control list of the source file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileDaclString
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The discretionary access control list of the source file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileIsRemoteAccess
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The remote access of the source file
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFirstSeen
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The first time the source file was seen
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcLastSeen
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The last time the source file was seen
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: publicSrc
+  ProductCode:
+  - xes
+  Description_EN: The public ip of the endpoint making the request
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: publicSpt
+  ProductCode:
+  - xes
+  Description_EN: The public port of the endpoint making the request
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: hookId
+  ProductCode:
+  - sao
+  Description_EN: The hook ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectThreadId
+  ProductCode:
+  - sao
+  Description_EN: The object process thread ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: moduleName
+  ProductCode:
+  - sao
+  Description_EN: The module where a hook procedure was set up
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: proxy
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The proxy address
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileHashId
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The object file hash ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileRemoteAccess
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The remote access for the object file
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: providerName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The name of the Windows event provider
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: providerGUID
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The GUID of the Windows event provider
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: channel
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The Windows event channel
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: rt
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The event time
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: rawDataSize
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The size of the Windows event log
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: correlationData
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The data for correlation
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataProviderPath
+  ProductCode:
+  - xes
+  Description_EN: The file path of the Windows event data provider
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataProviderName
+  ProductCode:
+  - xes
+  Description_EN: The name of the Windows event data provider
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataLogonProcessName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The name of the Windows event sign in process name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataAuthenticationPackageName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The authentication package name of the Windows event data
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataStatus
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The Windows event data status
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataSubStatus
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The Windows event data sub status
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataJobOwner
+  ProductCode:
+  - sao
+  Description_EN: The name of the account that initiated the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataProcessPath
+  ProductCode:
+  - sao
+  Description_EN: The process path that initiated the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTargetUserName
+  ProductCode:
+  - sao
+  Description_EN: The user name of the Windows event data target
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataConsumer
+  ProductCode:
+  - xes
+  Description_EN: The recipient of the reported event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataActionName
+  ProductCode:
+  - sao
+  - xes
+  Description_EN: The action performed
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTaskName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The task name logged by the Windows event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataUserContext
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The user context of the Windows event data
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataPath
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The path of the Windows event data
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectName
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The object name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSessionId
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The object session ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLaunchTime
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The object launch time of the Windows event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAuthId
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The object authorization ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectUserDomain
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The object user domain
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: objectUserGroup
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The user group name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcHashId
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The source hash ID
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: proto
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The protocol type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: app
+  ProductCode:
+  - xes
+  Description_EN: The layer-7 network protocol being exploited protocol
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectContentName
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The AMSI object content name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRawDataSize
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The raw data size of the Windows event object
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRunAsLocalAccount
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The "runas" command uses a local account
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectApiName
+  ProductCode:
+  - xes
+  Description_EN: The name of the executed API
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectApiHookNum
+  ProductCode:
+  - xes
+  Description_EN: The API hook number of the object
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: objectApiRvInNum
+  ProductCode:
+  - xes
+  Description_EN: The API telemetry return value
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRegistryRoot
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The Windows Registry Root ID
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: objectRegType
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  Description_EN: The Windows Registry Type ID
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: objectFileAttributesHashId
+  ProductCode:
+  - xes
+  Description_EN: The hash ID of the file attribute meta information
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileCurrentAttributes
+  ProductCode:
+  - xes
+  Description_EN: The original file attributes
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: objectFileAttributes
+  ProductCode:
+  - xes
+  Description_EN: The new file attributes
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: objectPosixPermission
+  ProductCode:
+  - sds
+  Description_EN: The current POSIX permission for the file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectCurrentPosixPermission
+  ProductCode:
+  - sds
+  Description_EN: The new POSIX permission file used in file events and CHMOD events
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectPosixPermissionHashId
+  ProductCode:
+  - sds
+  Description_EN: The POSIX permission hash ID
+  DL_Type: string
+  DL_Searchable: true
+- Name: nativeDeviceCharacteristics
+  ProductCode:
+  - xes
+  Description_EN: Additional driver device information
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: nativeDeviceType
+  ProductCode:
+  - xes
+  Description_EN: The underlying hardware type of the driver
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: nativeStorageDeviceBusType
+  ProductCode:
+  - xes
+  Description_EN: The bus type to which the device is connected
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: deviceType
+  ProductCode:
+  - xes
+  Description_EN: The disk drive type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: codeIntegrityOptionEnabled
+  ProductCode:
+  - xes
+  Description_EN: Whether the system enforced signed kernel loading according to DSE(driver
+    signature enforcement)
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: codeIntegrityOptionTestsign
+  ProductCode:
+  - xes
+  Description_EN: Whether the system bypassed DSE(driver signature enforcement) checks
+    and permitted loading of test-signed drivers
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: smbSharedName
+  ProductCode:
+  - xes
+  Description_EN: The shared folder name for the server that contains the files
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: importTableFileName
+  ProductCode:
+  - xes
+  Description_EN: The library file name which has imported functions
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: importTableFunctionName
+  ProductCode:
+  - xes
+  Description_EN: The imported function file name
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: importTable
+  ProductCode:
+  - xes
+  Description_EN: The imported table information
+  DL_Type: dynamic
+  DL_Searchable: true
+- Name: objectPipeName
+  ProductCode:
+  - xes
+  Description_EN: The named pipe of the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataServiceFileName
+  ProductCode:
+  - xes
+  Description_EN: The full file path of the service executable file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataServiceName
+  ProductCode:
+  - xes
+  Description_EN: The service name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudServiceName
+  ProductCode:
+  - xes
+  Description_EN: The cloud service
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudServiceApiName
+  ProductCode:
+  - xes
+  Description_EN: The cloud service API
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudIdentityId
+  ProductCode:
+  - xes
+  Description_EN: The Cloud Identity ID used for authorization
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudIdentityName
+  ProductCode:
+  - xes
+  Description_EN: The Cloud Identity name used for authorization
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudIdentityAccountId
+  ProductCode:
+  - xes
+  Description_EN: The Cloud Identity account ID used for authorization
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: instanceName
+  ProductCode:
+  - xes
+  Description_EN: The virtual machine that made the request
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: instanceAccountId
+  ProductCode:
+  - xes
+  Description_EN: The cloud account ID of the virtual machine that made the request
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: azId
+  ProductCode:
+  - xes
+  Description_EN: The Avaliability Zone ID of the virtual machine that made the request
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: subnetId
+  ProductCode:
+  - xes
+  Description_EN: The subnet ID of the virtual machine that made the request
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: networkInterfaceId
+  ProductCode:
+  - xes
+  Description_EN: The network interface of the virtual machine that made the request
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentUserGroupSids
+  ProductCode:
+  - xes
+  Description_EN: The SIDs of the parent user group
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processUserGroupSids
+  ProductCode:
+  - xes
+  Description_EN: The user group SIDs of the process
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectUserGroupSids
+  ProductCode:
+  - xes
+  Description_EN: The user group SIDs of the object
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: subSystem
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The sub system information
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventMessage
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The event message
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: messageType
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The message type
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleId
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The rule ID
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: additionalInfo
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The filter rule info
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLoginOutHashId
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The FNV of the object sign-in/sign-out meta
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLoginOutFirstSeen
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The first time the object sign-in/sign-out was seen
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLoginOutLastSeen
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The last time the object sign-in/sign-out was seen
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLoginOutMetaType
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The sign-in/sign-out meta
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLoginOutSourceAddress
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The sign-in/sign-out source IP
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLoginOutStatus
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The sign-in/sign-out status
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLoginOutFailureMessage
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The sign-in/sign-out error message
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLoginOutSessionId
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The sign-in/sign-out session ID
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectUri
+  ProductCode:
+  - ddr
+  Description_EN: Path of target file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileHash
+  ProductCode:
+  - ddr
+  Description_EN: The cryptographic hash of the target process image or file, with
+    the specific hash algorithm to be determined
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectServiceType
+  ProductCode:
+  - ddr
+  Description_EN: Type of target file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcUri
+  ProductCode:
+  - ddr
+  Description_EN: Path of source file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileHash
+  ProductCode:
+  - ddr
+  Description_EN: The cryptographic hash of the source process image or file, with
+    the specific hash algorithm to be determined.
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcServiceType
+  ProductCode:
+  - ddr
+  Description_EN: Type of source file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcUser
+  ProductCode:
+  - ddr
+  Description_EN: The owner name of the source process or the login user name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyIds
+  ProductCode:
+  - ddr
+  Description_EN: The Ids of DDR’s data policy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: metaSrcExtra
+  ProductCode:
+  - ddr
+  Description_EN: The meta for identifying the source of events
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileOriginalName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The original file name of the parent image
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileOriginalName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The original file name of the process image
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileOriginalName
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The original file name of the object image
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false

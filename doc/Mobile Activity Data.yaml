@@ -1,0 +1,527 @@
+- Name: endpointGuid
+  ProductCode:
+  - ams
+  Description_EN: Host GUID of the endpoint on which the event was detected
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointHostName
+  ProductCode:
+  - ams
+  Description_EN: The host name of the endpoint on which the event was detected
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointIp
+  ProductCode:
+  - ams
+  Description_EN: IP address of the endpoint on which the event was detected
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventId
+  ProductCode:
+  - ams
+  Description_EN: Event type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSubId
+  ProductCode:
+  - ams
+  Description_EN: The access type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventTime
+  ProductCode:
+  - ams
+  Description_EN: The time the agent detected the event
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logonUser
+  ProductCode:
+  - ams
+  Description_EN: The logon user name
+  DL_Type: dynamic
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectFileHashSha256
+  ProductCode:
+  - ams
+  Description_EN: The SHA256 hash of target process image or target file
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFilePath
+  ProductCode:
+  - ams
+  Description_EN: The file path of the target process image or target file
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pname
+  ProductCode:
+  - ams
+  Description_EN: Internal product ID (Deprecated, use productCode)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: request
+  ProductCode:
+  - ams
+  Description_EN: Request URL
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileHashSha256
+  ProductCode:
+  - ams
+  Description_EN: The SHA256 hash of source file
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFilePath
+  ProductCode:
+  - ams
+  Description_EN: The source file path
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tags
+  ProductCode:
+  - ALL
+  Description_EN: The detected technique ID based on the alert filter
+  DL_Type: dynamic
+  DL_CommonKey:
+  - Technique
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: uuid
+  ProductCode:
+  - ALL
+  Description_EN: Unique key of the log
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: productCode
+  ProductCode:
+  - ALL
+  Description_EN: The internal product code
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: filterRiskLevel
+  ProductCode:
+  - ALL
+  Description_EN: Top-level risk level of the event
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSourceType
+  ProductCode:
+  - ALL
+  Description_EN: The event source type
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: logReceivedTime
+  ProductCode:
+  - ALL
+  Description_EN: The time when the XDR log was received
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyTreePath
+  ProductCode:
+  - ALL
+  Description_EN: The policy tree path (endpoint only)
+  DL_Type: string
+  DL_Searchable: true
+- Name: marsAccount
+  ProductCode:
+  - ams
+  Description_EN: The account for Trend Micro Mobile Apps Reputation Service
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointModel
+  ProductCode:
+  - ams
+  Description_EN: The endpoint device model
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: userType
+  ProductCode:
+  - ams
+  Description_EN: The user type
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventHashId
+  ProductCode:
+  - ams
+  Description_EN: The event hash ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: firstSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the event started (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: lastSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the event ended (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pver
+  ProductCode:
+  - ams
+  Description_EN: The product version
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osName
+  ProductCode:
+  - ams
+  Description_EN: The host operating system name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: osVer
+  ProductCode:
+  - ams
+  Description_EN: The OS version
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectHashId
+  ProductCode:
+  - ams
+  Description_EN: The event object hash ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileSize
+  ProductCode:
+  - ams
+  Description_EN: The target file size
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileCreation
+  ProductCode:
+  - ams
+  Description_EN: The time the target file was created (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileModifiedTime
+  ProductCode:
+  - ams
+  Description_EN: The modification time of the target file (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFirstSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the object first appeared (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLastSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the object was last seen (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileHashId
+  ProductCode:
+  - ams
+  Description_EN: The source file hash ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileSize
+  ProductCode:
+  - ams
+  Description_EN: The source file size
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileCreation
+  ProductCode:
+  - ams
+  Description_EN: The time when the source file was created (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileModifiedTime
+  ProductCode:
+  - ams
+  Description_EN: The time when the source file was modified (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFirstSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the source file first appeared (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcLastSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the source file was last seen (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appOrSystemEventHashId
+  ProductCode:
+  - ams
+  Description_EN: The event object hash ID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appLabel
+  ProductCode:
+  - ams
+  Description_EN: The app name (if the subject is an app)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: appPkgName
+  ProductCode:
+  - ams
+  Description_EN: The app package name (if the subject is an app)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: appPublicKeySha1
+  ProductCode:
+  - ams
+  Description_EN: The SHA-1 hash of the app public key (if the subject is an app)
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: appSize
+  ProductCode:
+  - ams
+  Description_EN: The app size (in bytes) if the subject is an app
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appIsSystem
+  ProductCode:
+  - ams
+  Description_EN: Whether the app is a system app
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appVerCode
+  ProductCode:
+  - ams
+  Description_EN: The app version code (if the subject is an app)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: systemEventAttr
+  ProductCode:
+  - ams
+  Description_EN: The attributes of the system event (if the subject is a system event)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppDexSha256
+  ProductCode:
+  - ams
+  Description_EN: The SHA-256 hash of the app Dex value
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectAppInstalledTime
+  ProductCode:
+  - ams
+  Description_EN: The time of app installation (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppLabel
+  ProductCode:
+  - ams
+  Description_EN: The app name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectAppPackageName
+  ProductCode:
+  - ams
+  Description_EN: The app package name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectAppPublicKeySha1
+  ProductCode:
+  - ams
+  Description_EN: The SHA-1 hash of the app public key
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectAppSha256
+  ProductCode:
+  - ams
+  Description_EN: The SHA-256 hash of the app
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectAppSize
+  ProductCode:
+  - ams
+  Description_EN: The app size (in bytes)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppIsSystemApp
+  ProductCode:
+  - ams
+  Description_EN: Whether the app is a system app
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppVerCode
+  ProductCode:
+  - ams
+  Description_EN: The app version code
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppVerName
+  ProductCode:
+  - ams
+  Description_EN: The app version
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppBehavior
+  ProductCode:
+  - ams
+  Description_EN: The activity that occurred on the app
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppBehaviorAttr
+  ProductCode:
+  - ams
+  Description_EN: The attributes of the app activity
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSystemEventAttr
+  ProductCode:
+  - ams
+  Description_EN: The system event attributes
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: extraInfo
+  ProductCode:
+  - ams
+  Description_EN: The extra information about the app
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectCertAttr
+  ProductCode:
+  - ams
+  Description_EN: The SHA-1 hash of the certificate public key
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
