@@ -88,6 +88,7 @@
   - pts
   - scs
   - sss
+  - ddr
   Description_EN: The endpoint hostname or node where the event was detected
   DL_Type: string
   DL_CommonKey:
@@ -118,6 +119,7 @@
   - szn
   - pts
   - scs
+  - ddr
   Description_EN: The GUID of the agent which reported the detection
   DL_Type: string
   DL_CommonKey:
@@ -240,7 +242,8 @@
   - stp
   - ptn
   - sss
-  Description_EN: IP address of the endpoint on which the event was detected
+  - ddr
+  Description_EN: The IP address of the endpoint on which the event was detected
   DL_Type: dynamic
   DL_CommonKey:
   - IPv4
@@ -770,6 +773,7 @@
   - xms
   - qpf
   - mns
+  - ddr
   Description_EN: The name of the rule that triggered the event
   DL_Type: string
   DL_CommonKey:
@@ -828,6 +832,7 @@
   - sss
   - ams
   - mns
+  - ddr
   Description_EN: The event type
   DL_Type: string
   DL_CommonKey:
@@ -1449,6 +1454,7 @@
   - stp
   - sig
   - pts
+  - ddr
   Description_EN: The number of aggregated events
   DL_Type: string
   DL_CommonKey:
@@ -1894,6 +1900,7 @@
   - sss
   - ams
   - mns
+  - ddr
   Description_EN: The event ID from the logs of each product
   DL_Type: string
   DL_CommonKey:
@@ -2306,6 +2313,7 @@
   - sig
   - ams
   - szn
+  - ddr
   Description_EN: The host operating system name
   DL_Type: string
   DL_CommonKey:
@@ -3318,6 +3326,7 @@
   ProductCode:
   - sca
   - pts
+  - ddr
   Description_EN: The first time the XDR log appeared
   DL_Type: string
   DL_CommonKey:
@@ -3327,6 +3336,7 @@
   ProductCode:
   - sca
   - pts
+  - ddr
   Description_EN: The last time the XDR log appeared
   DL_Type: string
   DL_CommonKey:
@@ -3407,6 +3417,15 @@
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
+- Name: signInCountries
+  ProductCode:
+  - sca
+  - aad
+  Description_EN: The countries from which a user signed in
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: endpointModel
   ProductCode:
   - ams
@@ -3477,7 +3496,8 @@
   ProductCode:
   - ams
   - szn
-  Description_EN: OS version
+  - ddr
+  Description_EN: The OS version
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -3570,6 +3590,7 @@
 - Name: logonUsers
   ProductCode:
   - ALL
+  - ddr
   Description_EN: The telemetry events match the Security Analytics Engine filter,
     and logonUsers stores the logonUsers value of the original events
   DL_Type: dynamic
@@ -4702,6 +4723,46 @@
   ProductCode:
   - sss
   Description_EN: The file system UUID
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: duration
+  ProductCode:
+  - ddr
+  Description_EN: The detection interval (in milliseconds)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: aggregateUnit
+  ProductCode:
+  - ddr
+  Description_EN: The metric unit
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: aggregateFunction
+  ProductCode:
+  - ddr
+  Description_EN: The metric aggregator
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: uuids
+  ProductCode:
+  - ddr
+  Description_EN: The UUIDs of detection records
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: lineageId
+  ProductCode:
+  - ddr
+  Description_EN: The lineage ID
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
