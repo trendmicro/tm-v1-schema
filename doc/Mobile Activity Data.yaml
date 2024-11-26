@@ -2,6 +2,8 @@
   ProductCode:
   - ams
   Description_EN: Host GUID of the endpoint on which the event was detected
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   - EndpointID
@@ -11,6 +13,10 @@
   ProductCode:
   - ams
   Description_EN: The host name of the endpoint on which the event was detected
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
   DL_Type: string
   DL_CommonKey:
   - EndpointName
@@ -20,6 +26,10 @@
   ProductCode:
   - ams
   Description_EN: IP address of the endpoint on which the event was detected
+  Sample:
+  - 10.10.10.10
+  - ::1
+  - fe80::1
   DL_Type: dynamic
   DL_CommonKey:
   - IPv4
@@ -30,6 +40,7 @@
   ProductCode:
   - ams
   Description_EN: Event type
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -38,6 +49,10 @@
   ProductCode:
   - ams
   Description_EN: The access type
+  Sample:
+  - 2 - TELEMETRY_PROCESS_CREATE
+  - 101 - TELEMETRY_FILE_CREATE
+  - 204 - TELEMETRY_CONNECTION_CONNECT_OUTBOUND
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -46,6 +61,8 @@
   ProductCode:
   - ams
   Description_EN: The time the agent detected the event
+  Sample:
+  - 1657781088000
   DL_Type: real
   DL_CommonKey:
   DL_Searchable: true
@@ -54,6 +71,10 @@
   ProductCode:
   - ams
   Description_EN: The logon user name
+  Sample:
+  - root
+  - SISTEMA
+  - oracle
   DL_Type: dynamic
   DL_CommonKey:
   - UserAccount
@@ -63,6 +84,10 @@
   ProductCode:
   - ams
   Description_EN: The SHA256 hash of target process image or target file
+  Sample:
+  - 39109eef00821658893b45634fe2f4664f880da9242712df907f1327d4ceefb8
+  - 49fa3e206abf6a1f4546417dbe09f3f06b38847866a4a66de75bd90f39cb6c1c
+  - 0969321ad5a0923f0f03896ad2c10e49290515c44b721d773942a37f62a24893
   DL_Type: string
   DL_CommonKey:
   - FileSHA2
@@ -72,6 +97,10 @@
   ProductCode:
   - ams
   Description_EN: The file path of the target process image or target file
+  Sample:
+  - /usr/bin/bash
+  - /bin/bash
+  - /opt/folder1/probes/system/processes/processes
   DL_Type: string
   DL_CommonKey:
   - FileFullPath
@@ -82,6 +111,10 @@
   ProductCode:
   - ams
   Description_EN: Internal product ID (Deprecated, use productCode)
+  Sample:
+  - '2200'
+  - '751'
+  - '533'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -90,6 +123,10 @@
   ProductCode:
   - ams
   Description_EN: Request URL
+  Sample:
+  - http://10.10.10.10/fake/site
+  - http:///fake/param.cgi?action=list&group=Alarm.Status
+  - http://fake.com/
   DL_Type: string
   DL_CommonKey:
   - URL
@@ -99,6 +136,10 @@
   ProductCode:
   - ams
   Description_EN: The SHA256 hash of source file
+  Sample:
+  - 4eaa002225f4ea2dedcd19b7f1337d7c58ea7dd6d4571c12468dde95e6bcfdaf
+  - e30508e2088bc16b2a84233ced64995f738deaef2366ac6c86b35c93bbcd9d80
+  - 16b20a3ad485b4fbbe3028c7e743b226db21ea93cacc8b3d7d7d4a731bf02333
   DL_Type: string
   DL_CommonKey:
   - FileSHA2
@@ -108,6 +149,10 @@
   ProductCode:
   - ams
   Description_EN: The source file path
+  Sample:
+  - \\cnva-apps\megaclockprod\traveler\travelerprint.accdb
+  - c:\program files\common files\microsoft shared\clicktorun\officesvcmgrschedule.xml
+  - q:\a7_dbs\a4_pkg\a4_packaging.accde
   DL_Type: string
   DL_CommonKey:
   - FileFullPath
@@ -118,6 +163,10 @@
   ProductCode:
   - ALL
   Description_EN: The detected technique ID based on the alert filter
+  Sample:
+  - MITREV9.T1057
+  - MITREV9.T1059.003
+  - XSAE.F2924
   DL_Type: dynamic
   DL_CommonKey:
   - Technique
@@ -127,6 +176,8 @@
   ProductCode:
   - ALL
   Description_EN: Unique key of the log
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -135,6 +186,10 @@
   ProductCode:
   - ALL
   Description_EN: The internal product code
+  Sample:
+  - sds
+  - xes
+  - sao
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -143,6 +198,10 @@
   ProductCode:
   - ALL
   Description_EN: Top-level risk level of the event
+  Sample:
+  - info
+  - low
+  - medium
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -151,6 +210,8 @@
   ProductCode:
   - ALL
   Description_EN: The event source type
+  Sample:
+  - 1 - EVENT_SOURCE_TELEMETRY
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -159,6 +220,8 @@
   ProductCode:
   - ALL
   Description_EN: The time when the XDR log was received
+  Sample:
+  - 1656324260000
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -167,12 +230,16 @@
   ProductCode:
   - ALL
   Description_EN: The policy tree path (endpoint only)
+  Sample:
+  - policyname1/policyname2/policyname3
   DL_Type: string
   DL_Searchable: true
 - Name: marsAccount
   ProductCode:
   - ams
   Description_EN: The account for Trend Micro Mobile Apps Reputation Service
+  Sample:
+  - XDRv1
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -181,6 +248,8 @@
   ProductCode:
   - ams
   Description_EN: The endpoint device model
+  Sample:
+  - Pixel 3 XL
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -189,6 +258,10 @@
   ProductCode:
   - ams
   Description_EN: The user type
+  Sample:
+  - Microsoft Endpoint Manager
+  - Azure Active Directory
+  - VMware Workspace ONE UEM
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -197,6 +270,10 @@
   ProductCode:
   - ams
   Description_EN: The event hash ID
+  Sample:
+  - '-8406473586387535914'
+  - '138486453338666581'
+  - '-7909265752378976284'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -205,6 +282,8 @@
   ProductCode:
   - ams
   Description_EN: The time when the event started (in milliseconds)
+  Sample:
+  - 1656355418449
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -213,6 +292,8 @@
   ProductCode:
   - ams
   Description_EN: The time when the event ended (in milliseconds)
+  Sample:
+  - 1656355418449
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -221,6 +302,10 @@
   ProductCode:
   - ams
   Description_EN: The product version
+  Sample:
+  - 1.2.0.2752
+  - 1.0.345
+  - 1.2.0.2657
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -229,6 +314,10 @@
   ProductCode:
   - ams
   Description_EN: The host operating system name
+  Sample:
+  - Windows
+  - Linux
+  - macOS
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -237,6 +326,10 @@
   ProductCode:
   - ams
   Description_EN: The OS version
+  Sample:
+  - Amazon Linux 2
+  - 10.0.19044
+  - 10.0.19042
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -245,6 +338,11 @@
   ProductCode:
   - ams
   Description_EN: The event object hash ID
+  Sample:
+  - '8576474808125313522'
+  - '-599270888483415002'
+  - '2177864258235728980'
+  - '2432229257'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -253,6 +351,10 @@
   ProductCode:
   - ams
   Description_EN: The target file size
+  Sample:
+  - '0'
+  - '59456'
+  - '60'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -261,6 +363,10 @@
   ProductCode:
   - ams
   Description_EN: The time the target file was created (in milliseconds)
+  Sample:
+  - '1652131848000'
+  - '1577865600000'
+  - '1648279273000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -269,6 +375,10 @@
   ProductCode:
   - ams
   Description_EN: The modification time of the target file (in milliseconds)
+  Sample:
+  - '1652131848000'
+  - '1577865600000'
+  - '1648279273000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -277,6 +387,10 @@
   ProductCode:
   - ams
   Description_EN: The time when the object first appeared (in milliseconds)
+  Sample:
+  - '1656458063638'
+  - '1656260547165'
+  - '0'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -285,6 +399,10 @@
   ProductCode:
   - ams
   Description_EN: The time when the object was last seen (in milliseconds)
+  Sample:
+  - '1656458354730'
+  - '1656260580722'
+  - '0'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -293,6 +411,10 @@
   ProductCode:
   - ams
   Description_EN: The source file hash ID
+  Sample:
+  - '1102079405020678318'
+  - '-6926286289273504319'
+  - '8528955148329941480'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -301,6 +423,10 @@
   ProductCode:
   - ams
   Description_EN: The source file size
+  Sample:
+  - '0'
+  - '131072'
+  - '196608'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -309,6 +435,10 @@
   ProductCode:
   - ams
   Description_EN: The time when the source file was created (in milliseconds)
+  Sample:
+  - '1577865600000'
+  - '1626201752000'
+  - '1626201750000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -317,6 +447,10 @@
   ProductCode:
   - ams
   Description_EN: The time when the source file was modified (in milliseconds)
+  Sample:
+  - '1626201752000'
+  - '1626201750000'
+  - '1577865600000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -325,6 +459,10 @@
   ProductCode:
   - ams
   Description_EN: The time when the source file first appeared (in milliseconds)
+  Sample:
+  - '0'
+  - '1656355418449'
+  - '1656714760440'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -333,6 +471,10 @@
   ProductCode:
   - ams
   Description_EN: The time when the source file was last seen (in milliseconds)
+  Sample:
+  - '0'
+  - '1656355418449'
+  - '1656715147313'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -341,6 +483,8 @@
   ProductCode:
   - ams
   Description_EN: The event object hash ID
+  Sample:
+  - 3859886410
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -349,6 +493,8 @@
   ProductCode:
   - ams
   Description_EN: The app name (if the subject is an app)
+  Sample:
+  - Collection Nes Games
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -357,6 +503,8 @@
   ProductCode:
   - ams
   Description_EN: The app package name (if the subject is an app)
+  Sample:
+  - com.ConsolesXX.CollectionNesGames
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -365,6 +513,8 @@
   ProductCode:
   - ams
   Description_EN: The SHA-1 hash of the app public key (if the subject is an app)
+  Sample:
+  - 05FC638156219800DADAC48D8E621E0BCBD3C321
   DL_Type: string
   DL_CommonKey:
   - FileSHA1
@@ -374,6 +524,8 @@
   ProductCode:
   - ams
   Description_EN: The app size (in bytes) if the subject is an app
+  Sample:
+  - 16906043
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -382,6 +534,8 @@
   ProductCode:
   - ams
   Description_EN: Whether the app is a system app
+  Sample:
+  - false
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -390,6 +544,8 @@
   ProductCode:
   - ams
   Description_EN: The app version code (if the subject is an app)
+  Sample:
+  - 0
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -398,6 +554,8 @@
   ProductCode:
   - ams
   Description_EN: The attributes of the system event (if the subject is a system event)
+  Sample:
+  - usbdebugging
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -406,6 +564,8 @@
   ProductCode:
   - ams
   Description_EN: The SHA-256 hash of the app Dex value
+  Sample:
+  - C23A87B77B06442FD9AF9A80DD87191EDEADFAB766C862EBC592FE18063D0449
   DL_Type: string
   DL_CommonKey:
   - FileSHA2
@@ -415,6 +575,8 @@
   ProductCode:
   - ams
   Description_EN: The time of app installation (in milliseconds)
+  Sample:
+  - 1607935850
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -423,6 +585,8 @@
   ProductCode:
   - ams
   Description_EN: The app name
+  Sample:
+  - Collection Nes Games
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -431,6 +595,8 @@
   ProductCode:
   - ams
   Description_EN: The app package name
+  Sample:
+  - com.ConsolesXX.CollectionNesGames
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -439,6 +605,8 @@
   ProductCode:
   - ams
   Description_EN: The SHA-1 hash of the app public key
+  Sample:
+  - 05FC638156219800DADAC48D8E621E0BCBD3C321
   DL_Type: string
   DL_CommonKey:
   - FileSHA1
@@ -448,6 +616,8 @@
   ProductCode:
   - ams
   Description_EN: The SHA-256 hash of the app
+  Sample:
+  - 692BC8E6BC51807A24BEACC13ED2B68E1F954E152863430E3179FA812937B8B0
   DL_Type: string
   DL_CommonKey:
   - FileSHA2
@@ -457,6 +627,8 @@
   ProductCode:
   - ams
   Description_EN: The app size (in bytes)
+  Sample:
+  - 16906043
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -465,6 +637,8 @@
   ProductCode:
   - ams
   Description_EN: Whether the app is a system app
+  Sample:
+  - true
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -473,6 +647,8 @@
   ProductCode:
   - ams
   Description_EN: The app version code
+  Sample:
+  - 0
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -481,6 +657,8 @@
   ProductCode:
   - ams
   Description_EN: The app version
+  Sample:
+  - 1.0
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -489,6 +667,10 @@
   ProductCode:
   - ams
   Description_EN: The activity that occurred on the app
+  Sample:
+  - GRANTED_CAMERA_PERMISSION
+  - APP_NO_ICON
+  - APP_HIDE_ICON
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -497,6 +679,8 @@
   ProductCode:
   - ams
   Description_EN: The attributes of the app activity
+  Sample:
+  - android.intent.action.BOOT_COMPLETED
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -505,6 +689,8 @@
   ProductCode:
   - ams
   Description_EN: The system event attributes
+  Sample:
+  - LOCK_SCREEN
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -513,6 +699,10 @@
   ProductCode:
   - ams
   Description_EN: The extra information about the app
+  Sample:
+  - N/A
+  - Web Client Common
+  - DCERPC Services
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -521,6 +711,18 @@
   ProductCode:
   - ams
   Description_EN: The SHA-1 hash of the certificate public key
+  Sample:
+  - 05FC638156219800DADAC48D8E621E0BCBD3C321
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: groupId
+  ProductCode:
+  - ALL
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
