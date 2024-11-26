@@ -2,6 +2,10 @@
   ProductCode:
   - scs
   Description_EN: The host name of the container or node
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -10,6 +14,7 @@
   ProductCode:
   - scs
   Description_EN: Event type
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -18,6 +23,10 @@
   ProductCode:
   - scs
   Description_EN: The access type
+  Sample:
+  - 2 - TELEMETRY_PROCESS_CREATE
+  - 101 - TELEMETRY_FILE_CREATE
+  - 204 - TELEMETRY_CONNECTION_CONNECT_OUTBOUND
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -26,6 +35,8 @@
   ProductCode:
   - scs
   Description_EN: The time the agent detected the event
+  Sample:
+  - 1657781088000
   DL_Type: real
   DL_CommonKey:
   DL_Searchable: true
@@ -34,6 +45,10 @@
   ProductCode:
   - scs
   Description_EN: The file path of the target process image or target file
+  Sample:
+  - /usr/bin/bash
+  - /bin/bash
+  - /opt/folder1/probes/system/processes/processes
   DL_Type: string
   DL_CommonKey:
   - FileFullPath
@@ -44,6 +59,10 @@
   ProductCode:
   - scs
   Description_EN: The source file path
+  Sample:
+  - \\cnva-apps\megaclockprod\traveler\travelerprint.accdb
+  - c:\program files\common files\microsoft shared\clicktorun\officesvcmgrschedule.xml
+  - q:\a7_dbs\a4_pkg\a4_packaging.accde
   DL_Type: string
   DL_CommonKey:
   - FileFullPath
@@ -55,6 +74,10 @@
   - ALL
   - scs
   Description_EN: The detected ID based on the alert filter
+  Sample:
+  - MITREV9.T1057
+  - MITREV9.T1059.003
+  - XSAE.F2924
   DL_Type: dynamic
   DL_CommonKey:
   - Technique
@@ -65,6 +88,8 @@
   ProductCode:
   - ALL
   Description_EN: Unique key of the log
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -73,6 +98,8 @@
   ProductCode:
   - ALL
   Description_EN: The internal product code
+  Sample:
+  - scs
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -81,6 +108,10 @@
   ProductCode:
   - ALL
   Description_EN: Top-level risk level of the event
+  Sample:
+  - info
+  - low
+  - medium
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -89,6 +120,8 @@
   ProductCode:
   - ALL
   Description_EN: The event source type
+  Sample:
+  - 8 - EVENT_SOURCE_CONTAINER_ACTIVITY
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -97,6 +130,8 @@
   ProductCode:
   - ALL
   Description_EN: The time when the XDR log was received
+  Sample:
+  - 1656324260000
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -105,6 +140,20 @@
   ProductCode:
   - scs
   Description_EN: The product version
+  Sample:
+  - 1.2.0.2752
+  - 1.0.345
+  - 1.2.0.2657
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: groupId
+  ProductCode:
+  - ALL
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -113,6 +162,8 @@
   ProductCode:
   - scs
   Description_EN: The cluster ID of the container
+  Sample:
+  - TestCluster-2HJdImvH6eO1fgTnCBK3xYA7Sph
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -121,6 +172,8 @@
   ProductCode:
   - scs
   Description_EN: The cluster name of the container
+  Sample:
+  - TestCluster
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -129,6 +182,8 @@
   ProductCode:
   - scs
   Description_EN: The Kubernetes namespace of the container
+  Sample:
+  - default
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -137,6 +192,8 @@
   ProductCode:
   - scs
   Description_EN: The Kubernetes pod name of the container
+  Sample:
+  - longrunl
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -145,6 +202,8 @@
   ProductCode:
   - scs
   Description_EN: The Kubernetes pod ID of the container
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -153,6 +212,8 @@
   ProductCode:
   - scs
   Description_EN: The Kubernetes container name
+  Sample:
+  - k8s_democon_longrunl_default_11111111-1111-1111-1111-111111111111_0
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -161,6 +222,8 @@
   ProductCode:
   - scs
   Description_EN: The Kubernetes container ID
+  Sample:
+  - 7d1e00176d78
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -169,6 +232,8 @@
   ProductCode:
   - scs
   Description_EN: The Kubernetes container image
+  Sample:
+  - debian:latest
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -177,6 +242,8 @@
   ProductCode:
   - scs
   Description_EN: The Kubernetes container image digest
+  Sample:
+  - sha256:bfe6615d017d1eebe19f349669de58cda36c668ef916e618be78071513c690e5
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -185,6 +252,8 @@
   ProductCode:
   - scs
   Description_EN: The rule ID
+  Sample:
+  - TM-00000036
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -193,6 +262,8 @@
   ProductCode:
   - scs
   Description_EN: The policy ID
+  Sample:
+  - TestPolicy-2HJe25H4GY4upSuNNAG1pci2BIm
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -201,6 +272,8 @@
   ProductCode:
   - scs
   Description_EN: The name of the triggered policy
+  Sample:
+  - TestPolicy
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -209,6 +282,10 @@
   ProductCode:
   - scs
   Description_EN: Command line entry of subject process
+  Sample:
+  - C:\WINDOWS\system32\services.exe
+  - C:\Windows\system32\services.exe
+  - /sbin/launchd
   DL_Type: string
   DL_CommonKey:
   - CLICommand
@@ -218,6 +295,10 @@
   ProductCode:
   - scs
   Description_EN: Command line entry of parent process
+  Sample:
+  - C:\WINDOWS\system32\services.exe
+  - C:\Windows\system32\services.exe
+  - /sbin/launchd
   DL_Type: string
   DL_CommonKey:
   - CLICommand
@@ -227,6 +308,10 @@
   ProductCode:
   - scs
   Description_EN: The file path of the subject process
+  Sample:
+  - c:\windows\system32\services.exe
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
   DL_Type: string
   DL_CommonKey:
   - ProcessFullPath
@@ -236,6 +321,10 @@
   ProductCode:
   - scs
   Description_EN: The file path of the parent process
+  Sample:
+  - c:\windows\system32\services.exe
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
   DL_Type: string
   DL_CommonKey:
   - FileFullPath
@@ -246,6 +335,10 @@
   ProductCode:
   - scs
   Description_EN: The time the subject process was launched
+  Sample:
+  - '1653614773895'
+  - '1656118625928'
+  - '0'
   DL_Type: real
   DL_CommonKey:
   DL_Searchable: false
@@ -254,6 +347,10 @@
   ProductCode:
   - scs
   Description_EN: The image name of the process that triggered the event
+  Sample:
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
+  - c:\windows\system32\lsass.exe
   DL_Type: string
   DL_CommonKey:
   - ProcessName
@@ -263,6 +360,10 @@
   ProductCode:
   - scs
   Description_EN: The image name of the parent process
+  Sample:
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
+  - c:\windows\system32\lsass.exe
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -271,6 +372,10 @@
   ProductCode:
   - scs
   Description_EN: The time when the parent process was launched
+  Sample:
+  - '1653614773895'
+  - '1656118625928'
+  - '0'
   DL_Type: real
   DL_CommonKey:
   DL_Searchable: false
@@ -279,6 +384,11 @@
   ProductCode:
   - scs
   Description_EN: The PID of the subject process
+  Sample:
+  - 4
+  - 1
+  - 784
+  - 792
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -287,6 +397,11 @@
   ProductCode:
   - scs
   Description_EN: The PID of the parent process
+  Sample:
+  - 4
+  - 1
+  - 784
+  - 792
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -295,6 +410,7 @@
   ProductCode:
   - scs
   Description_EN: The destination port number
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   - Port
@@ -304,6 +420,9 @@
   ProductCode:
   - scs
   Description_EN: The destination IP address
+  Sample:
+  - '::'
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -314,6 +433,10 @@
   ProductCode:
   - scs
   Description_EN: The source port number
+  Sample:
+  - 53
+  - 5353
+  - 443
   DL_Type: int
   DL_CommonKey:
   - Port
@@ -323,6 +446,9 @@
   ProductCode:
   - scs
   Description_EN: The source address
+  Sample:
+  - '::'
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -333,6 +459,9 @@
   ProductCode:
   - scs
   Description_EN: The protocol type
+  Sample:
+  - TELEMETRY_CONNECTION_TCP
+  - TELEMETRY_CONNECTION_UDP
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -341,6 +470,10 @@
   ProductCode:
   - scs
   Description_EN: The owner name of the target process or the login user name
+  Sample:
+  - root
+  - SYSTEM
+  - oracle
   DL_Type: string
   DL_CommonKey:
   - UserAccount
@@ -350,6 +483,8 @@
   ProductCode:
   - scs
   Description_EN: The host operating system name
+  Sample:
+  - Linux
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
