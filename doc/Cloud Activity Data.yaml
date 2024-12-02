@@ -162,7 +162,7 @@
   - sct
   Description_EN: Additional data about the event that was not part of the request
     or response
-  DL_Type: string
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
@@ -261,7 +261,7 @@
   - sct
   Description_EN: Identifies the service event, including what triggered the event
     and the result
-  DL_Type: string
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
