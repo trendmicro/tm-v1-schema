@@ -3609,3 +3609,31 @@
   - FileName
   DL_Searchable: true
   DL_Aggregable: false
+- Name: requestMethod
+  ProductCode:
+  - sao
+  - xes
+  - sds
+  Description_EN: The network protocol request method
+  Sample:
+  - GET
+  - POST
+  - PUT
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: status
+  ProductCode:
+  - sao
+  - xes
+  - sds
+  Description_EN: The HTTP response status code
+  Sample:
+  - 200
+  - 500
+  - 403
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true

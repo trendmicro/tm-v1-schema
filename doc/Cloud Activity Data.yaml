@@ -216,8 +216,7 @@
 - Name: additionalEventData
   ProductCode:
   - sct
-  Description_EN: Additional data about the event that was not part of the request
-    or response
+  Description_EN: The additional data about the event that was not part of the request
   Sample:
   - '{"SignatureVersion":"SigV4","CipherSuite":"ECDHE-RSA-AES128-GCM-SHA256"}'
   DL_Type: dynamic
@@ -349,8 +348,7 @@
 - Name: serviceEventDetails
   ProductCode:
   - sct
-  Description_EN: Identifies the service event, including what triggered the event
-    and the result
+  Description_EN: The service event (including what triggered the event and the result)
   Sample:
   - '{"lifecycleEventPolicy":{"policyVersion":1,"policyId":"11111111-1111-1111-1111-111111111111"}}'
   DL_Type: dynamic
