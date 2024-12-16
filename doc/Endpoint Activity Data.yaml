@@ -4,6 +4,8 @@
   - xes
   - sao
   Description_EN: Host GUID of the endpoint on which the event was detected
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   - EndpointID
@@ -15,6 +17,10 @@
   - xes
   - sao
   Description_EN: The host name of the endpoint on which the event was detected
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
   DL_Type: string
   DL_CommonKey:
   - EndpointName
@@ -26,6 +32,10 @@
   - xes
   - sao
   Description_EN: IP address of the endpoint on which the event was detected
+  Sample:
+  - 10.10.10.10
+  - ::1
+  - fe80::1
   DL_Type: dynamic
   DL_CommonKey:
   - IPv4
@@ -38,6 +48,7 @@
   - xes
   - sao
   Description_EN: Event type
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -48,6 +59,10 @@
   - xes
   - sao
   Description_EN: The access type
+  Sample:
+  - 2 - TELEMETRY_PROCESS_CREATE
+  - 101 - TELEMETRY_FILE_CREATE
+  - 204 - TELEMETRY_CONNECTION_CONNECT_OUTBOUND
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -58,6 +73,8 @@
   - xes
   - sao
   Description_EN: The time the agent detected the event
+  Sample:
+  - 1657781088000
   DL_Type: real
   DL_CommonKey:
   DL_Searchable: true
@@ -68,6 +85,10 @@
   - sds
   - sao
   Description_EN: The domain name
+  Sample:
+  - localhost
+  - wpad
+  - settings-win.data.microsoft.com
   DL_Type: string
   DL_CommonKey:
   - DomainName
@@ -79,6 +100,7 @@
   - xes
   - sao
   Description_EN: The integrity level of a process
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -89,6 +111,10 @@
   - xes
   - sao
   Description_EN: The logon user name
+  Sample:
+  - root
+  - SISTEMA
+  - oracle
   DL_Type: dynamic
   DL_CommonKey:
   - UserAccount
@@ -100,6 +126,10 @@
   - sds
   - sao
   Description_EN: Name of the app involved in the AMSI event
+  Sample:
+  - Exchange Server 2016
+  - PowerShell_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe_10.0.19041.1
+  - PowerShell_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe_10.0.14393.0
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -110,6 +140,10 @@
   - xes
   - sao
   Description_EN: Command line entry of target process
+  Sample:
+  - wc -l
+  - runc init
+  - docker-init --version
   DL_Type: string
   DL_CommonKey:
   - CLICommand
@@ -121,6 +155,10 @@
   - xes
   - sao
   Description_EN: The md5 hash of target process image or target file
+  Sample:
+  - 7ac47235c7bb452a03d3afd872f44c9e
+  - c9873d83a969645a97f21adc1b164cc5
+  - 3b32b378c8b288de6f15e1607a8c2145
   DL_Type: string
   DL_CommonKey:
   - FileMD5
@@ -132,6 +170,10 @@
   - xes
   - sao
   Description_EN: The SHA1 hash of target process image or target file
+  Sample:
+  - ded3833f145989fd86c1f4811b61497298ebc7fd
+  - c4fa06404142f1994431f9eef3df2cbe0f1998f1
+  - 3c01d486ed5aa1ecc2d8f33dc24b0ed59b3e609e
   DL_Type: string
   DL_CommonKey:
   - FileSHA1
@@ -143,6 +185,10 @@
   - xes
   - sao
   Description_EN: The SHA256 hash of target process image or target file
+  Sample:
+  - 39109eef00821658893b45634fe2f4664f880da9242712df907f1327d4ceefb8
+  - 49fa3e206abf6a1f4546417dbe09f3f06b38847866a4a66de75bd90f39cb6c1c
+  - 0969321ad5a0923f0f03896ad2c10e49290515c44b721d773942a37f62a24893
   DL_Type: string
   DL_CommonKey:
   - FileSHA2
@@ -154,6 +200,10 @@
   - xes
   - sao
   Description_EN: The file path of the target process image or target file
+  Sample:
+  - /usr/bin/bash
+  - /bin/bash
+  - /opt/folder1/probes/system/processes/processes
   DL_Type: string
   DL_CommonKey:
   - FileFullPath
@@ -165,6 +215,9 @@
   - sao
   - xes
   Description_EN: Server name where Internet event was detected
+  Sample:
+  - 10.10.10.10
+  - sample.test.org
   DL_Type: string
   DL_CommonKey:
   - DomainName
@@ -175,6 +228,10 @@
   - sao
   - xes
   Description_EN: The HTTP header referer
+  Sample:
+  - http://10.10.10.10/
+  - http://fake/home/
+  - http://fake.com/page/Test.jsp
   DL_Type: string
   DL_CommonKey:
   - URL
@@ -185,6 +242,7 @@
   - xes
   - sao
   Description_EN: Integrity level of target process
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -194,6 +252,8 @@
   - sao
   - xes
   Description_EN: IP address of internet event
+  Sample:
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -206,6 +266,10 @@
   - sds
   - sao
   Description_EN: IP address list of internet event
+  Sample:
+  - ::1
+  - 10.10.10.10
+  - ::ffff:10.10.10.10
   DL_Type: dynamic
   DL_CommonKey:
   - IPv4
@@ -218,6 +282,7 @@
   - xes
   - sao
   Description_EN: The PID of target process
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -227,6 +292,7 @@
   - sao
   - xes
   Description_EN: The port number used by internet event
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   - Port
@@ -238,6 +304,10 @@
   - xes
   - sds
   Description_EN: FNV of target process
+  Sample:
+  - '1415699552492662761'
+  - '-100650285065767982'
+  - '-1139416698673814436'
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -248,6 +318,11 @@
   - sds
   - sao
   Description_EN: The data contents of the AMSI event
+  Sample:
+  - $global:?
+  - '0'
+  - "$servicename = \"WinRM\"\n$arrService = Get-Service $servicename\n\nif ($arrService.Status\
+    \ -ne \"Running\")\n\n{\n\n\tRestart-Service $servicename\n\n\n}\n"
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -258,6 +333,10 @@
   - sds
   - sao
   Description_EN: The registry value data
+  Sample:
+  - '{11111111-1111-1111-1111-111111111111}'
+  - '1'
+  - '0'
   DL_Type: string
   DL_CommonKey:
   - RegistryValueData
@@ -269,6 +348,10 @@
   - sds
   - sao
   Description_EN: The registry key
+  Sample:
+  - HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters
+  - HKLM\system\currentcontrolset\services\w32time\config
+  - HKLM\system\currentcontrolset\services\tcpip\parameters
   DL_Type: string
   DL_CommonKey:
   - RegistryKey
@@ -280,6 +363,10 @@
   - xes
   - sao
   Description_EN: Registry value name
+  Sample:
+  - lastknowngoodtime
+  - threadingmodel
+  - epoch
   DL_Type: string
   DL_CommonKey:
   - RegistryValue
@@ -291,6 +378,10 @@
   - sao
   - sds
   Description_EN: Certificate signer of object process or file
+  Sample:
+  - Microsoft Windows
+  - Software Signing;Apple Code Signing Certification Authority;Apple Root CA;
+  - Microsoft Corporation
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -301,6 +392,9 @@
   - sao
   - sds
   Description_EN: Validity of certificate signer
+  Sample:
+  - 1
+  - 0
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -310,6 +404,7 @@
   - xes
   - sao
   Description_EN: The list of object process or file signature adhoc flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -319,6 +414,7 @@
   - xes
   - sao
   Description_EN: The list of object process or file signature runtime flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -329,6 +425,7 @@
   - sao
   Description_EN: The list of object process or file signature library validation
     flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -338,6 +435,9 @@
   - xes
   - sao
   Description_EN: The extended attributes of the file
+  Sample:
+  - com.apple.quarantine
+  - com.apple.metadata:kMDItemWhereFroms
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -348,6 +448,11 @@
   - sao
   - sds
   Description_EN: File object's true sub-type
+  Sample:
+  - 0
+  - 5000
+  - 18000
+  - 28001
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -358,6 +463,11 @@
   - xes
   - sds
   Description_EN: File object's true major type
+  Sample:
+  - 7
+  - 5
+  - 18
+  - 4051
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -369,6 +479,10 @@
   - sao
   - ddr
   Description_EN: The owner name of the target process or the login user name
+  Sample:
+  - root
+  - SYSTEM
+  - oracle
   DL_Type: string
   DL_CommonKey:
   - UserAccount
@@ -380,6 +494,10 @@
   - sds
   - sao
   Description_EN: Command line entry of parent process
+  Sample:
+  - C:\WINDOWS\system32\services.exe
+  - C:\Windows\system32\services.exe
+  - /sbin/launchd
   DL_Type: string
   DL_CommonKey:
   - CLICommand
@@ -391,6 +509,10 @@
   - xes
   - sao
   Description_EN: The md5 hash of parent process
+  Sample:
+  - d8e577bf078c45954f4531885478d5a9
+  - cd10cb894be2128fca0bf0e2b0c27c16
+  - cfd65bed18a1fae631091c3a4c4dd533
   DL_Type: string
   DL_CommonKey:
   - FileMD5
@@ -402,6 +524,10 @@
   - xes
   - sao
   Description_EN: The SHA1 hash of parent process
+  Sample:
+  - d7a213f3cfee2a8a191769eb33847953be51de54
+  - 1f912d4bec338ef10b7c9f19976286f8acc4eb97
+  - 9ad737cbd8bbdddc96726156dbd3bc03936bf02f
   DL_Type: string
   DL_CommonKey:
   - FileSHA1
@@ -413,6 +539,10 @@
   - xes
   - sao
   Description_EN: The SHA256 hash of parent process
+  Sample:
+  - dfbea9e8c316d9bc118b454b0c722cd674c30d0a256340200e2c3a7480cba674
+  - f3feb95e7bcfb0766a694d93fca29eda7e2ca977c2395b4be75242814eb6d881
+  - 00f8cbc5b3a6640af5ac18d01bc5a666f6f583b1379b9491e0bcc28ba78c92e9
   DL_Type: string
   DL_CommonKey:
   - FileSHA2
@@ -424,6 +554,10 @@
   - xes
   - sao
   Description_EN: The file path of the parent process
+  Sample:
+  - c:\windows\system32\services.exe
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
   DL_Type: string
   DL_CommonKey:
   - FileFullPath
@@ -436,6 +570,10 @@
   - xes
   - sao
   Description_EN: The PID of the parent process
+  Sample:
+  - 1
+  - 976
+  - 920
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -446,6 +584,10 @@
   - xes
   - sao
   Description_EN: Internal product ID (Deprecated, use productCode)
+  Sample:
+  - '2200'
+  - '751'
+  - '533'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -456,6 +598,10 @@
   - sds
   - sao
   Description_EN: The command line entry of the subject process
+  Sample:
+  - C:\Windows\system32\lsass.exe
+  - C:\WINDOWS\system32\lsass.exe
+  - nimbus(processes)
   DL_Type: string
   DL_CommonKey:
   - CLICommand
@@ -467,6 +613,10 @@
   - xes
   - sao
   Description_EN: The md5 hash of subject process image
+  Sample:
+  - cd10cb894be2128fca0bf0e2b0c27c16
+  - 7ac47235c7bb452a03d3afd872f44c9e
+  - cfd65bed18a1fae631091c3a4c4dd533
   DL_Type: string
   DL_CommonKey:
   - FileMD5
@@ -478,6 +628,10 @@
   - xes
   - sao
   Description_EN: The SHA1 hash of subject process image
+  Sample:
+  - 1f912d4bec338ef10b7c9f19976286f8acc4eb97
+  - ded3833f145989fd86c1f4811b61497298ebc7fd
+  - 9ad737cbd8bbdddc96726156dbd3bc03936bf02f
   DL_Type: string
   DL_CommonKey:
   - FileSHA1
@@ -489,6 +643,10 @@
   - xes
   - sao
   Description_EN: The SHA256 hash of subject process image
+  Sample:
+  - f3feb95e7bcfb0766a694d93fca29eda7e2ca977c2395b4be75242814eb6d881
+  - 39109eef00821658893b45634fe2f4664f880da9242712df907f1327d4ceefb8
+  - 00f8cbc5b3a6640af5ac18d01bc5a666f6f583b1379b9491e0bcc28ba78c92e9
   DL_Type: string
   DL_CommonKey:
   - FileSHA2
@@ -500,6 +658,10 @@
   - xes
   - sao
   Description_EN: The file path of the subject process
+  Sample:
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
+  - c:\windows\system32\lsass.exe
   DL_Type: string
   DL_CommonKey:
   - ProcessFullPath
@@ -514,6 +676,10 @@
   - xes
   - sao
   Description_EN: The FNV of subject process
+  Sample:
+  - '7114696589795796819'
+  - '1307755369266815004'
+  - '-5015325378148567246'
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -524,6 +690,10 @@
   - xes
   - sao
   Description_EN: The image name of the process that triggered the event
+  Sample:
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
+  - c:\windows\system32\lsass.exe
   DL_Type: string
   DL_CommonKey:
   - ProcessName
@@ -535,6 +705,11 @@
   - xes
   - sao
   Description_EN: The PID of the subject process
+  Sample:
+  - 4
+  - 1
+  - 784
+  - 792
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -545,6 +720,10 @@
   - xes
   - sao
   Description_EN: The owner name of subject process image
+  Sample:
+  - root
+  - SYSTEM
+  - SISTEMA
   DL_Type: string
   DL_CommonKey:
   - UserAccount
@@ -555,6 +734,18 @@
   - xes
   - sao
   Description_EN: Windows event raw contents
+  Sample:
+  - "{\n   \"EventData\" : {\n      \"LogonType\" : \"\",\n      \"TargetDomainName\"\
+    \ : \"\",\n      \"TargetLogonId\" : \"\",\n      \"TargetUserName\" : \"\",\n\
+    \      \"TargetUserSid\" : \"\"\n   }\n}\n"
+  - "{\n   \"EventData\" : {\n      \"LogonType\" : \"10\",\n      \"TargetDomainName\"\
+    \ : \"AFASADV\",\n      \"TargetLogonId\" : \"14941011731\",\n      \"TargetUserName\"\
+    \ : \"administrator\",\n      \"TargetUserSid\" : \"S-1-5-21-1507008304-2416677881-2121376573-500\"\
+    \n   }\n}\n"
+  - "{\n   \"EventData\" : {\n      \"LogonType\" : \"10\",\n      \"TargetDomainName\"\
+    \ : \"AIS\",\n      \"TargetLogonId\" : \"216921070\",\n      \"TargetUserName\"\
+    \ : \"MWoodr01\",\n      \"TargetUserSid\" : \"S-1-5-21-1873864278-1756520048-3043165120-15057\"\
+    \n   }\n}\n"
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -564,6 +755,10 @@
   - sao
   - xes
   Description_EN: Request URL
+  Sample:
+  - http://10.10.10.10/fake/site
+  - http:///fake/param.cgi?action=list&group=Alarm.Status
+  - http://fake.com/
   DL_Type: string
   DL_CommonKey:
   - URL
@@ -576,6 +771,7 @@
   - sao
   - ddr
   Description_EN: The destination port number
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   - Port
@@ -588,6 +784,9 @@
   - sao
   - ddr
   Description_EN: The destination IP address
+  Sample:
+  - '::'
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -601,6 +800,10 @@
   - sao
   - ddr
   Description_EN: The source port number
+  Sample:
+  - 53
+  - 5353
+  - 443
   DL_Type: int
   DL_CommonKey:
   - Port
@@ -613,6 +816,9 @@
   - sao
   - ddr
   Description_EN: The source address
+  Sample:
+  - '::'
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -624,6 +830,10 @@
   - sao
   - xes
   Description_EN: The md5 hash of source file
+  Sample:
+  - e5d5e9c1f65b8ec7aa5b7f1b1acdd731
+  - a6779bf446db07e4c4ba3516b273c496
+  - 4bb7334fdadc6eccb8e6ab402aae013b
   DL_Type: string
   DL_CommonKey:
   - FileMD5
@@ -634,6 +844,10 @@
   - sao
   - xes
   Description_EN: The SHA1 hash of source file
+  Sample:
+  - 5d34902fecc1760138212ada36be1e742bda5e52
+  - dbb14dcda6502ab1d23a7c77d405dafbcbeb439e
+  - 2292f8109cd756e790c068a52d50f1b0858f503b
   DL_Type: string
   DL_CommonKey:
   - FileSHA1
@@ -644,6 +858,10 @@
   - sao
   - xes
   Description_EN: The SHA256 hash of source file
+  Sample:
+  - 4eaa002225f4ea2dedcd19b7f1337d7c58ea7dd6d4571c12468dde95e6bcfdaf
+  - e30508e2088bc16b2a84233ced64995f738deaef2366ac6c86b35c93bbcd9d80
+  - 16b20a3ad485b4fbbe3028c7e743b226db21ea93cacc8b3d7d7d4a731bf02333
   DL_Type: string
   DL_CommonKey:
   - FileSHA2
@@ -655,6 +873,10 @@
   - sao
   - sds
   Description_EN: The source file path
+  Sample:
+  - \\cnva-apps\megaclockprod\traveler\travelerprint.accdb
+  - c:\program files\common files\microsoft shared\clicktorun\officesvcmgrschedule.xml
+  - q:\a7_dbs\a4_pkg\a4_packaging.accde
   DL_Type: string
   DL_CommonKey:
   - FileFullPath
@@ -665,6 +887,10 @@
   ProductCode:
   - ALL
   Description_EN: The detected technique ID based on the alert filter
+  Sample:
+  - MITREV9.T1057
+  - MITREV9.T1059.003
+  - XSAE.F2924
   DL_Type: dynamic
   DL_CommonKey:
   - Technique
@@ -674,6 +900,8 @@
   ProductCode:
   - ALL
   Description_EN: Unique key of the log
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -683,6 +911,10 @@
   - xes
   - sao
   Description_EN: Event ID of Windows event
+  Sample:
+  - 11
+  - 4624
+  - 4670
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -691,6 +923,10 @@
   ProductCode:
   - ALL
   Description_EN: The internal product code
+  Sample:
+  - sds
+  - xes
+  - sao
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -699,6 +935,10 @@
   ProductCode:
   - ALL
   Description_EN: Top-level risk level of the event
+  Sample:
+  - info
+  - low
+  - medium
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -709,6 +949,9 @@
   - sao
   Description_EN: The IP address for Windows event 4624 which is "An account was successfully
     logged on"
+  Sample:
+  - '-'
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -719,6 +962,10 @@
   - sao
   Description_EN: The logon type for Windows event 4624 which is "An account was successfully
     logged on"
+  Sample:
+  - '3'
+  - '5'
+  - '2'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -727,6 +974,10 @@
   ProductCode:
   - sao
   Description_EN: Windows event 4104, Creating Scriptblock text
+  Sample:
+  - $global:?
+  - '0'
+  - '{ Set-StrictMode -Version 1; $_.PSMessageDetails }'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -736,6 +987,10 @@
   - xes
   - sao
   Description_EN: Windows event 11
+  Sample:
+  - 'Start IWbemServices::ExecQuery - root\ccm : select * from SMS_Authority'
+  - 'Start IWbemServices::ExecQuery - root\cimv2 : select * from win32_process'
+  - 'Start IWbemServices::ExecQuery - root\ccm : SELECT * FROM SMS_Authority'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -745,6 +1000,12 @@
   - sds
   - xes
   Description_EN: The data of BM event
+  Sample:
+  - '{"provider":"ORCA","schema_version":1,"data":[{"str":"Access /proc/<pid>/*"}]}'
+  - "{\"provider\":\"ORCA\",\"schema_version\":1,\"data\":[{\"str\":\"source '/etc/profile.d/lang.sh'\"\
+    }]}"
+  - "{\"provider\":\"ORCA\",\"schema_version\":1,\"data\":[{\"str\":\"source '/etc/profile.d/bash_completion.sh'\"\
+    }]}"
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -755,6 +1016,10 @@
   - xes
   - sao
   Description_EN: The OS version
+  Sample:
+  - Windows 10 (64 bit)
+  - Windows 10 Pro (64 bit) build 19044
+  - Amazon Linux 2 (64 bit) (5.4.188-104.359.amzn2.x86_64)
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -763,6 +1028,8 @@
   ProductCode:
   - ALL
   Description_EN: The event source type
+  Sample:
+  - 1 - EVENT_SOURCE_TELEMETRY
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -771,6 +1038,8 @@
   ProductCode:
   - ALL
   Description_EN: The time when the XDR log was received
+  Sample:
+  - 1656324260000
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -779,6 +1048,8 @@
   ProductCode:
   - ALL
   Description_EN: The policy tree path
+  Sample:
+  - policyname1/policyname2/policyname3
   DL_Type: string
   DL_Searchable: true
 - Name: instanceId
@@ -786,6 +1057,8 @@
   - sds
   - xes
   Description_EN: The virtual machine instance ID on the cloud platform
+  Sample:
+  - i-01234567890abcdef
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -795,6 +1068,9 @@
   - sds
   - xes
   Description_EN: The service provider of the cloud asset
+  Sample:
+  - aws
+  - azure
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -804,6 +1080,8 @@
   - sds
   - xes
   Description_EN: The virtual private cloud that contains the cloud asset
+  Sample:
+  - vpc-01234567890abcdef
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -813,6 +1091,9 @@
   - sds
   - xes
   Description_EN: The cloud asset region
+  Sample:
+  - US East (N. Virginia)
+  - Europe (Frankfurt)
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -823,6 +1104,10 @@
   - xes
   - sao
   Description_EN: The event hash ID
+  Sample:
+  - '-8406473586387535914'
+  - '138486453338666581'
+  - '-7909265752378976284'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -833,6 +1118,8 @@
   - xes
   - sao
   Description_EN: The first time the event was seen
+  Sample:
+  - 1656355418449
   DL_Type: real
   DL_CommonKey:
   DL_Searchable: false
@@ -843,6 +1130,8 @@
   - xes
   - sao
   Description_EN: The last time the event was seen
+  Sample:
+  - 1656355418449
   DL_Type: real
   DL_CommonKey:
   DL_Searchable: false
@@ -853,6 +1142,9 @@
   - xes
   - sao
   Description_EN: The host MAC address
+  Sample:
+  - 0-0-0-0-0-0-0-e0
+  - 00:00:00:ff:ff:ff
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -863,6 +1155,9 @@
   - xes
   - sao
   Description_EN: The user domain name
+  Sample:
+  - CORP
+  - AUTORIDADE NT
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -873,6 +1168,10 @@
   - xes
   - sao
   Description_EN: The host time zone
+  Sample:
+  - UTC+00:00
+  - UTC-05:00
+  - UTC-03:00
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -883,6 +1182,10 @@
   - xes
   - sao
   Description_EN: The product version
+  Sample:
+  - 1.2.0.2752
+  - 1.0.345
+  - 1.2.0.2657
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -893,6 +1196,9 @@
   - xes
   - sao
   Description_EN: The product language
+  Sample:
+  - 1
+  - 0
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -903,6 +1209,9 @@
   - xes
   - sao
   Description_EN: The product platform
+  Sample:
+  - 5889
+  - 9217
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -913,6 +1222,10 @@
   - xes
   - sao
   Description_EN: The host operating system name
+  Sample:
+  - Windows
+  - Linux
+  - macOS
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -923,6 +1236,10 @@
   - xes
   - sao
   Description_EN: The version of the host operating system
+  Sample:
+  - Amazon Linux 2
+  - 10.0.19044
+  - 10.0.19042
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -933,6 +1250,9 @@
   - xes
   - sao
   Description_EN: The host operating system type
+  Sample:
+  - '0x00000030'
+  - '4'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -943,6 +1263,10 @@
   - sao
   - sds
   Description_EN: The session ID
+  Sample:
+  - 0
+  - 1
+  - 2
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -953,6 +1277,9 @@
   - sao
   - sds
   Description_EN: The process user domain
+  Sample:
+  - NT AUTHORITY
+  - AUTORIDADE NT
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -963,6 +1290,10 @@
   - xes
   - sao
   Description_EN: The time the subject process was launched
+  Sample:
+  - '1653614775212'
+  - '1656118626642'
+  - '1652098160298'
   DL_Type: real
   DL_CommonKey:
   DL_Searchable: true
@@ -972,6 +1303,10 @@
   - xes
   - sao
   Description_EN: The authorization ID
+  Sample:
+  - '999'
+  - '996'
+  - '997'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -982,6 +1317,10 @@
   - xes
   - sao
   Description_EN: The file hash of the process
+  Sample:
+  - '2141057820373638746'
+  - '-821808160829839906'
+  - '5222963427542927736'
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -992,6 +1331,10 @@
   - sao
   - sds
   Description_EN: The process file signer
+  Sample:
+  - Microsoft Windows
+  - Microsoft Windows Publisher
+  - Microsoft Corporation
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1002,6 +1345,9 @@
   - sao
   - sds
   Description_EN: The validity of the process signer
+  Sample:
+  - 1
+  - 0
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1011,6 +1357,7 @@
   - xes
   - sao
   Description_EN: The list of process signature adhoc flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1020,6 +1367,7 @@
   - xes
   - sao
   Description_EN: The list of process signature runtime flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1029,6 +1377,7 @@
   - xes
   - sao
   Description_EN: The list of process signature library validation flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1039,6 +1388,10 @@
   - sao
   - sds
   Description_EN: The file size of the process file
+  Sample:
+  - '59952'
+  - '59456'
+  - '47024'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1049,6 +1402,10 @@
   - sao
   - sds
   Description_EN: The time the process file was created
+  Sample:
+  - '1652131848000'
+  - '1577865600000'
+  - '1635172906000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1059,6 +1416,10 @@
   - sao
   - sds
   Description_EN: The time the process file was modified
+  Sample:
+  - '1652131848000'
+  - '1633413236462'
+  - '1414554708877'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1069,6 +1430,7 @@
   - sao
   - sds
   Description_EN: The true file type of the process
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -1079,6 +1441,7 @@
   - sao
   - sds
   Description_EN: The true file subtype of the process
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -1088,6 +1451,10 @@
   - xes
   - sao
   Description_EN: The owner of the process file current security identifier
+  Sample:
+  - S-1-5-18
+  - S-1-5-32-544
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1097,6 +1464,10 @@
   - xes
   - sao
   Description_EN: The current owner name of the process file
+  Sample:
+  - NT AUTHORITY\SYSTEM
+  - BUILTIN\Administrators
+  - BUILTIN\Administradores
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1106,6 +1477,10 @@
   - xes
   - sao
   Description_EN: The security identifier of the process file owner
+  Sample:
+  - S-1-5-32-544
+  - S-1-5-18
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1116,6 +1491,10 @@
   - sao
   - sds
   Description_EN: The process file owner name
+  Sample:
+  - root
+  - cit
+  - BUILTIN\Administrators
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1125,6 +1504,10 @@
   - xes
   - sao
   Description_EN: The security identifier of the process file group
+  Sample:
+  - S-1-5-18
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+  - S-1-5-32-544
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1135,6 +1518,10 @@
   - sao
   - sds
   Description_EN: The name of the process file user group
+  Sample:
+  - wheel
+  - admin
+  - staff
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1144,6 +1531,10 @@
   - sao
   - xes
   Description_EN: The system access control list of the process file
+  Sample:
+  - S:(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
+  - S:(AU;IDSAFA;DCLCRPSDWDWO;;;AU)
+  - S:NO_ACCESS_CONTROL
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1153,6 +1544,10 @@
   - xes
   - sao
   Description_EN: The discretionary access control list of the process file
+  Sample:
+  - D:(A;ID;0x1200a9;;;AC)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;S-1-15-2-2)
+  - D:(A;ID;FA;;;SY)
+  - D:(A;ID;FA;;;BA)(A;ID;FA;;;SY)
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1162,6 +1557,7 @@
   - xes
   - sao
   Description_EN: The remote access to the process file
+  Sample: []
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -1172,6 +1568,10 @@
   - xes
   - sao
   Description_EN: The parent hash ID
+  Sample:
+  - '-865367326691173681'
+  - '-2903238741593506113'
+  - '-4358168316031740439'
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -1182,6 +1582,10 @@
   - xes
   - sao
   Description_EN: The image name of the parent process
+  Sample:
+  - c:\windows\system32\services.exe
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1192,6 +1596,7 @@
   - sao
   - sds
   Description_EN: The parent session ID
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -1202,6 +1607,10 @@
   - xes
   - sao
   Description_EN: The type of user that executed the parent process
+  Sample:
+  - root
+  - SYSTEM
+  - SISTEMA
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1212,6 +1621,9 @@
   - sao
   - sds
   Description_EN: The user domain of the parent process
+  Sample:
+  - NT AUTHORITY
+  - AUTORIDADE NT
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1222,6 +1634,10 @@
   - xes
   - sao
   Description_EN: The time when the parent process was launched
+  Sample:
+  - '1653614773895'
+  - '1656118625928'
+  - '0'
   DL_Type: real
   DL_CommonKey:
   DL_Searchable: true
@@ -1231,6 +1647,10 @@
   - xes
   - sao
   Description_EN: The parent authorization ID
+  Sample:
+  - '999'
+  - '996'
+  - '997'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1240,6 +1660,7 @@
   - xes
   - sao
   Description_EN: The integrity level of a parent
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -1250,6 +1671,10 @@
   - xes
   - sao
   Description_EN: The parent file hash ID
+  Sample:
+  - '-4092577940452904134'
+  - '2141057820373638746'
+  - '-821808160829839906'
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -1260,6 +1685,10 @@
   - sao
   - sds
   Description_EN: The signer of the parent file
+  Sample:
+  - Microsoft Windows Publisher
+  - Microsoft Windows
+  - Software Signing;Apple Code Signing Certification Authority;Apple Root CA;
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1270,6 +1699,7 @@
   - sao
   - sds
   Description_EN: The validity of the parent signer
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1279,6 +1709,7 @@
   - xes
   - sao
   Description_EN: The list of parent process signature adhoc flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1288,6 +1719,7 @@
   - xes
   - sao
   Description_EN: The list of parent process signature runtime flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1297,6 +1729,7 @@
   - xes
   - sao
   Description_EN: The list of parent process signature library validation flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1307,6 +1740,10 @@
   - sao
   - sds
   Description_EN: The file size of the parent file
+  Sample:
+  - '714856'
+  - '59952'
+  - '5114880'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1317,6 +1754,10 @@
   - sao
   - sds
   Description_EN: The time the parent file was created
+  Sample:
+  - '1652131848000'
+  - '1577865600000'
+  - '1635172968000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1327,6 +1768,10 @@
   - sao
   - sds
   Description_EN: The time the parent file was modified
+  Sample:
+  - '1652131848000'
+  - '1577865600000'
+  - '1635172968000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1337,6 +1782,7 @@
   - sao
   - sds
   Description_EN: The true file type of the parent file
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -1347,6 +1793,7 @@
   - sao
   - sds
   Description_EN: The true file subtype of the parent file
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -1356,6 +1803,10 @@
   - xes
   - sao
   Description_EN: The current security identifier owner of the parent file
+  Sample:
+  - S-1-5-32-544
+  - S-1-5-18
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1365,6 +1816,10 @@
   - xes
   - sao
   Description_EN: The current owner name of the parent file
+  Sample:
+  - NT AUTHORITY\SYSTEM
+  - BUILTIN\Administradores
+  - BUILTIN\Administrators
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1374,6 +1829,10 @@
   - xes
   - sao
   Description_EN: The security identifier of the parent file owner
+  Sample:
+  - S-1-5-32-544
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+  - S-1-5-18
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1384,6 +1843,10 @@
   - sao
   - sds
   Description_EN: The owner name of the parent file
+  Sample:
+  - root
+  - cit
+  - BUILTIN\Administrators
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1393,6 +1856,10 @@
   - xes
   - sao
   Description_EN: The security identifier of the parent process file group
+  Sample:
+  - S-1-5-18
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+  - S-1-5-32-544
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1403,6 +1870,10 @@
   - sao
   - sds
   Description_EN: The name of the parent file user group
+  Sample:
+  - wheel
+  - admin
+  - staff
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1412,6 +1883,10 @@
   - sao
   - xes
   Description_EN: The system access control list of the parent file
+  Sample:
+  - S:(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
+  - S:NO_ACCESS_CONTROL
+  - S:(AU;IDSAFA;DCLCRPSDWDWO;;;AU)
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1421,6 +1896,10 @@
   - xes
   - sao
   Description_EN: The discretionary access control list of the parent file
+  Sample:
+  - D:(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;0x1200a9;;;BA)(A;;0x1200a9;;;SY)(A;;0x1200a9;;;BU)(A;;0x1200a9;;;AC)(A;;0x1200a9;;;S-1-15-2-2)
+  - D:(A;OICI;GA;;;SY)(A;OICI;0xa0120000;;;WD)(A;OICI;GA;;;BA)
+  - D:(A;ID;0x1200a9;;;AC)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;S-1-15-2-2)
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1430,6 +1909,7 @@
   - xes
   - sao
   Description_EN: The remote access to the parent file
+  Sample: []
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -1440,6 +1920,10 @@
   - xes
   - sao
   Description_EN: The object hash ID
+  Sample:
+  - '8576474808125313522'
+  - '-599270888483415002'
+  - '2177864258235728980'
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: false
@@ -1451,6 +1935,10 @@
   - sds
   - ddr
   Description_EN: The file size of the object file
+  Sample:
+  - 0
+  - 59456
+  - 60
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1461,6 +1949,10 @@
   - sao
   - sds
   Description_EN: Previous size of modified object file
+  Sample:
+  - 0
+  - 59456
+  - 60
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -1471,6 +1963,10 @@
   - sao
   - sds
   Description_EN: The time the object file was created
+  Sample:
+  - '1652131848000'
+  - '1577865600000'
+  - '1648279273000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1481,6 +1977,10 @@
   - sao
   - sds
   Description_EN: The time the object file was modified
+  Sample:
+  - '1652131848000'
+  - '1577865600000'
+  - '1648279273000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1490,6 +1990,10 @@
   - xes
   - sao
   Description_EN: The current security identifier owner of the object file
+  Sample:
+  - S-1-5-18
+  - S-1-5-32-544
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1499,6 +2003,10 @@
   - xes
   - sao
   Description_EN: The current owner name of the object file
+  Sample:
+  - NT AUTHORITY\SYSTEM
+  - BUILTIN\Administrators
+  - BUILTIN\Administradores
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1508,6 +2016,10 @@
   - xes
   - sao
   Description_EN: The security identifier of the object file owner
+  Sample:
+  - S-1-5-32-544
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+  - S-1-5-18
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1518,6 +2030,10 @@
   - sao
   - sds
   Description_EN: The object file owner name
+  Sample:
+  - root
+  - NT SERVICE\TrustedInstaller
+  - BUILTIN\Administrators
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1527,6 +2043,10 @@
   - xes
   - sao
   Description_EN: The security identifier of the object file group
+  Sample:
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+  - S-1-5-18
+  - S-1-5-21-397955417-626881126-188441444-513
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1537,6 +2057,10 @@
   - sao
   - sds
   Description_EN: The object file user group name
+  Sample:
+  - wheel
+  - staff
+  - admin
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1546,6 +2070,10 @@
   - sao
   - xes
   Description_EN: The system access control list of the object file
+  Sample:
+  - S:NO_ACCESS_CONTROL
+  - S:(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
+  - S:(AU;SAFA;0x1f0116;;;WD)
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1555,6 +2083,10 @@
   - xes
   - sao
   Description_EN: The discretionary access control list of the object file
+  Sample:
+  - D:(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;0x1200a9;;;BA)(A;;0x1200a9;;;SY)(A;;0x1200a9;;;BU)(A;;0x1200a9;;;AC)(A;;0x1200a9;;;S-1-15-2-2)
+  - D:(A;OICI;GA;;;SY)(A;OICI;0xa0120000;;;WD)(A;OICI;GA;;;BA)
+  - D:(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1565,6 +2097,7 @@
   - xes
   - sds
   Description_EN: The remote access to the object file
+  Sample: []
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -1575,6 +2108,10 @@
   - sds
   - sao
   Description_EN: The first time the object was seen
+  Sample:
+  - '1656458063638'
+  - '1656260547165'
+  - '0'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1585,6 +2122,10 @@
   - sds
   - sao
   Description_EN: The last time the object was seen
+  Sample:
+  - '1656458354730'
+  - '1656260580722'
+  - '0'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1595,6 +2136,10 @@
   - sao
   - sds
   Description_EN: The source file hash ID
+  Sample:
+  - '1102079405020678318'
+  - '-6926286289273504319'
+  - '8528955148329941480'
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: false
@@ -1604,6 +2149,10 @@
   - sao
   - xes
   Description_EN: The signer of the source file
+  Sample:
+  - Microsoft Windows
+  - Microsoft Corporation
+  - Google LLC
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1613,6 +2162,7 @@
   - sao
   - xes
   Description_EN: The validity of the source file signer
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1622,6 +2172,7 @@
   - xes
   - sao
   Description_EN: The list of source file signature adhoc flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1631,6 +2182,7 @@
   - xes
   - sao
   Description_EN: The list of source file signature runtime flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1640,6 +2192,7 @@
   - xes
   - sao
   Description_EN: The list of source file signature library validation flags
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1651,6 +2204,10 @@
   - sds
   - ddr
   Description_EN: The file size of the source file
+  Sample:
+  - '0'
+  - '131072'
+  - '196608'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1661,6 +2218,10 @@
   - sao
   - sds
   Description_EN: The time the source file was created
+  Sample:
+  - '1577865600000'
+  - '1626201752000'
+  - '1626201750000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1671,6 +2232,10 @@
   - sao
   - sds
   Description_EN: The time the source file was modified
+  Sample:
+  - '1626201752000'
+  - '1626201750000'
+  - '1577865600000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1681,6 +2246,7 @@
   - xes
   - sds
   Description_EN: The true file type of the source file
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -1691,6 +2257,7 @@
   - xes
   - sds
   Description_EN: The true file subtype of the source file
+  Sample: []
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -1700,6 +2267,10 @@
   - sao
   - xes
   Description_EN: The current security identifier owner of the source file
+  Sample:
+  - S-1-5-18
+  - S-1-5-32-544
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1709,6 +2280,10 @@
   - sao
   - xes
   Description_EN: The current owner name of the source file
+  Sample:
+  - NT AUTHORITY\SYSTEM
+  - BUILTIN\Administrators
+  - AUTORIDADE NT\SISTEMA
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1718,6 +2293,10 @@
   - sao
   - xes
   Description_EN: The security identifier of the source file owner
+  Sample:
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+  - S-1-5-18
+  - S-1-5-32-544
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1728,6 +2307,10 @@
   - sao
   - sds
   Description_EN: The source file owner name
+  Sample:
+  - root
+  - NT SERVICE\TrustedInstaller
+  - NT AUTHORITY\SYSTEM
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1737,6 +2320,10 @@
   - sao
   - xes
   Description_EN: The security identifier of the source file group
+  Sample:
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+  - S-1-5-18
+  - S-1-5-21-3770350686-3666354711-3866293128-513
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1747,6 +2334,10 @@
   - sao
   - sds
   Description_EN: The source file user group name
+  Sample:
+  - wheel
+  - staff
+  - NT SERVICE\TrustedInstaller
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1756,6 +2347,10 @@
   - sao
   - xes
   Description_EN: The system access control list of the source file
+  Sample:
+  - S:NO_ACCESS_CONTROL
+  - S:(AU;SAFA;DCLCRPCRSDWDWO;;;WD)
+  - S:(AU;IDSAFA;DCLCRPSDWDWO;;;AU)
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1765,6 +2360,10 @@
   - xes
   - sao
   Description_EN: The discretionary access control list of the source file
+  Sample:
+  - D:(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;0x1200a9;;;BA)(A;;0x1200a9;;;SY)(A;;0x1200a9;;;BU)(A;;0x1200a9;;;AC)(A;;0x1200a9;;;S-1-15-2-2)
+  - D:(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)
+  - D:(A;ID;FA;;;SY)(A;ID;FA;;;BA)
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1775,6 +2374,7 @@
   - sao
   - sds
   Description_EN: The remote access of the source file
+  Sample: []
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -1785,6 +2385,10 @@
   - xes
   - sao
   Description_EN: The first time the source file was seen
+  Sample:
+  - '0'
+  - '1656355418449'
+  - '1656714760440'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1795,6 +2399,10 @@
   - xes
   - sao
   Description_EN: The last time the source file was seen
+  Sample:
+  - '0'
+  - '1656355418449'
+  - '1656715147313'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1803,6 +2411,8 @@
   ProductCode:
   - xes
   Description_EN: The public ip of the endpoint making the request
+  Sample:
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -1813,6 +2423,8 @@
   ProductCode:
   - xes
   Description_EN: The public port of the endpoint making the request
+  Sample:
+  - 57163
   DL_Type: int
   DL_CommonKey:
   - Port
@@ -1822,6 +2434,10 @@
   ProductCode:
   - sao
   Description_EN: The hook ID
+  Sample:
+  - '-1'
+  - '5'
+  - '4'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1830,6 +2446,10 @@
   ProductCode:
   - sao
   Description_EN: The object process thread ID
+  Sample:
+  - '10196'
+  - '10104'
+  - '10004'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1838,6 +2458,10 @@
   ProductCode:
   - sao
   Description_EN: The module where a hook procedure was set up
+  Sample:
+  - c:\program files (x86)\desktopcentral_agent\bin\dcusbsummary.exe
+  - c:\program files\common files\microsoft shared\clicktorun\officesvcmgr.exe
+  - c:\program files (x86)\sharp\sharp pen software\prsnspttool.exe
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -1847,6 +2471,9 @@
   - xes
   - sao
   Description_EN: The proxy address
+  Sample:
+  - proxy.sample:8080
+  - 10.10.10.10:8080
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1857,6 +2484,10 @@
   - xes
   - sao
   Description_EN: The object file hash ID
+  Sample:
+  - '2141057820373638746'
+  - '-6516669617381620295'
+  - '-4912169863817247597'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1866,6 +2497,7 @@
   - xes
   - sao
   Description_EN: The remote access for the object file
+  Sample: []
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -1875,6 +2507,10 @@
   - xes
   - sao
   Description_EN: The name of the Windows event provider
+  Sample:
+  - Microsoft-Windows-Security-Auditing
+  - Microsoft-Windows-WMI-Activity
+  - Microsoft-Windows-TaskScheduler
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1884,6 +2520,8 @@
   - xes
   - sao
   Description_EN: The GUID of the Windows event provider
+  Sample:
+  - '{11111111-1111-1111-1111-111111111111}'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1893,6 +2531,10 @@
   - xes
   - sao
   Description_EN: The Windows event channel
+  Sample:
+  - Security
+  - Microsoft-Windows-WMI-Activity/Trace
+  - Microsoft-Windows-TaskScheduler/Operational
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1902,6 +2544,8 @@
   - xes
   - sao
   Description_EN: The event time
+  Sample:
+  - 1657781088000
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -1911,6 +2555,10 @@
   - xes
   - sao
   Description_EN: The size of the Windows event log
+  Sample:
+  - '1128'
+  - '1129'
+  - '1127'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1920,6 +2568,7 @@
   - xes
   - sao
   Description_EN: The data for correlation
+  Sample: []
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1928,6 +2577,10 @@
   ProductCode:
   - xes
   Description_EN: The file path of the Windows event data provider
+  Sample:
+  - '%systemroot%\system32\wbem\ntevt.dll'
+  - '%systemroot%\system32\wbem\stdprov.dll'
+  - C:\WINDOWS\CCM\smsclient.dll
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1936,6 +2589,10 @@
   ProductCode:
   - xes
   Description_EN: The name of the Windows event data provider
+  Sample:
+  - SmsClientMethodProvider
+  - MS_NT_EVENTLOG_PROVIDER
+  - RegProv
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1945,6 +2602,10 @@
   - xes
   - sao
   Description_EN: The name of the Windows event sign in process name
+  Sample:
+  - 'NtLmSsp '
+  - 'Advapi  '
+  - Advapi
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1954,6 +2615,10 @@
   - xes
   - sao
   Description_EN: The authentication package name of the Windows event data
+  Sample:
+  - NTLM
+  - Negotiate
+  - MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1963,6 +2628,10 @@
   - xes
   - sao
   Description_EN: The Windows event data status
+  Sample:
+  - '0xc000006d'
+  - '-1073741715'
+  - '0xc000006e'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1972,6 +2641,10 @@
   - xes
   - sao
   Description_EN: The Windows event data sub status
+  Sample:
+  - '0xc0000064'
+  - '0xc000006a'
+  - '-1073741724'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1980,6 +2653,9 @@
   ProductCode:
   - sao
   Description_EN: The name of the account that initiated the event
+  Sample:
+  - BEI\holdej
+  - NT AUTHORITY\SYSTEM
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1988,6 +2664,10 @@
   ProductCode:
   - sao
   Description_EN: The process path that initiated the event
+  Sample:
+  - C:\Program Files\Microsoft Office\Office15\OUTLOOK.EXE
+  - C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARM.exe
+  - C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1996,6 +2676,10 @@
   ProductCode:
   - sao
   Description_EN: The user name of the Windows event data target
+  Sample:
+  - Offer Remote Assistance Helpers
+  - Administrators
+  - Administradores
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2004,6 +2688,10 @@
   ProductCode:
   - xes
   Description_EN: The recipient of the reported event
+  Sample:
+  - HealthDriverEventConsumer="Health Event Consumer"
+  - MemoryEventConsumer="Memory Event Consumer"
+  - SysEventConsumer="System Event Consumer"
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2013,6 +2701,10 @@
   - sao
   - xes
   Description_EN: The action performed
+  Sample:
+  - Language Components Installer
+  - Group Policy Background Processing
+  - C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2022,6 +2714,10 @@
   - xes
   - sao
   Description_EN: The task name logged by the Windows event
+  Sample:
+  - \Microsoft\Windows\LanguageComponentsInstaller\Installation
+  - \Microsoft\Office\Office Serviceability Manager
+  - \MicrosoftEdgeUpdateTaskMachineUA
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2031,6 +2727,10 @@
   - xes
   - sao
   Description_EN: The user context of the Windows event data
+  Sample:
+  - MP\MPBSA179345$
+  - MP\MPBSASPU179370$
+  - MP\MPBSA4025625$
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2040,6 +2740,10 @@
   - xes
   - sao
   Description_EN: The path of the Windows event data
+  Sample:
+  - C:\Program Files\Common Files\Microsoft Shared\ClickToRun\officesvcmgr.exe
+  - taskhostw.exe
+  - gpupdate.exe
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2050,6 +2754,10 @@
   - xes
   - sao
   Description_EN: The object name
+  Sample:
+  - /usr/bin/bash
+  - /bin/bash
+  - /opt/folder1/probes/system/processes/processes
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2060,6 +2768,10 @@
   - sao
   - sds
   Description_EN: The object session ID
+  Sample:
+  - '0'
+  - '1'
+  - '2'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2070,6 +2782,10 @@
   - xes
   - sao
   Description_EN: The object launch time of the Windows event
+  Sample:
+  - '1616412892557'
+  - '1620778597056'
+  - '1616414113105'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2079,6 +2795,10 @@
   - xes
   - sao
   Description_EN: The object authorization ID
+  Sample:
+  - '999'
+  - '996'
+  - '997'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2089,6 +2809,9 @@
   - sao
   - sds
   Description_EN: The object user domain
+  Sample:
+  - NT AUTHORITY
+  - AUTORIDADE NT
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -2099,6 +2822,10 @@
   - sao
   - sds
   Description_EN: The user group name
+  Sample:
+  - staff
+  - _spotlight
+  - wheel
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2109,6 +2836,10 @@
   - xes
   - sao
   Description_EN: The source hash ID
+  Sample:
+  - '4070054759888344851'
+  - '2177864258235728980'
+  - '3476454206648023552'
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: false
@@ -2119,6 +2850,9 @@
   - xes
   - sao
   Description_EN: The protocol type
+  Sample:
+  - TELEMETRY_CONNECTION_TCP
+  - TELEMETRY_CONNECTION_UDP
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -2127,6 +2861,8 @@
   ProductCode:
   - xes
   Description_EN: The layer-7 network protocol being exploited protocol
+  Sample:
+  - SMB
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2137,6 +2873,9 @@
   - sds
   - sao
   Description_EN: The AMSI object content name
+  Sample:
+  - C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.2\PowerShellGet.psd1
+  - c:\synclog\BLAST_SCAN.vbs
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2147,6 +2886,10 @@
   - sds
   - sao
   Description_EN: The raw data size of the Windows event object
+  Sample:
+  - '9'
+  - '1'
+  - '564'
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -2157,6 +2900,9 @@
   - xes
   - sao
   Description_EN: The "runas" command uses a local account
+  Sample:
+  - 0
+  - 1
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -2165,6 +2911,8 @@
   ProductCode:
   - xes
   Description_EN: The name of the executed API
+  Sample:
+  - GetIpNetTable
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2173,6 +2921,8 @@
   ProductCode:
   - xes
   Description_EN: The API hook number of the object
+  Sample:
+  - 1
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -2181,6 +2931,8 @@
   ProductCode:
   - xes
   Description_EN: The API telemetry return value
+  Sample:
+  - '0'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2191,6 +2943,10 @@
   - sds
   - sao
   Description_EN: The Windows Registry Root ID
+  Sample:
+  - '3'
+  - '1'
+  - '2'
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -2201,6 +2957,10 @@
   - xes
   - sao
   Description_EN: The Windows Registry Type ID
+  Sample:
+  - 1
+  - 11
+  - 4
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -2209,6 +2969,10 @@
   ProductCode:
   - xes
   Description_EN: The hash ID of the file attribute meta information
+  Sample:
+  - 1626660901647460150
+  - -3744588546027069975
+  - 8709345175736065179
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2217,6 +2981,10 @@
   ProductCode:
   - xes
   Description_EN: The original file attributes
+  Sample:
+  - 0
+  - 34
+  - 8224
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -2225,6 +2993,10 @@
   ProductCode:
   - xes
   Description_EN: The new file attributes
+  Sample:
+  - 2
+  - 32
+  - 8192
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -2233,6 +3005,8 @@
   ProductCode:
   - sds
   Description_EN: The current POSIX permission for the file
+  Sample:
+  - 0x100600
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2241,6 +3015,8 @@
   ProductCode:
   - sds
   Description_EN: The new POSIX permission file used in file events and CHMOD events
+  Sample:
+  - 0x100644
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2249,12 +3025,18 @@
   ProductCode:
   - sds
   Description_EN: The POSIX permission hash ID
+  Sample:
+  - -8931783023607715387
   DL_Type: string
   DL_Searchable: true
 - Name: nativeDeviceCharacteristics
   ProductCode:
   - xes
   Description_EN: Additional driver device information
+  Sample:
+  - 393217
+  - 131072
+  - 131088
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -2263,6 +3045,10 @@
   ProductCode:
   - xes
   Description_EN: The underlying hardware type of the driver
+  Sample:
+  - 2
+  - 7
+  - 20
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -2271,6 +3057,10 @@
   ProductCode:
   - xes
   Description_EN: The bus type to which the device is connected
+  Sample:
+  - 0
+  - 2
+  - 17
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -2279,6 +3069,9 @@
   ProductCode:
   - xes
   Description_EN: The disk drive type
+  Sample:
+  - TELEMETRY_DEVICE_TYPE_UNKNOWN
+  - TELEMETRY_DEVICE_TYPE_REMOVABLE
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -2288,6 +3081,9 @@
   - xes
   Description_EN: Whether the system enforced signed kernel loading according to DSE(driver
     signature enforcement)
+  Sample:
+  - 1
+  - 0
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -2297,6 +3093,9 @@
   - xes
   Description_EN: Whether the system bypassed DSE(driver signature enforcement) checks
     and permitted loading of test-signed drivers
+  Sample:
+  - 1
+  - 0
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -2305,6 +3104,8 @@
   ProductCode:
   - xes
   Description_EN: The shared folder name for the server that contains the files
+  Sample:
+  - sharedfolder
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2313,6 +3114,9 @@
   ProductCode:
   - xes
   Description_EN: The library file name which has imported functions
+  Sample:
+  - KERNEL32.dll
+  - ADVAPI32.dll
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -2321,6 +3125,9 @@
   ProductCode:
   - xes
   Description_EN: The imported function file name
+  Sample:
+  - SwitchToThread/GetSystemInfo
+  - OpenProcessToken
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -2329,12 +3136,27 @@
   ProductCode:
   - xes
   Description_EN: The imported table information
+  Sample: []
   DL_Type: dynamic
   DL_Searchable: true
+- Name: groupId
+  ProductCode:
+  - ALL
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: objectPipeName
   ProductCode:
   - xes
   Description_EN: The named pipe of the event
+  Sample:
+  - \\.\pipe\name1
+  - \\serverHostName\pipe\name1
+  - \\serverIp\pipe\name1
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2343,6 +3165,9 @@
   ProductCode:
   - xes
   Description_EN: The full file path of the service executable file
+  Sample:
+  - '%SystemRoot%\PSEXESVC.exe'
+  - C:\Windows\System32\svchost.exe -k WinSysRestoreGroup
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2351,6 +3176,9 @@
   ProductCode:
   - xes
   Description_EN: The service name
+  Sample:
+  - PSEXESVC
+  - WinResSvc
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2359,6 +3187,9 @@
   ProductCode:
   - xes
   Description_EN: The cloud service
+  Sample:
+  - s3.us-east-1.amazonaws.com
+  - dynamodb.us-west-2.amazonaws.com
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2367,6 +3198,10 @@
   ProductCode:
   - xes
   Description_EN: The cloud service API
+  Sample:
+  - AssumeRole
+  - GetCallerIdentity
+  - ListBuckets
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2375,6 +3210,8 @@
   ProductCode:
   - xes
   Description_EN: The Cloud Identity ID used for authorization
+  Sample:
+  - arn:aws:sts::111111111111:assumed-role/eksctl-aws-test-nodegroup-ng-21d38-NodeInstanceRole-3wPxVEo4zHlK/i-01234567890abcdef
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2383,6 +3220,8 @@
   ProductCode:
   - xes
   Description_EN: The Cloud Identity name used for authorization
+  Sample:
+  - AWSsampleToken
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2391,6 +3230,8 @@
   ProductCode:
   - xes
   Description_EN: The Cloud Identity account ID used for authorization
+  Sample:
+  - '111111111111'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2399,6 +3240,8 @@
   ProductCode:
   - xes
   Description_EN: The virtual machine that made the request
+  Sample:
+  - ec2-123-124-0-12.us-west-2.compute.amazonaws.com
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2407,6 +3250,8 @@
   ProductCode:
   - xes
   Description_EN: The cloud account ID of the virtual machine that made the request
+  Sample:
+  - '111111111111'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2415,6 +3260,9 @@
   ProductCode:
   - xes
   Description_EN: The Avaliability Zone ID of the virtual machine that made the request
+  Sample:
+  - us-east-1b
+  - us-west-2a
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2423,6 +3271,8 @@
   ProductCode:
   - xes
   Description_EN: The subnet ID of the virtual machine that made the request
+  Sample:
+  - subnet-01234567890abcdef
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2431,6 +3281,8 @@
   ProductCode:
   - xes
   Description_EN: The network interface of the virtual machine that made the request
+  Sample:
+  - eni-01234567890abcdef
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2439,6 +3291,10 @@
   ProductCode:
   - xes
   Description_EN: The SIDs of the parent user group
+  Sample:
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+  - S-1-5-18
+  - S-1-5-21-3770350686-3666354711-3866293128-513
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -2447,6 +3303,10 @@
   ProductCode:
   - xes
   Description_EN: The user group SIDs of the process
+  Sample:
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+  - S-1-5-18
+  - S-1-5-21-3770350686-3666354711-3866293128-513
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -2455,6 +3315,10 @@
   ProductCode:
   - xes
   Description_EN: The user group SIDs of the object
+  Sample:
+  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
+  - S-1-5-18
+  - S-1-5-21-3770350686-3666354711-3866293128-513
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -2464,6 +3328,8 @@
   - xes
   - sao
   Description_EN: The sub system information
+  Sample:
+  - com.apple.xpc
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2473,6 +3339,8 @@
   - xes
   - sao
   Description_EN: The event message
+  Sample:
+  - '[0x13bb4e2a0] activating connection: mach=true listener=false peer=false name=com.apple.airportd'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2482,6 +3350,8 @@
   - xes
   - sao
   Description_EN: The message type
+  Sample:
+  - Default
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2491,6 +3361,8 @@
   - xes
   - sao
   Description_EN: The rule ID
+  Sample:
+  - 1005566
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -2500,6 +3372,8 @@
   - xes
   - sao
   Description_EN: The filter rule info
+  Sample:
+  - Default
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2509,6 +3383,8 @@
   - xes
   - sao
   Description_EN: The FNV of the object sign-in/sign-out meta
+  Sample:
+  - -8981232070268295229
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -2518,6 +3394,8 @@
   - xes
   - sao
   Description_EN: The first time the object sign-in/sign-out was seen
+  Sample:
+  - '1713903612'
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -2527,6 +3405,8 @@
   - xes
   - sao
   Description_EN: The last time the object sign-in/sign-out was seen
+  Sample:
+  - '1713903612'
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -2536,6 +3416,8 @@
   - xes
   - sao
   Description_EN: The sign-in/sign-out meta
+  Sample:
+  - 1 - LOGIN_OUT_META_TYPE_OPENSSH
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -2545,6 +3427,8 @@
   - xes
   - sao
   Description_EN: The sign-in/sign-out source IP
+  Sample:
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2554,6 +3438,8 @@
   - xes
   - sao
   Description_EN: The sign-in/sign-out status
+  Sample:
+  - -1
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -2563,6 +3449,8 @@
   - xes
   - sao
   Description_EN: The sign-in/sign-out error message
+  Sample:
+  - Login incorrect
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2572,6 +3460,8 @@
   - xes
   - sao
   Description_EN: The sign-in/sign-out session ID
+  Sample:
+  - 260
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -2580,6 +3470,8 @@
   ProductCode:
   - ddr
   Description_EN: Path of target file
+  Sample:
+  - C://path/of/file.txt
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2589,6 +3481,8 @@
   - ddr
   Description_EN: The cryptographic hash of the target process image or file, with
     the specific hash algorithm to be determined
+  Sample:
+  - 1ca71017d2fa4775253670e1e55e26912bfdc156
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2597,6 +3491,10 @@
   ProductCode:
   - ddr
   Description_EN: Type of target file
+  Sample:
+  - local
+  - smb
+  - web
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2605,6 +3503,8 @@
   ProductCode:
   - ddr
   Description_EN: Path of source file
+  Sample:
+  - C://path/of/file.txt
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2614,6 +3514,8 @@
   - ddr
   Description_EN: The cryptographic hash of the source process image or file, with
     the specific hash algorithm to be determined.
+  Sample:
+  - 1ca71017d2fa4775253670e1e55e26912bfdc156
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2622,6 +3524,10 @@
   ProductCode:
   - ddr
   Description_EN: Type of source file
+  Sample:
+  - local
+  - smb
+  - web
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2630,6 +3536,10 @@
   ProductCode:
   - ddr
   Description_EN: The owner name of the source process or the login user name
+  Sample:
+  - root
+  - SYSTEM
+  - oracle
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2638,6 +3548,8 @@
   ProductCode:
   - ddr
   Description_EN: The Ids of DDR’s data policy
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2646,6 +3558,8 @@
   ProductCode:
   - ddr
   Description_EN: The meta for identifying the source of events
+  Sample:
+  - "[{'metaSrcUri': ...]"
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2656,6 +3570,10 @@
   - sao
   - sds
   Description_EN: The original file name of the parent image
+  Sample:
+  - Taskmgr.exe
+  - WINLOGON.EXE
+  - svchost.exe
   DL_Type: string
   DL_CommonKey:
   - FileName
@@ -2667,6 +3585,10 @@
   - sao
   - sds
   Description_EN: The original file name of the process image
+  Sample:
+  - Taskmgr.exe
+  - WINLOGON.EXE
+  - svchost.exe
   DL_Type: string
   DL_CommonKey:
   - FileName
@@ -2678,6 +3600,10 @@
   - sao
   - sds
   Description_EN: The original file name of the object image
+  Sample:
+  - Taskmgr.exe
+  - WINLOGON.EXE
+  - svchost.exe
   DL_Type: string
   DL_CommonKey:
   - FileName

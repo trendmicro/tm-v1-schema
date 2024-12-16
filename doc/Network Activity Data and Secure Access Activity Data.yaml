@@ -2,6 +2,8 @@
   ProductCode:
   - ALL
   Description_EN: The event source type
+  Sample:
+  - 6 - EVENT_SOURCE_NETWORK_ACTIVITY
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -15,6 +17,8 @@
   - qpf
   - vpc
   Description_EN: The time the agent or product detected the event
+  Sample:
+  - 1657135700000
   DL_Type: real
   DL_CommonKey:
   DL_Searchable: true
@@ -23,6 +27,10 @@
   ProductCode:
   - ALL
   Description_EN: The detected technique ID based on the alert filter
+  Sample:
+  - MITREV9.T1057
+  - MITREV9.T1059.003
+  - XSAE.F2924
   DL_Type: dynamic
   DL_CommonKey:
   - Technique
@@ -32,6 +40,8 @@
   ProductCode:
   - ALL
   Description_EN: The unique key of the log
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -40,6 +50,8 @@
   ProductCode:
   - ALL
   Description_EN: The time when the XDR log was received
+  Sample:
+  - 1656324260000
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
@@ -49,6 +61,9 @@
   - ALL
   - qpf
   Description_EN: The internal product code
+  Sample:
+  - sig
+  - szn
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -57,14 +72,30 @@
   ProductCode:
   - ALL
   Description_EN: The top-level risk level of the event
+  Sample:
+  - info
+  - low
+  - medium
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: groupId
+  ProductCode:
+  - ALL
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: policyTreePath
   ProductCode:
   - ALL
   Description_EN: The policy tree path (endpoint only)
+  Sample:
+  - policyname1/policyname2/policyname3
   DL_Type: string
   DL_Searchable: true
 - Name: endpointHostName
@@ -72,6 +103,9 @@
   - sig
   - szn
   Description_EN: The host name of the device on which the event was detected
+  Sample:
+  - my_machine
+  - jeremy-mbp
   DL_Type: string
   DL_CommonKey:
   - EndpointName
@@ -82,6 +116,9 @@
   - sig
   - szn
   Description_EN: The host operating system name
+  Sample:
+  - Windows 10
+  - macos 12.1
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -93,6 +130,8 @@
   - qpf
   - vpc
   Description_EN: The destination IP address (dstaddr)
+  Sample:
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -104,6 +143,9 @@
   - sig
   - szn
   Description_EN: The device GUID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  - DSP84573ULLJHM5GK2R7
   DL_Type: string
   DL_CommonKey:
   - EndpointID
@@ -114,6 +156,8 @@
   - sig
   - szn
   Description_EN: The User Principal Name
+  Sample:
+  - sample_email@trendmicro.com
   DL_Type: string
   DL_CommonKey:
   - UserAccount
@@ -126,6 +170,9 @@
   - pdi
   - xns
   Description_EN: The destination URL that the user is accessing
+  Sample:
+  - https://google.com/
+  - https://api/example/v1/testit
   DL_Type: string
   DL_CommonKey:
   - URL
@@ -137,6 +184,9 @@
   - szn
   - qpf
   Description_EN: The action
+  Sample:
+  - Allow
+  - Block
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -148,6 +198,8 @@
   - qpf
   - vpc
   Description_EN: The source IP address (srcaddr)
+  Sample:
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -159,6 +211,8 @@
   - sig
   - szn
   Description_EN: The TLS version between the Service Gateway and server/website
+  Sample:
+  - TLS 1.2
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -169,6 +223,8 @@
   - szn
   Description_EN: The version of the HTTP protocol between the Service Gateway and
     server/website
+  Sample:
+  - HTTP/1.1
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -178,6 +234,9 @@
   - sig
   - szn
   Description_EN: The user agent or the agent through which the request was made
+  Sample:
+  - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0)
+  - Chrome/74.0.3729.108 Safari/537.36
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -187,6 +246,8 @@
   - sig
   - szn
   Description_EN: The UTC timestamp
+  Sample:
+  - 1599465660
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -200,6 +261,10 @@
   - qpf
   - vpc
   Description_EN: The name of the log event
+  Sample:
+  - SWG_ACTIVITY_LOG
+  - FIREWALL_ACTIVITY_LOG
+  - VPC_ACTIVITY_LOG
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -210,6 +275,9 @@
   - szn
   - qpf
   Description_EN: The name of the requested application
+  Sample:
+  - Facebook
+  - wiki
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -219,6 +287,9 @@
   - sig
   - szn
   Description_EN: The name of the triggered cloud access rule
+  Sample:
+  - ETL_Access Rules_Web_Host
+  - block_wiki_for_guest
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -230,6 +301,8 @@
   - pdi
   - xns
   Description_EN: The endpoint IP address
+  Sample:
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -241,6 +314,9 @@
   - sig
   - szn
   Description_EN: The URL domain
+  Sample:
+  - www.facebook.com
+  - gary.webserver64.com
   DL_Type: string
   DL_CommonKey:
   - DomainName
@@ -251,6 +327,8 @@
   ProductCode:
   - sig
   Description_EN: The WRS score
+  Sample:
+  - 81
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -262,6 +340,8 @@
   - xns
   Description_EN: Active directory domain, domain of username for logging in TMAS
     adminportal adminportal
+  Sample:
+  - trendmicro.com
   DL_Type: string
   DL_CommonKey:
   - DomainName
@@ -274,6 +354,9 @@
   - pdi
   - xns
   Description_EN: The user name or IP address (IPv4)
+  Sample:
+  - Sample User Name
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - UserAccount
@@ -283,6 +366,8 @@
   ProductCode:
   - sig
   Description_EN: The time it took the scanner to complete the scan, in milliseconds
+  Sample:
+  - 1599465660123
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -293,6 +378,12 @@
   - qpf
   Description_EN: The Zero Trust Secure Access - Internet Access cloud app action
     or the Palo Alto Networks firewall log sub-type
+  Sample:
+  - OneDrive download file
+  - start
+  - end
+  - drop
+  - deny
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -303,6 +394,8 @@
   - pdi
   - xns
   Description_EN: The SHA-1 of the file that violated the policy
+  Sample:
+  - 1e15bf99022a9164708cebb3eace8fd61ad45cba
   DL_Type: string
   DL_CommonKey:
   - FileSHA1
@@ -314,6 +407,8 @@
   - pdi
   - xns
   Description_EN: The SHA-256 of the file that violated the policy
+  Sample:
+  - ba9edecdd09de1307714564c24409bd25508e22fe11c768053a08f173f263e93
   DL_Type: string
   DL_CommonKey:
   - FileSHA2
@@ -325,6 +420,8 @@
   - pdi
   - xns
   Description_EN: The name of the file that violated the policy
+  Sample:
+  - word.doc
   DL_Type: string
   DL_CommonKey:
   - FileName
@@ -337,6 +434,8 @@
   - pdi
   - xns
   Description_EN: The size of the file that is violating the policy
+  Sample:
+  - 12134
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -347,6 +446,8 @@
   - pdi
   - xns
   Description_EN: The type of file which is violating the policy
+  Sample:
+  - Microsoft Words
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -355,6 +456,7 @@
   ProductCode:
   - sig
   Description_EN: The name of the detected malware
+  Sample:
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -365,6 +467,8 @@
   - pdi
   - xns
   Description_EN: The MIME type or content type of the response body
+  Sample:
+  - text/html
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -374,6 +478,8 @@
   - sig
   Description_EN: The roaming users or Trend Micro Web Security gateway where the
     web traffic passed
+  Sample:
+  - ETL VPN
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -383,6 +489,9 @@
   - sig
   - szn
   Description_EN: The scan type
+  Sample:
+  - Not match any rule
+  - Access control
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -392,6 +501,7 @@
   - sig
   Description_EN: The name of the triggered Threat Protection template or Data Loss
     Prevention profile triggered
+  Sample:
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -400,6 +510,8 @@
   ProductCode:
   - sig
   Description_EN: The user department request method
+  Sample:
+  - Sales
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -410,6 +522,8 @@
   - pdi
   - xns
   Description_EN: The network protocol request method
+  Sample:
+  - POST
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -422,6 +536,9 @@
   - qpf
   - vpc
   Description_EN: The product name
+  Sample:
+  - Secure Web Gateway
+  - XDR for Cloud - AWS VPC Flow Logs
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -431,6 +548,8 @@
   - sig
   - qpf
   Description_EN: The product version
+  Sample:
+  - 1.0
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -441,6 +560,8 @@
   - pdi
   - xns
   Description_EN: The non-endpoint object such as a network appliance
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -451,6 +572,8 @@
   - pdi
   - xns
   Description_EN: The type of request content
+  Sample:
+  - application/json; charset=utf-8
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -459,6 +582,8 @@
   ProductCode:
   - sig
   Description_EN: HTTPS traffic inspection failure
+  Sample:
+  - true
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -469,6 +594,7 @@
   - pdi
   - xns
   Description_EN: The JA3 fingerprint
+  Sample:
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -477,6 +603,8 @@
   ProductCode:
   - sig
   Description_EN: The response length
+  Sample:
+  - 1324
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -485,6 +613,8 @@
   ProductCode:
   - sig
   Description_EN: The client protocol
+  Sample:
+  - HTTP/1.1
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -493,6 +623,8 @@
   ProductCode:
   - sig
   Description_EN: The transport layer security of the client
+  Sample:
+  - TLS 1.2
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -501,6 +633,8 @@
   ProductCode:
   - sig
   Description_EN: The content encoding of the request or the response
+  Sample:
+  - gzip
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -509,6 +643,8 @@
   ProductCode:
   - sig
   Description_EN: The authorization type
+  Sample:
+  - Cookie
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -517,6 +653,8 @@
   ProductCode:
   - sig
   Description_EN: The request length
+  Sample:
+  - 1324
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -525,6 +663,8 @@
   ProductCode:
   - sig
   Description_EN: The time the server took to respond to the request, in milliseconds
+  Sample:
+  - 1599465660123
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -533,6 +673,8 @@
   ProductCode:
   - sig
   Description_EN: The traffic type
+  Sample:
+  - Forward
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -542,6 +684,8 @@
   - sig
   - qpf
   Description_EN: The URL category
+  Sample:
+  - Social Networking
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -550,6 +694,8 @@
   ProductCode:
   - szn
   Description_EN: The rule type which is applied to the traffic
+  Sample:
+  - access
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -559,6 +705,8 @@
   - szn
   Description_EN: The risk assessment and control design that is defined by Zero Trust
     Secure Access risk control rules
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -567,6 +715,8 @@
   ProductCode:
   - szn
   Description_EN: The UUID of the Zero Trust Secure Access private access application
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -578,6 +728,8 @@
   - vpc
   Description_EN: The virtual port of the source assigned to the Secure Access Module
     (srcport)
+  Sample:
+  - 57763
   DL_Type: int
   DL_CommonKey:
   - Port
@@ -588,6 +740,8 @@
   - szn
   - qpf
   Description_EN: The policy UUID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -598,6 +752,8 @@
   - qpf
   - vpc
   Description_EN: The service destination port of the private application server (dstport)
+  Sample:
+  - 443
   DL_Type: int
   DL_CommonKey:
   - Port
@@ -607,6 +763,8 @@
   ProductCode:
   - szn
   Description_EN: The company name
+  Sample:
+  - Trend Micro
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -615,6 +773,8 @@
   ProductCode:
   - vpc
   Description_EN: The time when the first data packet was received (in Unix seconds)
+  Sample:
+  - 1616729292
   DL_Type: real
   DL_CommonKey:
   DL_Searchable: false
@@ -623,6 +783,8 @@
   ProductCode:
   - vpc
   Description_EN: The time when the last data packet was received (in Unix seconds)
+  Sample:
+  - 1616729349
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: false
@@ -634,6 +796,8 @@
   - xns
   - qpf
   Description_EN: The session start time (in seconds)
+  Sample:
+  - 1575462989
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -644,6 +808,8 @@
   - pdi
   - xns
   Description_EN: The session end time, in seconds
+  Sample:
+  - 1575462989
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -652,6 +818,8 @@
   ProductCode:
   - sig
   Description_EN: The Data Loss Prevention template name
+  Sample:
+  - 'Australia, New Zealand: Healthcare Template,Germany: Banking and Financial Information'
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -661,6 +829,8 @@
   - pdi
   - xns
   Description_EN: The server IP address
+  Sample:
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -672,6 +842,8 @@
   - pdi
   - xns
   Description_EN: The client port number
+  Sample:
+  - 5566
   DL_Type: int
   DL_CommonKey:
   - Port
@@ -682,6 +854,8 @@
   - pdi
   - xns
   Description_EN: The server port number
+  Sample:
+  - 443
   DL_Type: int
   DL_CommonKey:
   - Port
@@ -692,6 +866,8 @@
   - pdi
   - xns
   Description_EN: The client MAC address
+  Sample:
+  - 00-00-00-ff-ff-ff
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -701,6 +877,8 @@
   - pdi
   - xns
   Description_EN: The server MAC address
+  Sample:
+  - 00-00-00-ff-ff-ff
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -711,6 +889,8 @@
   - xns
   - qpf
   Description_EN: The network analysis flow ID
+  Sample:
+  - '6837014561409730558'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -720,6 +900,8 @@
   - pdi
   - xns
   Description_EN: The network analysis flow session status
+  Sample:
+  - '2'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -730,6 +912,8 @@
   - xns
   - qpf
   Description_EN: The network protocol
+  Sample:
+  - HTTP
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -739,6 +923,8 @@
   - pdi
   - xns
   Description_EN: The HTTP referrer header
+  Sample:
+  - www.google.com.tw
   DL_Type: string
   DL_CommonKey:
   - URL
@@ -750,6 +936,8 @@
   - xns
   - qpf
   Description_EN: The HTTP X-Forwarded-For header
+  Sample:
+  - 10.10.10.10, 10.10.10.11, 10.10.10.12
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -759,6 +947,9 @@
   - pdi
   - xns
   Description_EN: The HTTP user agent
+  Sample:
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100
+    Safari/537.36
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -768,6 +959,8 @@
   - pdi
   - xns
   Description_EN: The HTTP date header
+  Sample:
+  - Fri, 20 Oct 2017 06:02:09 GMT
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -777,6 +970,8 @@
   - pdi
   - xns
   Description_EN: All HTTP headers without sensitive information
+  Sample:
+  - "Host: 10.10.10.10:8080\r\nUser-Agent: curl/7.78.0\r\nAccept: */*\r\n"
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -786,6 +981,8 @@
   - pdi
   - xns
   Description_EN: SSL protocol connection
+  Sample:
+  - YES
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -795,6 +992,9 @@
   - pdi
   - xns
   Description_EN: The network protocol response code
+  Sample:
+  - '200'
+  - '25'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -804,6 +1004,8 @@
   - pdi
   - xns
   Description_EN: The HTTP response date header
+  Sample:
+  - Fri, 20 Oct 2017 06:02:09 GMT
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -813,6 +1015,8 @@
   - pdi
   - xns
   Description_EN: The HTTP location header
+  Sample:
+  - www.google.com.tw
   DL_Type: string
   DL_CommonKey:
   - URL
@@ -823,6 +1027,10 @@
   - pdi
   - xns
   Description_EN: All HTTP response headers without sensitive information
+  Sample:
+  - "Accept-Ranges: bytes\r\nContent-Length: 68\r\nContent-Type: - text/plain; charset=utf-8\r\
+    \ \nLast-Modified: Thu, 19 Aug 2021 06:23:54 GMT\r\nDate: Thu, 19 Aug 2021 06:24:00\
+    \ GMT\r\n"
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -832,6 +1040,8 @@
   - pdi
   - xns
   Description_EN: The SHA-1 of the file detected in the response direction
+  Sample:
+  - f17d9c55dea88f9aec8f74363f01e918cffb4142
   DL_Type: string
   DL_CommonKey:
   - FileSHA1
@@ -842,6 +1052,8 @@
   - pdi
   - xns
   Description_EN: The SHA-256 of the file detected in the response direction
+  Sample:
+  - 5ad4396d67f0c9d54572f051e28e9e62f4010c269a953d25259b17ad5fab4fd5
   DL_Type: string
   DL_CommonKey:
   - FileSHA2
@@ -852,6 +1064,8 @@
   - pdi
   - xns
   Description_EN: The file type detected in the response direction
+  Sample:
+  - PKZIP
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -861,6 +1075,8 @@
   - pdi
   - xns
   Description_EN: The file information extracted from files detected in response direction
+  Sample:
+  - 
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -870,6 +1086,8 @@
   - pdi
   - xns
   Description_EN: The x-forwarded-for IP used by the network appliance
+  Sample:
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -882,6 +1100,8 @@
   - xns
   Description_EN: The patched HTTP server port when the network appliance selects
     an x-forwarded-for IP address to use
+  Sample:
+  - 65535
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -891,6 +1111,8 @@
   - pdi
   - xns
   Description_EN: The IP address of the FQDN
+  Sample:
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -902,6 +1124,8 @@
   - pdi
   - xns
   Description_EN: The HTTP server port
+  Sample:
+  - 443
   DL_Type: int
   DL_CommonKey:
   - Port
@@ -912,6 +1136,9 @@
   - pdi
   - xns
   Description_EN: The response method
+  Sample:
+  - KRB_ERROR
+  - AS_REP
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -921,6 +1148,8 @@
   - pdi
   - xns
   Description_EN: The service provider message ID
+  Sample:
+  - <sample_email@trendmicro.com>
   DL_Type: string
   DL_CommonKey:
   - EmailMessageID
@@ -931,6 +1160,8 @@
   - pdi
   - xns
   Description_EN: The email subject
+  Sample:
+  - test
   DL_Type: string
   DL_CommonKey:
   - EmailSubject
@@ -941,6 +1172,8 @@
   - pdi
   - xns
   Description_EN: The email sender
+  Sample:
+  - sample_email@trendmicro.com
   DL_Type: string
   DL_CommonKey:
   - EmailSender
@@ -951,6 +1184,8 @@
   - pdi
   - xns
   Description_EN: The email recipient
+  Sample:
+  - sample_email@trendmicro.com
   DL_Type: dynamic
   DL_CommonKey:
   - EmailRecipient
@@ -961,6 +1196,8 @@
   - pdi
   - xns
   Description_EN: The URLs of the request
+  Sample:
+  - www.google.com.tw
   DL_Type: dynamic
   DL_CommonKey:
   - URL
@@ -971,6 +1208,8 @@
   - pdi
   - xns
   Description_EN: The object transfer direction
+  Sample:
+  - Download
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -980,6 +1219,8 @@
   - pdi
   - xns
   Description_EN: The file information extracted from detected files
+  Sample:
+  - 
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -989,6 +1230,8 @@
   - pdi
   - xns
   Description_EN: The host name
+  Sample:
+  - NJ-EFFY-ZHAO1
   DL_Type: string
   DL_CommonKey:
   - DomainName
@@ -1000,6 +1243,8 @@
   - pdi
   - xns
   Description_EN: The selected cipher of the TLS protocol
+  Sample:
+  - c02f
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1009,6 +1254,8 @@
   - pdi
   - xns
   Description_EN: The certificate common name
+  Sample:
+  - '*.www.sample.com'
   DL_Type: string
   DL_CommonKey:
   - DomainName
@@ -1020,6 +1267,9 @@
   - pdi
   - xns
   Description_EN: The issuer of the certificate
+  Sample:
+  - /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server
+    CA
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1029,6 +1279,8 @@
   - pdi
   - xns
   Description_EN: The certificate validity start time
+  Sample:
+  - '2014-11-21T02:43:28'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1038,6 +1290,8 @@
   - pdi
   - xns
   Description_EN: The certificate validity end time
+  Sample:
+  - '2018-11-21T02:43:28'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1047,6 +1301,8 @@
   - pdi
   - xns
   Description_EN: The certificate serial number
+  Sample:
+  - 0888b1ad2a593310593f47565a5a5a4a
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1056,6 +1312,10 @@
   - pdi
   - xns
   Description_EN: The Subject Alternative Name of the certificate
+  Sample:
+  - '*.www.sample.com'
+  - add.my.sample.com
+  - au.sample.com
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1065,6 +1325,8 @@
   - pdi
   - xns
   Description_EN: The certificate fingerprint
+  Sample:
+  - 3914af80223c833f26df001cbf342eff8a31aba1
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1074,6 +1336,8 @@
   - pdi
   - xns
   Description_EN: The JA3 hash
+  Sample:
+  - 478e74fad764c966f19c5232c7cdfc5a
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1083,6 +1347,8 @@
   - pdi
   - xns
   Description_EN: The JA3S hash
+  Sample:
+  - 6d37fb1b3306d6e9f875650d8eb74b4f
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1092,6 +1358,8 @@
   - pdi
   - xns
   Description_EN: The raw JA3S
+  Sample:
+  - 771,157,65281-15
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1101,6 +1369,8 @@
   - pdi
   - xns
   Description_EN: The transaction information of the FTP protocol
+  Sample:
+  - 
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1110,6 +1380,8 @@
   - pdi
   - xns
   Description_EN: The record type requested by the DNS protocol
+  Sample:
+  - A
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1119,6 +1391,8 @@
   - pdi
   - xns
   Description_EN: The IP address resolved by the DNS protocol
+  Sample:
+  - 10.10.10.10
   DL_Type: dynamic
   DL_CommonKey:
   - IPv4
@@ -1129,6 +1403,8 @@
   ProductCode:
   - xns
   Description_EN: The client application version number
+  Sample:
+  - SSH-2.0-OPENSSH_9.0
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1137,6 +1413,8 @@
   ProductCode:
   - xns
   Description_EN: The server application version number
+  Sample:
+  - SSH-2.0-OPENSSH_8.7
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1146,6 +1424,8 @@
   - pdi
   - xns
   Description_EN: The data volume transmitted by the client (in bytes)
+  Sample:
+  - 4655
   DL_Type: string
   DL_Searchable: true
 - Name: respScannedBytes
@@ -1153,6 +1433,8 @@
   - pdi
   - xns
   Description_EN: The data volume transmitted by the server (in bytes)
+  Sample:
+  - 6654
   DL_Type: string
   DL_Searchable: true
 - Name: reqDataSize
@@ -1161,6 +1443,8 @@
   - qpf
   Description_EN: The data volume transmitted over the transport layer by the client
     (in bytes)
+  Sample:
+  - 15688
   DL_Type: string
   DL_Searchable: true
 - Name: respDataSize
@@ -1169,6 +1453,8 @@
   - qpf
   Description_EN: The data volume transmitted over the transport layer by the server
     (in bytes)
+  Sample:
+  - 7856
   DL_Type: string
   DL_Searchable: true
 - Name: clientGroup
@@ -1176,6 +1462,9 @@
   - xns
   - pdi
   Description_EN: The client IP network group
+  Sample:
+  - myCompany
+  - myGroup
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1185,6 +1474,9 @@
   - xns
   - pdi
   Description_EN: The server IP network group
+  Sample:
+  - myCompany
+  - myGroup
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1194,6 +1486,9 @@
   - xns
   - pdi
   Description_EN: The X-Forwarded-For IP network group
+  Sample:
+  - myCompany
+  - myGroup
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1203,6 +1498,9 @@
   - xns
   - pdi
   Description_EN: The IP address FQDN network group
+  Sample:
+  - myCompany
+  - myGroup
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1211,6 +1509,9 @@
   ProductCode:
   - xns
   Description_EN: The client IP host name
+  Sample:
+  - sample.test.com
+  - sample.tw.test.org
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1219,6 +1520,9 @@
   ProductCode:
   - xns
   Description_EN: The server IP host name
+  Sample:
+  - sample.test.com
+  - sample.tw.test.org
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1227,6 +1531,9 @@
   ProductCode:
   - xns
   Description_EN: The X-Forwarded-For IP host name
+  Sample:
+  - sample.test.com
+  - sample.tw.test.org
   DL_Type: string
   DL_Searchable: true
   DL_Aggregable: false
@@ -1234,6 +1541,8 @@
   ProductCode:
   - sig
   Description_EN: The end-to-end traffic latency time, in milliseconds
+  Sample:
+  - 10000
   DL_Type: string
   DL_Searchable: true
 - Name: rawDataStr
@@ -1241,6 +1550,9 @@
   - pdi
   - xns
   Description_EN: The raw data string that contains additional information
+  Sample:
+  - '[{ "oid": "1.2.3.4", "value_type": 4, "value": "MANUFACTURER:SAMPLE\ nMODEL:SAMPLE
+    C1234", "parse": 1}]'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -1251,6 +1563,8 @@
   - xns
   Description_EN: The IP address of the Deep Discovery Inspector or Virtual Network
     Sensor appliance
+  Sample:
+  - 10.10.10.10
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1261,6 +1575,9 @@
   - xns
   - qpf
   Description_EN: The network device hostname
+  Sample:
+  - my-company-xns
+  - my-ddi
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1269,6 +1586,12 @@
   ProductCode:
   - sig
   Description_EN: The category of the event in Cloud Reputation Service
+  Sample:
+  - All
+  - Online Service
+  - Application Suite
+  - Business Intelligence and Analytics
+  - Cloud Computing Platform
   DL_Type: string
   DL_Searchable: true
 - Name: eventId
@@ -1278,6 +1601,9 @@
   - qpf
   - vpc
   Description_EN: The event ID
+  Sample:
+  - '200139'
+  - '200140'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1286,6 +1612,9 @@
   ProductCode:
   - qpf
   Description_EN: The name of the triggered policy
+  Sample:
+  - lab-to-dns
+  - small-lab-http-out
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1294,6 +1623,9 @@
   ProductCode:
   - qpf
   Description_EN: The latest sign-in user of the source
+  Sample:
+  - 000c29edef58
+  - sample.com\ser-desktopcentral
   DL_Type: string
   DL_CommonKey:
   - UserAccount
@@ -1303,6 +1635,9 @@
   ProductCode:
   - qpf
   Description_EN: The latest logon user of the destination
+  Sample:
+  - dhr\m42svc
+  - altsvc
   DL_Type: string
   DL_CommonKey:
   - UserAccount
@@ -1312,6 +1647,8 @@
   ProductCode:
   - qpf
   Description_EN: The Palo Alto Networks virtual system of the session
+  Sample:
+  - vsys1
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1320,6 +1657,8 @@
   ProductCode:
   - qpf
   Description_EN: The source zone of the Palo Alto Networks firewall session
+  Sample:
+  - LAB-Small
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1328,6 +1667,8 @@
   ProductCode:
   - qpf
   Description_EN: The destination zone of the Palo Alto Networks firewall session
+  Sample:
+  - LAB-Small
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1336,6 +1677,10 @@
   ProductCode:
   - qpf
   Description_EN: The total number of logs
+  Sample:
+  - '1'
+  - '2'
+  - '3'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1344,6 +1689,8 @@
   ProductCode:
   - qpf
   Description_EN: The elapsed time of the session (in seconds)
+  Sample:
+  - 33
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -1352,6 +1699,8 @@
   ProductCode:
   - qpf
   Description_EN: The source country
+  Sample:
+  - Japan
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1360,6 +1709,8 @@
   ProductCode:
   - qpf
   Description_EN: The destination country
+  Sample:
+  - Japan
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1368,6 +1719,9 @@
   ProductCode:
   - qpf
   Description_EN: The reason why a session was terminated
+  Sample:
+  - tcp-fin
+  - tcp-rst-from-server
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1376,6 +1730,8 @@
   ProductCode:
   - qpf
   Description_EN: The source OS
+  Sample:
+  - Windows 10
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1384,6 +1740,9 @@
   ProductCode:
   - qpf
   Description_EN: The source hostname
+  Sample:
+  - sw_us-east-1a_10-124-17-69
+  - sw_us-east-1c_10-124-21-139
   DL_Type: string
   DL_CommonKey:
   - DomainName
@@ -1393,6 +1752,8 @@
   ProductCode:
   - qpf
   Description_EN: The source MAC address
+  Sample:
+  - 00-00-00-ff-ff-ff
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1401,6 +1762,8 @@
   ProductCode:
   - qpf
   Description_EN: The destination OS
+  Sample:
+  - Windows
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1409,6 +1772,9 @@
   ProductCode:
   - qpf
   Description_EN: The destination hostname
+  Sample:
+  - sw_us-east-1c_10-124-21-139
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - DomainName
@@ -1418,6 +1784,8 @@
   ProductCode:
   - qpf
   Description_EN: The destination MAC address
+  Sample:
+  - 00-00-00-ff-ff-ff
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1426,6 +1794,11 @@
   ProductCode:
   - vpc
   Description_EN: The VPC Flow Logs version (version)
+  Sample:
+  - 2
+  - 3
+  - 4
+  - 5
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
@@ -1434,6 +1807,8 @@
   ProductCode:
   - vpc
   Description_EN: The owner AWS account ID of the source network interface (account-id)
+  Sample:
+  - 123456789012
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1442,6 +1817,8 @@
   ProductCode:
   - vpc
   Description_EN: The network interface ID (interface-id)
+  Sample:
+  - eni-01234567890abcdef
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1450,6 +1827,9 @@
   ProductCode:
   - vpc
   Description_EN: The protocol number (protocol)
+  Sample:
+  - 6
+  - 17
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -1458,6 +1838,8 @@
   ProductCode:
   - vpc
   Description_EN: The number of transmitted data packets
+  Sample:
+  - 14
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1466,6 +1848,8 @@
   ProductCode:
   - vpc
   Description_EN: The number of transmitted data bytes
+  Sample:
+  - 15044
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1474,6 +1858,9 @@
   ProductCode:
   - vpc
   Description_EN: The traffic processing action
+  Sample:
+  - ACCEPT
+  - REJECT
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1482,6 +1869,10 @@
   ProductCode:
   - vpc
   Description_EN: The VPC Flow Log status
+  Sample:
+  - OK
+  - NODATA
+  - SKIPDATA
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1490,6 +1881,8 @@
   ProductCode:
   - vpc
   Description_EN: The VPC ID
+  Sample:
+  - vpc-01234567890abcdef
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1498,6 +1891,8 @@
   ProductCode:
   - vpc
   Description_EN: The subnet ID
+  Sample:
+  - subnet-01234567890abcdef
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1506,6 +1901,8 @@
   ProductCode:
   - vpc
   Description_EN: The instance ID
+  Sample:
+  - i-01234567890abcdef
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1514,6 +1911,11 @@
   ProductCode:
   - vpc
   Description_EN: The bitmask value of the FIN/SYN/RST/SYN-ACK TCP flags
+  Sample:
+  - 1
+  - 2
+  - 4
+  - 18
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -1522,6 +1924,10 @@
   ProductCode:
   - vpc
   Description_EN: The type of traffic (type)
+  Sample:
+  - IPv4
+  - IPv6
+  - EFA
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1530,6 +1936,8 @@
   ProductCode:
   - vpc
   Description_EN: The packet level source IP
+  Sample:
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -1540,6 +1948,8 @@
   ProductCode:
   - vpc
   Description_EN: The packet level destination IP
+  Sample:
+  - 10.10.10.10
   DL_Type: string
   DL_CommonKey:
   - IPv4
@@ -1550,6 +1960,8 @@
   ProductCode:
   - vpc
   Description_EN: The network interface AWS Region
+  Sample:
+  - ap-southeast-2
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1558,6 +1970,8 @@
   ProductCode:
   - vpc
   Description_EN: The Availability Zone ID
+  Sample:
+  - apse2-az3
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1566,6 +1980,10 @@
   ProductCode:
   - vpc
   Description_EN: The sublocation type
+  Sample:
+  - wavelength
+  - outpost
+  - localzone
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1574,6 +1992,10 @@
   ProductCode:
   - vpc
   Description_EN: The sublocation ID
+  Sample:
+  - lz-0abcd123efg4567h
+  - op-0abcd123efg4567h
+  - wz-0abcd123efg4567h
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1582,6 +2004,10 @@
   ProductCode:
   - vpc
   Description_EN: The subset IP address range name for cloud service source IP (pkt-src-aws-service)
+  Sample:
+  - AMAZON
+  - EC2
+  - ROUTE53
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1591,6 +2017,10 @@
   - vpc
   Description_EN: The subset IP address range name for cloud service destination IP
     (pkt-dst-aws-service)
+  Sample:
+  - AMAZON
+  - EC2
+  - ROUTE53
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1599,6 +2029,9 @@
   ProductCode:
   - vpc
   Description_EN: The network interface traffic direction
+  Sample:
+  - ingress
+  - egress
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1607,6 +2040,10 @@
   ProductCode:
   - vpc
   Description_EN: The egress traffic path number
+  Sample:
+  - 1
+  - 2
+  - 8
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
@@ -1615,6 +2052,9 @@
   ProductCode:
   - sig
   Description_EN: Whether the requested application is private
+  Sample:
+  - true
+  - false
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
@@ -1624,6 +2064,8 @@
   - ALL
   Description_EN: The UUID of the original event which matches the Security Analytics
     Engine filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1633,6 +2075,8 @@
   - ALL
   Description_EN: The source type of the original event which matches the Security
     Analytics Engine filter
+  Sample:
+  - EVENT_SOURCE_NETWORK_ACTIVITY
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1641,6 +2085,8 @@
   ProductCode:
   - ALL
   Description_EN: Whether the event matches the Security Analytics Engine filter
+  Sample:
+  - true
   DL_Type: bool
   DL_CommonKey:
   DL_Searchable: true
