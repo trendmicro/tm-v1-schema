@@ -1,0 +1,1585 @@
+- Name: eventSourceType
+  ProductCode:
+  - ALL
+  Description_EN: The event source type
+  Sample:
+  - 8 - EVENT_SOURCE_CONTAINER_ACTIVITY
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventTime
+  ProductCode:
+  - tlc
+  - ALL
+  Description_EN: The time the agent or product detected the event
+  Sample:
+  - 1656324260000
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventTimeDT
+  ProductCode:
+  - sdl
+  Description_EN: ' '
+  Sample:
+  - '2023-12-21T02:36:12.817Z'
+  DL_Type: datetime
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+  DL_Ingest:
+    source: $.eventTime
+    transform: DateTimeFromUnixMilliseconds
+- Name: tags
+  ProductCode:
+  - ALL
+  Description_EN: The detected technique ID based on the alert filter
+  Sample:
+  - MITREV9.T1090
+  - MITRE.T1071
+  - MITREV9.T1059.001
+  DL_Type: dynamic
+  DL_CommonKey:
+  - Technique
+  - Tactic
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: uuid
+  ProductCode:
+  - tlc
+  - ALL
+  Description_EN: The unique key of the log entry
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: productCode
+  ProductCode:
+  - tlc
+  - ALL
+  Description_EN: The internal product code
+  Sample:
+  - tlc
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: filterRiskLevel
+  ProductCode:
+  - ALL
+  Description_EN: The top level filter risk of the event
+  Sample:
+  - info
+  - low
+  - medium
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: groupId
+  ProductCode:
+  - ALL
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyTreePath
+  ProductCode:
+  - ALL
+  Description_EN: The policy tree path
+  Sample:
+  - policyname1/policyname2/policyname3
+  DL_Type: string
+  DL_Searchable: true
+- Name: groupName
+  ProductCode:
+  - ALL
+  Description_EN: The group name
+  Sample:
+  - example.com
+  DL_Type: string
+- Name: logReceivedTime
+  ProductCode:
+  - ALL
+  Description_EN: The time when the XDR log was received
+  Sample:
+  - 1656324260000
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vendor
+  ProductCode:
+  - tlc
+  Description_EN: The device vendor
+  Sample:
+  - Fortinet
+  - Check Point
+  - Palo Alto Networks
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: pname
+  ProductCode:
+  - tlc
+  Description_EN: The product name
+  Sample:
+  - PAN-OS
+  - Fortigate
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pver
+  ProductCode:
+  - tlc
+  Description_EN: The product version
+  Sample:
+  - v6.0.3
+  - 10.1.12
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: severity
+  ProductCode:
+  - tlc
+  Description_EN: The severity of the event
+  Sample:
+  - 3
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventId
+  ProductCode:
+  - tlc
+  Description_EN: The event ID
+  Sample:
+  - '200138'
+  - '100119'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventName
+  ProductCode:
+  - tlc
+  Description_EN: The log type
+  Sample:
+  - FIREWALL_ACTIVITY_LOG
+  - TRAFFIC
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSubName
+  ProductCode:
+  - tlc
+  Description_EN: The event type sub-name
+  Sample:
+  - start
+  - end
+  - drop
+  - deny
+  - url
+  - ml-virus
+  - file
+  - vulnerability
+  - wildfire
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: src
+  ProductCode:
+  - tlc
+  Description_EN: The source IP address
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dst
+  ProductCode:
+  - tlc
+  Description_EN: The destination IP address
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: policyName
+  ProductCode:
+  - tlc
+  Description_EN: The name of the triggered policy
+  Sample:
+  - TLC-to-nat-untrust
+  - TLC-to-nat-trust
+  - default
+  - g-default
+  - Unified-Policy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sUser1
+  ProductCode:
+  - tlc
+  Description_EN: The latest sign-in user of the source
+  Sample:
+  - sample_email@trendmicro.com
+  - sip:sipp@10.10.10.10:5060
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dUser1
+  ProductCode:
+  - tlc
+  Description_EN: The latest sign-in user of the destination
+  Sample:
+  - N/A
+  - empty
+  - bob
+  - sample_email@trendmicro.com
+  - sip:service@10.10.10.10:5060
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: application
+  ProductCode:
+  - tlc
+  Description_EN: The name of the requested application
+  Sample:
+  - Microsoft Account
+  - Microsoft Services
+  - Office Online
+  - update.googleapis.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: vsysName
+  ProductCode:
+  - tlc
+  Description_EN: The virtual system of the session
+  Sample:
+  - vsys1
+  - root
+  - vdom1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcZone
+  ProductCode:
+  - tlc
+  Description_EN: The source zone of the session
+  Sample:
+  - wan
+  - dmz
+  - undefined
+  - TLC
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstZone
+  ProductCode:
+  - tlc
+  Description_EN: The destination zone of the session
+  Sample:
+  - wan
+  - dmz
+  - undefined
+  - Internal
+  - nat-trust
+  - nat-untrust
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: flowId
+  ProductCode:
+  - tlc
+  Description_EN: The connection ID
+  Sample:
+  - '101766'
+  - '440'
+  - '20518968'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cnt
+  ProductCode:
+  - tlc
+  Description_EN: The total number of logs
+  Sample:
+  - '1'
+  - '2'
+  - '3'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: spt
+  ProductCode:
+  - tlc
+  Description_EN: The source port
+  Sample:
+  - 53
+  - 0
+  - 7680
+  - 50006
+  - 52068
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dpt
+  ProductCode:
+  - tlc
+  Description_EN: The destination port
+  Sample:
+  - 0
+  - 445
+  - 80
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: app
+  ProductCode:
+  - tlc
+  Description_EN: The network protocol
+  Sample:
+  - DNS Response
+  - TCP
+  - HTTP
+  - tcp
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: act
+  ProductCode:
+  - tlc
+  Description_EN: The action
+  Sample:
+  - deny
+  - close
+  - client-rst
+  - permit
+  - log-only
+  - Accept
+  - Drop
+  - Key Install
+  - Detect (Anti Malware)
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: suid
+  ProductCode:
+  - tlc
+  Description_EN: The username or mailbox
+  Sample:
+  - root
+  - NT AUTHORITY\SYSTEM
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: category
+  ProductCode:
+  - tlc
+  Description_EN: The event category
+  Sample:
+  - Exploits
+  - Reconnaissance
+  - Vulnerabilities
+  - Security Policy
+  - utm:ips
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: reqDataSize
+  ProductCode:
+  - tlc
+  Description_EN: The data volume transmitted over the transport layer by the client
+    (in bytes)
+  Sample:
+  - 15688
+  DL_Type: string
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: respDataSize
+  ProductCode:
+  - tlc
+  Description_EN: The data volume transmitted over the transport layer by the server
+    (in bytes)
+  Sample:
+  - 7856
+  DL_Type: string
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sessionStart
+  ProductCode:
+  - tlc
+  Description_EN: The session start name (in seconds)
+  Sample:
+  - 1575462989
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sessionEnd
+  ProductCode:
+  - tlc
+  Description_EN: The session end time (in seconds)
+  Sample:
+  - 1575462989
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sessionEndReason
+  ProductCode:
+  - tlc
+  Description_EN: The reason why a session was terminated
+  Sample:
+  - tcp-fin
+  - tcp-rst-from-server
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sessionElapsedTime
+  ProductCode:
+  - tlc
+  Description_EN: The elapsed time of the session (in seconds)
+  Sample:
+  - 33
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: urlCat
+  ProductCode:
+  - tlc
+  Description_EN: The requested URL category
+  Sample:
+  - Untested
+  - '158'
+  - Web Advertisement
+  - Malicious Websites
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcLocation
+  ProductCode:
+  - tlc
+  Description_EN: The source country
+  Sample:
+  - Japan
+  - Reserved
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstLocation
+  ProductCode:
+  - tlc
+  Description_EN: The destination country
+  Sample:
+  - Japan
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dvchost
+  ProductCode:
+  - tlc
+  Description_EN: The network device hostname
+  Sample:
+  - my-company-xns
+  - my-ddi
+  - VLAB-PA440
+  - FG-50E
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyUuid
+  ProductCode:
+  - tlc
+  Description_EN: The policy UUID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: httpXForwardedFor
+  ProductCode:
+  - tlc
+  Description_EN: The HTTP X-Forwarded-For header
+  Sample:
+  - 10.10.10.10, 10.10.10.11, 10.10.10.12
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sOSName
+  ProductCode:
+  - tlc
+  Description_EN: The source OS
+  Sample:
+  - Windows 10
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: shost
+  ProductCode:
+  - tlc
+  Description_EN: The source hostname
+  Sample:
+  - sw_us-east-1a_10-124-17-69
+  - sw_us-east-1c_10-124-21-139
+  - WIN-FBUB1O9TU4U
+  - TW-STEVENLIN
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: smac
+  ProductCode:
+  - tlc
+  Description_EN: The source MAC address
+  Sample:
+  - 00:00:00:ff:ff:ff
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dOSName
+  ProductCode:
+  - tlc
+  Description_EN: The destination OS
+  Sample:
+  - Windows
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dhost
+  ProductCode:
+  - tlc
+  Description_EN: The destination hostname
+  Sample:
+  - sw_us-east-1c_10-124-21-139
+  - 10.10.10.10
+  - www.sample.org
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dmac
+  ProductCode:
+  - tlc
+  Description_EN: The destination MAC address
+  Sample:
+  - 00:00:00:ff:ff:ff
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requests
+  ProductCode:
+  - tlc
+  Description_EN: The URLs of the request
+  Sample:
+  - www.google.com.tw
+  DL_Type: dynamic
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestMethod
+  ProductCode:
+  - tlc
+  Description_EN: The network protocol request method
+  Sample:
+  - POST
+  - get
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: requestClientApplication
+  ProductCode:
+  - tlc
+  Description_EN: The HTTP user agent
+  Sample:
+  - Firefox/126.0
+  - 'Other: Wget/1.19.1 (mingw32)'
+  - MICROSOFT_DEVICE_METADATA_RETRIEVAL_CLIENT
+  - LIBCURL
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: hostName
+  ProductCode:
+  - tlc
+  Description_EN: The hostname
+  Sample:
+  - NJ-EFFY-ZHAO1
+  - trendmicro.com
+  - SMC User
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  - HostDomain
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: ruleName
+  ProductCode:
+  - tlc
+  Description_EN: The name of the rule that triggered the event
+  Sample:
+  - ETL_Access Rules_Web_Host
+  - block_wiki_for_guest
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: ruleId
+  ProductCode:
+  - tlc
+  Description_EN: The rule ID
+  Sample:
+  - 1002795
+  - 1003802
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: rating
+  ProductCode:
+  - tlc
+  Description_EN: The credibility level
+  Sample:
+  - any
+  - Unknown
+  - Dangerous
+  - computer-and-internet-info
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: direction
+  ProductCode:
+  - tlc
+  Description_EN: The direction
+  Sample:
+  - Incoming
+  - Outgoing
+  - Unknown
+  - client-to-server
+  - server-to-client
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: httpRespContentType
+  ProductCode:
+  - tlc
+  Description_EN: The HTTP response data content type
+  Sample:
+  - Application/json
+  - application/octet-stream
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileName
+  ProductCode:
+  - tlc
+  Description_EN: The file name
+  Sample:
+  - csm-eicar.txt
+  - csm-eicar.gif
+  - eicar.com.txt
+  - svcrestarttask
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileSize
+  ProductCode:
+  - tlc
+  Description_EN: The file size
+  Sample:
+  - 1209
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: filePath
+  ProductCode:
+  - tlc
+  Description_EN: The file path
+  Sample:
+  - security
+  - /var/log/audit/audit.log
+  - application
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileHash
+  ProductCode:
+  - tlc
+  Description_EN: The SHA-1 of the file
+  Sample:
+  - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
+  - 89CE26EAD139D52B8A6B61BFFC6AF89AF246580F
+  - 3AD1F4E7CAA11E5199EE80B8983677ADDD065450
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileHashSha256
+  ProductCode:
+  - tlc
+  Description_EN: The SHA-256 of the file
+  Sample:
+  - 6A6EB2D717CEA041B4444193B45EDFB6CA1287518203B7230B3C4B8FFB031EAB
+  - BFF703FF836196644586014DA13A097C2EE9A08E4D596DFB7C8E0F685FE01294
+  - 12327F460AC9CBBC34D39EB3CF89C7FECCA37F08773A04566840F73F6ECC4104
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileHashMd5
+  ProductCode:
+  - tlc
+  Description_EN: The MD5 of the file
+  Sample:
+  - d5120786925038601a77c2e1eB9a3a0a
+  DL_Type: string
+  DL_CommonKey:
+  - FileMD5
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileType
+  ProductCode:
+  - tlc
+  Description_EN: The file type
+  Sample:
+  - EXE
+  - LNK
+  - MIME
+  - linux
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: oldFileHash
+  ProductCode:
+  - tlc
+  Description_EN: The old file hash
+  Sample:
+  - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
+  - 89CE26EAD139D52B8A6B61BFFC6AF89AF246580F
+  - 57247B810B0EE61DD86CE24AC14097B9B5405EEC
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: httpReferer
+  ProductCode:
+  - tlc
+  Description_EN: The HTTP referer
+  Sample:
+  - http://10.10.10.10/
+  - http://fake/home/
+  - http://fake.com/page/Test.jsp
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: suser
+  ProductCode:
+  - tlc
+  Description_EN: The email sender
+  Sample:
+  - sample_email@trendmicro.com
+  - sip:sipp@10.10.10.10:5060
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailSender
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: mailMsgSubject
+  ProductCode:
+  - tlc
+  Description_EN: The email subject
+  Sample:
+  - Administrator Login
+  - Administrator Logout
+  - hello_world2
+  DL_Type: string
+  DL_CommonKey:
+  - EmailSubject
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: duser
+  ProductCode:
+  - tlc
+  Description_EN: The email recipient
+  Sample:
+  - bob
+  - N/A
+  - empty
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailRecipient
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dvc
+  ProductCode:
+  - false
+  Description_EN: The device IP
+  Sample:
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: description
+  ProductCode:
+  - tlc
+  Description_EN: The additional event details
+  Sample:
+  - IPsec tunnel statistics
+  - file_transfer: Eicar.Virus.Test.File,
+  - File is infected.
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: proto
+  ProductCode:
+  - tlc
+  Description_EN: The transport network protocol
+  Sample:
+  - '6'
+  - TCP
+  - '17'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vendorParsed
+  ProductCode:
+  - tlc
+  Description_EN: The normalized event log (JSON format)
+  Sample: '{"cefHeader": { "cefVersion": "0", "deviceVendor": "Palo Alto Networks","deviceProduct":
+    "PAN-OS","deviceEventClassId": "Machine Learning found virus(599805)"},"cefExtension":
+    "rt":".."}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vendorRaw
+  ProductCode:
+  - tlc
+  Description_EN: The original event log string
+  Sample: CEF:0|Palo Alto Networks|PAN-OS|10.2.9-h1|end|TRAFFIC|1|rt=Aug 12 2024 15:31:19
+    GMT deviceExternalId=021201072197 src=10.10.10.10 dst=10.10.10.11 sourceTranslatedAddress=0.0.0.0
+    destinationTranslatedAddress=0.0.0.0 cs1Label=Rule cs1=TLC-to-nat-trust suser=
+    duser= app=ping cs3Label=Virtual System cs3=vsys1 cs4Label=Source Zone cs4=TLC
+    cs5Label=Destination Zone cs5=nat-trust deviceInboundInterface=ethernet1/6 deviceOutboundInterface=ethernet1/8
+    cs6Label=LogProfile cs6=PA440_to_Panorama cn1Label=SessionID cn1=19120 cnt=1 spt=0
+    dpt=0 sourceTranslatedPort=0 destinationTranslatedPort=0 flexString1Label=Flags
+    flexString1=0x100019 proto=icmp act=allow flexNumber1Label=Total bytes flexNumber1=98
+    in=98 out=0 cn2Label=Packets cn2=1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vpcFlowLogsVersion
+  ProductCode:
+  - tlc
+  Description_EN: The VPC Flow Logs version (version)
+  Sample:
+  - 2
+  - 3
+  - 4
+  - 5
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: cloudAccountId
+  ProductCode:
+  - tlc
+  Description_EN: The owner AWS account ID of the source network interface (account-id)
+  Sample:
+  - 123456789012
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: networkInterfaceId
+  ProductCode:
+  - tlc
+  Description_EN: The network interface ID (interface-id)
+  Sample:
+  - eni-01234567890abcdef
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: ipProto
+  ProductCode:
+  - tlc
+  Description_EN: The protocol number (protocol)
+  Sample:
+  - 6
+  - 17
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: packets
+  ProductCode:
+  - tlc
+  Description_EN: The number of transmitted data packets
+  Sample:
+  - 14
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: bytes
+  ProductCode:
+  - tlc
+  Description_EN: The number of transmitted data bytes
+  Sample:
+  - 15044
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: start
+  ProductCode:
+  - tlc
+  Description_EN: The time when the first data packet was received (in Unix seconds)
+  Sample:
+  - 1616729292
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: end
+  ProductCode:
+  - tlc
+  Description_EN: The time when the last data packet was received (in Unix seconds)
+  Sample:
+  - 1616729349
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: action
+  ProductCode:
+  - tlc
+  Description_EN: The traffic processing action
+  Sample:
+  - ACCEPT
+  - REJECT
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: logStatus
+  ProductCode:
+  - tlc
+  Description_EN: The VPC Flow Log status
+  Sample:
+  - OK
+  - NODATA
+  - SKIPDATA
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vpcId
+  ProductCode:
+  - tlc
+  Description_EN: The VPC ID
+  Sample:
+  - vpc-01234567890abcdef
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: subnetId
+  ProductCode:
+  - tlc
+  Description_EN: The subnet ID
+  Sample:
+  - subnet-01234567890abcdef
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: instanceId
+  ProductCode:
+  - tlc
+  Description_EN: The instance ID
+  Sample:
+  - i-01234567890abcdef
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: tcpFlags
+  ProductCode:
+  - tlc
+  Description_EN: The bitmask value of the FIN/SYN/RST/SYN-ACK TCP flags
+  Sample:
+  - 1
+  - 2
+  - 4
+  - 18
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: flowType
+  ProductCode:
+  - tlc
+  Description_EN: The type of traffic (type)
+  Sample:
+  - IPv4
+  - IPv6
+  - EFA
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktSrcAddr
+  ProductCode:
+  - tlc
+  Description_EN: The packet level source IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktDstAddr
+  ProductCode:
+  - tlc
+  Description_EN: The packet level destination IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: regionCode
+  ProductCode:
+  - tlc
+  Description_EN: The network interface AWS Region
+  Sample:
+  - ap-southeast-2
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: azId
+  ProductCode:
+  - tlc
+  Description_EN: The Availability Zone ID
+  Sample:
+  - apse2-az3
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: subLocationType
+  ProductCode:
+  - tlc
+  Description_EN: The sublocation type
+  Sample:
+  - wavelength
+  - outpost
+  - localzone
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: subLocationId
+  ProductCode:
+  - tlc
+  Description_EN: The sublocation ID
+  Sample:
+  - lz-0abcd123efg4567h
+  - op-0abcd123efg4567h
+  - wz-0abcd123efg4567h
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktSrcCloudServiceName
+  ProductCode:
+  - tlc
+  Description_EN: The subset IP address range name for the cloud service source IP
+    (pkt-src-aws-service)
+  Sample:
+  - AMAZON
+  - EC2
+  - ROUTE53
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktDstCloudServiceName
+  ProductCode:
+  - tlc
+  Description_EN: The subset IP address range name for the cloud service destination
+    IP (pkt-dst-aws-service)
+  Sample:
+  - AMAZON
+  - EC2
+  - ROUTE53
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: flowDirection
+  ProductCode:
+  - tlc
+  Description_EN: The network interface traffic direction
+  Sample:
+  - ingress
+  - egress
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: trafficPath
+  ProductCode:
+  - tlc
+  Description_EN: The egress traffic path number
+  Sample:
+  - 1
+  - 2
+  - 8
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventCase
+  ProductCode:
+  - ALL
+  Description_EN: The AWS service that the request was made to
+  Sample:
+  - workspaces.amazonaws.com
+  - sts.amazonaws.com
+  - kms.amazonaws.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventSource
+  ProductCode:
+  - tlc
+  Description_EN: The AWS service the request was made to
+  Sample:
+  - s3.amazonaws.com
+  - dynamodb.amazonaws.com
+  - xray.amazonaws.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: readOnly
+  ProductCode:
+  - tlc
+  Description_EN: Whether the operation is read-only
+  Sample:
+  - true
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: requestParameters
+  ProductCode:
+  - tlc
+  Description_EN: The parameters sent with the request
+  Sample:
+  - '{"durationSeconds": 3600, "roleSessionName":"BackplaneAssumeRoleSession"}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: resources
+  ProductCode:
+  - tlc
+  Description_EN: The resources accessed in the event
+  Sample:
+  - '[{"type":"AWS::S3::Object","ARN":"arn:aws:s3:::your-bucket/file.txt"}]'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: responseElements
+  ProductCode:
+  - tlc
+  Description_EN: The response elements for create, update, and delete actions
+  Sample:
+  - '{"user":{"createDate":"Mar 24, 2014 9:11:59 PM","userName":"Bob","arn":"arn:aws:iam::123456789012:user/Bob","path":"/","userId":"EXAMPLEUSERID"}}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sourceIPAddress
+  ProductCode:
+  - tlc
+  Description_EN: 'The request IP address (for service console actions: the customer
+    resource, for AWS services: the DNS name)'
+  Sample:
+  - 10.10.10.10
+  - apigateway.amazonaws.com
+  - config.amazonaws.com
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: userAgent
+  ProductCode:
+  - tlc
+  Description_EN: The user agent or the agent through which the request was made
+  Sample:
+  - signin.amazonaws.com
+  - console.amazonaws.com
+  - aws-cli/1.3.23 Python/2.7.6 Linux/2.6.18-164.el5
+  DL_Type: string
+  DL_CommonKey:
+  - CLICommand
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userIdentity
+  ProductCode:
+  - tlc
+  Description_EN: The information about a user who made a request
+  Sample:
+  - '{"type":"AWSService","invokedBy":"apigateway.amazonaws.com"}'
+  - '{"type":"AWSService","invokedBy":"lambda.amazonaws.com"}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vpcEndpointId
+  ProductCode:
+  - tlc
+  Description_EN: The VPC endpoint in which requests where made from a VPC to another
+    AWS service
+  Sample:
+  - vpce-01234567890abcdef
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: additionalEventData
+  ProductCode:
+  - tlc
+  Description_EN: The additional event information that was not part of the request
+    or response
+  Sample:
+  - '{"SignatureVersion":"SigV4","CipherSuite":"ECDHE-RSA-AES128-GCM-SHA256"}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: apiVersion
+  ProductCode:
+  - tlc
+  Description_EN: The API version associated with the AwsApiCall eventType value
+  Sample:
+  - 2012-08-10
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: awsRegion
+  ProductCode:
+  - tlc
+  Description_EN: The AWS region the request was made to
+  Sample:
+  - us-east-1
+  - us-east-2
+  - us-west-1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: errorCode
+  ProductCode:
+  - tlc
+  Description_EN: The AWS service error code
+  Sample:
+  - ThrottlingException
+  - InvalidParameterValueException
+  - NoSuchLifecycleConfiguration
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: errorMessage
+  ProductCode:
+  - tlc
+  Description_EN: The error description
+  Sample:
+  - The specified bucket does not have a website configuration
+  - An unknown error occurred
+  - The lifecycle configuration does not exist
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventCategory
+  ProductCode:
+  - tlc
+  Description_EN: The event category used in LookupEvents calls
+  Sample:
+  - Management
+  - Data
+  - Insight
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventType
+  ProductCode:
+  - tlc
+  Description_EN: The type of event that generated the event record
+  Sample:
+  - AwsApiCall
+  - AwsServiceEvent
+  - AwsConsoleAction
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventVersion
+  ProductCode:
+  - tlc
+  Description_EN: The log event format version
+  Sample:
+  - 1.08
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: recipientAccountId
+  ProductCode:
+  - tlc
+  Description_EN: The Account ID that received the event
+  Sample:
+  - 123456789012
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestID
+  ProductCode:
+  - tlc
+  Description_EN: The request ID generated by the service this value)
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sharedEventID
+  ProductCode:
+  - tlc
+  Description_EN: The AWS CloudTrail GUID (from the same AWS action sent to different
+    AWS accounts) events (From the same AWS action that is sent to different AWS accounts)
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serviceEventDetails
+  ProductCode:
+  - tlc
+  Description_EN: The service event details
+  Sample:
+  - '{"lifecycleEventPolicy":{"policyVersion":1,"policyId":"11111111-1111-1111-1111-111111111111"}}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: managementEvent
+  ProductCode:
+  - tlc
+  Description_EN: The management event
+  Sample:
+  - true
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tlsDetails
+  ProductCode:
+  - tlc
+  Description_EN: The TLS details
+  Sample:
+  - '{"tlsVersion":"TLSv1.2","cipherSuite":"ECDHE-RSA-AES128-GCM-SHA256"}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudTrailEventId
+  ProductCode:
+  - tlc
+  Description_EN: The GUID generated by AWS CloudTrail to identify events
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actResult
+  ProductCode:
+  - tlc
+  Description_EN: The result of an action
+  Sample:
+  - failed
+  - success
+  - start
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectCmd
+  ProductCode:
+  - tlc
+  Description_EN: The command line entry of the target process
+  Sample:
+  - ls
+  - wc -l
+  - runc init
+  - docker-init --version
+  DL_Type: dynamic
+  DL_CommonKey:
+  - CLICommand
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectIps
+  ProductCode:
+  - tlc
+  Description_EN: The IP address resolved by the DNS protocol
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dnsQueryType
+  ProductCode:
+  - tlc
+  Description_EN: The record type requested by the DNS protocol
+  Sample:
+  - A
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vendorLogId
+  ProductCode:
+  - tlc
+  Description_EN: The vendor event log ID
+  Sample:
+  - 0000000011
+  - 0211008192
+  - 98
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: profile
+  ProductCode:
+  - tlc
+  Description_EN: The name of the triggered Threat Protection template or Data Loss
+    Prevention profile
+  Sample:
+  - default
+  - g-default
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: malName
+  ProductCode:
+  - tlc
+  Description_EN: The name of the detected malware
+  Sample:
+  - EICAR_TEST_FILE
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

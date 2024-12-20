@@ -1026,6 +1026,7 @@
   - Move Multiple Sensitive Files to Central Location
   - Multiple Sensitive Files Modification
   - Multiple Sensitive Files Deletion
+  - GEN_CCFR_OVERLAY_TEST.A
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1936,6 +1937,7 @@
   Sample:
   - aws
   - azure
+  - gcp
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1947,6 +1949,7 @@
   Description_EN: The virtual private cloud that contains the cloud asset
   Sample:
   - vpc-01234567890abcdef
+  - avtd-vnet-ozyww04h
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -3207,7 +3210,7 @@
   - ams
   - szn
   - ddr
-  Description_EN: The host operating system name
+  Description_EN: The host OS name
   Sample:
   - windows 10.0.22000
   - windows 10.0.19044
@@ -3915,6 +3918,7 @@
   - 00030912-c5e7-4348-9012-7c684751c531
   - 0008ae58-db0c-34ee-3e5c-5dfc9b10a739
   - i-0b22a22eec53b9321
+  - /subscriptions/bae4f362-e3a0-482f-ba7a-f883d8b410ce/resourceGroups/avtd-csf-sg-lzniibr0/providers/Microsoft.Compute/virtualMachines/avtd-csf-scanner-lzniibr0
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -4490,6 +4494,19 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: correlatedIntelligence
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The Correlated Intelligence detection
+  Sample: '{"risk_type": "Anomaly","matched_rules": [{"threat_type": "Possibly Unwanted
+    Email","matched_filters": [{"id":"FIL013", "name": "Marketing Email Traits"},{"id":"FIL098",
+    "name": "Infrequent Sender Email Domain"}],"name": "Possibly Unwanted Marketing
+    Email","id": "AN004"}]}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: detectionDetail
   ProductCode:
   - sem
@@ -4943,7 +4960,7 @@
   ProductCode:
   - ALL
   - ddr
-  Description_EN: The telemetry events match the Security Analytics Engine filter,
+  Description_EN: The telemetry events that match the Security Analytics Engine filter,
     and logonUsers stores the logonUsers value of the original events
   Sample:
   - BHBShortJ
@@ -5572,9 +5589,11 @@
   ProductCode:
   - sfc
   - sss
-  Description_EN: The cloud account ID
+  Description_EN: The AWS cloud account ID, Google Cloud product ID, or Azure subscription
+    ID
   Sample:
   - '123456789012'
+  - 00000000-0000-0000-0000-000000000000
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -5606,7 +5625,7 @@
   ProductCode:
   - sfc
   - sss
-  Description_EN: The AWS Region code
+  Description_EN: The cloud provider region code
   Sample:
   - us-east-1
   DL_Type: string
@@ -5962,6 +5981,7 @@
   Description_EN: The action trigger
   Sample:
   - ATSE
+  - On-demand scan
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -6103,8 +6123,11 @@
   Description_EN: The cloud resource ID
   Sample:
   - vol-00000000000000000
-  - 670666259092.dkr.ecr.us-west-1.amazonaws.com/us-west-1-sentry-scan-samples-ecr
+  - 123456789012.dkr.ecr.us-west-1.amazonaws.com/us-west-1-sentry-scan-samples-ecr
   - arn:aws:lambda:us-east-1:000000000000:function:StackSet-SentrySetdb47aff3-cc084aaa-5-sideScanVuln-6Dyn7ZcwCSPw
+  - '6132111784399111342'
+  - us-east1-docker.pkg.dev/987654321012/ebsscan/ebsscanfunction@sha256:49eb55144d868a5bea1487e35837115f51eb158361c2c11beb6935667a04c489
+  - /subscriptions/bae4f362-e3a0-482f-ba7a-f883d8b410ce/resourceGroups/csf-test-data/providers/Microsoft.Compute/disks/csf-test-shared-ssd
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -6118,6 +6141,9 @@
   - ecr-repository-image
   - lambda-function
   - lambda-layer
+  - disk
+  - google-cloud-repository-image
+  - azure-repository-image
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -6140,6 +6166,8 @@
   Sample:
   - imageTags: [latest, Tag1, Tag2]
   - tags: {Service: S3 Updater, Department: Finance, Application: Accounting}
+  - CloudResourceTags: [{Key: cost_tag, Value: Department 123}]
+  - ImageTags: [latest]
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -6160,6 +6188,7 @@
   Description_EN: The cloud machine image ID
   Sample:
   - ami-092d1c9fb626c2ba7
+  - 3111106172944240963
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -6170,6 +6199,7 @@
   Description_EN: The cloud machine image name
   Sample:
   - Windows_Server-2022-English-Full-SQL_2022_Standard-2024.05.15
+  - https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-12-bookworm-v20240617
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -6480,6 +6510,17 @@
   - 11111111-1111-1111-1111-111111111111
   - 22222222-2222-2222-2222-222222222222
   DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectedBackupArtifactsStatus
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The backup status of detected artifacts
+  Sample:
+  - ['0', '-67']
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
