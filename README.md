@@ -32,7 +32,6 @@
 | ptn  | TXOne EdgeOne (on-premises)                               |
 | ptp  | TippingPoint Security Management System                   |
 | pts  | TXOne Stellar (on-premises)                               |
-| qpf  | Palo Alto Networks Next-Generation Firewalls              |
 | sao  | Trend Micro Apex One as a Service                         |
 | sca  | Trend Micro Cloud App Security                            |
 | scs  | Trend Cloud One - Container Security                      |
