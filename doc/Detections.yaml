@@ -13,6 +13,8 @@
 - Name: filterRiskLevel
   ProductCode:
   - ALL
+  - pdi
+  - xns
   Description_EN: The top level filter risk of the event
   Sample:
   - info
@@ -774,8 +776,8 @@
   Description_EN: The object process command line
   Sample:
   - C:\WINDOWS\system32\wbem\wmiprvse.exe -Embedding
-  - "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\PowerShell.exe\" -NoLogo -Noninteractive\
-    \ -NoProfile  -ExecutionPolicy Bypass \"& 'C:\\WINDOWS\\CCM\\SystemTemp\\afd6f0e5-e491-4764-a20a-9f1d9edf3cce.ps1'\""
+  - "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\PowerShell.exe\" -NoLogo -Noninteractive
+    -NoProfile  -ExecutionPolicy Bypass \"& 'C:\\WINDOWS\\CCM\\SystemTemp\\afd6f0e5-e491-4764-a20a-9f1d9edf3cce.ps1'\""
   - C:\WINDOWS\system32\lsass.exe
   DL_Type: dynamic
   DL_CommonKey:
@@ -957,6 +959,8 @@
 - Name: techniqueId
   ProductCode:
   - pts
+  - pdi
+  - xns
   Description_EN: Technique ID detected by the product agent base on a detection rule
   Sample: []
   DL_Type: dynamic
@@ -969,6 +973,8 @@
   - ALL
   - sds
   - sao
+  - pdi
+  - xns
   Description_EN: The detected technique ID based on the alert filter
   Sample:
   - MITREV9.T1090
@@ -1189,9 +1195,9 @@
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
   - 'pam_unix(cron:session): session opened for user root by (uid=0)'
-  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:\
-    \ EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.\
-    \ [CLIENT: 10.10.10.10]  "
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:
+    EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.
+    [CLIENT: 10.10.10.10]  "
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1737,6 +1743,8 @@
   ProductCode:
   - ptp
   - sds
+  - pdi
+  - xns
   Description_EN: The CVEs associated with this filter
   Sample:
   - CVE-2014-3567
@@ -3443,6 +3451,8 @@
 - Name: rating
   ProductCode:
   - sao
+  - pdi
+  - xns
   Description_EN: The credibility level
   Sample:
   - Safe
@@ -3636,6 +3646,8 @@
   ProductCode:
   - sca
   - sem
+  - pdi
+  - xns
   Description_EN: The mail scan time
   Sample: []
   DL_Type: string
@@ -4717,6 +4729,8 @@
   ProductCode:
   - sca
   - sfs
+  - pdi
+  - xns
   Description_EN: The GUID for Workbench to request report page data
   Sample:
   - 00000000-0000-0000-0000-000000000000
@@ -4997,7 +5011,8 @@
   - pts
   Description_EN: The file path of the quarantined object
   Sample:
-  - C:\Program Files\TXOne\StellarProtect\private\quarantine\00000000-0000-0000-0000-000000000000
+  - C:\Program 
+    Files\TXOne\StellarProtect\private\quarantine\00000000-0000-0000-0000-000000000000
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -6448,6 +6463,21 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: detectionAggressivenessLevel
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The detection aggressiveness level
+  Sample:
+  - 1
+  - 2
+  - 3
+  - 4
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
 - Name: fileSystemUuid
   ProductCode:
   - sss
@@ -6521,6 +6551,24 @@
   Sample:
   - ['0', '-67']
   DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: triggerReason
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  Description_EN: The cause of the triggered action
+  Sample:
+  - FILEMETA.T1027.009.TRICKBOT.SMITRE1B2, T1027.009
+  - ST002
+  - Scheduled Scan (custom)
+  - Scheduled Scan (system)
+  - 'Remote Scan: the user triggered the Apex One agent from the Trend Vision One
+    console'
+  - 'Manual Scan: the user triggered the local agent'
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false

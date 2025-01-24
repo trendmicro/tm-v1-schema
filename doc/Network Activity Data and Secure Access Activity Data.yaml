@@ -476,10 +476,10 @@
 - Name: sender
   ProductCode:
   - sig
-  Description_EN: The roaming users or Trend Micro Web Security gateway where the
-    web traffic passed
+  Description_EN: The Zero Trust Internet Access gateway location
   Sample:
-  - ETL VPN
+  - Public/Home network: The default cloud gateway.
+  - Anything else: The pre-defined location name of cloud gateway or on-premises gateway.
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -488,10 +488,43 @@
   ProductCode:
   - sig
   - szn
-  Description_EN: The scan type
+  Description_EN: The traffic detection type
   Sample:
-  - Not match any rule
-  - Access control
+  - No matched Zero Trust Secure Access rule
+  - Missing or invalid client certificate
+  - Untrusted server certificate
+  - Zero Trust Secure Access
+  - HTTPS inspection exception
+  - HTTPS inspection failure
+  - HTTPS bypass at inspection failure
+  - Approved URLs
+  - Blocked URLs
+  - Private IP address access
+  - Web Reputation
+  - URL Filtering
+  - Restricted file type
+  - Restricted MIME type
+  - Restricted file extension type
+  - Anti-malware scan
+  - File scan exception
+  - Predictive Machine Learning
+  - Botnet
+  - Application Control
+  - Virtual Analyzer submission
+  - Tenancy Restriction
+  - Suspicious Object Blocked List
+  - Data Loss Prevention
+  - Ransomware
+  - Risk Control
+  - AI Service Risk Control
+  - Non-compliant device
+  - AI Service Access
+  - AI Service Sensitive Data Prevention
+  - AI Service Prompt Injection
+  - AI Service Improper Answer
+  - AI Service Malicious URL Answer
+  - AI Service File Upload Detection
+  - AI Service Rate Limiting
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -642,9 +675,12 @@
 - Name: authType
   ProductCode:
   - sig
-  Description_EN: The authorization type
+  Description_EN: The authentication method
   Sample:
-  - Cookie
+  - Cookie JWT: Authenticated by browser cookie with JWT token
+  - Agent JWT: Authenticated by Secure Access Module with JWT token
+  - IP: Authentication bypassed by private IP.
+  - No Auth: No authentication.
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -672,9 +708,17 @@
 - Name: trafficType
   ProductCode:
   - sig
-  Description_EN: The traffic type
+  Description_EN: The Zero Trust Internet Access gateway service mode
   Sample:
-  - Forward
+  - Proxy: Zero Trust Internet Access On-Premises Gateway with forward proxy mode
+      configured
+  - Forward: Zero Trust Internet Access On-Premises Gateway with forward proxy mode
+      and port forwarding configured
+  - ICAP: Zero Trust Internet Access On-Premises Gateway with ICAP configured
+  - Reverse: Zero Trust Internet Access On-Premises Gateway with reverse proxy mode
+      configured
+  - Proxy (xx): Cloud Gateway in xx PoP with forward proxy mode
+  - Forward (xx): Cloud Gateway in xx PoP with forward proxy mode for port forwarding
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1028,9 +1072,9 @@
   - xns
   Description_EN: All HTTP response headers without sensitive information
   Sample:
-  - "Accept-Ranges: bytes\r\nContent-Length: 68\r\nContent-Type: - text/plain; charset=utf-8\r\
-    \ \nLast-Modified: Thu, 19 Aug 2021 06:23:54 GMT\r\nDate: Thu, 19 Aug 2021 06:24:00\
-    \ GMT\r\n"
+  - "Accept-Ranges: bytes\r\nContent-Length: 68\r\nContent-Type: - text/plain; charset=utf-8\r
+    \nLast-Modified: Thu, 19 Aug 2021 06:23:54 GMT\r\nDate: Thu, 19 Aug 2021 06:24:00
+    GMT\r\n"
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1402,6 +1446,7 @@
 - Name: reqAppVersion
   ProductCode:
   - xns
+  - pdi
   Description_EN: The client application version number
   Sample:
   - SSH-2.0-OPENSSH_9.0
@@ -1412,6 +1457,7 @@
 - Name: respAppVersion
   ProductCode:
   - xns
+  - pdi
   Description_EN: The server application version number
   Sample:
   - SSH-2.0-OPENSSH_8.7
@@ -1440,6 +1486,7 @@
 - Name: reqDataSize
   ProductCode:
   - xns
+  - pdi
   - qpf
   Description_EN: The data volume transmitted over the transport layer by the client
     (in bytes)
@@ -1450,6 +1497,7 @@
 - Name: respDataSize
   ProductCode:
   - xns
+  - pdi
   - qpf
   Description_EN: The data volume transmitted over the transport layer by the server
     (in bytes)
@@ -1718,6 +1766,8 @@
 - Name: sessionEndReason
   ProductCode:
   - qpf
+  - xns
+  - pdi
   Description_EN: The reason why a session was terminated
   Sample:
   - tcp-fin

@@ -321,8 +321,8 @@
   Sample:
   - $global:?
   - '0'
-  - "$servicename = \"WinRM\"\n$arrService = Get-Service $servicename\n\nif ($arrService.Status\
-    \ -ne \"Running\")\n\n{\n\n\tRestart-Service $servicename\n\n\n}\n"
+  - "$servicename = \"WinRM\"\n$arrService = Get-Service $servicename\n\nif ($arrService.Status
+    -ne \"Running\")\n\n{\n\n\tRestart-Service $servicename\n\n\n}\n"
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
