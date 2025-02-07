@@ -3637,3 +3637,171 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: eventDataModuleILPath
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The CIL image path of the module or the dynamic module name
+  Sample:
+  - C:\Program Files\Cymulate\Agent\System.Threading.dll
+  - C:\windows\system32\tzsync.exe
+  - C:\Program.exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataFullyQualifiedAssemblyName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The fully qualified .NET assembly name
+  Sample:
+  - System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  - System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  - System.Diagnostics.Process, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTargetDomainName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The target sign-in account domain or computer name
+  Sample:
+  - NT AUTHORITY
+  - Builtin
+  - SHOCKWAVE
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTicketEncryptionType
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The cryptographic suite used for the Kerberos TGS
+  Sample:
+  - '0x12'
+  - '0x17'
+  - '0x18'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataImpersonationLevel
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The sign-in session impersonation level
+  Sample:
+  - '%%1830'
+  - '%%1832'
+  - '%%1833'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataElevatedToken
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: Whether the session is elevated and has administrator privileges
+  Sample:
+  - '%%1842'
+  - '%%1843'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The identifying information about the object for which access was
+    requested
+  Sample:
+  - \Device\HarddiskVolume2\Windows\System32\lsass.exe
+  - C:\Windows\System32\osk.exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectType
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The object type
+  Sample:
+  - Process
+  - File
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataAccessList
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The list of requested access rights
+  Sample:
+  - '%%4416'
+  - '%%4417'
+  - '%%4418'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataAccessMask
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The hexadecimal value of the requested or used permissions during
+    an access attempt
+  Sample:
+  - 0x10
+  - 0x80000000
+  - 0x100000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataSubjectUserName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The account name
+  Sample:
+  - dadmin
+  - Alex
+  - london$
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTargetName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The service, application, or network resource name
+  Sample:
+  - Microsoft_RssPlatform_*
+  - WindowsLive:target=virtualapp/didlogical
+  - MicrosoftOffice*
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataWorkstationName
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The name of the computer used in the sign-in attempt
+  Sample:
+  - WIN-GG82ULGC9GO
+  - DESKTOP-123ABC
+  - CLIENT01
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
