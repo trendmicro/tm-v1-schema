@@ -3805,3 +3805,13 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: processStackTrace
+  ProductCode:
+  - xes
+  Description_EN: The process stack trace of the telemetry event
+  Sample:
+  - C:\Windows\System32\ntdll.dll?NtCreateUserProcess|ZwCreateUserProcess, C:\Windows\System32\kernelbase.dll!CreateProcessInternalW
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
