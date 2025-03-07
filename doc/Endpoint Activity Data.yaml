@@ -683,7 +683,7 @@
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: processName
   ProductCode:
   - sds
@@ -918,7 +918,7 @@
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: productCode
   ProductCode:
   - ALL
@@ -2514,7 +2514,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: providerGUID
   ProductCode:
   - xes
