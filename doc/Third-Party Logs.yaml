@@ -1583,3 +1583,47 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: srcEndpointGuid
+  ProductCode:
+  - tlc
+  Description_EN: The source endpoint GUID on which the event was detected
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcEndpointHostName
+  ProductCode:
+  - tlc
+  Description_EN: The source endpoint hostname on which the event was detected
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstEndpointGuid
+  ProductCode:
+  - tlc
+  Description_EN: The destination host GUID on which the event was detected
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstEndpointHostName
+  ProductCode:
+  - tlc
+  Description_EN: The destination endpoint hostname on which the event was detected
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
