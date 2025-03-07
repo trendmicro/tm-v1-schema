@@ -6572,3 +6572,22 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: matchedPolicies
+  ProductCode:
+  - ddr
+  Description_EN: The matched policies of detection records
+  Sample:
+  - [00000000-0000-0000-0000-000000000000]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionFileList
+  ProductCode:
+  - ddr
+  Description_EN: The information about the related files
+  Sample:
+  - '{"fileName": "sample.txt", "edgeId": "00000000-0000-0000-0000-000000000000"}'
+  DL_Type: dynamic
+  DL_Searchable: true
+  DL_Aggregable: false
