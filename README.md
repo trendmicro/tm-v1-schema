@@ -54,10 +54,9 @@
 | xns  | Virtual Network Sensor                                    |
 
 # EventId, EventSubId Mapping
-## Endpoint Activity Data
-### eventId
+## eventId
 | eventId | Event Type                 |
-| ------- | -------------------------- |
+|---------|----------------------------|
 | 1       | TELEMETRY_PROCESS          |
 | 2       | TELEMETRY_FILE             |
 | 3       | TELEMETRY_CONNECTION       |
@@ -77,11 +76,11 @@
 | 17      | TELEMETRY_EVENT_PIPE       |
 | 18      | TELEMETRY_MAC_SYS_LOG      |
 | 19      | TELEMETRY_DDR              |
-| 110     | TELEMETRY_ASSOCIATION      |
+| 101     | TELEMETRY_ASSOCIATION      |
 
-### eventSubId
+## eventSubId
 | eventSubId | Event Sub-Type                                 |
-| ---------- | ---------------------------------------------- |
+|------------|------------------------------------------------|
 | 0          | TELEMETRY_NONE                                 |
 | 1          | TELEMETRY_PROCESS_OPEN                         |
 | 2          | TELEMETRY_PROCESS_CREATE                       |
@@ -150,37 +149,19 @@
 | 1401       | TELEMETRY_PIPE_CREATE                          |
 | 1402       | TELEMETRY_PIPE_CONNECT                         |
 | 1601       | TELEMETRY_MAC_SYS_LOG_COLLECT                  |
+| 1701       | TELEMETRY_DDR_FILE_COPY                        |
+| 1702       | TELEMETRY_DDR_FILE_MOVE                        |
+| 1703       | TELEMETRY_DDR_FILE_RENAME                      |
+| 1704       | TELEMETRY_DDR_FILE_MODIFY                      |
+| 1705       | TELEMETRY_DDR_FILE_DELETE                      |
+| 1706       | TELEMETRY_DDR_FILE_UNZIP                       |
+| 1707       | TELEMETRY_DDR_FILE_ZIP                         |
+| 1708       | TELEMETRY_DDR_FILE_UPLOAD                      |
+| 1709       | TELEMETRY_DDR_FILE_DOWNLOAD                    |
+| 1710       | TELEMETRY_DDR_FILE_PRINT                       |
 | 10101      | TELEMETRY_ASSOCIATION_PROCESS_IMAGE_FILE       |
 | 10102      | TELEMETRY_ASSOCIATION_AUTO_RUN_KEY_FULL_PATH   |
 | 10103      | TELEMETRY_ASSOCIATION_HOST_PROC_CMD_FULL_PATH  |
 | 10104      | TELEMETRY_ASSOCIATION_SERVICE_DLL              |
 | 10105      | TELEMETRY_ASSOCIATION_ARCHIVE_FILE             |
 | 10106      | TELEMETRY_ASSOCIATION_BROWSER_PROCESS          |
-
-
-## Mobile Activity Data
-### eventId
-| eventId | Event Type         |
-| ------- | ------------------ |
-| 2       | TELEMETRY_FILE     |
-| 7       | TELEMETRY_INTERNET |
-| 15      | TELEMETRY_APP      |
-| 16      | TELEMETRY_SYSTEM   |
-
-### eventSubId
-| eventSubId | Event Sub-Type                      |
-| ---------- | ----------------------------------- |
-| 101        | TELEMETRY_FILE_CREATE               |
-| 102        | TELEMETRY_FILE_OPEN                 |
-| 103        | TELEMETRY_FILE_DELETE               |
-| 105        | TELEMETRY_FILE_COPY                 |
-| 106        | TELEMETRY_FILE_MOVE                 |
-| 601        | TELEMETRY_INTERNET_OPEN             |
-| 602        | TELEMETRY_INTERNET_CONNECT          |
-| 1201       | TELEMETRY_APP_START                 |
-| 1202       | TELEMETRY_APP_STOP                  |
-| 1203       | TELEMETRY_APP_INSTALL               |
-| 1204       | TELEMETRY_APP_UNINSTALL             |
-| 1301       | TELEMETRY_SYSTEM_PREF_EVENT_ENABLE  |
-| 1302       | TELEMETRY_SYSTEM_PREF_EVENT_DISABLE |
-
