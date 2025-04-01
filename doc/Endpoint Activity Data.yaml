@@ -683,7 +683,7 @@
   DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: processName
   ProductCode:
   - sds
@@ -918,7 +918,7 @@
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: productCode
   ProductCode:
   - ALL
@@ -2514,7 +2514,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: providerGUID
   ProductCode:
   - xes
@@ -3812,6 +3812,30 @@
   Sample:
   - C:\Windows\System32\ntdll.dll?NtCreateUserProcess|ZwCreateUserProcess, C:\Windows\System32\kernelbase.dll!CreateProcessInternalW
   DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: customAssetTags
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The list of custom asset tags
+  Sample:
+  - '{"os":["linux", "windows"], "org":["bu1"]}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: platformAssetTags
+  ProductCode:
+  - xes
+  - sds
+  - sao
+  Description_EN: The list of platform custom asset tags
+  Sample:
+  - '{"Asset group":["finance"], "some.ip": ["10.1.0.1"]}'
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
