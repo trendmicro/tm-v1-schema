@@ -37,9 +37,9 @@
   - ALL
   Description_EN: The detected technique ID based on the alert filter
   Sample:
-  - MITREV9.T1090
-  - MITRE.T1071
-  - MITREV9.T1059.001
+  - [MITREV9.T1090]
+  - [MITRE.T1071]
+  - [MITREV9.T1059.001]
   DL_Type: dynamic
   DL_CommonKey:
   - Technique
@@ -123,6 +123,7 @@
   - Fortinet
   - Check Point
   - Palo Alto Networks
+  - Microsoft
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -134,6 +135,7 @@
   Sample:
   - PAN-OS
   - Fortigate
+  - Microsoft Defender for Endpoint
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -204,7 +206,7 @@
   - tlc
   Description_EN: The source IP address
   Sample:
-  - 10.10.10.10
+  - [10.10.10.10]
   DL_Type: dynamic
   DL_CommonKey:
   - IPv4
@@ -216,7 +218,7 @@
   - tlc
   Description_EN: The destination IP address
   Sample:
-  - 10.10.10.10
+  - [10.10.10.10]
   DL_Type: dynamic
   DL_CommonKey:
   - IPv4
@@ -387,15 +389,15 @@
   - tlc
   Description_EN: The action
   Sample:
-  - deny
-  - close
-  - client-rst
-  - permit
-  - log-only
-  - Accept
-  - Drop
-  - Key Install
-  - Detect (Anti Malware)
+  - [deny]
+  - [close]
+  - [client-rst]
+  - [permit]
+  - [log-only]
+  - [Accept]
+  - [Drop]
+  - [Key Install]
+  - [Detect (Anti Malware)]
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -493,10 +495,10 @@
   - tlc
   Description_EN: The requested URL category
   Sample:
-  - Untested
-  - '158'
-  - Web Advertisement
-  - Malicious Websites
+  - [Untested]
+  - ['158']
+  - [Web Advertisement]
+  - [Malicious Websites]
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -627,7 +629,8 @@
   - tlc
   Description_EN: The URLs of the request
   Sample:
-  - www.google.com.tw
+  - [www.google.com.tw]
+  - [http.maliciousweb.mal.exe]
   DL_Type: dynamic
   DL_CommonKey:
   - URL
@@ -711,6 +714,7 @@
   - tlc
   Description_EN: The direction
   Sample:
+  - Inbound
   - Incoming
   - Outgoing
   - Unknown
@@ -736,10 +740,10 @@
   - tlc
   Description_EN: The file name
   Sample:
-  - csm-eicar.txt
-  - csm-eicar.gif
-  - eicar.com.txt
-  - svcrestarttask
+  - [csm-eicar.txt]
+  - [csm-eicar.gif]
+  - [eicar.com.txt]
+  - [svcrestarttask]
   DL_Type: dynamic
   DL_CommonKey:
   - FileName
@@ -849,8 +853,8 @@
   - tlc
   Description_EN: The email sender
   Sample:
-  - sample_email@trendmicro.com
-  - sip:sipp@10.10.10.10:5060
+  - [sample_email@trendmicro.com]
+  - [sip:sipp@10.10.10.10:5060]
   DL_Type: dynamic
   DL_CommonKey:
   - EmailSender
@@ -864,6 +868,7 @@
   - Administrator Login
   - Administrator Logout
   - hello_world2
+  - Suspicious Email Detected
   DL_Type: string
   DL_CommonKey:
   - EmailSubject
@@ -874,10 +879,10 @@
   - tlc
   Description_EN: The email recipient
   Sample:
-  - bob
-  - N/A
-  - empty
-  - sample_email@trendmicro.com
+  - [bob]
+  - [N/A]
+  - [empty]
+  - [sample_email@trendmicro.com]
   DL_Type: dynamic
   DL_CommonKey:
   - EmailRecipient
@@ -1403,6 +1408,8 @@
   - Management
   - Data
   - Insight
+  - AlertEvidence
+  - DeviceProcessEvents
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1506,9 +1513,9 @@
   - tlc
   Description_EN: The result of an action
   Sample:
-  - failed
-  - success
-  - start
+  - [failed]
+  - [success]
+  - [start]
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1518,10 +1525,11 @@
   - tlc
   Description_EN: The command line entry of the target process
   Sample:
-  - ls
-  - wc -l
-  - runc init
-  - docker-init --version
+  - [ls]
+  - [wc -l]
+  - [runc init]
+  - [docker-init --version]
+  - [C:\sample\path\app_name.exe -ExecutionPolicy Bypass -File C:\script.ps1]
   DL_Type: dynamic
   DL_CommonKey:
   - CLICommand
@@ -1532,7 +1540,7 @@
   - tlc
   Description_EN: The IP address resolved by the DNS protocol
   Sample:
-  - 10.10.10.10
+  - [10.10.10.10]
   DL_Type: dynamic
   DL_CommonKey:
   - IPv4
@@ -1557,6 +1565,7 @@
   - 0000000011
   - 0211008192
   - 98
+  - 1234567890-abcd-abcd-abcd-abcdef123456_1
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1581,5 +1590,617 @@
   - EICAR_TEST_FILE
   DL_Type: string
   DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcEndpointGuid
+  ProductCode:
+  - tlc
+  Description_EN: The source endpoint GUID on which the event was detected
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcEndpointHostName
+  ProductCode:
+  - tlc
+  Description_EN: The source endpoint hostname on which the event was detected
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstEndpointGuid
+  ProductCode:
+  - tlc
+  Description_EN: The destination host GUID on which the event was detected
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstEndpointHostName
+  ProductCode:
+  - tlc
+  Description_EN: The destination endpoint hostname on which the event was detected
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: alertTitle
+  ProductCode:
+  - tlc
+  Description_EN: The alert title
+  Sample:
+  - FIREWALL_ACTIVITY_LOG
+  - TRAFFIC
+  - Suspicious PowerShell command line
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: alertCategories
+  ProductCode:
+  - tlc
+  Description_EN: The list of alert categories
+  Sample:
+  - [Execution]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: techniqueId
+  ProductCode:
+  - tlc
+  Description_EN: The Technique ID detected by the product agent based on a detection
+    rule
+  Sample:
+  - [T1566.002]
+  DL_Type: dynamic
+  DL_CommonKey:
+  - Technique
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: service
+  ProductCode:
+  - tlc
+  Description_EN: The Microsoft 365 service where the activity occurred
+  Sample:
+  - Microsoft Defender for Office 365
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pComp
+  ProductCode:
+  - tlc
+  Description_EN: The component that made the detection
+  Sample:
+  - Microsoft Defender for Office 365
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectType
+  ProductCode:
+  - tlc
+  Description_EN: The object type
+  Sample:
+  - Device
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: malFamily
+  ProductCode:
+  - tlc
+  Description_EN: The threat family
+  Sample:
+  - Emotet
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: applicationId
+  ProductCode:
+  - tlc
+  Description_EN: The application ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSignerValid
+  ProductCode:
+  - tlc
+  Description_EN: Whether each signer of the object process is valid
+  Sample:
+  - [true]
+  - [false]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSigner
+  ProductCode:
+  - tlc
+  Description_EN: The list of object process signers
+  Sample:
+  - [Microsoft Corporation]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertIssuerCommonName
+  ProductCode:
+  - tlc
+  Description_EN: The issuer common name
+  Sample:
+  - Microsoft Code Signing PCA 2011
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: vendorDeviceId
+  ProductCode:
+  - tlc
+  Description_EN: The device ID
+  Sample:
+  - f334c467a471269d55564aa08421b751ae1d3bde
+  - 00000000-0000-0000-0000-000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointHostName
+  ProductCode:
+  - tlc
+  Description_EN: The host name of the device on which the event was detected
+  Sample:
+  - usportal
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actionName
+  ProductCode:
+  - tlc
+  Description_EN: The user or service action
+  Sample:
+  - ConnectionSuccess
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logonUser
+  ProductCode:
+  - tlc
+  Description_EN: The logon user name
+  Sample:
+  - [user2]
+  DL_Type: dynamic
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userDomain
+  ProductCode:
+  - tlc
+  Description_EN: The user domain
+  Sample:
+  - [nt authority]
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EndpointName
+  - DomainName
+  - AccountDomain
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: principalName
+  ProductCode:
+  - tlc
+  Description_EN: The user principal name used to sign in to the proxy
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileOriginUrl
+  ProductCode:
+  - tlc
+  Description_EN: The URL from where the file was downloaded
+  Sample:
+  - http://www.example.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileOriginIP
+  ProductCode:
+  - tlc
+  Description_EN: The IP address from where the file was downloaded
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileName
+  ProductCode:
+  - tlc
+  Description_EN: The object file name
+  Sample:
+  - powershell.exe
+  - wmiprvse.exe
+  - dismhost.exe
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFilePath
+  ProductCode:
+  - tlc
+  Description_EN: The file path of the target process image or target file
+  Sample:
+  - c:\windows\system32\windowspowershell\v1.0\powershell.exe
+  - zwwritevirtualmemory
+  - c:\windows\system32\wbem\wmiprvse.exe
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileHashSha1
+  ProductCode:
+  - tlc
+  Description_EN: The SHA1 hash of target process image or target file
+  Sample:
+  - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileHashSha256
+  ProductCode:
+  - tlc
+  Description_EN: The SHA256 hash of target process image or target file
+  Sample:
+  - 6A6EB2D717CEA041B4444193B45EDFB6CA1287518203B7230B3C4B8FFB031EAB
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: previousObjectFileName
+  ProductCode:
+  - tlc
+  Description_EN: The previous object file name
+  Sample:
+  - powershell.exe
+  - wmiprvse.exe
+  - dismhost.exe
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: previousObjectFilePath
+  ProductCode:
+  - tlc
+  Description_EN: The previous file path of the target process image or target file
+  Sample:
+  - /usr/tmp/powershell.exe
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRegistryKeyHandle
+  ProductCode:
+  - tlc
+  Description_EN: The registry key path
+  Sample:
+  - HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
+  DL_Type: string
+  DL_CommonKey:
+  - RegistryKey
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRegistryValue
+  ProductCode:
+  - tlc
+  Description_EN: The registry value name
+  Sample:
+  - AdobeUpdater
+  DL_Type: string
+  DL_CommonKey:
+  - RegistryValue
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRegistryData
+  ProductCode:
+  - tlc
+  Description_EN: The registry data contents
+  Sample:
+  - '3'
+  DL_Type: string
+  DL_CommonKey:
+  - RegistryValueData
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataLogonType
+  ProductCode:
+  - tlc
+  Description_EN: The logon type for Windows event 4624 which is "An account was successfully
+    logged on"
+  Sample:
+  - Network
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRegistryValueType
+  ProductCode:
+  - tlc
+  Description_EN: The Windows Registry Type ID
+  Sample:
+  - 4
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRegistryOriginalKeyHandle
+  ProductCode:
+  - tlc
+  Description_EN: The original registry key before modification
+  Sample:
+  - HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters
+  - HKLM\system\currentcontrolset\services\w32time\config
+  - HKLM\system\currentcontrolset\services\tcpip\parameters
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRegistryOriginalValue
+  ProductCode:
+  - tlc
+  Description_EN: The original registry value name before modification
+  Sample:
+  - Start
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectRegistryOriginalData
+  ProductCode:
+  - tlc
+  Description_EN: The original registry value data before modification
+  Sample:
+  - '2'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isLocalAdmin
+  ProductCode:
+  - tlc
+  Description_EN: Whether the user is a local administrator on the device
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstIpType
+  ProductCode:
+  - tlc
+  Description_EN: The destination IP address type
+  Sample:
+  - Public
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcIpType
+  ProductCode:
+  - tlc
+  Description_EN: The source IP address type
+  Sample:
+  - Private
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectPid
+  ProductCode:
+  - tlc
+  Description_EN: The object process PID
+  Sample:
+  - 11360
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSessionIp
+  ProductCode:
+  - tlc
+  Description_EN: The remote device IP address
+  Sample:
+  - 10.10.10.10
+  - fe80::ffff:ffff:0000:0000
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectVersionInfoOriginalFileName
+  ProductCode:
+  - tlc
+  Description_EN: The original file name from the version information of the object
+    image
+  Sample:
+  - msedgeupdate.dll
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processCmd
+  ProductCode:
+  - tlc
+  Description_EN: The subject process command line
+  Sample:
+  - \"cmd.exe-\" /c powershell.exe -Command
+  DL_Type: string
+  DL_CommonKey:
+  - CLICommand
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentFileName
+  ProductCode:
+  - tlc
+  Description_EN: The parent process name
+  Sample:
+  - explorer.exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFilePath
+  ProductCode:
+  - tlc
+  Description_EN: The file path of the subject process
+  Sample:
+  - c:\\windows\\system32\\cmd.exe
+  DL_Type: string
+  DL_CommonKey:
+  - ProcessFullPath
+  - ProcessName
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processVersionInfoOriginalFileName
+  ProductCode:
+  - tlc
+  Description_EN: The original file name from the version information of the process
+    image
+  Sample:
+  - cmd.exe
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileRemoteAccess
+  ProductCode:
+  - tlc
+  Description_EN: The remote access to the process file
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processName
+  ProductCode:
+  - tlc
+  Description_EN: The image name of the process that triggered the event
+  Sample:
+  - cmd.exe
+  DL_Type: string
+  DL_CommonKey:
+  - ProcessName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: processUser
+  ProductCode:
+  - tlc
+  Description_EN: The user name of the process or the file creator
+  Sample:
+  - user2
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processUserDomain
+  ProductCode:
+  - tlc
+  Description_EN: The owner domain of the subject process image
+  Sample:
+  - nt authority
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processPid
+  ProductCode:
+  - tlc
+  Description_EN: The PID of the subject process
+  Sample:
+  - 10035
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentPid
+  ProductCode:
+  - tlc
+  Description_EN: The PID of the parent process
+  Sample:
+  - 10035
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processRemoteSessionDeviceName
+  ProductCode:
+  - tlc
+  Description_EN: The remote device name of the process
+  Sample:
+  - user2
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processRemoteSessionIp
+  ProductCode:
+  - tlc
+  Description_EN: The remote device IP address of the process
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileHashSha1
+  ProductCode:
+  - tlc
+  Description_EN: The SHA-1 of the subject process
+  Sample:
+  - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
   DL_Searchable: true
   DL_Aggregable: false
