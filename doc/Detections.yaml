@@ -551,6 +551,7 @@
   - sfs
   - sfc
   - sss
+  - ddr
   Description_EN: The SHA-1 of the file that triggered the rule or policy
   Sample:
   - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709

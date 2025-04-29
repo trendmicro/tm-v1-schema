@@ -1508,6 +1508,17 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: monitoringLevel
+  ProductCode:
+  - tlc
+  Description_EN: The cloud activity monitoring level
+  Sample:
+  - 0
+  - 1
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: actResult
   ProductCode:
   - tlc
