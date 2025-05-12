@@ -64,6 +64,7 @@
   Sample:
   - '733'
   - '742'
+  - TMEMS
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -420,6 +421,7 @@
   - realtime_mailmeta-exchange
   - realtime_mailmeta-gmail
   - gateway_mailmetadata
+  - gateway_realtime_accepted_mail_traffic
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -789,6 +791,7 @@
   ProductCode:
   - sca
   - xms
+  - sem
   Description_EN: The time the email was scanned
   Sample:
   - 1657135700000
