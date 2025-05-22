@@ -616,3 +616,170 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: authenticationProtocol
+  ProductCode:
+  - aad
+  Description_EN: The authentication protocol or grant type
+  Sample:
+  - none
+  - oAuth2
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: autonomousSystemNumber
+  ProductCode:
+  - aad
+  Description_EN: The network Autonomous System Number
+  Sample:
+  - 1023
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientCredentialType
+  ProductCode:
+  - aad
+  Description_EN: The user client or service principal credential type
+  Sample:
+  - none
+  - clientSecret
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: crossTenantAccessType
+  ProductCode:
+  - aad
+  Description_EN: The cross-tenant access type
+  Sample:
+  - none
+  - b2bCollaboration
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: incomingTokentype
+  ProductCode:
+  - aad
+  Description_EN: The authentication token types
+  Sample:
+  - none
+  - primaryRefreshToken
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: servicePrincipalId
+  ProductCode:
+  - aad
+  Description_EN: The service principal ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: servicePrincipalName
+  ProductCode:
+  - aad
+  Description_EN: The service principal name
+  Sample:
+  - Service_01
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: signInIdentifierType
+  ProductCode:
+  - aad
+  Description_EN: The sign-in ID type
+  Sample:
+  - userPrincipalName
+  - phoneNumber
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userSessionId
+  ProductCode:
+  - aad
+  Description_EN: The session ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: idpIssuerName
+  ProductCode:
+  - aad
+  Description_EN: The identity provider that issued the token
+  Sample:
+  - sts.microsoft.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userType
+  ProductCode:
+  - aad
+  Description_EN: The tenant user type
+  Sample:
+  - member
+  - guest
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: riskEventTypes
+  ProductCode:
+  - aad
+  Description_EN: The associated sign-in risk event types
+  Sample:
+  - [unlikelyTravel, anonymizedIPAddress]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: signInEventTypes
+  ProductCode:
+  - aad
+  Description_EN: The sign-in event type
+  Sample:
+  - [interactiveUser, nonInteractiveUser]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: application
+  ProductCode:
+  - aad
+  Description_EN: The displayed application name
+  Sample:
+  - app01
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: applicationId
+  ProductCode:
+  - aad
+  Description_EN: The Microsoft Entra ID application ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: conditionalAccessStatus
+  ProductCode:
+  - aad
+  Description_EN: The conditional access policy status
+  Sample:
+  - success
+  - failure
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
