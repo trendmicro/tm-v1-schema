@@ -31,7 +31,6 @@
   - sds
   - pds
   - ptn
-  - qpf
   Description_EN: The computer name of the client host (The hostname from the suspicious
     URL detected by Deep Discovery Inspector)
   Sample:
@@ -67,7 +66,6 @@
   - pdi
   - xns
   - pds
-  - qpf
   - mns
   Description_EN: The source hostname
   Sample:
@@ -83,7 +81,6 @@
   ProductCode:
   - pdi
   - xns
-  - qpf
   - mns
   Description_EN: The destination hostname
   Sample:
@@ -180,7 +177,6 @@
   - pds
   - ams
   - szn
-  - qpf
   Description_EN: The notable URLs
   Sample:
   - http://example.page.com/canonical.html
@@ -247,7 +243,6 @@
   - ptn
   - szn
   - scs
-  - qpf
   - mns
   Description_EN: The source IP
   Sample:
@@ -272,7 +267,6 @@
   - ptn
   - szn
   - scs
-  - qpf
   - mns
   Description_EN: The destination IP
   Sample:
@@ -361,7 +355,6 @@
   - ptn
   - szn
   - scs
-  - qpf
   - mns
   Description_EN: The destination port
   Sample:
@@ -386,7 +379,6 @@
   - ptn
   - szn
   - scs
-  - qpf
   - mns
   Description_EN: The source port
   Sample:
@@ -409,7 +401,6 @@
   - pts
   - sfs
   - sfc
-  - qpf
   - sss
   Description_EN: The file name
   Sample:
@@ -662,7 +653,6 @@
   - sds
   - sfs
   - sfc
-  - qpf
   - sss
   - scs
   Description_EN: The SHA-256 of the file (fileName)
@@ -891,7 +881,6 @@
   - xns
   - sao
   - xms
-  - qpf
   Description_EN: The email sender
   Sample:
   - sample_email@trendmicro.com
@@ -910,7 +899,6 @@
   - xns
   - sao
   - xms
-  - qpf
   Description_EN: The email recipient
   Sample:
   - (no user)
@@ -929,7 +917,6 @@
   - sem
   - sao
   - xms
-  - qpf
   Description_EN: The email subject
   Sample:
   - FW. mail subject
@@ -1018,7 +1005,6 @@
   - szn
   - scs
   - xms
-  - qpf
   - mns
   - ddr
   Description_EN: The name of the rule that triggered the event
@@ -1045,7 +1031,6 @@
   - xns
   - pds
   - sao
-  - qpf
   - mns
   Description_EN: The rule ID
   Sample:
@@ -1097,7 +1082,6 @@
   - xms
   - sfs
   - sfc
-  - qpf
   - sss
   - ams
   - mns
@@ -1136,7 +1120,6 @@
   - sem
   - xes
   - sig
-  - qpf
   Description_EN: The event type sub-name
   Sample:
   - IPS Detection
@@ -1372,7 +1355,6 @@
   - ptn
   - szn
   - xms
-  - qpf
   - ams
   - mns
   Description_EN: The actions taken to mitigate the event
@@ -1434,7 +1416,6 @@
 - Name: productCode
   ProductCode:
   - ALL
-  - qpf
   Description_EN: The internal product code
   Sample:
   - sds
@@ -1488,7 +1469,6 @@
   - ams
   - scs
   - xms
-  - qpf
   Description_EN: The internal product ID
   Sample:
   - Trend Micro Deep Security
@@ -1538,7 +1518,6 @@
   - ptp
   - stp
   - scs
-  - qpf
   - mns
   Description_EN: The severity of the event
   Sample:
@@ -1594,7 +1573,6 @@
   ProductCode:
   - pdi
   - xns
-  - qpf
   - sds
   - sao
   Description_EN: The HTTP referer
@@ -1663,7 +1641,6 @@
   ProductCode:
   - pdi
   - xns
-  - qpf
   Description_EN: The latest sign-in user of the destination
   Sample:
   - user\example
@@ -1690,7 +1667,6 @@
   ProductCode:
   - pdi
   - xns
-  - qpf
   Description_EN: The latest sign-in user of the source
   Sample:
   - example\admin
@@ -1779,7 +1755,6 @@
   - sig
   - sca
   - ams
-  - qpf
   - sds
   Description_EN: The requested URL category
   Sample:
@@ -1824,7 +1799,6 @@
   - sig
   - ptn
   - scs
-  - qpf
   - mns
   Description_EN: The name of the triggered policy
   Sample:
@@ -1869,7 +1843,6 @@
   - sig
   - szn
   - sao
-  - qpf
   Description_EN: The name of the requested application
   Sample:
   - HyperText Transfer Protocol
@@ -2165,7 +2138,6 @@
   - pdi
   - xns
   - ptn
-  - qpf
   - mns
   Description_EN: The total number of logs
   Sample:
@@ -2225,7 +2197,6 @@
   ProductCode:
   - pdi
   - xns
-  - qpf
   - mns
   Description_EN: The destination host OS
   Sample:
@@ -2463,7 +2434,6 @@
   ProductCode:
   - sao
   - ptn
-  - qpf
   Description_EN: The direction
   Sample:
   - Incoming
@@ -2481,7 +2451,6 @@
   - sds
   - pds
   - ptn
-  - qpf
   Description_EN: The MAC address of the destination IP (dest_ip)
   Sample:
   - 00:00:00:00:00:00
@@ -2508,7 +2477,6 @@
   ProductCode:
   - pdi
   - xns
-  - qpf
   Description_EN: The network zone defined by the destination administrator
   Sample:
   - '1'
@@ -2534,7 +2502,6 @@
   - sao
   - pdi
   - xns
-  - qpf
   Description_EN: The computer which installed the Trend Micro product
   Sample:
   - CU-PRO1-9039-2
@@ -2601,7 +2568,6 @@
   ProductCode:
   - pdi
   - xns
-  - qpf
   Description_EN: The event category
   Sample:
   - Suspicious Traffic
@@ -2626,7 +2592,6 @@
   - xms
   - sfs
   - sfc
-  - qpf
   - sss
   - ams
   - mns
@@ -2706,7 +2671,6 @@
   - sig
   - sfs
   - sfc
-  - qpf
   - sss
   - scs
   Description_EN: The file type of the suspicious file
@@ -3426,7 +3390,6 @@
   - scs
   - sfs
   - sfc
-  - qpf
   - sss
   Description_EN: The product version
   Sample:
@@ -3467,7 +3430,6 @@
   ProductCode:
   - pdi
   - xns
-  - qpf
   - sds
   - sao
   Description_EN: The protocol user agent information
@@ -3632,7 +3594,6 @@
   ProductCode:
   - pdi
   - xns
-  - qpf
   - mns
   Description_EN: The source OS
   Sample:
@@ -3737,7 +3698,6 @@
   - sds
   - pds
   - ptn
-  - qpf
   Description_EN: The source MAC address
   Sample:
   - 00:11:22:33:44:55
@@ -3777,7 +3737,6 @@
   ProductCode:
   - pdi
   - xns
-  - qpf
   Description_EN: The network zone defined by the source administrator
   Sample:
   - '1'
@@ -4053,7 +4012,6 @@
   ProductCode:
   - sig
   - szn
-  - qpf
   Description_EN: The UUID of the cloud access or risk control policy, or the hard-coded
     string that indicates the rule of the global blocked/approved URL list
   Sample:
@@ -4872,7 +4830,6 @@
 - Name: flowId
   ProductCode:
   - sna
-  - qpf
   Description_EN: The connection ID
   Sample:
   - '6717474604962545666'
@@ -5673,77 +5630,6 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: vsysName
-  ProductCode:
-  - qpf
-  Description_EN: The Palo Alto Networks virtual system of the session
-  Sample:
-  - vsys1
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: srcLocation
-  ProductCode:
-  - qpf
-  Description_EN: The source country
-  Sample:
-  - Japan
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: dstLocation
-  ProductCode:
-  - qpf
-  Description_EN: The destination country
-  Sample:
-  - Japan
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: httpRespContentType
-  ProductCode:
-  - qpf
-  Description_EN: The HTTP response data content type
-  Sample:
-  - Application/json
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: fileHashMd5
-  ProductCode:
-  - qpf
-  Description_EN: The MD5 of the file
-  Sample:
-  - d5120786925038601a77c2e1eB9a3a0a
-  DL_Type: string
-  DL_CommonKey:
-  - FileMD5
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: httpXForwardedFor
-  ProductCode:
-  - qpf
-  Description_EN: The HTTP X-Forwarded-For header
-  Sample:
-  - 10.10.10.10
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: requestMethod
-  ProductCode:
-  - qpf
-  Description_EN: The network protocol request method
-  Sample:
-  - POST
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
 - Name: detectionAggregationId
   ProductCode:
   - xes
@@ -6618,3 +6504,24 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: fileHashMd5
+  ProductCode:
+  - qpf
+  Description_EN: The MD5 of the file
+  Sample:
+  - d5120786925038601a77c2e1eB9a3a0a
+  DL_Type: string
+  DL_CommonKey:
+  - FileMD5
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestMethod
+  ProductCode:
+  - qpf
+  Description_EN: The network protocol request method
+  Sample:
+  - POST
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
