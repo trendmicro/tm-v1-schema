@@ -3367,6 +3367,16 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: ruleIdStr
+  ProductCode:
+  - ddr
+  Description_EN: The rule ID
+  Sample:
+  - 0000000-0000-0000-0000-000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: additionalInfo
   ProductCode:
   - xes

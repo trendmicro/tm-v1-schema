@@ -1634,6 +1634,26 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: srcLocation
+  ProductCode:
+  - sig
+  Description_EN: The source country
+  Sample:
+  - JP
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstLocation
+  ProductCode:
+  - sig
+  Description_EN: The destination country
+  Sample:
+  - JP
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: sessionEndReason
   ProductCode:
   - xns
