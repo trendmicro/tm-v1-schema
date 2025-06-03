@@ -5630,6 +5630,26 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: srcLocation
+  ProductCode:
+  - sig
+  Description_EN: The source country
+  Sample:
+  - JP
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstLocation
+  ProductCode:
+  - sig
+  Description_EN: The destination country
+  Sample:
+  - JP
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: detectionAggregationId
   ProductCode:
   - xes
@@ -6525,3 +6545,23 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: detectionAggregationIds
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: The list of detection aggregation IDs
+  Sample:
+  - [11111111-1111-1111-1111-111111111111]
+  DL_Type: dynamic
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: triggerInfo
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: Trigger info
+  Sample:
+  - [{triggerModule: ODS, triggerReason: System Schedule Scan}]
+  DL_Type: dynamic
+  DL_Searchable: true
+  DL_Aggregable: false
