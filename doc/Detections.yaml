@@ -6559,7 +6559,7 @@
   ProductCode:
   - sao
   - sds
-  Description_EN: Trigger info
+  Description_EN: The trigger information
   Sample:
   - [{triggerModule: ODS, triggerReason: System Schedule Scan}]
   DL_Type: dynamic
