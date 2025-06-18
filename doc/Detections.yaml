@@ -205,6 +205,7 @@
   ProductCode:
   - ptp
   - mns
+  - sds
   Description_EN: The event category
   Sample:
   - Exploits
@@ -416,6 +417,7 @@
   ProductCode:
   - sao
   - scs
+  - sds
   Description_EN: The object file name
   Sample:
   - powershell.exe
@@ -424,6 +426,18 @@
   DL_Type: string
   DL_CommonKey:
   - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileSize
+  ProductCode:
+  - sds
+  Description_EN: The object file size
+  Sample:
+  - '0'
+  - '59456'
+  - '60'
+  DL_Type: long
+  DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
 - Name: compressedFileName
@@ -1663,6 +1677,39 @@
   - UserAccount
   DL_Searchable: true
   DL_Aggregable: false
+- Name: processUserId
+  ProductCode:
+  - sds
+  Description_EN: The process user ID or file creator
+  Sample:
+  - '0'
+  - S-1-5-1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processUserGroupName
+  ProductCode:
+  - sds
+  Description_EN: The process user group name or file creator
+  Sample:
+  - root
+  - NT AUTHORITY
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processUserGroupId
+  ProductCode:
+  - sds
+  Description_EN: The process user group ID or file creator
+  Sample:
+  - '0'
+  - S-1-5-1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: sUser1
   ProductCode:
   - pdi
@@ -1958,6 +2005,7 @@
   - sig
   - pts
   - ddr
+  - sds
   Description_EN: The number of aggregated events
   Sample:
   - '1'
@@ -5099,6 +5147,7 @@
   - scs
   - stp
   - ptp
+  - sds
   Description_EN: The rule set name
   Sample:
   - AllRules
@@ -5391,12 +5440,17 @@
   DL_Searchable: true
   DL_Aggregable: false
 - Name: quarantineFilePath
-  ProductCode: []
-  Description_EN: The OfficeScan server file path for the quarantined file (A quarantined
-    file is encrypted and copied to the OfficeScan server for post-mortem analysis)
-  Sample: []
+  ProductCode:
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The file path of the quarantined object
+  Sample:
+  - C:\ProgramData\Trend Micro\AMSP\quarantine\ASLUMVS0.4FC
   DL_Type: string
   DL_CommonKey:
+  - FileFullPath
   DL_Searchable: true
   DL_Aggregable: false
 - Name: clientStatus
@@ -6563,5 +6617,32 @@
   Sample:
   - [{triggerModule: ODS, triggerReason: System Schedule Scan}]
   DL_Type: dynamic
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: quarantineFileId
+  ProductCode:
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The unique identifier of the quarantined object
+  Sample:
+  - ASLUMVS0.4FC
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: quarantineFileSha256
+  ProductCode:
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The SHA-256 of the quarantined object
+  Sample:
+  - 84B2FA19B05EA88D6E785B4ADB528120485AA3F72F3E5E114DE6D3696B0D151F
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
   DL_Searchable: true
   DL_Aggregable: false
