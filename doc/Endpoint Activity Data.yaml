@@ -3849,3 +3849,16 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: eventDataTicketOptions
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The authentication request Kerberos ticket behavior and permissions
+    flags
+  Sample:
+  - '0x40810000'
+  - '0x40810010'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
