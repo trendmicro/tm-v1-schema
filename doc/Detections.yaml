@@ -6646,3 +6646,28 @@
   - FileSHA2
   DL_Searchable: true
   DL_Aggregable: false
+- Name: detectionNames
+  ProductCode:
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The rules that triggered the event
+  Sample:
+  - [HS_EMOTET.SMAA, HM_AVEDOWN.SMZTIG-A, HE_DOCQRPHISH.SM]
+  DL_Type: dynamic
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionMeta
+  ProductCode:
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The descriptions of the detected techniques
+  Sample:
+  - [T1204 some description about this technique, T1573.001_AES another description
+      about this technique]
+  DL_Type: dynamic
+  DL_Searchable: true
+  DL_Aggregable: false
