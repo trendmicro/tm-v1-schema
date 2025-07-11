@@ -432,8 +432,8 @@
 - Name: reqDataSize
   ProductCode:
   - tlc
-  Description_EN: The data volume transmitted over the transport layer by the client
-    (in bytes)
+  Description_EN: The data volume transmitted over the transport layer by the 
+    client (in bytes)
   Sample:
   - 15688
   DL_Type: string
@@ -442,8 +442,8 @@
 - Name: respDataSize
   ProductCode:
   - tlc
-  Description_EN: The data volume transmitted over the transport layer by the server
-    (in bytes)
+  Description_EN: The data volume transmitted over the transport layer by the 
+    server (in bytes)
   Sample:
   - 7856
   DL_Type: string
@@ -936,15 +936,17 @@
   ProductCode:
   - tlc
   Description_EN: The original event log string
-  Sample: CEF:0|Palo Alto Networks|PAN-OS|10.2.9-h1|end|TRAFFIC|1|rt=Aug 12 2024 15:31:19
-    GMT deviceExternalId=021201072197 src=10.10.10.10 dst=10.10.10.11 sourceTranslatedAddress=0.0.0.0
-    destinationTranslatedAddress=0.0.0.0 cs1Label=Rule cs1=TLC-to-nat-trust suser=
-    duser= app=ping cs3Label=Virtual System cs3=vsys1 cs4Label=Source Zone cs4=TLC
-    cs5Label=Destination Zone cs5=nat-trust deviceInboundInterface=ethernet1/6 deviceOutboundInterface=ethernet1/8
-    cs6Label=LogProfile cs6=PA440_to_Panorama cn1Label=SessionID cn1=19120 cnt=1 spt=0
-    dpt=0 sourceTranslatedPort=0 destinationTranslatedPort=0 flexString1Label=Flags
-    flexString1=0x100019 proto=icmp act=allow flexNumber1Label=Total bytes flexNumber1=98
-    in=98 out=0 cn2Label=Packets cn2=1
+  Sample: CEF:0|Palo Alto Networks|PAN-OS|10.2.9-h1|end|TRAFFIC|1|rt=Aug 12 2024
+    15:31:19 GMT deviceExternalId=021201072197 src=10.10.10.10 dst=10.10.10.11 
+    sourceTranslatedAddress=0.0.0.0 destinationTranslatedAddress=0.0.0.0 
+    cs1Label=Rule cs1=TLC-to-nat-trust suser= duser= app=ping cs3Label=Virtual 
+    System cs3=vsys1 cs4Label=Source Zone cs4=TLC cs5Label=Destination Zone 
+    cs5=nat-trust deviceInboundInterface=ethernet1/6 
+    deviceOutboundInterface=ethernet1/8 cs6Label=LogProfile 
+    cs6=PA440_to_Panorama cn1Label=SessionID cn1=19120 cnt=1 spt=0 dpt=0 
+    sourceTranslatedPort=0 destinationTranslatedPort=0 flexString1Label=Flags 
+    flexString1=0x100019 proto=icmp act=allow flexNumber1Label=Total bytes 
+    flexNumber1=98 in=98 out=0 cn2Label=Packets cn2=1
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -965,7 +967,8 @@
 - Name: cloudAccountId
   ProductCode:
   - tlc
-  Description_EN: The owner AWS account ID of the source network interface (account-id)
+  Description_EN: The owner AWS account ID of the source network interface 
+    (account-id)
   Sample:
   - 123456789012
   DL_Type: string
@@ -1016,7 +1019,8 @@
 - Name: start
   ProductCode:
   - tlc
-  Description_EN: The time when the first data packet was received (in Unix seconds)
+  Description_EN: The time when the first data packet was received (in Unix 
+    seconds)
   Sample:
   - 1616729292
   DL_Type: real
@@ -1026,7 +1030,8 @@
 - Name: end
   ProductCode:
   - tlc
-  Description_EN: The time when the last data packet was received (in Unix seconds)
+  Description_EN: The time when the last data packet was received (in Unix 
+    seconds)
   Sample:
   - 1616729349
   DL_Type: long
@@ -1182,8 +1187,8 @@
 - Name: pktSrcCloudServiceName
   ProductCode:
   - tlc
-  Description_EN: The subset IP address range name for the cloud service source IP
-    (pkt-src-aws-service)
+  Description_EN: The subset IP address range name for the cloud service source 
+    IP (pkt-src-aws-service)
   Sample:
   - AMAZON
   - EC2
@@ -1195,8 +1200,8 @@
 - Name: pktDstCloudServiceName
   ProductCode:
   - tlc
-  Description_EN: The subset IP address range name for the cloud service destination
-    IP (pkt-dst-aws-service)
+  Description_EN: The subset IP address range name for the cloud service 
+    destination IP (pkt-dst-aws-service)
   Sample:
   - AMAZON
   - EC2
@@ -1335,8 +1340,8 @@
 - Name: vpcEndpointId
   ProductCode:
   - tlc
-  Description_EN: The VPC endpoint in which requests where made from a VPC to another
-    AWS service
+  Description_EN: The VPC endpoint in which requests where made from a VPC to 
+    another AWS service
   Sample:
   - vpce-01234567890abcdef
   DL_Type: string
@@ -1346,8 +1351,8 @@
 - Name: additionalEventData
   ProductCode:
   - tlc
-  Description_EN: The additional event information that was not part of the request
-    or response
+  Description_EN: The additional event information that was not part of the 
+    request or response
   Sample:
   - '{"SignatureVersion":"SigV4","CipherSuite":"ECDHE-RSA-AES128-GCM-SHA256"}'
   DL_Type: dynamic
@@ -1459,8 +1464,9 @@
 - Name: sharedEventID
   ProductCode:
   - tlc
-  Description_EN: The AWS CloudTrail GUID (from the same AWS action sent to different
-    AWS accounts) events (From the same AWS action that is sent to different AWS accounts)
+  Description_EN: The AWS CloudTrail GUID (from the same AWS action sent to 
+    different AWS accounts) events (From the same AWS action that is sent to 
+    different AWS accounts)
   Sample:
   - 11111111-1111-1111-1111-111111111111
   DL_Type: string
@@ -1584,8 +1590,8 @@
 - Name: profile
   ProductCode:
   - tlc
-  Description_EN: The name of the triggered Threat Protection template or Data Loss
-    Prevention profile
+  Description_EN: The name of the triggered Threat Protection template or Data 
+    Loss Prevention profile
   Sample:
   - default
   - g-default
@@ -1648,8 +1654,8 @@
 - Name: techniqueId
   ProductCode:
   - tlc
-  Description_EN: The Technique ID detected by the product agent based on a detection
-    rule
+  Description_EN: The Technique ID detected by the product agent based on a 
+    detection rule
   Sample:
   - [T1566.002]
   DL_Type: dynamic
@@ -1889,7 +1895,8 @@
 - Name: previousObjectFilePath
   ProductCode:
   - tlc
-  Description_EN: The previous file path of the target process image or target file
+  Description_EN: The previous file path of the target process image or target 
+    file
   Sample:
   - /usr/tmp/powershell.exe
   DL_Type: string
@@ -1934,8 +1941,8 @@
 - Name: eventDataLogonType
   ProductCode:
   - tlc
-  Description_EN: The logon type for Windows event 4624 which is "An account was successfully
-    logged on"
+  Description_EN: The logon type for Windows event 4624 which is "An account was
+    successfully logged on"
   Sample:
   - Network
   DL_Type: string
@@ -2040,8 +2047,8 @@
 - Name: objectVersionInfoOriginalFileName
   ProductCode:
   - tlc
-  Description_EN: The original file name from the version information of the object
-    image
+  Description_EN: The original file name from the version information of the 
+    object image
   Sample:
   - msedgeupdate.dll
   DL_Type: string
@@ -2087,8 +2094,8 @@
 - Name: processVersionInfoOriginalFileName
   ProductCode:
   - tlc
-  Description_EN: The original file name from the version information of the process
-    image
+  Description_EN: The original file name from the version information of the 
+    process image
   Sample:
   - cmd.exe
   DL_Type: string

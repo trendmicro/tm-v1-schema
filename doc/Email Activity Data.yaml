@@ -443,7 +443,8 @@
   ProductCode:
   - sem
   - xms
-  Description_EN: The internal UUID chain for each email in Trend Micro Feedback Engine
+  Description_EN: The internal UUID chain for each email in Trend Micro Feedback
+    Engine
   Sample:
   - 11111111-1111-1111-1111-111111111111;00000000-0000-0000-0000-000000000000
   DL_Type: string
@@ -527,8 +528,8 @@
   - sca
   - sem
   - xms
-  Description_EN: The rule ID of the matched rule detected by Trend Micro Anti-Spam
-    Engine
+  Description_EN: The rule ID of the matched rule detected by Trend Micro 
+    Anti-Spam Engine
   Sample:
   - '42003'
   - '148036'
@@ -595,7 +596,8 @@
   - sem
   - sca
   - xms
-  Description_EN: The score assigned to the email by Trend Micro Anti-Spam Engine
+  Description_EN: The score assigned to the email by Trend Micro Anti-Spam 
+    Engine
   Sample: []
   DL_Type: string
   DL_CommonKey:
@@ -606,7 +608,8 @@
   - sca
   - sem
   - xms
-  Description_EN: The WantedHeader key name detected by Trend Micro Anti-Spam Engine
+  Description_EN: The WantedHeader key name detected by Trend Micro Anti-Spam 
+    Engine
   Sample:
   - CC
   - X-TM-Product-Ver
@@ -620,7 +623,8 @@
   - sca
   - sem
   - xms
-  Description_EN: The WantedHeader key value detected by Trend Micro Anti-Spam Engine
+  Description_EN: The WantedHeader key value detected by Trend Micro Anti-Spam 
+    Engine
   Sample:
   - cloud-app-security-5.0
   - BCL:0;
@@ -670,8 +674,8 @@
   - sca
   - sem
   - xms
-  Description_EN: The name and email address of the sender in the From header detected
-    by Trend Micro Anti-Spam Engine
+  Description_EN: The name and email address of the sender in the From header 
+    detected by Trend Micro Anti-Spam Engine
   Sample:
   - <sample_email@trendmicro.com>
   DL_Type: dynamic
@@ -777,8 +781,8 @@
   - sem
   - sca
   - xms
-  Description_EN: The list of rule IDs scanned by Eureka and detected by Trend Micro
-    Anti-Spam Engine
+  Description_EN: The list of rule IDs scanned by Eureka and detected by Trend 
+    Micro Anti-Spam Engine
   Sample:
   - '661030'
   - '661230'
@@ -803,8 +807,8 @@
   ProductCode:
   - sca
   - xms
-  Description_EN: The internal email cache ID to identify emails in the same group
-    mails
+  Description_EN: The internal email cache ID to identify emails in the same 
+    group mails
   Sample:
   - <sample_email@trendmicro.com>
   DL_Type: string
@@ -815,8 +819,8 @@
   ProductCode:
   - sca
   - xms
-  Description_EN: The hidden email header that indicates where bounced messages are
-    sent
+  Description_EN: The hidden email header that indicates where bounced messages 
+    are sent
   Sample:
   - sample_email@trendmicro.com
   DL_Type: dynamic
@@ -881,8 +885,8 @@
 - Name: isExternalAccess
   ProductCode:
   - xca
-  Description_EN: Whether the cmdlet was run by an external user (True=external user,
-    False=internal user in your organization)
+  Description_EN: Whether the cmdlet was run by an external user (True=external 
+    user, False=internal user in your organization)
   Sample:
   - true
   DL_Type: bool
@@ -943,8 +947,8 @@
 - Name: parameters
   ProductCode:
   - xca
-  Description_EN: The names and values of all parameters used in the cmdlet identified
-    in the Operations property
+  Description_EN: The names and values of all parameters used in the cmdlet 
+    identified in the Operations property
   Sample:
   - '[{"Name": "AlwaysDeleteOutlookRulesBlob","Value": "False"},{"Name" : "Force","Value":
     "False"}]'
@@ -1016,8 +1020,8 @@
 - Name: fileExt
   ProductCode:
   - xca
-  Description_EN: The file extension (If the object is a folder, there is no value
-    for this field.)
+  Description_EN: The file extension (If the object is a folder, there is no 
+    value for this field.)
   Sample:
   - jpg
   DL_Type: string
@@ -1040,8 +1044,8 @@
   - xca
   Description_EN: The user agent
   Sample:
-  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
-    Chrome/119.0.0.0 Safari/537.36
+  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
+    Gecko) Chrome/119.0.0.0 Safari/537.36
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

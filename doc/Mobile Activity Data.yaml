@@ -151,7 +151,8 @@
   Description_EN: The source file path
   Sample:
   - \\cnva-apps\megaclockprod\traveler\travelerprint.accdb
-  - c:\program files\common files\microsoft shared\clicktorun\officesvcmgrschedule.xml
+  - c:\program files\common files\microsoft 
+    shared\clicktorun\officesvcmgrschedule.xml
   - q:\a7_dbs\a4_pkg\a4_packaging.accde
   DL_Type: string
   DL_CommonKey:
@@ -512,7 +513,8 @@
 - Name: appPublicKeySha1
   ProductCode:
   - ams
-  Description_EN: The SHA-1 hash of the app public key (if the subject is an app)
+  Description_EN: The SHA-1 hash of the app public key (if the subject is an 
+    app)
   Sample:
   - 05FC638156219800DADAC48D8E621E0BCBD3C321
   DL_Type: string
@@ -553,7 +555,8 @@
 - Name: systemEventAttr
   ProductCode:
   - ams
-  Description_EN: The attributes of the system event (if the subject is a system event)
+  Description_EN: The attributes of the system event (if the subject is a system
+    event)
   Sample:
   - usbdebugging
   DL_Type: string

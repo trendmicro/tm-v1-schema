@@ -61,7 +61,8 @@
   Description_EN: The source file path
   Sample:
   - \\cnva-apps\megaclockprod\traveler\travelerprint.accdb
-  - c:\program files\common files\microsoft shared\clicktorun\officesvcmgrschedule.xml
+  - c:\program files\common files\microsoft 
+    shared\clicktorun\officesvcmgrschedule.xml
   - q:\a7_dbs\a4_pkg\a4_packaging.accde
   DL_Type: string
   DL_CommonKey:
