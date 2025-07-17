@@ -6693,3 +6693,25 @@
   DL_Type: dynamic
   DL_Searchable: true
   DL_Aggregable: false
+- Name: startTime
+  ProductCode:
+  - sds
+  Description_EN: The time when the first event was received (in Unix 
+    milliseconds)
+  Sample:
+  - 1750983848000
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endTime
+  ProductCode:
+  - sds
+  Description_EN: The time when the last event was received (in Unix 
+    milliseconds)
+  Sample:
+  - 1750983926000
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
