@@ -31,8 +31,8 @@
 - Name: tags
   ProductCode:
   - ALL
-  Description_EN: The attack technique ID detected by Trend Vision One based on the
-    alert filter
+  Description_EN: The attack technique ID detected by Trend Vision One based on 
+    the alert filter
   Sample:
   - MITREV9.T1057
   - MITREV9.T1059.003
@@ -57,8 +57,8 @@
   ProductCode:
   - ALL
   - aad
-  Description_EN: The internal product code of the identity provider (aad=Microsoft
-    Entra ID, opa=Microsoft Active Directory)
+  Description_EN: The internal product code of the identity provider 
+    (aad=Microsoft Entra ID, opa=Microsoft Active Directory)
   Sample:
   - aad
   - opa
@@ -526,8 +526,8 @@
   Description_EN: The user agent
   Sample:
   - Microsoft.OData.Client/7.12.5
-  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like
-    Gecko) Chrome/119.0.0.0 Safari/537.36
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, 
+    like Gecko) Chrome/119.0.0.0 Safari/537.36
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
