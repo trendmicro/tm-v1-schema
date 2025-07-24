@@ -1,0 +1,11 @@
+- Name: netBiosDomainName
+  ProductCode:
+  - opa
+  Description_EN: The NetBIOS domain name
+  Sample:
+  - TREND
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
