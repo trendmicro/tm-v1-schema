@@ -493,7 +493,7 @@
   - xes
   - sds
   - sao
-  Description_EN: Command line entry of parent process
+  Description_EN: The command line entry of the parent process
   Sample:
   - C:\WINDOWS\system32\services.exe
   - C:\Windows\system32\services.exe
@@ -612,7 +612,7 @@
   - sds
   - xes
   - sao
-  Description_EN: The md5 hash of subject process image
+  Description_EN: The MD5 hash of the subject process image
   Sample:
   - cd10cb894be2128fca0bf0e2b0c27c16
   - 7ac47235c7bb452a03d3afd872f44c9e

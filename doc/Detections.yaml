@@ -998,7 +998,7 @@
   - xns
   - xes
   - sao
-  Description_EN: List of MITRE tactic IDs
+  Description_EN: The list of MITRE tactic IDs
   Sample:
   - TA0011
   - TA0008
