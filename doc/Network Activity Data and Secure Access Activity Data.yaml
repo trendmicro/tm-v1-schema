@@ -15,6 +15,7 @@
   - pdi
   - xns
   - vpc
+  - azv
   Description_EN: The time the agent or product detected the event
   Sample:
   - 1657135700000
@@ -126,6 +127,7 @@
   - sig
   - szn
   - vpc
+  - azv
   Description_EN: The destination IP address (dstaddr)
   Sample:
   - 10.10.10.10
@@ -192,6 +194,7 @@
   - sig
   - szn
   - vpc
+  - azv
   Description_EN: The source IP address (srcaddr)
   Sample:
   - 10.10.10.10
@@ -254,6 +257,7 @@
   - pdi
   - xns
   - vpc
+  - azv
   Description_EN: The name of the log event
   Sample:
   - SWG_ACTIVITY_LOG
@@ -279,10 +283,13 @@
   ProductCode:
   - sig
   - szn
+  - azv
   Description_EN: The name of the triggered cloud access rule
   Sample:
   - ETL_Access Rules_Web_Host
   - block_wiki_for_guest
+  - BlockHighRiskTCPPortsFromInternet
+  - unspecified
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -561,6 +568,7 @@
   - pdi
   - xns
   - vpc
+  - azv
   Description_EN: The product name
   Sample:
   - Secure Web Gateway
@@ -763,6 +771,7 @@
   ProductCode:
   - szn
   - vpc
+  - azv
   Description_EN: The virtual port of the source assigned to the Secure Access 
     Module (srcport)
   Sample:
@@ -786,6 +795,7 @@
   ProductCode:
   - szn
   - vpc
+  - azv
   Description_EN: The service destination port of the private application server
     (dstport)
   Sample:
@@ -1635,6 +1645,7 @@
   - xns
   - pdi
   - vpc
+  - azv
   Description_EN: The event ID
   Sample:
   - '200139'
@@ -1678,6 +1689,7 @@
 - Name: vpcFlowLogsVersion
   ProductCode:
   - vpc
+  - azv
   Description_EN: The VPC Flow Logs version (version)
   Sample:
   - 2
@@ -1688,38 +1700,6 @@
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
-- Name: cloudAccountId
-  ProductCode:
-  - vpc
-  Description_EN: The owner AWS account ID of the source network interface 
-    (account-id)
-  Sample:
-  - 123456789012
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: networkInterfaceId
-  ProductCode:
-  - vpc
-  Description_EN: The network interface ID (interface-id)
-  Sample:
-  - eni-01234567890abcdef
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: ipProto
-  ProductCode:
-  - vpc
-  Description_EN: The protocol number (protocol)
-  Sample:
-  - 6
-  - 17
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
 - Name: packets
   ProductCode:
   - vpc
@@ -1842,16 +1822,6 @@
   - IPv6
   DL_Searchable: true
   DL_Aggregable: false
-- Name: regionCode
-  ProductCode:
-  - vpc
-  Description_EN: The network interface AWS Region
-  Sample:
-  - ap-southeast-2
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: azId
   ProductCode:
   - vpc
@@ -1915,10 +1885,13 @@
 - Name: flowDirection
   ProductCode:
   - vpc
+  - azv
   Description_EN: The network interface traffic direction
   Sample:
   - ingress
   - egress
+  - I
+  - O
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
