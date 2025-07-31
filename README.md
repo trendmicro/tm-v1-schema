@@ -4,9 +4,35 @@
 # Background
 - These documents provide Trend Vision One log schema details.
 
+# Folder Structure
+- The folder structure is as follows:
+    ```
+    .
+    ├── README.md
+    ├── doc (documentation by log type)
+    │   ├── <log_type_name>.yaml
+    │   └── ...
+    └── doc_v2 (documentation by layer and product)
+        ├── <layer_name>
+        │   ├── <product_name>.yaml
+        │   └── ...
+        └── ...
+    └── pages (for rendering in GitHub Pages)
+        ├── <layer_name>
+        │   ├── <product_name>.md
+        │   └── ...
+        └── ...
+    ```
+
+# Pages
+
+you can access the rendered pages at:
+https://trendmicro.github.io/tm-v1-schema/pages/index
+
 # User scenario
 - Currently, these documents only support the following use cases:
     1. Trend Vision One Search app general and advanced search
+
 
 # Property Description
 | Property       | Description                                    |
