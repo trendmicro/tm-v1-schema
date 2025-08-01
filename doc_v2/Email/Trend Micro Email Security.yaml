@@ -1,0 +1,1540 @@
+- Name: request
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - ptp
+  - sds
+  - sig
+  - sca
+  - stp
+  - sem
+  - pds
+  - ams
+  - szn
+  Description_EN: The notable URLs
+  Sample:
+  - http://example.page.com/canonical.html
+  - http://10.10.10.10
+  - https://drive.google.com/
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: attachmentFileName
+  ProductCode:
+  - sca
+  - sem
+  - pdi
+  - xns
+  - xms
+  Description_EN: The file name of an attachment
+  Sample:
+  - Mail Body
+  - image001.png
+  - image002.png
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileHashSha1
+  ProductCode:
+  - sca
+  - sem
+  Description_EN: The SHA-1 of the attached file (attachementFileName)
+  Sample:
+  - d63b1739a2fe56eb412dff1c69b76d4b9aad8ebd
+  - 3b923d078ea3bd39489ed6d334c423e4478a8ee3
+  - 3a2e6a64e1b7f4c6cbebcb9e949dc66b667cdfbe
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileHashSha256
+  ProductCode:
+  - pdi
+  - xns
+  - sem
+  Description_EN: The SHA-256 of the attached file (attachementFileName)
+  Sample:
+  - D81D4C14DDEB8CA390FFADA69265AAD46CDEDD72CDD332CB8AA17D924626B397
+  - 01DE1FC697D2D0850F0468474A3E1E0BF4D78B23F0633908CF82E504E0DCBFF9
+  - 02D16D9970AB635A7B05C3A268E23F5B41C419DD022F1054E9FD912BE130BDB0
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectType
+  ProductCode:
+  - sca
+  - sds
+  - sao
+  - sem
+  - xes
+  - sfs
+  Description_EN: The object type
+  Sample:
+  - file
+  - process
+  - qil
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: suser
+  ProductCode:
+  - sca
+  - sem
+  - pdi
+  - xns
+  - sao
+  - xms
+  Description_EN: The email sender
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailSender
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: duser
+  ProductCode:
+  - sds
+  - pds
+  - sca
+  - sem
+  - pdi
+  - xns
+  - sao
+  - xms
+  Description_EN: The email recipient
+  Sample:
+  - (no user)
+  - SYSTEM
+  - ' SYSTEM'
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailRecipient
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: mailMsgSubject
+  ProductCode:
+  - sca
+  - pdi
+  - xns
+  - sem
+  - sao
+  - xms
+  Description_EN: The email subject
+  Sample:
+  - FW. mail subject
+  - ManageEngine
+  DL_Type: string
+  DL_CommonKey:
+  - EmailSubject
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: msgId
+  ProductCode:
+  - sca
+  - sem
+  - pdi
+  - xns
+  - sao
+  - xms
+  Description_EN: The internet message ID
+  Sample:
+  - 66.6.00.0006
+  - example.test.com
+  - dameware1svr
+  DL_Type: string
+  DL_CommonKey:
+  - EmailMessageID
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleName
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - ptp
+  - xes
+  - sem
+  - stp
+  - szn
+  - scs
+  - xms
+  - mns
+  - ddr
+  Description_EN: The name of the rule that triggered the event
+  Sample:
+  - Directory Server - Microsoft Windows Active Directory
+  - Microsoft Windows Events
+  - Microsoft Windows Security Events - 3
+  - (T1234) New executable created (chmod)
+  - Sensitive Files Upload to Personal Cloud
+  - Multiple Sensitive Files Compression
+  - Transfer Sensitive Files to Removable Storage
+  - Move Multiple Sensitive Files to Central Location
+  - Multiple Sensitive Files Modification
+  - Multiple Sensitive Files Deletion
+  - GEN_CCFR_OVERLAY_TEST.A
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventName
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - ptp
+  - sca
+  - sem
+  - xes
+  - stp
+  - sig
+  - ptn
+  - szn
+  - pts
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - ams
+  - mns
+  - ddr
+  Description_EN: The event type
+  Sample:
+  - LOG_INSPECTION_EVENT
+  - SECURITY_RISK_DETECTION
+  - WEB_THREAT_DETECTION
+  - LOG_INSPECTION_EVENT
+  - MALWARE_DETECTION
+  - PROCESS_ACTIVITY
+  - WEB_POLICY_VIOLATION
+  - DEEP_PACKET_INSPECTION_EVENT
+  - INTEGRITY_MONITORING_EVENT
+  - DISRUPTIVE_APPLICATION_DETECTION
+  - PRODUCT_SUMMARY
+  - PRODUCT_UPDATE
+  - BEHAVIORAL_VIOLATION
+  - FIREWALL_POLICY_VIOLATION
+  - SUSPICIOUS_BEHAVIOUR_DETECTION
+  - DENYLIST_CHANGE
+  - MACHINE_LEARNING_DETECTION
+  - DLP_VIOLATION
+  - MALWARE_OUTBREAK_DETECTION
+  - SENSITIVE_DATA_DETECTION
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSubName
+  ProductCode:
+  - sao
+  - sca
+  - sds
+  - sem
+  - xes
+  - sig
+  - sss
+  Description_EN: The event type sub-name
+  Sample:
+  - IPS Detection
+  - Personal Firewall
+  - Attack Discovery
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: subRuleName
+  ProductCode:
+  - sds
+  - pds
+  - sca
+  - sem
+  - xms
+  Description_EN: The subrule name
+  Sample:
+  - Pre-authentication failed.
+  - 'ATTACK T1070.002,T1070.004: Indicator Removal on Host : Clear Linux or Mac System
+    Logs,File Deletion '
+  - 'ATTACK T1110: Multiple Windows Logon Failures'
+  - invisible_url_domain
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: remarks
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sca
+  - sao
+  - sem
+  - stp
+  - ptn
+  - xms
+  - sfs
+  - sss
+  Description_EN: The additional information
+  Sample:
+  - 'warning: fork: Resource temporarily unavailable'
+  - 'pam_unix(cron:session): session opened for user root by (uid=0)'
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:
+    EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.
+    [CLIENT: 10.10.10.10]  "
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: act
+  ProductCode:
+  - scs
+  - pdi
+  - xns
+  - sao
+  - sds
+  - sca
+  - ptp
+  - xes
+  - sws
+  - sem
+  - pds
+  - stp
+  - sig
+  - ptn
+  - szn
+  - xms
+  - ams
+  - mns
+  - sss
+  Description_EN: The actions taken to mitigate the event
+  Sample:
+  - log
+  - isolate
+  - terminate
+  - not blocked
+  - Block
+  - No action
+  - Reset
+  - Pass
+  - User Decision
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: scanType
+  ProductCode:
+  - sca
+  - sem
+  - sds
+  - sao
+  - pds
+  - xms
+  - sfs
+  - sss
+  - scs
+  Description_EN: The scan type
+  Sample:
+  - realtime_mailmeta-exchange
+  - exchange_mailbox_realtime_detection_logs
+  - gateway_realtime_blocking_traffic
+  - malware_schedule_image
+  - malware_schedule_file
+  - malware_realtime_image
+  - malware_realtime_file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pname
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - sem
+  - ptp
+  - xes
+  - sws
+  - stp
+  - sig
+  - ams
+  - scs
+  - xms
+  Description_EN: The internal product ID
+  Sample:
+  - Trend Micro Deep Security
+  - Deep Discovery Inspector
+  - Apex One
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: msgUuid
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The unique email ID
+  Sample:
+  - 00000000-0000-0000-0000-000000000000
+  - 11111111-1111-1111-1111-111111111111
+  - 22222222-2222-2222-2222-222222222222
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyName
+  ProductCode:
+  - sao
+  - sca
+  - sws
+  - sem
+  - sig
+  - ptn
+  - scs
+  - mns
+  Description_EN: The name of the triggered policy
+  Sample:
+  - Steelcase
+  - Cabot
+  - Tigre - Medium Policy
+  - apiPostedPolicy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionType
+  ProductCode:
+  - pdi
+  - xns
+  - sds
+  - sws
+  - sao
+  - sca
+  - pds
+  - sem
+  - sig
+  - ams
+  - szn
+  - scs
+  Description_EN: The detection type
+  Sample:
+  - '1'
+  - File
+  - Process
+  - net
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventId
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - xes
+  - sem
+  - pts
+  - scs
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - ams
+  - mns
+  - ddr
+  Description_EN: The event ID from the logs of each product
+  Sample:
+  - 100100
+  - 100101
+  - 100116
+  - 100117
+  - 100119
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: filterName
+  ProductCode:
+  - sca
+  - sem
+  - sao
+  - ptn
+  Description_EN: The filter name
+  Sample:
+  - ConnectionFilter
+  - Virtual Analyzer
+  - Data Loss Prevention
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailReceivedTime
+  ProductCode:
+  - sca
+  - sem
+  Description_EN: The mail received timestamp
+  Sample: []
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: rt
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - sem
+  - ptp
+  - xes
+  - sws
+  - stp
+  - sig
+  - szn
+  - xms
+  Description_EN: The Unix time of the log generation
+  Sample:
+  - 1656324260000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: scanTs
+  ProductCode:
+  - sca
+  - sem
+  - pdi
+  - xns
+  Description_EN: The mail scan time
+  Sample: []
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: senderIp
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sem
+  Description_EN: The sender IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logKey
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - sem
+  - ptp
+  - xes
+  - sws
+  - stp
+  - sig
+  Description_EN: The unique key of the event
+  Sample:
+  - 123e4567-e89b-12d3-a456-426614174000
+  - 987f6543-21ba-43cd-9e8f-123456789abc
+  - 456789ab-cdef-1234-5678-9abcdef01234
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSubType
+  ProductCode:
+  - sca
+  - sem
+  Description_EN: The sub-types of the policy event (Displayed when a policy 
+    event has sub-types)
+  Sample:
+  - Spam Others
+  - malware
+  - ContentFiltering
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailbox
+  ProductCode:
+  - sca
+  - sem
+  - ams
+  - xms
+  Description_EN: The mailbox that is protected by Trend Micro
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpHelo
+  ProductCode:
+  - sem
+  Description_EN: The domain name of the email server by using the SMTP HELO 
+    command
+  Sample:
+  - example.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpFromAddresses
+  ProductCode:
+  - sem
+  Description_EN: The envelope address of the sender
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpOriginalRecipients
+  ProductCode:
+  - sem
+  Description_EN: The envelope addresses of the original recipients
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpRecipients
+  ProductCode:
+  - sem
+  Description_EN: The envelope addresses of the current recipients
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpTls
+  ProductCode:
+  - sem
+  Description_EN: The SMTP TLS version, for example, TLS 1.2
+  Sample:
+  - noTLS
+  - TLS 1.2
+  - TLS 1.3
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: msgUuidChain
+  ProductCode:
+  - sem
+  Description_EN: The message UUID chain
+  Sample:
+  - 00027ac3-f8f2-cc8f-d078-3a57f12f3d55;00027ac3-f8f2-cc8f-d078-3a57f12f3d55
+  - 0005ab64-3992-644c-3592-503c3610cec9;0005ab64-3992-644c-3592-503c3610cec9
+  - 00062621-fec4-9e4d-7609-25b2b3189214;00062621-fec4-9e4d-7609-25b2b3189214
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: correlatedIntelligence
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The Correlated Intelligence detection
+  Sample: '{"risk_type": "Anomaly","matched_rules": [{"threat_type": "Possibly Unwanted
+    Email","matched_filters": [{"id":"FIL013", "name": "Marketing Email Traits"},{"id":"FIL098",
+    "name": "Infrequent Sender Email Domain"}],"name": "Possibly Unwanted Marketing
+    Email","id": "AN004"}]}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionDetail
+  ProductCode:
+  - sem
+  Description_EN: The details about each event type
+  Sample:
+  - '{}'
+  - '{"detail":"4.7.1 \u003csample_email@trendmicro.com\u003e: Recipient address rejected:
+    Ratelimit-2"}'
+  - '{"detail":"4.7.1 \u003csample_email@trendmicro.com.br\u003e: Recipient address
+    rejected: Ratelimit-2"}'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: highlightMailMsgSubject
+  ProductCode:
+  - sem
+  Description_EN: The email subject
+  Sample:
+  - Delivery Status
+  - Undelivered Mail Returned to Sender
+  - Successful Mail Delivery Report
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleVer
+  ProductCode:
+  - sca
+  - sds
+  - sem
+  - xms
+  Description_EN: The rule version
+  Sample:
+  - '202207060001'
+  - '202207190001'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileHashs
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The SHA-1 hash value of the attachment file
+  Sample:
+  - 056a2975edffe7188c03c324ae4335f9380b57e3
+  - 05fd3ac8f9d8407e6637e0f91cd2ff5ab076658a
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileHashes
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The SHA-1 of the email attachment
+  Sample:
+  - 056a2975edffe7188c03c324ae4335f9380b57e3
+  - 05fd3ac8f9d8407e6637e0f91cd2ff5ab076658a
+  DL_Type: dynamic
+  DL_Searchable: true
+- Name: attachmentFileTlshs
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The TLSH hash value of the attachment file
+  Sample:
+  - ''
+  - 0FE18E0807B75799EF3ADD7A98D62411FEB31DAB419C913C058068A3A6B33BD114EA39
+  - 97D18E86E87A85D1D4137E6DA6FD00580E4CF06F65DB2B2937815E4F3A3013042A2189
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileTlshes
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The TLSH of the email attachment
+  Sample:
+  - ''
+  - 0FE18E0807B75799EF3ADD7A98D62411FEB31DAB419C913C058068A3A6B33BD114EA39
+  - 97D18E86E87A85D1D4137E6DA6FD00580E4CF06F65DB2B2937815E4F3A3013042A2189
+  DL_Type: dynamic
+  DL_Searchable: true
+- Name: highlightedFileHashes
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The SHA-1 hashes of the highlighted file
+  Sample:
+  - C9877617DB6715792F9D5C959C1E8D4E56D0C281
+  - 0340A8EE3AD2990E3EDCDB2E471EAA45B4286722
+  - 0E56D9540B07ED15EF745348D35C72A6A00A0BD9
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailMsgDirection
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The direction of the email message
+  Sample:
+  - 1
+  DL_Type: int
+- Name: mailDirection
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Email traffic direction
+  Sample:
+  - 1
+  - 3
+  - 25
+  DL_Type: int
+- Name: respCode
+  ProductCode:
+  - sca
+  - sem
+  Description_EN: The network protocol response code
+  Sample:
+  - '302'
+  - '200'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: msgTOCUuid
+  ProductCode:
+  - sca
+  - sem
+  Description_EN: The email unique ID
+  Sample:
+  - 00000000-0000-0000-0000-000000000000
+  - 11111111-1111-1111-1111-111111111111
+  - 22222222-2222-2222-2222-222222222222
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: rewrittenUrl
+  ProductCode:
+  - sca
+  - sem
+  Description_EN: The rewritten URL
+  Sample:
+  - https://cas5-0-urlprotect.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fexample.io%2
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventTime
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The time the agent detected the event
+  Sample:
+  - 1657135700000
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pname
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Internal product code (depricated)
+  Sample:
+  - '733'
+  - '742'
+  - TMEMS
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: msgUuid
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Internal email UUID to identify each email message
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailDirection
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Email traffic direction
+  Sample:
+  - 1
+  - 3
+  - 25
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailFromAddresses
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Mail from address in email header
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailSender
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: mailToAddresses
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Mail To address in the email header
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailRecipient
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailMsgSubject
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Email subject
+  Sample:
+  - Your daily briefing
+  - 'Security alert for DeleteSecurityGroup on Account 549918006255 in Region: ap-southeast-1'
+  DL_Type: string
+  DL_CommonKey:
+  - EmailSubject
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailMsgId
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Email ID
+  Sample:
+  - <sample-id@trendmicro.com>
+  DL_Type: string
+  DL_CommonKey:
+  - EmailMessageID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: mailCcAddresses
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Mail CC address in the email header
+  Sample:
+  - <sample_email@trendmicro.com>
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailRecipient
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailBccAddresses
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: Mail BCC address in the email header
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailRecipient
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSenderIp
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Email sender IP address
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: mailAttachmentHash
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Hash value of the email attachment
+  Sample:
+  - 02ab50ee0bccadb43d6cc504928f2ff2
+  - 0a0f335fb04f1acebb7500d5358321c0
+  DL_Type: string
+  DL_CommonKey:
+  - FileMD5
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailUrlsRealLink
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: URL extracted from the email content
+  Sample:
+  - https://aka.ms/JoinTeamsMeeting
+  - http://go.microsoft.com/fwlink/p/?LinkID=12345
+  DL_Type: dynamic
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailUrlsVisibleLink
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: URL extracted from the email content
+  Sample:
+  - Unsubscribe
+  - Android
+  DL_Type: dynamic
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileName
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: File name of the email attachment
+  Sample:
+  - image001.png
+  - image002.png
+  - image003.png
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentSha1
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: SHA-1 hash of the email attachment
+  Sample:
+  - 03d8fb85556edf397d8afcafc0b13f11ecbde50c
+  - 056a2975edffe7188c03c324ae4335f9380b57e3
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentMd5
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: MD5 hash of the email attachment
+  Sample:
+  - 003fa299ab119219596f952c68029810
+  - 03aeabf6a745cb627ee29c05a22e58cb
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileMD5
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentSha256
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: SHA-256 hash of the email attachment
+  Sample:
+  - 29d72af5608ee5eade7c4346d3c32dfcc6b54f8fb43d977ff0306ad68b255a01
+  - cb0628092ddea96bb040221b5c793dbbb792a67d0621bdfba170c07374d85801
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentUrls
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The URLs and URL sources extracted from the email attachment
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileHashes
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: SHA-1 hash of the email attachment
+  Sample:
+  - acedb7898338a46f38d148d1d0456e644576d41b
+  - ea6fcc4c0c1f10d71742b29e98a977d995473dd1
+  - 03d8fb85556edf397d8afcafc0b13f11ecbde50c
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileHashSha256s
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: SHA-256 hash of the email attachment
+  Sample:
+  - 0570dfd156ee00cb7bc2a94998157cb3a29292b9e9feed82d4b6c7d2c6bdd9d4
+  - 2d96ebbbc5a5687b0f18fd5620e4e5489d49a877430146bbca447fabe9c47a6e
+  - 20d27422610967122439735cbcb48e4382a16e94a8b29c068e6b7d0e40466427
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpOriginalRecipients
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: Original email recipients in the SMTP envelope
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpRecipients
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: Email recipients in the SMTP envelope after scanning
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: groupId
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: scanType
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: Manual or real-time scan
+  Sample:
+  - realtime_mailmeta-exchange
+  - realtime_mailmeta-gmail
+  - gateway_mailmetadata
+  - gateway_realtime_accepted_mail_traffic
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: msgUuidChain
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The internal UUID chain for each email in Trend Micro Feedback
+    Engine
+  Sample:
+  - 11111111-1111-1111-1111-111111111111;00000000-0000-0000-0000-000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailMetaTraceId
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The trace ID generated by Trend Micro Feedback Engine
+  Sample:
+  - ''
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailTagHashRawSignature
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The raw signature hash of the email
+  Sample:
+  - PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0gY29udGVudD0gY2hhcnNldD0gPjxtZXRhIG5hbWU9IGNvbnRlbnQ9ID48c3R5bGU+PCEtLS0tPjwvc3R5bGU+PC9oZWFkPjxib2R5IGxhbmc9IGxpbms9IHZsaW5rPSBzdHlsZT0gPjxkaXYgY2xhc3M9ID48cCBjbGFzcz0gPjxURVhUPjwvcD48L2Rpdj48L2JvZHk+PC9odG1sPg==
+  - PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0gY29udGVudD0gY2hhcnNldD0gPjwvaGVhZD48Ym9keT48VEVYVD48L2JvZHk+PC9odG1sPg==
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailXMailer
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The X-Mailer header of the email
+  Sample:
+  - Microsoft Outlook 16.0
+  - Microsoft CDO for Windows 2000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailUserAgent
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The user agent
+  Sample:
+  - Mutt/1.4.2.2i
+  - Heirloom mailx 12.5 7/5/10
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailFeatureId
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The email protocol detected by Trend Micro Anti-Spam Engine
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailRuleId
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The rule ID of the matched rule detected by Trend Micro 
+    Anti-Spam Engine
+  Sample:
+  - '42003'
+  - '148036'
+  - '148140'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailTagHash
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The email tag hash detected by Trend Micro Anti-Spam Engine
+  Sample:
+  - 9ce01ebc63f408264876646e20905349
+  - cf679dc99042b781106cbaccd4045ed3
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailTextHash
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The email text hash detected by Trend Micro Anti-Spam Engine
+  Sample:
+  - 221bab3766f6d2a2c6fcc37056511d53
+  - f26f3a415103ea083ac49be6bb60f337
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailUrlHash
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The email URL hash detected by Trend Micro Anti-Spam Engine
+  Sample:
+  - ca52197d96e4a00ce19eaf34b20c8937
+  - ad50776a891bead6bf222e2b7be17724
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailHeaderHash
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The email header hash detected by Trend Micro Anti-Spam Engine
+  Sample:
+  - 43f8bfc02d8f78f069c254bc17eba80b
+  - aa5d16ca145f91471e482d235843aac5
+  - ad8776382ea4b7cffd0961c70223162e
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailScore
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The score assigned to the email by Trend Micro Anti-Spam 
+    Engine
+  Sample: []
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailWantedHeaderName
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The WantedHeader key name detected by Trend Micro Anti-Spam 
+    Engine
+  Sample:
+  - CC
+  - X-TM-Product-Ver
+  - Received
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailWantedHeaderValue
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The WantedHeader key value detected by Trend Micro Anti-Spam 
+    Engine
+  Sample:
+  - cloud-app-security-5.0
+  - BCL:0;
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailReplyToAddresses
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The Reply To address detected by Trend Micro Anti-Spam Engine
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpFromAddresses
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The sender email address
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailThreatType
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The type of email detected by Trend Micro Anti-Spam Engine
+  Sample:
+  - suspected
+  - suspected,
+  - suspected, phishing
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailWholeHeader
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The name and email address of the sender in the From header 
+    detected by Trend Micro Anti-Spam Engine
+  Sample:
+  - <sample_email@trendmicro.com>
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailHelo
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The HELO command detected by Trend Micro Anti-Spam Engine
+  Sample:
+  - HELO inpost.tmes.trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentTlsh
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The TLSH hash detected by Trend Micro Anti-Spam Engine
+  Sample:
+  - 0FE18E0807B75799EF3ADD7A98D62411FEB31DAB419C913C058068A3A6B33BD114EA39
+  - 7C31C9827A71A905CC6B0A73B10FE80C06F01E814AA396347F8B6F979690E9C3D75147
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentSize
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The attachment file size
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentSource
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The attachment source
+  Sample:
+  - TMASE
+  - PRODUCT
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailSmtpTls
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The SMTP TLS version number
+  Sample:
+  - TLS 1.2
+  - TLS 1.3
+  - noTLS
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: attachmentFileTlshes
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The TLSH hash detected by Trend Micro Anti-Spam Engine
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailMetaText
+  ProductCode:
+  - sem
+  - xms
+  Description_EN: The postman meta text detected by Trend Micro Anti-Spam Engine
+  Sample:
+  - ''
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailEurekaRuleIds
+  ProductCode:
+  - sem
+  - sca
+  - xms
+  Description_EN: The list of rule IDs scanned by Eureka and detected by Trend 
+    Micro Anti-Spam Engine
+  Sample:
+  - '661030'
+  - '661230'
+  - '661267'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: scanTs
+  ProductCode:
+  - sca
+  - xms
+  - sem
+  Description_EN: The time the email was scanned
+  Sample:
+  - 1657135700000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailUrlsOriginalLink
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  Description_EN: The original URL extracted from the email content
+  Sample:
+  - https://aka.ms/JoinTeamsMeeting
+  - http://go.microsoft.com/fwlink/p/?LinkID=12345
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventId
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  - xca
+  Description_EN: The event ID
+  Sample:
+  - 1 - MESSAGING_EMAIL_META
+  - 2 - MESSAGING_COLLABORATION_ACTIVITY
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true

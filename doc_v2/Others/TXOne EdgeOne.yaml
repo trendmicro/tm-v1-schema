@@ -1,0 +1,456 @@
+- Name: hostName
+  ProductCode:
+  - pdi
+  - xns
+  - sds
+  - pds
+  - ptn
+  Description_EN: The computer name of the client host (The hostname from the 
+    suspicious URL detected by Deep Discovery Inspector)
+  Sample:
+  - Let's Encrypt
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  - HostDomain
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: src
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - ptp
+  - pds
+  - stp
+  - xes
+  - sig
+  - ptn
+  - szn
+  - scs
+  - mns
+  Description_EN: The source IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dst
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - ptp
+  - pds
+  - stp
+  - xes
+  - sig
+  - ptn
+  - szn
+  - scs
+  - mns
+  Description_EN: The destination IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: interestedIp
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - ptp
+  - stp
+  - ptn
+  Description_EN: The IP of the interestedHost
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointIp
+  ProductCode:
+  - sds
+  - pds
+  - sao
+  - ptp
+  - stp
+  - ptn
+  - sss
+  - ddr
+  Description_EN: The IP address of the endpoint on which the event was detected
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dpt
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - ptp
+  - pds
+  - stp
+  - xes
+  - ptn
+  - szn
+  - scs
+  - mns
+  Description_EN: The destination port
+  Sample:
+  - 0
+  - 445
+  - 80
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: spt
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - ptp
+  - pds
+  - stp
+  - xes
+  - ptn
+  - szn
+  - scs
+  - mns
+  Description_EN: The source port
+  Sample:
+  - 53
+  - 0
+  - 7680
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventName
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - ptp
+  - sca
+  - sem
+  - xes
+  - stp
+  - sig
+  - ptn
+  - szn
+  - pts
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - ams
+  - mns
+  - ddr
+  Description_EN: The event type
+  Sample:
+  - LOG_INSPECTION_EVENT
+  - SECURITY_RISK_DETECTION
+  - WEB_THREAT_DETECTION
+  - LOG_INSPECTION_EVENT
+  - MALWARE_DETECTION
+  - PROCESS_ACTIVITY
+  - WEB_POLICY_VIOLATION
+  - DEEP_PACKET_INSPECTION_EVENT
+  - INTEGRITY_MONITORING_EVENT
+  - DISRUPTIVE_APPLICATION_DETECTION
+  - PRODUCT_SUMMARY
+  - PRODUCT_UPDATE
+  - BEHAVIORAL_VIOLATION
+  - FIREWALL_POLICY_VIOLATION
+  - SUSPICIOUS_BEHAVIOUR_DETECTION
+  - DENYLIST_CHANGE
+  - MACHINE_LEARNING_DETECTION
+  - DLP_VIOLATION
+  - MALWARE_OUTBREAK_DETECTION
+  - SENSITIVE_DATA_DETECTION
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: remarks
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sca
+  - sao
+  - sem
+  - stp
+  - ptn
+  - xms
+  - sfs
+  - sss
+  Description_EN: The additional information
+  Sample:
+  - 'warning: fork: Resource temporarily unavailable'
+  - 'pam_unix(cron:session): session opened for user root by (uid=0)'
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:
+    EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.
+    [CLIENT: 10.10.10.10]  "
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: act
+  ProductCode:
+  - scs
+  - pdi
+  - xns
+  - sao
+  - sds
+  - sca
+  - ptp
+  - xes
+  - sws
+  - sem
+  - pds
+  - stp
+  - sig
+  - ptn
+  - szn
+  - xms
+  - ams
+  - mns
+  - sss
+  Description_EN: The actions taken to mitigate the event
+  Sample:
+  - log
+  - isolate
+  - terminate
+  - not blocked
+  - Block
+  - No action
+  - Reset
+  - Pass
+  - User Decision
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: policyName
+  ProductCode:
+  - sao
+  - sca
+  - sws
+  - sem
+  - sig
+  - ptn
+  - scs
+  - mns
+  Description_EN: The name of the triggered policy
+  Sample:
+  - Steelcase
+  - Cabot
+  - Tigre - Medium Policy
+  - apiPostedPolicy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: majorVirusType
+  ProductCode:
+  - pds
+  - sds
+  - ams
+  - ptn
+  - pts
+  - sfc
+  Description_EN: The virus type
+  Sample:
+  - Virus
+  - Suspicious Activity
+  - Trojan
+  - TROJ
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cnt
+  ProductCode:
+  - pdi
+  - xns
+  - ptn
+  - mns
+  Description_EN: The total number of logs
+  Sample:
+  - '1'
+  - '2'
+  - '3'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: direction
+  ProductCode:
+  - sao
+  - ptn
+  Description_EN: The direction
+  Sample:
+  - Incoming
+  - Outgoing
+  - Unknown
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dmac
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - pds
+  - ptn
+  Description_EN: The MAC address of the destination IP (dest_ip)
+  Sample:
+  - 00:00:00:00:00:00
+  - ff:ff:ff:ff:ff:ff
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointMacAddress
+  ProductCode:
+  - sao
+  - ptn
+  - pts
+  Description_EN: The MAC address of endpoint
+  Sample:
+  - 00:00:00:00:00:00
+  - ff:ff:ff:ff:ff:ff
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: filterName
+  ProductCode:
+  - sca
+  - sem
+  - sao
+  - ptn
+  Description_EN: The filter name
+  Sample:
+  - ConnectionFilter
+  - Virtual Analyzer
+  - Data Loss Prevention
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: filterType
+  ProductCode:
+  - sao
+  - ptn
+  Description_EN: The filter type
+  Sample:
+  - Spam filter
+  - Size filter
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: interestedMacAddress
+  ProductCode:
+  - sao
+  - pdi
+  - xns
+  - ptn
+  Description_EN: The MAC address identified as the log owner's
+  Sample:
+  - 00:00:00:00:00:00
+  - ff:ff:ff:ff:ff:ff
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: proto
+  ProductCode:
+  - sds
+  - pds
+  - ptn
+  - scs
+  - mns
+  Description_EN: The exploited layer network protocol
+  Sample:
+  - '6'
+  - TCP
+  - '17'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: smac
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - pds
+  - ptn
+  Description_EN: The source MAC address
+  Sample:
+  - 00:11:22:33:44:55
+  - 66:77:88:99:AA:BB
+  - CC:DD:EE:FF:00:11
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vLANId
+  ProductCode:
+  - pdi
+  - xns
+  - ptn
+  - mns
+  Description_EN: The virtual LAN ID
+  Sample: []
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: ruleId64
+  ProductCode:
+  - ptn
+  - mns
+  Description_EN: The IPS rule ID
+  Sample:
+  - '1134268'
+  - '4026531849'
+  - '4026531852'
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

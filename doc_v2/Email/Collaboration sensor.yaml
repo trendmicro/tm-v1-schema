@@ -1,0 +1,281 @@
+- Name: applicationId
+  ProductCode:
+  - xca
+  Description_EN: The application ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientIp
+  ProductCode:
+  - xca
+  Description_EN: The client IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: correlationId
+  ProductCode:
+  - xca
+  Description_EN: The correlation ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: extraInfo
+  ProductCode:
+  - xca
+  Description_EN: The additional information about the sharing action
+  Sample:
+  - <ClientType>SPHomePagesWeb</ClientType>
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isExternalAccess
+  ProductCode:
+  - xca
+  Description_EN: Whether the cmdlet was run by an external user (True=external 
+    user, False=internal user in your organization)
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: targetType
+  ProductCode:
+  - xca
+  Description_EN: The type of object that was accessed or modified
+  Sample:
+  - File
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: target
+  ProductCode:
+  - xca
+  Description_EN: The object accessed by a user or application
+  Sample:
+  - APCPR000000.PROD.OUTLOOK.COM/Microsoft Exchange Hosted
+  - Organizations/test.trendmicro.com/test\\testRule001
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actionName
+  ProductCode:
+  - xca
+  Description_EN: The user or service action
+  Sample:
+  - UserLoggedIn
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: orgName
+  ProductCode:
+  - xca
+  Description_EN: The tenant name
+  Sample:
+  - test.trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: originatingServer
+  ProductCode:
+  - xca
+  Description_EN: The server where the operation originated
+  Sample:
+  - TY0PR03MB6449 (15.20.5746.023)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parameters
+  ProductCode:
+  - xca
+  Description_EN: The names and values of all parameters used in the cmdlet 
+    identified in the Operations property
+  Sample:
+  - '[{"Name": "AlwaysDeleteOutlookRulesBlob","Value": "False"},{"Name" : "Force","Value":
+    "False"}]'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: recordType
+  ProductCode:
+  - xca
+  Description_EN: The operation type
+  Sample:
+  - 1
+  - 2
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actResult
+  ProductCode:
+  - xca
+  Description_EN: The action result
+  Sample:
+  - Success
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isSensitiveInfo
+  ProductCode:
+  - xca
+  Description_EN: Whether the event contains sensitive information
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userSessionId
+  ProductCode:
+  - xca
+  Description_EN: The user session ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudStorageId
+  ProductCode:
+  - xca
+  Description_EN: The file or folder location ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudStorageName
+  ProductCode:
+  - xca
+  Description_EN: The file or folder URL
+  Sample:
+  - https://test.trendmicro.com/sites/123
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileExt
+  ProductCode:
+  - xca
+  Description_EN: The file extension (If the object is a folder, there is no 
+    value for this field.)
+  Sample:
+  - jpg
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileName
+  ProductCode:
+  - xca
+  Description_EN: The file or folder name
+  Sample:
+  - test.pdf
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: userAgent
+  ProductCode:
+  - xca
+  Description_EN: The user agent
+  Sample:
+  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
+    Gecko) Chrome/119.0.0.0 Safari/537.36
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: principalName
+  ProductCode:
+  - xca
+  Description_EN: The User Principal Name
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userType
+  ProductCode:
+  - xca
+  Description_EN: The user type
+  Sample:
+  - Regular
+  - Reserved
+  - Admin
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: service
+  ProductCode:
+  - xca
+  Description_EN: The Microsoft 365 service where the activity occurred
+  Sample:
+  - SecurityComplianceCenter
+  - AzureActiveDirectory
+  - SharePoint
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventName
+  ProductCode:
+  - xca
+  Description_EN: The event type
+  Sample:
+  - COLLABORATION_ACTIVITY
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSubName
+  ProductCode:
+  - xca
+  Description_EN: The event type sub-name
+  Sample:
+  - Audit.Exchange
+  - Audit.Sharepoint
+  - Audit.General
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventId
+  ProductCode:
+  - sca
+  - sem
+  - xms
+  - xca
+  Description_EN: The event ID
+  Sample:
+  - 1 - MESSAGING_EMAIL_META
+  - 2 - MESSAGING_COLLABORATION_ACTIVITY
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
