@@ -1,0 +1,334 @@
+- Name: userDomain
+  ProductCode:
+  - sao
+  - sws
+  - sig
+  Description_EN: The user domain
+  Sample:
+  - example.com.pa
+  - DOMAIN
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  - DomainName
+  - AccountDomain
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: suid
+  ProductCode:
+  - sds
+  - sca
+  - sao
+  - pdi
+  - xns
+  - sws
+  - pds
+  - stp
+  - sig
+  Description_EN: User name or mailbox
+  Sample:
+  - root
+  - US EXAMPLE\TEST
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: malName
+  ProductCode:
+  - sao
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sws
+  - pts
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - scs
+  Description_EN: The name of the detected malware
+  Sample:
+  - SecurityLevelDrop
+  - Regla Logs All
+  - USR_SUSPICIOUS_DOMAIN.UMXX
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: act
+  ProductCode:
+  - scs
+  - pdi
+  - xns
+  - sao
+  - sds
+  - sca
+  - ptp
+  - xes
+  - sws
+  - sem
+  - pds
+  - stp
+  - sig
+  - ptn
+  - szn
+  - xms
+  - ams
+  - mns
+  - sss
+  Description_EN: The actions taken to mitigate the event
+  Sample:
+  - log
+  - isolate
+  - terminate
+  - not blocked
+  - Block
+  - No action
+  - Reset
+  - Pass
+  - User Decision
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: pname
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - sem
+  - ptp
+  - xes
+  - sws
+  - stp
+  - sig
+  - ams
+  - scs
+  - xms
+  Description_EN: The internal product ID
+  Sample:
+  - Trend Micro Deep Security
+  - Deep Discovery Inspector
+  - Apex One
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestBase
+  ProductCode:
+  - sws
+  - sig
+  - szn
+  Description_EN: The domain of the request URL
+  Sample:
+  - weather.service.msn.com
+  - test.domain.com
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  - HostDomain
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: urlCat
+  ProductCode:
+  - pdi
+  - xns
+  - sws
+  - sao
+  - sig
+  - sca
+  - ams
+  - sds
+  Description_EN: The requested URL category
+  Sample:
+  - Untested
+  - '158'
+  - Web Advertisement
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userDepartment
+  ProductCode:
+  - sws
+  - sig
+  Description_EN: User department
+  Sample:
+  - Operations
+  - BANCA CONSTRUCCION
+  - CONTACT CENTER
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sender
+  ProductCode:
+  - sws
+  - sig
+  Description_EN: The roaming users or the gateway where the web traffic passed
+  Sample:
+  - test user
+  - VE C&W - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyName
+  ProductCode:
+  - sao
+  - sca
+  - sws
+  - sem
+  - sig
+  - ptn
+  - scs
+  - mns
+  Description_EN: The name of the triggered policy
+  Sample:
+  - Steelcase
+  - Cabot
+  - Tigre - Medium Policy
+  - apiPostedPolicy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: principalName
+  ProductCode:
+  - sws
+  - sig
+  - sca
+  - szn
+  Description_EN: The user principal name used to sign in to the proxy
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: profile
+  ProductCode:
+  - sws
+  - sig
+  Description_EN: The name of the triggered Threat Protection template or Data 
+    Loss Prevention profile
+  Sample:
+  - Primary Protection Rule
+  - Multibak Scaner Threat
+  - default
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: application
+  ProductCode:
+  - sws
+  - sig
+  - szn
+  - sao
+  Description_EN: The name of the requested application
+  Sample:
+  - HyperText Transfer Protocol
+  - DoubleClick
+  - The Secure HyperText Transfer Protocol
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: aggregatedCount
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - ptp
+  - sws
+  - stp
+  - sig
+  - pts
+  - ddr
+  - sds
+  Description_EN: The number of aggregated events
+  Sample:
+  - '1'
+  - '2'
+  - '3'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionType
+  ProductCode:
+  - pdi
+  - xns
+  - sds
+  - sws
+  - sao
+  - sca
+  - pds
+  - sem
+  - sig
+  - ams
+  - szn
+  - scs
+  Description_EN: The detection type
+  Sample:
+  - '1'
+  - File
+  - Process
+  - net
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: rt
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - sem
+  - ptp
+  - xes
+  - sws
+  - stp
+  - sig
+  - szn
+  - xms
+  Description_EN: The Unix time of the log generation
+  Sample:
+  - 1656324260000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: logKey
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - sem
+  - ptp
+  - xes
+  - sws
+  - stp
+  - sig
+  Description_EN: The unique key of the event
+  Sample:
+  - 123e4567-e89b-12d3-a456-426614174000
+  - 987f6543-21ba-43cd-9e8f-123456789abc
+  - 456789ab-cdef-1234-5678-9abcdef01234
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

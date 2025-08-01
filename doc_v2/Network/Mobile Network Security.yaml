@@ -1,0 +1,664 @@
+- Name: shost
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - mns
+  Description_EN: The source hostname
+  Sample:
+  - dns.google
+  - sw_us-east-1a_10-124-17-69
+  - sw_us-east-1c_10-124-21-139
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dhost
+  ProductCode:
+  - pdi
+  - xns
+  - mns
+  Description_EN: The destination hostname
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: category
+  ProductCode:
+  - ptp
+  - mns
+  - sds
+  Description_EN: The event category
+  Sample:
+  - Exploits
+  - Reconnaissance
+  - Vulnerabilities
+  - Security Policy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: src
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - ptp
+  - pds
+  - stp
+  - xes
+  - sig
+  - ptn
+  - szn
+  - scs
+  - mns
+  Description_EN: The source IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dst
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - ptp
+  - pds
+  - stp
+  - xes
+  - sig
+  - ptn
+  - szn
+  - scs
+  - mns
+  Description_EN: The destination IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dpt
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - ptp
+  - pds
+  - stp
+  - xes
+  - ptn
+  - szn
+  - scs
+  - mns
+  Description_EN: The destination port
+  Sample:
+  - 0
+  - 445
+  - 80
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: spt
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - ptp
+  - pds
+  - stp
+  - xes
+  - ptn
+  - szn
+  - scs
+  - mns
+  Description_EN: The source port
+  Sample:
+  - 53
+  - 0
+  - 7680
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: ruleName
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - ptp
+  - xes
+  - sem
+  - stp
+  - szn
+  - scs
+  - xms
+  - mns
+  - ddr
+  Description_EN: The name of the rule that triggered the event
+  Sample:
+  - Directory Server - Microsoft Windows Active Directory
+  - Microsoft Windows Events
+  - Microsoft Windows Security Events - 3
+  - (T1234) New executable created (chmod)
+  - Sensitive Files Upload to Personal Cloud
+  - Multiple Sensitive Files Compression
+  - Transfer Sensitive Files to Removable Storage
+  - Move Multiple Sensitive Files to Central Location
+  - Multiple Sensitive Files Modification
+  - Multiple Sensitive Files Deletion
+  - GEN_CCFR_OVERLAY_TEST.A
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: ruleId
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - mns
+  Description_EN: The rule ID
+  Sample:
+  - 1002795
+  - 1003802
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventName
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - ptp
+  - sca
+  - sem
+  - xes
+  - stp
+  - sig
+  - ptn
+  - szn
+  - pts
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - ams
+  - mns
+  - ddr
+  Description_EN: The event type
+  Sample:
+  - LOG_INSPECTION_EVENT
+  - SECURITY_RISK_DETECTION
+  - WEB_THREAT_DETECTION
+  - LOG_INSPECTION_EVENT
+  - MALWARE_DETECTION
+  - PROCESS_ACTIVITY
+  - WEB_POLICY_VIOLATION
+  - DEEP_PACKET_INSPECTION_EVENT
+  - INTEGRITY_MONITORING_EVENT
+  - DISRUPTIVE_APPLICATION_DETECTION
+  - PRODUCT_SUMMARY
+  - PRODUCT_UPDATE
+  - BEHAVIORAL_VIOLATION
+  - FIREWALL_POLICY_VIOLATION
+  - SUSPICIOUS_BEHAVIOUR_DETECTION
+  - DENYLIST_CHANGE
+  - MACHINE_LEARNING_DETECTION
+  - DLP_VIOLATION
+  - MALWARE_OUTBREAK_DETECTION
+  - SENSITIVE_DATA_DETECTION
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: act
+  ProductCode:
+  - scs
+  - pdi
+  - xns
+  - sao
+  - sds
+  - sca
+  - ptp
+  - xes
+  - sws
+  - sem
+  - pds
+  - stp
+  - sig
+  - ptn
+  - szn
+  - xms
+  - ams
+  - mns
+  - sss
+  Description_EN: The actions taken to mitigate the event
+  Sample:
+  - log
+  - isolate
+  - terminate
+  - not blocked
+  - Block
+  - No action
+  - Reset
+  - Pass
+  - User Decision
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: malSrc
+  ProductCode:
+  - sao
+  - mns
+  Description_EN: The malware infection source
+  Sample:
+  - \\10.172.1.33\kortiz
+  - \\10.240.0.148\wbind
+  - \\10.240.1.69\MT26933059
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: severity
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - ptp
+  - stp
+  - scs
+  - mns
+  Description_EN: The severity of the event
+  Sample:
+  - 2
+  - 4
+  - 6
+  - 8
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: policyName
+  ProductCode:
+  - sao
+  - sca
+  - sws
+  - sem
+  - sig
+  - ptn
+  - scs
+  - mns
+  Description_EN: The name of the triggered policy
+  Sample:
+  - Steelcase
+  - Cabot
+  - Tigre - Medium Policy
+  - apiPostedPolicy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cnt
+  ProductCode:
+  - pdi
+  - xns
+  - ptn
+  - mns
+  Description_EN: The total number of logs
+  Sample:
+  - '1'
+  - '2'
+  - '3'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dOSName
+  ProductCode:
+  - pdi
+  - xns
+  - mns
+  Description_EN: The destination host OS
+  Sample:
+  - Windows
+  - Windows 10
+  - Android
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstGroup
+  ProductCode:
+  - pdi
+  - xns
+  - mns
+  Description_EN: The group name defined by the administrator of the destination
+  Sample:
+  - Default
+  - Data Center Services DL_Deployed Block
+  - Rede Wifi Visitantes-Pacientes
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventId
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - xes
+  - sem
+  - pts
+  - scs
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - ams
+  - mns
+  - ddr
+  Description_EN: The event ID from the logs of each product
+  Sample:
+  - 100100
+  - 100101
+  - 100116
+  - 100117
+  - 100119
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: proto
+  ProductCode:
+  - sds
+  - pds
+  - ptn
+  - scs
+  - mns
+  Description_EN: The exploited layer network protocol
+  Sample:
+  - '6'
+  - TCP
+  - '17'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sOSName
+  ProductCode:
+  - pdi
+  - xns
+  - mns
+  Description_EN: The source OS
+  Sample:
+  - Windows
+  - Windows 10
+  - Windows XP
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcGroup
+  ProductCode:
+  - pdi
+  - xns
+  - mns
+  Description_EN: The group named defined by the source administrator
+  Sample:
+  - Default
+  - Rede DATACENTER example/example - AD example CORP
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vLANId
+  ProductCode:
+  - pdi
+  - xns
+  - ptn
+  - mns
+  Description_EN: The virtual LAN ID
+  Sample: []
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: instanceId
+  ProductCode:
+  - sao
+  - xes
+  - sds
+  - sss
+  - mns
+  Description_EN: The ID of the instance that indicates the meta-cloud or data 
+    center VM
+  Sample:
+  - 52294e7b-f732-c6e9-b2c3-7a6b6f50d101
+  - 00030912-c5e7-4348-9012-7c684751c531
+  - 0008ae58-db0c-34ee-3e5c-5dfc9b10a739
+  - i-0b22a22eec53b9321
+  - /subscriptions/bae4f362-e3a0-482f-ba7a-f883d8b410ce/resourceGroups/avtd-csf-sg-lzniibr0/providers/Microsoft.Compute/virtualMachines/avtd-csf-scanner-lzniibr0
+  - ocid1.instance.oc1.us-ashburn-1.an2g6ljrgs553pqcjuokzvvwpmwxh564f6f5sx3jpi2sowt6as44uejmsrzq
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: instanceName
+  ProductCode:
+  - mns
+  Description_EN: The name of the instance that indicates the meta-cloud or data
+    center VM
+  Sample:
+  - instapecot-1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleId64
+  ProductCode:
+  - ptn
+  - mns
+  Description_EN: The IPS rule ID
+  Sample:
+  - '1134268'
+  - '4026531849'
+  - '4026531852'
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: icmpType
+  ProductCode:
+  - mns
+  Description_EN: The ICMP protocol type
+  Sample:
+  - 0
+  - 3
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: icmpCode
+  ProductCode:
+  - mns
+  Description_EN: The ICMP protocol code field
+  Sample:
+  - 0
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcSubscriberId
+  ProductCode:
+  - mns
+  Description_EN: The source IMSI
+  Sample:
+  - 466686007810478
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcEquipmentId
+  ProductCode:
+  - mns
+  Description_EN: The source IMEI
+  Sample:
+  - 350548054087659
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcSubscriberDirNum
+  ProductCode:
+  - mns
+  Description_EN: The source MSISDN
+  Sample:
+  - 8618687654321
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dstSubscriberId
+  ProductCode:
+  - mns
+  Description_EN: The destination IMSI
+  Sample:
+  - 466686007810478
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dstEquipmentId
+  ProductCode:
+  - mns
+  Description_EN: The destination IMEI
+  Sample:
+  - 350548054087659
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dstSubscriberDirNum
+  ProductCode:
+  - mns
+  Description_EN: The destination MSISDN
+  Sample:
+  - 8618687654321
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcFamily
+  ProductCode:
+  - mns
+  Description_EN: The source device family
+  Sample:
+  - Computer
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcType
+  ProductCode:
+  - mns
+  Description_EN: The source device type
+  Sample:
+  - Desktop/Laptop
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sOSClass
+  ProductCode:
+  - mns
+  Description_EN: The source device OS class
+  Sample:
+  - Linux
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sOSVendor
+  ProductCode:
+  - mns
+  Description_EN: The source device OS vendor
+  Sample:
+  - Others
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstFamily
+  ProductCode:
+  - mns
+  Description_EN: The destination device family
+  Sample:
+  - Computer
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstType
+  ProductCode:
+  - mns
+  Description_EN: The destination device type
+  Sample:
+  - Desktop/Laptop
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dOSClass
+  ProductCode:
+  - mns
+  Description_EN: The destination device OS class
+  Sample:
+  - Linux
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dOSVendor
+  ProductCode:
+  - mns
+  Description_EN: The destination device OS vendor
+  Sample:
+  - Others
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

@@ -1,0 +1,69 @@
+- Name: fileHashMd5
+  ProductCode:
+  - qpf
+  Description_EN: The MD5 of the file
+  Sample:
+  - d5120786925038601a77c2e1eB9a3a0a
+  DL_Type: string
+  DL_CommonKey:
+  - FileMD5
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestMethod
+  ProductCode:
+  - qpf
+  Description_EN: The network protocol request method
+  Sample:
+  - POST
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: sUser1
+  ProductCode:
+  - qpf
+  Description_EN: The latest sign-in user of the source
+  Sample:
+  - 000c29edef58
+  - sample.com\ser-desktopcentral
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dUser1
+  ProductCode:
+  - qpf
+  Description_EN: The latest logon user of the destination
+  Sample:
+  - dhr\m42svc
+  - altsvc
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: shost
+  ProductCode:
+  - qpf
+  Description_EN: The source hostname
+  Sample:
+  - sw_us-east-1a_10-124-17-69
+  - sw_us-east-1c_10-124-21-139
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dhost
+  ProductCode:
+  - qpf
+  Description_EN: The destination hostname
+  Sample:
+  - sw_us-east-1c_10-124-21-139
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
