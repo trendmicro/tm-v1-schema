@@ -3627,6 +3627,7 @@
   - sao
   - sca
   - szn
+  - scs
   Description_EN: The access rule type
   Sample:
   - udso

@@ -1,0 +1,363 @@
+- Name: eventTime
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  - vpc
+  - azv
+  Description_EN: The time the agent or product detected the event
+  Sample:
+  - 1657135700000
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dst
+  ProductCode:
+  - sig
+  - szn
+  - vpc
+  - azv
+  Description_EN: The destination IP address (dstaddr)
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: src
+  ProductCode:
+  - sig
+  - szn
+  - vpc
+  - azv
+  Description_EN: The source IP address (srcaddr)
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventName
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  - vpc
+  - azv
+  Description_EN: The name of the log event
+  Sample:
+  - SWG_ACTIVITY_LOG
+  - FIREWALL_ACTIVITY_LOG
+  - VPC_ACTIVITY_LOG
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: pname
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  - vpc
+  - azv
+  Description_EN: The product name
+  Sample:
+  - Secure Web Gateway
+  - XDR for Cloud - AWS VPC Flow Logs
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: spt
+  ProductCode:
+  - szn
+  - vpc
+  - azv
+  Description_EN: The virtual port of the source assigned to the Secure Access 
+    Module (srcport)
+  Sample:
+  - 57763
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dpt
+  ProductCode:
+  - szn
+  - vpc
+  - azv
+  Description_EN: The service destination port of the private application server
+    (dstport)
+  Sample:
+  - 443
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: start
+  ProductCode:
+  - vpc
+  Description_EN: The time when the first data packet was received (in Unix 
+    seconds)
+  Sample:
+  - 1616729292
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: end
+  ProductCode:
+  - vpc
+  Description_EN: The time when the last data packet was received (in Unix 
+    seconds)
+  Sample:
+  - 1616729349
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventId
+  ProductCode:
+  - xns
+  - pdi
+  - vpc
+  - azv
+  Description_EN: The event ID
+  Sample:
+  - '200139'
+  - '200140'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: vpcFlowLogsVersion
+  ProductCode:
+  - vpc
+  - azv
+  Description_EN: The VPC Flow Logs version (version)
+  Sample:
+  - 2
+  - 3
+  - 4
+  - 5
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: packets
+  ProductCode:
+  - vpc
+  Description_EN: The number of transmitted data packets
+  Sample:
+  - 14
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: bytes
+  ProductCode:
+  - vpc
+  Description_EN: The number of transmitted data bytes
+  Sample:
+  - 15044
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: action
+  ProductCode:
+  - vpc
+  Description_EN: The traffic processing action
+  Sample:
+  - ACCEPT
+  - REJECT
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: logStatus
+  ProductCode:
+  - vpc
+  Description_EN: The VPC Flow Log status
+  Sample:
+  - OK
+  - NODATA
+  - SKIPDATA
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vpcId
+  ProductCode:
+  - vpc
+  Description_EN: The VPC ID
+  Sample:
+  - vpc-01234567890abcdef
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: subnetId
+  ProductCode:
+  - vpc
+  Description_EN: The subnet ID
+  Sample:
+  - subnet-01234567890abcdef
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: instanceId
+  ProductCode:
+  - vpc
+  Description_EN: The instance ID
+  Sample:
+  - i-01234567890abcdef
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: tcpFlags
+  ProductCode:
+  - vpc
+  Description_EN: The bitmask value of the FIN/SYN/RST/SYN-ACK TCP flags
+  Sample:
+  - 1
+  - 2
+  - 4
+  - 18
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: flowType
+  ProductCode:
+  - vpc
+  Description_EN: The type of traffic (type)
+  Sample:
+  - IPv4
+  - IPv6
+  - EFA
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktSrcAddr
+  ProductCode:
+  - vpc
+  Description_EN: The packet level source IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktDstAddr
+  ProductCode:
+  - vpc
+  Description_EN: The packet level destination IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: azId
+  ProductCode:
+  - vpc
+  Description_EN: The Availability Zone ID
+  Sample:
+  - apse2-az3
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: subLocationType
+  ProductCode:
+  - vpc
+  Description_EN: The sublocation type
+  Sample:
+  - wavelength
+  - outpost
+  - localzone
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: subLocationId
+  ProductCode:
+  - vpc
+  Description_EN: The sublocation ID
+  Sample:
+  - lz-0abcd123efg4567h
+  - op-0abcd123efg4567h
+  - wz-0abcd123efg4567h
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktSrcCloudServiceName
+  ProductCode:
+  - vpc
+  Description_EN: The subset IP address range name for cloud service source IP 
+    (pkt-src-aws-service)
+  Sample:
+  - AMAZON
+  - EC2
+  - ROUTE53
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pktDstCloudServiceName
+  ProductCode:
+  - vpc
+  Description_EN: The subset IP address range name for cloud service destination
+    IP (pkt-dst-aws-service)
+  Sample:
+  - AMAZON
+  - EC2
+  - ROUTE53
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: flowDirection
+  ProductCode:
+  - vpc
+  - azv
+  Description_EN: The network interface traffic direction
+  Sample:
+  - ingress
+  - egress
+  - I
+  - O
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: trafficPath
+  ProductCode:
+  - vpc
+  Description_EN: The egress traffic path number
+  Sample:
+  - 1
+  - 2
+  - 8
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
