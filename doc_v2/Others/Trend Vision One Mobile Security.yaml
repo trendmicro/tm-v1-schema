@@ -1,0 +1,1123 @@
+- Name: endpointHostName
+  ProductCode:
+  - sds
+  - pds
+  - sao
+  - xes
+  - sig
+  - ams
+  - szn
+  - pts
+  - scs
+  - sss
+  - ddr
+  Description_EN: The endpoint hostname or node where the event was detected
+  Sample:
+  - 10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]
+  - ip-10-10-10-10.us-west-1.compute.internal
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointGUID
+  ProductCode:
+  - sds
+  - sao
+  - pds
+  - xes
+  - sig
+  - ams
+  - szn
+  - pts
+  - scs
+  - ddr
+  Description_EN: The GUID of the agent which reported the detection
+  Sample:
+  - ae4d64aa-f8b8-bb36-b265-f59272ed342f
+  - 8fb979f6-1376-bed3-227f-f2886e66194e
+  - ca2b3a7e-8415-c571-cc19-e45f69470026
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: request
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - ptp
+  - sds
+  - sig
+  - sca
+  - stp
+  - sem
+  - pds
+  - ams
+  - szn
+  Description_EN: The notable URLs
+  Sample:
+  - http://example.page.com/canonical.html
+  - http://10.10.10.10
+  - https://drive.google.com/
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventName
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - ptp
+  - sca
+  - sem
+  - xes
+  - stp
+  - sig
+  - ptn
+  - szn
+  - pts
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - ams
+  - mns
+  - ddr
+  Description_EN: The event type
+  Sample:
+  - LOG_INSPECTION_EVENT
+  - SECURITY_RISK_DETECTION
+  - WEB_THREAT_DETECTION
+  - LOG_INSPECTION_EVENT
+  - MALWARE_DETECTION
+  - PROCESS_ACTIVITY
+  - WEB_POLICY_VIOLATION
+  - DEEP_PACKET_INSPECTION_EVENT
+  - INTEGRITY_MONITORING_EVENT
+  - DISRUPTIVE_APPLICATION_DETECTION
+  - PRODUCT_SUMMARY
+  - PRODUCT_UPDATE
+  - BEHAVIORAL_VIOLATION
+  - FIREWALL_POLICY_VIOLATION
+  - SUSPICIOUS_BEHAVIOUR_DETECTION
+  - DENYLIST_CHANGE
+  - MACHINE_LEARNING_DETECTION
+  - DLP_VIOLATION
+  - MALWARE_OUTBREAK_DETECTION
+  - SENSITIVE_DATA_DETECTION
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: act
+  ProductCode:
+  - scs
+  - pdi
+  - xns
+  - sao
+  - sds
+  - sca
+  - ptp
+  - xes
+  - sws
+  - sem
+  - pds
+  - stp
+  - sig
+  - ptn
+  - szn
+  - xms
+  - ams
+  - mns
+  - sss
+  Description_EN: The actions taken to mitigate the event
+  Sample:
+  - log
+  - isolate
+  - terminate
+  - not blocked
+  - Block
+  - No action
+  - Reset
+  - Pass
+  - User Decision
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actResult
+  ProductCode:
+  - sao
+  - sca
+  - sds
+  - pds
+  - pts
+  - ams
+  Description_EN: The result of an action
+  Sample:
+  - Dropped
+  - Successful
+  - Accepted
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pname
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - sem
+  - ptp
+  - xes
+  - sws
+  - stp
+  - sig
+  - ams
+  - scs
+  - xms
+  Description_EN: The internal product ID
+  Sample:
+  - Trend Micro Deep Security
+  - Deep Discovery Inspector
+  - Apex One
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: urlCat
+  ProductCode:
+  - pdi
+  - xns
+  - sws
+  - sao
+  - sig
+  - sca
+  - ams
+  - sds
+  Description_EN: The requested URL category
+  Sample:
+  - Untested
+  - '158'
+  - Web Advertisement
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: majorVirusType
+  ProductCode:
+  - pds
+  - sds
+  - ams
+  - ptn
+  - pts
+  - sfc
+  Description_EN: The virus type
+  Sample:
+  - Virus
+  - Suspicious Activity
+  - Trojan
+  - TROJ
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionName
+  ProductCode:
+  - sao
+  - ams
+  Description_EN: The general name for the detection
+  Sample:
+  - Troj.Win32.TRX.XXPE50F13017
+  - Troj.Win32.TRX.XXPE50FFF059
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionType
+  ProductCode:
+  - pdi
+  - xns
+  - sds
+  - sws
+  - sao
+  - sca
+  - pds
+  - sem
+  - sig
+  - ams
+  - szn
+  - scs
+  Description_EN: The detection type
+  Sample:
+  - '1'
+  - File
+  - Process
+  - net
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventId
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - xes
+  - sem
+  - pts
+  - scs
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - ams
+  - mns
+  - ddr
+  Description_EN: The event ID from the logs of each product
+  Sample:
+  - 100100
+  - 100101
+  - 100116
+  - 100117
+  - 100119
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: osName
+  ProductCode:
+  - sig
+  - ams
+  - szn
+  - ddr
+  - sss
+  Description_EN: The host OS name
+  Sample:
+  - Linux
+  - windows 10.0.22000
+  - windows 10.0.19044
+  - windows 10.0.19043
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pver
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - ptp
+  - stp
+  - sig
+  - ams
+  - scs
+  - sfs
+  - sfc
+  - sss
+  Description_EN: The product version
+  Sample:
+  - 20.0.0.4726
+  - 20.0.0.4416
+  - 6.2.1125
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: score
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sca
+  - ams
+  - sds
+  Description_EN: The Web Reputation Services URL rating
+  Sample:
+  - 71
+  - 81
+  - 0
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: mailbox
+  ProductCode:
+  - sca
+  - sem
+  - ams
+  - xms
+  Description_EN: The mailbox that is protected by Trend Micro
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointModel
+  ProductCode:
+  - ams
+  Description_EN: Mobile device model
+  Sample:
+  - M2101K9G
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appPkgName
+  ProductCode:
+  - ams
+  Description_EN: The app package name
+  Sample:
+  - com.example.app_pkg_name_file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appLabel
+  ProductCode:
+  - ams
+  Description_EN: App name
+  Sample:
+  - Mobile Security Virus Test Application
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appVerCode
+  ProductCode:
+  - ams
+  Description_EN: The app version code
+  Sample:
+  - 1
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appPublicKeySha1
+  ProductCode:
+  - ams
+  Description_EN: The app public key (SHA-1)
+  Sample:
+  - 72080A6B4EB11105B28E31C4753BC91414500AD4
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appSize
+  ProductCode:
+  - ams
+  Description_EN: The app size (in bytes)
+  Sample:
+  - '28461'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appDexSha256
+  ProductCode:
+  - ams
+  Description_EN: The app dex encoded using SHA-256
+  Sample:
+  - 08736EDDD3682AC26D9FD42DA2A20B0BADB5C85A5456A0AE85B52D60C564F290
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appIsSystem
+  ProductCode:
+  - ams
+  Description_EN: Whether the app is a system app
+  Sample:
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osVer
+  ProductCode:
+  - ams
+  - szn
+  - ddr
+  Description_EN: The OS version
+  Sample:
+  - '11'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: minorVirusType
+  ProductCode:
+  - ams
+  Description_EN: Minor virus type
+  Sample:
+  - RANSOMWARE
+  - BANKER
+  - CREDENTIAL
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointGuid
+  ProductCode:
+  - ams
+  Description_EN: Host GUID of the endpoint on which the event was detected
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointHostName
+  ProductCode:
+  - ams
+  Description_EN: The host name of the endpoint on which the event was detected
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointIp
+  ProductCode:
+  - ams
+  Description_EN: IP address of the endpoint on which the event was detected
+  Sample:
+  - 10.10.10.10
+  - ::1
+  - fe80::1
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventId
+  ProductCode:
+  - ams
+  Description_EN: Event type
+  Sample: []
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSubId
+  ProductCode:
+  - ams
+  Description_EN: The access type
+  Sample:
+  - 2 - TELEMETRY_PROCESS_CREATE
+  - 101 - TELEMETRY_FILE_CREATE
+  - 204 - TELEMETRY_CONNECTION_CONNECT_OUTBOUND
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventTime
+  ProductCode:
+  - ams
+  Description_EN: The time the agent detected the event
+  Sample:
+  - 1657781088000
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logonUser
+  ProductCode:
+  - ams
+  Description_EN: The logon user name
+  Sample:
+  - root
+  - SISTEMA
+  - oracle
+  DL_Type: dynamic
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectFileHashSha256
+  ProductCode:
+  - ams
+  Description_EN: The SHA256 hash of target process image or target file
+  Sample:
+  - 39109eef00821658893b45634fe2f4664f880da9242712df907f1327d4ceefb8
+  - 49fa3e206abf6a1f4546417dbe09f3f06b38847866a4a66de75bd90f39cb6c1c
+  - 0969321ad5a0923f0f03896ad2c10e49290515c44b721d773942a37f62a24893
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFilePath
+  ProductCode:
+  - ams
+  Description_EN: The file path of the target process image or target file
+  Sample:
+  - /usr/bin/bash
+  - /bin/bash
+  - /opt/folder1/probes/system/processes/processes
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pname
+  ProductCode:
+  - ams
+  Description_EN: Internal product ID (Deprecated, use productCode)
+  Sample:
+  - '2200'
+  - '751'
+  - '533'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: request
+  ProductCode:
+  - ams
+  Description_EN: Request URL
+  Sample:
+  - http://10.10.10.10/fake/site
+  - http:///fake/param.cgi?action=list&group=Alarm.Status
+  - http://fake.com/
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileHashSha256
+  ProductCode:
+  - ams
+  Description_EN: The SHA256 hash of source file
+  Sample:
+  - 4eaa002225f4ea2dedcd19b7f1337d7c58ea7dd6d4571c12468dde95e6bcfdaf
+  - e30508e2088bc16b2a84233ced64995f738deaef2366ac6c86b35c93bbcd9d80
+  - 16b20a3ad485b4fbbe3028c7e743b226db21ea93cacc8b3d7d7d4a731bf02333
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFilePath
+  ProductCode:
+  - ams
+  Description_EN: The source file path
+  Sample:
+  - \\cnva-apps\megaclockprod\traveler\travelerprint.accdb
+  - c:\program files\common files\microsoft 
+    shared\clicktorun\officesvcmgrschedule.xml
+  - q:\a7_dbs\a4_pkg\a4_packaging.accde
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: marsAccount
+  ProductCode:
+  - ams
+  Description_EN: The account for Trend Micro Mobile Apps Reputation Service
+  Sample:
+  - XDRv1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointModel
+  ProductCode:
+  - ams
+  Description_EN: The endpoint device model
+  Sample:
+  - Pixel 3 XL
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: userType
+  ProductCode:
+  - ams
+  Description_EN: The user type
+  Sample:
+  - Microsoft Endpoint Manager
+  - Azure Active Directory
+  - VMware Workspace ONE UEM
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventHashId
+  ProductCode:
+  - ams
+  Description_EN: The event hash ID
+  Sample:
+  - '-8406473586387535914'
+  - '138486453338666581'
+  - '-7909265752378976284'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: firstSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the event started (in milliseconds)
+  Sample:
+  - 1656355418449
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: lastSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the event ended (in milliseconds)
+  Sample:
+  - 1656355418449
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pver
+  ProductCode:
+  - ams
+  Description_EN: The product version
+  Sample:
+  - 1.2.0.2752
+  - 1.0.345
+  - 1.2.0.2657
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osName
+  ProductCode:
+  - ams
+  Description_EN: The host operating system name
+  Sample:
+  - Windows
+  - Linux
+  - macOS
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: osVer
+  ProductCode:
+  - ams
+  Description_EN: The OS version
+  Sample:
+  - Amazon Linux 2
+  - 10.0.19044
+  - 10.0.19042
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectHashId
+  ProductCode:
+  - ams
+  Description_EN: The event object hash ID
+  Sample:
+  - '8576474808125313522'
+  - '-599270888483415002'
+  - '2177864258235728980'
+  - '2432229257'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileSize
+  ProductCode:
+  - ams
+  Description_EN: The target file size
+  Sample:
+  - '0'
+  - '59456'
+  - '60'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileCreation
+  ProductCode:
+  - ams
+  Description_EN: The time the target file was created (in milliseconds)
+  Sample:
+  - '1652131848000'
+  - '1577865600000'
+  - '1648279273000'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileModifiedTime
+  ProductCode:
+  - ams
+  Description_EN: The modification time of the target file (in milliseconds)
+  Sample:
+  - '1652131848000'
+  - '1577865600000'
+  - '1648279273000'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFirstSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the object first appeared (in milliseconds)
+  Sample:
+  - '1656458063638'
+  - '1656260547165'
+  - '0'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectLastSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the object was last seen (in milliseconds)
+  Sample:
+  - '1656458354730'
+  - '1656260580722'
+  - '0'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileHashId
+  ProductCode:
+  - ams
+  Description_EN: The source file hash ID
+  Sample:
+  - '1102079405020678318'
+  - '-6926286289273504319'
+  - '8528955148329941480'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileSize
+  ProductCode:
+  - ams
+  Description_EN: The source file size
+  Sample:
+  - '0'
+  - '131072'
+  - '196608'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileCreation
+  ProductCode:
+  - ams
+  Description_EN: The time when the source file was created (in milliseconds)
+  Sample:
+  - '1577865600000'
+  - '1626201752000'
+  - '1626201750000'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileModifiedTime
+  ProductCode:
+  - ams
+  Description_EN: The time when the source file was modified (in milliseconds)
+  Sample:
+  - '1626201752000'
+  - '1626201750000'
+  - '1577865600000'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFirstSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the source file first appeared (in milliseconds)
+  Sample:
+  - '0'
+  - '1656355418449'
+  - '1656714760440'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcLastSeen
+  ProductCode:
+  - ams
+  Description_EN: The time when the source file was last seen (in milliseconds)
+  Sample:
+  - '0'
+  - '1656355418449'
+  - '1656715147313'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appOrSystemEventHashId
+  ProductCode:
+  - ams
+  Description_EN: The event object hash ID
+  Sample:
+  - 3859886410
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appLabel
+  ProductCode:
+  - ams
+  Description_EN: The app name (if the subject is an app)
+  Sample:
+  - Collection Nes Games
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: appPkgName
+  ProductCode:
+  - ams
+  Description_EN: The app package name (if the subject is an app)
+  Sample:
+  - com.ConsolesXX.CollectionNesGames
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: appPublicKeySha1
+  ProductCode:
+  - ams
+  Description_EN: The SHA-1 hash of the app public key (if the subject is an 
+    app)
+  Sample:
+  - 05FC638156219800DADAC48D8E621E0BCBD3C321
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: appSize
+  ProductCode:
+  - ams
+  Description_EN: The app size (in bytes) if the subject is an app
+  Sample:
+  - 16906043
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appIsSystem
+  ProductCode:
+  - ams
+  Description_EN: Whether the app is a system app
+  Sample:
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appVerCode
+  ProductCode:
+  - ams
+  Description_EN: The app version code (if the subject is an app)
+  Sample:
+  - 0
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: systemEventAttr
+  ProductCode:
+  - ams
+  Description_EN: The attributes of the system event (if the subject is a system
+    event)
+  Sample:
+  - usbdebugging
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppDexSha256
+  ProductCode:
+  - ams
+  Description_EN: The SHA-256 hash of the app Dex value
+  Sample:
+  - C23A87B77B06442FD9AF9A80DD87191EDEADFAB766C862EBC592FE18063D0449
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectAppInstalledTime
+  ProductCode:
+  - ams
+  Description_EN: The time of app installation (in milliseconds)
+  Sample:
+  - 1607935850
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppLabel
+  ProductCode:
+  - ams
+  Description_EN: The app name
+  Sample:
+  - Collection Nes Games
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectAppPackageName
+  ProductCode:
+  - ams
+  Description_EN: The app package name
+  Sample:
+  - com.ConsolesXX.CollectionNesGames
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectAppPublicKeySha1
+  ProductCode:
+  - ams
+  Description_EN: The SHA-1 hash of the app public key
+  Sample:
+  - 05FC638156219800DADAC48D8E621E0BCBD3C321
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectAppSha256
+  ProductCode:
+  - ams
+  Description_EN: The SHA-256 hash of the app
+  Sample:
+  - 692BC8E6BC51807A24BEACC13ED2B68E1F954E152863430E3179FA812937B8B0
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectAppSize
+  ProductCode:
+  - ams
+  Description_EN: The app size (in bytes)
+  Sample:
+  - 16906043
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppIsSystemApp
+  ProductCode:
+  - ams
+  Description_EN: Whether the app is a system app
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppVerCode
+  ProductCode:
+  - ams
+  Description_EN: The app version code
+  Sample:
+  - 0
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppVerName
+  ProductCode:
+  - ams
+  Description_EN: The app version
+  Sample:
+  - 1.0
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppBehavior
+  ProductCode:
+  - ams
+  Description_EN: The activity that occurred on the app
+  Sample:
+  - GRANTED_CAMERA_PERMISSION
+  - APP_NO_ICON
+  - APP_HIDE_ICON
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectAppBehaviorAttr
+  ProductCode:
+  - ams
+  Description_EN: The attributes of the app activity
+  Sample:
+  - android.intent.action.BOOT_COMPLETED
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSystemEventAttr
+  ProductCode:
+  - ams
+  Description_EN: The system event attributes
+  Sample:
+  - LOCK_SCREEN
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: extraInfo
+  ProductCode:
+  - ams
+  Description_EN: The extra information about the app
+  Sample:
+  - N/A
+  - Web Client Common
+  - DCERPC Services
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectCertAttr
+  ProductCode:
+  - ams
+  Description_EN: The SHA-1 hash of the certificate public key
+  Sample:
+  - 05FC638156219800DADAC48D8E621E0BCBD3C321
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

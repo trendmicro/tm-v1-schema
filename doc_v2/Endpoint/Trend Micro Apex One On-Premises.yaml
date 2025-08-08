@@ -1,0 +1,165 @@
+- Name: parentSignerFlagsAdhoc
+  ProductCode:
+  - xes
+  - sao
+  - pao
+  Description_EN: The list of parent process signature adhoc flags
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentSignerFlagsRuntime
+  ProductCode:
+  - xes
+  - sao
+  - pao
+  Description_EN: The list of parent process signature runtime flags
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: parentSignerFlagsLibValid
+  ProductCode:
+  - xes
+  - sao
+  - pao
+  Description_EN: The list of parent process signature library validation flags
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSignerFlagsAdhoc
+  ProductCode:
+  - xes
+  - sao
+  - pao
+  Description_EN: The list of object process signature adhoc flags
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSignerFlagsRuntime
+  ProductCode:
+  - xes
+  - sao
+  - pao
+  Description_EN: The list of object process signature runtime flags
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectSignerFlagsLibValid
+  ProductCode:
+  - xes
+  - sao
+  - pao
+  Description_EN: The list of object process signature library validation flags
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processSignerFlagsAdhoc
+  ProductCode:
+  - xes
+  - sao
+  - pao
+  Description_EN: The list of process signature adhoc flags
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processSignerFlagsRuntime
+  ProductCode:
+  - xes
+  - sao
+  - pao
+  Description_EN: The list of process signature runtime flags
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processSignerFlagsLibValid
+  ProductCode:
+  - xes
+  - sao
+  - pao
+  Description_EN: The list of process signature library validation flags
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: quarantineFilePath
+  ProductCode:
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The file path of the quarantined object
+  Sample:
+  - C:\ProgramData\Trend Micro\AMSP\quarantine\ASLUMVS0.4FC
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: quarantineFileId
+  ProductCode:
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The unique identifier of the quarantined object
+  Sample:
+  - ASLUMVS0.4FC
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: quarantineFileSha256
+  ProductCode:
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The SHA-256 of the quarantined object
+  Sample:
+  - 84B2FA19B05EA88D6E785B4ADB528120485AA3F72F3E5E114DE6D3696B0D151F
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionNames
+  ProductCode:
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The rules that triggered the event
+  Sample:
+  - [HS_EMOTET.SMAA, HM_AVEDOWN.SMZTIG-A, HE_DOCQRPHISH.SM]
+  DL_Type: dynamic
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionMeta
+  ProductCode:
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The descriptions of the detected techniques
+  Sample:
+  - [T1204 some description about this technique, T1573.001_AES another 
+      description about this technique]
+  DL_Type: dynamic
+  DL_Searchable: true
+  DL_Aggregable: false
