@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">2755</span>
+      <span class="stat-number">2759</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -232,7 +232,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Endpoint/Endpoint%20Sensor" class="product-link">
         <div class="product-info">
           <span>Endpoint Sensor</span>
-          <span class="field-count">377 fields</span>
+          <span class="field-count">381 fields</span>
         </div>
       </a>
     </li>

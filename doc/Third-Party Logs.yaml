@@ -2782,3 +2782,79 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: interestedIp
+  ProductCode:
+  - tlc
+  Description_EN: The IP of the interestedHost
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertSerialNumber
+  ProductCode:
+  - tlc
+  Description_EN: The certificate serial number
+  Sample:
+  - 0888b1ad2a593310593f47565a5a5a4a
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertFingerprint
+  ProductCode:
+  - tlc
+  Description_EN: The certificate fingerprint
+  Sample:
+  - 3914af80223c833f26df001cbf342eff8a31aba1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertValidFrom
+  ProductCode:
+  - tlc
+  Description_EN: The certificate validity start time
+  Sample:
+  - '2014-11-21T02:43:28'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertValidUntil
+  ProductCode:
+  - tlc
+  Description_EN: The certificate validity end time
+  Sample:
+  - '2018-11-21T02:43:28'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sslCertCommonName
+  ProductCode:
+  - tlc
+  Description_EN: The certificate common name
+  Sample:
+  - '*.www.sample.com'
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  - HostDomain
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: result
+  ProductCode:
+  - tlc
+  Description_EN: The event result
+  Sample:
+  - success
+  - failure
+  - timeout
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
