@@ -6716,3 +6716,51 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: processActionResults
+  ProductCode:
+  - xes
+  Description_EN: The process action results
+  Sample:
+  - success
+  - failure
+  - N/A
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processActionReturnCodes
+  ProductCode:
+  - xes
+  Description_EN: The process action return codes
+  Sample:
+  - SUCCESS
+  - ErrorProcessNotFound
+  - N/A
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectActionResults
+  ProductCode:
+  - xes
+  Description_EN: The object process action results
+  Sample:
+  - success
+  - failure
+  - N/A
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectActionReturnCodes
+  ProductCode:
+  - xes
+  Description_EN: The object process action return codes
+  Sample:
+  - SUCCESS
+  - ErrorProcessNotFound
+  - N/A
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

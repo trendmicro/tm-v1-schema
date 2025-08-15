@@ -1992,6 +1992,36 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Endpoint Sensor</td>
     </tr>
     <tr>
+      <td class="field-name">objectActionResults</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The object process action results</td>
+      <td class="example">
+        <ul>
+          <li>success</li>
+          <li>failure</li>
+          <li>N/A</li>
+        </ul>
+      </td>
+      <td class="products">Endpoint Sensor</td>
+    </tr>
+    <tr>
+      <td class="field-name">objectActionReturnCodes</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The object process action return codes</td>
+      <td class="example">
+        <ul>
+          <li>SUCCESS</li>
+          <li>ErrorProcessNotFound</li>
+          <li>N/A</li>
+        </ul>
+      </td>
+      <td class="products">Endpoint Sensor</td>
+    </tr>
+    <tr>
       <td class="field-name">objectActions</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -4951,6 +4981,36 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
+      <td class="field-name">processActionResults</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The process action results</td>
+      <td class="example">
+        <ul>
+          <li>success</li>
+          <li>failure</li>
+          <li>N/A</li>
+        </ul>
+      </td>
+      <td class="products">Endpoint Sensor</td>
+    </tr>
+    <tr>
+      <td class="field-name">processActionReturnCodes</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The process action return codes</td>
+      <td class="example">
+        <ul>
+          <li>SUCCESS</li>
+          <li>ErrorProcessNotFound</li>
+          <li>N/A</li>
+        </ul>
+      </td>
+      <td class="products">Endpoint Sensor</td>
+    </tr>
+    <tr>
       <td class="field-name">processActions</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -7187,7 +7247,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 377
+- **Total Fields:** 381
 - **Layer:** Endpoint
 - **Product:** Endpoint Sensor
 
