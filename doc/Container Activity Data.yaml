@@ -125,7 +125,7 @@
   - 8 - EVENT_SOURCE_CONTAINER_ACTIVITY
   DL_Type: int
   DL_CommonKey:
-  DL_Searchable: false
+  DL_Searchable: true
   DL_Aggregable: false
 - Name: logReceivedTime
   ProductCode:
