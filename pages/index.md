@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">2759</span>
+      <span class="stat-number">2760</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -164,7 +164,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Cloud/Trend%20Vision%20One%20Container%20Security" class="product-link">
         <div class="product-info">
           <span>Trend Vision One Container Security</span>
-          <span class="field-count">90 fields</span>
+          <span class="field-count">91 fields</span>
         </div>
       </a>
     </li>

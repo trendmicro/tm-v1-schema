@@ -1339,3 +1339,13 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: userDefinedFields
+  ProductCode:
+  - scs
+  Description_EN: The user-defined field for custom detection rules
+  Sample:
+  - '{"message": "There is a shell process running in the container with ID \"1234567890abcdef\"."}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

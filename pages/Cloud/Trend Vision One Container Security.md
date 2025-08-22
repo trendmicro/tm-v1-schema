@@ -1839,12 +1839,21 @@ This documentation provides detailed information about all fields available for 
         </ul>
       </td>
     </tr>
+    <tr>
+      <td class="field-name">userDefinedFields</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The user-defined field for custom detection rules</td>
+      <td class="example">{&quot;message&quot;: &quot;There is a shell process running in the container with ID \&quot;1234567890abcdef\&quot;.&quot;}</td>
+      <td class="products">Trend Vision One Container Security</td>
+    </tr>
   </tbody>
 </table>
 </div>
 
 ## Field Statistics
-- **Total Fields:** 90
+- **Total Fields:** 91
 - **Layer:** Cloud
 - **Product:** Trend Vision One Container Security
 
