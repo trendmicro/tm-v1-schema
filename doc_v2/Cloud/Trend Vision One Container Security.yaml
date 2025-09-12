@@ -603,6 +603,19 @@
   - FileName
   DL_Searchable: true
   DL_Aggregable: false
+- Name: objectFileSize
+  ProductCode:
+  - sds
+  - scs
+  Description_EN: The object file size
+  Sample:
+  - '0'
+  - '59456'
+  - '60'
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: compressedFileName
   ProductCode:
   - pdi
@@ -656,6 +669,22 @@
   - 6A6EB2D717CEA041B4444193B45EDFB6CA1287518203B7230B3C4B8FFB031EAB
   - BFF703FF836196644586014DA13A097C2EE9A08E4D596DFB7C8E0F685FE01294
   - 12327F460AC9CBBC34D39EB3CF89C7FECCA37F08773A04566840F73F6ECC4104
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileHashSha256
+  ProductCode:
+  - sao
+  - xes
+  - sds
+  - scs
+  Description_EN: The SHA-256 of the object (objectFilePath)
+  Sample:
+  - A75C85F3B089993E9C042FB82ECB7757E8F460ED8065FC7991CAA38A6DE0F50C
+  - 908B64B1971A979C7E3E8CE4621945CBA84854CB98D76367B791A6E22B5F6D53
+  - 1A2ABAAD8A166B66CA35AB51C7432C5A7E46996472C8174281842896408D7F96
   DL_Type: string
   DL_CommonKey:
   - FileSHA2
@@ -897,6 +926,21 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: processUser
+  ProductCode:
+  - sds
+  - sao
+  - scs
+  Description_EN: The user name of the process or the file creator
+  Sample:
+  - SYSTEM
+  - SVC_JENKINS_CODE_DEV
+  - NETWORK SERVICE
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: policyName
   ProductCode:
   - sao
@@ -971,6 +1015,20 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: fileOperation
+  ProductCode:
+  - sds
+  - pds
+  - scs
+  Description_EN: The operation of the file
+  Sample:
+  - Created
+  - Updated
+  - Deleted
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: fileType
   ProductCode:
   - pdi
@@ -1007,6 +1065,44 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: objectFileCreation
+  ProductCode:
+  - sao
+  - sds
+  - scs
+  Description_EN: The UTC time that the object was created
+  Sample:
+  - '2014-11-22T01:45:51-06:00'
+  - '2009-07-13T23:31:13-05:00'
+  - '2014-11-21T02:43:28-05:00'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileCreatedTime
+  ProductCode:
+  - scs
+  Description_EN: The time the object file was created
+  Sample:
+  - 1652131848000
+  - 1577865600000
+  - 1648279273000
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileModifiedTime
+  ProductCode:
+  - scs
+  Description_EN: The time the object file was modified
+  Sample:
+  - 1652131848000
+  - 1577865600000
+  - 1648279273000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: processName
   ProductCode:
   - sds
@@ -1029,6 +1125,7 @@
   - sds
   - xes
   - scs
+  - sao
   Description_EN: The PID of the subject process
   Sample: []
   DL_Type: int
@@ -1042,6 +1139,7 @@
   - ptn
   - scs
   - mns
+  - sao
   Description_EN: The exploited layer network protocol
   Sample:
   - '6'
@@ -1140,6 +1238,34 @@
   Description_EN: The PID of the parent process
   Sample: []
   DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: wasEntity
+  ProductCode:
+  - sds
+  - pds
+  - scs
+  Description_EN: The entity before change/modification
+  Sample:
+  - '{"key":"<example>","type":"Service","attributes":[{"friendlyValue":null,"name":"binaryPathName","value":"C:\\Windows\\system32\\vssvc.exe"},{"friendlyValue":"manual","name":"startType","value":"3"},{"friendlyValue":"stopped","name":"state","value":"1"}]}'
+  - '{"key":"<example>","type":"Service","attributes":[{"friendlyValue":null,"name":"binaryPathName","value":"C:\\Windows\\system32\\vssvc.exe"},{"friendlyValue":"manual","name":"startType","value":"3"},{"friendlyValue":"running","name":"state","value":"4"}]}'
+  - '{"key":"<example>","type":"File","attributes":[]}'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isEntity
+  ProductCode:
+  - sds
+  - pds
+  - scs
+  Description_EN: The current entity (or after change/modification)
+  Sample:
+  - '{"key":"<example>","type":"Service","attributes":[{"friendlyValue":null,"name":"binaryPathName","value":"C:\\Windows\\system32\\vssvc.exe"},{"friendlyValue":"manual","name":"startType","value":"3"},{"friendlyValue":"running","name":"state","value":"4"}]}'
+  - '{"key":"<example>":"Service","attributes":[{"friendlyValue":null,"name":"binaryPathName","value":"C:\\Windows\\system32\\vssvc.exe"},{"friendlyValue":"manual","name":"startType","value":"3"},{"friendlyValue":"stopped","name":"state","value":"1"}]}'
+  - '{"key":"<example>","type":"File","attributes":[]}'
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
@@ -1273,6 +1399,7 @@
 - Name: ruleIdStr
   ProductCode:
   - scs
+  - sao
   Description_EN: The rule ID
   Sample:
   - TM-00000043
@@ -1293,6 +1420,28 @@
   - /usr/bin/sed
   DL_Type: string
   DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileSize
+  ProductCode:
+  - scs
+  Description_EN: The file size of the source file
+  Sample:
+  - 0
+  - 1255856
+  - 1237880
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileHashSha256
+  ProductCode:
+  - scs
+  Description_EN: The SHA-256 of the source file
+  Sample: []
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
   DL_Searchable: true
   DL_Aggregable: false
 - Name: rawDataStr

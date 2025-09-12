@@ -3441,6 +3441,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Trend Micro Apex One as a Service</li>
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Vision One Container Security</li>
         </ul>
       </td>
     </tr>
@@ -3708,6 +3709,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Apex One as a Service</li>
           <li>Endpoint Sensor</li>
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Vision One Container Security</li>
         </ul>
       </td>
     </tr>
@@ -6704,6 +6706,22 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The PID of the subject process</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Trend Vision One Container Security</li>
+          <li>Trend Micro Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processPid</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The PID of the subject process</td>
       <td class="example">
         <ul>
           <li>4</li>
@@ -6894,6 +6912,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
         <ul>
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
           <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Vision One Container Security</li>
         </ul>
       </td>
     </tr>
@@ -6923,6 +6942,26 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The owner domain of the subject process image</td>
+      <td class="example">
+        <ul>
+          <li>NT AUTHORITY</li>
+          <li>DOMAINBA</li>
+          <li>PAEDMZ</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Micro Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processUserDomain</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">The process user domain</td>
       <td class="example">
         <ul>
@@ -6935,6 +6974,30 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint Sensor</li>
           <li>Trend Micro Apex One as a Service</li>
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">proto</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The exploited layer network protocol</td>
+      <td class="example">
+        <ul>
+          <li>6</li>
+          <li>TCP</li>
+          <li>17</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Micro Deep Security</li>
+          <li>TXOne EdgeOne</li>
+          <li>Trend Vision One Container Security</li>
+          <li>Mobile Network Security</li>
+          <li>Trend Micro Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -7516,6 +7579,20 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
+          <li>Trend Micro Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">ruleIdStr</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The rule ID</td>
+      <td class="example">TM-00000043</td>
+      <td class="products">
+        <ul>
+          <li>Trend Vision One Container Security</li>
           <li>Trend Micro Apex One as a Service</li>
         </ul>
       </td>
@@ -8803,7 +8880,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 433
+- **Total Fields:** 437
 - **Layer:** Endpoint
 - **Product:** Trend Micro Apex One as a Service
 

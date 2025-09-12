@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">2760</span>
+      <span class="stat-number">2775</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -164,7 +164,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Cloud/Trend%20Vision%20One%20Container%20Security" class="product-link">
         <div class="product-info">
           <span>Trend Vision One Container Security</span>
-          <span class="field-count">91 fields</span>
+          <span class="field-count">102 fields</span>
         </div>
       </a>
     </li>
@@ -256,7 +256,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Endpoint/Trend%20Micro%20Apex%20One%20as%20a%20Service" class="product-link">
         <div class="product-info">
           <span>Trend Micro Apex One as a Service</span>
-          <span class="field-count">433 fields</span>
+          <span class="field-count">437 fields</span>
         </div>
       </a>
     </li>
