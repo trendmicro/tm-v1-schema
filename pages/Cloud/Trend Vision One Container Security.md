@@ -730,6 +730,27 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">fileOperation</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The operation of the file</td>
+      <td class="example">
+        <ul>
+          <li>Created</li>
+          <li>Updated</li>
+          <li>Deleted</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Micro Deep Security</li>
+          <li>Trend Vision One Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">fileType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -778,6 +799,27 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Trend Vision One Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">isEntity</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The current entity (or after change/modification)</td>
+      <td class="example">
+        <ul>
+          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;,&quot;type&quot;:&quot;Service&quot;,&quot;attributes&quot;:[{&quot;friendlyValue&quot;:null,&quot;name&quot;:&quot;binaryPathName&quot;,&quot;value&quot;:&quot;C:\\Windows\\system32\\vssvc.exe&quot;},{&quot;friendlyValue&quot;:&quot;manual&quot;,&quot;name&quot;:&quot;startType&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;friendlyValue&quot;:&quot;running&quot;,&quot;name&quot;:&quot;state&quot;,&quot;value&quot;:&quot;4&quot;}]}</li>
+          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;:&quot;Service&quot;,&quot;attributes&quot;:[{&quot;friendlyValue&quot;:null,&quot;name&quot;:&quot;binaryPathName&quot;,&quot;value&quot;:&quot;C:\\Windows\\system32\\vssvc.exe&quot;},{&quot;friendlyValue&quot;:&quot;manual&quot;,&quot;name&quot;:&quot;startType&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;friendlyValue&quot;:&quot;stopped&quot;,&quot;name&quot;:&quot;state&quot;,&quot;value&quot;:&quot;1&quot;}]}</li>
+          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;,&quot;type&quot;:&quot;File&quot;,&quot;attributes&quot;:[]}</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Micro Deep Security</li>
           <li>Trend Vision One Container Security</li>
         </ul>
       </td>
@@ -898,6 +940,79 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">objectFileCreatedTime</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The time the object file was created</td>
+      <td class="example">
+        <ul>
+          <li>1652131848000</li>
+          <li>1577865600000</li>
+          <li>1648279273000</li>
+        </ul>
+      </td>
+      <td class="products">Trend Vision One Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileCreation</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The UTC time that the object was created</td>
+      <td class="example">
+        <ul>
+          <li>2014-11-22T01:45:51-06:00</li>
+          <li>2009-07-13T23:31:13-05:00</li>
+          <li>2014-11-21T02:43:28-05:00</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Vision One Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileHashSha256</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA2</td>
+      <td class="description">The SHA-256 of the object (objectFilePath)</td>
+      <td class="example">
+        <ul>
+          <li>A75C85F3B089993E9C042FB82ECB7757E8F460ED8065FC7991CAA38A6DE0F50C</li>
+          <li>908B64B1971A979C7E3E8CE4621945CBA84854CB98D76367B791A6E22B5F6D53</li>
+          <li>1A2ABAAD8A166B66CA35AB51C7432C5A7E46996472C8174281842896408D7F96</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Vision One Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileModifiedTime</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The time the object file was modified</td>
+      <td class="example">
+        <ul>
+          <li>1652131848000</li>
+          <li>1577865600000</li>
+          <li>1648279273000</li>
+        </ul>
+      </td>
+      <td class="products">Trend Vision One Container Security</td>
+    </tr>
+    <tr>
       <td class="field-name">objectFileName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -956,6 +1071,26 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Apex One as a Service</li>
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
+          <li>Trend Vision One Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileSize</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The object file size</td>
+      <td class="example">
+        <ul>
+          <li>0</li>
+          <li>59456</li>
+          <li>60</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
           <li>Trend Vision One Container Security</li>
         </ul>
       </td>
@@ -1406,6 +1541,28 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Trend Vision One Container Security</li>
+          <li>Trend Micro Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processUser</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">UserAccount</td>
+      <td class="description">The user name of the process or the file creator</td>
+      <td class="example">
+        <ul>
+          <li>SYSTEM</li>
+          <li>SVC_JENKINS_CODE_DEV</li>
+          <li>NETWORK SERVICE</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Vision One Container Security</li>
         </ul>
       </td>
     </tr>
@@ -1443,6 +1600,7 @@ This documentation provides detailed information about all fields available for 
           <li>TXOne EdgeOne</li>
           <li>Trend Vision One Container Security</li>
           <li>Mobile Network Security</li>
+          <li>Trend Micro Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -1530,7 +1688,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The rule ID</td>
       <td class="example">TM-00000043</td>
-      <td class="products">Trend Vision One Container Security</td>
+      <td class="products">
+        <ul>
+          <li>Trend Vision One Container Security</li>
+          <li>Trend Micro Apex One as a Service</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">ruleName</td>
@@ -1795,6 +1958,30 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">srcFileHashSha256</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA2</td>
+      <td class="description">The SHA-256 of the source file</td>
+      <td class="example">-</td>
+      <td class="products">Trend Vision One Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">srcFileModifiedTime</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The time the source file was modified</td>
+      <td class="example">
+        <ul>
+          <li>1652131848000</li>
+          <li>1577865600000</li>
+          <li>1648279273000</li>
+        </ul>
+      </td>
+      <td class="products">Trend Vision One Container Security</td>
+    </tr>
+    <tr>
       <td class="field-name">srcFilePath</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1810,6 +1997,20 @@ This documentation provides detailed information about all fields available for 
           <li>\\cnva-apps\megaclockprod\traveler\travelerprint.accdb</li>
           <li>c:\program files\common files\microsoft shared\clicktorun\officesvcmgrschedule.xml</li>
           <li>q:\a7_dbs\a4_pkg\a4_packaging.accde</li>
+        </ul>
+      </td>
+      <td class="products">Trend Vision One Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">srcFileSize</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The file size of the source file</td>
+      <td class="example">
+        <ul>
+          <li>1255856</li>
+          <li>1237880</li>
         </ul>
       </td>
       <td class="products">Trend Vision One Container Security</td>
@@ -1848,12 +2049,33 @@ This documentation provides detailed information about all fields available for 
       <td class="example">{&quot;message&quot;: &quot;There is a shell process running in the container with ID \&quot;1234567890abcdef\&quot;.&quot;}</td>
       <td class="products">Trend Vision One Container Security</td>
     </tr>
+    <tr>
+      <td class="field-name">wasEntity</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The entity before change/modification</td>
+      <td class="example">
+        <ul>
+          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;,&quot;type&quot;:&quot;Service&quot;,&quot;attributes&quot;:[{&quot;friendlyValue&quot;:null,&quot;name&quot;:&quot;binaryPathName&quot;,&quot;value&quot;:&quot;C:\\Windows\\system32\\vssvc.exe&quot;},{&quot;friendlyValue&quot;:&quot;manual&quot;,&quot;name&quot;:&quot;startType&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;friendlyValue&quot;:&quot;stopped&quot;,&quot;name&quot;:&quot;state&quot;,&quot;value&quot;:&quot;1&quot;}]}</li>
+          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;,&quot;type&quot;:&quot;Service&quot;,&quot;attributes&quot;:[{&quot;friendlyValue&quot;:null,&quot;name&quot;:&quot;binaryPathName&quot;,&quot;value&quot;:&quot;C:\\Windows\\system32\\vssvc.exe&quot;},{&quot;friendlyValue&quot;:&quot;manual&quot;,&quot;name&quot;:&quot;startType&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;friendlyValue&quot;:&quot;running&quot;,&quot;name&quot;:&quot;state&quot;,&quot;value&quot;:&quot;4&quot;}]}</li>
+          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;,&quot;type&quot;:&quot;File&quot;,&quot;attributes&quot;:[]}</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Micro Deep Security</li>
+          <li>Trend Vision One Container Security</li>
+        </ul>
+      </td>
+    </tr>
   </tbody>
 </table>
 </div>
 
 ## Field Statistics
-- **Total Fields:** 91
+- **Total Fields:** 103
 - **Layer:** Cloud
 - **Product:** Trend Vision One Container Security
 

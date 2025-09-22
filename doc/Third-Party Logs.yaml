@@ -2858,3 +2858,14 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: respCode
+  ProductCode:
+  - tlc
+  Description_EN: The network protocol response code
+  Sample:
+  - '302'
+  - '200'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
