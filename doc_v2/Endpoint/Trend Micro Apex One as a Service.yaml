@@ -460,6 +460,7 @@
   - sao
   - xes
   - sds
+  - scs
   Description_EN: The SHA-256 of the object (objectFilePath)
   Sample:
   - A75C85F3B089993E9C042FB82ECB7757E8F460ED8065FC7991CAA38A6DE0F50C
@@ -1169,6 +1170,7 @@
   ProductCode:
   - sds
   - sao
+  - scs
   Description_EN: The user name of the process or the file creator
   Sample:
   - SYSTEM
@@ -1710,6 +1712,7 @@
   ProductCode:
   - sao
   - sds
+  - scs
   Description_EN: The UTC time that the object was created
   Sample:
   - '2014-11-22T01:45:51-06:00'
@@ -1872,6 +1875,48 @@
   DL_Type: string
   DL_CommonKey:
   - ProcessName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processPid
+  ProductCode:
+  - sds
+  - xes
+  - scs
+  - sao
+  Description_EN: The PID of the subject process
+  Sample: []
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processUserDomain
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The owner domain of the subject process image
+  Sample:
+  - NT AUTHORITY
+  - DOMAINBA
+  - PAEDMZ
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: proto
+  ProductCode:
+  - sds
+  - pds
+  - ptn
+  - scs
+  - mns
+  - sao
+  Description_EN: The exploited layer network protocol
+  Sample:
+  - '6'
+  - TCP
+  - '17'
+  DL_Type: string
+  DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
 - Name: pver
@@ -2497,6 +2542,17 @@
   - 123e4567-e89b-12d3-a456-426614174000
   - 987f6543-21ba-43cd-9e8f-123456789abc
   - 456789ab-cdef-1234-5678-9abcdef01234
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleIdStr
+  ProductCode:
+  - scs
+  - sao
+  Description_EN: The rule ID
+  Sample:
+  - TM-00000043
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

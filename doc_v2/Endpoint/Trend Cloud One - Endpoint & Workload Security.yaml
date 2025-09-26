@@ -308,6 +308,7 @@
 - Name: objectFileSize
   ProductCode:
   - sds
+  - scs
   Description_EN: The object file size
   Sample:
   - '0'
@@ -507,6 +508,7 @@
   - sao
   - xes
   - sds
+  - scs
   Description_EN: The SHA-256 of the object (objectFilePath)
   Sample:
   - A75C85F3B089993E9C042FB82ECB7757E8F460ED8065FC7991CAA38A6DE0F50C
@@ -1150,6 +1152,7 @@
   ProductCode:
   - sds
   - sao
+  - scs
   Description_EN: The user name of the process or the file creator
   Sample:
   - SYSTEM
@@ -1408,6 +1411,7 @@
   ProductCode:
   - sds
   - pds
+  - scs
   Description_EN: The operation of the file
   Sample:
   - Created
@@ -1554,6 +1558,7 @@
   ProductCode:
   - sao
   - sds
+  - scs
   Description_EN: The UTC time that the object was created
   Sample:
   - '2014-11-22T01:45:51-06:00'
@@ -1675,6 +1680,7 @@
   - sds
   - xes
   - scs
+  - sao
   Description_EN: The PID of the subject process
   Sample: []
   DL_Type: int
@@ -1684,6 +1690,7 @@
 - Name: processUserDomain
   ProductCode:
   - sds
+  - sao
   Description_EN: The owner domain of the subject process image
   Sample:
   - NT AUTHORITY
@@ -1700,6 +1707,7 @@
   - ptn
   - scs
   - mns
+  - sao
   Description_EN: The exploited layer network protocol
   Sample:
   - '6'
@@ -2026,6 +2034,7 @@
   ProductCode:
   - sds
   - pds
+  - scs
   Description_EN: The entity before change/modification
   Sample:
   - '{"key":"<example>","type":"Service","attributes":[{"friendlyValue":null,"name":"binaryPathName","value":"C:\\Windows\\system32\\vssvc.exe"},{"friendlyValue":"manual","name":"startType","value":"3"},{"friendlyValue":"stopped","name":"state","value":"1"}]}'
@@ -2039,6 +2048,7 @@
   ProductCode:
   - sds
   - pds
+  - scs
   Description_EN: The current entity (or after change/modification)
   Sample:
   - '{"key":"<example>","type":"Service","attributes":[{"friendlyValue":null,"name":"binaryPathName","value":"C:\\Windows\\system32\\vssvc.exe"},{"friendlyValue":"manual","name":"startType","value":"3"},{"friendlyValue":"running","name":"state","value":"4"}]}'

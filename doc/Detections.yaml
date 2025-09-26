@@ -431,6 +431,7 @@
 - Name: objectFileSize
   ProductCode:
   - sds
+  - scs
   Description_EN: The object file size
   Sample:
   - '0'
@@ -721,6 +722,7 @@
   - sao
   - xes
   - sds
+  - scs
   Description_EN: The SHA-256 of the object (objectFilePath)
   Sample:
   - A75C85F3B089993E9C042FB82ECB7757E8F460ED8065FC7991CAA38A6DE0F50C
@@ -1673,6 +1675,7 @@
   ProductCode:
   - sds
   - sao
+  - scs
   Description_EN: The user name of the process or the file creator
   Sample:
   - SYSTEM
@@ -2693,6 +2696,7 @@
   ProductCode:
   - sds
   - pds
+  - scs
   Description_EN: The operation of the file
   Sample:
   - Created
@@ -3113,6 +3117,7 @@
   ProductCode:
   - sao
   - sds
+  - scs
   Description_EN: The UTC time that the object was created
   Sample:
   - '2014-11-22T01:45:51-06:00'
@@ -3130,6 +3135,30 @@
   Sample:
   - '2024-10-10T10:10:10.0000000Z'
   - '2024-11-11T11:11:11.0000000Z'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileCreatedTime
+  ProductCode:
+  - scs
+  Description_EN: The time the object file was created
+  Sample:
+  - 1652131848000
+  - 1577865600000
+  - 1648279273000
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileModifiedTime
+  ProductCode:
+  - scs
+  Description_EN: The time the object file was modified
+  Sample:
+  - 1652131848000
+  - 1577865600000
+  - 1648279273000
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -3387,6 +3416,7 @@
   - sds
   - xes
   - scs
+  - sao
   Description_EN: The PID of the subject process
   Sample: []
   DL_Type: int
@@ -3396,6 +3426,7 @@
 - Name: processUserDomain
   ProductCode:
   - sds
+  - sao
   Description_EN: The owner domain of the subject process image
   Sample:
   - NT AUTHORITY
@@ -3412,6 +3443,7 @@
   - ptn
   - scs
   - mns
+  - sao
   Description_EN: The exploited layer network protocol
   Sample:
   - '6'
@@ -4430,6 +4462,7 @@
   ProductCode:
   - sds
   - pds
+  - scs
   Description_EN: The entity before change/modification
   Sample:
   - '{"key":"<example>","type":"Service","attributes":[{"friendlyValue":null,"name":"binaryPathName","value":"C:\\Windows\\system32\\vssvc.exe"},{"friendlyValue":"manual","name":"startType","value":"3"},{"friendlyValue":"stopped","name":"state","value":"1"}]}'
@@ -4443,6 +4476,7 @@
   ProductCode:
   - sds
   - pds
+  - scs
   Description_EN: The current entity (or after change/modification)
   Sample:
   - '{"key":"<example>","type":"Service","attributes":[{"friendlyValue":null,"name":"binaryPathName","value":"C:\\Windows\\system32\\vssvc.exe"},{"friendlyValue":"manual","name":"startType","value":"3"},{"friendlyValue":"running","name":"state","value":"4"}]}'
@@ -5185,6 +5219,7 @@
 - Name: ruleIdStr
   ProductCode:
   - scs
+  - sao
   Description_EN: The rule ID
   Sample:
   - TM-00000043
@@ -5419,6 +5454,30 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: srcFileSize
+  ProductCode:
+  - scs
+  Description_EN: The file size of the source file
+  Sample:
+  - 0
+  - 1255856
+  - 1237880
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileModifiedTime
+  ProductCode:
+  - scs
+  Description_EN: The time the source file was modified
+  Sample:
+  - 1652131848000
+  - 1577865600000
+  - 1648279273000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: srcFilePath
   ProductCode: []
   Description_EN: The source file path
@@ -5439,7 +5498,8 @@
   DL_Searchable: true
   DL_Aggregable: false
 - Name: srcFileHashSha256
-  ProductCode: []
+  ProductCode:
+  - scs
   Description_EN: The SHA-256 of the source file
   Sample: []
   DL_Type: string
@@ -6601,27 +6661,6 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: fileHashMd5
-  ProductCode:
-  - qpf
-  Description_EN: The MD5 of the file
-  Sample:
-  - d5120786925038601a77c2e1eB9a3a0a
-  DL_Type: string
-  DL_CommonKey:
-  - FileMD5
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: requestMethod
-  ProductCode:
-  - qpf
-  Description_EN: The network protocol request method
-  Sample:
-  - POST
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
 - Name: detectionAggregationIds
   ProductCode:
   - sao
