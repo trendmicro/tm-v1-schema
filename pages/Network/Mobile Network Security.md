@@ -684,7 +684,6 @@ This documentation provides detailed information about all fields available for 
           <li>TXOne EdgeOne</li>
           <li>Trend Vision One Container Security</li>
           <li>Mobile Network Security</li>
-          <li>Trend Micro Apex One as a Service</li>
         </ul>
       </td>
     </tr>

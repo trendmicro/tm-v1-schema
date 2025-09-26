@@ -887,7 +887,6 @@
   ProductCode:
   - sds
   - pds
-  - scs
   Description_EN: The operation of the file
   Sample:
   - Created
@@ -1063,7 +1062,6 @@
   - ptn
   - scs
   - mns
-  - sao
   Description_EN: The exploited layer network protocol
   Sample:
   - '6'
@@ -1305,7 +1303,6 @@
   ProductCode:
   - sds
   - pds
-  - scs
   Description_EN: The entity before change/modification
   Sample:
   - '{"key":"<example>","type":"Service","attributes":[{"friendlyValue":null,"name":"binaryPathName","value":"C:\\Windows\\system32\\vssvc.exe"},{"friendlyValue":"manual","name":"startType","value":"3"},{"friendlyValue":"stopped","name":"state","value":"1"}]}'
@@ -1319,7 +1316,6 @@
   ProductCode:
   - sds
   - pds
-  - scs
   Description_EN: The current entity (or after change/modification)
   Sample:
   - '{"key":"<example>","type":"Service","attributes":[{"friendlyValue":null,"name":"binaryPathName","value":"C:\\Windows\\system32\\vssvc.exe"},{"friendlyValue":"manual","name":"startType","value":"3"},{"friendlyValue":"running","name":"state","value":"4"}]}'
