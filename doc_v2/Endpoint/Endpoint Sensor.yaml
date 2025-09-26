@@ -174,7 +174,6 @@
   - sao
   - xes
   - sds
-  - scs
   Description_EN: The SHA-256 of the object (objectFilePath)
   Sample:
   - A75C85F3B089993E9C042FB82ECB7757E8F460ED8065FC7991CAA38A6DE0F50C
@@ -829,7 +828,6 @@
   - sds
   - xes
   - scs
-  - sao
   Description_EN: The PID of the subject process
   Sample: []
   DL_Type: int
