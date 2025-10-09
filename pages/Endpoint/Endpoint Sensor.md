@@ -2518,6 +2518,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Apex One as a Service</li>
           <li>Endpoint Sensor</li>
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Vision One Container Security</li>
         </ul>
       </td>
     </tr>
