@@ -405,6 +405,7 @@
   - sao
   - xes
   - sds
+  - scs
   Description_EN: The SHA-1 of the objectFilePath object
   Sample:
   - 51B8646308EE0B68AD1F7F1291B85395434DE49A

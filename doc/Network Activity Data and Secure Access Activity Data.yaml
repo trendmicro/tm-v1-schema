@@ -1466,6 +1466,28 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: sshHassh
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The SSH hassh
+  Sample:
+  - 45e3942372f42899a63e9080ef25b0ae
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sshHasshServer
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The SSH hassh server
+  Sample:
+  - 4ceb58cad0f415b8fb16de236fa70ec5
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: reqScannedBytes
   ProductCode:
   - pdi
