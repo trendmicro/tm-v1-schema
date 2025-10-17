@@ -269,6 +269,15 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">agentStatus</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Endpoint Security agent status</td>
+      <td class="example">OFFLINE</td>
+      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
+    </tr>
+    <tr>
       <td class="field-name">aggregatedCount</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1094,6 +1103,22 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">endpointStatus</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The endpoint device status</td>
+      <td class="example">
+        <ul>
+          <li>ON</li>
+          <li>OFF</li>
+          <li>SUSPENDED</li>
+          <li>UNKNOWN</li>
+        </ul>
+      </td>
+      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
+    </tr>
+    <tr>
       <td class="field-name">endTime</td>
       <td class="type">long</td>
       <td class="searchable">true</td>
@@ -1787,6 +1812,15 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">lastConnectedTime</td>
+      <td class="type">long</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The last time the endpoint was connected (in Unix milliseconds)</td>
+      <td class="example">1656324260000</td>
+      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
+    </tr>
+    <tr>
       <td class="field-name">lastSeen</td>
       <td class="type">real</td>
       <td class="searchable">false</td>
@@ -2381,6 +2415,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Apex One as a Service</li>
           <li>Endpoint Sensor</li>
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Vision One Container Security</li>
         </ul>
       </td>
     </tr>
@@ -5203,6 +5238,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
     </tr>
@@ -6491,7 +6527,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 299
+- **Total Fields:** 302
 - **Layer:** Endpoint
 - **Product:** Trend Cloud One - Endpoint & Workload Security
 

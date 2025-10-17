@@ -3667,6 +3667,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Apex One as a Service</li>
           <li>Endpoint Sensor</li>
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Vision One Container Security</li>
         </ul>
       </td>
     </tr>
@@ -7304,6 +7305,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
     </tr>

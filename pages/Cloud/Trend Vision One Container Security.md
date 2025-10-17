@@ -940,21 +940,6 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectFileCreatedTime</td>
-      <td class="type">long</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The time the object file was created</td>
-      <td class="example">
-        <ul>
-          <li>1652131848000</li>
-          <li>1577865600000</li>
-          <li>1648279273000</li>
-        </ul>
-      </td>
-      <td class="products">Trend Vision One Container Security</td>
-    </tr>
-    <tr>
       <td class="field-name">objectFileCreation</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -970,6 +955,28 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Vision One Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileHashSha1</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA1</td>
+      <td class="description">The SHA-1 of the objectFilePath object</td>
+      <td class="example">
+        <ul>
+          <li>51B8646308EE0B68AD1F7F1291B85395434DE49A</li>
+          <li>36C5D12033B2EAF251BAE61C00690FFB17FDDC87</li>
+          <li>2586528000199793730B05D3F169BCF139E4D7A1</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
           <li>Trend Vision One Container Security</li>
         </ul>
@@ -1958,6 +1965,15 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">srcFileHashSha1</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA1</td>
+      <td class="description">The SHA-1 of the source file</td>
+      <td class="example">-</td>
+      <td class="products">Trend Vision One Container Security</td>
+    </tr>
+    <tr>
       <td class="field-name">srcFileHashSha256</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -2075,7 +2091,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 103
+- **Total Fields:** 104
 - **Layer:** Cloud
 - **Product:** Trend Vision One Container Security
 
