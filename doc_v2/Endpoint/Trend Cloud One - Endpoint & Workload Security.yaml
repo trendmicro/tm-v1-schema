@@ -438,6 +438,7 @@
   - sao
   - xes
   - sds
+  - scs
   Description_EN: The SHA-1 of the objectFilePath object
   Sample:
   - 51B8646308EE0B68AD1F7F1291B85395434DE49A
@@ -2587,6 +2588,39 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: lastConnectedTime
+  ProductCode:
+  - sds
+  Description_EN: The last time the endpoint was connected (in Unix 
+    milliseconds)
+  Sample:
+  - 1656324260000
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: agentStatus
+  ProductCode:
+  - sds
+  Description_EN: The Endpoint Security agent status
+  Sample:
+  - OFFLINE
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointStatus
+  ProductCode:
+  - sds
+  Description_EN: The endpoint device status
+  Sample:
+  - ON
+  - OFF
+  - SUSPENDED
+  - UNKNOWN
+  DL_Type: string
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: endpointGuid
   ProductCode:
   - sds

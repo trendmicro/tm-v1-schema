@@ -2525,6 +2525,32 @@
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
+- Name: sshHassh
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The SSH client application fingerprint
+  Sample:
+  - 45e3942372f42899a63e9080ef25b0ae
+  - 3cd1e0adbf5008e6566f6b807296cca0
+  - b526d4ea3a96b2ebc6f3c23d014b231b
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sshHasshServer
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The SSH server application fingerprint
+  Sample:
+  - 4ceb58cad0f415b8fb16de236fa70ec5
+  - 2475e2f09ec3177a79355ab3ebe95ba5
+  - 67b87b58168b7ae9ffbfd31a59b84005
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: eventTime
   ProductCode:
   - sig
@@ -3373,6 +3399,28 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: sshHassh
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The SSH hassh
+  Sample:
+  - 45e3942372f42899a63e9080ef25b0ae
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sshHasshServer
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The SSH hassh server
+  Sample:
+  - 4ceb58cad0f415b8fb16de236fa70ec5
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: reqScannedBytes
   ProductCode:
   - pdi
