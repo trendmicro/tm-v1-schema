@@ -3457,6 +3457,7 @@ This documentation provides detailed information about all fields available for 
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
     </tr>
@@ -4525,6 +4526,74 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
     </tr>
     <tr>
+      <td class="field-name">sshHassh</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The SSH client application fingerprint</td>
+      <td class="example">
+        <ul>
+          <li>45e3942372f42899a63e9080ef25b0ae</li>
+          <li>3cd1e0adbf5008e6566f6b807296cca0</li>
+          <li>b526d4ea3a96b2ebc6f3c23d014b231b</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">sshHassh</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The SSH hassh</td>
+      <td class="example">45e3942372f42899a63e9080ef25b0ae</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">sshHasshServer</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The SSH server application fingerprint</td>
+      <td class="example">
+        <ul>
+          <li>4ceb58cad0f415b8fb16de236fa70ec5</li>
+          <li>2475e2f09ec3177a79355ab3ebe95ba5</li>
+          <li>67b87b58168b7ae9ffbfd31a59b84005</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">sshHasshServer</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The SSH hassh server</td>
+      <td class="example">4ceb58cad0f415b8fb16de236fa70ec5</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">sslCertCommonName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -5057,6 +5126,21 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Network Sensor</li>
           <li>TXOne EdgeOne</li>
           <li>Mobile Network Security</li>
+          <li>TippingPoint Security Management System</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">vLANId</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The virtual LAN ID</td>
+      <td class="example">4095</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -5065,7 +5149,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
 </div>
 
 ## Field Statistics
-- **Total Fields:** 246
+- **Total Fields:** 251
 - **Layer:** Network
 - **Product:** Network Sensor
 
