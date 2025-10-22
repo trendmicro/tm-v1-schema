@@ -3457,6 +3457,7 @@ This documentation provides detailed information about all fields available for 
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
     </tr>
@@ -5125,6 +5126,21 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Network Sensor</li>
           <li>TXOne EdgeOne</li>
           <li>Mobile Network Security</li>
+          <li>TippingPoint Security Management System</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">vLANId</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The virtual LAN ID</td>
+      <td class="example">4095</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -5133,7 +5149,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
 </div>
 
 ## Field Statistics
-- **Total Fields:** 250
+- **Total Fields:** 251
 - **Layer:** Network
 - **Product:** Network Sensor
 

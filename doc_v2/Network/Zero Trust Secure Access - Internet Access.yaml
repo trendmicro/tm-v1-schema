@@ -283,6 +283,32 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: remarks
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sca
+  - sao
+  - sem
+  - stp
+  - ptn
+  - xms
+  - sfs
+  - sss
+  - sig
+  Description_EN: The additional information
+  Sample:
+  - 'warning: fork: Resource temporarily unavailable'
+  - 'pam_unix(cron:session): session opened for user root by (uid=0)'
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:
+    EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.
+    [CLIENT: 10.10.10.10]  "
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: act
   ProductCode:
   - scs

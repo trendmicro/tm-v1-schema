@@ -686,6 +686,7 @@ This documentation provides detailed information about all fields available for 
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
     </tr>
@@ -805,6 +806,7 @@ This documentation provides detailed information about all fields available for 
           <li>Network Sensor</li>
           <li>TXOne EdgeOne</li>
           <li>Mobile Network Security</li>
+          <li>TippingPoint Security Management System</li>
         </ul>
       </td>
     </tr>

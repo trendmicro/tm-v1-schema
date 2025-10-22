@@ -100,7 +100,7 @@
   DL_CommonKey:
   - EmailMessageID
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: ruleName
   ProductCode:
   - sds
@@ -239,6 +239,7 @@
   - xms
   - sfs
   - sss
+  - sig
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -349,7 +350,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: orgId
   ProductCode:
   - sca
@@ -622,7 +623,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: mailbox
   ProductCode:
   - sca

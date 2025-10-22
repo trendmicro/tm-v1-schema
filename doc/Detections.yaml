@@ -963,7 +963,7 @@
   DL_CommonKey:
   - EmailMessageID
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: techniqueId
   ProductCode:
   - pts
@@ -1197,6 +1197,7 @@
   - xms
   - sfs
   - sss
+  - sig
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -1746,7 +1747,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: orgId
   ProductCode:
   - sca
@@ -3873,6 +3874,7 @@
   - xns
   - ptn
   - mns
+  - ptp
   Description_EN: The virtual LAN ID
   Sample: []
   DL_Type: int
