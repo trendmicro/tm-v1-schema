@@ -688,7 +688,7 @@
   DL_CommonKey:
   - EmailMessageID
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: tags
   ProductCode:
   - ALL
@@ -877,6 +877,7 @@
   - xms
   - sfs
   - sss
+  - sig
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'

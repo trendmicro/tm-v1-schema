@@ -1494,6 +1494,37 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
+      <td class="field-name">remarks</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The additional information</td>
+      <td class="example">
+        <ul>
+          <li>warning: fork: Resource temporarily unavailable</li>
+          <li>pam_unix(cron:session): session opened for user root by (uid=0)</li>
+          <li>WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain: EXAMPLE.com: Login failed for user &#x27;example_user&#x27;. Reason: The account is disabled. [CLIENT: 10.10.10.10]  </li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Trend Micro Deep Security</li>
+          <li>Trend Micro Cloud App Security</li>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Micro Email Security</li>
+          <li>Trend Cloud One - Network Security</li>
+          <li>TXOne EdgeOne</li>
+          <li>Email Sensor</li>
+          <li>File Security</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">request</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -2065,7 +2096,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 96
+- **Total Fields:** 97
 - **Layer:** Network
 - **Product:** Zero Trust Secure Access - Internet Access
 
