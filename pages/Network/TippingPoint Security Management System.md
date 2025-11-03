@@ -916,12 +916,29 @@ This documentation provides detailed information about all fields available for 
         </ul>
       </td>
     </tr>
+    <tr>
+      <td class="field-name">vLANId</td>
+      <td class="type">int</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The virtual LAN ID</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>TXOne EdgeOne</li>
+          <li>Mobile Network Security</li>
+          <li>TippingPoint Security Management System</li>
+        </ul>
+      </td>
+    </tr>
   </tbody>
 </table>
 </div>
 
 ## Field Statistics
-- **Total Fields:** 25
+- **Total Fields:** 26
 - **Layer:** Network
 - **Product:** TippingPoint Security Management System
 

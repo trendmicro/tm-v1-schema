@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">2782</span>
+      <span class="stat-number">2786</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -308,7 +308,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Network%20Sensor" class="product-link">
         <div class="product-info">
           <span>Network Sensor</span>
-          <span class="field-count">250 fields</span>
+          <span class="field-count">251 fields</span>
         </div>
       </a>
     </li>
@@ -316,7 +316,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/TippingPoint%20Security%20Management%20System" class="product-link">
         <div class="product-info">
           <span>TippingPoint Security Management System</span>
-          <span class="field-count">25 fields</span>
+          <span class="field-count">26 fields</span>
         </div>
       </a>
     </li>
@@ -332,7 +332,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Trend%20Micro%20Deep%20Discovery%20Inspector" class="product-link">
         <div class="product-info">
           <span>Trend Micro Deep Discovery Inspector</span>
-          <span class="field-count">246 fields</span>
+          <span class="field-count">247 fields</span>
         </div>
       </a>
     </li>
@@ -348,7 +348,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Zero%20Trust%20Secure%20Access%20-%20Internet%20Access" class="product-link">
         <div class="product-info">
           <span>Zero Trust Secure Access - Internet Access</span>
-          <span class="field-count">96 fields</span>
+          <span class="field-count">97 fields</span>
         </div>
       </a>
     </li>
