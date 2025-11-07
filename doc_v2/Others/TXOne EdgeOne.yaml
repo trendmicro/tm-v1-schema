@@ -213,6 +213,7 @@
   - xms
   - sfs
   - sss
+  - sig
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -436,6 +437,7 @@
   - xns
   - ptn
   - mns
+  - ptp
   Description_EN: The virtual LAN ID
   Sample: []
   DL_Type: int

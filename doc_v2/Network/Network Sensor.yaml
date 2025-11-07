@@ -597,7 +597,7 @@
   DL_CommonKey:
   - EmailMessageID
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: techniqueId
   ProductCode:
   - pts
@@ -781,6 +781,7 @@
   - xms
   - sfs
   - sss
+  - sig
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -2224,6 +2225,7 @@
   - xns
   - ptn
   - mns
+  - ptp
   Description_EN: The virtual LAN ID
   Sample: []
   DL_Type: int
@@ -2863,6 +2865,17 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: vLANId
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The virtual LAN ID
+  Sample:
+  - 4095
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: flowId
   ProductCode:
   - pdi
@@ -3132,7 +3145,7 @@
   DL_CommonKey:
   - EmailMessageID
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: mailMsgSubject
   ProductCode:
   - pdi

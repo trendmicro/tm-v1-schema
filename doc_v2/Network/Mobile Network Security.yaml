@@ -452,6 +452,7 @@
   - xns
   - ptn
   - mns
+  - ptp
   Description_EN: The virtual LAN ID
   Sample: []
   DL_Type: int
