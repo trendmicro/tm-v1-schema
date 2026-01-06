@@ -698,7 +698,7 @@
   DL_CommonKey:
   - FileSHA2
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: compressedFileHashSha256
   ProductCode:
   - pdi
@@ -984,6 +984,7 @@
   - sao
   - pdi
   - xns
+  - xes
   Description_EN: The detected technique ID based on the alert filter
   Sample:
   - MITREV9.T1090
@@ -1687,7 +1688,7 @@
   DL_CommonKey:
   - UserAccount
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: processUserId
   ProductCode:
   - sds
@@ -4893,7 +4894,7 @@
   DL_CommonKey:
   - FileSHA2
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: appIsSystem
   ProductCode:
   - ams
@@ -5391,6 +5392,7 @@
 - Name: vendor
   ProductCode:
   - sao
+  - sds
   Description_EN: The device vendor
   Sample:
   - adata
@@ -5401,6 +5403,7 @@
 - Name: deviceModel
   ProductCode:
   - sao
+  - sds
   Description_EN: The device model number
   Sample:
   - c96a
@@ -5411,6 +5414,7 @@
 - Name: deviceSerial
   ProductCode:
   - sao
+  - sds
   Description_EN: The device serial ID
   Sample:
   - 000000063a2e8f
@@ -5548,6 +5552,7 @@
 - Name: dacDeviceType
   ProductCode:
   - sao
+  - sds
   Description_EN: The device type
   Sample:
   - USB storage device
@@ -5561,6 +5566,7 @@
 - Name: accessPermission
   ProductCode:
   - sao
+  - sds
   Description_EN: The access permission type
   Sample:
   - Modify

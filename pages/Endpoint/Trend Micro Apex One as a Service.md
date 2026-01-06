@@ -215,7 +215,12 @@ This documentation provides detailed information about all fields available for 
           <li>Block</li>
         </ul>
       </td>
-      <td class="products">Trend Micro Apex One as a Service</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">act</td>
@@ -741,7 +746,12 @@ This documentation provides detailed information about all fields available for 
           <li>Network driver</li>
         </ul>
       </td>
-      <td class="products">Trend Micro Apex One as a Service</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">dceArtifactActions</td>
@@ -1028,7 +1038,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The device model number</td>
       <td class="example">c96a</td>
-      <td class="products">Trend Micro Apex One as a Service</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">deviceSerial</td>
@@ -1037,7 +1052,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The device serial ID</td>
       <td class="example">000000063a2e8f</td>
-      <td class="products">Trend Micro Apex One as a Service</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">direction</td>
@@ -8651,6 +8671,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Trend Micro Apex One as a Service</li>
           <li>Trend Micro Deep Discovery Inspector</li>
           <li>Network Sensor</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -8855,7 +8876,12 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="general-field">-</td>
       <td class="description">The device vendor</td>
       <td class="example">adata</td>
-      <td class="products">Trend Micro Apex One as a Service</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">winEventId</td>

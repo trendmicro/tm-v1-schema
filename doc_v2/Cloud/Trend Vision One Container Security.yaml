@@ -956,7 +956,7 @@
   DL_CommonKey:
   - UserAccount
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: policyName
   ProductCode:
   - sao

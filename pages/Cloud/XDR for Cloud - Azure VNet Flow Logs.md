@@ -1,12 +1,12 @@
 ---
 layout: default
-title: XDR for Cloud - AWS VPC Flow Logs - Cloud
+title: XDR for Cloud - Azure VNet Flow Logs - Cloud
 ---
 
-# XDR for Cloud - AWS VPC Flow Logs
+# XDR for Cloud - Azure VNet Flow Logs
 **Layer:** Cloud
 
-This documentation provides detailed information about all fields available for XDR for Cloud - AWS VPC Flow Logs.
+This documentation provides detailed information about all fields available for XDR for Cloud - Azure VNet Flow Logs.
 
 <style>
 
@@ -202,38 +202,6 @@ This documentation provides detailed information about all fields available for 
   </thead>
   <tbody>
     <tr>
-      <td class="field-name">action</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The traffic processing action</td>
-      <td class="example">
-        <ul>
-          <li>ACCEPT</li>
-          <li>REJECT</li>
-        </ul>
-      </td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">azId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The Availability Zone ID</td>
-      <td class="example">apse2-az3</td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">bytes</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The number of transmitted data bytes</td>
-      <td class="example">15044</td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
       <td class="field-name">dpt</td>
       <td class="type">int</td>
       <td class="searchable">true</td>
@@ -268,15 +236,6 @@ This documentation provides detailed information about all fields available for 
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">end</td>
-      <td class="type">long</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The time when the last data packet was received (in Unix seconds)</td>
-      <td class="example">1616729349</td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
     </tr>
     <tr>
       <td class="field-name">eventId</td>
@@ -363,112 +322,6 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">flowType</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The type of traffic (type)</td>
-      <td class="example">
-        <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
-          <li>EFA</li>
-        </ul>
-      </td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">instanceId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The instance ID</td>
-      <td class="example">i-01234567890abcdef</td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">logStatus</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The VPC Flow Log status</td>
-      <td class="example">
-        <ul>
-          <li>OK</li>
-          <li>NODATA</li>
-          <li>SKIPDATA</li>
-        </ul>
-      </td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">packets</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The number of transmitted data packets</td>
-      <td class="example">14</td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">pktDstAddr</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
-        </ul>
-      </td>
-      <td class="description">The packet level destination IP</td>
-      <td class="example">10.10.10.10</td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">pktDstCloudServiceName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The subset IP address range name for cloud service destination IP (pkt-dst-aws-service)</td>
-      <td class="example">
-        <ul>
-          <li>AMAZON</li>
-          <li>EC2</li>
-          <li>ROUTE53</li>
-        </ul>
-      </td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">pktSrcAddr</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
-        </ul>
-      </td>
-      <td class="description">The packet level source IP</td>
-      <td class="example">10.10.10.10</td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">pktSrcCloudServiceName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The subset IP address range name for cloud service source IP (pkt-src-aws-service)</td>
-      <td class="example">
-        <ul>
-          <li>AMAZON</li>
-          <li>EC2</li>
-          <li>ROUTE53</li>
-        </ul>
-      </td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
       <td class="field-name">pname</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -486,6 +339,28 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Deep Discovery Inspector</li>
           <li>Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">ruleName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the triggered cloud access rule</td>
+      <td class="example">
+        <ul>
+          <li>ETL_Access Rules_Web_Host</li>
+          <li>block_wiki_for_guest</li>
+          <li>BlockHighRiskTCPPortsFromInternet</li>
+          <li>unspecified</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
@@ -527,85 +402,6 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">start</td>
-      <td class="type">real</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The time when the first data packet was received (in Unix seconds)</td>
-      <td class="example">1616729292</td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">subLocationId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The sublocation ID</td>
-      <td class="example">
-        <ul>
-          <li>lz-0abcd123efg4567h</li>
-          <li>op-0abcd123efg4567h</li>
-          <li>wz-0abcd123efg4567h</li>
-        </ul>
-      </td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">subLocationType</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The sublocation type</td>
-      <td class="example">
-        <ul>
-          <li>wavelength</li>
-          <li>outpost</li>
-          <li>localzone</li>
-        </ul>
-      </td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">subnetId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The subnet ID</td>
-      <td class="example">subnet-01234567890abcdef</td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">tcpFlags</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The bitmask value of the FIN/SYN/RST/SYN-ACK TCP flags</td>
-      <td class="example">
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>4</li>
-          <li>18</li>
-        </ul>
-      </td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
-      <td class="field-name">trafficPath</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The egress traffic path number</td>
-      <td class="example">
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>8</li>
-        </ul>
-      </td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
-    <tr>
       <td class="field-name">vpcFlowLogsVersion</td>
       <td class="type">int</td>
       <td class="searchable">false</td>
@@ -626,23 +422,14 @@ This documentation provides detailed information about all fields available for 
         </ul>
       </td>
     </tr>
-    <tr>
-      <td class="field-name">vpcId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The VPC ID</td>
-      <td class="example">vpc-01234567890abcdef</td>
-      <td class="products">XDR for Cloud - AWS VPC Flow Logs</td>
-    </tr>
   </tbody>
 </table>
 </div>
 
 ## Field Statistics
-- **Total Fields:** 29
+- **Total Fields:** 11
 - **Layer:** Cloud
-- **Product:** XDR for Cloud - AWS VPC Flow Logs
+- **Product:** XDR for Cloud - Azure VNet Flow Logs
 
 ---
 *Generated by XDR Common Schema Public Doc Generator V2*
