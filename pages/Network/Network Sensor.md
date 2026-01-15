@@ -701,6 +701,21 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">clientTls</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The transport layer security of the client</td>
+      <td class="example">TLS 1.2</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">cnt</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1738,7 +1753,7 @@ This documentation provides detailed information about all fields available for 
           <li>Network Sensor</li>
           <li>Trend Micro Deep Discovery Inspector</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>azv</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -1818,7 +1833,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Deep Discovery Inspector</li>
           <li>Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>azv</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -1856,7 +1871,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Deep Discovery Inspector</li>
           <li>Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>azv</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -3231,7 +3246,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Deep Discovery Inspector</li>
           <li>Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>azv</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -4282,6 +4297,22 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
     </tr>
     <tr>
+      <td class="field-name">serverTls</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The TLS version between the client and server</td>
+      <td class="example">TLS 1.2</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">sessionEnd</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -4922,6 +4953,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Trend Micro Apex One as a Service</li>
           <li>Trend Micro Deep Discovery Inspector</li>
           <li>Network Sensor</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -5149,7 +5181,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
 </div>
 
 ## Field Statistics
-- **Total Fields:** 251
+- **Total Fields:** 253
 - **Layer:** Network
 - **Product:** Network Sensor
 

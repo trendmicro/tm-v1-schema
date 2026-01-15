@@ -120,11 +120,11 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Layers</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">30</span>
+      <span class="stat-number">31</span>
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">2786</span>
+      <span class="stat-number">2807</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -173,6 +173,14 @@ This page provides links to detailed field documentation for all products organi
         <div class="product-info">
           <span>XDR for Cloud - AWS VPC Flow Logs</span>
           <span class="field-count">29 fields</span>
+        </div>
+      </a>
+    </li>
+    <li class="product-item">
+      <a href="Cloud/XDR%20for%20Cloud%20-%20Azure%20VNet%20Flow%20Logs" class="product-link">
+        <div class="product-info">
+          <span>XDR for Cloud - Azure VNet Flow Logs</span>
+          <span class="field-count">11 fields</span>
         </div>
       </a>
     </li>
@@ -232,7 +240,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Endpoint/Endpoint%20Sensor" class="product-link">
         <div class="product-info">
           <span>Endpoint Sensor</span>
-          <span class="field-count">381 fields</span>
+          <span class="field-count">382 fields</span>
         </div>
       </a>
     </li>
@@ -240,7 +248,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Endpoint/Trend%20Cloud%20One%20-%20Endpoint%20%26%20Workload%20Security" class="product-link">
         <div class="product-info">
           <span>Trend Cloud One - Endpoint & Workload Security</span>
-          <span class="field-count">302 fields</span>
+          <span class="field-count">307 fields</span>
         </div>
       </a>
     </li>
@@ -308,7 +316,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Network%20Sensor" class="product-link">
         <div class="product-info">
           <span>Network Sensor</span>
-          <span class="field-count">251 fields</span>
+          <span class="field-count">253 fields</span>
         </div>
       </a>
     </li>
@@ -332,7 +340,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Trend%20Micro%20Deep%20Discovery%20Inspector" class="product-link">
         <div class="product-info">
           <span>Trend Micro Deep Discovery Inspector</span>
-          <span class="field-count">247 fields</span>
+          <span class="field-count">249 fields</span>
         </div>
       </a>
     </li>

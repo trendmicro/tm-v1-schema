@@ -486,7 +486,7 @@
   DL_CommonKey:
   - FileSHA2
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: compressedFileHashSha256
   ProductCode:
   - pdi
@@ -618,6 +618,7 @@
   - sao
   - pdi
   - xns
+  - xes
   Description_EN: The detected technique ID based on the alert filter
   Sample:
   - MITREV9.T1090
@@ -2575,6 +2576,19 @@
   - URL
   DL_Searchable: true
   DL_Aggregable: true
+- Name: serverTls
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  Description_EN: The TLS version between the client and server
+  Sample:
+  - TLS 1.2
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: eventName
   ProductCode:
   - sig
@@ -2770,6 +2784,18 @@
   - xns
   Description_EN: The JA3 fingerprint
   Sample:
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientTls
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  Description_EN: The transport layer security of the client
+  Sample:
+  - TLS 1.2
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

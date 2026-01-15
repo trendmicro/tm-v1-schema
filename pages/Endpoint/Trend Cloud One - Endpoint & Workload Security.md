@@ -202,6 +202,27 @@ This documentation provides detailed information about all fields available for 
   </thead>
   <tbody>
     <tr>
+      <td class="field-name">accessPermission</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The access permission type</td>
+      <td class="example">
+        <ul>
+          <li>Modify</li>
+          <li>Read and execute</li>
+          <li>List device content only</li>
+          <li>Block</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">act</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -580,6 +601,27 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">dacDeviceType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The device type</td>
+      <td class="example">
+        <ul>
+          <li>USB storage device</li>
+          <li>Mobile devices</li>
+          <li>Floppy disks</li>
+          <li>Network driver</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">dceArtifactActions</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -786,6 +828,34 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Vision One Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Trend Vision One Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">deviceModel</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The device model number</td>
+      <td class="example">c96a</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">deviceSerial</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The device serial ID</td>
+      <td class="example">000000063a2e8f</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -6280,6 +6350,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Trend Micro Apex One as a Service</li>
           <li>Trend Micro Deep Discovery Inspector</li>
           <li>Network Sensor</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -6448,6 +6519,20 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
+      <td class="field-name">vendor</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The device vendor</td>
+      <td class="example">adata</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">vpcId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -6527,7 +6612,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 302
+- **Total Fields:** 307
 - **Layer:** Endpoint
 - **Product:** Trend Cloud One - Endpoint & Workload Security
 

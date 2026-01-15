@@ -311,6 +311,25 @@
   - FileName
   DL_Searchable: true
   DL_Aggregable: false
+- Name: tags
+  ProductCode:
+  - ALL
+  - sds
+  - sao
+  - pdi
+  - xns
+  - xes
+  Description_EN: The detected technique ID based on the alert filter
+  Sample:
+  - MITREV9.T1090
+  - MITRE.T1071
+  - MITREV9.T1059.001
+  DL_Type: dynamic
+  DL_CommonKey:
+  - Technique
+  - Tactic
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: tacticId
   ProductCode:
   - pdi
@@ -2250,7 +2269,7 @@
   DL_CommonKey:
   - UserAccount
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: rawDataStr
   ProductCode:
   - xes

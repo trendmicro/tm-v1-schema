@@ -1,0 +1,162 @@
+- Name: eventTime
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  - vpc
+  - azv
+  Description_EN: The time the agent or product detected the event
+  Sample:
+  - 1657135700000
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dst
+  ProductCode:
+  - sig
+  - szn
+  - vpc
+  - azv
+  Description_EN: The destination IP address (dstaddr)
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: src
+  ProductCode:
+  - sig
+  - szn
+  - vpc
+  - azv
+  Description_EN: The source IP address (srcaddr)
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventName
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  - vpc
+  - azv
+  Description_EN: The name of the log event
+  Sample:
+  - SWG_ACTIVITY_LOG
+  - FIREWALL_ACTIVITY_LOG
+  - VPC_ACTIVITY_LOG
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: ruleName
+  ProductCode:
+  - sig
+  - szn
+  - azv
+  Description_EN: The name of the triggered cloud access rule
+  Sample:
+  - ETL_Access Rules_Web_Host
+  - block_wiki_for_guest
+  - BlockHighRiskTCPPortsFromInternet
+  - unspecified
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: pname
+  ProductCode:
+  - sig
+  - pdi
+  - xns
+  - vpc
+  - azv
+  Description_EN: The product name
+  Sample:
+  - Secure Web Gateway
+  - XDR for Cloud - AWS VPC Flow Logs
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: spt
+  ProductCode:
+  - szn
+  - vpc
+  - azv
+  Description_EN: The virtual port of the source assigned to the Secure Access 
+    Module (srcport)
+  Sample:
+  - 57763
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dpt
+  ProductCode:
+  - szn
+  - vpc
+  - azv
+  Description_EN: The service destination port of the private application server
+    (dstport)
+  Sample:
+  - 443
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventId
+  ProductCode:
+  - xns
+  - pdi
+  - vpc
+  - azv
+  Description_EN: The event ID
+  Sample:
+  - '200139'
+  - '200140'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: vpcFlowLogsVersion
+  ProductCode:
+  - vpc
+  - azv
+  Description_EN: The VPC Flow Logs version (version)
+  Sample:
+  - 2
+  - 3
+  - 4
+  - 5
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: flowDirection
+  ProductCode:
+  - vpc
+  - azv
+  Description_EN: The network interface traffic direction
+  Sample:
+  - ingress
+  - egress
+  - I
+  - O
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

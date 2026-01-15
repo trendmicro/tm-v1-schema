@@ -439,7 +439,7 @@
   DL_CommonKey:
   - FileSHA2
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: appIsSystem
   ProductCode:
   - ams

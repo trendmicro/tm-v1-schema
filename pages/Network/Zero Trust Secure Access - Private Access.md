@@ -471,7 +471,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>azv</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -522,7 +522,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>azv</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -696,7 +696,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Deep Discovery Inspector</li>
           <li>Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>azv</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -714,7 +714,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Deep Discovery Inspector</li>
           <li>Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>azv</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -1062,7 +1062,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>azv</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -1148,12 +1148,14 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The TLS version between the Service Gateway and server/website</td>
+      <td class="description">The TLS version between the client and server</td>
       <td class="example">TLS 1.2</td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -1245,7 +1247,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>azv</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -1296,7 +1298,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>azv</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>

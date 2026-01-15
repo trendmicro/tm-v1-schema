@@ -693,6 +693,7 @@
   - sao
   - pdi
   - xns
+  - xes
   Description_EN: The detected technique ID based on the alert filter
   Sample:
   - MITREV9.T1090
@@ -1164,7 +1165,7 @@
   DL_CommonKey:
   - UserAccount
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: processUserId
   ProductCode:
   - sds
@@ -2166,6 +2167,39 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: vendor
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: The device vendor
+  Sample:
+  - adata
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: deviceModel
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: The device model number
+  Sample:
+  - c96a
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: deviceSerial
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: The device serial ID
+  Sample:
+  - 000000063a2e8f
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: quarantineFilePath
   ProductCode:
   - sao
@@ -2180,6 +2214,34 @@
   - FileFullPath
   DL_Searchable: true
   DL_Aggregable: false
+- Name: dacDeviceType
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: The device type
+  Sample:
+  - USB storage device
+  - Mobile devices
+  - Floppy disks
+  - Network driver
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: accessPermission
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: The access permission type
+  Sample:
+  - Modify
+  - Read and execute
+  - List device content only
+  - Block
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: winEventId
   ProductCode:
   - sds
@@ -3238,7 +3300,7 @@
   DL_CommonKey:
   - UserAccount
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: dpt
   ProductCode:
   - sds

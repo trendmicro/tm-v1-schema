@@ -615,7 +615,9 @@
   ProductCode:
   - sig
   - szn
-  Description_EN: The TLS version between the Service Gateway and server/website
+  - pdi
+  - xns
+  Description_EN: The TLS version between the client and server
   Sample:
   - TLS 1.2
   DL_Type: string

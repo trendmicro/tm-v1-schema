@@ -7147,6 +7147,35 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
+      <td class="field-name">tags</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>Technique</li>
+          <li>Tactic</li>
+        </ul>
+      </td>
+      <td class="description">The detected technique ID based on the alert filter</td>
+      <td class="example">
+        <ul>
+          <li>MITREV9.T1090</li>
+          <li>MITRE.T1071</li>
+          <li>MITREV9.T1059.001</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>ALL</li>
+          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Trend Micro Apex One as a Service</li>
+          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">timezone</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -7250,7 +7279,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 381
+- **Total Fields:** 382
 - **Layer:** Endpoint
 - **Product:** Endpoint Sensor
 
