@@ -510,6 +510,7 @@
   - sig
   - sca
   - szn
+  - scs
   Description_EN: The user principal name used to sign in to the proxy
   Sample:
   - sample_email@trendmicro.com
@@ -1056,6 +1057,7 @@
   ProductCode:
   - sca
   - sem
+  - scs
   Description_EN: The network protocol response code
   Sample:
   - '302'

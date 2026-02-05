@@ -221,7 +221,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
           <li>Trend Micro Deep Security</li>
           <li>TXOne StellarOne</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
         </ul>
       </td>
     </tr>
@@ -273,7 +273,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Deep Security</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>TXOne StellarOne</li>
           <li>Trend Vision One Container Security</li>
@@ -300,7 +300,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Apex One as a Service</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>TXOne StellarOne</li>
           <li>Trend Vision One Container Security</li>
@@ -360,7 +360,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
         </ul>
@@ -416,7 +416,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
         </ul>
@@ -595,7 +595,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Trend Micro Deep Security</li>
           <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>TXOne EdgeOne</li>
           <li>TXOne StellarOne</li>
           <li>File Security Storage</li>

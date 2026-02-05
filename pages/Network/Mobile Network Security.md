@@ -238,7 +238,7 @@ This documentation provides detailed information about all fields available for 
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
         </ul>
@@ -498,7 +498,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
         </ul>
@@ -554,7 +554,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
         </ul>

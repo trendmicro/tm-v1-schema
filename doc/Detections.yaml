@@ -1875,6 +1875,7 @@
   - sig
   - sca
   - szn
+  - scs
   Description_EN: The user principal name used to sign in to the proxy
   Sample:
   - sample_email@trendmicro.com
@@ -5196,6 +5197,60 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: actionName
+  ProductCode:
+  - scs
+  Description_EN: The action being taken
+  Sample:
+  - get
+  - list
+  - create
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: resourceCategory
+  ProductCode:
+  - scs
+  Description_EN: The category of the object
+  Sample:
+  - roles
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: resourceName
+  ProductCode:
+  - scs
+  Description_EN: The specific name of the object
+  Sample:
+  - pod-reader
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: resourceNamespace
+  ProductCode:
+  - scs
+  Description_EN: The namespace where the referenced resource exists
+  Sample:
+  - default
+  - kube-system
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestDecision
+  ProductCode:
+  - scs
+  Description_EN: Whether the request was allowed or denied by the authorization
+    system
+  Sample:
+  - allow/deny
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: ruleSetName
   ProductCode:
   - scs
@@ -6148,6 +6203,7 @@
   ProductCode:
   - sca
   - sem
+  - scs
   Description_EN: The network protocol response code
   Sample:
   - '302'

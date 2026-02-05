@@ -429,7 +429,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
         </ul>
@@ -485,7 +485,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
         </ul>
@@ -838,7 +838,7 @@ This documentation provides detailed information about all fields available for 
           <li>TippingPoint Security Management System</li>
           <li>Trend Cloud One - Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Trend Vision One Container Security</li>
           <li>File Security</li>
           <li>File Security Storage</li>
