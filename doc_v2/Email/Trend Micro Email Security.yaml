@@ -805,6 +805,7 @@
   ProductCode:
   - sca
   - sem
+  - scs
   Description_EN: The network protocol response code
   Sample:
   - '302'
