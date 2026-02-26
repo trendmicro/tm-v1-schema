@@ -300,8 +300,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The app name (if the subject is an app)</td>
-      <td class="example">Collection Nes Games</td>
+      <td class="description">App name</td>
+      <td class="example">Mobile Security Virus Test Application</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -309,8 +309,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">App name</td>
-      <td class="example">Mobile Security Virus Test Application</td>
+      <td class="description">The app name (if the subject is an app)</td>
+      <td class="example">Collection Nes Games</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -327,8 +327,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The app package name (if the subject is an app)</td>
-      <td class="example">com.ConsolesXX.CollectionNesGames</td>
+      <td class="description">The app package name</td>
+      <td class="example">com.example.app_pkg_name_file</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -336,17 +336,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The app package name</td>
-      <td class="example">com.example.app_pkg_name_file</td>
-      <td class="products">Mobile Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">appPublicKeySha1</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">FileSHA1</td>
-      <td class="description">The SHA-1 hash of the app public key (if the subject is an app)</td>
-      <td class="example">05FC638156219800DADAC48D8E621E0BCBD3C321</td>
+      <td class="description">The app package name (if the subject is an app)</td>
+      <td class="example">com.ConsolesXX.CollectionNesGames</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -359,12 +350,12 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
-      <td class="field-name">appSize</td>
+      <td class="field-name">appPublicKeySha1</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The app size (in bytes) if the subject is an app</td>
-      <td class="example">16906043</td>
+      <td class="general-field">FileSHA1</td>
+      <td class="description">The SHA-1 hash of the app public key (if the subject is an app)</td>
+      <td class="example">05FC638156219800DADAC48D8E621E0BCBD3C321</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -377,12 +368,12 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
-      <td class="field-name">appVerCode</td>
+      <td class="field-name">appSize</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The app version code (if the subject is an app)</td>
-      <td class="example">0</td>
+      <td class="description">The app size (in bytes) if the subject is an app</td>
+      <td class="example">16906043</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -392,6 +383,15 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The app version code</td>
       <td class="example">1</td>
+      <td class="products">Mobile Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">appVerCode</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The app version code (if the subject is an app)</td>
+      <td class="example">0</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -445,15 +445,6 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">endpointGuid</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">EndpointID</td>
-      <td class="description">Host GUID of the endpoint on which the event was detected</td>
-      <td class="example">11111111-1111-1111-1111-111111111111</td>
-      <td class="products">Mobile Security</td>
-    </tr>
-    <tr>
       <td class="field-name">endpointGUID</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -482,18 +473,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">endpointHostName</td>
+      <td class="field-name">endpointGuid</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">EndpointName</td>
-      <td class="description">The host name of the endpoint on which the event was detected</td>
-      <td class="example">
-        <ul>
-          <li>PHILIPSIBE09</li>
-          <li>WHAM6WK8XG2</li>
-          <li>MacBook-Pro-del-Meno</li>
-        </ul>
-      </td>
+      <td class="general-field">EndpointID</td>
+      <td class="description">Host GUID of the endpoint on which the event was detected</td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -525,6 +510,21 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">endpointHostName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EndpointName</td>
+      <td class="description">The host name of the endpoint on which the event was detected</td>
+      <td class="example">
+        <ul>
+          <li>PHILIPSIBE09</li>
+          <li>WHAM6WK8XG2</li>
+          <li>MacBook-Pro-del-Meno</li>
+        </ul>
+      </td>
+      <td class="products">Mobile Security</td>
+    </tr>
+    <tr>
       <td class="field-name">endpointIp</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -549,8 +549,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The endpoint device model</td>
-      <td class="example">Pixel 3 XL</td>
+      <td class="description">Mobile device model</td>
+      <td class="example">M2101K9G</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -558,8 +558,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">Mobile device model</td>
-      <td class="example">M2101K9G</td>
+      <td class="description">The endpoint device model</td>
+      <td class="example">Pixel 3 XL</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -575,15 +575,6 @@ This documentation provides detailed information about all fields available for 
           <li>-7909265752378976284</li>
         </ul>
       </td>
-      <td class="products">Mobile Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">eventId</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">Event type</td>
-      <td class="example">-</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -622,6 +613,15 @@ This documentation provides detailed information about all fields available for 
           <li>Data Detection and Response</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventId</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Event type</td>
+      <td class="example">-</td>
+      <td class="products">Mobile Security</td>
     </tr>
     <tr>
       <td class="field-name">eventName</td>
@@ -1079,21 +1079,6 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The host operating system name</td>
-      <td class="example">
-        <ul>
-          <li>Windows</li>
-          <li>Linux</li>
-          <li>macOS</li>
-        </ul>
-      </td>
-      <td class="products">Mobile Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">osName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
       <td class="description">The host OS name</td>
       <td class="example">
         <ul>
@@ -1114,16 +1099,16 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">osVer</td>
+      <td class="field-name">osName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The OS version</td>
+      <td class="description">The host operating system name</td>
       <td class="example">
         <ul>
-          <li>Amazon Linux 2</li>
-          <li>10.0.19044</li>
-          <li>10.0.19042</li>
+          <li>Windows</li>
+          <li>Linux</li>
+          <li>macOS</li>
         </ul>
       </td>
       <td class="products">Mobile Security</td>
@@ -1144,16 +1129,16 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">pname</td>
+      <td class="field-name">osVer</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">Internal product ID (Deprecated, use productCode)</td>
+      <td class="description">The OS version</td>
       <td class="example">
         <ul>
-          <li>2200</li>
-          <li>751</li>
-          <li>533</li>
+          <li>Amazon Linux 2</li>
+          <li>10.0.19044</li>
+          <li>10.0.19042</li>
         </ul>
       </td>
       <td class="products">Mobile Security</td>
@@ -1192,16 +1177,16 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">pver</td>
+      <td class="field-name">pname</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The product version</td>
+      <td class="description">Internal product ID (Deprecated, use productCode)</td>
       <td class="example">
         <ul>
-          <li>1.2.0.2752</li>
-          <li>1.0.345</li>
-          <li>1.2.0.2657</li>
+          <li>2200</li>
+          <li>751</li>
+          <li>533</li>
         </ul>
       </td>
       <td class="products">Mobile Security</td>
@@ -1238,16 +1223,16 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">request</td>
+      <td class="field-name">pver</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">URL</td>
-      <td class="description">Request URL</td>
+      <td class="general-field">-</td>
+      <td class="description">The product version</td>
       <td class="example">
         <ul>
-          <li>http://10.10.10.10/fake/site</li>
-          <li>http:///fake/param.cgi?action=list&amp;group=Alarm.Status</li>
-          <li>http://fake.com/</li>
+          <li>1.2.0.2752</li>
+          <li>1.0.345</li>
+          <li>1.2.0.2657</li>
         </ul>
       </td>
       <td class="products">Mobile Security</td>
@@ -1281,6 +1266,21 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">request</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">URL</td>
+      <td class="description">Request URL</td>
+      <td class="example">
+        <ul>
+          <li>http://10.10.10.10/fake/site</li>
+          <li>http:///fake/param.cgi?action=list&amp;group=Alarm.Status</li>
+          <li>http://fake.com/</li>
+        </ul>
+      </td>
+      <td class="products">Mobile Security</td>
     </tr>
     <tr>
       <td class="field-name">score</td>
