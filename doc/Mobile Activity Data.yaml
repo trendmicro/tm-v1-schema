@@ -720,6 +720,16 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: isSimulation
+  ProductCode:
+  - ALL
+  Description_EN: Whether a log is a simulation log
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: groupId
   ProductCode:
   - ALL

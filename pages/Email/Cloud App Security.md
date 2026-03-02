@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Trend Micro Email Security - Email
+title: Cloud App Security - Email
 ---
 
-# Trend Micro Email Security
+# Cloud App Security
 **Layer:** Email
 
-This documentation provides detailed information about all fields available for Trend Micro Email Security.
+This documentation provides detailed information about all fields available for Cloud App Security.
 
 <style>
 
@@ -222,18 +222,18 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Vision One Container Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Container Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Cloud App Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
@@ -241,6 +241,44 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">actResult</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The result of an action</td>
+      <td class="example">
+        <ul>
+          <li>Dropped</li>
+          <li>Successful</li>
+          <li>Accepted</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>TXOne StellarOne</li>
+          <li>Mobile Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">attachment</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The information about the email attachment</td>
+      <td class="example">{&quot;attachmentFileTlsh&quot;: &quot;&quot;, &quot;attachmentFileName&quot;: &quot;testfile.txt&quot;,&quot;attachmentFileHash&quot;: &quot;&quot;,&quot;attachmentFileSize&quot;: &quot;-1&quot;}</td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email Sensor</li>
         </ul>
       </td>
     </tr>
@@ -258,8 +296,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -279,11 +317,26 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">attachmentFileHashMd5</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileMD5</td>
+      <td class="description">The MD5 of the attached file (attachementFileName)</td>
+      <td class="example">
+        <ul>
+          <li>RSjbNuJB0hx39ZpzwLdipg==</li>
+          <li>+TmuTNLw3FMQlaTbPwjD8g==</li>
+          <li>+XWktHxXXdY0O4A82FQMzQ==</li>
+        </ul>
+      </td>
+      <td class="products">Cloud App Security</td>
     </tr>
     <tr>
       <td class="field-name">attachmentFileHashs</td>
@@ -299,8 +352,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -320,29 +373,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">attachmentFileHashSha256</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">FileSHA2</td>
-      <td class="description">The SHA-256 of the attached file (attachementFileName)</td>
-      <td class="example">
-        <ul>
-          <li>D81D4C14DDEB8CA390FFADA69265AAD46CDEDD72CDD332CB8AA17D924626B397</li>
-          <li>01DE1FC697D2D0850F0468474A3E1E0BF4D78B23F0633908CF82E504E0DCBFF9</li>
-          <li>02D16D9970AB635A7B05C3A268E23F5B41C419DD022F1054E9FD912BE130BDB0</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
         </ul>
       </td>
     </tr>
@@ -361,8 +393,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -382,9 +414,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
           <li>Email Sensor</li>
         </ul>
@@ -405,8 +437,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -425,8 +457,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -440,8 +472,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -460,8 +492,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -480,8 +512,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -500,8 +532,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -520,8 +552,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -535,8 +567,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -555,8 +587,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -575,54 +607,27 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">attachmentUrls</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The URLs and URL sources extracted from the email attachment</td>
-      <td class="example">-</td>
-      <td class="products">
-        <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Email Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">correlatedIntelligence</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The Correlated Intelligence detection</td>
-      <td class="example">{&quot;risk_type&quot;: &quot;Anomaly&quot;,&quot;matched_rules&quot;: [{&quot;threat_type&quot;: &quot;Possibly Unwanted Email&quot;,&quot;matched_filters&quot;: [{&quot;id&quot;:&quot;FIL013&quot;, &quot;name&quot;: &quot;Marketing Email Traits&quot;},{&quot;id&quot;:&quot;FIL098&quot;, &quot;name&quot;: &quot;Infrequent Sender Email Domain&quot;}],&quot;name&quot;: &quot;Possibly Unwanted Marketing Email&quot;,&quot;id&quot;: &quot;AN004&quot;}]}</td>
-      <td class="products">
-        <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Email Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">detectionDetail</td>
+      <td class="field-name">cloudAppName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The details about each event type</td>
+      <td class="description">The cloud app name</td>
       <td class="example">
         <ul>
-          <li>{}</li>
-          <li>{&quot;detail&quot;:&quot;4.7.1 \u003csample_email@trendmicro.com\u003e: Recipient address rejected: Ratelimit-2&quot;}</li>
-          <li>{&quot;detail&quot;:&quot;4.7.1 \u003csample_email@trendmicro.com.br\u003e: Recipient address rejected: Ratelimit-2&quot;}</li>
+          <li>teams</li>
+          <li>sharepoint</li>
+          <li>exchange</li>
+          <li>gmail</li>
         </ul>
       </td>
-      <td class="products">Trend Micro Email Security</td>
+      <td class="products">Cloud App Security</td>
     </tr>
     <tr>
       <td class="field-name">detectionType</td>
@@ -640,18 +645,39 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Messaging Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Deep Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">domainName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">DomainName</td>
+      <td class="description">The detected domain name</td>
+      <td class="example">
+        <ul>
+          <li>http://10.10.10.10</li>
+          <li>example.domain.com</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
         </ul>
       </td>
     </tr>
@@ -670,14 +696,36 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">engVer</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The engine version</td>
+      <td class="example">
+        <ul>
+          <li>1.0.0.1123_1.0.0.1101</li>
+          <li>9.0.1004</li>
+          <li>22.540.1001</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>File Security</li>
         </ul>
       </td>
     </tr>
@@ -698,16 +746,16 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Email Security</li>
+          <li>Email and Collaboration Security</li>
           <li>TXOne StellarOne</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>File Security Storage</li>
@@ -732,8 +780,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
           <li>Collaboration sensor</li>
         </ul>
@@ -771,16 +819,16 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
@@ -810,10 +858,10 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
@@ -829,8 +877,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">1657135700000</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -850,10 +898,25 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Apex One as a Service</li>
           <li>TXOne EdgeOne</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">firstSeen</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The first time the XDR log appeared</td>
+      <td class="example">1657195233000</td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>TXOne StellarOne</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -866,8 +929,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">11111111-1111-1111-1111-111111111111</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -887,26 +950,54 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">highlightMailMsgSubject</td>
+      <td class="field-name">highlightedFileName</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The file names of suspicious attachments</td>
+      <td class="example">
+        <ul>
+          <li>detect_me.zip</li>
+          <li>covid.zip</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">indicatorCount</td>
+      <td class="type">int</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The number of report indicators</td>
+      <td class="example">2</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">lastSeen</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The email subject</td>
-      <td class="example">
+      <td class="description">The last time the XDR log appeared</td>
+      <td class="example">1657195233000</td>
+      <td class="products">
         <ul>
-          <li>Delivery Status</li>
-          <li>Undelivered Mail Returned to Sender</li>
-          <li>Successful Mail Delivery Report</li>
+          <li>Cloud App Security</li>
+          <li>TXOne StellarOne</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
-      <td class="products">Trend Micro Email Security</td>
     </tr>
     <tr>
       <td class="field-name">logKey</td>
@@ -923,17 +1014,17 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
@@ -952,8 +1043,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -967,8 +1058,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -982,9 +1073,37 @@ This documentation provides detailed information about all fields available for 
       <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Mobile Security</li>
+          <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">mailbox</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Primary email address</td>
+      <td class="example">sample_email@trendmicro.com</td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">mailCacheId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The internal email cache ID to identify emails in the same group mails</td>
+      <td class="example">&lt;sample_email@trendmicro.com&gt;</td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1003,8 +1122,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1024,8 +1143,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1045,8 +1164,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1066,8 +1185,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1081,8 +1200,43 @@ This documentation provides detailed information about all fields available for 
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Cloud App Security</li>
+          <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">mailFolder</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The email folder name</td>
+      <td class="example">
+        <ul>
+          <li>CATEGORY_PROMOTIONS, UNREAD, INBOX</li>
+          <li>UNREAD, CATEGORY_PERSONAL, INBOX</li>
+          <li>UNREAD, CATEGORY_UPDATES, INBOX</li>
+        </ul>
+      </td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">mailFolder</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The email folder name</td>
+      <td class="example">
+        <ul>
+          <li>Inbox</li>
+          <li>Bandeja de entrada</li>
+          <li>Sent Items</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1096,8 +1250,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1117,8 +1271,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1132,36 +1286,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">HELO inpost.tmes.trendmicro.com</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Email Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">mailMetaText</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The postman meta text detected by Trend Micro Anti-Spam Engine</td>
-      <td class="example"></td>
-      <td class="products">
-        <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Email Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">mailMetaTraceId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The trace ID generated by Trend Micro Feedback Engine</td>
-      <td class="example"></td>
-      <td class="products">
-        <ul>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1175,11 +1301,20 @@ This documentation provides detailed information about all fields available for 
       <td class="example">1</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">mailMsgId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The internet message ID of the email</td>
+      <td class="example">&lt;sample_email@trendmicro.com&gt;</td>
+      <td class="products">Cloud App Security</td>
     </tr>
     <tr>
       <td class="field-name">mailMsgId</td>
@@ -1190,8 +1325,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">&lt;sample-id@trendmicro.com&gt;</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1210,11 +1345,11 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Cloud App Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Email and Collaboration Security</li>
+          <li>Apex One as a Service</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1233,8 +1368,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1248,8 +1383,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
         </ul>
       </td>
     </tr>
@@ -1262,8 +1397,22 @@ This documentation provides detailed information about all fields available for 
       <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">mailReturnPath</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The hidden email header that indicates where bounced messages are sent</td>
+      <td class="example">sample_email@trendmicro.com</td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1283,8 +1432,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1298,8 +1447,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1313,121 +1462,22 @@ This documentation provides detailed information about all fields available for 
       <td class="example">10.10.10.10</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">mailSmtpFromAddresses</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The envelope address of the sender</td>
-      <td class="example">sample_email@trendmicro.com</td>
-      <td class="products">Trend Micro Email Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">mailSmtpFromAddresses</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The sender email address</td>
-      <td class="example">sample_email@trendmicro.com</td>
-      <td class="products">
-        <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Email Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">mailSmtpHelo</td>
+      <td class="field-name">mailSourceDomain</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The domain name of the email server by using the SMTP HELO command</td>
+      <td class="description">Email domain of the sender</td>
       <td class="example">example.com</td>
-      <td class="products">Trend Micro Email Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">mailSmtpOriginalRecipients</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The envelope addresses of the original recipients</td>
-      <td class="example">sample_email@trendmicro.com</td>
-      <td class="products">Trend Micro Email Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">mailSmtpOriginalRecipients</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">Original email recipients in the SMTP envelope</td>
-      <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Email Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">mailSmtpRecipients</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The envelope addresses of the current recipients</td>
-      <td class="example">sample_email@trendmicro.com</td>
-      <td class="products">Trend Micro Email Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">mailSmtpRecipients</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">Email recipients in the SMTP envelope after scanning</td>
-      <td class="example">sample_email@trendmicro.com</td>
-      <td class="products">
-        <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Email Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">mailSmtpTls</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The SMTP TLS version, for example, TLS 1.2</td>
-      <td class="example">
-        <ul>
-          <li>noTLS</li>
-          <li>TLS 1.2</li>
-          <li>TLS 1.3</li>
-        </ul>
-      </td>
-      <td class="products">Trend Micro Email Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">mailSmtpTls</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The SMTP TLS version number</td>
-      <td class="example">
-        <ul>
-          <li>TLS 1.2</li>
-          <li>TLS 1.3</li>
-          <li>noTLS</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1446,8 +1496,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1466,8 +1516,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1486,8 +1536,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1507,8 +1557,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1522,11 +1572,26 @@ This documentation provides detailed information about all fields available for 
       <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">mailUniqueId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The unique ID of the email</td>
+      <td class="example">
+        <ul>
+          <li>example_unique_id_1</li>
+          <li>example_unique_id_2</li>
+          <li>example_unique_id_3</li>
+        </ul>
+      </td>
+      <td class="products">Cloud App Security</td>
     </tr>
     <tr>
       <td class="field-name">mailUrlHash</td>
@@ -1542,8 +1607,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1562,8 +1627,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1582,8 +1647,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1602,8 +1667,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1622,8 +1687,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1643,8 +1708,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1663,8 +1728,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1678,8 +1743,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">&lt;sample_email@trendmicro.com&gt;</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1698,8 +1763,22 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">mExternalUid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The unique ID of the email</td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1719,11 +1798,11 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1743,8 +1822,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
         </ul>
       </td>
     </tr>
@@ -1763,8 +1842,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1778,37 +1857,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">11111111-1111-1111-1111-111111111111</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Email Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">msgUuidChain</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The message UUID chain</td>
-      <td class="example">
-        <ul>
-          <li>00027ac3-f8f2-cc8f-d078-3a57f12f3d55;00027ac3-f8f2-cc8f-d078-3a57f12f3d55</li>
-          <li>0005ab64-3992-644c-3592-503c3610cec9;0005ab64-3992-644c-3592-503c3610cec9</li>
-          <li>00062621-fec4-9e4d-7609-25b2b3189214;00062621-fec4-9e4d-7609-25b2b3189214</li>
-        </ul>
-      </td>
-      <td class="products">Trend Micro Email Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">msgUuidChain</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The internal UUID chain for each email in Trend Micro Feedback Engine</td>
-      <td class="example">11111111-1111-1111-1111-111111111111;00000000-0000-0000-0000-000000000000</td>
-      <td class="products">
-        <ul>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1828,8 +1878,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
         </ul>
       </td>
     </tr>
@@ -1848,12 +1898,67 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Email and Collaboration Security</li>
           <li>Endpoint Sensor</li>
           <li>File Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">orgId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The organization ID</td>
+      <td class="example">
+        <ul>
+          <li>00000000-0000-0000-0000-000000000000</li>
+          <li>11111111-1111-1111-1111-111111111111</li>
+          <li>22222222-2222-2222-2222-222222222222</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">orgId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The organization ID</td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">patVer</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The version of the behavior pattern</td>
+      <td class="example">
+        <ul>
+          <li>35.1053.00</li>
+          <li>630</li>
+          <li>35.1071.00</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+          <li>Cloud App Security</li>
         </ul>
       </td>
     </tr>
@@ -1872,20 +1977,20 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1905,8 +2010,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1927,14 +2032,52 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Messaging Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>TXOne EdgeOne</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Mobile Network Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">policyTemplate</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The one-to-many data structure</td>
+      <td class="example">
+        <ul>
+          <li>policyName:Monitoreo All Files, template:Managed - All files</li>
+          <li>policyName:HSS DLP, template:All File Extension</li>
+          <li>India: Mobile Numbers</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">principalName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The user principal name used to sign in to the proxy</td>
+      <td class="example">sample_email@trendmicro.com</td>
+      <td class="products">
+        <ul>
+          <li>Messaging Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Cloud App Security</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -1953,19 +2096,41 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Email and Collaboration Security</li>
+          <li>Cloud One Network Security</li>
           <li>TXOne EdgeOne</li>
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Zero Trust Secure Access - Internet Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">reportGUID</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The GUID for Workbench to request report page data</td>
+      <td class="example">
+        <ul>
+          <li>00000000-0000-0000-0000-000000000000</li>
+          <li>11111111-1111-1111-1111-111111111111</li>
+          <li>22222222-2222-2222-2222-222222222222</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>File Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -1984,16 +2149,16 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Cloud One - Network Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Cloud One Network Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Security</li>
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
         </ul>
@@ -2013,9 +2178,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -2028,8 +2193,52 @@ This documentation provides detailed information about all fields available for 
       <td class="example">https://cas5-0-urlprotect.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fexample.io%2</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">riskConfidenceLevel</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The risk confidence level</td>
+      <td class="example">
+        <ul>
+          <li>0</li>
+          <li>1</li>
+          <li>2</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">riskLevel</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The risk level</td>
+      <td class="example">
+        <ul>
+          <li>1</li>
+          <li>high</li>
+          <li>No Risk</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2042,17 +2251,17 @@ This documentation provides detailed information about all fields available for 
       <td class="example">1656324260000</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
@@ -2082,21 +2291,66 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Email Sensor</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">ruleType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The access rule type</td>
+      <td class="example">
+        <ul>
+          <li>udso</li>
+          <li>point of entry</li>
+          <li>unknown</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">ruleUuid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The signature UUID from the DV (Digital Vaccine)</td>
+      <td class="example">
+        <ul>
+          <li>00000001-0001-0001-0001-000000007610</li>
+          <li>00000001-0001-0001-0001-000000007120</li>
+          <li>00000001-0001-0001-0001-000000017056</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>TippingPoint Security Management System</li>
+          <li>Cloud One Network Security</li>
+          <li>Cloud App Security</li>
+          <li>Zero Trust Secure Access - Private Access</li>
         </ul>
       </td>
     </tr>
@@ -2114,9 +2368,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -2130,9 +2384,9 @@ This documentation provides detailed information about all fields available for 
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
         </ul>
       </td>
@@ -2146,9 +2400,9 @@ This documentation provides detailed information about all fields available for 
       <td class="example">1657135700000</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
-          <li>Trend Micro Email Security</li>
+          <li>Email and Collaboration Security</li>
         </ul>
       </td>
     </tr>
@@ -2171,15 +2425,15 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -2199,25 +2453,60 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">senderIp</td>
+      <td class="field-name">schemaVersion</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The schema version</td>
+      <td class="example">1.0</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">score</td>
+      <td class="type">int</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The Web Reputation Services URL rating</td>
+      <td class="example">
+        <ul>
+          <li>71</li>
+          <li>81</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Mobile Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">signInCountries</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The sender IP</td>
-      <td class="example">10.10.10.10</td>
+      <td class="description">The countries from which a user signed in</td>
+      <td class="example">
+        <ul>
+          <li>PH</li>
+          <li>AU</li>
+        </ul>
+      </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Microsoft Entra ID</li>
         </ul>
       </td>
     </tr>
@@ -2237,11 +2526,38 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">suid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">UserAccount</td>
+      <td class="description">User name or mailbox</td>
+      <td class="example">
+        <ul>
+          <li>root</li>
+          <li>US EXAMPLE\TEST</li>
+          <li>sample_email@trendmicro.com</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Messaging Security</li>
+          <li>Deep Security</li>
+          <li>Cloud One Network Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
     </tr>
@@ -2254,12 +2570,60 @@ This documentation provides detailed information about all fields available for 
       <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">threatName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The threat name</td>
+      <td class="example">
+        <ul>
+          <li>Malicious_CnC_access_on_UDP_blocked</li>
+          <li>Malicious_CnC_access_on_TCP_blocked</li>
+          <li>Other protected file</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">urlCat</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The requested URL category</td>
+      <td class="example">
+        <ul>
+          <li>Untested</li>
+          <li>158</li>
+          <li>Web Advertisement</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Messaging Security</li>
+          <li>Apex One as a Service</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Cloud App Security</li>
+          <li>Mobile Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -2268,9 +2632,9 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 103
+- **Total Fields:** 119
 - **Layer:** Email
-- **Product:** Trend Micro Email Security
+- **Product:** Cloud App Security
 
 ---
 *Generated by XDR Common Schema Public Doc Generator V2*

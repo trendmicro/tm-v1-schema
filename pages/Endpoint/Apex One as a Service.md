@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Trend Cloud One - Endpoint & Workload Security - Endpoint
+title: Apex One as a Service - Endpoint
 ---
 
-# Trend Cloud One - Endpoint & Workload Security
+# Apex One as a Service
 **Layer:** Endpoint
 
-This documentation provides detailed information about all fields available for Trend Cloud One - Endpoint & Workload Security.
+This documentation provides detailed information about all fields available for Apex One as a Service.
 
 <style>
 
@@ -217,8 +217,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -243,18 +243,18 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Vision One Container Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Container Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Cloud App Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
@@ -280,23 +280,28 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
           <li>TXOne StellarOne</li>
           <li>Mobile Security</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">agentStatus</td>
+      <td class="field-name">additionalInfo</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The Endpoint Security agent status</td>
-      <td class="example">OFFLINE</td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
+      <td class="description">The filter rule info</td>
+      <td class="example">Default</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">aggregatedCount</td>
@@ -313,16 +318,58 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>TXOne StellarOne</li>
           <li>Data Detection and Response</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">application</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the requested application</td>
+      <td class="example">
+        <ul>
+          <li>HyperText Transfer Protocol</li>
+          <li>DoubleClick</li>
+          <li>The Secure HyperText Transfer Protocol</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Messaging Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">authId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The authorization ID</td>
+      <td class="example">
+        <ul>
+          <li>999</li>
+          <li>996</li>
+          <li>997</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -341,12 +388,35 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">blocking</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The blocking type</td>
+      <td class="example">
+        <ul>
+          <li>Web reputation</li>
+          <li>Web Server</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">bmGroup</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The one-to-many data structure</td>
+      <td class="example">logGenLocalDatetime:2022-07-08T09:21:11+00:00, act:Assessment, behaviorType:Registry, riskConfidenceLevel:1, ruleId:7, ruleName:New Service, behaviorCategory:Policy Enforcement, processFilePath:C:\Windows\SysWOW64\srts\wmipr.exe, aegisOperation:Set Key, objectFilePath:HKLM\SYSTEM\CurrentControlSet\Services\DpsiBSvc\Start, policyId:007, objectFileHashSha1:null, objectCmd:null, processFileHashSha1:null, processCmd:null, objectRegistryData:null, objectRegistryKeyHandle:null, objectRegistryValue:null</td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">cat</td>
@@ -362,31 +432,65 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">category</td>
+      <td class="field-name">cccaDetection</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The event category</td>
+      <td class="description">Is this log identified as a C&amp;C callback address detection</td>
+      <td class="example">Yes</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">cccaDetectionSource</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Which list defines this CCCA detection rule</td>
       <td class="example">
         <ul>
-          <li>Exploits</li>
-          <li>Reconnaissance</li>
-          <li>Vulnerabilities</li>
-          <li>Security Policy</li>
+          <li>CCCA_GLOBAL_LIST (0)</li>
+          <li>GLOBAL_INTELLIGENCE</li>
+          <li>USER_DEFINED</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>TippingPoint Security Management System</li>
-          <li>Mobile Network Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">cccaRiskLevel</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The severity level of the threat actors associated with the C&amp;C servers</td>
+      <td class="example">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -404,8 +508,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -423,52 +527,59 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">cloudProvider</td>
+      <td class="field-name">channel</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The service provider of the cloud asset</td>
+      <td class="description">The channel through which the demanded WinEvent is delivered</td>
       <td class="example">
         <ul>
-          <li>alibaba cloud</li>
-          <li>aws</li>
-          <li>azure</li>
-          <li>gcp</li>
-          <li>oci</li>
+          <li>Local file or network drive</li>
+          <li>Local file</li>
         </ul>
       </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>File Security Storage</li>
-          <li>Agentless Vulnerability &amp; Threat Detection</li>
-        </ul>
-      </td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
-      <td class="field-name">cloudProvider</td>
+      <td class="field-name">channel</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The service provider of the cloud asset</td>
+      <td class="description">The Windows event channel</td>
       <td class="example">
         <ul>
-          <li>aws</li>
-          <li>azure</li>
+          <li>Security</li>
+          <li>Microsoft-Windows-WMI-Activity/Trace</li>
+          <li>Microsoft-Windows-TaskScheduler/Operational</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">clientStatus</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The client status when the event occurred</td>
+      <td class="example">
+        <ul>
+          <li>Rebuilding database</li>
+          <li>Online</li>
+          <li>Offline</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">compressedFileHash</td>
@@ -485,12 +596,12 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
           <li>File Security</li>
           <li>File Security Storage</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
         </ul>
       </td>
@@ -510,12 +621,12 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
           <li>File Security</li>
           <li>File Security Storage</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
         </ul>
       </td>
@@ -536,67 +647,88 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>File Security</li>
           <li>File Security Storage</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">customAssetTags</td>
-      <td class="type">dynamic</td>
+      <td class="field-name">computerDomain</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The list of custom asset tags</td>
-      <td class="example">{&quot;os&quot;:[&quot;linux&quot;, &quot;windows&quot;], &quot;org&quot;:[&quot;bu1&quot;]}</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Vision One Container Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">customAssetTags</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The list of custom asset tags</td>
-      <td class="example">{&quot;os&quot;:[&quot;linux&quot;, &quot;windows&quot;], &quot;org&quot;:[&quot;bu1&quot;]}</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">cves</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The CVEs associated with this filter</td>
+      <td class="description">The computer domain</td>
       <td class="example">
         <ul>
-          <li>CVE-2014-3567</li>
-          <li>CVE-2016-6304</li>
-          <li>CVE-2011-1385</li>
+          <li>COMCEL_DOMINIO</li>
+          <li>HDWA</li>
+          <li>RANDON</li>
         </ul>
       </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">confidence</td>
+      <td class="type">int</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The confidence rating returned from TrendX Hybrid Model (predictive machine learning). Values from 1-99.</td>
+      <td class="example">94</td>
       <td class="products">
         <ul>
-          <li>TippingPoint Security Management System</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>File Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">correlationData</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The data for correlation</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">customAssetTags</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of custom asset tags</td>
+      <td class="example">{&quot;os&quot;:[&quot;linux&quot;, &quot;windows&quot;], &quot;org&quot;:[&quot;bu1&quot;]}</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">customAssetTags</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of custom asset tags</td>
+      <td class="example">{&quot;os&quot;:[&quot;linux&quot;, &quot;windows&quot;], &quot;org&quot;:[&quot;bu1&quot;]}</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -616,8 +748,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -636,10 +768,34 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">destinationPath</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The intended destination of the file containing the digital asset or channel</td>
+      <td class="example">
+        <ul>
+          <li>Cloud Storage (OneDrive)</li>
+          <li>Printer</li>
+          <li>example.sharepoint.com/personal/page_path/onedrive.aspx</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">detailTrace</td>
+      <td class="type">int</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">Whether the detection comes with a detailed trace footprint</td>
+      <td class="example">-</td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">detectedActions</td>
@@ -656,8 +812,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -670,8 +826,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">{&quot;objectArtifactId&quot;: &quot;025d9f2a-ac9c-4cdf-b9e4-cf20c6e40281_0.dmp&quot;, &quot;action&quot;: &quot;object_process_dump&quot;, &quot;status&quot;: 0, &quot;processCreationTime&quot;: &quot;1627574338077&quot;, &quot;processImageFileName&quot;: &quot;C:\Program Files\aaa\bbb\objprocess.exe&quot;}</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -684,8 +840,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">[&#x27;0&#x27;, &#x27;-67&#x27;]</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -698,8 +854,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">C:\\Program Files (x86)\\Trend Micro\\artifact\\DCE</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
         </ul>
       </td>
@@ -713,8 +869,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">dct.virus</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -727,8 +883,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">[&#x27;11111111-1111-1111-1111-111111111111&#x27;]</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -749,8 +905,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -763,8 +919,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">7.6.0</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -777,10 +933,29 @@ This documentation provides detailed information about all fields available for 
       <td class="example">[&#x27;T1204 some description about this technique&#x27;, &#x27;T1573.001_AES another description about this technique&#x27;]</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Apex One On-Premises</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">detectionName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The general name for the detection</td>
+      <td class="example">
+        <ul>
+          <li>Troj.Win32.TRX.XXPE50F13017</li>
+          <li>Troj.Win32.TRX.XXPE50FFF059</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Mobile Security</li>
         </ul>
       </td>
     </tr>
@@ -793,10 +968,10 @@ This documentation provides detailed information about all fields available for 
       <td class="example">[&#x27;HS_EMOTET.SMAA&#x27;, &#x27;HM_AVEDOWN.SMZTIG-A&#x27;, &#x27;HE_DOCQRPHISH.SM&#x27;]</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Apex One On-Premises</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
@@ -816,18 +991,43 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Messaging Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Deep Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">deviceGUID</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The GUID of the agent which reported the detection</td>
+      <td class="example">
+        <ul>
+          <li>00000000-0000-0000-0000-000000000000</li>
+          <li>11111111-1111-1111-1111-111111111111</li>
+          <li>22222222-2222-2222-2222-222222222222</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>TippingPoint Security Management System</li>
+          <li>Endpoint Sensor</li>
+          <li>Cloud One Network Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
     </tr>
@@ -840,8 +1040,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">c96a</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -854,8 +1054,28 @@ This documentation provides detailed information about all fields available for 
       <td class="example">000000063a2e8f</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">direction</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The direction</td>
+      <td class="example">
+        <ul>
+          <li>Incoming</li>
+          <li>Outgoing</li>
+          <li>Unknown</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>TXOne EdgeOne</li>
         </ul>
       </td>
     </tr>
@@ -873,12 +1093,33 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
           <li>TXOne EdgeOne</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">domainName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">DomainName</td>
+      <td class="description">The detected domain name</td>
+      <td class="example">
+        <ul>
+          <li>http://10.10.10.10</li>
+          <li>example.domain.com</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
         </ul>
       </td>
     </tr>
@@ -896,17 +1137,17 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Deep Security</li>
+          <li>Cloud One Network Security</li>
           <li>Endpoint Sensor</li>
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Mobile Network Security</li>
         </ul>
       </td>
@@ -920,9 +1161,9 @@ This documentation provides detailed information about all fields available for 
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Data Detection and Response</li>
         </ul>
       </td>
@@ -941,18 +1182,18 @@ This documentation provides detailed information about all fields available for 
       <td class="example">10.10.10.10</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Deep Security</li>
+          <li>Cloud One Network Security</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Mobile Network Security</li>
         </ul>
       </td>
@@ -976,9 +1217,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Data Detection and Response</li>
         </ul>
       </td>
@@ -998,14 +1239,34 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">dvchost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The computer which installed the Trend Micro product</td>
+      <td class="example">
+        <ul>
+          <li>CU-PRO1-9039-2</li>
+          <li>LTPF32PMNN</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -1024,15 +1285,15 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>TXOne StellarOne</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Data Detection and Response</li>
         </ul>
       </td>
@@ -1046,9 +1307,9 @@ This documentation provides detailed information about all fields available for 
       <td class="example">11111111-1111-1111-1111-111111111111</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -1066,15 +1327,15 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>TXOne StellarOne</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Data Detection and Response</li>
         </ul>
@@ -1095,9 +1356,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -1115,11 +1376,11 @@ This documentation provides detailed information about all fields available for 
       <td class="example">10.10.10.10</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Cloud One Network Security</li>
           <li>TXOne EdgeOne</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Data Detection and Response</li>
@@ -1146,9 +1407,29 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">endpointMacAddress</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The MAC address of endpoint</td>
+      <td class="example">
+        <ul>
+          <li>00:00:00:00:00:00</li>
+          <li>ff:ff:ff:ff:ff:ff</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>TXOne EdgeOne</li>
+          <li>TXOne StellarOne</li>
         </ul>
       </td>
     </tr>
@@ -1166,36 +1447,627 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">endpointStatus</td>
+      <td class="field-name">engineOperation</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The endpoint device status</td>
+      <td class="description">The operation of the engine event</td>
       <td class="example">
         <ul>
-          <li>ON</li>
-          <li>OFF</li>
-          <li>SUSPENDED</li>
-          <li>UNKNOWN</li>
+          <li>Set Key</li>
+          <li>Invoke API</li>
+          <li>Create</li>
         </ul>
       </td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td class="field-name">endTime</td>
-      <td class="type">long</td>
+      <td class="field-name">engType</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The time when the last event was received (in Unix milliseconds)</td>
-      <td class="example">1750983926000</td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
+      <td class="description">The engine type</td>
+      <td class="example">
+        <ul>
+          <li>Virus Scan Engine (Windows XP/Server 2003, x64)</li>
+          <li>Virus Scan NT Kernel Engine</li>
+          <li>Spyware/Grayware Scan Engine v.6 (64-bit)</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>File Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">engVer</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The engine version</td>
+      <td class="example">
+        <ul>
+          <li>1.0.0.1123_1.0.0.1101</li>
+          <li>9.0.1004</li>
+          <li>22.540.1001</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>File Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataAccessList</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of requested access rights</td>
+      <td class="example">
+        <ul>
+          <li>%%4416</li>
+          <li>%%4417</li>
+          <li>%%4418</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataAccessMask</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The hexadecimal value of the requested or used permissions during an access attempt</td>
+      <td class="example">
+        <ul>
+          <li>16</li>
+          <li>2147483648</li>
+          <li>1048576</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataActionName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The action performed</td>
+      <td class="example">
+        <ul>
+          <li>Language Components Installer</li>
+          <li>Group Policy Background Processing</li>
+          <li>C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataAuthenticationPackageName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The authentication package name of the Windows event data</td>
+      <td class="example">
+        <ul>
+          <li>NTLM</li>
+          <li>Negotiate</li>
+          <li>MICROSOFT_AUTHENTICATION_PACKAGE_V1_0</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataElevatedToken</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Whether the session is elevated and has administrator privileges</td>
+      <td class="example">
+        <ul>
+          <li>%%1842</li>
+          <li>%%1843</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataFullyQualifiedAssemblyName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The fully qualified .NET assembly name</td>
+      <td class="example">
+        <ul>
+          <li>System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</li>
+          <li>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</li>
+          <li>System.Diagnostics.Process, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataImpersonationLevel</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sign-in session impersonation level</td>
+      <td class="example">
+        <ul>
+          <li>%%1830</li>
+          <li>%%1832</li>
+          <li>%%1833</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataIpAddress</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The IP address for Windows event 4624 which is &quot;An account was successfully logged on&quot;</td>
+      <td class="example">
+        <ul>
+          <li>-</li>
+          <li>10.10.10.10</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataJobOwner</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the account that initiated the event</td>
+      <td class="example">
+        <ul>
+          <li>BEI\holdej</li>
+          <li>NT AUTHORITY\SYSTEM</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataLogonProcessName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the Windows event sign in process name</td>
+      <td class="example">
+        <ul>
+          <li>NtLmSsp </li>
+          <li>Advapi  </li>
+          <li>Advapi</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataLogonType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The logon type for Windows event 4624 which is &quot;An account was successfully logged on&quot;</td>
+      <td class="example">
+        <ul>
+          <li>3</li>
+          <li>5</li>
+          <li>2</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataModuleILPath</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The CIL image path of the module or the dynamic module name</td>
+      <td class="example">
+        <ul>
+          <li>C:\Program Files\Cymulate\Agent\System.Threading.dll</li>
+          <li>C:\windows\system32\tzsync.exe</li>
+          <li>C:\Program.exe</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataObjectName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The identifying information about the object for which access was requested</td>
+      <td class="example">
+        <ul>
+          <li>\Device\HarddiskVolume2\Windows\System32\lsass.exe</li>
+          <li>C:\Windows\System32\osk.exe</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataObjectType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The object type</td>
+      <td class="example">
+        <ul>
+          <li>Process</li>
+          <li>File</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataOperation</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Windows event 11</td>
+      <td class="example">
+        <ul>
+          <li>Start IWbemServices::ExecQuery - root\ccm : select * from SMS_Authority</li>
+          <li>Start IWbemServices::ExecQuery - root\cimv2 : select * from win32_process</li>
+          <li>Start IWbemServices::ExecQuery - root\ccm : SELECT * FROM SMS_Authority</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataPath</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The path of the Windows event data</td>
+      <td class="example">
+        <ul>
+          <li>C:\Program Files\Common Files\Microsoft Shared\ClickToRun\officesvcmgr.exe</li>
+          <li>taskhostw.exe</li>
+          <li>gpupdate.exe</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataProcessPath</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The process path that initiated the event</td>
+      <td class="example">
+        <ul>
+          <li>C:\Program Files\Microsoft Office\Office15\OUTLOOK.EXE</li>
+          <li>C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARM.exe</li>
+          <li>C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataScriptBlockText</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Windows event 4104, Creating Scriptblock text</td>
+      <td class="example">
+        <ul>
+          <li>$global:?</li>
+          <li>0</li>
+          <li>{ Set-StrictMode -Version 1; $_.PSMessageDetails }</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataStatus</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Windows event data status</td>
+      <td class="example">
+        <ul>
+          <li>0xc000006d</li>
+          <li>-1073741715</li>
+          <li>0xc000006e</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataSubjectUserName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The account name</td>
+      <td class="example">
+        <ul>
+          <li>dadmin</li>
+          <li>Alex</li>
+          <li>london$</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataSubStatus</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Windows event data sub status</td>
+      <td class="example">
+        <ul>
+          <li>0xc0000064</li>
+          <li>0xc000006a</li>
+          <li>-1073741724</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataTargetDomainName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The target sign-in account domain or computer name</td>
+      <td class="example">
+        <ul>
+          <li>NT AUTHORITY</li>
+          <li>Builtin</li>
+          <li>SHOCKWAVE</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataTargetName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The service, application, or network resource name</td>
+      <td class="example">
+        <ul>
+          <li>Microsoft_RssPlatform_*</li>
+          <li>WindowsLive:target=virtualapp/didlogical</li>
+          <li>MicrosoftOffice*</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataTargetUserName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The user name of the Windows event data target</td>
+      <td class="example">
+        <ul>
+          <li>Offer Remote Assistance Helpers</li>
+          <li>Administrators</li>
+          <li>Administradores</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataTaskName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The task name logged by the Windows event</td>
+      <td class="example">
+        <ul>
+          <li>\Microsoft\Windows\LanguageComponentsInstaller\Installation</li>
+          <li>\Microsoft\Office\Office Serviceability Manager</li>
+          <li>\MicrosoftEdgeUpdateTaskMachineUA</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataTicketEncryptionType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The cryptographic suite used for the Kerberos TGS</td>
+      <td class="example">
+        <ul>
+          <li>0x12</li>
+          <li>0x17</li>
+          <li>0x18</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataTicketOptions</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The authentication request Kerberos ticket behavior and permissions flags</td>
+      <td class="example">
+        <ul>
+          <li>0x40810000</li>
+          <li>0x40810010</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataUserContext</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The user context of the Windows event data</td>
+      <td class="example">
+        <ul>
+          <li>MP\MPBSA179345$</li>
+          <li>MP\MPBSASPU179370$</li>
+          <li>MP\MPBSA4025625$</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventDataWorkstationName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the computer used in the sign-in attempt</td>
+      <td class="example">
+        <ul>
+          <li>WIN-GG82ULGC9GO</li>
+          <li>DESKTOP-123ABC</li>
+          <li>CLIENT01</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">eventHashId</td>
@@ -1212,9 +2084,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -1235,16 +2107,16 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Email Security</li>
+          <li>Email and Collaboration Security</li>
           <li>TXOne StellarOne</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>File Security Storage</li>
@@ -1264,9 +2136,23 @@ This documentation provides detailed information about all fields available for 
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventMessage</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event message</td>
+      <td class="example">[0x13bb4e2a0] activating connection: mach=true listener=false peer=false name=com.apple.airportd</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -1302,16 +2188,16 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
@@ -1334,26 +2220,6 @@ This documentation provides detailed information about all fields available for 
       <td class="description">The access type</td>
       <td class="example">
         <ul>
-          <li>4</li>
-          <li>101</li>
-          <li>102</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>TXOne StellarOne</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">eventSubId</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The access type</td>
-      <td class="example">
-        <ul>
           <li>2 - TELEMETRY_PROCESS_CREATE</li>
           <li>101 - TELEMETRY_FILE_CREATE</li>
           <li>204 - TELEMETRY_CONNECTION_CONNECT_OUTBOUND</li>
@@ -1361,9 +2227,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -1382,10 +2248,10 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
@@ -1401,9 +2267,53 @@ This documentation provides detailed information about all fields available for 
       <td class="example">1657781088000</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">extraInfo</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The network application name</td>
+      <td class="example">
+        <ul>
+          <li>N/A</li>
+          <li>Web Client Common</li>
+          <li>DCERPC Services</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">fileCreation</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The file creation date</td>
+      <td class="example">1595918517000</td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">fileDesc</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The file description</td>
+      <td class="example">
+        <ul>
+          <li>Atualiza PJRO</li>
+          <li>Carpeta de archivos</li>
+          <li>7z Setup SFX (x86)</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -1422,11 +2332,11 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>File Security</li>
           <li>File Security Storage</li>
@@ -1450,15 +2360,15 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -1477,37 +2387,16 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>TXOne StellarOne</li>
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">fileOperation</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The operation of the file</td>
-      <td class="example">
-        <ul>
-          <li>Created</li>
-          <li>Updated</li>
-          <li>Deleted</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Vision One Container Security</li>
         </ul>
       </td>
     </tr>
@@ -1526,10 +2415,10 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
           <li>TXOne StellarOne</li>
           <li>File Security</li>
@@ -1538,25 +2427,83 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">filePathName</td>
+      <td class="field-name">fileSize</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileFullPath</td>
-      <td class="description">The file path with the file name</td>
+      <td class="general-field">-</td>
+      <td class="description">The file size of the suspicious file</td>
       <td class="example">
         <ul>
-          <li>vss</li>
-          <li>spoolss</li>
-          <li>/etc/hosts</li>
+          <li>0</li>
+          <li>1255856</li>
+          <li>1237880</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>TXOne StellarOne</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Apex One as a Service</li>
+          <li>File Security</li>
+          <li>File Security Storage</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">fileVer</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The file version</td>
+      <td class="example">
+        <ul>
+          <li>10.0.19041.1</li>
+          <li>10.0.19041.1766</li>
+          <li>10.0.18362.1</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">filterName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The filter name</td>
+      <td class="example">
+        <ul>
+          <li>ConnectionFilter</li>
+          <li>Virtual Analyzer</li>
+          <li>Data Loss Prevention</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Apex One as a Service</li>
+          <li>TXOne EdgeOne</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">filterType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The filter type</td>
+      <td class="example">
+        <ul>
+          <li>Spam filter</li>
+          <li>Size filter</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>TXOne EdgeOne</li>
         </ul>
       </td>
     </tr>
@@ -1575,9 +2522,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
@@ -1596,9 +2543,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
@@ -1611,11 +2558,56 @@ This documentation provides detailed information about all fields available for 
       <td class="example">1656355418449</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">forensicFileHash</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The hash value of the forensic data file</td>
+      <td class="example">
+        <ul>
+          <li>177844c5927d0f20da06d79d986c7e7f8c7a3b6a</li>
+          <li>da39a3ee5e6b4b0d3255bfef95601890afd80709</li>
+          <li>8dab234ab6cd96301f9452994f015a449d629edd</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">forensicFilePath</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The file path of the forensic file (When a Data Loss Prevention policy is triggered, the file is encrypted and copied to the OfficeScan server for post-mortem analysis)</td>
+      <td class="example">
+        <ul>
+          <li>C:\Program Files (x86)\Trend Micro\OfficeScan Client\dlplite\forensic\frnsc_200411DC0594_xml_00000000000_20220314_132326281</li>
+          <li>C:\Program Files (x86)\Trend Micro\OfficeScan Client\dlplite\forensic\frnsc_CIL-OPRCOGEN_docx_00000000000_20211025_225445873</li>
+          <li>C:\Program Files (x86)\Trend Micro\OfficeScan Client\dlplite\forensic\frnsc_SHA-ESHOU_h265_00000000000_20220601_082417865</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">ftpUser</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The FTP login user name</td>
+      <td class="example">
+        <ul>
+          <li>USER\TREND</li>
+          <li>User</li>
+          <li>ftpuser_service</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">fullPath</td>
@@ -1632,84 +2624,33 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Deep Security</li>
           <li>TXOne StellarOne</li>
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">groups</td>
+      <td class="field-name">hookId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The OSSEC rule group names</td>
+      <td class="description">The hook ID</td>
       <td class="example">
         <ul>
-          <li>auditd,audit,</li>
-          <li>dirservice_log,authentication_failure,</li>
-          <li>windows,authentication_failures,</li>
+          <li>-1</li>
+          <li>5</li>
+          <li>4</li>
         </ul>
       </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">hostId</td>
-      <td class="type">int</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The host ID</td>
-      <td class="example">
-        <ul>
-          <li>20548</li>
-          <li>967</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">hostName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>DomainName</li>
-          <li>HostDomain</li>
-        </ul>
-      </td>
-      <td class="description">The computer name of the client host (The hostname from the suspicious URL detected by Deep Discovery Inspector)</td>
-      <td class="example">
-        <ul>
-          <li>Let&#x27;s Encrypt</li>
-          <li>10.10.10.10</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>TXOne EdgeOne</li>
-        </ul>
-      </td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">hostName</td>
@@ -1732,8 +2673,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -1752,10 +2693,30 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">httpReferer</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">URL</td>
+      <td class="description">The HTTP header referer</td>
+      <td class="example">
+        <ul>
+          <li>http://10.10.10.10/</li>
+          <li>http://fake/home/</li>
+          <li>http://fake.com/page/Test.jsp</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -1777,25 +2738,25 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Mobile Network Security</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">instanceId</td>
-      <td class="type">string</td>
+      <td class="field-name">integrityLevel</td>
+      <td class="type">int</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The virtual machine instance ID on the cloud platform</td>
-      <td class="example">i-01234567890abcdef</td>
+      <td class="description">The integrity level of a process</td>
+      <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -1813,11 +2774,11 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -1835,35 +2796,50 @@ This documentation provides detailed information about all fields available for 
       <td class="example">10.10.10.10</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Cloud One Network Security</li>
           <li>TXOne EdgeOne</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">isEntity</td>
+      <td class="field-name">interestedMacAddress</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The current entity (or after change/modification)</td>
+      <td class="description">The MAC address identified as the log owner&#x27;s</td>
       <td class="example">
         <ul>
-          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;,&quot;type&quot;:&quot;Service&quot;,&quot;attributes&quot;:[{&quot;friendlyValue&quot;:null,&quot;name&quot;:&quot;binaryPathName&quot;,&quot;value&quot;:&quot;C:\\Windows\\system32\\vssvc.exe&quot;},{&quot;friendlyValue&quot;:&quot;manual&quot;,&quot;name&quot;:&quot;startType&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;friendlyValue&quot;:&quot;running&quot;,&quot;name&quot;:&quot;state&quot;,&quot;value&quot;:&quot;4&quot;}]}</li>
-          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;:&quot;Service&quot;,&quot;attributes&quot;:[{&quot;friendlyValue&quot;:null,&quot;name&quot;:&quot;binaryPathName&quot;,&quot;value&quot;:&quot;C:\\Windows\\system32\\vssvc.exe&quot;},{&quot;friendlyValue&quot;:&quot;manual&quot;,&quot;name&quot;:&quot;startType&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;friendlyValue&quot;:&quot;stopped&quot;,&quot;name&quot;:&quot;state&quot;,&quot;value&quot;:&quot;1&quot;}]}</li>
-          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;,&quot;type&quot;:&quot;File&quot;,&quot;attributes&quot;:[]}</li>
+          <li>00:00:00:00:00:00</li>
+          <li>ff:ff:ff:ff:ff:ff</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>TXOne EdgeOne</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">isHidden</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Whether the detection log generated a grey rule match</td>
+      <td class="example">Yes</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -1876,19 +2852,10 @@ This documentation provides detailed information about all fields available for 
       <td class="example">False</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">lastConnectedTime</td>
-      <td class="type">long</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The last time the endpoint was connected (in Unix milliseconds)</td>
-      <td class="example">1656324260000</td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
       <td class="field-name">lastSeen</td>
@@ -1899,9 +2866,9 @@ This documentation provides detailed information about all fields available for 
       <td class="example">1656355418449</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -1920,17 +2887,17 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
@@ -1950,36 +2917,58 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">majorVirusType</td>
+      <td class="field-name">mailDeliveryTime</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The virus type</td>
+      <td class="description">The mail delivery time</td>
+      <td class="example">1900-1-1 00:00:00</td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">mailMsgSubject</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EmailSubject</td>
+      <td class="description">The email subject</td>
       <td class="example">
         <ul>
-          <li>Virus</li>
-          <li>Suspicious Activity</li>
-          <li>Trojan</li>
-          <li>TROJ</li>
+          <li>FW. mail subject</li>
+          <li>ManageEngine</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Mobile Security</li>
-          <li>TXOne EdgeOne</li>
-          <li>TXOne StellarOne</li>
-          <li>File Security Storage</li>
+          <li>Cloud App Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Email and Collaboration Security</li>
+          <li>Apex One as a Service</li>
+          <li>Email Sensor</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">malDst</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The malware infection destination</td>
+      <td class="example">
+        <ul>
+          <li>3334_02W3P7</li>
+          <li>2666_02N413</li>
+          <li>3334_02NHEL</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">malFamily</td>
@@ -1996,10 +2985,10 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>File Security</li>
         </ul>
       </td>
@@ -2019,18 +3008,52 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Web Security</li>
+          <li>Deep Security</li>
+          <li>Messaging Security</li>
           <li>TXOne StellarOne</li>
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">malSrc</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileFullPath</td>
+      <td class="description">The malware infection source</td>
+      <td class="example">
+        <ul>
+          <li>\\10.172.1.33\kortiz</li>
+          <li>\\10.240.0.148\wbind</li>
+          <li>\\10.240.1.69\MT26933059</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Mobile Network Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">malSubType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The subsidiary virus type</td>
+      <td class="example">Unknown</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>File Security</li>
         </ul>
       </td>
     </tr>
@@ -2049,15 +3072,43 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
           <li>File Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">matchedContent</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The one-to-many data structure</td>
+      <td class="example">
+        <ul>
+          <li>[&#x27;matchedContentEx:client_id=00000000-0000-0000-0000-000000000000&amp;redirect_uri=https://example.page.com, matchedInfo:0,6|0,6&#x27;]</li>
+          <li>[&#x27;matchedContentEx:example string, matchedInfo:0,6&#x27;]</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">mDevice</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">IP of the source</td>
+      <td class="example">
+        <ul>
+          <li>10.10.10.10</li>
+          <li>fe80::1234:5678:9abc:def0</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">mDeviceGUID</td>
@@ -2074,32 +3125,40 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">mitreVersion</td>
+      <td class="field-name">messageType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The MITRE version</td>
-      <td class="example">
-        <ul>
-          <li>v9</li>
-          <li>v6</li>
-        </ul>
-      </td>
+      <td class="description">The message type</td>
+      <td class="example">Default</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">moduleName</td>
+      <td class="type">string</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The module where a hook procedure was set up</td>
+      <td class="example">
+        <ul>
+          <li>c:\program files (x86)\desktopcentral_agent\bin\dcusbsummary.exe</li>
+          <li>c:\program files\common files\microsoft shared\clicktorun\officesvcmgr.exe</li>
+          <li>c:\program files (x86)\sharp\sharp pen software\prsnspttool.exe</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">moduleScanType</td>
@@ -2110,8 +3169,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">traditional</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2130,12 +3189,12 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Cloud One Network Security</li>
         </ul>
       </td>
     </tr>
@@ -2154,10 +3213,48 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">msgAct</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The message action</td>
+      <td class="example">
+        <ul>
+          <li>Quarantine</li>
+          <li>Deliver</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">msgId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EmailMessageID</td>
+      <td class="description">The internet message ID</td>
+      <td class="example">
+        <ul>
+          <li>66.6.00.0006</li>
+          <li>example.test.com</li>
+          <li>dameware1svr</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Email Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2177,8 +3274,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2197,8 +3294,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2211,28 +3308,28 @@ This documentation provides detailed information about all fields available for 
       <td class="example">attribute</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectBmData</td>
+      <td class="field-name">objectAuthId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The data of BM event</td>
+      <td class="description">The object authorization ID</td>
       <td class="example">
         <ul>
-          <li>{&quot;provider&quot;:&quot;ORCA&quot;,&quot;schema_version&quot;:1,&quot;data&quot;:[{&quot;str&quot;:&quot;Access /proc/&lt;pid&gt;/*&quot;}]}</li>
-          <li>{&quot;provider&quot;:&quot;ORCA&quot;,&quot;schema_version&quot;:1,&quot;data&quot;:[{&quot;str&quot;:&quot;source &#x27;/etc/profile.d/lang.sh&#x27;&quot;}]}</li>
-          <li>{&quot;provider&quot;:&quot;ORCA&quot;,&quot;schema_version&quot;:1,&quot;data&quot;:[{&quot;str&quot;:&quot;source &#x27;/etc/profile.d/bash_completion.sh&#x27;&quot;}]}</li>
+          <li>999</li>
+          <li>996</li>
+          <li>997</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2251,8 +3348,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
         </ul>
       </td>
@@ -2272,9 +3369,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2293,8 +3390,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2313,19 +3410,25 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectCurrentPosixPermission</td>
+      <td class="field-name">objectEntityName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The new POSIX permission file used in file events and CHMOD events</td>
-      <td class="example">1050180</td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
+      <td class="description">The object entity name</td>
+      <td class="example">
+        <ul>
+          <li>any_process</li>
+          <li>exe_file</li>
+          <li>powershell</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">objectFileAccess</td>
@@ -2336,8 +3439,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">1717658631000</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2356,9 +3459,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -2378,8 +3481,87 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileCurrentOwnerName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The current owner name of the object file</td>
+      <td class="example">
+        <ul>
+          <li>NT AUTHORITY\SYSTEM</li>
+          <li>BUILTIN\Administrators</li>
+          <li>BUILTIN\Administradores</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileCurrentOwnerSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The current security identifier owner of the object file</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-18</li>
+          <li>S-1-5-32-544</li>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileDaclString</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The discretionary access control list of the object file</td>
+      <td class="example">
+        <ul>
+          <li>D:(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;0x1200a9;;;BA)(A;;0x1200a9;;;SY)(A;;0x1200a9;;;BU)(A;;0x1200a9;;;AC)(A;;0x1200a9;;;S-1-15-2-2)</li>
+          <li>D:(A;OICI;GA;;;SY)(A;OICI;0xa0120000;;;WD)(A;OICI;GA;;;BA)</li>
+          <li>D:(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileExtendedAttribute</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The extended attributes of the file</td>
+      <td class="example">
+        <ul>
+          <li>com.apple.quarantine</li>
+          <li>com.apple.metadata:kMDItemWhereFroms</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2399,8 +3581,28 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileGroupSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The security identifier of the object file group</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+          <li>S-1-5-18</li>
+          <li>S-1-5-21-397955417-626881126-188441444-513</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2419,9 +3621,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2440,9 +3642,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -2461,9 +3663,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2482,10 +3684,10 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -2504,9 +3706,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2525,10 +3727,10 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -2547,9 +3749,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2562,9 +3764,9 @@ This documentation provides detailed information about all fields available for 
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -2582,8 +3784,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -2603,8 +3805,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -2623,9 +3825,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Vision One Container Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Container Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -2645,8 +3847,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -2666,8 +3868,28 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileOwnerSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The security identifier of the object file owner</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-32-544</li>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+          <li>S-1-5-18</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2686,10 +3908,10 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -2713,29 +3935,43 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectFileSize</td>
-      <td class="type">long</td>
+      <td class="field-name">objectFileRemoteAccess</td>
+      <td class="type">bool</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The object file size</td>
+      <td class="description">The remote access for the object file</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileSaclString</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The system access control list of the object file</td>
       <td class="example">
         <ul>
-          <li>0</li>
-          <li>59456</li>
-          <li>60</li>
+          <li>S:NO_ACCESS_CONTROL</li>
+          <li>S:(AU;SAFA;DCLCRPCRSDWDWO;;;WD)</li>
+          <li>S:(AU;SAFA;0x1f0116;;;WD)</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2754,11 +3990,20 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Data Detection and Response</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFirstRecorded</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The first time that the object appeared</td>
+      <td class="example">-</td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">objectFirstSeen</td>
@@ -2776,8 +4021,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2796,15 +4041,67 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectHostName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">DomainName</td>
+      <td class="description">Server name where Internet event was detected</td>
+      <td class="example">
+        <ul>
+          <li>10.10.10.10</li>
+          <li>sample.test.org</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The UUID of the object</td>
+      <td class="example">
+        <ul>
+          <li>3</li>
+          <li>2</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectIntegrityLevel</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Integrity level of target process</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td class="field-name">objectIp</td>
-      <td class="type">dynamic</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">
         <ul>
@@ -2812,9 +4109,14 @@ This documentation provides detailed information about all fields available for 
           <li>IPv6</li>
         </ul>
       </td>
-      <td class="description">The IP address of the domain</td>
+      <td class="description">IP address of internet event</td>
       <td class="example">10.10.10.10</td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">objectIps</td>
@@ -2837,8 +4139,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2858,8 +4160,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2878,9 +4180,121 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectLoginOutFailureMessage</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sign-in/sign-out error message</td>
+      <td class="example">Login incorrect</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectLoginOutFirstSeen</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The first time the object sign-in/sign-out was seen</td>
+      <td class="example">1713903612</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectLoginOutHashId</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The FNV of the object sign-in/sign-out meta</td>
+      <td class="example">-8981232070268295229</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectLoginOutLastSeen</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The last time the object sign-in/sign-out was seen</td>
+      <td class="example">1713903612</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectLoginOutMetaType</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sign-in/sign-out meta</td>
+      <td class="example">1 - LOGIN_OUT_META_TYPE_OPENSSH</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectLoginOutSessionId</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sign-in/sign-out session ID</td>
+      <td class="example">260</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectLoginOutSourceAddress</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sign-in/sign-out source IP</td>
+      <td class="example">10.10.10.10</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectLoginOutStatus</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sign-in/sign-out status</td>
+      <td class="example">-1</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2894,8 +4308,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2914,9 +4328,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2934,8 +4348,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
         </ul>
       </td>
@@ -2949,29 +4363,25 @@ This documentation provides detailed information about all fields available for 
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectPosixPermission</td>
-      <td class="type">string</td>
+      <td class="field-name">objectPort</td>
+      <td class="type">int</td>
       <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The current POSIX permission for the file</td>
-      <td class="example">1050112</td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">objectPosixPermissionHashId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The POSIX permission hash ID</td>
-      <td class="example">-8931783023607715387</td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
+      <td class="general-field">Port</td>
+      <td class="description">The port number used by internet event</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">objectProcessHashId</td>
@@ -2988,9 +4398,9 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -3010,8 +4420,8 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3042,8 +4452,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3057,8 +4467,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -3078,8 +4488,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3099,8 +4509,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3120,28 +4530,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">objectRegistryRoot</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The name of the object registry root key</td>
-      <td class="example">
-        <ul>
-          <li>HKCR</li>
-          <li>HKLM</li>
-          <li>HKCU</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3161,8 +4551,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3182,8 +4572,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -3202,9 +4592,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3223,9 +4613,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3242,9 +4632,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3264,8 +4654,28 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectSigner</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of object process signers</td>
+      <td class="example">
+        <ul>
+          <li>Microsoft Windows</li>
+          <li>Microsoft Windows Publisher</li>
+          <li>SecureWorks Inc</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -3285,8 +4695,95 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectSignerFlagsAdhoc</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of object process signature adhoc flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectSignerFlagsAdhoc</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of object process or file signature adhoc flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectSignerFlagsLibValid</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of object process signature library validation flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectSignerFlagsLibValid</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of object process or file signature library validation flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectSignerFlagsRuntime</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of object process signature runtime flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectSignerFlagsRuntime</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of object process or file signature runtime flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3304,8 +4801,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -3325,10 +4822,25 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectThreadId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The object process thread ID</td>
+      <td class="example">
+        <ul>
+          <li>10196</li>
+          <li>10104</li>
+          <li>10004</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">objectTrueType</td>
@@ -3346,9 +4858,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -3367,10 +4879,10 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Email and Collaboration Security</li>
           <li>Endpoint Sensor</li>
           <li>File Security</li>
         </ul>
@@ -3391,8 +4903,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -3411,9 +4923,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Data Detection and Response</li>
         </ul>
       </td>
@@ -3432,8 +4944,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3452,8 +4964,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -3473,30 +4985,38 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">oldFileHash</td>
+      <td class="field-name">online</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileSHA1</td>
-      <td class="description">The SHA-1 of the target process image or target file (wasEntity from an IM event)</td>
+      <td class="general-field">-</td>
+      <td class="description">The flag to identify whether the endpoint is online</td>
       <td class="example">
         <ul>
-          <li>DA39A3EE5E6B4B0D3255BFEF95601890AFD80709</li>
-          <li>89CE26EAD139D52B8A6B61BFFC6AF89AF246580F</li>
-          <li>57247B810B0EE61DD86CE24AC14097B9B5405EEC</li>
+          <li>Yes</li>
+          <li>No</li>
         </ul>
       </td>
-      <td class="products">
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">operationLevel</td>
+      <td class="type">int</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The level that is used to indicate the handler layer at SOC</td>
+      <td class="example">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>1</li>
+          <li>3</li>
         </ul>
       </td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">originalFileHashes</td>
@@ -3512,8 +5032,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3531,8 +5051,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">C:\\Users\\user_name\\Downloads\\run.exe</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3551,9 +5071,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3572,9 +5092,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3592,9 +5112,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3613,29 +5133,29 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">out</td>
+      <td class="field-name">parentAuthId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The IP datagram length (in bytes)</td>
+      <td class="description">The parent authorization ID</td>
       <td class="example">
         <ul>
-          <li>0</li>
-          <li>439</li>
-          <li>1314</li>
+          <li>999</li>
+          <li>996</li>
+          <li>997</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3655,8 +5175,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3676,8 +5196,68 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentFileCurrentOwnerName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The current owner name of the parent file</td>
+      <td class="example">
+        <ul>
+          <li>NT AUTHORITY\SYSTEM</li>
+          <li>BUILTIN\Administradores</li>
+          <li>BUILTIN\Administrators</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentFileCurrentOwnerSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The current security identifier owner of the parent file</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-32-544</li>
+          <li>S-1-5-18</li>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentFileDaclString</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The discretionary access control list of the parent file</td>
+      <td class="example">
+        <ul>
+          <li>D:(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;0x1200a9;;;BA)(A;;0x1200a9;;;SY)(A;;0x1200a9;;;BU)(A;;0x1200a9;;;AC)(A;;0x1200a9;;;S-1-15-2-2)</li>
+          <li>D:(A;OICI;GA;;;SY)(A;OICI;0xa0120000;;;WD)(A;OICI;GA;;;BA)</li>
+          <li>D:(A;ID;0x1200a9;;;AC)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;S-1-15-2-2)</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3697,8 +5277,28 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentFileGroupSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The security identifier of the parent process file group</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-18</li>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+          <li>S-1-5-32-544</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3717,9 +5317,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3738,9 +5338,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3759,9 +5359,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3780,9 +5380,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3802,8 +5402,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -3823,8 +5423,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -3844,8 +5444,28 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentFileOwnerSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The security identifier of the parent file owner</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-32-544</li>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+          <li>S-1-5-18</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3869,9 +5489,43 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentFileRemoteAccess</td>
+      <td class="type">bool</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The remote access to the parent file</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentFileSaclString</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The system access control list of the parent file</td>
+      <td class="example">
+        <ul>
+          <li>S:(AU;SAFA;DCLCRPCRSDWDWO;;;WD)</li>
+          <li>S:NO_ACCESS_CONTROL</li>
+          <li>S:(AU;IDSAFA;DCLCRPSDWDWO;;;AU)</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -3891,8 +5545,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -3911,9 +5565,23 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentIntegrityLevel</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The integrity level of a parent</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3932,9 +5600,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3953,25 +5621,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">parentPid</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The PID of the parent process</td>
-      <td class="example">-</td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3990,9 +5642,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4006,8 +5658,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -4027,8 +5679,95 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentSignerFlagsAdhoc</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of parent process signature adhoc flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentSignerFlagsAdhoc</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of parent process signature adhoc flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentSignerFlagsLibValid</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of parent process signature library validation flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentSignerFlagsLibValid</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of parent process signature library validation flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentSignerFlagsRuntime</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of parent process signature runtime flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentSignerFlagsRuntime</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of parent process signature runtime flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4042,8 +5781,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -4057,8 +5796,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -4072,19 +5811,10 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">parentUser</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The account name of the parent process</td>
-      <td class="example">Administrator</td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
       <td class="field-name">parentUser</td>
@@ -4101,20 +5831,11 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">parentUserDomain</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The domain name of the parent process</td>
-      <td class="example">builtindomain</td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
       <td class="field-name">parentUserDomain</td>
@@ -4131,8 +5852,85 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">patType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The pattern type</td>
+      <td class="example">
+        <ul>
+          <li>NCIE CNC Pattern</li>
+          <li>NCIE RR Pattern</li>
+          <li>NCIE User Define Block List</li>
+        </ul>
+      </td>
+      <td class="products">Apex One as a Service</td>
+    </tr>
+    <tr>
+      <td class="field-name">patVer</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The version of the behavior pattern</td>
+      <td class="example">
+        <ul>
+          <li>35.1053.00</li>
+          <li>630</li>
+          <li>35.1071.00</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+          <li>Cloud App Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">pComp</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The component that made the detection</td>
+      <td class="example">
+        <ul>
+          <li>CAV</li>
+          <li>NCIE</li>
+          <li>TMUFE</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">peerIp</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>IPv4</li>
+          <li>IPv6</li>
+        </ul>
+      </td>
+      <td class="description">The IP of peerHost</td>
+      <td class="example">10.10.10.10</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4149,9 +5947,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4165,9 +5963,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -4181,8 +5979,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4201,20 +5999,20 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -4234,9 +6032,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4257,12 +6055,60 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Network Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Cloud One Network Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">policyName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the triggered policy</td>
+      <td class="example">
+        <ul>
+          <li>Steelcase</li>
+          <li>Cabot</li>
+          <li>Tigre - Medium Policy</li>
+          <li>apiPostedPolicy</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Messaging Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>TXOne EdgeOne</li>
+          <li>Container Security</li>
+          <li>Mobile Network Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">policyTemplate</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The one-to-many data structure</td>
+      <td class="example">
+        <ul>
+          <li>policyName:Monitoreo All Files, template:Managed - All files</li>
+          <li>policyName:HSS DLP, template:All File Extension</li>
+          <li>India: Mobile Numbers</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
     </tr>
@@ -4280,9 +6126,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4301,8 +6147,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4321,11 +6167,11 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -4345,25 +6191,10 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">processFileCreation</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The Unix time of object creation</td>
-      <td class="example">
-        <ul>
-          <li>1645828113585</li>
-          <li>1655412594237</li>
-          <li>1647162053219</li>
-        </ul>
-      </td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
       <td class="field-name">processFileCreation</td>
@@ -4381,8 +6212,68 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processFileCurrentOwnerName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The current owner name of the process file</td>
+      <td class="example">
+        <ul>
+          <li>NT AUTHORITY\SYSTEM</li>
+          <li>BUILTIN\Administrators</li>
+          <li>BUILTIN\Administradores</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processFileCurrentOwnerSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The owner of the process file current security identifier</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-18</li>
+          <li>S-1-5-32-544</li>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processFileDaclString</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The discretionary access control list of the process file</td>
+      <td class="example">
+        <ul>
+          <li>D:(A;ID;0x1200a9;;;AC)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;S-1-15-2-2)</li>
+          <li>D:(A;ID;FA;;;SY)</li>
+          <li>D:(A;ID;FA;;;BA)(A;ID;FA;;;SY)</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4402,8 +6293,28 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processFileGroupSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The security identifier of the process file group</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-18</li>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+          <li>S-1-5-32-544</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4422,29 +6333,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">processFileHashMd5</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">FileMD5</td>
-      <td class="description">The MD5 of the subject process</td>
-      <td class="example">
-        <ul>
-          <li>D07ADD0CE6E000D3CD20193B891E8ED3</li>
-          <li>1a9ba93ebe4cb60030831f8ce9e7d5f9</li>
-          <li>EEE6691B48D2FB604DDF0CBC90D75B0E</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4463,9 +6354,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4484,9 +6375,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4505,29 +6396,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">processFileHashSha256</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">FileSHA2</td>
-      <td class="description">The SHA-256 of the subject process</td>
-      <td class="example">
-        <ul>
-          <li>4314A869B8DAE1BD3FFF810B1366E90FB7C961D4A3424260692377FDD87361D2</li>
-          <li>7824c45fc033696603fe97d8f193a1872dfb2b5db75f0cda21df27017b3cb623</li>
-          <li>1A6D5986EFEAE89308D9EE11B4A7907012603392E0E66D0E529DB09DF1B4CB64</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4546,9 +6417,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4568,8 +6439,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -4589,8 +6460,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -4610,8 +6481,28 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processFileOwnerSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The security identifier of the process file owner</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-32-544</li>
+          <li>S-1-5-18</li>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4636,8 +6527,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
         </ul>
       </td>
@@ -4664,9 +6555,43 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processFileRemoteAccess</td>
+      <td class="type">bool</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The remote access to the process file</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processFileSaclString</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The system access control list of the process file</td>
+      <td class="example">
+        <ul>
+          <li>S:(AU;SAFA;DCLCRPCRSDWDWO;;;WD)</li>
+          <li>S:(AU;IDSAFA;DCLCRPSDWDWO;;;AU)</li>
+          <li>S:NO_ACCESS_CONTROL</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -4686,8 +6611,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -4706,9 +6631,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4726,47 +6651,10 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">processImagePath</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The process triggered by the file event</td>
-      <td class="example">
-        <ul>
-          <li>c:\windows\system32\svchost.exe</li>
-          <li>/usr/bin/python2.7</li>
-          <li>/usr/bin/sed</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Vision One Container Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">processLaunchTime</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The time the subject process was launched</td>
-      <td class="example">
-        <ul>
-          <li>1656400286556</li>
-          <li>1656566610259</li>
-          <li>1656587180493</li>
-        </ul>
-      </td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
       <td class="field-name">processLaunchTime</td>
@@ -4783,9 +6671,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4804,11 +6692,11 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Vision One Container Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Container Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4827,9 +6715,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4842,10 +6730,10 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Vision One Container Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Container Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4865,28 +6753,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">processSigner</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The signer name list of the subject process</td>
-      <td class="example">
-        <ul>
-          <li>Microsoft Windows</li>
-          <li>Microsoft Windows Publisher</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4906,8 +6775,95 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processSignerFlagsAdhoc</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of process signature adhoc flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processSignerFlagsAdhoc</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of process signature adhoc flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processSignerFlagsLibValid</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of process signature library validation flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processSignerFlagsLibValid</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of process signature library validation flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processSignerFlagsRuntime</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of process signature runtime flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processSignerFlagsRuntime</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of process signature runtime flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4925,8 +6881,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -4940,8 +6896,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -4955,8 +6911,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -4975,9 +6931,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -4996,9 +6952,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -5017,8 +6973,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -5037,52 +6993,10 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">processUserGroupId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The process user group ID or file creator</td>
-      <td class="example">
-        <ul>
-          <li>0</li>
-          <li>S-1-5-1</li>
-        </ul>
-      </td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">processUserGroupName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The process user group name or file creator</td>
-      <td class="example">
-        <ul>
-          <li>root</li>
-          <li>NT AUTHORITY</li>
-        </ul>
-      </td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">processUserId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The process user ID or file creator</td>
-      <td class="example">
-        <ul>
-          <li>0</li>
-          <li>S-1-5-1</li>
-        </ul>
-      </td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
       <td class="field-name">proto</td>
@@ -5099,12 +7013,12 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
           <li>TXOne EdgeOne</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Mobile Network Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -5122,29 +7036,62 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">protoFlag</td>
+      <td class="field-name">providerGUID</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The data flags</td>
+      <td class="description">The GUID of the Windows event provider</td>
+      <td class="example">{11111111-1111-1111-1111-111111111111}</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">providerName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the Windows event provider</td>
       <td class="example">
         <ul>
-          <li>ACK PSH DF=1</li>
-          <li>ACK DF=1</li>
-          <li>DF=1</li>
+          <li>Microsoft-Windows-Security-Auditing</li>
+          <li>Microsoft-Windows-WMI-Activity</li>
+          <li>Microsoft-Windows-TaskScheduler</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">proxy</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The proxy address</td>
+      <td class="example">
+        <ul>
+          <li>proxy.sample:8080</li>
+          <li>10.10.10.10:8080</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -5163,16 +7110,16 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
@@ -5194,9 +7141,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -5209,10 +7156,10 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">ASLUMVS0.4FC</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Apex One On-Premises</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
@@ -5225,10 +7172,10 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">C:\ProgramData\Trend Micro\AMSP\quarantine\ASLUMVS0.4FC</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Apex One On-Premises</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
@@ -5241,43 +7188,113 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">84B2FA19B05EA88D6E785B4ADB528120485AA3F72F3E5E114DE6D3696B0D151F</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Apex One On-Premises</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Apex One</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">regionId</td>
+      <td class="field-name">quarantineType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The cloud asset region</td>
+      <td class="description">The descriptive name for the quarantine area</td>
       <td class="example">
         <ul>
-          <li>US East (N. Virginia)</li>
-          <li>Europe (Frankfurt)</li>
+          <li>0</li>
+          <li>1</li>
+          <li>538</li>
         </ul>
       </td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
-      <td class="field-name">regionId</td>
+      <td class="field-name">rating</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The cloud asset region</td>
+      <td class="description">The credibility level</td>
       <td class="example">
         <ul>
-          <li>US East (N. Virginia)</li>
-          <li>Europe (Frankfurt)</li>
+          <li>Safe</li>
+          <li>Unknown</li>
+          <li>Dangerous</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">rawDataSize</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The size of the Windows event log</td>
+      <td class="example">
+        <ul>
+          <li>1128</li>
+          <li>1129</li>
+          <li>1127</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
           <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">rawDataStr</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Windows event raw contents</td>
+      <td class="example">
+        <ul>
+          <li>{
+   &quot;EventData&quot; : {
+      &quot;LogonType&quot; : &quot;&quot;,
+      &quot;TargetDomainName&quot; : &quot;&quot;,
+      &quot;TargetLogonId&quot; : &quot;&quot;,
+      &quot;TargetUserName&quot; : &quot;&quot;,
+      &quot;TargetUserSid&quot; : &quot;&quot;
+   }
+}
+</li>
+          <li>{
+   &quot;EventData&quot; : {
+      &quot;LogonType&quot; : &quot;10&quot;,
+      &quot;TargetDomainName&quot; : &quot;AFASADV&quot;,
+      &quot;TargetLogonId&quot; : &quot;14941011731&quot;,
+      &quot;TargetUserName&quot; : &quot;administrator&quot;,
+      &quot;TargetUserSid&quot; : &quot;S-1-5-21-1507008304-2416677881-2121376573-500&quot;
+   }
+}
+</li>
+          <li>{
+   &quot;EventData&quot; : {
+      &quot;LogonType&quot; : &quot;10&quot;,
+      &quot;TargetDomainName&quot; : &quot;AIS&quot;,
+      &quot;TargetLogonId&quot; : &quot;216921070&quot;,
+      &quot;TargetUserName&quot; : &quot;MWoodr01&quot;,
+      &quot;TargetUserSid&quot; : &quot;S-1-5-21-1873864278-1756520048-3043165120-15057&quot;
+   }
+}
+</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -5296,14 +7313,14 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Email and Collaboration Security</li>
+          <li>Cloud One Network Security</li>
           <li>TXOne EdgeOne</li>
           <li>Email Sensor</li>
           <li>File Security</li>
@@ -5327,18 +7344,38 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Cloud One - Network Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Cloud One Network Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Security</li>
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">request</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">URL</td>
+      <td class="description">Request URL</td>
+      <td class="example">
+        <ul>
+          <li>http://10.10.10.10/fake/site</li>
+          <li>http:///fake/param.cgi?action=list&amp;group=Alarm.Status</li>
+          <li>http://fake.com/</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -5357,10 +7394,10 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -5379,9 +7416,29 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">riskConfidenceLevel</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The risk confidence level</td>
+      <td class="example">
+        <ul>
+          <li>0</li>
+          <li>1</li>
+          <li>2</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
         </ul>
       </td>
     </tr>
@@ -5400,11 +7457,11 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
         </ul>
       </td>
@@ -5418,20 +7475,34 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">1656324260000</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">rt</td>
+      <td class="type">string</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The event time</td>
+      <td class="example">1657781088000</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -5444,11 +7515,11 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">1655337600000</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
@@ -5466,11 +7537,11 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
@@ -5489,11 +7560,11 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
@@ -5511,12 +7582,40 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
           <li>Mobile Network Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">ruleId</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The rule ID</td>
+      <td class="example">1005566</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">ruleIdStr</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The rule ID</td>
+      <td class="example">TM-00000043</td>
+      <td class="products">
+        <ul>
+          <li>Container Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -5543,37 +7642,21 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Email Sensor</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">ruleSetName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The rule set name</td>
-      <td class="example">AllRules</td>
-      <td class="products">
-        <ul>
-          <li>Trend Vision One Container Security</li>
-          <li>Trend Cloud One - Network Security</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -5592,32 +7675,11 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>Trend Vision One Container Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">ruleVer</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The rule version</td>
-      <td class="example">
-        <ul>
-          <li>202207060001</li>
-          <li>202207190001</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Email Sensor</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -5640,15 +7702,15 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -5666,12 +7728,12 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
           <li>Mobile Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -5690,9 +7752,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
@@ -5711,9 +7773,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
         </ul>
       </td>
     </tr>
@@ -5732,11 +7794,27 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">senderIp</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sender IP</td>
+      <td class="example">10.10.10.10</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Email and Collaboration Security</li>
         </ul>
       </td>
     </tr>
@@ -5755,8 +7833,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -5776,40 +7854,26 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Cloud One - Network Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Cloud One Network Security</li>
+          <li>Container Security</li>
           <li>Mobile Network Security</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">shost</td>
+      <td class="field-name">signer</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">DomainName</td>
-      <td class="description">The source hostname</td>
-      <td class="example">
-        <ul>
-          <li>dns.google</li>
-          <li>sw_us-east-1a_10-124-17-69</li>
-          <li>sw_us-east-1c_10-124-21-139</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Mobile Network Security</li>
-        </ul>
-      </td>
+      <td class="general-field">-</td>
+      <td class="description">The signer of the file</td>
+      <td class="example">Shenzhen Smartspace Software technology Co.,Limited;Symantec Class 3 SHA256 Code Signing CA;1429491600;1492649999</td>
+      <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
       <td class="field-name">smac</td>
@@ -5826,32 +7890,33 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
           <li>TXOne EdgeOne</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">sproc</td>
+      <td class="field-name">sourceType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The OSSEC program name</td>
+      <td class="description">The source type</td>
       <td class="example">
         <ul>
-          <li>postfix/sendmail</li>
-          <li>CRON</li>
-          <li>sshd</li>
+          <li>user defined</li>
+          <li>sandbox</li>
+          <li>syscall</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Container Security</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -5869,17 +7934,17 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Deep Security</li>
+          <li>Cloud One Network Security</li>
           <li>Endpoint Sensor</li>
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Mobile Network Security</li>
         </ul>
       </td>
@@ -5899,9 +7964,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Data Detection and Response</li>
         </ul>
       </td>
@@ -5920,18 +7985,18 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">10.10.10.10</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Deep Security</li>
+          <li>Cloud One Network Security</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Mobile Network Security</li>
         </ul>
       </td>
@@ -5955,9 +8020,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Data Detection and Response</li>
         </ul>
       </td>
@@ -5978,8 +8043,68 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcFileCurrentOwnerName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The current owner name of the source file</td>
+      <td class="example">
+        <ul>
+          <li>NT AUTHORITY\SYSTEM</li>
+          <li>BUILTIN\Administrators</li>
+          <li>AUTORIDADE NT\SISTEMA</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcFileCurrentOwnerSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The current security identifier owner of the source file</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-18</li>
+          <li>S-1-5-32-544</li>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcFileDaclString</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The discretionary access control list of the source file</td>
+      <td class="example">
+        <ul>
+          <li>D:(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;0x1200a9;;;BA)(A;;0x1200a9;;;SY)(A;;0x1200a9;;;BU)(A;;0x1200a9;;;AC)(A;;0x1200a9;;;S-1-15-2-2)</li>
+          <li>D:(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200a9;;;BU)(A;ID;0x1200a9;;;AC)(A;ID;0x1200a9;;;S-1-15-2-2)</li>
+          <li>D:(A;ID;FA;;;SY)(A;ID;FA;;;BA)</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -5999,8 +8124,28 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcFileGroupSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The security identifier of the source file group</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+          <li>S-1-5-18</li>
+          <li>S-1-5-21-3770350686-3666354711-3866293128-513</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -6020,8 +8165,68 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcFileHashMd5</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileMD5</td>
+      <td class="description">The md5 hash of source file</td>
+      <td class="example">
+        <ul>
+          <li>e5d5e9c1f65b8ec7aa5b7f1b1acdd731</li>
+          <li>a6779bf446db07e4c4ba3516b273c496</li>
+          <li>4bb7334fdadc6eccb8e6ab402aae013b</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcFileHashSha1</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA1</td>
+      <td class="description">The SHA1 hash of source file</td>
+      <td class="example">
+        <ul>
+          <li>5d34902fecc1760138212ada36be1e742bda5e52</li>
+          <li>dbb14dcda6502ab1d23a7c77d405dafbcbeb439e</li>
+          <li>2292f8109cd756e790c068a52d50f1b0858f503b</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcFileHashSha256</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA2</td>
+      <td class="description">The SHA256 hash of source file</td>
+      <td class="example">
+        <ul>
+          <li>4eaa002225f4ea2dedcd19b7f1337d7c58ea7dd6d4571c12468dde95e6bcfdaf</li>
+          <li>e30508e2088bc16b2a84233ced64995f738deaef2366ac6c86b35c93bbcd9d80</li>
+          <li>16b20a3ad485b4fbbe3028c7e743b226db21ea93cacc8b3d7d7d4a731bf02333</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -6035,8 +8240,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -6056,8 +8261,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -6077,8 +8282,28 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcFileOwnerSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The security identifier of the source file owner</td>
+      <td class="example">
+        <ul>
+          <li>S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464</li>
+          <li>S-1-5-18</li>
+          <li>S-1-5-32-544</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -6103,8 +8328,28 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcFileSaclString</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The system access control list of the source file</td>
+      <td class="example">
+        <ul>
+          <li>S:NO_ACCESS_CONTROL</li>
+          <li>S:(AU;SAFA;DCLCRPCRSDWDWO;;;WD)</li>
+          <li>S:(AU;IDSAFA;DCLCRPSDWDWO;;;AU)</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -6124,8 +8369,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Data Detection and Response</li>
         </ul>
       </td>
@@ -6145,9 +8390,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -6166,9 +8411,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -6187,9 +8432,85 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcSigner</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The signer of the source file</td>
+      <td class="example">
+        <ul>
+          <li>Microsoft Windows</li>
+          <li>Microsoft Corporation</li>
+          <li>Google LLC</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcSignerFlagsAdhoc</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of source file signature adhoc flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcSignerFlagsLibValid</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of source file signature library validation flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcSignerFlagsRuntime</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of source file signature runtime flags</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcSignerValid</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The validity of the source file signer</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -6202,9 +8523,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -6217,20 +8538,11 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">-</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">startTime</td>
-      <td class="type">long</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The time when the first event was received (in Unix milliseconds)</td>
-      <td class="example">1750983848000</td>
-      <td class="products">Trend Cloud One - Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
       <td class="field-name">status</td>
@@ -6247,54 +8559,23 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">subRuleId</td>
+      <td class="field-name">subSystem</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">ID of a subordinate rule</td>
-      <td class="example">
-        <ul>
-          <li>85262</li>
-          <li>914520</li>
-          <li>18152</li>
-        </ul>
-      </td>
+      <td class="description">The sub system information</td>
+      <td class="example">com.apple.xpc</td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Cloud One - Network Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">subRuleName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The subrule name</td>
-      <td class="example">
-        <ul>
-          <li>Pre-authentication failed.</li>
-          <li>ATTACK T1070.002,T1070.004: Indicator Removal on Host : Clear Linux or Mac System Logs,File Deletion </li>
-          <li>ATTACK T1110: Multiple Windows Logon Failures</li>
-          <li>invisible_url_domain</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Email Sensor</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -6313,15 +8594,55 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Deep Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">suser</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EmailSender</td>
+      <td class="description">The email sender</td>
+      <td class="example">sample_email@trendmicro.com</td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">tacticId</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">Tactic</td>
+      <td class="description">The list of MITRE tactic IDs</td>
+      <td class="example">
+        <ul>
+          <li>TA0011</li>
+          <li>TA0008</li>
+          <li>TA0001</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -6346,51 +8667,55 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>ALL</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
           <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">target</td>
+      <td class="field-name">threatName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The target object for the behavior</td>
+      <td class="description">The threat name</td>
       <td class="example">
         <ul>
-          <li>c:\windows\system32\windowspowershell\v1.0\powershell.exe</li>
-          <li>zwwritevirtualmemory</li>
-          <li>/proc/211296/exe</li>
+          <li>Malicious_CnC_access_on_UDP_blocked</li>
+          <li>Malicious_CnC_access_on_TCP_blocked</li>
+          <li>Other protected file</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">targetType</td>
+      <td class="field-name">threatType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The target object type</td>
+      <td class="description">The log threat type</td>
       <td class="example">
         <ul>
-          <li>File System</li>
-          <li>Uncategorized</li>
-          <li>Exploit</li>
+          <li>2</li>
+          <li>99</li>
+          <li>5</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
         </ul>
       </td>
     </tr>
@@ -6409,9 +8734,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -6429,8 +8754,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -6443,8 +8768,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">[{&#x27;triggerModule&#x27;: &#x27;ODS&#x27;, &#x27;triggerReason&#x27;: &#x27;System Schedule Scan&#x27;}]</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -6467,8 +8792,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -6487,14 +8812,40 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Messaging Security</li>
+          <li>Apex One as a Service</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Cloud App Security</li>
           <li>Mobile Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">userDomain</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>EndpointName</li>
+          <li>DomainName</li>
+          <li>AccountDomain</li>
+        </ul>
+      </td>
+      <td class="description">The user domain</td>
+      <td class="example">
+        <ul>
+          <li>example.com.pa</li>
+          <li>DOMAIN</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Messaging Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
     </tr>
@@ -6512,9 +8863,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -6527,63 +8878,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="example">adata</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">vpcId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The virtual private cloud that contains the cloud asset</td>
-      <td class="example">
-        <ul>
-          <li>vpc-01234567890abcdef</li>
-          <li>avtd-vnet-ozyww04h</li>
-          <li>ocid1.vnic.oc1.iad.abuwcljs4szq5rylkxikcthyegnqn5mjhkyn3xwtoa3uvbonxqn52nofibgq</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Agentless Vulnerability &amp; Threat Detection</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">vpcId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The virtual private cloud that contains the cloud asset</td>
-      <td class="example">vpc-01234567890abcdef</td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">wasEntity</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The entity before change/modification</td>
-      <td class="example">
-        <ul>
-          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;,&quot;type&quot;:&quot;Service&quot;,&quot;attributes&quot;:[{&quot;friendlyValue&quot;:null,&quot;name&quot;:&quot;binaryPathName&quot;,&quot;value&quot;:&quot;C:\\Windows\\system32\\vssvc.exe&quot;},{&quot;friendlyValue&quot;:&quot;manual&quot;,&quot;name&quot;:&quot;startType&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;friendlyValue&quot;:&quot;stopped&quot;,&quot;name&quot;:&quot;state&quot;,&quot;value&quot;:&quot;1&quot;}]}</li>
-          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;,&quot;type&quot;:&quot;Service&quot;,&quot;attributes&quot;:[{&quot;friendlyValue&quot;:null,&quot;name&quot;:&quot;binaryPathName&quot;,&quot;value&quot;:&quot;C:\\Windows\\system32\\vssvc.exe&quot;},{&quot;friendlyValue&quot;:&quot;manual&quot;,&quot;name&quot;:&quot;startType&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;friendlyValue&quot;:&quot;running&quot;,&quot;name&quot;:&quot;state&quot;,&quot;value&quot;:&quot;4&quot;}]}</li>
-          <li>{&quot;key&quot;:&quot;&lt;example&gt;&quot;,&quot;type&quot;:&quot;File&quot;,&quot;attributes&quot;:[]}</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -6592,7 +8888,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="type">int</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The Windows Event ID</td>
+      <td class="description">Event ID of Windows event</td>
       <td class="example">
         <ul>
           <li>11</li>
@@ -6602,8 +8898,8 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -6612,9 +8908,9 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 307
+- **Total Fields:** 437
 - **Layer:** Endpoint
-- **Product:** Trend Cloud One - Endpoint & Workload Security
+- **Product:** Apex One as a Service
 
 ---
 *Generated by XDR Common Schema Public Doc Generator V2*

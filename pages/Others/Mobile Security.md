@@ -222,18 +222,18 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Vision One Container Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Container Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Cloud App Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
@@ -259,10 +259,10 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
           <li>TXOne StellarOne</li>
           <li>Mobile Security</li>
         </ul>
@@ -300,8 +300,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The app name (if the subject is an app)</td>
-      <td class="example">Collection Nes Games</td>
+      <td class="description">App name</td>
+      <td class="example">Mobile Security Virus Test Application</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -309,8 +309,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">App name</td>
-      <td class="example">Mobile Security Virus Test Application</td>
+      <td class="description">The app name (if the subject is an app)</td>
+      <td class="example">Collection Nes Games</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -327,8 +327,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The app package name (if the subject is an app)</td>
-      <td class="example">com.ConsolesXX.CollectionNesGames</td>
+      <td class="description">The app package name</td>
+      <td class="example">com.example.app_pkg_name_file</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -336,17 +336,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The app package name</td>
-      <td class="example">com.example.app_pkg_name_file</td>
-      <td class="products">Mobile Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">appPublicKeySha1</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">FileSHA1</td>
-      <td class="description">The SHA-1 hash of the app public key (if the subject is an app)</td>
-      <td class="example">05FC638156219800DADAC48D8E621E0BCBD3C321</td>
+      <td class="description">The app package name (if the subject is an app)</td>
+      <td class="example">com.ConsolesXX.CollectionNesGames</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -359,12 +350,12 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
-      <td class="field-name">appSize</td>
+      <td class="field-name">appPublicKeySha1</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The app size (in bytes) if the subject is an app</td>
-      <td class="example">16906043</td>
+      <td class="general-field">FileSHA1</td>
+      <td class="description">The SHA-1 hash of the app public key (if the subject is an app)</td>
+      <td class="example">05FC638156219800DADAC48D8E621E0BCBD3C321</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -377,12 +368,12 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
-      <td class="field-name">appVerCode</td>
+      <td class="field-name">appSize</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The app version code (if the subject is an app)</td>
-      <td class="example">0</td>
+      <td class="description">The app size (in bytes) if the subject is an app</td>
+      <td class="example">16906043</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -392,6 +383,15 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The app version code</td>
       <td class="example">1</td>
+      <td class="products">Mobile Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">appVerCode</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The app version code (if the subject is an app)</td>
+      <td class="example">0</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -408,7 +408,7 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>Mobile Security</li>
         </ul>
       </td>
@@ -429,29 +429,20 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Messaging Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Deep Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">endpointGuid</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">EndpointID</td>
-      <td class="description">Host GUID of the endpoint on which the event was detected</td>
-      <td class="example">11111111-1111-1111-1111-111111111111</td>
-      <td class="products">Mobile Security</td>
     </tr>
     <tr>
       <td class="field-name">endpointGUID</td>
@@ -468,15 +459,52 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>TXOne StellarOne</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
+          <li>Data Detection and Response</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">endpointGuid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EndpointID</td>
+      <td class="description">Host GUID of the endpoint on which the event was detected</td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="products">Mobile Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">endpointHostName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EndpointName</td>
+      <td class="description">The endpoint hostname or node where the event was detected</td>
+      <td class="example">
+        <ul>
+          <li>10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]</li>
+          <li>ip-10-10-10-10.us-west-1.compute.internal</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Mobile Security</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>TXOne StellarOne</li>
+          <li>Container Security</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Data Detection and Response</li>
         </ul>
       </td>
@@ -495,34 +523,6 @@ This documentation provides detailed information about all fields available for 
         </ul>
       </td>
       <td class="products">Mobile Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">endpointHostName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">EndpointName</td>
-      <td class="description">The endpoint hostname or node where the event was detected</td>
-      <td class="example">
-        <ul>
-          <li>10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]</li>
-          <li>ip-10-10-10-10.us-west-1.compute.internal</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Endpoint Sensor</li>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Mobile Security</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-          <li>TXOne StellarOne</li>
-          <li>Trend Vision One Container Security</li>
-          <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Data Detection and Response</li>
-        </ul>
-      </td>
     </tr>
     <tr>
       <td class="field-name">endpointIp</td>
@@ -549,8 +549,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The endpoint device model</td>
-      <td class="example">Pixel 3 XL</td>
+      <td class="description">Mobile device model</td>
+      <td class="example">M2101K9G</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -558,8 +558,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">Mobile device model</td>
-      <td class="example">M2101K9G</td>
+      <td class="description">The endpoint device model</td>
+      <td class="example">Pixel 3 XL</td>
       <td class="products">Mobile Security</td>
     </tr>
     <tr>
@@ -579,15 +579,6 @@ This documentation provides detailed information about all fields available for 
     </tr>
     <tr>
       <td class="field-name">eventId</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">Event type</td>
-      <td class="example">-</td>
-      <td class="products">Mobile Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">eventId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
@@ -603,16 +594,16 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Email Security</li>
+          <li>Email and Collaboration Security</li>
           <li>TXOne StellarOne</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Email Sensor</li>
           <li>File Security</li>
           <li>File Security Storage</li>
@@ -622,6 +613,15 @@ This documentation provides detailed information about all fields available for 
           <li>Data Detection and Response</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventId</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Event type</td>
+      <td class="example">-</td>
+      <td class="products">Mobile Security</td>
     </tr>
     <tr>
       <td class="field-name">eventName</td>
@@ -655,16 +655,16 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
@@ -760,8 +760,8 @@ This documentation provides detailed information about all fields available for 
       <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>Mobile Security</li>
           <li>Email Sensor</li>
         </ul>
@@ -783,8 +783,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Mobile Security</li>
           <li>TXOne EdgeOne</li>
           <li>TXOne StellarOne</li>
@@ -1079,21 +1079,6 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The host operating system name</td>
-      <td class="example">
-        <ul>
-          <li>Windows</li>
-          <li>Linux</li>
-          <li>macOS</li>
-        </ul>
-      </td>
-      <td class="products">Mobile Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">osName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
       <td class="description">The host OS name</td>
       <td class="example">
         <ul>
@@ -1114,16 +1099,16 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">osVer</td>
+      <td class="field-name">osName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The OS version</td>
+      <td class="description">The host operating system name</td>
       <td class="example">
         <ul>
-          <li>Amazon Linux 2</li>
-          <li>10.0.19044</li>
-          <li>10.0.19042</li>
+          <li>Windows</li>
+          <li>Linux</li>
+          <li>macOS</li>
         </ul>
       </td>
       <td class="products">Mobile Security</td>
@@ -1144,16 +1129,16 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">pname</td>
+      <td class="field-name">osVer</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">Internal product ID (Deprecated, use productCode)</td>
+      <td class="description">The OS version</td>
       <td class="example">
         <ul>
-          <li>2200</li>
-          <li>751</li>
-          <li>533</li>
+          <li>Amazon Linux 2</li>
+          <li>10.0.19044</li>
+          <li>10.0.19042</li>
         </ul>
       </td>
       <td class="products">Mobile Security</td>
@@ -1173,35 +1158,35 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email and Collaboration Security</li>
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Messaging Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">pver</td>
+      <td class="field-name">pname</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The product version</td>
+      <td class="description">Internal product ID (Deprecated, use productCode)</td>
       <td class="example">
         <ul>
-          <li>1.2.0.2752</li>
-          <li>1.0.345</li>
-          <li>1.2.0.2657</li>
+          <li>2200</li>
+          <li>751</li>
+          <li>533</li>
         </ul>
       </td>
       <td class="products">Mobile Security</td>
@@ -1221,16 +1206,16 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Deep Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Cloud One - Network Security</li>
+          <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
-          <li>Trend Vision One Container Security</li>
+          <li>Container Security</li>
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
@@ -1238,16 +1223,16 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">request</td>
+      <td class="field-name">pver</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">URL</td>
-      <td class="description">Request URL</td>
+      <td class="general-field">-</td>
+      <td class="description">The product version</td>
       <td class="example">
         <ul>
-          <li>http://10.10.10.10/fake/site</li>
-          <li>http:///fake/param.cgi?action=list&amp;group=Alarm.Status</li>
-          <li>http://fake.com/</li>
+          <li>1.2.0.2752</li>
+          <li>1.0.345</li>
+          <li>1.2.0.2657</li>
         </ul>
       </td>
       <td class="products">Mobile Security</td>
@@ -1267,20 +1252,35 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Cloud One - Network Security</li>
-          <li>Trend Micro Email Security</li>
-          <li>Trend Micro Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Cloud One Network Security</li>
+          <li>Email and Collaboration Security</li>
+          <li>Deep Security</li>
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">request</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">URL</td>
+      <td class="description">Request URL</td>
+      <td class="example">
+        <ul>
+          <li>http://10.10.10.10/fake/site</li>
+          <li>http:///fake/param.cgi?action=list&amp;group=Alarm.Status</li>
+          <li>http://fake.com/</li>
+        </ul>
+      </td>
+      <td class="products">Mobile Security</td>
     </tr>
     <tr>
       <td class="field-name">score</td>
@@ -1296,12 +1296,12 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Apex One as a Service</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
           <li>Mobile Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -1454,14 +1454,14 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Deep Discovery Inspector</li>
+          <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Trend Micro Web Security</li>
-          <li>Trend Micro Apex One as a Service</li>
+          <li>Messaging Security</li>
+          <li>Apex One as a Service</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Cloud App Security</li>
           <li>Mobile Security</li>
-          <li>Trend Cloud One - Endpoint &amp; Workload Security</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>

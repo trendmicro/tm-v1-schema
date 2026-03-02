@@ -798,7 +798,7 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
+          <li>Cloud App Security</li>
           <li>Microsoft Entra ID</li>
         </ul>
       </td>
