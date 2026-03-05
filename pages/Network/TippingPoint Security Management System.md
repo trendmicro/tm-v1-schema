@@ -238,7 +238,7 @@ This documentation provides detailed information about all fields available for 
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
         </ul>
@@ -475,7 +475,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
         </ul>
@@ -631,7 +631,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Web Security</li>
           <li>Trend Cloud One - Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Trend Vision One Container Security</li>
           <li>Email Sensor</li>
         </ul>
@@ -686,7 +686,7 @@ This documentation provides detailed information about all fields available for 
           <li>TippingPoint Security Management System</li>
           <li>Trend Cloud One - Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Trend Vision One Container Security</li>
           <li>File Security</li>
           <li>File Security Storage</li>
@@ -719,7 +719,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Cloud One - Network Security</li>
           <li>Trend Micro Email Security</li>
           <li>Trend Micro Deep Security</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
         </ul>
       </td>

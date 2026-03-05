@@ -238,11 +238,26 @@ This documentation provides detailed information about all fields available for 
           <li>TXOne EdgeOne</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">actionName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The action being taken</td>
+      <td class="example">
+        <ul>
+          <li>get</li>
+          <li>list</li>
+          <li>create</li>
+        </ul>
+      </td>
+      <td class="products">Trend Vision One Container Security</td>
     </tr>
     <tr>
       <td class="field-name">clusterId</td>
@@ -448,7 +463,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Deep Security</li>
           <li>Trend Micro Email Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Trend Vision One Container Security</li>
         </ul>
@@ -561,7 +576,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Deep Security</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>TXOne StellarOne</li>
           <li>Trend Vision One Container Security</li>
@@ -603,7 +618,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Apex One as a Service</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>TXOne StellarOne</li>
           <li>Trend Vision One Container Security</li>
@@ -652,7 +667,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
         </ul>
@@ -1315,7 +1330,7 @@ This documentation provides detailed information about all fields available for 
           <li>Trend Micro Web Security</li>
           <li>Trend Cloud One - Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Trend Vision One Container Security</li>
           <li>Email Sensor</li>
         </ul>
@@ -1389,6 +1404,23 @@ This documentation provides detailed information about all fields available for 
           <li>TXOne EdgeOne</li>
           <li>Trend Vision One Container Security</li>
           <li>Mobile Network Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">principalName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The user principal name used to sign in to the proxy</td>
+      <td class="example">sample_email@trendmicro.com</td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Web Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Trend Micro Cloud App Security</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Trend Vision One Container Security</li>
         </ul>
       </td>
     </tr>
@@ -1649,7 +1681,7 @@ This documentation provides detailed information about all fields available for 
           <li>TippingPoint Security Management System</li>
           <li>Trend Cloud One - Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Trend Vision One Mobile Security</li>
+          <li>Mobile Security</li>
           <li>Trend Vision One Container Security</li>
           <li>File Security</li>
           <li>File Security Storage</li>
@@ -1676,6 +1708,67 @@ This documentation provides detailed information about all fields available for 
           <li>Network Sensor</li>
           <li>Trend Vision One Container Security</li>
           <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">requestDecision</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Whether the request was allowed or denied by the authorization system</td>
+      <td class="example">allow/deny</td>
+      <td class="products">Trend Vision One Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">resourceCategory</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The category of the object</td>
+      <td class="example">roles</td>
+      <td class="products">Trend Vision One Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">resourceName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The specific name of the object</td>
+      <td class="example">pod-reader</td>
+      <td class="products">Trend Vision One Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">resourceNamespace</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The namespace where the referenced resource exists</td>
+      <td class="example">
+        <ul>
+          <li>default</li>
+          <li>kube-system</li>
+        </ul>
+      </td>
+      <td class="products">Trend Vision One Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">respCode</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The network protocol response code</td>
+      <td class="example">
+        <ul>
+          <li>302</li>
+          <li>200</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Trend Micro Cloud App Security</li>
+          <li>Trend Micro Email Security</li>
+          <li>Trend Vision One Container Security</li>
         </ul>
       </td>
     </tr>
@@ -2091,7 +2184,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 104
+- **Total Fields:** 111
 - **Layer:** Cloud
 - **Product:** Trend Vision One Container Security
 
