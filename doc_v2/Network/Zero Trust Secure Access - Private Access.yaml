@@ -56,6 +56,7 @@
   - pds
   - ams
   - szn
+  - pan
   Description_EN: The notable URLs
   Sample:
   - http://example.page.com/canonical.html
@@ -81,6 +82,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -105,6 +107,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The destination IP
   Sample:
   - 10.10.10.10
@@ -128,6 +131,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The destination port
   Sample:
   - 0
@@ -152,6 +156,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The source port
   Sample:
   - 53
@@ -219,6 +224,7 @@
   - ams
   - mns
   - ddr
+  - pan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -394,6 +400,7 @@
   - sig
   - szn
   - xms
+  - pan
   Description_EN: The Unix time of the log generation
   Sample:
   - 1656324260000

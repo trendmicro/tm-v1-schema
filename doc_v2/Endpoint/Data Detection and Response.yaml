@@ -73,6 +73,7 @@
   - sfc
   - sss
   - ddr
+  - pan
   Description_EN: The SHA-1 of the file that triggered the rule or policy
   Sample:
   - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
@@ -140,6 +141,7 @@
   - ams
   - mns
   - ddr
+  - pan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -206,6 +208,7 @@
   - ams
   - mns
   - ddr
+  - pan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100

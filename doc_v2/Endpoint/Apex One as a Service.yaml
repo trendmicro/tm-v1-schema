@@ -1,3 +1,21 @@
+- Name: interestedHost
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  Description_EN: The endpoint hostname (For example, if an intranet host 
+    accesses a suspicious internet host, the intranet host is the "peerHost" and
+    the internet host is the "interestedHost")
+  Sample:
+  - 10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]
+  - es-dtc-w-dc02.example.corp
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: endpointHostName
   ProductCode:
   - sds
@@ -20,6 +38,22 @@
   - EndpointName
   DL_Searchable: true
   DL_Aggregable: true
+- Name: userDomain
+  ProductCode:
+  - sao
+  - sws
+  - sig
+  Description_EN: The user domain
+  Sample:
+  - example.com.pa
+  - DOMAIN
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  - DomainName
+  - AccountDomain
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: endpointGUID
   ProductCode:
   - sds
@@ -40,6 +74,31 @@
   DL_Type: string
   DL_CommonKey:
   - EndpointID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: request
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - ptp
+  - sds
+  - sig
+  - sca
+  - stp
+  - sem
+  - pds
+  - ams
+  - szn
+  - pan
+  Description_EN: The notable URLs
+  Sample:
+  - http://example.page.com/canonical.html
+  - http://10.10.10.10
+  - https://drive.google.com/
+  DL_Type: string
+  DL_CommonKey:
+  - URL
   DL_Searchable: true
   DL_Aggregable: true
 - Name: src
@@ -92,6 +151,58 @@
   - IPv6
   DL_Searchable: true
   DL_Aggregable: true
+- Name: interestedIp
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - ptp
+  - stp
+  - ptn
+  Description_EN: The IP of the interestedHost
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointIp
+  ProductCode:
+  - sds
+  - pds
+  - sao
+  - ptp
+  - stp
+  - ptn
+  - sss
+  - ddr
+  Description_EN: The IP address of the endpoint on which the event was detected
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: peerIp
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  Description_EN: The IP of peerHost
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: dpt
   ProductCode:
   - pdi
@@ -142,6 +253,85 @@
   - Port
   DL_Searchable: true
   DL_Aggregable: true
+- Name: fileName
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sig
+  - pts
+  - sfs
+  - sfc
+  - sss
+  - pan
+  Description_EN: The file name
+  Sample:
+  - spoolss
+  - hosts
+  - svcrestarttask
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectFileName
+  ProductCode:
+  - sao
+  - scs
+  - sds
+  Description_EN: The object file name
+  Sample:
+  - powershell.exe
+  - wmiprvse.exe
+  - dismhost.exe
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: compressedFileName
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sfs
+  - sfc
+  - sds
+  - sss
+  - scs
+  Description_EN: The file name of the compressed file
+  Sample:
+  - /proc/32058/fd/150
+  - NONAMEFL
+  - /proc/10006/fd/30
+  - VirusActionSample/RPF2_OtherMalwareSample-other.exe
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: filePath
+  ProductCode:
+  - sds
+  - pds
+  - sao
+  - pdi
+  - xns
+  - pts
+  - sfs
+  - sfc
+  Description_EN: The file path without the file name
+  Sample:
+  - security
+  - /var/log/audit/audit.log
+  - application
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: objectFilePath
   ProductCode:
   - sao
@@ -158,6 +348,65 @@
   - FileFullPath
   DL_Searchable: true
   DL_Aggregable: false
+- Name: forensicFilePath
+  ProductCode:
+  - sao
+  Description_EN: The file path of the forensic file (When a Data Loss 
+    Prevention policy is triggered, the file is encrypted and copied to the 
+    OfficeScan server for post-mortem analysis)
+  Sample:
+  - C:\Program Files (x86)\Trend Micro\OfficeScan 
+    Client\dlplite\forensic\frnsc_200411DC0594_xml_00000000000_20220314_132326281
+  - C:\Program Files (x86)\Trend Micro\OfficeScan 
+    Client\dlplite\forensic\frnsc_CIL-OPRCOGEN_docx_00000000000_20211025_225445873
+  - C:\Program Files (x86)\Trend Micro\OfficeScan 
+    Client\dlplite\forensic\frnsc_SHA-ESHOU_h265_00000000000_20220601_082417865
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileHash
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - sig
+  - sfs
+  - sfc
+  - sss
+  - ddr
+  - pan
+  Description_EN: The SHA-1 of the file that triggered the rule or policy
+  Sample:
+  - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
+  - 89CE26EAD139D52B8A6B61BFFC6AF89AF246580F
+  - 3AD1F4E7CAA11E5199EE80B8983677ADDD065450
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: compressedFileHash
+  ProductCode:
+  - pdi
+  - xns
+  - sfs
+  - sfc
+  - sds
+  - sao
+  - sss
+  Description_EN: The SHA-1 of the decompressed archive
+  Sample:
+  - 6E2ECB34B7798E179CC704111FB9733FBAAD5ACA
+  - FA71B59F35F0EE44D27F74917EF5A0DA2797E80B
+  - 14D2302172EB81465CE12E01361AE24CDE170F7B
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: objectFileHashSha1
   ProductCode:
   - sao
@@ -172,6 +421,47 @@
   DL_Type: string
   DL_CommonKey:
   - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileHashSha256
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sig
+  - sds
+  - sfs
+  - sfc
+  - sss
+  - scs
+  - pan
+  Description_EN: The SHA-256 of the file (fileName)
+  Sample:
+  - 6A6EB2D717CEA041B4444193B45EDFB6CA1287518203B7230B3C4B8FFB031EAB
+  - BFF703FF836196644586014DA13A097C2EE9A08E4D596DFB7C8E0F685FE01294
+  - 12327F460AC9CBBC34D39EB3CF89C7FECCA37F08773A04566840F73F6ECC4104
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: compressedFileHashSha256
+  ProductCode:
+  - pdi
+  - xns
+  - sfs
+  - sfc
+  - sds
+  - sao
+  - sss
+  Description_EN: The SHA-256 of the compressed suspicious file
+  Sample:
+  - 60C7C5924DD09F7C6B150120FB92DCEE00AE82DB75C7402FA4D9152CF487A94F
+  - 482FFC4F87B78C3C7073983CF65B593D9F13F0A3D6DC54B4A3F616F79838F3CE
+  - 68C0126D9B4B0FC32DE181D0D67DA8FE82E23745F6023317D5E053B6F6ED26CF
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
   DL_Searchable: true
   DL_Aggregable: false
 - Name: objectFileHashSha256
@@ -315,6 +605,102 @@
   - FileName
   DL_Searchable: true
   DL_Aggregable: false
+- Name: suid
+  ProductCode:
+  - sds
+  - sca
+  - sao
+  - pdi
+  - xns
+  - sws
+  - pds
+  - stp
+  - sig
+  Description_EN: User name or mailbox
+  Sample:
+  - root
+  - US EXAMPLE\TEST
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: suser
+  ProductCode:
+  - sca
+  - sem
+  - pdi
+  - xns
+  - sao
+  - xms
+  - pan
+  Description_EN: The email sender
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailSender
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: duser
+  ProductCode:
+  - sds
+  - pds
+  - sca
+  - sem
+  - pdi
+  - xns
+  - sao
+  - xms
+  - pan
+  Description_EN: The email recipient
+  Sample:
+  - (no user)
+  - SYSTEM
+  - ' SYSTEM'
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EmailRecipient
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: mailMsgSubject
+  ProductCode:
+  - sca
+  - pdi
+  - xns
+  - sem
+  - sao
+  - xms
+  - pan
+  Description_EN: The email subject
+  Sample:
+  - FW. mail subject
+  - ManageEngine
+  DL_Type: string
+  DL_CommonKey:
+  - EmailSubject
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: msgId
+  ProductCode:
+  - sca
+  - sem
+  - pdi
+  - xns
+  - sao
+  - xms
+  - pan
+  Description_EN: The internet message ID
+  Sample:
+  - 66.6.00.0006
+  - example.test.com
+  - dameware1svr
+  DL_Type: string
+  DL_CommonKey:
+  - EmailMessageID
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: tags
   ProductCode:
   - ALL
@@ -384,6 +770,46 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: ruleId
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - mns
+  Description_EN: The rule ID
+  Sample:
+  - 1002795
+  - 1003802
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: malName
+  ProductCode:
+  - sao
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sws
+  - pts
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - scs
+  - pan
+  Description_EN: The name of the detected malware
+  Sample:
+  - SecurityLevelDrop
+  - Regla Logs All
+  - USR_SUSPICIOUS_DOMAIN.UMXX
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: eventName
   ProductCode:
   - sds
@@ -452,71 +878,52 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: parentCmd
+- Name: remarks
   ProductCode:
-  - xes
-  - scs
-  Description_EN: The command line of the subject parent process
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sca
+  - sao
+  - sem
+  - stp
+  - ptn
+  - xms
+  - sfs
+  - sss
+  - sig
+  Description_EN: The additional information
   Sample:
-  - '"C:\Tiburon\CommandCAD\Test\Startup.exe" '
-  - C:\WINDOWS\Explorer.EXE
-  - C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s Appinfo
+  - 'warning: fork: Resource temporarily unavailable'
+  - 'pam_unix(cron:session): session opened for user root by (uid=0)'
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:
+    EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.
+    [CLIENT: 10.10.10.10]  "
   DL_Type: string
   DL_CommonKey:
-  - CLICommand
   DL_Searchable: true
   DL_Aggregable: false
-- Name: parentFilePath
+- Name: fullPath
   ProductCode:
-  - xes
-  Description_EN: The full file path of the parent process
+  - sds
+  - sao
+  - pdi
+  - xns
+  - pds
+  - pts
+  - sfs
+  - sfc
+  - sss
+  - scs
+  Description_EN: The combination of the file path and the file name
   Sample:
-  - c:\windows\explorer.exe
-  - c:\tiburon\commandcad\test\startup.exe
-  - c:\windows\system32\svchost.exe
+  - \etc\hosts
+  - c:\windows\system32\tasks\microsoft\windows\softwareprotectionplatform\svcrestarttask
+  - \var\log\auth.log
   DL_Type: string
   DL_CommonKey:
   - FileFullPath
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentFileHashSha1
-  ProductCode:
-  - xes
-  Description_EN: The SHA-1 of the subject parent process
-  Sample:
-  - 9CF40F19A625F7033689D04F4C8E1CC6A8FA4F5B
-  - 799AB02945EDB9A37A42A3F742DE73165F4A9665
-  - 1F912D4BEC338EF10B7C9F19976286F8ACC4EB97
-  DL_Type: string
-  DL_CommonKey:
-  - FileSHA1
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentFileHashSha256
-  ProductCode:
-  - xes
-  - pts
-  Description_EN: The SHA-256 of the subject parent process
-  Sample:
-  - 14A1223722D486ABBC88682AB49AF8E56DC65AC4E153027985BFFFF7C815C0EC
-  - 2EF51284CA9211ADEC3E8E095F386FEC742E0532075894AE99024C65949F935E
-  - F3FEB95E7BCFB0766A694D93FCA29EDA7E2CA977C2395B4BE75242814EB6D881
-  DL_Type: string
-  DL_CommonKey:
-  - FileSHA2
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentFileHashMd5
-  ProductCode:
-  - xes
-  Description_EN: The MD5 of the subject parent process
-  Sample:
-  - 7B9E6D992AA86F0D2ECDF8F65A6BB792
-  - 2B47C89252BB932B292122E54C3DAF25
-  - CD10CB894BE2128FCA0BF0E2B0C27C16
-  DL_Type: string
-  DL_CommonKey:
-  - FileMD5
   DL_Searchable: true
   DL_Aggregable: false
 - Name: processFileHashSha1
@@ -532,34 +939,6 @@
   DL_Type: string
   DL_CommonKey:
   - FileSHA1
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: processFileHashSha256
-  ProductCode:
-  - sds
-  - xes
-  Description_EN: The SHA-256 of the subject process
-  Sample:
-  - 4314A869B8DAE1BD3FFF810B1366E90FB7C961D4A3424260692377FDD87361D2
-  - 7824c45fc033696603fe97d8f193a1872dfb2b5db75f0cda21df27017b3cb623
-  - 1A6D5986EFEAE89308D9EE11B4A7907012603392E0E66D0E529DB09DF1B4CB64
-  DL_Type: string
-  DL_CommonKey:
-  - FileSHA2
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: processFileHashMd5
-  ProductCode:
-  - sds
-  - xes
-  Description_EN: The MD5 of the subject process
-  Sample:
-  - D07ADD0CE6E000D3CD20193B891E8ED3
-  - 1a9ba93ebe4cb60030831f8ce9e7d5f9
-  - EEE6691B48D2FB604DDF0CBC90D75B0E
-  DL_Type: string
-  DL_CommonKey:
-  - FileMD5
   DL_Searchable: true
   DL_Aggregable: false
 - Name: policyId
@@ -617,6 +996,73 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: actResult
+  ProductCode:
+  - sao
+  - sca
+  - sds
+  - pds
+  - pts
+  - ams
+  Description_EN: The result of an action
+  Sample:
+  - Dropped
+  - Successful
+  - Accepted
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: scanType
+  ProductCode:
+  - sca
+  - sem
+  - sds
+  - sao
+  - pds
+  - xms
+  - sfs
+  - sss
+  - scs
+  Description_EN: The scan type
+  Sample:
+  - realtime_mailmeta-exchange
+  - exchange_mailbox_realtime_detection_logs
+  - gateway_realtime_blocking_traffic
+  - malware_schedule_image
+  - malware_schedule_file
+  - malware_realtime_image
+  - malware_realtime_file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: malSrc
+  ProductCode:
+  - sao
+  - mns
+  Description_EN: The malware infection source
+  Sample:
+  - \\10.172.1.33\kortiz
+  - \\10.240.0.148\wbind
+  - \\10.240.1.69\MT26933059
+  DL_Type: string
+  DL_CommonKey:
+  - FileFullPath
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: malDst
+  ProductCode:
+  - sao
+  Description_EN: The malware infection destination
+  Sample:
+  - 3334_02W3P7
+  - 2666_02N413
+  - 3334_02NHEL
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: pname
   ProductCode:
   - sds
@@ -663,6 +1109,71 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: isHidden
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  Description_EN: Whether the detection log generated a grey rule match
+  Sample:
+  - Yes
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: severity
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - ptp
+  - stp
+  - scs
+  - mns
+  - pan
+  Description_EN: The severity of the event
+  Sample:
+  - 2
+  - 4
+  - 6
+  - 8
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: domainName
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sca
+  Description_EN: The detected domain name
+  Sample:
+  - http://10.10.10.10
+  - example.domain.com
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: httpReferer
+  ProductCode:
+  - pdi
+  - xns
+  - sds
+  - sao
+  Description_EN: The HTTP referer
+  Sample:
+  - http://172.16.58.233/
+  - http://example/page1/
+  - https://www.google.com/
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: objectName
   ProductCode:
   - xes
@@ -671,6 +1182,96 @@
   Description_EN: The base name of the object file or process
   Sample:
   - net.exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processUser
+  ProductCode:
+  - sds
+  - sao
+  - scs
+  Description_EN: The user name of the process or the file creator
+  Sample:
+  - SYSTEM
+  - SVC_JENKINS_CODE_DEV
+  - NETWORK SERVICE
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: urlCat
+  ProductCode:
+  - pdi
+  - xns
+  - sws
+  - sao
+  - sig
+  - sca
+  - ams
+  - sds
+  Description_EN: The requested URL category
+  Sample:
+  - Untested
+  - '158'
+  - Web Advertisement
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyName
+  ProductCode:
+  - sao
+  - sca
+  - sws
+  - sem
+  - sig
+  - ptn
+  - scs
+  - mns
+  Description_EN: The name of the triggered policy
+  Sample:
+  - Steelcase
+  - Cabot
+  - Tigre - Medium Policy
+  - apiPostedPolicy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: application
+  ProductCode:
+  - sws
+  - sig
+  - szn
+  - sao
+  Description_EN: The name of the requested application
+  Sample:
+  - HyperText Transfer Protocol
+  - DoubleClick
+  - The Secure HyperText Transfer Protocol
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: aggregatedCount
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - ptp
+  - sws
+  - stp
+  - sig
+  - pts
+  - ddr
+  - sds
+  Description_EN: The number of aggregated events
+  Sample:
+  - '1'
+  - '2'
+  - '3'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -690,6 +1291,164 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: blocking
+  ProductCode:
+  - sao
+  Description_EN: The blocking type
+  Sample:
+  - Web reputation
+  - Web Server
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cat
+  ProductCode:
+  - sds
+  - pds
+  - sao
+  Description_EN: The weighted priority of the incident
+  Sample:
+  - 100
+  - 200
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: cccaDetection
+  ProductCode:
+  - sao
+  - pdi
+  - xns
+  Description_EN: Is this log identified as a C&C callback address detection
+  Sample:
+  - Yes
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cccaDetectionSource
+  ProductCode:
+  - sao
+  - pdi
+  - xns
+  Description_EN: Which list defines this CCCA detection rule
+  Sample:
+  - CCCA_GLOBAL_LIST (0)
+  - GLOBAL_INTELLIGENCE
+  - USER_DEFINED
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cccaRiskLevel
+  ProductCode:
+  - sao
+  - pdi
+  - xns
+  Description_EN: The severity level of the threat actors associated with the 
+    C&C servers
+  Sample:
+  - 0
+  - 1
+  - 2
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionName
+  ProductCode:
+  - sao
+  - ams
+  Description_EN: The general name for the detection
+  Sample:
+  - Troj.Win32.TRX.XXPE50F13017
+  - Troj.Win32.TRX.XXPE50FFF059
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionType
+  ProductCode:
+  - pdi
+  - xns
+  - sds
+  - sws
+  - sao
+  - sca
+  - pds
+  - sem
+  - sig
+  - ams
+  - szn
+  - scs
+  Description_EN: The detection type
+  Sample:
+  - '1'
+  - File
+  - Process
+  - net
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: direction
+  ProductCode:
+  - sao
+  - ptn
+  Description_EN: The direction
+  Sample:
+  - Incoming
+  - Outgoing
+  - Unknown
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dmac
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - pds
+  - ptn
+  - pan
+  Description_EN: The MAC address of the destination IP (dest_ip)
+  Sample:
+  - 00:00:00:00:00:00
+  - ff:ff:ff:ff:ff:ff
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dvchost
+  ProductCode:
+  - sao
+  - pdi
+  - xns
+  - pan
+  Description_EN: The computer which installed the Trend Micro product
+  Sample:
+  - CU-PRO1-9039-2
+  - LTPF32PMNN
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointMacAddress
+  ProductCode:
+  - sao
+  - ptn
+  - pts
+  Description_EN: The MAC address of endpoint
+  Sample:
+  - 00:00:00:00:00:00
+  - ff:ff:ff:ff:ff:ff
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: engineOperation
   ProductCode:
   - sao
@@ -699,6 +1458,20 @@
   - Set Key
   - Invoke API
   - Create
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: engType
+  ProductCode:
+  - sao
+  - sfs
+  - pan
+  Description_EN: The engine type
+  Sample:
+  - Virus Scan Engine (Windows XP/Server 2003, x64)
+  - Virus Scan NT Kernel Engine
+  - Spyware/Grayware Scan Engine v.6 (64-bit)
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -749,6 +1522,174 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: fileSize
+  ProductCode:
+  - pdi
+  - xns
+  - sig
+  - sao
+  - sfs
+  - sfc
+  - sss
+  - pan
+  Description_EN: The file size of the suspicious file
+  Sample:
+  - '0'
+  - '1255856'
+  - '1237880'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: filterName
+  ProductCode:
+  - sca
+  - sem
+  - sao
+  - ptn
+  Description_EN: The filter name
+  Sample:
+  - ConnectionFilter
+  - Virtual Analyzer
+  - Data Loss Prevention
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: filterType
+  ProductCode:
+  - sao
+  - ptn
+  Description_EN: The filter type
+  Sample:
+  - Spam filter
+  - Size filter
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: firstAct
+  ProductCode:
+  - sds
+  - sao
+  - pds
+  Description_EN: The first scan action
+  Sample:
+  - Pass
+  - Quarantine
+  - Clean
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: firstActResult
+  ProductCode:
+  - sds
+  - sao
+  - pds
+  Description_EN: The first scan action result
+  Sample:
+  - File passed
+  - Unable to quarantine file
+  - File quarantined
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: interestedMacAddress
+  ProductCode:
+  - sao
+  - pdi
+  - xns
+  - ptn
+  Description_EN: The MAC address identified as the log owner's
+  Sample:
+  - 00:00:00:00:00:00
+  - ff:ff:ff:ff:ff:ff
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mDevice
+  ProductCode:
+  - sao
+  Description_EN: IP of the source
+  Sample:
+  - 10.10.10.10
+  - fe80::1234:5678:9abc:def0
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mDeviceGUID
+  ProductCode:
+  - sds
+  - sao
+  - pds
+  Description_EN: The GUID of the agent host
+  Sample:
+  - C5B09EDD-C725-907F-29D9-B8C30D18C48F
+  - C05B75AB-B518-BDD0-D2B5-E9CB631C539F
+  - 9C28ACD3-D0EC-22A4-B08D-5B0BEFF501FC
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mailDeliveryTime
+  ProductCode:
+  - sao
+  Description_EN: The mail delivery time
+  Sample:
+  - '1900-1-1 00:00:00'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: malFamily
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - sfs
+  Description_EN: The threat family
+  Sample:
+  - EQUATED
+  - STARTER
+  - '0'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: malSubType
+  ProductCode:
+  - sao
+  - sfs
+  Description_EN: The subsidiary virus type
+  Sample:
+  - Unknown
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: malType
+  ProductCode:
+  - pdi
+  - xns
+  - sds
+  - sao
+  - pds
+  - sfs
+  - scs
+  Description_EN: The risk type for Network Content Correlation Engine rules
+  Sample:
+  - OTHERS
+  - MALWARE
+  - Others
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: mpname
   ProductCode:
   - sds
@@ -781,6 +1722,76 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: msgAct
+  ProductCode:
+  - sao
+  Description_EN: The message action
+  Sample:
+  - Quarantine
+  - Deliver
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileCreation
+  ProductCode:
+  - sao
+  - sds
+  - scs
+  Description_EN: The UTC time that the object was created
+  Sample:
+  - '2014-11-22T01:45:51-06:00'
+  - '2009-07-13T23:31:13-05:00'
+  - '2014-11-21T02:43:28-05:00'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileModified
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: The UTC time that the object was modified
+  Sample:
+  - '2024-10-10T10:10:10.0000000Z'
+  - '2024-11-11T11:11:11.0000000Z'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFirstRecorded
+  ProductCode:
+  - sao
+  Description_EN: The first time that the object appeared
+  Sample: []
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectId
+  ProductCode:
+  - sao
+  - szn
+  Description_EN: The UUID of the object
+  Sample:
+  - '3'
+  - '2'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectEntityName
+  ProductCode:
+  - sao
+  Description_EN: The object entity name
+  Sample:
+  - any_process
+  - exe_file
+  - powershell
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: objectPid
   ProductCode:
   - sao
@@ -795,19 +1806,6 @@
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
-- Name: objectRegistryRoot
-  ProductCode:
-  - xes
-  - sds
-  Description_EN: The name of the object registry root key
-  Sample:
-  - HKCR
-  - HKLM
-  - HKCU
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: objectSigner
   ProductCode:
   - sao
@@ -818,6 +1816,58 @@
   - Microsoft Windows Publisher
   - SecureWorks Inc
   DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectUser
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: The owner name of the target process or the login user name
+  Sample:
+  - Système
+  - SYSTEM
+  - SISTEMA
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectUserDomain
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The owner domain of the target process
+  Sample:
+  - NT AUTHORITY
+  - UNEB
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pComp
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  Description_EN: The component that made the detection
+  Sample:
+  - CAV
+  - NCIE
+  - TMUFE
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: patType
+  ProductCode:
+  - sao
+  Description_EN: The pattern type
+  Sample:
+  - NCIE CNC Pattern
+  - NCIE RR Pattern
+  - NCIE User Define Block List
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
@@ -864,6 +1914,116 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: processUserDomain
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The owner domain of the subject process image
+  Sample:
+  - NT AUTHORITY
+  - DOMAINBA
+  - PAEDMZ
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: proto
+  ProductCode:
+  - sds
+  - pds
+  - ptn
+  - scs
+  - mns
+  - sao
+  Description_EN: The exploited layer network protocol
+  Sample:
+  - '6'
+  - TCP
+  - '17'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pver
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - ptp
+  - stp
+  - sig
+  - ams
+  - scs
+  - sfs
+  - sfc
+  - sss
+  - pan
+  Description_EN: The product version
+  Sample:
+  - 20.0.0.4726
+  - 20.0.0.4416
+  - 6.2.1125
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: quarantineType
+  ProductCode:
+  - sao
+  Description_EN: The descriptive name for the quarantine area
+  Sample:
+  - '0'
+  - '1'
+  - '538'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: rating
+  ProductCode:
+  - sao
+  - pdi
+  - xns
+  Description_EN: The credibility level
+  Sample:
+  - Safe
+  - Unknown
+  - Dangerous
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestClientApplication
+  ProductCode:
+  - pdi
+  - xns
+  - sds
+  - sao
+  - pan
+  Description_EN: The protocol user agent information
+  Sample:
+  - Microsoft-Delivery-Optimization/10.0
+  - Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+  - example Software GmbH
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: riskConfidenceLevel
+  ProductCode:
+  - sao
+  - sca
+  Description_EN: The risk confidence level
+  Sample:
+  - '0'
+  - '1'
+  - '2'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: riskLevel
   ProductCode:
   - sds
@@ -880,6 +2040,17 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
+  DL_Aggregable: false
+- Name: operationLevel
+  ProductCode:
+  - sao
+  Description_EN: The level that is used to indicate the handler layer at SOC
+  Sample:
+  - 1
+  - 3
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
   DL_Aggregable: false
 - Name: rt
   ProductCode:
@@ -905,6 +2076,280 @@
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
+- Name: rtDate
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  Description_EN: The date of the log generation
+  Sample:
+  - 1655337600000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: rtHour
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  Description_EN: The hour of the log generation
+  Sample:
+  - 9
+  - 8
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: rtWeekDay
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  Description_EN: The weekday of the log generation
+  Sample:
+  - Monday
+  - Tuesday
+  - Friday
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleType
+  ProductCode:
+  - sds
+  - sao
+  - sca
+  - szn
+  - scs
+  Description_EN: The access rule type
+  Sample:
+  - udso
+  - point of entry
+  - unknown
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: score
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sca
+  - ams
+  - sds
+  Description_EN: The Web Reputation Services URL rating
+  Sample:
+  - 71
+  - 81
+  - 0
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: secondAct
+  ProductCode:
+  - sds
+  - sao
+  - pds
+  Description_EN: The second scan action
+  Sample:
+  - Unknown
+  - N/A
+  - Deny Access
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: secondActResult
+  ProductCode:
+  - sds
+  - sao
+  - pds
+  Description_EN: The result of the second scan action
+  Sample:
+  - Unknown
+  - N/A
+  - Access denied
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: senderGUID
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  Description_EN: The sender GUID
+  Sample:
+  - 346648FC-9862-D2F0-F94C-FAB1A838ABD7
+  - 36E5239E-EEBA-0100-C10E-C057E0455E1D
+  - 9606BBD5-38A7-9024-83C8-9C88A2AF90CC
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: senderIp
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sem
+  Description_EN: The sender IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: smac
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - pds
+  - ptn
+  - pan
+  Description_EN: The source MAC address
+  Sample:
+  - 00:11:22:33:44:55
+  - 66:77:88:99:AA:BB
+  - CC:DD:EE:FF:00:11
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: threatName
+  ProductCode:
+  - sca
+  - sao
+  - pdi
+  - xns
+  Description_EN: The threat name
+  Sample:
+  - Malicious_CnC_access_on_UDP_blocked
+  - Malicious_CnC_access_on_TCP_blocked
+  - Other protected file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: threatType
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sss
+  Description_EN: The log threat type
+  Sample:
+  - '2'
+  - '99'
+  - '5'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: bmGroup
+  ProductCode:
+  - sao
+  Description_EN: The one-to-many data structure
+  Sample:
+  - logGenLocalDatetime:2022-07-08T09:21:11+00:00, act:Assessment, 
+    behaviorType:Registry, riskConfidenceLevel:1, ruleId:7, ruleName:New 
+    Service, behaviorCategory:Policy Enforcement, 
+    processFilePath:C:\Windows\SysWOW64\srts\wmipr.exe, aegisOperation:Set Key, 
+    objectFilePath:HKLM\SYSTEM\CurrentControlSet\Services\DpsiBSvc\Start, 
+    policyId:007, objectFileHashSha1:null, objectCmd:null, 
+    processFileHashSha1:null, processCmd:null, objectRegistryData:null, 
+    objectRegistryKeyHandle:null, objectRegistryValue:null
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyTemplate
+  ProductCode:
+  - sao
+  - sca
+  - sig
+  Description_EN: The one-to-many data structure
+  Sample:
+  - policyName:Monitoreo All Files, template:Managed - All files
+  - policyName:HSS DLP, template:All File Extension
+  - 'India: Mobile Numbers'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: computerDomain
+  ProductCode:
+  - sao
+  Description_EN: The computer domain
+  Sample:
+  - COMCEL_DOMINIO
+  - HDWA
+  - RANDON
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: destinationPath
+  ProductCode:
+  - sao
+  Description_EN: The intended destination of the file containing the digital 
+    asset or channel
+  Sample:
+  - Cloud Storage (OneDrive)
+  - Printer
+  - example.sharepoint.com/personal/page_path/onedrive.aspx
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: matchedContent
+  ProductCode:
+  - sao
+  Description_EN: The one-to-many data structure
+  Sample:
+  - ['matchedContentEx:client_id=00000000-0000-0000-0000-000000000000&redirect_uri=https://example.page.com,
+      matchedInfo:0,6|0,6']
+  - ['matchedContentEx:example string, matchedInfo:0,6']
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: online
+  ProductCode:
+  - sao
+  Description_EN: The flag to identify whether the endpoint is online
+  Sample:
+  - Yes
+  - No
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ftpUser
+  ProductCode:
+  - sao
+  Description_EN: The FTP login user name
+  Sample:
+  - USER\TREND
+  - User
+  - ftpuser_service
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: instanceId
   ProductCode:
   - sao
@@ -925,6 +2370,108 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: extraInfo
+  ProductCode:
+  - sao
+  Description_EN: The network application name
+  Sample:
+  - N/A
+  - Web Client Common
+  - DCERPC Services
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileVer
+  ProductCode:
+  - sao
+  Description_EN: The file version
+  Sample:
+  - 10.0.19041.1
+  - 10.0.19041.1766
+  - 10.0.18362.1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: signer
+  ProductCode:
+  - sao
+  Description_EN: The signer of the file
+  Sample:
+  - Shenzhen Smartspace Software technology Co.,Limited;Symantec Class 3 SHA256 
+    Code Signing CA;1429491600;1492649999
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: channel
+  ProductCode:
+  - sao
+  Description_EN: The channel through which the demanded WinEvent is delivered
+  Sample:
+  - Local file or network drive
+  - Local file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileDesc
+  ProductCode:
+  - sao
+  - scs
+  Description_EN: The file description
+  Sample:
+  - Atualiza PJRO
+  - Carpeta de archivos
+  - 7z Setup SFX (x86)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileCreation
+  ProductCode:
+  - sao
+  Description_EN: The file creation date
+  Sample:
+  - 1595918517000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: confidence
+  ProductCode:
+  - sao
+  - sfs
+  Description_EN: The confidence rating returned from TrendX Hybrid Model 
+    (predictive machine learning). Values from 1-99.
+  Sample:
+  - 94
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: forensicFileHash
+  ProductCode:
+  - sao
+  Description_EN: The hash value of the forensic data file
+  Sample:
+  - 177844c5927d0f20da06d79d986c7e7f8c7a3b6a
+  - da39a3ee5e6b4b0d3255bfef95601890afd80709
+  - 8dab234ab6cd96301f9452994f015a449d629edd
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detailTrace
+  ProductCode:
+  - sao
+  Description_EN: Whether the detection comes with a detailed trace footprint
+  Sample: []
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
 - Name: sourceType
   ProductCode:
   - sao
@@ -939,52 +2486,6 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
-- Name: parentName
-  ProductCode:
-  - xes
-  - scs
-  Description_EN: The image name of the parent process
-  Sample:
-  - explorer.exe
-  - startup.exe
-  - svchost.exe
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentPid
-  ProductCode:
-  - sds
-  - xes
-  - pds
-  - scs
-  Description_EN: The PID of the parent process
-  Sample: []
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentSigner
-  ProductCode:
-  - xes
-  Description_EN: The signers of the parent process
-  Sample:
-  - Microsoft Windows
-  - Microsoft Windows Publisher
-  - Azul Systems, Inc.
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentSignerValid
-  ProductCode:
-  - xes
-  Description_EN: Whether each signer of the parent process is valid
-  Sample: []
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: parentSignerFlagsAdhoc
   ProductCode:
   - xes
@@ -1013,15 +2514,6 @@
   - sao
   - pao
   Description_EN: The list of parent process signature library validation flags
-  Sample: []
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectSignerValid
-  ProductCode:
-  - xes
-  Description_EN: Whether each signer of the object process is valid
   Sample: []
   DL_Type: dynamic
   DL_CommonKey:
@@ -1060,25 +2552,6 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: objectApiName
-  ProductCode:
-  - xes
-  Description_EN: The API name
-  Sample:
-  - GetIpNetTable
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectRegType
-  ProductCode:
-  - xes
-  Description_EN: The registry value type
-  Sample: []
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
 - Name: logKey
   ProductCode:
   - sds
@@ -1102,69 +2575,17 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: objectDesiredAccess
+- Name: ruleIdStr
   ProductCode:
-  - xes
-  Description_EN: The desired access of the event
-  Sample: []
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: objectCreateDispositions
-  ProductCode:
-  - xes
-  Description_EN: The disposition of CreateFile
-  Sample: []
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: processHashId
-  ProductCode:
-  - xes
-  Description_EN: The FNV of the subject process
+  - scs
+  - sao
+  Description_EN: The rule ID
   Sample:
-  - '-2965450813604216022'
-  - '7111735426732308768'
-  - '-7600358934761747729'
+  - TM-00000043
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: parentHashId
-  ProductCode:
-  - xes
-  Description_EN: The FNV of the parent process
-  Sample:
-  - '-1364311042632324339'
-  - '1879227689087156956'
-  - '4246064157470561345'
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: smbSharedName
-  ProductCode:
-  - xes
-  Description_EN: The shared folder name for the server that contains the files 
-    to be opened
-  Sample:
-  - C:\sharedfolder
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: processSigner
-  ProductCode:
-  - xes
-  - sds
-  Description_EN: The signer name list of the subject process
-  Sample:
-  - Microsoft Windows
-  - Microsoft Windows Publisher
-  DL_Type: dynamic
-  DL_Searchable: true
 - Name: processSignerFlagsAdhoc
   ProductCode:
   - xes
@@ -1198,84 +2619,93 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: processImagePath
+- Name: vendor
   ProductCode:
+  - sao
   - sds
-  - xes
+  Description_EN: The device vendor
+  Sample:
+  - adata
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: deviceModel
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: The device model number
+  Sample:
+  - c96a
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: deviceSerial
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: The device serial ID
+  Sample:
+  - 000000063a2e8f
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: quarantineFilePath
+  ProductCode:
+  - sao
+  - pao
+  - sds
   - pds
-  - scs
-  Description_EN: The process triggered by the file event
+  Description_EN: The file path of the quarantined object
   Sample:
-  - c:\windows\system32\svchost.exe
-  - /usr/bin/python2.7
-  - /usr/bin/sed
+  - C:\ProgramData\Trend Micro\AMSP\quarantine\ASLUMVS0.4FC
   DL_Type: string
   DL_CommonKey:
+  - FileFullPath
   DL_Searchable: true
   DL_Aggregable: false
-- Name: suspiciousObject
+- Name: clientStatus
   ProductCode:
-  - xes
-  Description_EN: The matched suspicious object
+  - sao
+  Description_EN: The client status when the event occurred
   Sample:
-  - 36ba9de3da9e6f8abfffdda7787ab0ecc16724bb
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: suspiciousObjectType
-  ProductCode:
-  - xes
-  Description_EN: The matched suspicious object type
-  Sample:
-  - sha1
+  - Rebuilding database
+  - Online
+  - Offline
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
-- Name: detectionAggregationId
+- Name: dacDeviceType
   ProductCode:
-  - xes
-  Description_EN: The correlation key for detection logs and artifacts
+  - sao
+  - sds
+  Description_EN: The device type
   Sample:
-  - 00000000-0000-0000-0000-000000000000
-  - 11111111-1111-1111-1111-111111111111
-  - 22222222-2222-2222-2222-222222222222
+  - USB storage device
+  - Mobile devices
+  - Floppy disks
+  - Network driver
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
-- Name: integrityLevel
+  DL_Aggregable: true
+- Name: accessPermission
   ProductCode:
-  - xes
-  Description_EN: The integrity level of a process
+  - sao
+  - sds
+  Description_EN: The access permission type
   Sample:
-  - 16384
-  DL_Type: int
+  - Modify
+  - Read and execute
+  - List device content only
+  - Block
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentIntegrityLevel
-  ProductCode:
-  - xes
-  Description_EN: The integrity level of a parent
-  Sample:
-  - 16384
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: processActions
-  ProductCode:
-  - xes
-  Description_EN: The process actions
-  Sample:
-  - ProcessDump
-  - FileCollection
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: processArtifactIds
   ProductCode:
   - xes
@@ -1285,27 +2715,6 @@
   Sample:
   - 00000000-0000-0000-0000-000000000000_1.dmp
   - 11111111-1111-1111-1111-111111111111_2.bak
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectPipeName
-  ProductCode:
-  - xes
-  Description_EN: The object pipe name
-  Sample:
-  - \\.\pipe\F451F406BD
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: objectActions
-  ProductCode:
-  - xes
-  Description_EN: The object process actions
-  Sample:
-  - ProcessDump
-  - FileCollection
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -1323,6 +2732,45 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: censusMaturityValue
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The CENSUS maturity value
+  Sample:
+  - 0
+  - 1
+  - 2
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: censusPrevalenceValue
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The CENSUS prevalence value
+  Sample:
+  - 0
+  - 1
+  - 2
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dceArtifactActions
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The actions performed on Damage Cleanup Engine artifacts
+  Sample:
+  - folder_backup
+  - objproc_dump
+  - subproc_dump
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: detectedBackupFolder
   ProductCode:
   - sds
@@ -1335,109 +2783,145 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: processPayloadSigner
+- Name: detectedBackupArtifacts
   ProductCode:
-  - xes
-  Description_EN: The signer name list of the process payload
+  - sds
+  - sao
+  Description_EN: The information about detected artifacts
   Sample:
-  - Microsoft Windows
-  - Microsoft Windows Publisher
+  - '{"objectArtifactId": "025d9f2a-ac9c-4cdf-b9e4-cf20c6e40281_0.dmp", "action":
+    "object_process_dump", "status": 0, "processCreationTime": "1627574338077", "processImageFileName":
+    "C:\Program Files\aaa\bbb\objprocess.exe"}'
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: processPayloadSignerValid
+- Name: detectionEngineVersion
   ProductCode:
-  - xes
-  Description_EN: Whether each signer of the process payload is valid
-  Sample: []
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: processPayloadSignerFlagsAdhoc
-  ProductCode:
-  - xes
-  Description_EN: The list of process payload signature adhoc flags
-  Sample: []
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: processPayloadSignerFlagsRuntime
-  ProductCode:
-  - xes
-  Description_EN: The list of process payload signature runtime flags
-  Sample: []
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: processPayloadSignerFlagsLibValid
-  ProductCode:
-  - xes
-  Description_EN: The list of process payload signature library validation flags
-  Sample: []
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentPayloadSigner
-  ProductCode:
-  - xes
-  Description_EN: The signer name list of the parent process payload
+  - sds
+  - sao
+  Description_EN: The detection engine version
   Sample:
-  - Microsoft Windows
-  - Microsoft Windows Publisher
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentPayloadSignerValid
-  ProductCode:
-  - xes
-  Description_EN: Whether each signer of the parent process payload is valid
-  Sample: []
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentPayloadSignerFlagsAdhoc
-  ProductCode:
-  - xes
-  Description_EN: The list of parent process payload signature adhoc flags
-  Sample: []
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentPayloadSignerFlagsRuntime
-  ProductCode:
-  - xes
-  Description_EN: The list of parent process payload signature runtime flags
-  Sample: []
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentPayloadSignerFlagsLibValid
-  ProductCode:
-  - xes
-  Description_EN: The list of parent process payload signature library 
-    validation flags
-  Sample: []
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: processPkgName
-  ProductCode:
-  - xes
-  Description_EN: The process package name
-  Sample:
-  - MSTeams
-  - Microsoft.SkypeApp
+  - 7.6.0
   DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectedPattern
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The detected pattern
+  Sample:
+  - dct.virus
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isProxy
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: Whether something is a proxy
+  Sample:
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: moduleScanType
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The module scan type
+  Sample:
+  - traditional
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectAttributes
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The object attributes
+  Sample:
+  - attribute
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileAccess
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The object file access details
+  Sample:
+  - 1717658631000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: originalFileHashes
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The hashes of the original file
+  Sample:
+  - ba4700bfd55741c657a99fbe416787835fb384da
+  - 639dfe4a69c1e6aace1e4eece3b3bb25af6a1392
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: originalFilePaths
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The paths of the original file
+  Sample:
+  - C:\\Users\\user_name\\Downloads\\run.exe
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: trigger
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The action trigger
+  Sample:
+  - ATSE
+  - On-demand scan
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: detectedActions
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The actions performed on detected artifacts
+  Sample:
+  - folder_backup
+  - objproc_dump
+  - subproc_dump
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: processImageFileNames
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The process image file names of detected backup artifacts
+  Sample:
+  - C:\Program Files\aaa\bbb\objprocess.exe
+  - C:\Program Files\ccc\ddd\sample.exe
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
@@ -1455,6 +2939,17 @@
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
+  DL_Aggregable: false
+- Name: detectedBackupArtifactsStatus
+  ProductCode:
+  - sds
+  - sao
+  Description_EN: The backup status of detected artifacts
+  Sample:
+  - ['0', '-67']
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
   DL_Aggregable: false
 - Name: triggerReason
   ProductCode:
@@ -1500,52 +2995,76 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: processActionResults
+- Name: detectionAggregationIds
   ProductCode:
-  - xes
-  Description_EN: The process action results
+  - sao
+  - sds
+  Description_EN: The list of detection aggregation IDs
   Sample:
-  - success
-  - failure
-  - N/A
+  - [11111111-1111-1111-1111-111111111111]
   DL_Type: dynamic
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: triggerInfo
+  ProductCode:
+  - sao
+  - sds
+  Description_EN: The trigger information
+  Sample:
+  - [{triggerModule: ODS, triggerReason: System Schedule Scan}]
+  DL_Type: dynamic
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: quarantineFileId
+  ProductCode:
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The unique identifier of the quarantined object
+  Sample:
+  - ASLUMVS0.4FC
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: processActionReturnCodes
+- Name: quarantineFileSha256
   ProductCode:
-  - xes
-  Description_EN: The process action return codes
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The SHA-256 of the quarantined object
   Sample:
-  - SUCCESS
-  - ErrorProcessNotFound
-  - N/A
-  DL_Type: dynamic
+  - 84B2FA19B05EA88D6E785B4ADB528120485AA3F72F3E5E114DE6D3696B0D151F
+  DL_Type: string
   DL_CommonKey:
+  - FileSHA2
   DL_Searchable: true
   DL_Aggregable: false
-- Name: objectActionResults
+- Name: detectionNames
   ProductCode:
-  - xes
-  Description_EN: The object process action results
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The rules that triggered the event
   Sample:
-  - success
-  - failure
-  - N/A
+  - [HS_EMOTET.SMAA, HM_AVEDOWN.SMZTIG-A, HE_DOCQRPHISH.SM]
   DL_Type: dynamic
-  DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: objectActionReturnCodes
+- Name: detectionMeta
   ProductCode:
-  - xes
-  Description_EN: The object process action return codes
+  - sao
+  - pao
+  - sds
+  - pds
+  Description_EN: The descriptions of the detected techniques
   Sample:
-  - SUCCESS
-  - ErrorProcessNotFound
-  - N/A
+  - [T1204 some description about this technique, T1573.001_AES another 
+      description about this technique]
   DL_Type: dynamic
-  DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
 - Name: endpointGuid
@@ -2474,6 +3993,18 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: eventDataScriptBlockText
+  ProductCode:
+  - sao
+  Description_EN: Windows event 4104, Creating Scriptblock text
+  Sample:
+  - $global:?
+  - '0'
+  - '{ Set-StrictMode -Version 1; $_.PSMessageDetails }'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: eventDataOperation
   ProductCode:
   - xes
@@ -2483,21 +4014,6 @@
   - 'Start IWbemServices::ExecQuery - root\ccm : select * from SMS_Authority'
   - 'Start IWbemServices::ExecQuery - root\cimv2 : select * from win32_process'
   - 'Start IWbemServices::ExecQuery - root\ccm : SELECT * FROM SMS_Authority'
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectBmData
-  ProductCode:
-  - sds
-  - xes
-  Description_EN: The data of BM event
-  Sample:
-  - '{"provider":"ORCA","schema_version":1,"data":[{"str":"Access /proc/<pid>/*"}]}'
-  - "{\"provider\":\"ORCA\",\"schema_version\":1,\"data\":[{\"str\":\"source '/etc/profile.d/lang.sh'\"\
-    }]}"
-  - "{\"provider\":\"ORCA\",\"schema_version\":1,\"data\":[{\"str\":\"source '/etc/profile.d/bash_completion.sh'\"\
-    }]}"
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2512,52 +4028,6 @@
   - Windows 10 (64 bit)
   - Windows 10 Pro (64 bit) build 19044
   - Amazon Linux 2 (64 bit) (5.4.188-104.359.amzn2.x86_64)
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: instanceId
-  ProductCode:
-  - sds
-  - xes
-  Description_EN: The virtual machine instance ID on the cloud platform
-  Sample:
-  - i-01234567890abcdef
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: cloudProvider
-  ProductCode:
-  - sds
-  - xes
-  Description_EN: The service provider of the cloud asset
-  Sample:
-  - aws
-  - azure
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: vpcId
-  ProductCode:
-  - sds
-  - xes
-  Description_EN: The virtual private cloud that contains the cloud asset
-  Sample:
-  - vpc-01234567890abcdef
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: regionId
-  ProductCode:
-  - sds
-  - xes
-  Description_EN: The cloud asset region
-  Sample:
-  - US East (N. Virginia)
-  - Europe (Frankfurt)
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -3871,28 +5341,41 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: publicSrc
+- Name: hookId
   ProductCode:
-  - xes
-  Description_EN: The public ip of the endpoint making the request
+  - sao
+  Description_EN: The hook ID
   Sample:
-  - 10.10.10.10
+  - '-1'
+  - '5'
+  - '4'
   DL_Type: string
   DL_CommonKey:
-  - IPv4
-  - IPv6
   DL_Searchable: true
   DL_Aggregable: false
-- Name: publicSpt
+- Name: objectThreadId
   ProductCode:
-  - xes
-  Description_EN: The public port of the endpoint making the request
+  - sao
+  Description_EN: The object process thread ID
   Sample:
-  - 57163
-  DL_Type: int
+  - '10196'
+  - '10104'
+  - '10004'
+  DL_Type: string
   DL_CommonKey:
-  - Port
   DL_Searchable: true
+  DL_Aggregable: false
+- Name: moduleName
+  ProductCode:
+  - sao
+  Description_EN: The module where a hook procedure was set up
+  Sample:
+  - c:\program files (x86)\desktopcentral_agent\bin\dcusbsummary.exe
+  - c:\program files\common files\microsoft shared\clicktorun\officesvcmgr.exe
+  - c:\program files (x86)\sharp\sharp pen software\prsnspttool.exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
   DL_Aggregable: false
 - Name: proxy
   ProductCode:
@@ -4001,30 +5484,6 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: eventDataProviderPath
-  ProductCode:
-  - xes
-  Description_EN: The file path of the Windows event data provider
-  Sample:
-  - '%systemroot%\system32\wbem\ntevt.dll'
-  - '%systemroot%\system32\wbem\stdprov.dll'
-  - C:\WINDOWS\CCM\smsclient.dll
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: eventDataProviderName
-  ProductCode:
-  - xes
-  Description_EN: The name of the Windows event data provider
-  Sample:
-  - SmsClientMethodProvider
-  - MS_NT_EVENTLOG_PROVIDER
-  - RegProv
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: eventDataLogonProcessName
   ProductCode:
   - xes
@@ -4077,14 +5536,37 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: eventDataConsumer
+- Name: eventDataJobOwner
   ProductCode:
-  - xes
-  Description_EN: The recipient of the reported event
+  - sao
+  Description_EN: The name of the account that initiated the event
   Sample:
-  - HealthDriverEventConsumer="Health Event Consumer"
-  - MemoryEventConsumer="Memory Event Consumer"
-  - SysEventConsumer="System Event Consumer"
+  - BEI\holdej
+  - NT AUTHORITY\SYSTEM
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataProcessPath
+  ProductCode:
+  - sao
+  Description_EN: The process path that initiated the event
+  Sample:
+  - C:\Program Files\Microsoft Office\Office15\OUTLOOK.EXE
+  - C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARM.exe
+  - C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTargetUserName
+  ProductCode:
+  - sao
+  Description_EN: The user name of the Windows event data target
+  Sample:
+  - Offer Remote Assistance Helpers
+  - Administrators
+  - Administradores
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -4250,16 +5732,6 @@
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
-- Name: app
-  ProductCode:
-  - xes
-  Description_EN: The layer-7 network protocol being exploited protocol
-  Sample:
-  - SMB
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
 - Name: objectContentName
   ProductCode:
   - xes
@@ -4301,36 +5773,6 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: objectApiName
-  ProductCode:
-  - xes
-  Description_EN: The name of the executed API
-  Sample:
-  - GetIpNetTable
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectApiHookNum
-  ProductCode:
-  - xes
-  Description_EN: The API hook number of the object
-  Sample:
-  - 1
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: objectApiRvInNum
-  ProductCode:
-  - xes
-  Description_EN: The API telemetry return value
-  Sample:
-  - '0'
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: objectRegistryRoot
   ProductCode:
   - xes
@@ -4358,329 +5800,6 @@
   DL_Type: int
   DL_CommonKey:
   DL_Searchable: false
-  DL_Aggregable: false
-- Name: objectFileAttributesHashId
-  ProductCode:
-  - xes
-  Description_EN: The hash ID of the file attribute meta information
-  Sample:
-  - 1626660901647460150
-  - -3744588546027069975
-  - 8709345175736065179
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectFileCurrentAttributes
-  ProductCode:
-  - xes
-  Description_EN: The original file attributes
-  Sample:
-  - 0
-  - 34
-  - 8224
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: objectFileAttributes
-  ProductCode:
-  - xes
-  Description_EN: The new file attributes
-  Sample:
-  - 2
-  - 32
-  - 8192
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: nativeDeviceCharacteristics
-  ProductCode:
-  - xes
-  Description_EN: Additional driver device information
-  Sample:
-  - 393217
-  - 131072
-  - 131088
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: nativeDeviceType
-  ProductCode:
-  - xes
-  Description_EN: The underlying hardware type of the driver
-  Sample:
-  - 2
-  - 7
-  - 20
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: nativeStorageDeviceBusType
-  ProductCode:
-  - xes
-  Description_EN: The bus type to which the device is connected
-  Sample:
-  - 0
-  - 2
-  - 17
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: deviceType
-  ProductCode:
-  - xes
-  Description_EN: The disk drive type
-  Sample:
-  - TELEMETRY_DEVICE_TYPE_UNKNOWN
-  - TELEMETRY_DEVICE_TYPE_REMOVABLE
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: codeIntegrityOptionEnabled
-  ProductCode:
-  - xes
-  Description_EN: Whether the system enforced signed kernel loading according to
-    DSE(driver signature enforcement)
-  Sample:
-  - 1
-  - 0
-  DL_Type: bool
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: codeIntegrityOptionTestsign
-  ProductCode:
-  - xes
-  Description_EN: Whether the system bypassed DSE(driver signature enforcement) 
-    checks and permitted loading of test-signed drivers
-  Sample:
-  - 1
-  - 0
-  DL_Type: bool
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: smbSharedName
-  ProductCode:
-  - xes
-  Description_EN: The shared folder name for the server that contains the files
-  Sample:
-  - sharedfolder
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: importTableFileName
-  ProductCode:
-  - xes
-  Description_EN: The library file name which has imported functions
-  Sample:
-  - KERNEL32.dll
-  - ADVAPI32.dll
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: importTableFunctionName
-  ProductCode:
-  - xes
-  Description_EN: The imported function file name
-  Sample:
-  - SwitchToThread/GetSystemInfo
-  - OpenProcessToken
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: importTable
-  ProductCode:
-  - xes
-  Description_EN: The imported table information
-  Sample: []
-  DL_Type: dynamic
-  DL_Searchable: true
-- Name: objectPipeName
-  ProductCode:
-  - xes
-  Description_EN: The named pipe of the event
-  Sample:
-  - \\.\pipe\name1
-  - \\serverHostName\pipe\name1
-  - \\serverIp\pipe\name1
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: eventDataServiceFileName
-  ProductCode:
-  - xes
-  Description_EN: The full file path of the service executable file
-  Sample:
-  - '%SystemRoot%\PSEXESVC.exe'
-  - C:\Windows\System32\svchost.exe -k WinSysRestoreGroup
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: eventDataServiceName
-  ProductCode:
-  - xes
-  Description_EN: The service name
-  Sample:
-  - PSEXESVC
-  - WinResSvc
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: cloudServiceName
-  ProductCode:
-  - xes
-  Description_EN: The cloud service
-  Sample:
-  - s3.us-east-1.amazonaws.com
-  - dynamodb.us-west-2.amazonaws.com
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: cloudServiceApiName
-  ProductCode:
-  - xes
-  Description_EN: The cloud service API
-  Sample:
-  - AssumeRole
-  - GetCallerIdentity
-  - ListBuckets
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: cloudIdentityId
-  ProductCode:
-  - xes
-  Description_EN: The Cloud Identity ID used for authorization
-  Sample:
-  - arn:aws:sts::111111111111:assumed-role/eksctl-aws-test-nodegroup-ng-21d38-NodeInstanceRole-3wPxVEo4zHlK/i-01234567890abcdef
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: cloudIdentityName
-  ProductCode:
-  - xes
-  Description_EN: The Cloud Identity name used for authorization
-  Sample:
-  - AWSsampleToken
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: cloudIdentityAccountId
-  ProductCode:
-  - xes
-  Description_EN: The Cloud Identity account ID used for authorization
-  Sample:
-  - '111111111111'
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: instanceName
-  ProductCode:
-  - xes
-  Description_EN: The virtual machine that made the request
-  Sample:
-  - ec2-123-124-0-12.us-west-2.compute.amazonaws.com
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: instanceAccountId
-  ProductCode:
-  - xes
-  Description_EN: The cloud account ID of the virtual machine that made the 
-    request
-  Sample:
-  - '111111111111'
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: azId
-  ProductCode:
-  - xes
-  Description_EN: The Avaliability Zone ID of the virtual machine that made the 
-    request
-  Sample:
-  - us-east-1b
-  - us-west-2a
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: subnetId
-  ProductCode:
-  - xes
-  Description_EN: The subnet ID of the virtual machine that made the request
-  Sample:
-  - subnet-01234567890abcdef
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: networkInterfaceId
-  ProductCode:
-  - xes
-  Description_EN: The network interface of the virtual machine that made the 
-    request
-  Sample:
-  - eni-01234567890abcdef
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: parentUserGroupSids
-  ProductCode:
-  - xes
-  Description_EN: The SIDs of the parent user group
-  Sample:
-  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
-  - S-1-5-18
-  - S-1-5-21-3770350686-3666354711-3866293128-513
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: processUserGroupSids
-  ProductCode:
-  - xes
-  Description_EN: The user group SIDs of the process
-  Sample:
-  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
-  - S-1-5-18
-  - S-1-5-21-3770350686-3666354711-3866293128-513
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectUserGroupSids
-  ProductCode:
-  - xes
-  Description_EN: The user group SIDs of the object
-  Sample:
-  - S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464
-  - S-1-5-18
-  - S-1-5-21-3770350686-3666354711-3866293128-513
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
   DL_Aggregable: false
 - Name: subSystem
   ProductCode:
@@ -5066,17 +6185,6 @@
   - WIN-GG82ULGC9GO
   - DESKTOP-123ABC
   - CLIENT01
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: processStackTrace
-  ProductCode:
-  - xes
-  Description_EN: The process stack trace of the telemetry event
-  Sample:
-  - C:\Windows\System32\ntdll.dll?NtCreateUserProcess|ZwCreateUserProcess, 
-    C:\Windows\System32\kernelbase.dll!CreateProcessInternalW
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

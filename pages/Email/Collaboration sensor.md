@@ -283,8 +283,8 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Trend Micro Cloud App Security</li>
-          <li>Trend Micro Email Security</li>
+          <li>Cloud App Security</li>
+          <li>Email Security</li>
           <li>Email Sensor</li>
           <li>Collaboration sensor</li>
         </ul>

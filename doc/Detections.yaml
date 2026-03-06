@@ -67,6 +67,7 @@
   - xns
   - pds
   - mns
+  - pan
   Description_EN: The source hostname
   Sample:
   - dns.google
@@ -82,6 +83,7 @@
   - pdi
   - xns
   - mns
+  - pan
   Description_EN: The destination hostname
   Sample:
   - 10.10.10.10
@@ -177,6 +179,7 @@
   - pds
   - ams
   - szn
+  - pan
   Description_EN: The notable URLs
   Sample:
   - http://example.page.com/canonical.html
@@ -245,6 +248,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -269,6 +273,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The destination IP
   Sample:
   - 10.10.10.10
@@ -357,6 +362,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The destination port
   Sample:
   - 0
@@ -381,6 +387,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The source port
   Sample:
   - 53
@@ -403,6 +410,7 @@
   - sfs
   - sfc
   - sss
+  - pan
   Description_EN: The file name
   Sample:
   - spoolss
@@ -561,6 +569,7 @@
   - sfc
   - sss
   - ddr
+  - pan
   Description_EN: The SHA-1 of the file that triggered the rule or policy
   Sample:
   - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
@@ -674,6 +683,7 @@
   - sfc
   - sss
   - scs
+  - pan
   Description_EN: The SHA-256 of the file (fileName)
   Sample:
   - 6A6EB2D717CEA041B4444193B45EDFB6CA1287518203B7230B3C4B8FFB031EAB
@@ -901,6 +911,7 @@
   - xns
   - sao
   - xms
+  - pan
   Description_EN: The email sender
   Sample:
   - sample_email@trendmicro.com
@@ -919,6 +930,7 @@
   - xns
   - sao
   - xms
+  - pan
   Description_EN: The email recipient
   Sample:
   - (no user)
@@ -937,6 +949,7 @@
   - sem
   - sao
   - xms
+  - pan
   Description_EN: The email subject
   Sample:
   - FW. mail subject
@@ -954,6 +967,7 @@
   - xns
   - sao
   - xms
+  - pan
   Description_EN: The internet message ID
   Sample:
   - 66.6.00.0006
@@ -1076,6 +1090,7 @@
   - sfc
   - sss
   - scs
+  - pan
   Description_EN: The name of the detected malware
   Sample:
   - SecurityLevelDrop
@@ -1108,6 +1123,7 @@
   - ams
   - mns
   - ddr
+  - pan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -1494,6 +1510,7 @@
   - ams
   - scs
   - xms
+  - pan
   Description_EN: The internal product ID
   Sample:
   - Trend Micro Deep Security
@@ -1512,6 +1529,7 @@
   - xes
   - stp
   - sig
+  - pan
   Description_EN: The GUID of the agent which reported the detection
   Sample:
   - 00000000-0000-0000-0000-000000000000
@@ -1544,6 +1562,7 @@
   - stp
   - scs
   - mns
+  - pan
   Description_EN: The severity of the event
   Sample:
   - 2
@@ -2034,6 +2053,7 @@
   ProductCode:
   - pdi
   - xns
+  - pan
   Description_EN: The app category of the event
   Sample:
   - DNS Response
@@ -2447,6 +2467,7 @@
   - pdi
   - xns
   - pds
+  - pan
   Description_EN: Device Direction. If the source IP is in the internal network 
     (the network monitored by Deep Discovery Inspector) it is tagged as 
     outbound. All other cases are inbound. Internal-to-internal is also tagged 
@@ -2462,6 +2483,7 @@
   ProductCode:
   - pdi
   - xns
+  - pan
   Description_EN: The device mac address
   Sample:
   - 00:00:00:00:00:00
@@ -2514,6 +2536,7 @@
   - sds
   - pds
   - ptn
+  - pan
   Description_EN: The MAC address of the destination IP (dest_ip)
   Sample:
   - 00:00:00:00:00:00
@@ -2553,6 +2576,7 @@
   ProductCode:
   - pdi
   - xns
+  - pan
   Description_EN: The IP address of the Deep Discover Inspector appliance
   Sample:
   - 10.10.10.10
@@ -2565,6 +2589,7 @@
   - sao
   - pdi
   - xns
+  - pan
   Description_EN: The computer which installed the Trend Micro product
   Sample:
   - CU-PRO1-9039-2
@@ -2603,6 +2628,7 @@
   ProductCode:
   - sao
   - sfs
+  - pan
   Description_EN: The engine type
   Sample:
   - Virus Scan Engine (Windows XP/Server 2003, x64)
@@ -2659,6 +2685,7 @@
   - ams
   - mns
   - ddr
+  - pan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100
@@ -2719,6 +2746,7 @@
   - sfs
   - sfc
   - sss
+  - pan
   Description_EN: The file size of the suspicious file
   Sample:
   - '0'
@@ -2737,6 +2765,7 @@
   - sfc
   - sss
   - scs
+  - pan
   Description_EN: The file type of the suspicious file
   Sample:
   - EXE
@@ -3484,6 +3513,7 @@
   - sfs
   - sfc
   - sss
+  - pan
   Description_EN: The product version
   Sample:
   - 20.0.0.4726
@@ -3525,6 +3555,7 @@
   - xns
   - sds
   - sao
+  - pan
   Description_EN: The protocol user agent information
   Sample:
   - Microsoft-Delivery-Optimization/10.0
@@ -3604,6 +3635,7 @@
   - sig
   - szn
   - xms
+  - pan
   Description_EN: The Unix time of the log generation
   Sample:
   - 1656324260000
@@ -3792,6 +3824,7 @@
   - sds
   - pds
   - ptn
+  - pan
   Description_EN: The source MAC address
   Sample:
   - 00:11:22:33:44:55
@@ -4611,6 +4644,7 @@
   ProductCode:
   - sds
   - pds
+  - pan
   Description_EN: The target object type
   Sample:
   - File System
@@ -6945,5 +6979,83 @@
   - SUSPENDED
   - UNKNOWN
   DL_Type: string
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actionBy
+  ProductCode:
+  - pan
+  Description_EN: The user account or system that triggered the event
+  Sample:
+  - admin
+  - SYSTEM
+  - TREND VISION ONE
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actorHostName
+  ProductCode:
+  - pan
+  Description_EN: The hostname of the actor that triggered the event
+  Sample:
+  - CNNJ-WCCP-Pxy-1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: deviceProcessName
+  ProductCode:
+  - pan
+  Description_EN: The name of the main process executed during Virtual Analyzer 
+    analysis
+  Sample:
+  - explorer.exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: sandboxSubmittedTime
+  ProductCode:
+  - pan
+  Description_EN: The timestamp when the sample was submitted to Virtual 
+    Analyzer
+  Sample:
+  - 1656324260000
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sandboxCompletedTime
+  ProductCode:
+  - pan
+  Description_EN: The timestamp when Virtual Analyzer completed the sample 
+    analysis
+  Sample:
+  - 1656324260000
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actorIp
+  ProductCode:
+  - pan
+  Description_EN: The IP address of the actor that triggered the event
+  Sample:
+  - 192.168.1.1
+  - 10.0.0.1
+  - 172.16.0.1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actorProto
+  ProductCode:
+  - pan
+  Description_EN: The protocol used by the actor that triggered the event
+  Sample:
+  - ICAP REQMOD
+  - ICAP RESPMODE
+  DL_Type: string
+  DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
