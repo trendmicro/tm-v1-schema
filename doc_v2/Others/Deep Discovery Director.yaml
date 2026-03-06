@@ -1,0 +1,12 @@
+- Name: flowId
+  ProductCode:
+  - sna
+  Description_EN: The connection ID
+  Sample:
+  - '6717474604962545666'
+  - '6915244861077872618'
+  - '6915244908215815814'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

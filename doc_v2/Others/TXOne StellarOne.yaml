@@ -54,6 +54,7 @@
   - sfs
   - sfc
   - sss
+  - pan
   Description_EN: The file name
   Sample:
   - spoolss
@@ -128,6 +129,7 @@
   - sfc
   - sss
   - scs
+  - pan
   Description_EN: The name of the detected malware
   Sample:
   - SecurityLevelDrop
@@ -160,6 +162,7 @@
   - ams
   - mns
   - ddr
+  - pan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -310,6 +313,7 @@
   - ams
   - mns
   - ddr
+  - pan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100
