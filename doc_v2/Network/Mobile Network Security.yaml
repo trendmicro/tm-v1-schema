@@ -5,6 +5,7 @@
   - xns
   - pds
   - mns
+  - pan
   Description_EN: The source hostname
   Sample:
   - dns.google
@@ -20,6 +21,7 @@
   - pdi
   - xns
   - mns
+  - pan
   Description_EN: The destination hostname
   Sample:
   - 10.10.10.10
@@ -58,6 +60,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -82,6 +85,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The destination IP
   Sample:
   - 10.10.10.10
@@ -105,6 +109,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The destination port
   Sample:
   - 0
@@ -129,6 +134,7 @@
   - szn
   - scs
   - mns
+  - pan
   Description_EN: The source port
   Sample:
   - 53
@@ -212,6 +218,7 @@
   - ams
   - mns
   - ddr
+  - pan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -299,6 +306,7 @@
   - stp
   - scs
   - mns
+  - pan
   Description_EN: The severity of the event
   Sample:
   - 2
@@ -391,6 +399,7 @@
   - ams
   - mns
   - ddr
+  - pan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100

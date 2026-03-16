@@ -10,6 +10,7 @@
   - sfs
   - sfc
   - sss
+  - pan
   Description_EN: The file name
   Sample:
   - spoolss
@@ -73,6 +74,7 @@
   - sfc
   - sss
   - ddr
+  - pan
   Description_EN: The SHA-1 of the file that triggered the rule or policy
   Sample:
   - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
@@ -113,6 +115,7 @@
   - sfc
   - sss
   - scs
+  - pan
   Description_EN: The SHA-256 of the file (fileName)
   Sample:
   - 6A6EB2D717CEA041B4444193B45EDFB6CA1287518203B7230B3C4B8FFB031EAB
@@ -173,6 +176,7 @@
   - sfc
   - sss
   - scs
+  - pan
   Description_EN: The name of the detected malware
   Sample:
   - SecurityLevelDrop
@@ -205,6 +209,7 @@
   - ams
   - mns
   - ddr
+  - pan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -338,6 +343,7 @@
   ProductCode:
   - sao
   - sfs
+  - pan
   Description_EN: The engine type
   Sample:
   - Virus Scan Engine (Windows XP/Server 2003, x64)
@@ -381,6 +387,7 @@
   - ams
   - mns
   - ddr
+  - pan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100
@@ -401,6 +408,7 @@
   - sfs
   - sfc
   - sss
+  - pan
   Description_EN: The file size of the suspicious file
   Sample:
   - '0'
@@ -419,6 +427,7 @@
   - sfc
   - sss
   - scs
+  - pan
   Description_EN: The file type of the suspicious file
   Sample:
   - EXE
@@ -504,6 +513,7 @@
   - sfs
   - sfc
   - sss
+  - pan
   Description_EN: The product version
   Sample:
   - 20.0.0.4726
