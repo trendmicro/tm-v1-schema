@@ -168,7 +168,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: eventName
   ProductCode:
   - sds

@@ -692,7 +692,6 @@
   - sig
   - szn
   - xms
-  - pan
   Description_EN: The Unix time of the log generation
   Sample:
   - 1656324260000
