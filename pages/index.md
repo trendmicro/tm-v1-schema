@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">2856</span>
+      <span class="stat-number">2961</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -286,7 +286,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Identity/Active%20Directory%20%28on-premises%29" class="product-link">
         <div class="product-info">
           <span>Active Directory (on-premises)</span>
-          <span class="field-count">1 fields</span>
+          <span class="field-count">95 fields</span>
         </div>
       </a>
     </li>
@@ -309,6 +309,14 @@ This page provides links to detailed field documentation for all products organi
         <div class="product-info">
           <span>Cloud One Network Security</span>
           <span class="field-count">26 fields</span>
+        </div>
+      </a>
+    </li>
+    <li class="product-item">
+      <a href="Network/Deep%20Discovery%20Analyzer" class="product-link">
+        <div class="product-info">
+          <span>Deep Discovery Analyzer</span>
+          <span class="field-count">40 fields</span>
         </div>
       </a>
     </li>
@@ -356,7 +364,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Zero%20Trust%20Secure%20Access%20-%20Internet%20Access" class="product-link">
         <div class="product-info">
           <span>Zero Trust Secure Access - Internet Access</span>
-          <span class="field-count">97 fields</span>
+          <span class="field-count">109 fields</span>
         </div>
       </a>
     </li>
@@ -387,14 +395,6 @@ This page provides links to detailed field documentation for all products organi
         <div class="product-info">
           <span>Audit Log</span>
           <span class="field-count">1 fields</span>
-        </div>
-      </a>
-    </li>
-    <li class="product-item">
-      <a href="Others/Deep%20Discovery%20Analyzer" class="product-link">
-        <div class="product-info">
-          <span>Deep Discovery Analyzer</span>
-          <span class="field-count">41 fields</span>
         </div>
       </a>
     </li>

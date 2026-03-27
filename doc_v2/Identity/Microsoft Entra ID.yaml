@@ -13,6 +13,7 @@
 - Name: eventTime
   ProductCode:
   - aad
+  - opa
   Description_EN: The time the identity provider detected the event
   Sample:
   - 1657781088000
@@ -36,6 +37,7 @@
 - Name: eventId
   ProductCode:
   - aad
+  - opa
   Description_EN: The identity provider event ID
   Sample:
   - 1 - EVENT_SOURCE_AAD_SIGN_INS
@@ -47,10 +49,12 @@
 - Name: eventName
   ProductCode:
   - aad
-  Description_EN: The identity provider event name
+  - opa
+  Description_EN: The event type
   Sample:
-  - 4624
-  - aad_signin
+  - EVENT_SOURCE_AAD_SIGN_INS
+  - EVENT_SOURCE_AAD_DIR_AUDIT
+  - EVENT_SOURCE_OPA_WINDOWS_EVENT
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -480,7 +484,8 @@
 - Name: pname
   ProductCode:
   - aad
-  Description_EN: The internal product ID
+  - opa
+  Description_EN: The internal product ID (Deprecated, use productCode)
   Sample:
   - '2200'
   - '751'
@@ -488,7 +493,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: actionName
   ProductCode:
   - aad
