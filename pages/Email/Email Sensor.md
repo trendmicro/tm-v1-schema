@@ -1893,7 +1893,6 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
-          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>

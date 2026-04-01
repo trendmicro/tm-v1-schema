@@ -788,7 +788,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: eventName
   ProductCode:
   - sds
@@ -1823,7 +1823,6 @@
   - sig
   - szn
   - xms
-  - pan
   Description_EN: The Unix time of the log generation
   Sample:
   - 1656324260000
