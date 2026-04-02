@@ -393,21 +393,32 @@ This documentation provides detailed information about all fields available for 
           <li>2 - EVENT_SOURCE_AAD_DIR_AUDIT</li>
         </ul>
       </td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Active Directory (on-premises)</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">eventName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The identity provider event name</td>
+      <td class="description">The event type</td>
       <td class="example">
         <ul>
-          <li>4624</li>
-          <li>aad_signin</li>
+          <li>EVENT_SOURCE_AAD_SIGN_INS</li>
+          <li>EVENT_SOURCE_AAD_DIR_AUDIT</li>
+          <li>EVENT_SOURCE_OPA_WINDOWS_EVENT</li>
         </ul>
       </td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Active Directory (on-premises)</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">eventTime</td>
@@ -416,7 +427,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The time the identity provider detected the event</td>
       <td class="example">1657781088000</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Active Directory (on-premises)</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">idpId</td>
@@ -680,7 +696,7 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The internal product ID</td>
+      <td class="description">The internal product ID (Deprecated, use productCode)</td>
       <td class="example">
         <ul>
           <li>2200</li>
@@ -688,7 +704,12 @@ This documentation provides detailed information about all fields available for 
           <li>533</li>
         </ul>
       </td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Active Directory (on-premises)</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">principalName</td>

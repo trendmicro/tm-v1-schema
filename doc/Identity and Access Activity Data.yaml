@@ -21,6 +21,7 @@
 - Name: eventTime
   ProductCode:
   - aad
+  - opa
   Description_EN: The time the identity provider detected the event
   Sample:
   - 1657781088000
@@ -91,6 +92,7 @@
 - Name: eventId
   ProductCode:
   - aad
+  - opa
   Description_EN: The identity provider event ID
   Sample:
   - 1 - EVENT_SOURCE_AAD_SIGN_INS
@@ -102,10 +104,12 @@
 - Name: eventName
   ProductCode:
   - aad
-  Description_EN: The identity provider event name
+  - opa
+  Description_EN: The event type
   Sample:
-  - 4624
-  - aad_signin
+  - EVENT_SOURCE_AAD_SIGN_INS
+  - EVENT_SOURCE_AAD_DIR_AUDIT
+  - EVENT_SOURCE_OPA_WINDOWS_EVENT
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -545,7 +549,8 @@
 - Name: pname
   ProductCode:
   - aad
-  Description_EN: The internal product ID
+  - opa
+  Description_EN: The internal product ID (Deprecated, use productCode)
   Sample:
   - '2200'
   - '751'
@@ -553,7 +558,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: actionName
   ProductCode:
   - aad
@@ -789,6 +794,1061 @@
   Sample:
   - success
   - failure
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointGuid
+  ProductCode:
+  - opa
+  Description_EN: The endpoint host GUID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointHostName
+  ProductCode:
+  - opa
+  Description_EN: The endpoint hostname
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointIp
+  ProductCode:
+  - opa
+  Description_EN: The endpoint IP
+  Sample:
+  - 10.10.10.10
+  - ::1
+  - fe80::1
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointMacAddress
+  ProductCode:
+  - opa
+  Description_EN: The host MAC address
+  Sample:
+  - 0-0-0-0-0-0-0-e0
+  - 00:00:00:ff:ff:ff
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logonUser
+  ProductCode:
+  - opa
+  Description_EN: The sign-in user name
+  Sample:
+  - root
+  - SISTEMA
+  - oracle
+  DL_Type: dynamic
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userDomain
+  ProductCode:
+  - opa
+  Description_EN: The user domain name
+  Sample:
+  - CORP
+  - AUTORIDADE NT
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pver
+  ProductCode:
+  - opa
+  Description_EN: The product version
+  Sample:
+  - 1.2.0.2752
+  - 1.0.345
+  - 1.2.0.2657
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pplat
+  ProductCode:
+  - opa
+  Description_EN: The product platform
+  Sample:
+  - 5889
+  - 9217
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: osName
+  ProductCode:
+  - opa
+  Description_EN: The host OS name
+  Sample:
+  - Windows
+  - Linux
+  - macOS
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osVer
+  ProductCode:
+  - opa
+  Description_EN: The host OS version
+  Sample:
+  - Amazon Linux 2
+  - 10.0.19044
+  - 10.0.19042
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osDescription
+  ProductCode:
+  - opa
+  Description_EN: The OS version
+  Sample:
+  - Windows 10 (64 bit)
+  - Windows 10 Pro (64 bit) build 19044
+  - Amazon Linux 2 (64 bit) (5.4.188-104.359.amzn2.x86_64)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osType
+  ProductCode:
+  - opa
+  Description_EN: The host OS type
+  Sample:
+  - '0x00000030'
+  - '4'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: instanceId
+  ProductCode:
+  - opa
+  Description_EN: The virtual machine instance ID on the cloud platform
+  Sample:
+  - i-01234567890abcdef
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: winEventId
+  ProductCode:
+  - opa
+  Description_EN: The Windows Event ID
+  Sample:
+  - 4662
+  - 4624
+  - 4625
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: providerName
+  ProductCode:
+  - opa
+  Description_EN: The name of the Windows event provider
+  Sample:
+  - Microsoft-Windows-Security-Auditing
+  - Microsoft-Windows-WMI-Activity
+  - Microsoft-Windows-TaskScheduler
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: providerGUID
+  ProductCode:
+  - opa
+  Description_EN: The GUID of the Windows event provider
+  Sample:
+  - '{11111111-1111-1111-1111-111111111111}'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: channel
+  ProductCode:
+  - opa
+  Description_EN: The Windows event channel
+  Sample:
+  - Security
+  - Microsoft-Windows-WMI-Activity/Trace
+  - Microsoft-Windows-TaskScheduler/Operational
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: rt
+  ProductCode:
+  - opa
+  Description_EN: The event time
+  Sample:
+  - 1657781088000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: rawDataStr
+  ProductCode:
+  - opa
+  Description_EN: The Windows event raw contents
+  Sample:
+  - "{\n   \"EventData\" : {\n      \"LogonType\" : \"\",\n      \"TargetDomainName\"\
+    \ : \"\",\n      \"TargetLogonId\" : \"\",\n      \"TargetUserName\" : \"\",\n\
+    \      \"TargetUserSid\" : \"\"\n   }\n}\n"
+  - "{\n   \"EventData\" : {\n      \"LogonType\" : \"10\",\n      \"TargetDomainName\"\
+    \ : \"AFASADV\",\n      \"TargetLogonId\" : \"14941011731\",\n      \"TargetUserName\"\
+    \ : \"administrator\",\n      \"TargetUserSid\" : \"S-1-5-21-1507008304-2416677881-2121376573-500\"\
+    \n   }\n}\n"
+  - "{\n   \"EventData\" : {\n      \"LogonType\" : \"10\",\n      \"TargetDomainName\"\
+    \ : \"AIS\",\n      \"TargetLogonId\" : \"216921070\",\n      \"TargetUserName\"\
+    \ : \"MWoodr01\",\n      \"TargetUserSid\" : \"S-1-5-21-1873864278-1756520048-3043165120-15057\"\
+    \n   }\n}\n"
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: correlationData
+  ProductCode:
+  - opa
+  Description_EN: The data for correlation
+  Sample: []
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataProviderPath
+  ProductCode:
+  - opa
+  Description_EN: The file path of the Windows event data provider
+  Sample:
+  - '%systemroot%\system32\wbem\ntevt.dll'
+  - '%systemroot%\system32\wbem\stdprov.dll'
+  - C:\WINDOWS\CCM\smsclient.dll
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataProviderName
+  ProductCode:
+  - opa
+  Description_EN: The name of the Windows event data provider
+  Sample:
+  - SmsClientMethodProvider
+  - MS_NT_EVENTLOG_PROVIDER
+  - RegProv
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataOperation
+  ProductCode:
+  - opa
+  Description_EN: Windows event 11
+  Sample:
+  - 'Start IWbemServices::ExecQuery - root\ccm : select * from SMS_Authority'
+  - 'Start IWbemServices::ExecQuery - root\cimv2 : select * from win32_process'
+  - 'Start IWbemServices::ExecQuery - root\ccm : SELECT * FROM SMS_Authority'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataScriptBlockText
+  ProductCode:
+  - opa
+  Description_EN: Windows event 4104, Creating Scriptblock text
+  Sample:
+  - $global:?
+  - '0'
+  - '{ Set-StrictMode -Version 1; $_.PSMessageDetails }'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataLogonType
+  ProductCode:
+  - opa
+  Description_EN: The sign-in type of Windows Event 4624 (successful sign-in 
+    attempt)
+  Sample:
+  - '3'
+  - '5'
+  - '2'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventDataIpAddress
+  ProductCode:
+  - opa
+  Description_EN: The IP address for Windows events
+  Sample:
+  - '-'
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventDataLogonProcessName
+  ProductCode:
+  - opa
+  Description_EN: The Windows event sign-in process name
+  Sample:
+  - 'NtLmSsp '
+  - 'Advapi  '
+  - Advapi
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataAuthenticationPackageName
+  ProductCode:
+  - opa
+  Description_EN: The authentication package name of the Windows event data
+  Sample:
+  - NTLM
+  - Negotiate
+  - MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataStatus
+  ProductCode:
+  - opa
+  Description_EN: The Windows event data status
+  Sample:
+  - '0xc000006d'
+  - '-1073741715'
+  - '0xc000006e'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataSubStatus
+  ProductCode:
+  - opa
+  Description_EN: The Windows event data sub-status
+  Sample:
+  - '0xc0000064'
+  - '0xc000006a'
+  - '-1073741724'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataJobOwner
+  ProductCode:
+  - opa
+  Description_EN: The name of the account that initiated the event
+  Sample:
+  - BEI\holdej
+  - NT AUTHORITY\SYSTEM
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataProcessPath
+  ProductCode:
+  - opa
+  Description_EN: The process path that initiated the event
+  Sample:
+  - C:\Program Files\Microsoft Office\Office15\OUTLOOK.EXE
+  - C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARM.exe
+  - C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataTargetUserName
+  ProductCode:
+  - opa
+  Description_EN: The user name of the Windows event data target
+  Sample:
+  - Auditor
+  - Administrators
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataConsumer
+  ProductCode:
+  - opa
+  Description_EN: The recipient of the reported event
+  Sample:
+  - HealthDriverEventConsumer="Health Event Consumer"
+  - MemoryEventConsumer="Memory Event Consumer"
+  - SysEventConsumer="System Event Consumer"
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataServiceName
+  ProductCode:
+  - opa
+  Description_EN: The service name
+  Sample:
+  - PSEXESVC
+  - WinResSvc
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataServiceFileName
+  ProductCode:
+  - opa
+  Description_EN: The full file path of the service executable file
+  Sample:
+  - '%SystemRoot%\PSEXESVC.exe'
+  - C:\Windows\System32\svchost.exe -k WinSysRestoreGroup
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataServiceAccount
+  ProductCode:
+  - opa
+  Description_EN: The service account
+  Sample:
+  - LocalSystem
+  - NT AUTHORITY\SYSTEM
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataServiceType
+  ProductCode:
+  - opa
+  Description_EN: The service type
+  Sample:
+  - '0x10'
+  - '0x20'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataServiceStartType
+  ProductCode:
+  - opa
+  Description_EN: The service start type
+  Sample:
+  - '2'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataActionName
+  ProductCode:
+  - opa
+  Description_EN: The action performed
+  Sample:
+  - Language Components Installer
+  - Group Policy Background Processing
+  - C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataTaskName
+  ProductCode:
+  - opa
+  Description_EN: The task name logged by the Windows event
+  Sample:
+  - \Microsoft\Windows\LanguageComponentsInstaller\Installation
+  - \Microsoft\Office\Office Serviceability Manager
+  - \MicrosoftEdgeUpdateTaskMachineUA
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataUserContext
+  ProductCode:
+  - opa
+  Description_EN: The user context of the Windows event data
+  Sample:
+  - MP\MPBSA179345$
+  - MP\MPBSASPU179370$
+  - MP\MPBSA4025625$
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataPath
+  ProductCode:
+  - opa
+  Description_EN: The path of the Windows event data
+  Sample:
+  - C:\Program Files\Common Files\Microsoft Shared\ClickToRun\officesvcmgr.exe
+  - taskhostw.exe
+  - gpupdate.exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataModuleILPath
+  ProductCode:
+  - opa
+  Description_EN: The CIL image path of the module or the dynamic module name
+  Sample:
+  - C:\Program Files\Cymulate\Agent\System.Threading.dll
+  - C:\windows\system32\tzsync.exe
+  - C:\Program.exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataFullyQualifiedAssemblyName
+  ProductCode:
+  - opa
+  Description_EN: The fully qualified .NET assembly name
+  Sample:
+  - System.Runtime, Version=6.0.0.0, Culture=neutral, 
+    PublicKeyToken=b03f5f7f11d50a3a
+  - System.Xml, Version=4.0.0.0, Culture=neutral, 
+    PublicKeyToken=b77a5c561934e089
+  - System.Diagnostics.Process, Version=8.0.0.0, Culture=neutral, 
+    PublicKeyToken=b03f5f7f11d50a3a
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataTargetDomainName
+  ProductCode:
+  - opa
+  Description_EN: The target sign-in account domain or computer name
+  Sample:
+  - NT AUTHORITY
+  - Builtin
+  - SHOCKWAVE
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTicketEncryptionType
+  ProductCode:
+  - opa
+  Description_EN: The cryptographic suite used for the Kerberos TGS
+  Sample:
+  - '0x12'
+  - '0x17'
+  - '0x18'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataImpersonationLevel
+  ProductCode:
+  - opa
+  Description_EN: The sign-in session impersonation level
+  Sample:
+  - '%%1830'
+  - '%%1832'
+  - '%%1833'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataElevatedToken
+  ProductCode:
+  - opa
+  Description_EN: Whether the session is elevated and has administrator 
+    privileges
+  Sample:
+  - '%%1842'
+  - '%%1843'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectName
+  ProductCode:
+  - opa
+  Description_EN: The identifying information about the object for which access 
+    was requested
+  Sample:
+  - \Device\HarddiskVolume2\Windows\System32\lsass.exe
+  - C:\Windows\System32\osk.exe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectType
+  ProductCode:
+  - opa
+  Description_EN: The object type
+  Sample:
+  - Process
+  - File
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataAccessList
+  ProductCode:
+  - opa
+  Description_EN: The list of requested access rights
+  Sample:
+  - '%%4416'
+  - '%%4417'
+  - '%%4418'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataAccessMask
+  ProductCode:
+  - opa
+  Description_EN: The hexadecimal value of the requested or used permissions 
+    during an access attempt
+  Sample:
+  - 0x10
+  - 0x80000000
+  - 0x100000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataSubjectUserName
+  ProductCode:
+  - opa
+  Description_EN: The account name
+  Sample:
+  - dadmin
+  - Alex
+  - london$
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTargetName
+  ProductCode:
+  - opa
+  Description_EN: The service, application, or network resource name
+  Sample:
+  - Microsoft_RssPlatform_*
+  - WindowsLive:target=virtualapp/didlogical
+  - MicrosoftOffice*
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventDataWorkstationName
+  ProductCode:
+  - opa
+  Description_EN: The name of the computer used in the sign-in attempt
+  Sample:
+  - WIN-GG82ULGC9GO
+  - DESKTOP-123ABC
+  - CLIENT01
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataSubjectUserSid
+  ProductCode:
+  - opa
+  Description_EN: The security identifier (SID) of the account
+  Sample:
+  - S-1-5-18
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataSubjectDomainName
+  ProductCode:
+  - opa
+  Description_EN: The domain or computer name of the account
+  Sample:
+  - NT AUTHORITY
+  - WORKGROUP
+  - CONTOSO
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataSubjectLogonId
+  ProductCode:
+  - opa
+  Description_EN: The account sign-in ID
+  Sample:
+  - '0x3e7'
+  - '0x3e4'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectServer
+  ProductCode:
+  - opa
+  Description_EN: The name of the Windows sub-system calling the routine
+  Sample:
+  - Security
+  - LSA
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataOperationType
+  ProductCode:
+  - opa
+  Description_EN: The type of operation performed on the object
+  Sample:
+  - Object Access
+  - Object Open
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataProperties
+  ProductCode:
+  - opa
+  Description_EN: The properties of the object
+  Sample:
+  - '%%8278'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTargetSid
+  ProductCode:
+  - opa
+  Description_EN: The security identifier (SID) of the target account
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataMemberName
+  ProductCode:
+  - opa
+  Description_EN: The distinguished name of the account that was added to the 
+    group
+  Sample:
+  - CN=User1,CN=Users,DC=contoso,DC=local
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventDataMemberSid
+  ProductCode:
+  - opa
+  Description_EN: The security identifier (SID) of the account that was added to
+    the group
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataWorkstation
+  ProductCode:
+  - opa
+  Description_EN: The computer name from which the sign-in request was received
+  Sample:
+  - WORKSTATION01
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventDataTargetLogonId
+  ProductCode:
+  - opa
+  Description_EN: The hexadecimal value to correlate this event with events that
+    contain the same sign-in ID
+  Sample:
+  - '0x3e7'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTargetUserSid
+  ProductCode:
+  - opa
+  Description_EN: The security identifier (SID) of the account for which sign-in
+    was requested
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataUserPrincipalName
+  ProductCode:
+  - opa
+  Description_EN: The user account UPN
+  Sample:
+  - user@contoso.local
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataServiceSid
+  ProductCode:
+  - opa
+  Description_EN: The security identifier (SID) of the service
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectDN
+  ProductCode:
+  - opa
+  Description_EN: The distinguished name of the object that was accessed
+  Sample:
+  - CN=User1,CN=Users,DC=contoso,DC=local
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectGUID
+  ProductCode:
+  - opa
+  Description_EN: The unique identifier of the object that was accessed
+  Sample:
+  - '{11111111-1111-1111-1111-111111111111}'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectClass
+  ProductCode:
+  - opa
+  Description_EN: The class of the object that was accessed
+  Sample:
+  - user
+  - group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventDataCertIssuerName
+  ProductCode:
+  - opa
+  Description_EN: The name of the Certification Authority that issued the TGT 
+    certificate
+  Sample:
+  - CN=contoso-DC-CA, DC=contoso, DC=local
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataCertSerialNumber
+  ProductCode:
+  - opa
+  Description_EN: The serial number of the certificate
+  Sample:
+  - 1D0000000120F1D8A3094A82760000000001
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataCertThumbprint
+  ProductCode:
+  - opa
+  Description_EN: The thumbprint of the certificate
+  Sample:
+  - 1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A0B
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataAdditionalInfo
+  ProductCode:
+  - opa
+  Description_EN: The additional information about the event
+  Sample:
+  - Restrictions
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataAttributeLDAPDisplayName
+  ProductCode:
+  - opa
+  Description_EN: The LDAP display name of the attribute that was accessed
+  Sample:
+  - sAMAccountName
+  - memberOf
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventDataTicketOptions
+  ProductCode:
+  - opa
+  Description_EN: The authentication request Kerberos ticket behavior and 
+    permissions flags
+  Sample:
+  - '0x40810000'
+  - '0x40810010'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processHashId
+  ProductCode:
+  - opa
+  Description_EN: The subject process FNV
+  Sample:
+  - '7114696589795796819'
+  - '1307755369266815004'
+  - '-5015325378148567246'
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: processName
+  ProductCode:
+  - opa
+  Description_EN: The image name of the process that triggered the event
+  Sample:
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
+  - c:\windows\system32\lsass.exe
+  DL_Type: string
+  DL_CommonKey:
+  - ProcessName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: processPid
+  ProductCode:
+  - opa
+  Description_EN: The subject process PID
+  Sample:
+  - 4
+  - 1
+  - 784
+  - 792
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processCmd
+  ProductCode:
+  - opa
+  Description_EN: The command line entry of the subject process
+  Sample:
+  - C:\Windows\system32\lsass.exe
+  - C:\WINDOWS\system32\lsass.exe
+  - nimbus(processes)
+  DL_Type: string
+  DL_CommonKey:
+  - CLICommand
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processSigner
+  ProductCode:
+  - opa
+  Description_EN: The process file signer
+  Sample:
+  - Microsoft Windows
+  - Microsoft Windows Publisher
+  - Microsoft Corporation
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processSignerValid
+  ProductCode:
+  - opa
+  Description_EN: The validity of the process signer
+  Sample:
+  - 1
+  - 0
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFilePath
+  ProductCode:
+  - opa
+  Description_EN: The file path of the subject process
+  Sample:
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
+  - c:\windows\system32\lsass.exe
+  DL_Type: string
+  DL_CommonKey:
+  - ProcessFullPath
+  - ProcessName
+  - FileFullPath
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileHashSha1
+  ProductCode:
+  - opa
+  Description_EN: The SHA-1 hash of the subject process image
+  Sample:
+  - 1f912d4bec338ef10b7c9f19976286f8acc4eb97
+  - ded3833f145989fd86c1f4811b61497298ebc7fd
+  - 9ad737cbd8bbdddc96726156dbd3bc03936bf02f
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processFileSize
+  ProductCode:
+  - opa
+  Description_EN: The file size of the process file
+  Sample:
+  - '59952'
+  - '59456'
+  - '47024'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: processFileOriginalName
+  ProductCode:
+  - opa
+  Description_EN: The original file name of the process image
+  Sample:
+  - Taskmgr.exe
+  - WINLOGON.EXE
+  - svchost.exe
+  DL_Type: string
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: processStackTrace
+  ProductCode:
+  - opa
+  Description_EN: The process stack trace of the telemetry event
+  Sample:
+  - C:\Windows\System32\ntdll.dll?NtCreateUserProcess|ZwCreateUserProcess, 
+    C:\Windows\System32\kernelbase.dll!CreateProcessInternalW
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

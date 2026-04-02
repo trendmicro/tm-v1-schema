@@ -1099,7 +1099,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: eventName
   ProductCode:
   - sds
@@ -3635,7 +3635,6 @@
   - sig
   - szn
   - xms
-  - pan
   Description_EN: The Unix time of the log generation
   Sample:
   - 1656324260000
@@ -6979,6 +6978,138 @@
   - SUSPENDED
   - UNKNOWN
   DL_Type: string
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcCountry
+  ProductCode:
+  - sig
+  Description_EN: The country name of the source IP
+  Sample:
+  - TW
+  - AU
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcIsp
+  ProductCode:
+  - sig
+  Description_EN: The ISP name of the source IP
+  Sample:
+  - Chunghwa Telecom
+  - Akamai Technologies
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcCity
+  ProductCode:
+  - sig
+  Description_EN: The city name of the source IP
+  Sample:
+  - Taipei
+  - Sydney
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dstCountry
+  ProductCode:
+  - sig
+  Description_EN: The country name of the destination IP
+  Sample:
+  - TW
+  - AU
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dstIsp
+  ProductCode:
+  - sig
+  Description_EN: The ISP name of the destination IP
+  Sample:
+  - Chunghwa Telecom
+  - Akamai Technologies
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dstCity
+  ProductCode:
+  - sig
+  Description_EN: The city name of the destination IP
+  Sample:
+  - Taipei
+  - Sydney
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: peerIpCountry
+  ProductCode:
+  - sig
+  Description_EN: The country name of the peerHost IP
+  Sample:
+  - TW
+  - AU
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: peerIpIsp
+  ProductCode:
+  - sig
+  Description_EN: The ISP name of the peerHost IP
+  Sample:
+  - Chunghwa Telecom
+  - Akamai Technologies
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: peerIpCity
+  ProductCode:
+  - sig
+  Description_EN: The city name of the peerHost IP
+  Sample:
+  - Taipei
+  - Sydney
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: interestedIpCountry
+  ProductCode:
+  - sig
+  Description_EN: The country name of the interestedHost IP
+  Sample:
+  - TW
+  - AU
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: interestedIpIsp
+  ProductCode:
+  - sig
+  Description_EN: The ISP name of the interestedHost IP
+  Sample:
+  - Chunghwa Telecom
+  - Akamai Technologies
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: interestedIpCity
+  ProductCode:
+  - sig
+  Description_EN: The city name of the interestedHost IP
+  Sample:
+  - Taipei
+  - Sydney
+  DL_Type: dynamic
+  DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
 - Name: actionBy

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: TippingPoint Security Management System - Network
+title: Deep Discovery Analyzer - Network
 ---
 
-# TippingPoint Security Management System
+# Deep Discovery Analyzer
 **Layer:** Network
 
-This documentation provides detailed information about all fields available for TippingPoint Security Management System.
+This documentation provides detailed information about all fields available for Deep Discovery Analyzer.
 
 <style>
 
@@ -202,117 +202,97 @@ This documentation provides detailed information about all fields available for 
   </thead>
   <tbody>
     <tr>
-      <td class="field-name">act</td>
-      <td class="type">dynamic</td>
+      <td class="field-name">actionBy</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The actions taken to mitigate the event</td>
+      <td class="description">The user account or system that triggered the event</td>
       <td class="example">
         <ul>
-          <li>log</li>
-          <li>isolate</li>
-          <li>terminate</li>
-          <li>not blocked</li>
-          <li>Block</li>
-          <li>No action</li>
-          <li>Reset</li>
-          <li>Pass</li>
-          <li>User Decision</li>
+          <li>admin</li>
+          <li>SYSTEM</li>
+          <li>TREND VISION ONE</li>
+        </ul>
+      </td>
+      <td class="products">Deep Discovery Analyzer</td>
+    </tr>
+    <tr>
+      <td class="field-name">actorHostName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The hostname of the actor that triggered the event</td>
+      <td class="example">CNNJ-WCCP-Pxy-1</td>
+      <td class="products">Deep Discovery Analyzer</td>
+    </tr>
+    <tr>
+      <td class="field-name">actorIp</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The IP address of the actor that triggered the event</td>
+      <td class="example">
+        <ul>
+          <li>192.168.1.1</li>
+          <li>10.0.0.1</li>
+          <li>172.16.0.1</li>
+        </ul>
+      </td>
+      <td class="products">Deep Discovery Analyzer</td>
+    </tr>
+    <tr>
+      <td class="field-name">actorProto</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The protocol used by the actor that triggered the event</td>
+      <td class="example">
+        <ul>
+          <li>ICAP REQMOD</li>
+          <li>ICAP RESPMODE</li>
+        </ul>
+      </td>
+      <td class="products">Deep Discovery Analyzer</td>
+    </tr>
+    <tr>
+      <td class="field-name">appGroup</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The app category of the event</td>
+      <td class="example">
+        <ul>
+          <li>DNS Response</li>
+          <li>HTTP</li>
+          <li>CIFS</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Container Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Cloud App Security</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Endpoint Sensor</li>
-          <li>Web Security</li>
-          <li>Email Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">deviceDirection</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Device Direction. If the source IP is in the internal network (the network monitored by Deep Discovery Inspector) it is tagged as outbound. All other cases are inbound. Internal-to-internal is also tagged as outbound.</td>
+      <td class="example">
+        <ul>
+          <li>outbound</li>
+          <li>inbound</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
           <li>Deep Security</li>
-          <li>Cloud One Network Security</li>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>TXOne EdgeOne</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-          <li>Email Sensor</li>
-          <li>Mobile Security</li>
-          <li>Mobile Network Security</li>
-          <li>Agentless Vulnerability &amp; Threat Detection</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">aggregatedCount</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The number of aggregated events</td>
-      <td class="example">
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
-          <li>Apex One as a Service</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Web Security</li>
-          <li>Cloud One Network Security</li>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>TXOne StellarOne</li>
-          <li>Data Detection and Response</li>
-          <li>Endpoint &amp; Workload Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">category</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The event category</td>
-      <td class="example">
-        <ul>
-          <li>Exploits</li>
-          <li>Reconnaissance</li>
-          <li>Vulnerabilities</li>
-          <li>Security Policy</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>TippingPoint Security Management System</li>
-          <li>Mobile Network Security</li>
-          <li>Endpoint &amp; Workload Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">cves</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The CVEs associated with this filter</td>
-      <td class="example">
-        <ul>
-          <li>CVE-2014-3567</li>
-          <li>CVE-2016-6304</li>
-          <li>CVE-2011-1385</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>TippingPoint Security Management System</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -338,6 +318,75 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint Sensor</li>
           <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">deviceMacAddress</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The device mac address</td>
+      <td class="example">
+        <ul>
+          <li>00:00:00:00:00:00</li>
+          <li>ff:ff:ff:ff:ff:ff</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">deviceProcessName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the main process executed during Virtual Analyzer analysis</td>
+      <td class="example">explorer.exe</td>
+      <td class="products">Deep Discovery Analyzer</td>
+    </tr>
+    <tr>
+      <td class="field-name">dhost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">DomainName</td>
+      <td class="description">The destination hostname</td>
+      <td class="example">10.10.10.10</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Mobile Network Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">dmac</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The MAC address of the destination IP (dest_ip)</td>
+      <td class="example">
+        <ul>
+          <li>00:00:00:00:00:00</li>
+          <li>ff:ff:ff:ff:ff:ff</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>TXOne EdgeOne</li>
           <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
@@ -404,27 +453,124 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">endpointIp</td>
+      <td class="field-name">duser</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
-      <td class="general-field">
+      <td class="general-field">EmailRecipient</td>
+      <td class="description">The email recipient</td>
+      <td class="example">
         <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
+          <li>(no user)</li>
+          <li>SYSTEM</li>
+          <li> SYSTEM</li>
         </ul>
       </td>
-      <td class="description">The IP address of the endpoint on which the event was detected</td>
-      <td class="example">10.10.10.10</td>
       <td class="products">
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
           <li>Apex One as a Service</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Cloud One Network Security</li>
-          <li>TXOne EdgeOne</li>
+          <li>Email Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">dvc</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The IP address of the Deep Discover Inspector appliance</td>
+      <td class="example">10.10.10.10</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">dvchost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The computer which installed the Trend Micro product</td>
+      <td class="example">
+        <ul>
+          <li>CU-PRO1-9039-2</li>
+          <li>LTPF32PMNN</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">engType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The engine type</td>
+      <td class="example">
+        <ul>
+          <li>Virus Scan Engine (Windows XP/Server 2003, x64)</li>
+          <li>Virus Scan NT Kernel Engine</li>
+          <li>Spyware/Grayware Scan Engine v.6 (64-bit)</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>File Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event ID from the logs of each product</td>
+      <td class="example">
+        <ul>
+          <li>100100</li>
+          <li>100101</li>
+          <li>100116</li>
+          <li>100117</li>
+          <li>100119</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Email Security</li>
+          <li>TXOne StellarOne</li>
+          <li>Container Security</li>
+          <li>Email Sensor</li>
+          <li>File Security</li>
+          <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Mobile Security</li>
+          <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
+          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -486,125 +632,220 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">interestedIp</td>
+      <td class="field-name">fileHash</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA1</td>
+      <td class="description">The SHA-1 of the file that triggered the rule or policy</td>
+      <td class="example">
+        <ul>
+          <li>DA39A3EE5E6B4B0D3255BFEF95601890AFD80709</li>
+          <li>89CE26EAD139D52B8A6B61BFFC6AF89AF246580F</li>
+          <li>3AD1F4E7CAA11E5199EE80B8983677ADDD065450</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Deep Security</li>
+          <li>Apex One as a Service</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>File Security</li>
+          <li>File Security Storage</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Data Detection and Response</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">fileHashSha256</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA2</td>
+      <td class="description">The SHA-256 of the file (fileName)</td>
+      <td class="example">
+        <ul>
+          <li>6A6EB2D717CEA041B4444193B45EDFB6CA1287518203B7230B3C4B8FFB031EAB</li>
+          <li>BFF703FF836196644586014DA13A097C2EE9A08E4D596DFB7C8E0F685FE01294</li>
+          <li>12327F460AC9CBBC34D39EB3CF89C7FECCA37F08773A04566840F73F6ECC4104</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+          <li>File Security Storage</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Container Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">fileName</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
-      <td class="general-field">
+      <td class="general-field">FileName</td>
+      <td class="description">The file name</td>
+      <td class="example">
         <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
+          <li>spoolss</li>
+          <li>hosts</li>
+          <li>svcrestarttask</li>
         </ul>
       </td>
-      <td class="description">The IP of the interestedHost</td>
-      <td class="example">10.10.10.10</td>
       <td class="products">
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Deep Security</li>
           <li>Apex One as a Service</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Cloud One Network Security</li>
-          <li>TXOne EdgeOne</li>
+          <li>Deep Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>TXOne StellarOne</li>
+          <li>File Security</li>
+          <li>File Security Storage</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">logKey</td>
+      <td class="field-name">fileSize</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The unique key of the event</td>
+      <td class="description">The file size of the suspicious file</td>
       <td class="example">
         <ul>
-          <li>123e4567-e89b-12d3-a456-426614174000</li>
-          <li>987f6543-21ba-43cd-9e8f-123456789abc</li>
-          <li>456789ab-cdef-1234-5678-9abcdef01234</li>
+          <li>0</li>
+          <li>1255856</li>
+          <li>1237880</li>
         </ul>
       </td>
       <td class="products">
         <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Apex One as a Service</li>
+          <li>File Security</li>
+          <li>File Security Storage</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">fileType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The file type of the suspicious file</td>
+      <td class="example">
+        <ul>
+          <li>EXE</li>
+          <li>LNK</li>
+          <li>MIME</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>File Security</li>
+          <li>File Security Storage</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Container Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">mailMsgSubject</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EmailSubject</td>
+      <td class="description">The email subject</td>
+      <td class="example">
+        <ul>
+          <li>FW. mail subject</li>
+          <li>ManageEngine</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Email Security</li>
+          <li>Apex One as a Service</li>
+          <li>Email Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">malName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the detected malware</td>
+      <td class="example">
+        <ul>
+          <li>SecurityLevelDrop</li>
+          <li>Regla Logs All</li>
+          <li>USR_SUSPICIOUS_DOMAIN.UMXX</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>Apex One as a Service</li>
           <li>Deep Security</li>
+          <li>Web Security</li>
+          <li>TXOne StellarOne</li>
+          <li>Email Sensor</li>
+          <li>File Security</li>
+          <li>File Security Storage</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Container Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">msgId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EmailMessageID</td>
+      <td class="description">The internet message ID</td>
+      <td class="example">
+        <ul>
+          <li>66.6.00.0006</li>
+          <li>example.test.com</li>
+          <li>dameware1svr</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
           <li>Cloud App Security</li>
           <li>Email Security</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Endpoint Sensor</li>
-          <li>Web Security</li>
-          <li>Cloud One Network Security</li>
-          <li>Zero Trust Secure Access - Internet Access</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">mpname</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The management product name</td>
-      <td class="example">
-        <ul>
-          <li>Cloud One - Workload Security</li>
-          <li>Apex Central</li>
-          <li>Deep Security Software</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
           <li>Apex One as a Service</li>
-          <li>Deep Security</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Endpoint Sensor</li>
-          <li>Cloud One Network Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">overSsl</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">Whether the event was triggered by an SSL decryption stream (Displayed only when SSL Inspection is supported)</td>
-      <td class="example">
-        <ul>
-          <li>Not over SSL/TLS</li>
-          <li>0</li>
-          <li>Over SSL/TLS</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Cloud One Network Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">peerEndpointGUID</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The endpoint GUID of the agent peer host</td>
-      <td class="example">
-        <ul>
-          <li>00000000-0000-0000-0000-000000000000</li>
-          <li>11111111-1111-1111-1111-111111111111</li>
-          <li>22222222-2222-2222-2222-222222222222</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
-          <li>Cloud One Network Security</li>
-          <li>TippingPoint Security Management System</li>
+          <li>Email Sensor</li>
+          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -639,32 +880,6 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">policyId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The policy ID of which the event was detected</td>
-      <td class="example">
-        <ul>
-          <li>00000001-0001-0001-0001-000000007610</li>
-          <li>007</li>
-          <li>003</li>
-          <li>TM000001</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>TippingPoint Security Management System</li>
-          <li>Apex One as a Service</li>
-          <li>Endpoint Sensor</li>
-          <li>Cloud One Network Security</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Deep Security</li>
-          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -732,109 +947,45 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">rt</td>
+      <td class="field-name">requestClientApplication</td>
       <td class="type">string</td>
-      <td class="searchable">false</td>
+      <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The Unix time of the log generation</td>
+      <td class="description">The protocol user agent information</td>
+      <td class="example">
+        <ul>
+          <li>Microsoft-Delivery-Optimization/10.0</li>
+          <li>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)</li>
+          <li>example Software GmbH</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">sandboxCompletedTime</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The timestamp when Virtual Analyzer completed the sample analysis</td>
       <td class="example">1656324260000</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
-          <li>Apex One as a Service</li>
-          <li>Deep Security</li>
-          <li>Cloud App Security</li>
-          <li>Email Security</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Endpoint Sensor</li>
-          <li>Web Security</li>
-          <li>Cloud One Network Security</li>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-          <li>Email Sensor</li>
-        </ul>
-      </td>
+      <td class="products">Deep Discovery Analyzer</td>
     </tr>
     <tr>
-      <td class="field-name">ruleName</td>
-      <td class="type">string</td>
+      <td class="field-name">sandboxSubmittedTime</td>
+      <td class="type">long</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The name of the rule that triggered the event</td>
-      <td class="example">
-        <ul>
-          <li>Directory Server - Microsoft Windows Active Directory</li>
-          <li>Microsoft Windows Events</li>
-          <li>Microsoft Windows Security Events - 3</li>
-          <li>(T1234) New executable created (chmod)</li>
-          <li>Sensitive Files Upload to Personal Cloud</li>
-          <li>Multiple Sensitive Files Compression</li>
-          <li>Transfer Sensitive Files to Removable Storage</li>
-          <li>Move Multiple Sensitive Files to Central Location</li>
-          <li>Multiple Sensitive Files Modification</li>
-          <li>Multiple Sensitive Files Deletion</li>
-          <li>GEN_CCFR_OVERLAY_TEST.A</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
-          <li>Apex One as a Service</li>
-          <li>Deep Security</li>
-          <li>Cloud App Security</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Endpoint Sensor</li>
-          <li>Email Security</li>
-          <li>Cloud One Network Security</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-          <li>Container Security</li>
-          <li>Email Sensor</li>
-          <li>Mobile Network Security</li>
-          <li>Data Detection and Response</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">ruleSetName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The rule set name</td>
-      <td class="example">AllRules</td>
-      <td class="products">
-        <ul>
-          <li>Container Security</li>
-          <li>Cloud One Network Security</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Endpoint &amp; Workload Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">ruleUuid</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The signature UUID from the DV (Digital Vaccine)</td>
-      <td class="example">
-        <ul>
-          <li>00000001-0001-0001-0001-000000007610</li>
-          <li>00000001-0001-0001-0001-000000007120</li>
-          <li>00000001-0001-0001-0001-000000017056</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>TippingPoint Security Management System</li>
-          <li>Cloud One Network Security</li>
-          <li>Cloud App Security</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-        </ul>
-      </td>
+      <td class="description">The timestamp when the sample was submitted to Virtual Analyzer</td>
+      <td class="example">1656324260000</td>
+      <td class="products">Deep Discovery Analyzer</td>
     </tr>
     <tr>
       <td class="field-name">severity</td>
@@ -861,6 +1012,55 @@ This documentation provides detailed information about all fields available for 
           <li>Cloud One Network Security</li>
           <li>Container Security</li>
           <li>Mobile Network Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">shost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">DomainName</td>
+      <td class="description">The source hostname</td>
+      <td class="example">
+        <ul>
+          <li>dns.google</li>
+          <li>sw_us-east-1a_10-124-17-69</li>
+          <li>sw_us-east-1c_10-124-21-139</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Deep Security</li>
+          <li>Mobile Network Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">smac</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The source MAC address</td>
+      <td class="example">
+        <ul>
+          <li>00:11:22:33:44:55</li>
+          <li>66:77:88:99:AA:BB</li>
+          <li>CC:DD:EE:FF:00:11</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>TXOne EdgeOne</li>
           <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
@@ -927,19 +1127,42 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">vLANId</td>
-      <td class="type">int</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The virtual LAN ID</td>
-      <td class="example">-</td>
+      <td class="field-name">suser</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EmailSender</td>
+      <td class="description">The email sender</td>
+      <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
+          <li>Cloud App Security</li>
+          <li>Email Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Network Sensor</li>
-          <li>TXOne EdgeOne</li>
-          <li>Mobile Network Security</li>
-          <li>TippingPoint Security Management System</li>
+          <li>Apex One as a Service</li>
+          <li>Email Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">targetType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The target object type</td>
+      <td class="example">
+        <ul>
+          <li>File System</li>
+          <li>Uncategorized</li>
+          <li>Exploit</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -948,9 +1171,9 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 26
+- **Total Fields:** 40
 - **Layer:** Network
-- **Product:** TippingPoint Security Management System
+- **Product:** Deep Discovery Analyzer
 
 ---
 *Generated by XDR Common Schema Public Doc Generator V2*

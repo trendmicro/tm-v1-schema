@@ -641,6 +641,48 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">dstCity</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The city name of the destination IP</td>
+      <td class="example">
+        <ul>
+          <li>Taipei</li>
+          <li>Sydney</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">dstCountry</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The country name of the destination IP</td>
+      <td class="example">
+        <ul>
+          <li>TW</li>
+          <li>AU</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">dstIsp</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The ISP name of the destination IP</td>
+      <td class="example">
+        <ul>
+          <li>Chunghwa Telecom</li>
+          <li>Akamai Technologies</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
       <td class="field-name">dstLocation</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1139,6 +1181,48 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">interestedIpCity</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The city name of the interestedHost IP</td>
+      <td class="example">
+        <ul>
+          <li>Taipei</li>
+          <li>Sydney</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">interestedIpCountry</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The country name of the interestedHost IP</td>
+      <td class="example">
+        <ul>
+          <li>TW</li>
+          <li>AU</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">interestedIpIsp</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The ISP name of the interestedHost IP</td>
+      <td class="example">
+        <ul>
+          <li>Chunghwa Telecom</li>
+          <li>Akamai Technologies</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
       <td class="field-name">isPrivateApp</td>
       <td class="type">bool</td>
       <td class="searchable">true</td>
@@ -1275,6 +1359,48 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">peerIpCity</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The city name of the peerHost IP</td>
+      <td class="example">
+        <ul>
+          <li>Taipei</li>
+          <li>Sydney</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">peerIpCountry</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The country name of the peerHost IP</td>
+      <td class="example">
+        <ul>
+          <li>TW</li>
+          <li>AU</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">peerIpIsp</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The ISP name of the peerHost IP</td>
+      <td class="example">
+        <ul>
+          <li>Chunghwa Telecom</li>
+          <li>Akamai Technologies</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
       <td class="field-name">pname</td>
@@ -1713,7 +1839,6 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
-          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -1885,6 +2010,48 @@ This documentation provides detailed information about all fields available for 
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">srcCity</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The city name of the source IP</td>
+      <td class="example">
+        <ul>
+          <li>Taipei</li>
+          <li>Sydney</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">srcCountry</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The country name of the source IP</td>
+      <td class="example">
+        <ul>
+          <li>TW</li>
+          <li>AU</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">srcIsp</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The ISP name of the source IP</td>
+      <td class="example">
+        <ul>
+          <li>Chunghwa Telecom</li>
+          <li>Akamai Technologies</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
       <td class="field-name">srcLocation</td>
@@ -2118,7 +2285,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 97
+- **Total Fields:** 109
 - **Layer:** Network
 - **Product:** Zero Trust Secure Access - Internet Access
 

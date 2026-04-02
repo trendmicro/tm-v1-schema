@@ -3965,7 +3965,6 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
-          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
