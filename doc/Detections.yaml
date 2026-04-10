@@ -5736,7 +5736,7 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
-- Name: isSimulation
+- Name: simulation
   ProductCode:
   - ALL
   Description_EN: Whether a log is a simulation log
