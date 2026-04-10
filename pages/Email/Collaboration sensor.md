@@ -360,6 +360,22 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Collaboration sensor</td>
     </tr>
     <tr>
+      <td class="field-name">mailMsgId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EmailMessageID</td>
+      <td class="description">Email ID</td>
+      <td class="example">&lt;sample-id@trendmicro.com&gt;</td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email Security</li>
+          <li>Collaboration sensor</li>
+          <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">orgName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -485,7 +501,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 26
+- **Total Fields:** 27
 - **Layer:** Email
 - **Product:** Collaboration sensor
 

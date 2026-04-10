@@ -1154,6 +1154,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Cloud App Security</li>
           <li>Email Security</li>
+          <li>Collaboration sensor</li>
           <li>Email Sensor</li>
         </ul>
       </td>
