@@ -701,6 +701,7 @@
   ProductCode:
   - sca
   - sem
+  - xca
   - xms
   Description_EN: Email ID
   Sample:

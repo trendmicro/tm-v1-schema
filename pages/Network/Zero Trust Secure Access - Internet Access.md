@@ -363,6 +363,20 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
+      <td class="field-name">authType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The authorization type</td>
+      <td class="example">
+        <ul>
+          <li>Cookie JWT</li>
+          <li>No Auth</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
       <td class="field-name">clientIp</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -2285,7 +2299,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 109
+- **Total Fields:** 110
 - **Layer:** Network
 - **Product:** Zero Trust Secure Access - Internet Access
 
