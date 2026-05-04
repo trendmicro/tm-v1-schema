@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">2961</span>
+      <span class="stat-number">2963</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -202,7 +202,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Email/Collaboration%20sensor" class="product-link">
         <div class="product-info">
           <span>Collaboration sensor</span>
-          <span class="field-count">26 fields</span>
+          <span class="field-count">27 fields</span>
         </div>
       </a>
     </li>
@@ -364,7 +364,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Zero%20Trust%20Secure%20Access%20-%20Internet%20Access" class="product-link">
         <div class="product-info">
           <span>Zero Trust Secure Access - Internet Access</span>
-          <span class="field-count">109 fields</span>
+          <span class="field-count">110 fields</span>
         </div>
       </a>
     </li>

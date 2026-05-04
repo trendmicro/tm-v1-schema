@@ -1,3 +1,17 @@
+- Name: mailMsgId
+  ProductCode:
+  - sca
+  - sem
+  - xca
+  - xms
+  Description_EN: Email ID
+  Sample:
+  - <sample-id@trendmicro.com>
+  DL_Type: string
+  DL_CommonKey:
+  - EmailMessageID
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: applicationId
   ProductCode:
   - xca

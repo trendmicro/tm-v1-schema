@@ -1647,3 +1647,14 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: authType
+  ProductCode:
+  - sig
+  Description_EN: The authorization type
+  Sample:
+  - Cookie JWT
+  - No Auth
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
