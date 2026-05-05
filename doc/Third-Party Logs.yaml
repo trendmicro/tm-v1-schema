@@ -1639,6 +1639,27 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: senderIp
+  ProductCode:
+  - tlc
+  Description_EN: The IP address of the device sending the log
+  Sample:
+  - '[192.168.1.1]'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: collectorName
+  ProductCode:
+  - tlc
+  Description_EN: The log collector name displayed in Data Source and Log 
+    Management
+  Sample:
+  - My Firewall Collector
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: parentCmd
   ProductCode:
   - tlc
