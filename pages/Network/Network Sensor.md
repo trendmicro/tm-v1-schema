@@ -650,7 +650,12 @@ This documentation provides detailed information about all fields available for 
           <li>sample.tw.test.org</li>
         </ul>
       </td>
-      <td class="products">Network Sensor</td>
+      <td class="products">
+        <ul>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Inspector</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">clientIp</td>
@@ -2490,7 +2495,12 @@ This documentation provides detailed information about all fields available for 
           <li>sample.tw.test.org</li>
         </ul>
       </td>
-      <td class="products">Network Sensor</td>
+      <td class="products">
+        <ul>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Inspector</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">httpXForwardedForIp</td>
@@ -4272,7 +4282,12 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>sample.tw.test.org</li>
         </ul>
       </td>
-      <td class="products">Network Sensor</td>
+      <td class="products">
+        <ul>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Inspector</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">serverIp</td>

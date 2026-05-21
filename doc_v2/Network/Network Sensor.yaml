@@ -3580,6 +3580,7 @@
 - Name: clientHost
   ProductCode:
   - xns
+  - pdi
   Description_EN: The client IP host name
   Sample:
   - sample.test.com
@@ -3591,6 +3592,7 @@
 - Name: serverHost
   ProductCode:
   - xns
+  - pdi
   Description_EN: The server IP host name
   Sample:
   - sample.test.com
@@ -3602,6 +3604,7 @@
 - Name: httpXForwardedForHost
   ProductCode:
   - xns
+  - pdi
   Description_EN: The X-Forwarded-For IP host name
   Sample:
   - sample.test.com

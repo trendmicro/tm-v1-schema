@@ -798,6 +798,18 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: trustType
+  ProductCode:
+  - aad
+  Description_EN: The join type of the sign-in device
+  Sample:
+  - AzureAd
+  - ServerAd
+  - Workplace
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: endpointGuid
   ProductCode:
   - opa

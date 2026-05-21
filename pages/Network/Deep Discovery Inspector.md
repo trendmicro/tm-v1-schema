@@ -639,6 +639,25 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">clientHost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The client IP host name</td>
+      <td class="example">
+        <ul>
+          <li>sample.test.com</li>
+          <li>sample.tw.test.org</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Inspector</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">clientIp</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -2465,6 +2484,25 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">httpXForwardedForHost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The X-Forwarded-For IP host name</td>
+      <td class="example">
+        <ul>
+          <li>sample.test.com</li>
+          <li>sample.tw.test.org</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Inspector</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">httpXForwardedForIp</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -4211,6 +4249,25 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
     </tr>
     <tr>
+      <td class="field-name">serverHost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The server IP host name</td>
+      <td class="example">
+        <ul>
+          <li>sample.test.com</li>
+          <li>sample.tw.test.org</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Inspector</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">serverIp</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -5148,7 +5205,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
 </div>
 
 ## Field Statistics
-- **Total Fields:** 249
+- **Total Fields:** 252
 - **Layer:** Network
 - **Product:** Deep Discovery Inspector
 
