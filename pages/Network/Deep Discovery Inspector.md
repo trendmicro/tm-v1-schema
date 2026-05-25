@@ -639,6 +639,25 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">clientHost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The client IP host name</td>
+      <td class="example">
+        <ul>
+          <li>sample.test.com</li>
+          <li>sample.tw.test.org</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Inspector</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">clientIp</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -2465,6 +2484,25 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">httpXForwardedForHost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The X-Forwarded-For IP host name</td>
+      <td class="example">
+        <ul>
+          <li>sample.test.com</li>
+          <li>sample.tw.test.org</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Inspector</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">httpXForwardedForIp</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -2701,6 +2739,48 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The JA3S hash</td>
       <td class="example">6d37fb1b3306d6e9f875650d8eb74b4f</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">ja4Fingerprint</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The JA4 fingerprint</td>
+      <td class="example">t13d1516h2_8daaf6152771_e5627efa2ab1</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">ja4hFingerprint</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The JA4H fingerprint</td>
+      <td class="example">ge11cn020000_9ed1ff1f7b03_cd8dafe26982</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">ja4sFingerprint</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The JA4S fingerprint</td>
+      <td class="example">t120300_c030_5e2616a54c73</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -4211,6 +4291,25 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
     </tr>
     <tr>
+      <td class="field-name">serverHost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The server IP host name</td>
+      <td class="example">
+        <ul>
+          <li>sample.test.com</li>
+          <li>sample.tw.test.org</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Network Sensor</li>
+          <li>Deep Discovery Inspector</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">serverIp</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -5148,7 +5247,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
 </div>
 
 ## Field Statistics
-- **Total Fields:** 249
+- **Total Fields:** 255
 - **Layer:** Network
 - **Product:** Deep Discovery Inspector
 

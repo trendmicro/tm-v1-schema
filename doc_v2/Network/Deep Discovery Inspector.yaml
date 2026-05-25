@@ -3404,6 +3404,39 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: ja4Fingerprint
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The JA4 fingerprint
+  Sample:
+  - t13d1516h2_8daaf6152771_e5627efa2ab1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ja4sFingerprint
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The JA4S fingerprint
+  Sample:
+  - t120300_c030_5e2616a54c73
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ja4hFingerprint
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The JA4H fingerprint
+  Sample:
+  - ge11cn020000_9ed1ff1f7b03_cd8dafe26982
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: ftpTrans
   ProductCode:
   - pdi
@@ -3569,6 +3602,41 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: clientHost
+  ProductCode:
+  - xns
+  - pdi
+  Description_EN: The client IP host name
+  Sample:
+  - sample.test.com
+  - sample.tw.test.org
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serverHost
+  ProductCode:
+  - xns
+  - pdi
+  Description_EN: The server IP host name
+  Sample:
+  - sample.test.com
+  - sample.tw.test.org
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: httpXForwardedForHost
+  ProductCode:
+  - xns
+  - pdi
+  Description_EN: The X-Forwarded-For IP host name
+  Sample:
+  - sample.test.com
+  - sample.tw.test.org
+  DL_Type: string
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: rawDataStr
   ProductCode:
   - pdi

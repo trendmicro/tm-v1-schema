@@ -19,19 +19,6 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: eventTimeDT
-  ProductCode:
-  - sdl
-  Description_EN: ' '
-  Sample:
-  - '2023-12-21T02:36:12.817Z'
-  DL_Type: datetime
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-  DL_Ingest:
-    source: $.eventTime
-    transform: DateTimeFromUnixMilliseconds
 - Name: tags
   ProductCode:
   - ALL
@@ -1639,6 +1626,27 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: senderIp
+  ProductCode:
+  - tlc
+  Description_EN: The IP address of the device sending the log
+  Sample:
+  - '[192.168.1.1]'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: collectorName
+  ProductCode:
+  - tlc
+  Description_EN: The log collector name displayed in Data Source and Log 
+    Management
+  Sample:
+  - My Firewall Collector
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: parentCmd
   ProductCode:
   - tlc
@@ -2887,6 +2895,122 @@
   - Cookie JWT
   - No Auth
   DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: syncType
+  ProductCode:
+  - tlc
+  Description_EN: The vulnerability event sync type
+  Sample:
+  - DELTA
+  - FULL
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vrmSourceType
+  ProductCode:
+  - tlc
+  Description_EN: The risk indicator upstream vendor
+  Sample:
+  - c1sentry
+  - tpcnoz_cve
+  - noc_cve
+  - qualyssensor
+  - dvadevice
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vrmDataSource
+  ProductCode:
+  - tlc
+  Description_EN: The data source defined by the upstream vendor
+  Sample:
+  - sentry
+  - tpcnoz
+  - noc
+  - qualyssensor
+  - dvadevice
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vrmLogSourceFrom
+  ProductCode:
+  - tlc
+  Description_EN: The log source origin from upstream vendor, used as risk event
+    identifier in CREM Portal
+  Sample:
+  - dva-device
+  - tpcnoz
+  - noc
+  - qualys
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: assetType
+  ProductCode:
+  - tlc
+  Description_EN: The vulnerability event asset type
+  Sample:
+  - device
+  - lambda
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: assetId
+  ProductCode:
+  - tlc
+  Description_EN: The asset internal device ID
+  Sample:
+  - 00000000-0000-0000-0000-000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: deviceGUID
+  ProductCode:
+  - tlc
+  Description_EN: The third-party vendor device GUID
+  Sample:
+  - 00000000-0000-0000-0000-000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: osVer
+  ProductCode:
+  - tlc
+  Description_EN: The OS version
+  Sample:
+  - 14.5 (23F79)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osArch
+  ProductCode:
+  - tlc
+  Description_EN: The OS architecture
+  Sample:
+  - x64
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vulnerabilities
+  ProductCode:
+  - tlc
+  Description_EN: The list of vulnerability detections for the vulnerability 
+    event
+  Sample:
+  - '[{"cve":"CVE-2021-34527","cvssScore":9.8,"severityLevel":"CRITICAL","firstSeen":1776751436000,"lastSeen":1776751437698,"mitigationStatus":"NEW","patchFlag":false,"softwareList":[{"softwareName":"Windows
+    10 Version 21H1","softwareVersion":"21H1","softwareVendor":"Microsoft","softwareType":"OS","productId":"11896","kbList":["5016616"],"fixVersion":"10.0.19044.1889","installPaths":["/Applications/Safari.app"]}],"extensions":"{\"affectedType\":1}"}]'
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
