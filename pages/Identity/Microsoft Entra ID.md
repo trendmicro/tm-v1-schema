@@ -921,6 +921,21 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Microsoft Entra ID</td>
     </tr>
     <tr>
+      <td class="field-name">trustType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The join type of the sign-in device</td>
+      <td class="example">
+        <ul>
+          <li>AzureAd</li>
+          <li>ServerAd</li>
+          <li>Workplace</li>
+        </ul>
+      </td>
+      <td class="products">Microsoft Entra ID</td>
+    </tr>
+    <tr>
       <td class="field-name">userAgent</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -980,7 +995,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 67
+- **Total Fields:** 68
 - **Layer:** Identity
 - **Product:** Microsoft Entra ID
 

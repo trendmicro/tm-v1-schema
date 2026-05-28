@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">2963</span>
+      <span class="stat-number">2973</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -294,7 +294,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Identity/Microsoft%20Entra%20ID" class="product-link">
         <div class="product-info">
           <span>Microsoft Entra ID</span>
-          <span class="field-count">67 fields</span>
+          <span class="field-count">68 fields</span>
         </div>
       </a>
     </li>
@@ -324,7 +324,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Deep%20Discovery%20Inspector" class="product-link">
         <div class="product-info">
           <span>Deep Discovery Inspector</span>
-          <span class="field-count">249 fields</span>
+          <span class="field-count">255 fields</span>
         </div>
       </a>
     </li>
@@ -340,7 +340,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Network%20Sensor" class="product-link">
         <div class="product-info">
           <span>Network Sensor</span>
-          <span class="field-count">253 fields</span>
+          <span class="field-count">256 fields</span>
         </div>
       </a>
     </li>
