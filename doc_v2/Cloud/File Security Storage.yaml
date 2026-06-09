@@ -264,6 +264,7 @@
   - sds
   - sfc
   - sss
+  - scs
   Description_EN: The service provider of the cloud asset
   Sample:
   - alibaba cloud
@@ -271,6 +272,7 @@
   - azure
   - gcp
   - oci
+  - selfManaged
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -414,6 +416,7 @@
   ProductCode:
   - sfc
   - sss
+  - scs
   Description_EN: The AWS cloud account ID, Google Cloud product ID, or Azure 
     subscription ID
   Sample:
@@ -428,6 +431,7 @@
   ProductCode:
   - sfc
   - sss
+  - scs
   Description_EN: The cloud provider region code
   Sample:
   - us-east-1

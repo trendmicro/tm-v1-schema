@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">2973</span>
+      <span class="stat-number">2977</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -148,7 +148,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Cloud/Container%20Security" class="product-link">
         <div class="product-info">
           <span>Container Security</span>
-          <span class="field-count">111 fields</span>
+          <span class="field-count">115 fields</span>
         </div>
       </a>
     </li>
@@ -337,18 +337,18 @@ This page provides links to detailed field documentation for all products organi
       </a>
     </li>
     <li class="product-item">
-      <a href="Network/Network%20Sensor" class="product-link">
-        <div class="product-info">
-          <span>Network Sensor</span>
-          <span class="field-count">256 fields</span>
-        </div>
-      </a>
-    </li>
-    <li class="product-item">
       <a href="Network/TippingPoint%20Security%20Management%20System" class="product-link">
         <div class="product-info">
           <span>TippingPoint Security Management System</span>
           <span class="field-count">26 fields</span>
+        </div>
+      </a>
+    </li>
+    <li class="product-item">
+      <a href="Network/Virtual%20Network%20Sensor" class="product-link">
+        <div class="product-info">
+          <span>Virtual Network Sensor</span>
+          <span class="field-count">256 fields</span>
         </div>
       </a>
     </li>
