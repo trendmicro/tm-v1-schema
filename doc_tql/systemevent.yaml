@@ -1,0 +1,256 @@
+- Name: actionBy
+  Description_EN: The user account or system that triggered the event
+  Sample:
+  - admin
+  - SYSTEM
+  - TREND VISION ONE
+  DL_Type: string
+- Name: actorHostName
+  Description_EN: The hostname of the actor that triggered the event
+  Sample:
+  - host1.example.com
+  - Windows-User1
+  DL_Type: string
+- Name: actorIp
+  Description_EN: The IP address of the actor that triggered the event
+  Sample:
+  - 192.168.1.1
+  - 10.0.0.1
+  - 172.16.0.1
+  DL_Type: string
+- Name: additionalEventData
+  Description_EN: The additional event information that was not part of the 
+    request or response
+  Sample:
+  - '{"AU_source":"https://activeupdate.trendmicro.com/server.ini","New Version":{"1234567800":"20.123.00","1234567820":"3.456.00","1234567840":
+    "32"}}'
+  DL_Type: dynamic
+- Name: assetHostName
+  Description_EN: The hostname of the asset associated with the event
+  Sample:
+  - host1.example.com
+  - DDAN-primary-001
+  DL_Type: string
+- Name: assetIp
+  Description_EN: The host IP of the asset or related entity involved in the 
+    risk event
+  Sample:
+  - 172.16.0.1
+  - 10.0.0.1
+  DL_Type: string
+- Name: description
+  Description_EN: The additional event details
+  Sample:
+  - Agent upgrade applied manually, automatically, or via scheduled maintenance,
+    reflecting any user-initiated or policy-triggered update
+  DL_Type: string
+- Name: deviceGUID
+  Description_EN: The GUID of the network appliance which reported the system 
+    event
+  Sample:
+  - 00000000-0000-0000-0000-000000000000
+  DL_Type: string
+- Name: deviceMacAddress
+  Description_EN: The device MAC address
+  Sample:
+  - 00:00:00:00:00:00
+  DL_Type: string
+- Name: dvc
+  Description_EN: The IP address of the Deep Discovery Inspector or Virtual 
+    Network Sensor appliance
+  Sample:
+  - [10.10.10.10]
+  DL_Type: dynamic
+- Name: dvchost
+  Description_EN: The computer which installed the Trend Micro product
+  Sample:
+  - localhost
+  DL_Type: string
+- Name: endpointGUID
+  Description_EN: The GUID of the agent which reported the detection
+  Sample:
+  - 1A00203B-CDEF-45GH-IJ67-8901K2LM3456
+  DL_Type: string
+- Name: endpointHostName
+  Description_EN: The host name of the endpoint on which the event was detected
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
+  DL_Type: string
+- Name: errorCode
+  Description_EN: The error code associated with the event
+  Sample:
+  - 1
+  - 2
+  - 3
+  DL_Type: string
+- Name: eventId
+  Description_EN: The event ID from the logs of each product
+  Sample:
+  - 1010001
+  - 1010002
+  - 1010003
+  DL_Type: string
+- Name: eventInitiator
+  Description_EN: The event origin
+  Sample:
+  - System
+  - Administrator 1
+  - API Key
+  DL_Type: string
+- Name: eventName
+  Description_EN: The name of the log event
+  Sample:
+  - scan
+  - service
+  - upgrade
+  DL_Type: string
+- Name: eventSourceType
+  Description_EN: The event source type
+  Sample:
+  - 13 - EVENT_SOURCE_SYSTEM_EVENT
+  DL_Type: int
+- Name: eventSubId
+  Description_EN: The sub-event ID
+  Sample:
+  - 1
+  - 2
+  - 732
+  DL_Type: string
+- Name: eventSubName
+  Description_EN: The Zero Trust Secure Access - Internet Access cloud app 
+    action or the Palo Alto Networks firewall log sub-type
+  Sample:
+  - All scan-related operations and results
+  - Manual Malware Scan Failure Resolved
+  - Agent Version Changed
+  DL_Type: string
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  Sample:
+  - 1656324260000
+  - 1728192606034
+  - 1758293606034
+  DL_Type: datetime
+- Name: eventType
+  Description_EN: The type of event that generated the event record
+  Sample:
+  - Account Logon/Logoff
+  - System Setting
+  - System Update
+  DL_Type: string
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  Sample:
+  - info
+  - low
+  - medium
+  DL_Type: string
+- Name: groupId
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: groupName
+  Description_EN: The group name
+  Sample:
+  - example.com
+  DL_Type: string
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  Sample:
+  - 1656324260000
+  DL_Type: datetime
+- Name: outcome
+  Description_EN: Whether the event was successful or not
+  Sample:
+  - Success
+  - Failure
+  DL_Type: string
+- Name: pname
+  Description_EN: The internal product ID (Deprecated, use productCode)
+  Sample:
+  - Apex One
+  - Server & Workload Protection
+  DL_Type: string
+- Name: policyTreePath
+  Description_EN: The policy tree path (endpoint only)
+  Sample:
+  - policyname1/policyname2/policyname3
+  DL_Type: string
+- Name: productCode
+  Description_EN: The internal product code of the identity provider 
+    (aad=Microsoft Entra ID, opa=Microsoft Active Directory)
+  Sample:
+  - sao
+  - sds
+  DL_Type: string
+- Name: pver
+  Description_EN: The product version
+  Sample:
+  - 6.2.1125
+  - 1.0.1524
+  DL_Type: string
+- Name: ruleName
+  Description_EN: The name of the rule that triggered the event
+  Sample:
+  - High Memory Usage
+  - Long Virtual Analyzer Processing Time
+  DL_Type: string
+- Name: senderGUID
+  Description_EN: The sender GUID
+  Sample:
+  - 1A00203B-CDEF-45GH-IJ67-8901K2LM3456
+  DL_Type: string
+- Name: severity
+  Description_EN: The severity of the event
+  Sample:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  DL_Type: int
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  Sample:
+  - true
+  DL_Type: bool
+- Name: srcType
+  Description_EN: The source device type
+  Sample:
+  - Agent
+  - Manager
+  DL_Type: string
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on 
+    the alert filter
+  Sample:
+  - [MITREV9.T1090]
+  - [MITRE.T1071]
+  - [MITREV9.T1059.001]
+  DL_Type: dynamic
+- Name: targetId
+  Description_EN: The target ID
+  Sample:
+  - 1
+  - 1A00203B-CDEF-45GH-IJ67-8901K2LM3456
+  DL_Type: string
+- Name: targetName
+  Description_EN: The target name
+  Sample:
+  - 192.168.1.1
+  - deepsecurity - 123456789012
+  - Relay Update Task
+  DL_Type: string
+- Name: targetType
+  Description_EN: The type of object that was accessed or modified
+  Sample:
+  - Administrator
+  - AgentInstaller
+  - Host
+  DL_Type: string

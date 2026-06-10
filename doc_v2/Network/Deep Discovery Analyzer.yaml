@@ -761,3 +761,259 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: eventTime
+  ProductCode:
+  - sao
+  - sds
+  - pdi
+  - xns
+  - pan
+  Description_EN: The time the agent or product detected the event
+  Sample:
+  - 1656324260000
+  - 1728192606034
+  - 1758293606034
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pname
+  ProductCode:
+  - sao
+  - sds
+  - pdi
+  - xns
+  - pan
+  Description_EN: The product name
+  Sample:
+  - Apex One
+  - Server & Workload Protection
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventId
+  ProductCode:
+  - sao
+  - sds
+  - pdi
+  - xns
+  - pan
+  Description_EN: The event ID
+  Sample:
+  - 1010001
+  - 1010002
+  - 1010003
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventName
+  ProductCode:
+  - sao
+  - sds
+  - pdi
+  - xns
+  - pan
+  Description_EN: The event type
+  Sample:
+  - scan
+  - service
+  - upgrade
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: description
+  ProductCode:
+  - sao
+  - sds
+  - pdi
+  - xns
+  - pan
+  Description_EN: The additional event details
+  Sample:
+  - Agent upgrade applied manually, automatically, or via scheduled maintenance,
+    reflecting any user-initiated or policy-triggered update
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: severity
+  ProductCode:
+  - sao
+  - sds
+  - pdi
+  - xns
+  - pan
+  Description_EN: The event severity
+  Sample:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dvchost
+  ProductCode:
+  - pdi
+  - xns
+  - pan
+  Description_EN: The hostname of the network appliance
+  Sample:
+  - localhost
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: deviceMacAddress
+  ProductCode:
+  - pdi
+  - xns
+  - pan
+  Description_EN: The device MAC address
+  Sample:
+  - 00:00:00:00:00:00
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dvc
+  ProductCode:
+  - pdi
+  - xns
+  - pan
+  Description_EN: The IP address of the network appliance
+  Sample:
+  - [10.10.10.10]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: deviceGUID
+  ProductCode:
+  - pdi
+  - xns
+  - pan
+  Description_EN: The GUID of the network appliance which reported the system 
+    event
+  Sample:
+  - 00000000-0000-0000-0000-000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: pver
+  ProductCode:
+  - pdi
+  - xns
+  - pan
+  Description_EN: The product version
+  Sample:
+  - 6.2.1125
+  - 1.0.1524
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: outcome
+  ProductCode:
+  - pdi
+  - xns
+  - pan
+  Description_EN: Whether the event was successful or not
+  Sample:
+  - Success
+  - Failure
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actionBy
+  ProductCode:
+  - pdi
+  - xns
+  - pan
+  Description_EN: The user account or system that triggered the event
+  Sample:
+  - admin
+  - SYSTEM
+  - TREND VISION ONE
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventType
+  ProductCode:
+  - pan
+  Description_EN: The type of event that generated the event record
+  Sample:
+  - Account Logon/Logoff
+  - System Setting
+  - System Update
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actorIp
+  ProductCode:
+  - pan
+  Description_EN: The IP address of the actor that triggered the event
+  Sample:
+  - 192.168.1.1
+  - 10.0.0.1
+  - 172.16.0.1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actorHostName
+  ProductCode:
+  - pan
+  Description_EN: The hostname of the actor that triggered the event
+  Sample:
+  - host1.example.com
+  - Windows-User1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: ruleName
+  ProductCode:
+  - pan
+  Description_EN: The name of the rule that triggered the event
+  Sample:
+  - High Memory Usage
+  - Long Virtual Analyzer Processing Time
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: assetHostName
+  ProductCode:
+  - pan
+  Description_EN: The hostname of the asset associated with the event
+  Sample:
+  - host1.example.com
+  - DDAN-primary-001
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: assetIp
+  ProductCode:
+  - pan
+  Description_EN: The IP address of the asset associated with the event
+  Sample:
+  - 172.16.0.1
+  - 10.0.0.1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true

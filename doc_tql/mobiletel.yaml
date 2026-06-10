@@ -1,0 +1,387 @@
+- Name: appIsSystem
+  Description_EN: Whether the app is a system app
+  Sample:
+  - false
+  DL_Type: bool
+- Name: appLabel
+  Description_EN: The app name (if the subject is an app)
+  Sample:
+  - Collection Nes Games
+  DL_Type: string
+- Name: appOrSystemEventHashId
+  Description_EN: The event object hash ID
+  Sample:
+  - 3859886410
+  DL_Type: string
+- Name: appPkgName
+  Description_EN: The app package name (if the subject is an app)
+  Sample:
+  - com.ConsolesXX.CollectionNesGames
+  DL_Type: string
+- Name: appPublicKeySha1
+  Description_EN: The SHA-1 hash of the app public key (if the subject is an 
+    app)
+  Sample:
+  - 05FC638156219800DADAC48D8E621E0BCBD3C321
+  DL_Type: string
+- Name: appSize
+  Description_EN: The app size (in bytes) if the subject is an app
+  Sample:
+  - 16906043
+  DL_Type: long
+- Name: appVerCode
+  Description_EN: The app version code (if the subject is an app)
+  Sample:
+  - 0
+  DL_Type: long
+- Name: endpointGuid
+  Description_EN: Host GUID of the endpoint on which the event was detected
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: endpointHostName
+  Description_EN: The host name of the endpoint on which the event was detected
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
+  DL_Type: string
+- Name: endpointIp
+  Description_EN: The IP address of the endpoint on which the event was detected
+  Sample:
+  - 10.10.10.10
+  - ::1
+  - fe80::1
+  DL_Type: dynamic
+- Name: endpointModel
+  Description_EN: The endpoint device model
+  Sample:
+  - Pixel 3 XL
+  DL_Type: string
+- Name: eventHashId
+  Description_EN: The event hash ID
+  Sample:
+  - '-8406473586387535914'
+  - '138486453338666581'
+  - '-7909265752378976284'
+  DL_Type: string
+- Name: eventId
+  Description_EN: The event ID from the logs of each product
+  Sample: []
+  DL_Type: string
+- Name: eventSourceType
+  Description_EN: The event source type
+  Sample:
+  - 1 - EVENT_SOURCE_TELEMETRY
+  DL_Type: int
+- Name: eventSubId
+  Description_EN: The sub-event ID
+  Sample:
+  - 2 - TELEMETRY_PROCESS_CREATE
+  - 101 - TELEMETRY_FILE_CREATE
+  - 204 - TELEMETRY_CONNECTION_CONNECT_OUTBOUND
+  DL_Type: string
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  Sample:
+  - 1657781088000
+  DL_Type: datetime
+- Name: extraInfo
+  Description_EN: The additional information about the sharing action
+  Sample:
+  - N/A
+  - Web Client Common
+  - DCERPC Services
+  DL_Type: dynamic
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  Sample:
+  - info
+  - low
+  - medium
+  DL_Type: string
+- Name: firstSeen
+  Description_EN: The time when the event started (in milliseconds)
+  Sample:
+  - 1656355418449
+  DL_Type: datetime
+- Name: groupId
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: lastSeen
+  Description_EN: The time when the event ended (in milliseconds)
+  Sample:
+  - 1656355418449
+  DL_Type: datetime
+- Name: logonUser
+  Description_EN: The sign-in user name
+  Sample:
+  - root
+  - SISTEMA
+  - oracle
+  DL_Type: dynamic
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  Sample:
+  - 1656324260000
+  DL_Type: datetime
+- Name: marsAccount
+  Description_EN: The account for Trend Micro Mobile Apps Reputation Service
+  Sample:
+  - XDRv1
+  DL_Type: string
+- Name: objectAppBehavior
+  Description_EN: The activity that occurred on the app
+  Sample:
+  - GRANTED_CAMERA_PERMISSION
+  - APP_NO_ICON
+  - APP_HIDE_ICON
+  DL_Type: string
+- Name: objectAppBehaviorAttr
+  Description_EN: The attributes of the app activity
+  Sample:
+  - android.intent.action.BOOT_COMPLETED
+  DL_Type: string
+- Name: objectAppDexSha256
+  Description_EN: The SHA-256 hash of the app Dex value
+  Sample:
+  - C23A87B77B06442FD9AF9A80DD87191EDEADFAB766C862EBC592FE18063D0449
+  DL_Type: string
+- Name: objectAppInstalledTime
+  Description_EN: The time of app installation (in milliseconds)
+  Sample:
+  - 1607935850
+  DL_Type: datetime
+- Name: objectAppIsSystemApp
+  Description_EN: Whether the app is a system app
+  Sample:
+  - true
+  DL_Type: bool
+- Name: objectAppLabel
+  Description_EN: The app name
+  Sample:
+  - Collection Nes Games
+  DL_Type: string
+- Name: objectAppPackageName
+  Description_EN: The app package name
+  Sample:
+  - com.ConsolesXX.CollectionNesGames
+  DL_Type: string
+- Name: objectAppPublicKeySha1
+  Description_EN: The SHA-1 hash of the app public key
+  Sample:
+  - 05FC638156219800DADAC48D8E621E0BCBD3C321
+  DL_Type: string
+- Name: objectAppSha256
+  Description_EN: The SHA-256 hash of the app
+  Sample:
+  - 692BC8E6BC51807A24BEACC13ED2B68E1F954E152863430E3179FA812937B8B0
+  DL_Type: string
+- Name: objectAppSize
+  Description_EN: The app size (in bytes)
+  Sample:
+  - 16906043
+  DL_Type: long
+- Name: objectAppVerCode
+  Description_EN: The app version code
+  Sample:
+  - 0
+  DL_Type: string
+- Name: objectAppVerName
+  Description_EN: The app version
+  Sample:
+  - 1.0
+  DL_Type: string
+- Name: objectCertAttr
+  Description_EN: The SHA-1 hash of the certificate public key
+  Sample:
+  - 05FC638156219800DADAC48D8E621E0BCBD3C321
+  DL_Type: string
+- Name: objectFileCreation
+  Description_EN: The time the target file was created (in milliseconds)
+  Sample:
+  - '1652131848000'
+  - '1577865600000'
+  - '1648279273000'
+  DL_Type: datetime
+- Name: objectFileHashSha256
+  Description_EN: The SHA256 hash of target process image or target file
+  Sample:
+  - 39109eef00821658893b45634fe2f4664f880da9242712df907f1327d4ceefb8
+  - 49fa3e206abf6a1f4546417dbe09f3f06b38847866a4a66de75bd90f39cb6c1c
+  - 0969321ad5a0923f0f03896ad2c10e49290515c44b721d773942a37f62a24893
+  DL_Type: string
+- Name: objectFileModifiedTime
+  Description_EN: The modification time of the target file (in milliseconds)
+  Sample:
+  - '1652131848000'
+  - '1577865600000'
+  - '1648279273000'
+  DL_Type: datetime
+- Name: objectFilePath
+  Description_EN: The file path of the target process image or target file
+  Sample:
+  - /usr/bin/bash
+  - /bin/bash
+  - /opt/folder1/probes/system/processes/processes
+  DL_Type: string
+- Name: objectFirstSeen
+  Description_EN: The time when the object first appeared (in milliseconds)
+  Sample:
+  - '1656458063638'
+  - '1656260547165'
+  - '0'
+  DL_Type: datetime
+- Name: objectHashId
+  Description_EN: https://trendmicro.atlassian.net/browse/DOC-2644
+  Sample:
+  - '8576474808125313522'
+  - '-599270888483415002'
+  - '2177864258235728980'
+  - '2432229257'
+  DL_Type: string
+- Name: objectLastSeen
+  Description_EN: The time when the object was last seen (in milliseconds)
+  Sample:
+  - '1656458354730'
+  - '1656260580722'
+  - '0'
+  DL_Type: datetime
+- Name: objectSystemEventAttr
+  Description_EN: The system event attributes
+  Sample:
+  - LOCK_SCREEN
+  DL_Type: string
+- Name: osName
+  Description_EN: The host operating system name
+  Sample:
+  - Windows
+  - Linux
+  - macOS
+  DL_Type: string
+- Name: osVer
+  Description_EN: The version of the host operating system
+  Sample:
+  - Amazon Linux 2
+  - 10.0.19044
+  - 10.0.19042
+  DL_Type: string
+- Name: pname
+  Description_EN: The internal product ID (Deprecated, use productCode)
+  Sample:
+  - '2200'
+  - '751'
+  - '533'
+  DL_Type: string
+- Name: policyTreePath
+  Description_EN: The policy tree path (endpoint only)
+  Sample:
+  - policyname1/policyname2/policyname3
+  DL_Type: string
+- Name: productCode
+  Description_EN: The internal product code of the identity provider 
+    (aad=Microsoft Entra ID, opa=Microsoft Active Directory)
+  Sample:
+  - sds
+  - xes
+  - sao
+  DL_Type: string
+- Name: pver
+  Description_EN: The product version
+  Sample:
+  - 1.2.0.2752
+  - 1.0.345
+  - 1.2.0.2657
+  DL_Type: string
+- Name: request
+  Description_EN: The destination URL that the user is accessing
+  Sample:
+  - http://10.10.10.10/fake/site
+  - http:///fake/param.cgi?action=list&group=Alarm.Status
+  - http://fake.com/
+  DL_Type: string
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  Sample:
+  - true
+  DL_Type: bool
+- Name: srcFileCreation
+  Description_EN: The time when the source file was created (in milliseconds)
+  Sample:
+  - '1577865600000'
+  - '1626201752000'
+  - '1626201750000'
+  DL_Type: datetime
+- Name: srcFileHashId
+  Description_EN: The source file hash ID
+  Sample:
+  - '1102079405020678318'
+  - '-6926286289273504319'
+  - '8528955148329941480'
+  DL_Type: string
+- Name: srcFileHashSha256
+  Description_EN: The SHA256 hash of source file
+  Sample:
+  - 4eaa002225f4ea2dedcd19b7f1337d7c58ea7dd6d4571c12468dde95e6bcfdaf
+  - e30508e2088bc16b2a84233ced64995f738deaef2366ac6c86b35c93bbcd9d80
+  - 16b20a3ad485b4fbbe3028c7e743b226db21ea93cacc8b3d7d7d4a731bf02333
+  DL_Type: string
+- Name: srcFileModifiedTime
+  Description_EN: The time when the source file was modified (in milliseconds)
+  Sample:
+  - '1626201752000'
+  - '1626201750000'
+  - '1577865600000'
+  DL_Type: datetime
+- Name: srcFilePath
+  Description_EN: The file path which is moved or copied to another path
+  Sample:
+  - \\cnva-apps\megaclockprod\traveler\travelerprint.accdb
+  - c:\program files\common files\microsoft 
+    shared\clicktorun\officesvcmgrschedule.xml
+  - q:\a7_dbs\a4_pkg\a4_packaging.accde
+  DL_Type: string
+- Name: srcFileSize
+  Description_EN: The file size of the source file
+  Sample:
+  - '0'
+  - '131072'
+  - '196608'
+  DL_Type: long
+- Name: srcFirstSeen
+  Description_EN: The time when the source file first appeared (in milliseconds)
+  Sample:
+  - '0'
+  - '1656355418449'
+  - '1656714760440'
+  DL_Type: datetime
+- Name: srcLastSeen
+  Description_EN: The time when the source file was last seen (in milliseconds)
+  Sample:
+  - '0'
+  - '1656355418449'
+  - '1656715147313'
+  DL_Type: datetime
+- Name: systemEventAttr
+  Description_EN: The attributes of the system event (if the subject is a system
+    event)
+  Sample:
+  - usbdebugging
+  DL_Type: string
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on 
+    the alert filter
+  Sample:
+  - MITREV9.T1057
+  - MITREV9.T1059.003
+  - XSAE.F2924
+  DL_Type: dynamic
+- Name: userType
+  Description_EN: The tenant user type
+  Sample:
+  - Microsoft Endpoint Manager
+  - Azure Active Directory
+  - VMware Workspace ONE UEM
+  DL_Type: string

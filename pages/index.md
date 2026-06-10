@@ -120,11 +120,11 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Layers</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">33</span>
+      <span class="stat-number">34</span>
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">2973</span>
+      <span class="stat-number">3149</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -148,7 +148,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Cloud/Container%20Security" class="product-link">
         <div class="product-info">
           <span>Container Security</span>
-          <span class="field-count">111 fields</span>
+          <span class="field-count">115 fields</span>
         </div>
       </a>
     </li>
@@ -173,6 +173,14 @@ This page provides links to detailed field documentation for all products organi
         <div class="product-info">
           <span>XDR for Cloud - AWS VPC Flow Logs</span>
           <span class="field-count">29 fields</span>
+        </div>
+      </a>
+    </li>
+    <li class="product-item">
+      <a href="Cloud/XDR%20for%20Cloud%20-%20Azure%20Activity%20Logs" class="product-link">
+        <div class="product-info">
+          <span>XDR for Cloud - Azure Activity Logs</span>
+          <span class="field-count">63 fields</span>
         </div>
       </a>
     </li>
@@ -240,7 +248,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Endpoint/Apex%20One%20as%20a%20Service" class="product-link">
         <div class="product-info">
           <span>Apex One as a Service</span>
-          <span class="field-count">437 fields</span>
+          <span class="field-count">464 fields</span>
         </div>
       </a>
     </li>
@@ -264,7 +272,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Endpoint/Endpoint%20%26%20Workload%20Security" class="product-link">
         <div class="product-info">
           <span>Endpoint & Workload Security</span>
-          <span class="field-count">307 fields</span>
+          <span class="field-count">334 fields</span>
         </div>
       </a>
     </li>
@@ -316,7 +324,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Deep%20Discovery%20Analyzer" class="product-link">
         <div class="product-info">
           <span>Deep Discovery Analyzer</span>
-          <span class="field-count">40 fields</span>
+          <span class="field-count">59 fields</span>
         </div>
       </a>
     </li>
@@ -324,7 +332,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Deep%20Discovery%20Inspector" class="product-link">
         <div class="product-info">
           <span>Deep Discovery Inspector</span>
-          <span class="field-count">255 fields</span>
+          <span class="field-count">268 fields</span>
         </div>
       </a>
     </li>
@@ -337,18 +345,18 @@ This page provides links to detailed field documentation for all products organi
       </a>
     </li>
     <li class="product-item">
-      <a href="Network/Network%20Sensor" class="product-link">
-        <div class="product-info">
-          <span>Network Sensor</span>
-          <span class="field-count">256 fields</span>
-        </div>
-      </a>
-    </li>
-    <li class="product-item">
       <a href="Network/TippingPoint%20Security%20Management%20System" class="product-link">
         <div class="product-info">
           <span>TippingPoint Security Management System</span>
           <span class="field-count">26 fields</span>
+        </div>
+      </a>
+    </li>
+    <li class="product-item">
+      <a href="Network/Virtual%20Network%20Sensor" class="product-link">
+        <div class="product-info">
+          <span>Virtual Network Sensor</span>
+          <span class="field-count">269 fields</span>
         </div>
       </a>
     </li>
@@ -394,7 +402,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Others/Audit%20Log" class="product-link">
         <div class="product-info">
           <span>Audit Log</span>
-          <span class="field-count">1 fields</span>
+          <span class="field-count">11 fields</span>
         </div>
       </a>
     </li>

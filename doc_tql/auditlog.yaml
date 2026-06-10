@@ -1,0 +1,64 @@
+- Name: eventRawData
+  Description_EN: The original event log string (JSON format)
+  Sample:
+  - '{"type":"audit","timestamp":"2020-02-20T08:10:01.904Z","serviceName":"uic","componentName":"backend","siteName":"us-east-1-xdr-eks-prod","customerId":"74b629cb-8fc6-4a1b-a00f-b5003ab9f0e3","identifier":{"id":"db09668d-9d85-42ee-946f-5f8d37f288b2","type":"managedAccount","name":"John
+    Smith","email":"john_smith@abc.com"},"userId":"db09668d-9d85-42ee-946f-5f8d37f288b2","user":"xdr-stg@trendmicro.com","roleId":"53a580c5-d952-43e1-8ce3-79eac4961ee6","role":"admin","sourceIp":"180.10.1.2","access":0,"category":"01","activity":"01","result":true,"triggerService":"awb","details":{"ipAddr":"10.0.0.1"}}'
+  DL_Type: dynamic
+- Name: eventSourceType
+  Description_EN: The event source type
+  Sample:
+  - 14 - EVENT_SOURCE_AUDIT_LOG
+  DL_Type: int
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  Sample:
+  - 1656324260000
+  - 1728192606034
+  - 1758293606034
+  DL_Type: datetime
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  Sample:
+  - info
+  - low
+  - medium
+  DL_Type: string
+- Name: groupId
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: groupName
+  Description_EN: The group name
+  Sample:
+  - example.com
+  DL_Type: string
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  Sample:
+  - 1656324260000
+  DL_Type: datetime
+- Name: policyTreePath
+  Description_EN: The policy tree path (endpoint only)
+  Sample:
+  - policyname1/policyname2/policyname3
+  DL_Type: string
+- Name: productCode
+  Description_EN: The internal product code of the identity provider 
+    (aad=Microsoft Entra ID, opa=Microsoft Active Directory)
+  Sample:
+  - aal
+  DL_Type: string
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  Sample:
+  - true
+  DL_Type: bool
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on 
+    the alert filter
+  Sample:
+  - [MITREV9.T1090]
+  - [MITRE.T1071]
+  - [MITREV9.T1059.001]
+  DL_Type: dynamic

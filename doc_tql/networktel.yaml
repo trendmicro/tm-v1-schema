@@ -1,0 +1,999 @@
+- Name: act
+  Description_EN: The actions taken to mitigate the event
+  Sample:
+  - Allow
+  - Block
+  DL_Type: dynamic
+- Name: action
+  Description_EN: The traffic processing action
+  Sample:
+  - ACCEPT
+  - REJECT
+  DL_Type: string
+- Name: app
+  Description_EN: The layer-7 network protocol being exploited protocol
+  Sample:
+  - HTTP
+  DL_Type: string
+- Name: application
+  Description_EN: The name of the requested application
+  Sample:
+  - Facebook
+  - wiki
+  DL_Type: string
+- Name: archFiles
+  Description_EN: The file information extracted from detected files
+  Sample:
+  - 
+  DL_Type: dynamic
+- Name: authType
+  Description_EN: The authentication method
+  Sample:
+  - Cookie JWT: Authenticated by browser cookie with JWT token
+  - Agent JWT: Authenticated by Secure Access Module with JWT token
+  - IP: Authentication bypassed by private IP.
+  - No Auth: No authentication.
+  DL_Type: string
+- Name: azId
+  Description_EN: The Avaliability Zone ID of the virtual machine that made the 
+    request
+  Sample:
+  - apse2-az3
+  DL_Type: string
+- Name: bytes
+  Description_EN: The number of transmitted data bytes
+  Sample:
+  - 15044
+  DL_Type: long
+- Name: clientGroup
+  Description_EN: The client IP network group
+  Sample:
+  - myCompany
+  - myGroup
+  DL_Type: string
+- Name: clientHost
+  Description_EN: The client IP host name
+  Sample:
+  - sample.test.com
+  - sample.tw.test.org
+  DL_Type: string
+- Name: clientIp
+  Description_EN: The IP addresses of the source
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+- Name: clientMAC
+  Description_EN: The client MAC address
+  Sample:
+  - 00-00-00-ff-ff-ff
+  DL_Type: string
+- Name: clientPort
+  Description_EN: The client port number
+  Sample:
+  - 5566
+  DL_Type: int
+- Name: clientProtocol
+  Description_EN: The client protocol
+  Sample:
+  - HTTP/1.1
+  DL_Type: string
+- Name: clientTls
+  Description_EN: The transport layer security of the client
+  Sample:
+  - TLS 1.2
+  DL_Type: string
+- Name: cloudAppCat
+  Description_EN: The category of the event in Cloud Reputation Service
+  Sample:
+  - All
+  - Online Service
+  - Application Suite
+  - Business Intelligence and Analytics
+  - Cloud Computing Platform
+  DL_Type: string
+- Name: companyName
+  Description_EN: The company name
+  Sample:
+  - Trend Micro
+  DL_Type: string
+- Name: contentEncoding
+  Description_EN: The content encoding of the request or the response
+  Sample:
+  - gzip
+  DL_Type: string
+- Name: detectionType
+  Description_EN: The traffic detection type
+  Sample:
+  - No matched Zero Trust Secure Access rule
+  - Missing or invalid client certificate
+  - Untrusted server certificate
+  - Zero Trust Secure Access
+  - HTTPS inspection exception
+  - HTTPS inspection failure
+  - HTTPS bypass at inspection failure
+  - Approved URLs
+  - Blocked URLs
+  - Private IP address access
+  - Web Reputation
+  - URL Filtering
+  - Restricted file type
+  - Restricted MIME type
+  - Restricted file extension type
+  - Anti-malware scan
+  - File scan exception
+  - Predictive Machine Learning
+  - Botnet
+  - Application Control
+  - Virtual Analyzer submission
+  - Tenancy Restriction
+  - Suspicious Object Blocked List
+  - Data Loss Prevention
+  - Ransomware
+  - Risk Control
+  - AI Service Risk Control
+  - Non-compliant device
+  - AI Service Access
+  - AI Service Sensitive Data Prevention
+  - AI Service Prompt Injection
+  - AI Service Improper Answer
+  - AI Service Malicious URL Answer
+  - AI Service File Upload Detection
+  - AI Service Rate Limiting
+  DL_Type: string
+- Name: deviceGUID
+  Description_EN: The GUID of the network appliance which reported the system 
+    event
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: direction
+  Description_EN: The object transfer direction
+  Sample:
+  - Download
+  DL_Type: string
+- Name: dnsQueryType
+  Description_EN: The record type requested by the DNS protocol
+  Sample:
+  - A
+  DL_Type: string
+- Name: dpt
+  Description_EN: The service destination port of the private application server
+    (dstport)
+  Sample:
+  - 443
+  DL_Type: int
+- Name: dst
+  Description_EN: The destination IP address (dstaddr)
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+- Name: dstLocation
+  Description_EN: The destination country
+  Sample:
+  - JP
+  DL_Type: string
+- Name: duration
+  Description_EN: The time it took the scanner to complete the scan, in 
+    milliseconds
+  Sample:
+  - 1599465660123
+  DL_Type: long
+- Name: duser
+  Description_EN: The email recipient
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+- Name: dvc
+  Description_EN: The IP address of the Deep Discovery Inspector or Virtual 
+    Network Sensor appliance
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+- Name: dvchost
+  Description_EN: The computer which installed the Trend Micro product
+  Sample:
+  - my-company-xns
+  - my-ddi
+  DL_Type: string
+- Name: e2eLatency
+  Description_EN: The end-to-end traffic latency time, in milliseconds
+  Sample:
+  - 10000
+  DL_Type: long
+- Name: end
+  Description_EN: The time when the last data packet was received (in Unix 
+    seconds)
+  Sample:
+  - 1616729349
+  DL_Type: datetime
+- Name: endpointGuid
+  Description_EN: Host GUID of the endpoint on which the event was detected
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  - DSP84573ULLJHM5GK2R7
+  DL_Type: string
+- Name: endpointHostName
+  Description_EN: The host name of the endpoint on which the event was detected
+  Sample:
+  - my_machine
+  - jeremy-mbp
+  DL_Type: string
+- Name: eventId
+  Description_EN: The event ID from the logs of each product
+  Sample:
+  - '200139'
+  - '200140'
+  DL_Type: string
+- Name: eventName
+  Description_EN: The name of the log event
+  Sample:
+  - SWG_ACTIVITY_LOG
+  - FIREWALL_ACTIVITY_LOG
+  - VPC_ACTIVITY_LOG
+  DL_Type: string
+- Name: eventSourceType
+  Description_EN: The event source type
+  Sample:
+  - 6 - EVENT_SOURCE_NETWORK_ACTIVITY
+  DL_Type: int
+- Name: eventSubName
+  Description_EN: The Zero Trust Secure Access - Internet Access cloud app 
+    action or the Palo Alto Networks firewall log sub-type
+  Sample:
+  - OneDrive download file
+  - start
+  - end
+  - drop
+  - deny
+  DL_Type: string
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  Sample:
+  - 1657135700000
+  DL_Type: datetime
+- Name: failedHTTPSInspection
+  Description_EN: HTTPS traffic inspection failure
+  Sample:
+  - true
+  DL_Type: bool
+- Name: fileHash
+  Description_EN: The SHA-1 of the file that triggered the rule or policy
+  Sample:
+  - 1e15bf99022a9164708cebb3eace8fd61ad45cba
+  DL_Type: string
+- Name: fileHashSha256
+  Description_EN: The SHA-256 of the file that violated the policy
+  Sample:
+  - ba9edecdd09de1307714564c24409bd25508e22fe11c768053a08f173f263e93
+  DL_Type: string
+- Name: fileName
+  Description_EN: The name of the file that violated the policy
+  Sample:
+  - word.doc
+  DL_Type: dynamic
+- Name: fileSize
+  Description_EN: The size of the file that is violating the policy
+  Sample:
+  - 12134
+  DL_Type: long
+- Name: fileType
+  Description_EN: The type of file which is violating the policy
+  Sample:
+  - Microsoft Words
+  DL_Type: string
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  Sample:
+  - info
+  - low
+  - medium
+  DL_Type: string
+- Name: flowDirection
+  Description_EN: The network interface traffic direction
+  Sample:
+  - ingress
+  - egress
+  - I
+  - O
+  DL_Type: string
+- Name: flowId
+  Description_EN: The network analysis flow ID
+  Sample:
+  - '6837014561409730558'
+  DL_Type: string
+- Name: flowType
+  Description_EN: The type of traffic (type)
+  Sample:
+  - IPv4
+  - IPv6
+  - EFA
+  DL_Type: string
+- Name: ftpTrans
+  Description_EN: The transaction information of the FTP protocol
+  Sample:
+  - 
+  DL_Type: dynamic
+- Name: groupId
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: hostName
+  Description_EN: The computer name of the client host (The hostname from the 
+    suspicious URL detected by Deep Discovery Inspector)
+  Sample:
+  - NJ-EFFY-ZHAO1
+  DL_Type: string
+- Name: httpLocation
+  Description_EN: The HTTP location header
+  Sample:
+  - www.google.com.tw
+  DL_Type: string
+- Name: httpReferer
+  Description_EN: The HTTP referrer header
+  Sample:
+  - www.google.com.tw
+  DL_Type: string
+- Name: httpXForwardedFor
+  Description_EN: The HTTP X-Forwarded-For header
+  Sample:
+  - 10.10.10.10, 10.10.10.11, 10.10.10.12
+  DL_Type: string
+- Name: httpXForwardedForGroup
+  Description_EN: The X-Forwarded-For IP network group
+  Sample:
+  - myCompany
+  - myGroup
+  DL_Type: string
+- Name: httpXForwardedForHost
+  Description_EN: The X-Forwarded-For IP host name
+  Sample:
+  - sample.test.com
+  - sample.tw.test.org
+  DL_Type: string
+- Name: httpXForwardedForIp
+  Description_EN: The x-forwarded-for IP used by the network appliance
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+- Name: httpXForwardedForPort
+  Description_EN: The patched HTTP server port when the network appliance 
+    selects an x-forwarded-for IP address to use
+  Sample:
+  - 65535
+  DL_Type: int
+- Name: instanceId
+  Description_EN: The ID of the instance that indicates the meta-cloud or data 
+    center VM
+  Sample:
+  - i-01234567890abcdef
+  DL_Type: string
+- Name: isPrivateApp
+  Description_EN: Whether the requested application is private
+  Sample:
+  - true
+  - false
+  DL_Type: bool
+- Name: isRetroScan
+  Description_EN: Whether the event matches the Security Analytics Engine filter
+  Sample:
+  - true
+  DL_Type: bool
+- Name: ja3Hash
+  Description_EN: The fingerprint of an SSL/TLS client application as detected 
+    via a network sensor or device
+  Sample:
+  - 478e74fad764c966f19c5232c7cdfc5a
+  DL_Type: string
+- Name: ja3sHash
+  Description_EN: The fingerprint of an SSL/TLS server application as detected 
+    via a network sensor or device
+  Sample:
+  - 6d37fb1b3306d6e9f875650d8eb74b4f
+  DL_Type: string
+- Name: ja4Fingerprint
+  Description_EN: The JA4 fingerprint
+  Sample:
+  - t13d1516h2_8daaf6152771_e5627efa2ab1
+  DL_Type: string
+- Name: ja4hFingerprint
+  Description_EN: The JA4H fingerprint
+  Sample:
+  - ge11cn020000_9ed1ff1f7b03_cd8dafe26982
+  DL_Type: string
+- Name: ja4sFingerprint
+  Description_EN: The JA4S fingerprint
+  Sample:
+  - t120300_c030_5e2616a54c73
+  DL_Type: string
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  Sample:
+  - 1656324260000
+  DL_Type: datetime
+- Name: logStatus
+  Description_EN: The VPC Flow Log status
+  Sample:
+  - OK
+  - NODATA
+  - SKIPDATA
+  DL_Type: string
+- Name: mailMsgSubject
+  Description_EN: The email subject
+  Sample:
+  - test
+  DL_Type: string
+- Name: malName
+  Description_EN: The name of the detected malware
+  Sample: []
+  DL_Type: string
+- Name: mimeType
+  Description_EN: The MIME type or content type of the response body
+  Sample:
+  - text/html
+  DL_Type: string
+- Name: msgId
+  Description_EN: The service provider message ID
+  Sample:
+  - <sample_email@trendmicro.com>
+  DL_Type: string
+- Name: objectId
+  Description_EN: The UUID of the Zero Trust Secure Access private access 
+    application
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: objectIps
+  Description_EN: The IP address resolved by the DNS protocol
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+- Name: originEventSourceType
+  Description_EN: The event source type of the original events which matches the
+    Security Analytics Engine filter
+  Sample:
+  - EVENT_SOURCE_NETWORK_ACTIVITY
+  DL_Type: string
+- Name: originUUID
+  Description_EN: The UUID of the original events which matches the Security 
+    Analytics Engine filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: dynamic
+- Name: osName
+  Description_EN: The host operating system name
+  Sample:
+  - Windows 10
+  - macos 12.1
+  DL_Type: string
+- Name: overSsl
+  Description_EN: Whether the event was triggered by an SSL decryption stream 
+    (Displayed only when SSL Inspection is supported)
+  Sample:
+  - YES
+  DL_Type: string
+- Name: packets
+  Description_EN: The number of transmitted data packets
+  Sample:
+  - 14
+  DL_Type: long
+- Name: pktDstAddr
+  Description_EN: The packet level destination IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+- Name: pktDstCloudServiceName
+  Description_EN: The subset IP address range name for the cloud service 
+    destination IP (pkt-dst-aws-service)
+  Sample:
+  - AMAZON
+  - EC2
+  - ROUTE53
+  DL_Type: string
+- Name: pktSrcAddr
+  Description_EN: The packet level source IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+- Name: pktSrcCloudServiceName
+  Description_EN: The subset IP address range name for the cloud service source 
+    IP (pkt-src-aws-service)
+  Sample:
+  - AMAZON
+  - EC2
+  - ROUTE53
+  DL_Type: string
+- Name: pname
+  Description_EN: The internal product ID (Deprecated, use productCode)
+  Sample:
+  - Secure Web Gateway
+  - XDR for Cloud - AWS VPC Flow Logs
+  DL_Type: string
+- Name: policyTemplate
+  Description_EN: The Data Loss Prevention template name
+  Sample:
+  - 'Australia, New Zealand: Healthcare Template,Germany: Banking and Financial Information'
+  DL_Type: dynamic
+- Name: policyTreePath
+  Description_EN: The policy tree path (endpoint only)
+  Sample:
+  - policyname1/policyname2/policyname3
+  DL_Type: string
+- Name: policyUuid
+  Description_EN: The UUID of the cloud access or risk control policy, or the 
+    hard-coded string that indicates the rule of the global blocked/approved URL
+    list
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: principalName
+  Description_EN: The user principal name used to sign in to the proxy
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+- Name: productCode
+  Description_EN: The internal product code of the identity provider 
+    (aad=Microsoft Entra ID, opa=Microsoft Active Directory)
+  Sample:
+  - sig
+  - szn
+  DL_Type: string
+- Name: profile
+  Description_EN: The name of the triggered Threat Protection template or Data 
+    Loss Prevention profile triggered
+  Sample: []
+  DL_Type: string
+- Name: pver
+  Description_EN: The product version
+  Sample:
+  - 1.0
+  DL_Type: string
+- Name: rawDataStr
+  Description_EN: The raw data string that contains additional information
+  Sample:
+  - '[{ "oid": "1.2.3.4", "value_type": 4, "value": "MANUFACTURER:SAMPLE\ nMODEL:SAMPLE
+    C1234", "parse": 1}]'
+  DL_Type: string
+- Name: reqAppVersion
+  Description_EN: The client application version number
+  Sample:
+  - SSH-2.0-OPENSSH_9.0
+  DL_Type: string
+- Name: reqDataSize
+  Description_EN: The data volume transmitted over the transport layer by the 
+    client (in bytes)
+  Sample:
+  - 15688
+  DL_Type: long
+- Name: reqScannedBytes
+  Description_EN: The data volume transmitted by the client (in bytes)
+  Sample:
+  - 4655
+  DL_Type: long
+- Name: request
+  Description_EN: The destination URL that the user is accessing
+  Sample:
+  - https://google.com/
+  - https://api/example/v1/testit
+  DL_Type: string
+- Name: requestBase
+  Description_EN: The domain of the request URL
+  Sample:
+  - www.facebook.com
+  - gary.webserver64.com
+  DL_Type: string
+- Name: requestClientApplication
+  Description_EN: The protocol user agent information
+  Sample:
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) 
+    Chrome/61.0.3163.100 Safari/537.36
+  DL_Type: string
+- Name: requestDate
+  Description_EN: The HTTP date header
+  Sample:
+  - Fri, 20 Oct 2017 06:02:09 GMT
+  DL_Type: string
+- Name: requestHeaders
+  Description_EN: All HTTP headers without sensitive information
+  Sample:
+  - "Host: 10.10.10.10:8080\r\nUser-Agent: curl/7.78.0\r\nAccept: */*\r\n"
+  DL_Type: string
+- Name: requestMethod
+  Description_EN: The network protocol request method
+  Sample:
+  - POST
+  DL_Type: string
+- Name: requestMimeType
+  Description_EN: The type of request content
+  Sample:
+  - application/json; charset=utf-8
+  DL_Type: string
+- Name: requests
+  Description_EN: The URLs of the request
+  Sample:
+  - www.google.com.tw
+  DL_Type: dynamic
+- Name: requestSize
+  Description_EN: The request length
+  Sample:
+  - 1324
+  DL_Type: long
+- Name: resolvedUrlGroup
+  Description_EN: The IP address FQDN network group
+  Sample:
+  - myCompany
+  - myGroup
+  DL_Type: string
+- Name: resolvedUrlIp
+  Description_EN: The IP address of the FQDN
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+- Name: resolvedUrlPort
+  Description_EN: The HTTP server port
+  Sample:
+  - 443
+  DL_Type: int
+- Name: respAppVersion
+  Description_EN: The server application version number
+  Sample:
+  - SSH-2.0-OPENSSH_8.7
+  DL_Type: string
+- Name: respArchFiles
+  Description_EN: The file information extracted from files detected in response
+    direction
+  Sample:
+  - 
+  DL_Type: dynamic
+- Name: respCode
+  Description_EN: The network protocol response code
+  Sample:
+  - '200'
+  - '25'
+  DL_Type: string
+- Name: respDataSize
+  Description_EN: The data volume transmitted over the transport layer by the 
+    server (in bytes)
+  Sample:
+  - 7856
+  DL_Type: long
+- Name: respDate
+  Description_EN: The HTTP response date header
+  Sample:
+  - Fri, 20 Oct 2017 06:02:09 GMT
+  DL_Type: string
+- Name: respFileHash
+  Description_EN: The SHA-1 of the file detected in the response direction
+  Sample:
+  - f17d9c55dea88f9aec8f74363f01e918cffb4142
+  DL_Type: string
+- Name: respFileHashSha256
+  Description_EN: The SHA-256 of the file detected in the response direction
+  Sample:
+  - 5ad4396d67f0c9d54572f051e28e9e62f4010c269a953d25259b17ad5fab4fd5
+  DL_Type: string
+- Name: respFileType
+  Description_EN: The file type detected in the response direction
+  Sample:
+  - PKZIP
+  DL_Type: string
+- Name: respHeaders
+  Description_EN: All HTTP response headers without sensitive information
+  Sample:
+  - "Accept-Ranges: bytes\r\nContent-Length: 68\r\nContent-Type: - text/plain; charset=utf-8\r\
+    \ \nLast-Modified: Thu, 19 Aug 2021 06:23:54 GMT\r\nDate: Thu, 19 Aug 2021 06:24:00
+    GMT\r\n"
+  DL_Type: string
+- Name: respMethod
+  Description_EN: The response method
+  Sample:
+  - KRB_ERROR
+  - AS_REP
+  DL_Type: string
+- Name: responseSize
+  Description_EN: The response length
+  Sample:
+  - 1324
+  DL_Type: long
+- Name: respScannedBytes
+  Description_EN: The data volume transmitted by the server (in bytes)
+  Sample:
+  - 6654
+  DL_Type: long
+- Name: rt
+  Description_EN: The Unix time of the log generation
+  Sample:
+  - 1599465660
+  DL_Type: string
+- Name: ruleName
+  Description_EN: The name of the rule that triggered the event
+  Sample:
+  - ETL_Access Rules_Web_Host
+  - block_wiki_for_guest
+  - BlockHighRiskTCPPortsFromInternet
+  - unspecified
+  DL_Type: string
+- Name: ruleType
+  Description_EN: The rule type which is applied to the traffic
+  Sample:
+  - access
+  DL_Type: string
+- Name: ruleUuid
+  Description_EN: The risk assessment and control design that is defined by Zero
+    Trust Secure Access risk control rules
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: score
+  Description_EN: The Web Reputation Services URL rating
+  Sample:
+  - 81
+  DL_Type: int
+- Name: sender
+  Description_EN: The roaming users or the gateway where the web traffic passed
+  Sample:
+  - Public/Home network: The default cloud gateway.
+  - Anything else: The pre-defined location name of cloud gateway or on-premises
+      gateway.
+  DL_Type: string
+- Name: serverGroup
+  Description_EN: The server IP network group
+  Sample:
+  - myCompany
+  - myGroup
+  DL_Type: string
+- Name: serverHost
+  Description_EN: The server IP host name
+  Sample:
+  - sample.test.com
+  - sample.tw.test.org
+  DL_Type: string
+- Name: serverIp
+  Description_EN: The server IP address
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+- Name: serverMAC
+  Description_EN: The server MAC address
+  Sample:
+  - 00-00-00-ff-ff-ff
+  DL_Type: string
+- Name: serverPort
+  Description_EN: The server port number
+  Sample:
+  - 443
+  DL_Type: int
+- Name: serverProtocol
+  Description_EN: The version of the HTTP protocol between the Service Gateway 
+    and server/website
+  Sample:
+  - HTTP/1.1
+  DL_Type: string
+- Name: serverRespTime
+  Description_EN: The time the server took to respond to the request, in 
+    milliseconds
+  Sample:
+  - 1599465660123
+  DL_Type: long
+- Name: serverTls
+  Description_EN: The TLS version between the client and server
+  Sample:
+  - TLS 1.2
+  DL_Type: string
+- Name: sessionEnd
+  Description_EN: The session end time (in seconds)
+  Sample:
+  - 1575462989
+  DL_Type: long
+- Name: sessionEndReason
+  Description_EN: The reason why a session was terminated
+  Sample:
+  - tcp-fin
+  - tcp-rst-from-server
+  DL_Type: string
+- Name: sessionStart
+  Description_EN: The session start name (in seconds)
+  Sample:
+  - 1575462989
+  DL_Type: long
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  Sample:
+  - true
+  DL_Type: bool
+- Name: spt
+  Description_EN: The virtual port of the source assigned to the Secure Access 
+    Module (srcport)
+  Sample:
+  - 57763
+  DL_Type: int
+- Name: src
+  Description_EN: The source IP address (srcaddr)
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+- Name: srcLocation
+  Description_EN: The source country
+  Sample:
+  - JP
+  DL_Type: string
+- Name: sshHassh
+  Description_EN: The SSH client application fingerprint
+  Sample:
+  - 45e3942372f42899a63e9080ef25b0ae
+  DL_Type: string
+- Name: sshHasshServer
+  Description_EN: The SSH server application fingerprint
+  Sample:
+  - 4ceb58cad0f415b8fb16de236fa70ec5
+  DL_Type: string
+- Name: sslCertCommonName
+  Description_EN: The certificate common name
+  Sample:
+  - '*.www.sample.com'
+  DL_Type: string
+- Name: sslCertFingerprint
+  Description_EN: The certificate fingerprint
+  Sample:
+  - 3914af80223c833f26df001cbf342eff8a31aba1
+  DL_Type: string
+- Name: sslCertIssuer
+  Description_EN: The issuer of the certificate
+  Sample:
+  - /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance 
+    Server CA
+  DL_Type: string
+- Name: sslCertSANs
+  Description_EN: The Subject Alternative Name of the certificate
+  Sample:
+  - '*.www.sample.com'
+  - add.my.sample.com
+  - au.sample.com
+  DL_Type: dynamic
+- Name: sslCertSerialNumber
+  Description_EN: The certificate serial number
+  Sample:
+  - 0888b1ad2a593310593f47565a5a5a4a
+  DL_Type: string
+- Name: sslCertValidFrom
+  Description_EN: The certificate validity start time
+  Sample:
+  - '2014-11-21T02:43:28'
+  DL_Type: string
+- Name: sslCertValidUntil
+  Description_EN: The certificate validity end time
+  Sample:
+  - '2018-11-21T02:43:28'
+  DL_Type: string
+- Name: start
+  Description_EN: The time when the first data packet was received (in Unix 
+    seconds)
+  Sample:
+  - 1616729292
+  DL_Type: datetime
+- Name: status
+  Description_EN: The network analysis flow session status
+  Sample:
+  - '2'
+  DL_Type: string
+- Name: subLocationId
+  Description_EN: The sublocation ID
+  Sample:
+  - lz-0abcd123efg4567h
+  - op-0abcd123efg4567h
+  - wz-0abcd123efg4567h
+  DL_Type: string
+- Name: subLocationType
+  Description_EN: The sublocation type
+  Sample:
+  - wavelength
+  - outpost
+  - localzone
+  DL_Type: string
+- Name: subnetId
+  Description_EN: The subnet ID of the virtual machine that made the request
+  Sample:
+  - subnet-01234567890abcdef
+  DL_Type: string
+- Name: suid
+  Description_EN: The user name or IP address (IPv4)
+  Sample:
+  - Sample User Name
+  - 10.10.10.10
+  DL_Type: string
+- Name: suser
+  Description_EN: The email sender
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: dynamic
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on 
+    the alert filter
+  Sample:
+  - MITREV9.T1057
+  - MITREV9.T1059.003
+  - XSAE.F2924
+  DL_Type: dynamic
+- Name: tcpFlags
+  Description_EN: The bitmask value of the FIN/SYN/RST/SYN-ACK TCP flags
+  Sample:
+  - 1
+  - 2
+  - 4
+  - 18
+  DL_Type: int
+- Name: tlsJA3Fingerprint
+  Description_EN: The JA3 fingerprint
+  Sample: []
+  DL_Type: string
+- Name: tlsJA3SFingerprint
+  Description_EN: The raw JA3S
+  Sample:
+  - 771,157,65281-15
+  DL_Type: string
+- Name: tlsSelectedCipher
+  Description_EN: The selected cipher of the TLS protocol
+  Sample:
+  - c02f
+  DL_Type: string
+- Name: trafficPath
+  Description_EN: The egress traffic path number
+  Sample:
+  - 1
+  - 2
+  - 8
+  DL_Type: int
+- Name: trafficType
+  Description_EN: The Zero Trust Internet Access gateway service mode
+  Sample:
+  - Proxy: Zero Trust Internet Access On-Premises Gateway with forward proxy 
+      mode configured
+  - Forward: Zero Trust Internet Access On-Premises Gateway with forward proxy 
+      mode and port forwarding configured
+  - ICAP: Zero Trust Internet Access On-Premises Gateway with ICAP configured
+  - Reverse: Zero Trust Internet Access On-Premises Gateway with reverse proxy 
+      mode configured
+  - Proxy (xx): Cloud Gateway in xx PoP with forward proxy mode
+  - Forward (xx): Cloud Gateway in xx PoP with forward proxy mode for port 
+      forwarding
+  DL_Type: string
+- Name: urlCat
+  Description_EN: The requested URL category
+  Sample:
+  - Social Networking
+  DL_Type: dynamic
+- Name: userAgent
+  Description_EN: The user agent or the agent through which the request was made
+  Sample:
+  - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0)
+  - Chrome/74.0.3729.108 Safari/537.36
+  DL_Type: string
+- Name: userDepartment
+  Description_EN: The user department request method
+  Sample:
+  - Sales
+  DL_Type: string
+- Name: userDomain
+  Description_EN: Active directory domain, domain of username for logging in 
+    TMAS adminportal adminportal
+  Sample:
+  - trendmicro.com
+  DL_Type: dynamic
+- Name: vLANId
+  Description_EN: The virtual LAN ID
+  Sample:
+  - 4095
+  DL_Type: int
+- Name: vpcFlowLogsVersion
+  Description_EN: The VPC Flow Logs version (version)
+  Sample:
+  - 2
+  - 3
+  - 4
+  - 5
+  DL_Type: int
+- Name: vpcId
+  Description_EN: The virtual private cloud that contains the cloud asset
+  Sample:
+  - vpc-01234567890abcdef
+  DL_Type: string

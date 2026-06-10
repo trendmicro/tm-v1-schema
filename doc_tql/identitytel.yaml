@@ -1,0 +1,1005 @@
+- Name: actionName
+  Description_EN: The user or service action
+  Sample:
+  - Create User
+  - Add member to group
+  - Update application
+  DL_Type: string
+- Name: application
+  Description_EN: The name of the requested application
+  Sample:
+  - app01
+  DL_Type: string
+- Name: applicationId
+  Description_EN: The Microsoft Entra ID application ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: authenticationProtocol
+  Description_EN: The authentication protocol or grant type
+  Sample:
+  - none
+  - oAuth2
+  DL_Type: string
+- Name: autonomousSystemNumber
+  Description_EN: The network Autonomous System Number
+  Sample:
+  - 1023
+  DL_Type: int
+- Name: channel
+  Description_EN: The channel through which the demanded WinEvent is delivered
+  Sample:
+  - Security
+  - Microsoft-Windows-WMI-Activity/Trace
+  - Microsoft-Windows-TaskScheduler/Operational
+  DL_Type: string
+- Name: clientApp
+  Description_EN: The app that the client accessed
+  Sample:
+  - browser
+  - Mobile Apps and Desktop clients
+  DL_Type: string
+- Name: clientBrowser
+  Description_EN: The client browser
+  Sample:
+  - Chrome 119.0.0
+  DL_Type: string
+- Name: clientCredentialType
+  Description_EN: The user client or service principal credential type
+  Sample:
+  - none
+  - clientSecret
+  DL_Type: string
+- Name: clientDisplayName
+  Description_EN: The client display name
+  Sample:
+  - DESKTOP-TKOS222
+  DL_Type: string
+- Name: clientId
+  Description_EN: The unique client device ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: clientOS
+  Description_EN: The client OS
+  Sample:
+  - Windows
+  DL_Type: string
+- Name: conditionalAccessStatus
+  Description_EN: The conditional access policy status
+  Sample:
+  - success
+  - failure
+  DL_Type: string
+- Name: correlationData
+  Description_EN: The data for correlation
+  Sample: []
+  DL_Type: dynamic
+- Name: correlationId
+  Description_EN: The correlation ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: crossTenantAccessType
+  Description_EN: The cross-tenant access type
+  Sample:
+  - none
+  - b2bCollaboration
+  DL_Type: string
+- Name: endpointGuid
+  Description_EN: Host GUID of the endpoint on which the event was detected
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: endpointHostName
+  Description_EN: The host name of the endpoint on which the event was detected
+  Sample:
+  - PHILIPSIBE09
+  - WHAM6WK8XG2
+  - MacBook-Pro-del-Meno
+  DL_Type: string
+- Name: endpointIp
+  Description_EN: The IP address of the endpoint on which the event was detected
+  Sample:
+  - 10.10.10.10
+  - ::1
+  - fe80::1
+  DL_Type: dynamic
+- Name: endpointMacAddress
+  Description_EN: The MAC address of endpoint
+  Sample:
+  - 0-0-0-0-0-0-0-e0
+  - 00:00:00:ff:ff:ff
+  DL_Type: dynamic
+- Name: eventAdditionalDetails
+  Description_EN: The raw data string that contains additional information
+  Sample:
+  - '[{"key": "<example>","value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"}]'
+  DL_Type: dynamic
+- Name: eventCategory
+  Description_EN: The event category used in LookupEvents calls
+  Sample:
+  - UserManagement
+  - ApplicationManagement
+  DL_Type: string
+- Name: eventDataAccessList
+  Description_EN: The list of requested access rights
+  Sample:
+  - '%%4416'
+  - '%%4417'
+  - '%%4418'
+  DL_Type: string
+- Name: eventDataAccessMask
+  Description_EN: The hexadecimal value of the requested or used permissions 
+    during an access attempt
+  Sample:
+  - 0x10
+  - 0x80000000
+  - 0x100000
+  DL_Type: string
+- Name: eventDataActionName
+  Description_EN: The action performed
+  Sample:
+  - Language Components Installer
+  - Group Policy Background Processing
+  - C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe
+  DL_Type: string
+- Name: eventDataAdditionalInfo
+  Description_EN: The additional information about the event
+  Sample:
+  - Restrictions
+  DL_Type: string
+- Name: eventDataAttributeLDAPDisplayName
+  Description_EN: The LDAP display name of the attribute that was accessed
+  Sample:
+  - sAMAccountName
+  - memberOf
+  DL_Type: string
+- Name: eventDataAuthenticationPackageName
+  Description_EN: The authentication package name of the Windows event data
+  Sample:
+  - NTLM
+  - Negotiate
+  - MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+  DL_Type: string
+- Name: eventDataCertIssuerName
+  Description_EN: The name of the Certification Authority that issued the TGT 
+    certificate
+  Sample:
+  - CN=contoso-DC-CA, DC=contoso, DC=local
+  DL_Type: string
+- Name: eventDataCertSerialNumber
+  Description_EN: The serial number of the certificate
+  Sample:
+  - 1D0000000120F1D8A3094A82760000000001
+  DL_Type: string
+- Name: eventDataCertThumbprint
+  Description_EN: The thumbprint of the certificate
+  Sample:
+  - 1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A0B
+  DL_Type: string
+- Name: eventDataConsumer
+  Description_EN: The recipient of the reported event
+  Sample:
+  - HealthDriverEventConsumer="Health Event Consumer"
+  - MemoryEventConsumer="Memory Event Consumer"
+  - SysEventConsumer="System Event Consumer"
+  DL_Type: string
+- Name: eventDataElevatedToken
+  Description_EN: Whether the session is elevated and has administrator 
+    privileges
+  Sample:
+  - '%%1842'
+  - '%%1843'
+  DL_Type: string
+- Name: eventDataFullyQualifiedAssemblyName
+  Description_EN: The fully qualified .NET assembly name
+  Sample:
+  - System.Runtime, Version=6.0.0.0, Culture=neutral, 
+    PublicKeyToken=b03f5f7f11d50a3a
+  - System.Xml, Version=4.0.0.0, Culture=neutral, 
+    PublicKeyToken=b77a5c561934e089
+  - System.Diagnostics.Process, Version=8.0.0.0, Culture=neutral, 
+    PublicKeyToken=b03f5f7f11d50a3a
+  DL_Type: string
+- Name: eventDataImpersonationLevel
+  Description_EN: The sign-in session impersonation level
+  Sample:
+  - '%%1830'
+  - '%%1832'
+  - '%%1833'
+  DL_Type: string
+- Name: eventDataIpAddress
+  Description_EN: The IP address for Windows event 4624 which is "An account was
+    successfully logged on"
+  Sample:
+  - '-'
+  - 10.10.10.10
+  DL_Type: string
+- Name: eventDataJobOwner
+  Description_EN: The name of the account that initiated the event
+  Sample:
+  - BEI\holdej
+  - NT AUTHORITY\SYSTEM
+  DL_Type: string
+- Name: eventDataLogonProcessName
+  Description_EN: The name of the Windows event sign in process name
+  Sample:
+  - 'NtLmSsp '
+  - 'Advapi  '
+  - Advapi
+  DL_Type: string
+- Name: eventDataLogonType
+  Description_EN: The logon type for Windows event 4624 which is "An account was
+    successfully logged on"
+  Sample:
+  - '3'
+  - '5'
+  - '2'
+  DL_Type: string
+- Name: eventDataMemberName
+  Description_EN: The distinguished name of the account that was added to the 
+    group
+  Sample:
+  - CN=User1,CN=Users,DC=contoso,DC=local
+  DL_Type: string
+- Name: eventDataMemberSid
+  Description_EN: The security identifier (SID) of the account that was added to
+    the group
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+- Name: eventDataModuleILPath
+  Description_EN: The CIL image path of the module or the dynamic module name
+  Sample:
+  - C:\Program Files\Cymulate\Agent\System.Threading.dll
+  - C:\windows\system32\tzsync.exe
+  - C:\Program.exe
+  DL_Type: string
+- Name: eventDataObjectClass
+  Description_EN: The class of the object that was accessed
+  Sample:
+  - user
+  - group
+  DL_Type: string
+- Name: eventDataObjectDN
+  Description_EN: The distinguished name of the object that was accessed
+  Sample:
+  - CN=User1,CN=Users,DC=contoso,DC=local
+  DL_Type: string
+- Name: eventDataObjectGUID
+  Description_EN: The unique identifier of the object that was accessed
+  Sample:
+  - '{11111111-1111-1111-1111-111111111111}'
+  DL_Type: string
+- Name: eventDataObjectName
+  Description_EN: The identifying information about the object for which access 
+    was requested
+  Sample:
+  - \Device\HarddiskVolume2\Windows\System32\lsass.exe
+  - C:\Windows\System32\osk.exe
+  DL_Type: string
+- Name: eventDataObjectServer
+  Description_EN: The name of the Windows sub-system calling the routine
+  Sample:
+  - Security
+  - LSA
+  DL_Type: string
+- Name: eventDataObjectType
+  Description_EN: The object type
+  Sample:
+  - Process
+  - File
+  DL_Type: string
+- Name: eventDataOperation
+  Description_EN: Windows event 11
+  Sample:
+  - 'Start IWbemServices::ExecQuery - root\ccm : select * from SMS_Authority'
+  - 'Start IWbemServices::ExecQuery - root\cimv2 : select * from win32_process'
+  - 'Start IWbemServices::ExecQuery - root\ccm : SELECT * FROM SMS_Authority'
+  DL_Type: string
+- Name: eventDataOperationType
+  Description_EN: The type of operation performed on the object
+  Sample:
+  - Object Access
+  - Object Open
+  DL_Type: string
+- Name: eventDataPath
+  Description_EN: The path of the Windows event data
+  Sample:
+  - C:\Program Files\Common Files\Microsoft Shared\ClickToRun\officesvcmgr.exe
+  - taskhostw.exe
+  - gpupdate.exe
+  DL_Type: string
+- Name: eventDataProcessPath
+  Description_EN: The process path that initiated the event
+  Sample:
+  - C:\Program Files\Microsoft Office\Office15\OUTLOOK.EXE
+  - C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARM.exe
+  - C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+  DL_Type: string
+- Name: eventDataProperties
+  Description_EN: The properties of the object
+  Sample:
+  - '%%8278'
+  DL_Type: string
+- Name: eventDataProviderName
+  Description_EN: The name of the Windows event data provider
+  Sample:
+  - SmsClientMethodProvider
+  - MS_NT_EVENTLOG_PROVIDER
+  - RegProv
+  DL_Type: string
+- Name: eventDataProviderPath
+  Description_EN: The file path of the Windows event data provider
+  Sample:
+  - '%systemroot%\system32\wbem\ntevt.dll'
+  - '%systemroot%\system32\wbem\stdprov.dll'
+  - C:\WINDOWS\CCM\smsclient.dll
+  DL_Type: string
+- Name: eventDataScriptBlockText
+  Description_EN: Windows Event 4104 (the execution of a remote command using 
+    PowerShell)
+  Sample:
+  - $global:?
+  - '0'
+  - '{ Set-StrictMode -Version 1; $_.PSMessageDetails }'
+  DL_Type: string
+- Name: eventDataServiceAccount
+  Description_EN: The service account name (Windows Event 4697)
+  Sample:
+  - LocalSystem
+  - NT AUTHORITY\SYSTEM
+  DL_Type: string
+- Name: eventDataServiceFileName
+  Description_EN: The full file path of the service executable file
+  Sample:
+  - '%SystemRoot%\PSEXESVC.exe'
+  - C:\Windows\System32\svchost.exe -k WinSysRestoreGroup
+  DL_Type: string
+- Name: eventDataServiceName
+  Description_EN: The service name
+  Sample:
+  - PSEXESVC
+  - WinResSvc
+  DL_Type: string
+- Name: eventDataServiceSid
+  Description_EN: The security identifier (SID) of the service
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+- Name: eventDataServiceStartType
+  Description_EN: The service start type (Windows Event ID 4697)
+  Sample:
+  - '2'
+  DL_Type: string
+- Name: eventDataServiceType
+  Description_EN: The service type (Windows Event ID 4697)
+  Sample:
+  - '0x10'
+  - '0x20'
+  DL_Type: string
+- Name: eventDataStatus
+  Description_EN: The Windows event data status
+  Sample:
+  - '0xc000006d'
+  - '-1073741715'
+  - '0xc000006e'
+  DL_Type: string
+- Name: eventDataSubjectDomainName
+  Description_EN: The domain or computer name of the account
+  Sample:
+  - NT AUTHORITY
+  - WORKGROUP
+  - CONTOSO
+  DL_Type: string
+- Name: eventDataSubjectLogonId
+  Description_EN: The account sign-in ID
+  Sample:
+  - '0x3e7'
+  - '0x3e4'
+  DL_Type: string
+- Name: eventDataSubjectUserName
+  Description_EN: The account name
+  Sample:
+  - dadmin
+  - Alex
+  - london$
+  DL_Type: string
+- Name: eventDataSubjectUserSid
+  Description_EN: The security identifier (SID) of the account
+  Sample:
+  - S-1-5-18
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+- Name: eventDataSubStatus
+  Description_EN: The Windows event data sub-status
+  Sample:
+  - '0xc0000064'
+  - '0xc000006a'
+  - '-1073741724'
+  DL_Type: string
+- Name: eventDataTargetDomainName
+  Description_EN: The target sign-in account domain or computer name
+  Sample:
+  - NT AUTHORITY
+  - Builtin
+  - SHOCKWAVE
+  DL_Type: string
+- Name: eventDataTargetLogonId
+  Description_EN: The hexadecimal value to correlate this event with events that
+    contain the same sign-in ID
+  Sample:
+  - '0x3e7'
+  DL_Type: string
+- Name: eventDataTargetName
+  Description_EN: The service, application, or network resource name
+  Sample:
+  - Microsoft_RssPlatform_*
+  - WindowsLive:target=virtualapp/didlogical
+  - MicrosoftOffice*
+  DL_Type: string
+- Name: eventDataTargetSid
+  Description_EN: The security identifier (SID) of the target account
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+- Name: eventDataTargetUserName
+  Description_EN: The user name of the Windows event data target
+  Sample:
+  - Auditor
+  - Administrators
+  DL_Type: string
+- Name: eventDataTargetUserSid
+  Description_EN: The security identifier (SID) of the account for which sign-in
+    was requested
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+- Name: eventDataTaskName
+  Description_EN: The task name logged by the Windows event
+  Sample:
+  - \Microsoft\Windows\LanguageComponentsInstaller\Installation
+  - \Microsoft\Office\Office Serviceability Manager
+  - \MicrosoftEdgeUpdateTaskMachineUA
+  DL_Type: string
+- Name: eventDataTicketEncryptionType
+  Description_EN: The cryptographic suite used for the Kerberos TGS
+  Sample:
+  - '0x12'
+  - '0x17'
+  - '0x18'
+  DL_Type: string
+- Name: eventDataTicketOptions
+  Description_EN: The authentication request Kerberos ticket behavior and 
+    permissions flags
+  Sample:
+  - '0x40810000'
+  - '0x40810010'
+  DL_Type: string
+- Name: eventDataUserContext
+  Description_EN: The user context of the Windows event data
+  Sample:
+  - MP\MPBSA179345$
+  - MP\MPBSASPU179370$
+  - MP\MPBSA4025625$
+  DL_Type: string
+- Name: eventDataUserPrincipalName
+  Description_EN: The user account UPN
+  Sample:
+  - user@contoso.local
+  DL_Type: string
+- Name: eventDataWorkstation
+  Description_EN: The computer name from which the sign-in request was received
+  Sample:
+  - WORKSTATION01
+  DL_Type: string
+- Name: eventDataWorkstationName
+  Description_EN: The name of the computer used in the sign-in attempt
+  Sample:
+  - WIN-GG82ULGC9GO
+  - DESKTOP-123ABC
+  - CLIENT01
+  DL_Type: string
+- Name: eventId
+  Description_EN: The event ID from the logs of each product
+  Sample:
+  - 1 - EVENT_SOURCE_AAD_SIGN_INS
+  - 2 - EVENT_SOURCE_AAD_DIR_AUDIT
+  DL_Type: string
+- Name: eventName
+  Description_EN: The name of the log event
+  Sample:
+  - EVENT_SOURCE_AAD_SIGN_INS
+  - EVENT_SOURCE_AAD_DIR_AUDIT
+  - EVENT_SOURCE_OPA_WINDOWS_EVENT
+  DL_Type: string
+- Name: eventSourceType
+  Description_EN: The event source type
+  Sample:
+  - 1 - EVENT_SOURCE_IDENTITY_ACTIVITY
+  DL_Type: int
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  Sample:
+  - 1657781088000
+  DL_Type: datetime
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  Sample:
+  - info
+  - low
+  - medium
+  DL_Type: string
+- Name: groupId
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: idpId
+  Description_EN: The internal product code of the identity provider
+  Sample:
+  - aad
+  - opa
+  DL_Type: string
+- Name: idpIssuerName
+  Description_EN: The identity provider that issued the token
+  Sample:
+  - sts.microsoft.com
+  DL_Type: string
+- Name: idpName
+  Description_EN: The identity provider
+  Sample:
+  - Microsoft Entra ID
+  - Microsoft Active Directory
+  - google
+  DL_Type: string
+- Name: incomingTokentype
+  Description_EN: The authentication token types
+  Sample:
+  - none
+  - primaryRefreshToken
+  DL_Type: string
+- Name: initiatedByAppDisplayName
+  Description_EN: The application display name
+  Sample:
+  - Microsoft Intune
+  DL_Type: string
+- Name: initiatedByAppId
+  Description_EN: The resource category targeted by the event
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: initiatedByServicePrincipalId
+  Description_EN: The unique ID of the service principal
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: initiatedByServicePrincipalName
+  Description_EN: The unique ID of the service principal
+  Sample:
+  - ''
+  - Microsoft Intune
+  DL_Type: string
+- Name: initiatedByUserDisplayName
+  Description_EN: The user display name
+  Sample:
+  - Sample User
+  DL_Type: string
+- Name: initiatedByUserHomeTenantId
+  Description_EN: The tenant ID of the user
+  Sample:
+  - ''
+  DL_Type: string
+- Name: initiatedByUserHomeTenantName
+  Description_EN: The tenant ID of the user
+  Sample:
+  - ''
+  DL_Type: string
+- Name: initiatedByUserId
+  Description_EN: The unique ID of the user who initiated the event
+  Sample:
+  - ''
+  DL_Type: string
+- Name: initiatedByUserIpAddress
+  Description_EN: The client IP of the user
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+- Name: initiatedByUserPrincipalName
+  Description_EN: The User Principal Name of the user
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+- Name: instanceId
+  Description_EN: The ID of the instance that indicates the meta-cloud or data 
+    center VM
+  Sample:
+  - i-01234567890abcdef
+  DL_Type: string
+- Name: ipAddress
+  Description_EN: The client IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+- Name: locationCity
+  Description_EN: The city where the event happened
+  Sample:
+  - Singapore
+  DL_Type: string
+- Name: locationCountry
+  Description_EN: The country where the event happened
+  Sample:
+  - US
+  - TW
+  DL_Type: string
+- Name: locationLatitude
+  Description_EN: The latitude of the event location
+  Sample:
+  - 121.568
+  DL_Type: string
+- Name: locationLongitude
+  Description_EN: The longitude of the event location
+  Sample:
+  - 121.568
+  DL_Type: string
+- Name: locationState
+  Description_EN: The state where the event happened
+  Sample:
+  - Central Singapore
+  DL_Type: string
+- Name: logBatchId
+  Description_EN: The batch data retrieval process ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: loggedByService
+  Description_EN: The service that initiated the event
+  Sample:
+  - Core Directory
+  DL_Type: string
+- Name: logonUser
+  Description_EN: The sign-in user name
+  Sample:
+  - root
+  - SISTEMA
+  - oracle
+  DL_Type: dynamic
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  Sample:
+  - 1656324260000
+  DL_Type: datetime
+- Name: operationType
+  Description_EN: The operation performed in the event
+  Sample:
+  - Add
+  - Assign
+  - Update
+  DL_Type: string
+- Name: orgId
+  Description_EN: The organization ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: osDescription
+  Description_EN: The OS version
+  Sample:
+  - Windows 10 (64 bit)
+  - Windows 10 Pro (64 bit) build 19044
+  - Amazon Linux 2 (64 bit) (5.4.188-104.359.amzn2.x86_64)
+  DL_Type: string
+- Name: osName
+  Description_EN: The host operating system name
+  Sample:
+  - Windows
+  - Linux
+  - macOS
+  DL_Type: string
+- Name: osType
+  Description_EN: The host operating system type
+  Sample:
+  - '0x00000030'
+  - '4'
+  DL_Type: string
+- Name: osVer
+  Description_EN: The version of the host operating system
+  Sample:
+  - Amazon Linux 2
+  - 10.0.19044
+  - 10.0.19042
+  DL_Type: string
+- Name: pname
+  Description_EN: The internal product ID (Deprecated, use productCode)
+  Sample:
+  - '2200'
+  - '751'
+  - '533'
+  DL_Type: string
+- Name: policyTreePath
+  Description_EN: The policy tree path (endpoint only)
+  Sample:
+  - policyname1/policyname2/policyname3
+  DL_Type: string
+- Name: pplat
+  Description_EN: The product platform
+  Sample:
+  - 5889
+  - 9217
+  DL_Type: int
+- Name: principalName
+  Description_EN: The user principal name used to sign in to the proxy
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+- Name: processCmd
+  Description_EN: The command line entry of the subject process
+  Sample:
+  - C:\Windows\system32\lsass.exe
+  - C:\WINDOWS\system32\lsass.exe
+  - nimbus(processes)
+  DL_Type: string
+- Name: processFileHashSha1
+  Description_EN: The SHA-1 hash of the subject process image
+  Sample:
+  - 1f912d4bec338ef10b7c9f19976286f8acc4eb97
+  - ded3833f145989fd86c1f4811b61497298ebc7fd
+  - 9ad737cbd8bbdddc96726156dbd3bc03936bf02f
+  DL_Type: string
+- Name: processFileOriginalName
+  Description_EN: The original file name of the process image
+  Sample:
+  - Taskmgr.exe
+  - WINLOGON.EXE
+  - svchost.exe
+  DL_Type: string
+- Name: processFilePath
+  Description_EN: The file path of the subject process
+  Sample:
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
+  - c:\windows\system32\lsass.exe
+  DL_Type: string
+- Name: processFileSize
+  Description_EN: The file size of the process file
+  Sample:
+  - '59952'
+  - '59456'
+  - '47024'
+  DL_Type: long
+- Name: processHashId
+  Description_EN: The FNV of the subject process
+  Sample:
+  - '7114696589795796819'
+  - '1307755369266815004'
+  - '-5015325378148567246'
+  DL_Type: string
+- Name: processName
+  Description_EN: The image name of the process that triggered the event
+  Sample:
+  - /usr/bin/bash
+  - c:\windows\system32\svchost.exe
+  - c:\windows\system32\lsass.exe
+  DL_Type: string
+- Name: processPid
+  Description_EN: The PID of the subject process
+  Sample:
+  - 4
+  - 1
+  - 784
+  - 792
+  DL_Type: int
+- Name: processSigner
+  Description_EN: The list of process signers in an endpoint or container
+  Sample:
+  - Microsoft Windows
+  - Microsoft Windows Publisher
+  - Microsoft Corporation
+  DL_Type: dynamic
+- Name: processSignerValid
+  Description_EN: The validity of the process signer
+  Sample:
+  - 1
+  - 0
+  DL_Type: dynamic
+- Name: processStackTrace
+  Description_EN: The process stack trace of the telemetry event
+  Sample:
+  - C:\Windows\System32\ntdll.dll?NtCreateUserProcess|ZwCreateUserProcess, 
+    C:\Windows\System32\kernelbase.dll!CreateProcessInternalW
+  DL_Type: string
+- Name: productCode
+  Description_EN: The internal product code of the identity provider 
+    (aad=Microsoft Entra ID, opa=Microsoft Active Directory)
+  Sample:
+  - aad
+  - opa
+  DL_Type: string
+- Name: providerGUID
+  Description_EN: The GUID of the Windows event provider
+  Sample:
+  - '{11111111-1111-1111-1111-111111111111}'
+  DL_Type: string
+- Name: providerName
+  Description_EN: The name of the Windows event provider
+  Sample:
+  - Microsoft-Windows-Security-Auditing
+  - Microsoft-Windows-WMI-Activity
+  - Microsoft-Windows-TaskScheduler
+  DL_Type: string
+- Name: pver
+  Description_EN: The product version
+  Sample:
+  - 1.2.0.2752
+  - 1.0.345
+  - 1.2.0.2657
+  DL_Type: string
+- Name: rawDataStr
+  Description_EN: The raw data string that contains additional information
+  Sample:
+  - "{\n   \"EventData\" : {\n      \"LogonType\" : \"\",\n      \"TargetDomainName\"\
+    \ : \"\",\n      \"TargetLogonId\" : \"\",\n      \"TargetUserName\" : \"\",\n\
+    \      \"TargetUserSid\" : \"\"\n   }\n}\n"
+  - "{\n   \"EventData\" : {\n      \"LogonType\" : \"10\",\n      \"TargetDomainName\"\
+    \ : \"AFASADV\",\n      \"TargetLogonId\" : \"14941011731\",\n      \"TargetUserName\"\
+    \ : \"administrator\",\n      \"TargetUserSid\" : \"S-1-5-21-1507008304-2416677881-2121376573-500\"\
+    \n   }\n}\n"
+  - "{\n   \"EventData\" : {\n      \"LogonType\" : \"10\",\n      \"TargetDomainName\"\
+    \ : \"AIS\",\n      \"TargetLogonId\" : \"216921070\",\n      \"TargetUserName\"\
+    \ : \"MWoodr01\",\n      \"TargetUserSid\" : \"S-1-5-21-1873864278-1756520048-3043165120-15057\"\
+    \n   }\n}\n"
+  DL_Type: string
+- Name: requestMethod
+  Description_EN: The network protocol request method
+  Sample:
+  - '[{"authenticationStepDateTime": "2023-11-28T03:44:05Z","authenticationMethod":
+    "Previously satisfied","authenticationMethodDetail": null,"succeeded" : true,"authenticationStepResultDetail":
+    "MFA requirement satisfied by claim in the Token","authenticationStepRequirement":
+    ""}]'
+  DL_Type: string
+- Name: result
+  Description_EN: The event result
+  Sample:
+  - success
+  - failure
+  - timeout
+  DL_Type: string
+- Name: resultReason
+  Description_EN: The cause of event failure or timeout
+  Sample:
+  - success
+  - failure
+  - timeout
+  DL_Type: string
+- Name: riskEventTypes
+  Description_EN: The associated sign-in risk event types
+  Sample:
+  - [unlikelyTravel, anonymizedIPAddress]
+  DL_Type: dynamic
+- Name: rt
+  Description_EN: The Unix time of the log generation
+  Sample:
+  - 1657781088000
+  DL_Type: string
+- Name: servicePrincipalId
+  Description_EN: The service principal ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: servicePrincipalName
+  Description_EN: The service principal name
+  Sample:
+  - Service_01
+  DL_Type: string
+- Name: signInEventTypes
+  Description_EN: The sign-in event type
+  Sample:
+  - [interactiveUser, nonInteractiveUser]
+  DL_Type: dynamic
+- Name: signInIdentifierType
+  Description_EN: The sign-in ID type
+  Sample:
+  - userPrincipalName
+  - phoneNumber
+  DL_Type: string
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  Sample:
+  - true
+  DL_Type: bool
+- Name: status
+  Description_EN: The network analysis flow session status
+  Sample:
+  - 0
+  - 50126
+  - 50155
+  DL_Type: string
+- Name: statusDetail
+  Description_EN: The additional information about sign-in status
+  Sample:
+  - MFA requirement satisfied by claim in the token
+  DL_Type: string
+- Name: statusReason
+  Description_EN: The sign-in status
+  Sample:
+  - Error validating credentials due to invalid username or password.
+  - Others.
+  - ''
+  DL_Type: string
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on 
+    the alert filter
+  Sample:
+  - MITREV9.T1057
+  - MITREV9.T1059.003
+  - XSAE.F2924
+  DL_Type: dynamic
+- Name: targetResourceDisplayName
+  Description_EN: The target resource display name
+  Sample:
+  - Microsoft Graph
+  DL_Type: string
+- Name: targetResourceId
+  Description_EN: The target resource ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: targetResources
+  Description_EN: The targeted resource of the event
+  Sample:
+  - ''
+  DL_Type: dynamic
+- Name: tenantId
+  Description_EN: The Microsoft Entra ID Tenant ID of the organization
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: trustType
+  Description_EN: The join type of the sign-in device
+  Sample:
+  - AzureAd
+  - ServerAd
+  - Workplace
+  DL_Type: string
+- Name: userAgent
+  Description_EN: The user agent or the agent through which the request was made
+  Sample:
+  - Microsoft.OData.Client/7.12.5
+  - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, 
+    like Gecko) Chrome/119.0.0.0 Safari/537.36
+  DL_Type: string
+- Name: userDisplayName
+  Description_EN: The display name of the related user account asset
+  Sample:
+  - Test User(RD-TW)
+  DL_Type: string
+- Name: userDomain
+  Description_EN: Active directory domain, domain of username for logging in 
+    TMAS adminportal adminportal
+  Sample:
+  - CORP
+  - AUTORIDADE NT
+  DL_Type: dynamic
+- Name: userId
+  Description_EN: The user ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: userSessionId
+  Description_EN: The user session ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+- Name: userType
+  Description_EN: The tenant user type
+  Sample:
+  - member
+  - guest
+  DL_Type: string
+- Name: winEventId
+  Description_EN: Event ID of Windows event
+  Sample:
+  - 4662
+  - 4624
+  - 4625
+  DL_Type: int
