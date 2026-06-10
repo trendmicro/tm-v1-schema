@@ -292,7 +292,7 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Discovery Inspector</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
@@ -317,7 +317,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
@@ -335,7 +335,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
@@ -484,7 +484,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>

@@ -1,0 +1,35 @@
+- Name: eventRawData
+  Description_EN: The original event log string (JSON format)
+  DL_Type: dynamic
+- Name: eventSourceType
+  Description_EN: The event source type
+  DL_Type: int
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  DL_Type: datetime
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  DL_Type: string
+- Name: groupId
+  Description_EN: The group ID for the management scope filter
+  DL_Type: string
+- Name: groupName
+  Description_EN: The group name
+  DL_Type: string
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  DL_Type: datetime
+- Name: policyTreePath
+  Description_EN: The policy tree path (endpoint only)
+  DL_Type: string
+- Name: productCode
+  Description_EN: The internal product code of the identity provider 
+    (aad=Microsoft Entra ID, opa=Microsoft Active Directory)
+  DL_Type: string
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  DL_Type: bool
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on 
+    the alert filter
+  DL_Type: dynamic

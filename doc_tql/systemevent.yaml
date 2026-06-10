@@ -1,0 +1,127 @@
+- Name: actionBy
+  Description_EN: The user account or system that triggered the event
+  DL_Type: string
+- Name: actorHostName
+  Description_EN: The hostname of the actor that triggered the event
+  DL_Type: string
+- Name: actorIp
+  Description_EN: The IP address of the actor that triggered the event
+  DL_Type: string
+- Name: additionalEventData
+  Description_EN: The additional event information that was not part of the 
+    request or response
+  DL_Type: dynamic
+- Name: assetHostName
+  Description_EN: The hostname of the asset associated with the event
+  DL_Type: string
+- Name: assetIp
+  Description_EN: The host IP of the asset or related entity involved in the 
+    risk event
+  DL_Type: string
+- Name: description
+  Description_EN: The additional event details
+  DL_Type: string
+- Name: deviceGUID
+  Description_EN: The GUID of the network appliance which reported the system 
+    event
+  DL_Type: string
+- Name: deviceMacAddress
+  Description_EN: The device MAC address
+  DL_Type: string
+- Name: dvc
+  Description_EN: The IP address of the Deep Discovery Inspector or Virtual 
+    Network Sensor appliance
+  DL_Type: dynamic
+- Name: dvchost
+  Description_EN: The computer which installed the Trend Micro product
+  DL_Type: string
+- Name: endpointGUID
+  Description_EN: The GUID of the agent which reported the detection
+  DL_Type: string
+- Name: endpointHostName
+  Description_EN: The host name of the endpoint on which the event was detected
+  DL_Type: string
+- Name: errorCode
+  Description_EN: The error code associated with the event
+  DL_Type: string
+- Name: eventId
+  Description_EN: The event ID from the logs of each product
+  DL_Type: string
+- Name: eventInitiator
+  Description_EN: The event origin
+  DL_Type: string
+- Name: eventName
+  Description_EN: The name of the log event
+  DL_Type: string
+- Name: eventSourceType
+  Description_EN: The event source type
+  DL_Type: int
+- Name: eventSubId
+  Description_EN: The sub-event ID
+  DL_Type: string
+- Name: eventSubName
+  Description_EN: The Zero Trust Secure Access - Internet Access cloud app 
+    action or the Palo Alto Networks firewall log sub-type
+  DL_Type: string
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  DL_Type: datetime
+- Name: eventType
+  Description_EN: The type of event that generated the event record
+  DL_Type: string
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  DL_Type: string
+- Name: groupId
+  Description_EN: The group ID for the management scope filter
+  DL_Type: string
+- Name: groupName
+  Description_EN: The group name
+  DL_Type: string
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  DL_Type: datetime
+- Name: outcome
+  Description_EN: Whether the event was successful or not
+  DL_Type: string
+- Name: pname
+  Description_EN: The internal product ID (Deprecated, use productCode)
+  DL_Type: string
+- Name: policyTreePath
+  Description_EN: The policy tree path (endpoint only)
+  DL_Type: string
+- Name: productCode
+  Description_EN: The internal product code of the identity provider 
+    (aad=Microsoft Entra ID, opa=Microsoft Active Directory)
+  DL_Type: string
+- Name: pver
+  Description_EN: The product version
+  DL_Type: string
+- Name: ruleName
+  Description_EN: The name of the rule that triggered the event
+  DL_Type: string
+- Name: senderGUID
+  Description_EN: The sender GUID
+  DL_Type: string
+- Name: severity
+  Description_EN: The severity of the event
+  DL_Type: int
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  DL_Type: bool
+- Name: srcType
+  Description_EN: The source device type
+  DL_Type: string
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on 
+    the alert filter
+  DL_Type: dynamic
+- Name: targetId
+  Description_EN: The target ID
+  DL_Type: string
+- Name: targetName
+  Description_EN: The target name
+  DL_Type: string
+- Name: targetType
+  Description_EN: The type of object that was accessed or modified
+  DL_Type: string

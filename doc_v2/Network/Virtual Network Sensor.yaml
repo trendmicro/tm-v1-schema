@@ -2534,19 +2534,27 @@
   DL_Searchable: true
   DL_Aggregable: true
 - Name: rawDataStr
-  ProductCode:
+  ProductCode: &id001
   - pdi
   - xns
   - scs
   - xns
   Description_EN: The JSON string that contains additional information
-  Sample:
+  Sample: &id002
   - '{"TLS version": "0x0303", "Cipher Suite": "0xc030"}'
   - '{"Scanned ports": "23, 80, 443"}'
   - '{"HTTP Content-Type": "application/hal+json", "HTTP Content-Body": "{\\"_links\\":
     {\\"type\\": {\\"href\\": \\"http://10.10.10.10/rest/type/node/INVALID_VALUE\\"}},
     \\"type\\": {\\"target_id\\": \\"article\\"}, \\"title\\": {\\"value\\": \\"My
     Article\\"}, \\"body\\": {\\"value\\": \\"\\"}}"}'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: rawDataStr
+  ProductCode: *id001
+  Description_EN: The JSON string that contains additional information
+  Sample: *id002
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
