@@ -241,7 +241,7 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
           <li>Web Security</li>
@@ -348,7 +348,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
           <li>Cloud App Security</li>
@@ -401,7 +401,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
           <li>TippingPoint Security Management System</li>
@@ -461,7 +461,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
@@ -492,7 +492,7 @@ This documentation provides detailed information about all fields available for 
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>TXOne StellarOne</li>
           <li>File Security</li>
           <li>File Security Storage</li>
@@ -516,7 +516,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Security</li>
           <li>TXOne StellarOne</li>
         </ul>
@@ -555,7 +555,7 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Security</li>
           <li>TXOne StellarOne</li>
           <li>File Security</li>
@@ -623,7 +623,7 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Security</li>
           <li>Web Security</li>
           <li>TXOne StellarOne</li>
@@ -676,7 +676,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>TXOne StellarOne</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>

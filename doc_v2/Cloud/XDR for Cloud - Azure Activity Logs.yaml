@@ -1,0 +1,644 @@
+- Name: eventTime
+  ProductCode:
+  - aml
+  - ALL
+  Description_EN: The time the agent or product detected the event
+  Sample:
+  - 1656324260000
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: uuid
+  ProductCode:
+  - aml
+  - ALL
+  Description_EN: The unique key of the log entry
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: guid
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: productCode
+  ProductCode:
+  - aml
+  - ALL
+  Description_EN: The internal product code
+  Sample:
+  - aml
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: vendor
+  ProductCode:
+  - aml
+  Description_EN: The device vendor
+  Sample:
+  - Microsoft
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: pname
+  ProductCode:
+  - aml
+  Description_EN: The product name
+  Sample:
+  - Azure Activity Log
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vendorParsed
+  ProductCode:
+  - aml
+  Description_EN: The normalized event log (JSON format)
+  Sample: '{"RoleLocation": "Japan East", "Stamp": "FDWorker", "ReleaseVersion": "6.2024.42.16+5d1e2c2.release_2024w42",
+    "time": "2025-01-13T01:27:41.8080097Z"}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: vendorRaw
+  ProductCode:
+  - aml
+  Description_EN: The original event log string
+  Sample: '{"RoleLocation": "Japan East", "Stamp": "FDWorker", "ReleaseVersion": "6.2024.42.16+5d1e2c2.release_2024w42",
+    "time": "2025-01-13T01:27:41.8080097Z"}'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventId
+  ProductCode:
+  - aml
+  Description_EN: The event ID
+  Sample:
+  - '1500001'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventCategory
+  ProductCode:
+  - aml
+  Description_EN: The event category used in LookupEvents calls
+  Sample:
+  - Administrative
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventVersion
+  ProductCode:
+  - aml
+  Description_EN: The log event format version
+  Sample:
+  - 6.2024.42.16+5d1e2c2.release_2024w42
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: correlationId
+  ProductCode:
+  - aml
+  Description_EN: The correlation ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: src
+  ProductCode:
+  - aml
+  Description_EN: The source IP address
+  Sample:
+  - [10.10.10.10]
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: regionId
+  ProductCode:
+  - aml
+  Description_EN: The cloud asset region
+  Sample:
+  - Japan East
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: operationType
+  ProductCode:
+  - aml
+  Description_EN: The operation performed in the event
+  Sample:
+  - MICROSOFT.KUSTO/CLUSTERS/READ
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actionStatus
+  ProductCode:
+  - aml
+  Description_EN: The status of the event operation
+  Sample:
+  - MICROSOFT.KUSTO/CLUSTERS/READ
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actionSubStatus
+  ProductCode:
+  - aml
+  Description_EN: The HTTP status or action status
+  Sample:
+  - Running.
+  - Bad Request
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudResourceId
+  ProductCode:
+  - aml
+  Description_EN: The cloud resource ID
+  Sample:
+  - /SUBSCRIPTIONS/11111111-1111-1111-1111-111111111111/RESOURCEGROUPS/GROUP/PROVIDERS/MICROSOFT.KUSTO/CLUSTERS/TEST
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tenantId
+  ProductCode:
+  - aml
+  Description_EN: The Microsoft Entra ID Tenant ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logLevel
+  ProductCode:
+  - aml
+  Description_EN: The event severity level
+  Sample:
+  - Information
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: authScope
+  ProductCode:
+  - aml
+  Description_EN: The Azure resource or resource group
+  Sample:
+  - /subscriptions/11111111-1111-1111-1111-111111111111/resourcegroups/user-group/providers/Microsoft.Kusto/Clusters/user-test
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: authAction
+  ProductCode:
+  - aml
+  Description_EN: The operation performed on a scope
+  Sample:
+  - Microsoft.Kusto/Clusters/write
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: authRole
+  ProductCode:
+  - aml
+  Description_EN: The Azure RBAC role
+  Sample:
+  - Owner
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: authRoleAssignmentScope
+  ProductCode:
+  - aml
+  Description_EN: The role assignment scope
+  Sample:
+  - /subscriptions/11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: authPrincipalId
+  ProductCode:
+  - aml
+  Description_EN: The entity ID
+  Sample:
+  - 123abc2a6c314b0ab03a891259123abc
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: authPrincipalType
+  ProductCode:
+  - aml
+  Description_EN: The entity type
+  Sample:
+  - Group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsAud
+  ProductCode:
+  - aml
+  Description_EN: The intended recipient of the authentication token
+  Sample:
+  - https://management.core.windows.net/
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsIssuer
+  ProductCode:
+  - aml
+  Description_EN: The authentication token issuer
+  Sample:
+  - https://sts.windows.net/11111111-1111-1111-1111-111111111111/
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsIssuedAt
+  ProductCode:
+  - aml
+  Description_EN: The authentication token timestamp (in Unix format)
+  Sample:
+  - 1736731195
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsNbf
+  ProductCode:
+  - aml
+  Description_EN: The time an authentication token becomes valid
+  Sample:
+  - 1736731195
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsExp
+  ProductCode:
+  - aml
+  Description_EN: The authentication token expiration time
+  Sample:
+  - 1736745944
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsAppId
+  ProductCode:
+  - aml
+  Description_EN: The Azure Application ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsAppIdAcr
+  ProductCode:
+  - aml
+  Description_EN: The Azure application authentication method
+  Sample:
+  - 2
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsGroups
+  ProductCode:
+  - aml
+  Description_EN: The Microsoft Entra ID group claim
+  Sample:
+  - [00000000-0000-0000-0000-000000000000]
+  - [11111111-1111-1111-1111-111111111111]
+  - [22222222-2222-2222-2222-222222222222]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsIdType
+  ProductCode:
+  - aml
+  Description_EN: The Microsoft Entra ID identity type
+  Sample:
+  - user
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsIpAddr
+  ProductCode:
+  - aml
+  Description_EN: The Microsoft Entra ID user authentication request IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsInitiatedBy
+  ProductCode:
+  - aml
+  Description_EN: The user name or service principal
+  Sample:
+  - user_name
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsAuthnClassRef
+  ProductCode:
+  - aml
+  Description_EN: The user authentication class reference
+  Sample:
+  - 1
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsAuthnMethodsRef
+  ProductCode:
+  - aml
+  Description_EN: The list of authentication methods for a user
+  Sample:
+  - [pwd]
+  - [mfa]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsEmail
+  ProductCode:
+  - aml
+  Description_EN: The email address of the authenticated user
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsIdentityProvider
+  ProductCode:
+  - aml
+  Description_EN: The IdP that authenticated the user
+  Sample:
+  - https://sts.windows.net/11111111-1111-1111-1111-111111111111/
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsObjectId
+  ProductCode:
+  - aml
+  Description_EN: The Microsoft authenticated user Object ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsScope
+  ProductCode:
+  - aml
+  Description_EN: The granted access scope to the application
+  Sample:
+  - user_impersonation
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsNameId
+  ProductCode:
+  - aml
+  Description_EN: The authenticated user Name ID
+  Sample:
+  - aaaaaaaaaaBBBBBBBBBB11111111112222222222333
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsTenantGuid
+  ProductCode:
+  - aml
+  Description_EN: The Microsoft Entra ID Tenant ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: claimsName
+  ProductCode:
+  - aml
+  Description_EN: The user name
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestPrincipalId
+  ProductCode:
+  - aml
+  Description_EN: The request principal GUID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestPrincipalType
+  ProductCode:
+  - aml
+  Description_EN: The request principal type
+  Sample:
+  - User
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: responsePublicNetworkAccess
+  ProductCode:
+  - aml
+  Description_EN: The resource public network access setting in response to a 
+    request
+  Sample:
+  - Disabled
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: responseAllowBlobPublicAccess
+  ProductCode:
+  - aml
+  Description_EN: Whether public access is allowed for blobs in response to a 
+    request
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: responseAllowSharedKeyAccess
+  ProductCode:
+  - aml
+  Description_EN: Whether shared key access is allowed in response to a request
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestRoleDefinitionId
+  ProductCode:
+  - aml
+  Description_EN: The cloud resource ID of the request
+  Sample:
+  - /SUBSCRIPTIONS/11111111-1111-1111-1111-111111111111/RESOURCEGROUPS/GROUP/PROVIDERS/MICROSOFT.KUSTO/CLUSTERS/TEST
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestAccess
+  ProductCode:
+  - aml
+  Description_EN: The access action of the request
+  Sample:
+  - Allow
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestDirection
+  ProductCode:
+  - aml
+  Description_EN: The traffic direction of the request
+  Sample:
+  - Inbound
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestSourceAddressPrefix
+  ProductCode:
+  - aml
+  Description_EN: The source IP prefix of the request
+  Sample:
+  - 10.10.10.10/16
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestPublicNetworkAccess
+  ProductCode:
+  - aml
+  Description_EN: The resource public network access setting of the request
+  Sample:
+  - Enabled
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestAllowBlobPublicAccess
+  ProductCode:
+  - aml
+  Description_EN: Whether public access is allowed for blobs in response to a 
+    request
+  Sample:
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestCrossTenantReplication
+  ProductCode:
+  - aml
+  Description_EN: Whether cross-tenant data replication is allowed in response 
+    to a request
+  Sample:
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestAllowSharedKeyAccess
+  ProductCode:
+  - aml
+  Description_EN: Whether shared key access is allowed in response to a request
+  Sample:
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: responseAccess
+  ProductCode:
+  - aml
+  Description_EN: The access action of the response
+  Sample:
+  - Allow
+  - Block
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: responseDirection
+  ProductCode:
+  - aml
+  Description_EN: The traffic direction of the response
+  Sample:
+  - Inbound
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: responseSourceAddressPrefix
+  ProductCode:
+  - aml
+  Description_EN: The source IP prefix of the response
+  Sample:
+  - 10.10.10.10/16
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestPermissionsActions
+  ProductCode:
+  - aml
+  Description_EN: The list of request permissions actions
+  Sample:
+  - ['*']
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestEnabled
+  ProductCode:
+  - aml
+  Description_EN: Whether the request is enabled
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
