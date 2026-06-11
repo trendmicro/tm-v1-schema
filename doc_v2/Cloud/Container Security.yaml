@@ -999,6 +999,35 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: groupId
+  ProductCode:
+  - ALL
+  - scs
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 00000000-0000-0000-0000-000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudProvider
+  ProductCode:
+  - sds
+  - sfc
+  - sss
+  - scs
+  Description_EN: The service provider of the cloud asset
+  Sample:
+  - alibaba cloud
+  - aws
+  - azure
+  - gcp
+  - oci
+  - selfManaged
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: detectionType
   ProductCode:
   - pdi
@@ -1566,6 +1595,33 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
+  DL_Aggregable: false
+- Name: cloudAccountId
+  ProductCode:
+  - sfc
+  - sss
+  - scs
+  Description_EN: The AWS cloud account ID, Google Cloud product ID, or Azure 
+    subscription ID
+  Sample:
+  - '123456789012'
+  - 00000000-0000-0000-0000-000000000000
+  - ocid1.compartment.oc1..aaaaaaaa54yuau7prqquu3gqs4jcjzvz2yf7vwlqnkqlixq5tcjsdezqmyua
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: regionCode
+  ProductCode:
+  - sfc
+  - sss
+  - scs
+  Description_EN: The cloud provider region code
+  Sample:
+  - us-east-1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
   DL_Aggregable: false
 - Name: respCode
   ProductCode:

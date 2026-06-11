@@ -1,0 +1,281 @@
+- Name: actionStatus
+  Description_EN: The status of the event operation
+  DL_Type: string
+
+- Name: actionSubStatus
+  Description_EN: The HTTP status or action status
+  DL_Type: string
+
+- Name: authAction
+  Description_EN: The operation performed on a scope
+  DL_Type: string
+
+- Name: authPrincipalId
+  Description_EN: The entity ID
+  DL_Type: string
+
+- Name: authPrincipalType
+  Description_EN: The entity type
+  DL_Type: string
+
+- Name: authRole
+  Description_EN: The Azure RBAC role
+  DL_Type: string
+
+- Name: authRoleAssignmentScope
+  Description_EN: The role assignment scope
+  DL_Type: string
+
+- Name: authScope
+  Description_EN: The Azure resource or resource group
+  DL_Type: string
+
+- Name: claimsAppId
+  Description_EN: The Azure Application ID
+  DL_Type: string
+
+- Name: claimsAppIdAcr
+  Description_EN: The Azure application authentication method
+  DL_Type: int
+
+- Name: claimsAud
+  Description_EN: The intended recipient of the authentication token
+  DL_Type: string
+
+- Name: claimsAuthnClassRef
+  Description_EN: The user authentication class reference
+  DL_Type: int
+
+- Name: claimsAuthnMethodsRef
+  Description_EN: The list of authentication methods for a user
+  DL_Type: dynamic
+
+- Name: claimsEmail
+  Description_EN: The email address of the authenticated user
+  DL_Type: string
+
+- Name: claimsExp
+  Description_EN: The authentication token expiration time
+  DL_Type: long
+
+- Name: claimsGroups
+  Description_EN: The Microsoft Entra ID group claim
+  DL_Type: dynamic
+
+- Name: claimsIdentityProvider
+  Description_EN: The IdP that authenticated the user
+  DL_Type: string
+
+- Name: claimsIdType
+  Description_EN: The Microsoft Entra ID identity type
+  DL_Type: string
+
+- Name: claimsInitiatedBy
+  Description_EN: The user name or service principal
+  DL_Type: string
+
+- Name: claimsIpAddr
+  Description_EN: The Microsoft Entra ID user authentication request IP
+  DL_Type: string
+
+- Name: claimsIssuedAt
+  Description_EN: The authentication token timestamp (in Unix format)
+  DL_Type: long
+
+- Name: claimsIssuer
+  Description_EN: The authentication token issuer
+  DL_Type: string
+
+- Name: claimsName
+  Description_EN: The user name
+  DL_Type: string
+
+- Name: claimsNameId
+  Description_EN: The authenticated user Name ID
+  DL_Type: string
+
+- Name: claimsNbf
+  Description_EN: The time an authentication token becomes valid
+  DL_Type: long
+
+- Name: claimsObjectId
+  Description_EN: The Microsoft authenticated user Object ID
+  DL_Type: string
+
+- Name: claimsScope
+  Description_EN: The granted access scope to the application
+  DL_Type: string
+
+- Name: claimsTenantGuid
+  Description_EN: The Microsoft Entra ID Tenant ID
+  DL_Type: string
+
+- Name: cloudResourceId
+  Description_EN: The cloud resource ID
+  DL_Type: string
+
+- Name: correlationId
+  Description_EN: The correlation ID
+  DL_Type: string
+
+- Name: eventCategory
+  Description_EN: The event category used in LookupEvents calls
+  DL_Type: string
+
+- Name: eventId
+  Description_EN: The event ID from the logs of each product
+  DL_Type: string
+
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  DL_Type: datetime
+
+- Name: eventVersion
+  Description_EN: Version of the log event format
+  DL_Type: string
+
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  DL_Type: string
+
+- Name: groupId
+  Description_EN: The group ID for the management scope filter
+  DL_Type: string
+
+- Name: groupName
+  Description_EN: The group name
+  DL_Type: string
+
+- Name: logLevel
+  Description_EN: The event severity level
+  DL_Type: string
+
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  DL_Type: datetime
+
+- Name: operationType
+  Description_EN: The operation performed in the event
+  DL_Type: string
+
+- Name: pname
+  Description_EN: The internal product ID (Deprecated, use productCode)
+  DL_Type: string
+
+- Name: policyTreePath
+  Description_EN: The policy tree path (endpoint only)
+  DL_Type: string
+
+- Name: productCode
+  Description_EN: The internal product code of the identity provider 
+    (aad=Microsoft Entra ID, opa=Microsoft Active Directory)
+  DL_Type: string
+
+- Name: regionId
+  Description_EN: The cloud provider region ID
+  DL_Type: string
+
+- Name: requestAccess
+  Description_EN: The access action of the request
+  DL_Type: string
+
+- Name: requestAllowBlobPublicAccess
+  Description_EN: Whether public access is allowed for blobs in response to a 
+    request
+  DL_Type: bool
+
+- Name: requestAllowSharedKeyAccess
+  Description_EN: Whether shared key access is allowed in response to a request
+  DL_Type: bool
+
+- Name: requestCrossTenantReplication
+  Description_EN: Whether cross-tenant data replication is allowed in response 
+    to a request
+  DL_Type: bool
+
+- Name: requestDirection
+  Description_EN: The traffic direction of the request
+  DL_Type: string
+
+- Name: requestEnabled
+  Description_EN: Whether the request is enabled
+  DL_Type: bool
+
+- Name: requestPermissionsActions
+  Description_EN: The list of request permissions actions
+  DL_Type: dynamic
+
+- Name: requestPrincipalId
+  Description_EN: The request principal GUID
+  DL_Type: string
+
+- Name: requestPrincipalType
+  Description_EN: The request principal type
+  DL_Type: string
+
+- Name: requestPublicNetworkAccess
+  Description_EN: The resource public network access setting of the request
+  DL_Type: string
+
+- Name: requestRoleDefinitionId
+  Description_EN: The cloud resource ID of the request
+  DL_Type: string
+
+- Name: requestSourceAddressPrefix
+  Description_EN: The source IP prefix of the request
+  DL_Type: string
+
+- Name: responseAccess
+  Description_EN: The access action of the response
+  DL_Type: string
+
+- Name: responseAllowBlobPublicAccess
+  Description_EN: Whether public access is allowed for blobs in response to a 
+    request
+  DL_Type: bool
+
+- Name: responseAllowSharedKeyAccess
+  Description_EN: Whether shared key access is allowed in response to a request
+  DL_Type: bool
+
+- Name: responseDirection
+  Description_EN: The traffic direction of the response
+  DL_Type: string
+
+- Name: responsePublicNetworkAccess
+  Description_EN: The resource public network access setting in response to a 
+    request
+  DL_Type: string
+
+- Name: responseSourceAddressPrefix
+  Description_EN: The source IP prefix of the response
+  DL_Type: string
+
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  DL_Type: bool
+
+- Name: src
+  Description_EN: The source IP address (srcaddr)
+  DL_Type: dynamic
+
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on 
+    the alert filter
+  DL_Type: dynamic
+
+- Name: tenantId
+  Description_EN: The Microsoft Entra ID Tenant ID of the organization
+  DL_Type: string
+
+- Name: vendor
+  Description_EN: The device vendor
+  DL_Type: string
+
+- Name: vendorParsed
+  Description_EN: The normalized event log (JSON format)
+  DL_Type: dynamic
+
+- Name: vendorRaw
+  Description_EN: The original event log string
+  DL_Type: string
