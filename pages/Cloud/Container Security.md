@@ -224,7 +224,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Container Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Cloud App Security</li>
@@ -258,6 +258,52 @@ This documentation provides detailed information about all fields available for 
         </ul>
       </td>
       <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">cloudAccountId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The AWS cloud account ID, Google Cloud product ID, or Azure subscription ID</td>
+      <td class="example">
+        <ul>
+          <li>123456789012</li>
+          <li>00000000-0000-0000-0000-000000000000</li>
+          <li>ocid1.compartment.oc1..aaaaaaaa54yuau7prqquu3gqs4jcjzvz2yf7vwlqnkqlixq5tcjsdezqmyua</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>File Security Storage</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">cloudProvider</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The service provider of the cloud asset</td>
+      <td class="example">
+        <ul>
+          <li>alibaba cloud</li>
+          <li>aws</li>
+          <li>azure</li>
+          <li>gcp</li>
+          <li>oci</li>
+          <li>selfManaged</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security Storage</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">clusterId</td>
@@ -312,7 +358,7 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>File Security</li>
           <li>File Security Storage</li>
@@ -455,7 +501,7 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Web Security</li>
           <li>Apex One as a Service</li>
@@ -493,7 +539,7 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>TippingPoint Security Management System</li>
@@ -542,7 +588,7 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>TippingPoint Security Management System</li>
@@ -657,7 +703,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
           <li>Cloud App Security</li>
@@ -736,7 +782,7 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Endpoint &amp; Workload Security</li>
@@ -785,7 +831,7 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>File Security</li>
           <li>File Security Storage</li>
@@ -813,12 +859,26 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Security</li>
           <li>TXOne StellarOne</li>
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">groupId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The group ID for the management scope filter</td>
+      <td class="example">00000000-0000-0000-0000-000000000000</td>
+      <td class="products">
+        <ul>
+          <li>ALL</li>
           <li>Container Security</li>
         </ul>
       </td>
@@ -922,7 +982,7 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Security</li>
           <li>Web Security</li>
           <li>TXOne StellarOne</li>
@@ -951,7 +1011,7 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
@@ -1326,7 +1386,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
           <li>Cloud App Security</li>
@@ -1682,7 +1742,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
@@ -1713,9 +1773,24 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Container Security</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">regionCode</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The cloud provider region code</td>
+      <td class="example">us-east-1</td>
+      <td class="products">
+        <ul>
+          <li>File Security Storage</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -1828,7 +1903,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
           <li>Cloud App Security</li>
@@ -1941,7 +2016,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
           <li>TippingPoint Security Management System</li>
@@ -2003,7 +2078,7 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>TippingPoint Security Management System</li>
@@ -2052,7 +2127,7 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
-          <li>Network Sensor</li>
+          <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>TippingPoint Security Management System</li>
@@ -2195,7 +2270,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 111
+- **Total Fields:** 115
 - **Layer:** Cloud
 - **Product:** Container Security
 
