@@ -347,8 +347,7 @@
 - Name: eventDataLogonType
   ProductCode:
   - opa
-  Description_EN: The sign-in type of Windows Event 4624 (successful sign-in 
-    attempt)
+  Description_EN: The sign-in type of Windows Event 4624 (successful sign-in attempt)
   Sample:
   - '3'
   - '5'
@@ -583,12 +582,9 @@
   - opa
   Description_EN: The fully qualified .NET assembly name
   Sample:
-  - System.Runtime, Version=6.0.0.0, Culture=neutral, 
-    PublicKeyToken=b03f5f7f11d50a3a
-  - System.Xml, Version=4.0.0.0, Culture=neutral, 
-    PublicKeyToken=b77a5c561934e089
-  - System.Diagnostics.Process, Version=8.0.0.0, Culture=neutral, 
-    PublicKeyToken=b03f5f7f11d50a3a
+  - System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  - System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  - System.Diagnostics.Process, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: false
@@ -632,8 +628,7 @@
 - Name: eventDataElevatedToken
   ProductCode:
   - opa
-  Description_EN: Whether the session is elevated and has administrator 
-    privileges
+  Description_EN: Whether the session is elevated and has administrator privileges
   Sample:
   - '%%1842'
   - '%%1843'
@@ -644,8 +639,8 @@
 - Name: eventDataObjectName
   ProductCode:
   - opa
-  Description_EN: The identifying information about the object for which access 
-    was requested
+  Description_EN: The identifying information about the object for which access was
+    requested
   Sample:
   - \Device\HarddiskVolume2\Windows\System32\lsass.exe
   - C:\Windows\System32\osk.exe
@@ -679,8 +674,8 @@
 - Name: eventDataAccessMask
   ProductCode:
   - opa
-  Description_EN: The hexadecimal value of the requested or used permissions 
-    during an access attempt
+  Description_EN: The hexadecimal value of the requested or used permissions during
+    an access attempt
   Sample:
   - 0x10
   - 0x80000000
@@ -805,8 +800,7 @@
 - Name: eventDataMemberName
   ProductCode:
   - opa
-  Description_EN: The distinguished name of the account that was added to the 
-    group
+  Description_EN: The distinguished name of the account that was added to the group
   Sample:
   - CN=User1,CN=Users,DC=contoso,DC=local
   DL_Type: string
@@ -817,8 +811,8 @@
 - Name: eventDataMemberSid
   ProductCode:
   - opa
-  Description_EN: The security identifier (SID) of the account that was added to
-    the group
+  Description_EN: The security identifier (SID) of the account that was added to the
+    group
   Sample:
   - S-1-5-21-3623811015-3361044348-30300820-1013
   DL_Type: string
@@ -839,8 +833,8 @@
 - Name: eventDataTargetLogonId
   ProductCode:
   - opa
-  Description_EN: The hexadecimal value to correlate this event with events that
-    contain the same sign-in ID
+  Description_EN: The hexadecimal value to correlate this event with events that contain
+    the same sign-in ID
   Sample:
   - '0x3e7'
   DL_Type: string
@@ -850,8 +844,8 @@
 - Name: eventDataTargetUserSid
   ProductCode:
   - opa
-  Description_EN: The security identifier (SID) of the account for which sign-in
-    was requested
+  Description_EN: The security identifier (SID) of the account for which sign-in was
+    requested
   Sample:
   - S-1-5-21-3623811015-3361044348-30300820-1013
   DL_Type: string
@@ -913,8 +907,7 @@
 - Name: eventDataCertIssuerName
   ProductCode:
   - opa
-  Description_EN: The name of the Certification Authority that issued the TGT 
-    certificate
+  Description_EN: The name of the Certification Authority that issued the TGT certificate
   Sample:
   - CN=contoso-DC-CA, DC=contoso, DC=local
   DL_Type: string
@@ -965,8 +958,8 @@
 - Name: eventDataTicketOptions
   ProductCode:
   - opa
-  Description_EN: The authentication request Kerberos ticket behavior and 
-    permissions flags
+  Description_EN: The authentication request Kerberos ticket behavior and permissions
+    flags
   Sample:
   - '0x40810000'
   - '0x40810010'
@@ -1107,8 +1100,7 @@
   - opa
   Description_EN: The process stack trace of the telemetry event
   Sample:
-  - C:\Windows\System32\ntdll.dll?NtCreateUserProcess|ZwCreateUserProcess, 
-    C:\Windows\System32\kernelbase.dll!CreateProcessInternalW
+  - C:\Windows\System32\ntdll.dll?NtCreateUserProcess|ZwCreateUserProcess, C:\Windows\System32\kernelbase.dll!CreateProcessInternalW
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

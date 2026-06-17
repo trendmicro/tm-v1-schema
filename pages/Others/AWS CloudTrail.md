@@ -324,7 +324,7 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The time the agent or product detected the event</td>
-      <td class="example">2022-07-06T22:28:06+00:00</td>
+      <td class="example">2022-07-06 22:28:06</td>
       <td class="products">AWS CloudTrail</td>
     </tr>
     <tr>

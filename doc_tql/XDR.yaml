@@ -1,0 +1,4434 @@
+- Name: accessPermission
+  Description_EN: The access permission type
+  DL_Type: string
+
+- Name: act
+  Description_EN: The actions taken to mitigate the event
+  DL_Type: dynamic
+
+- Name: action
+  Description_EN: The traffic processing action
+  DL_Type: string
+
+- Name: actionBy
+  Description_EN: The user account or system that triggered the event
+  DL_Type: string
+
+- Name: actionName
+  Description_EN: The user or service action
+  DL_Type: string
+
+- Name: actionStatus
+  Description_EN: The status of the event operation
+  DL_Type: string
+
+- Name: actionSubStatus
+  Description_EN: The HTTP status or action status
+  DL_Type: string
+
+- Name: actorHostName
+  Description_EN: The hostname of the actor that triggered the event
+  DL_Type: string
+
+- Name: actorIp
+  Description_EN: The IP address of the actor that triggered the event
+  DL_Type: string
+
+- Name: actorProto
+  Description_EN: The protocol used by the actor that triggered the event
+  DL_Type: string
+
+- Name: actResult
+  Description_EN: The result of an action
+  DL_Type: dynamic
+
+- Name: additionalEventData
+  Description_EN: The additional event information that was not part of the request
+    or response
+  DL_Type: dynamic
+
+- Name: additionalInfo
+  Description_EN: The filter rule info
+  DL_Type: string
+
+- Name: agentStatus
+  Description_EN: The Endpoint Security agent status
+  DL_Type: string
+
+- Name: aggregatedCount
+  Description_EN: The number of aggregated events
+  DL_Type: long
+
+- Name: aggregateFunction
+  Description_EN: The metric aggregator
+  DL_Type: int
+
+- Name: aggregateUnit
+  Description_EN: The metric unit
+  DL_Type: string
+
+- Name: alertCategories
+  Description_EN: The list of alert categories
+  DL_Type: dynamic
+
+- Name: alertTitle
+  Description_EN: The alert title
+  DL_Type: string
+
+- Name: apiVersion
+  Description_EN: The API version associated with the AwsApiCall eventType value
+  DL_Type: string
+
+- Name: app
+  Description_EN: The layer-7 network protocol being exploited protocol
+  DL_Type: string
+
+- Name: appDexSha256
+  Description_EN: The app dex encoded using SHA-256
+  DL_Type: string
+
+- Name: appGroup
+  Description_EN: The app category of the event
+  DL_Type: string
+
+- Name: appIsSystem
+  Description_EN: Whether the app is a system app
+  DL_Type: bool
+
+- Name: appLabel
+  Description_EN: The app name (if the subject is an app)
+  DL_Type: string
+
+- Name: application
+  Description_EN: The name of the requested application
+  DL_Type: string
+
+- Name: applicationId
+  Description_EN: The Microsoft Entra ID application ID
+  DL_Type: string
+
+- Name: appOrSystemEventHashId
+  Description_EN: The event object hash ID
+  DL_Type: string
+
+- Name: appPkgName
+  Description_EN: The app package name (if the subject is an app)
+  DL_Type: string
+
+- Name: appPublicKeySha1
+  Description_EN: The SHA-1 hash of the app public key (if the subject is an app)
+  DL_Type: string
+
+- Name: appSize
+  Description_EN: The app size (in bytes) if the subject is an app
+  DL_Type: long
+
+- Name: appVerCode
+  Description_EN: The app version code (if the subject is an app)
+  DL_Type: long
+
+- Name: aptCampaigns
+  Description_EN: The related APT campaigns
+  DL_Type: dynamic
+
+- Name: aptRelated
+  Description_EN: The event is related to an APT
+  DL_Type: string
+
+- Name: archFiles
+  Description_EN: The file information extracted from detected files
+  DL_Type: dynamic
+
+- Name: assetHostName
+  Description_EN: The hostname of the asset associated with the event
+  DL_Type: string
+
+- Name: assetId
+  Description_EN: The asset internal device ID
+  DL_Type: string
+
+- Name: assetIp
+  Description_EN: The host IP of the asset or related entity involved in the risk
+    event
+  DL_Type: string
+
+- Name: assetType
+  Description_EN: The vulnerability event asset type
+  DL_Type: string
+
+- Name: attachment
+  Description_EN: The information about the email attachment
+  DL_Type: dynamic
+
+- Name: attachmentFileHash
+  Description_EN: The SHA-1 of the email attachment
+  DL_Type: string
+
+- Name: attachmentFileHashes
+  Description_EN: SHA-1 hash of the email attachment
+  DL_Type: dynamic
+
+- Name: attachmentFileHashMd5
+  Description_EN: The MD5 of the attached file (attachementFileName)
+  DL_Type: string
+
+- Name: attachmentFileHashs
+  Description_EN: The SHA-1 hash value of the attachment file
+  DL_Type: dynamic
+
+- Name: attachmentFileHashSha1
+  Description_EN: The SHA-1 of the attached file (attachementFileName)
+  DL_Type: string
+
+- Name: attachmentFileHashSha256
+  Description_EN: The SHA-256 of the attached file (attachementFileName)
+  DL_Type: string
+
+- Name: attachmentFileHashSha256s
+  Description_EN: The SHA-256 hash of the email attachment
+  DL_Type: dynamic
+
+- Name: attachmentFileName
+  Description_EN: File name of the email attachment
+  DL_Type: dynamic
+
+- Name: attachmentFileSize
+  Description_EN: The file size of the email attachment
+  DL_Type: long
+
+- Name: attachmentFileSizes
+  Description_EN: The total size of the email and contents (in kilobytes)
+  DL_Type: dynamic
+
+- Name: attachmentFileTlshes
+  Description_EN: The TLSH hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+
+- Name: attachmentFileTlshs
+  Description_EN: The TLSH hash value of the attachment file
+  DL_Type: dynamic
+
+- Name: attachmentFileType
+  Description_EN: The file type of the email attachment
+  DL_Type: string
+
+- Name: attachmentMd5
+  Description_EN: The MD5 hash of the email attachment
+  DL_Type: dynamic
+
+- Name: attachmentSha1
+  Description_EN: SHA-1 hash of the email attachment
+  DL_Type: dynamic
+
+- Name: attachmentSha256
+  Description_EN: SHA-256 hash of the email attachment
+  DL_Type: dynamic
+
+- Name: attachmentSize
+  Description_EN: The attachment file size
+  DL_Type: dynamic
+
+- Name: attachmentSource
+  Description_EN: The attachment source
+  DL_Type: dynamic
+
+- Name: attachmentTlsh
+  Description_EN: The TLSH hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+
+- Name: attachmentUrls
+  Description_EN: The URLs and URL sources extracted from the email attachment
+  DL_Type: dynamic
+
+- Name: authAction
+  Description_EN: The operation performed on a scope
+  DL_Type: string
+
+- Name: authenticationProtocol
+  Description_EN: The authentication protocol or grant type
+  DL_Type: string
+
+- Name: authId
+  Description_EN: The authorization ID
+  DL_Type: string
+
+- Name: authPrincipalId
+  Description_EN: The entity ID
+  DL_Type: string
+
+- Name: authPrincipalType
+  Description_EN: The entity type
+  DL_Type: string
+
+- Name: authRole
+  Description_EN: The Azure RBAC role
+  DL_Type: string
+
+- Name: authRoleAssignmentScope
+  Description_EN: The role assignment scope
+  DL_Type: string
+
+- Name: authScope
+  Description_EN: The Azure resource or resource group
+  DL_Type: string
+
+- Name: authType
+  Description_EN: The authentication method
+  DL_Type: string
+
+- Name: autonomousSystemNumber
+  Description_EN: The network Autonomous System Number
+  DL_Type: int
+
+- Name: awsRegion
+  Description_EN: AWS region that the request was made to
+  DL_Type: string
+
+- Name: awsResourceArn
+  Description_EN: The Amazon Resource Name
+  DL_Type: string
+
+- Name: azId
+  Description_EN: The Avaliability Zone ID of the virtual machine that made the request
+  DL_Type: string
+
+- Name: behaviorCat
+  Description_EN: The matched policy category
+  DL_Type: string
+
+- Name: blocking
+  Description_EN: The blocking type
+  DL_Type: string
+
+- Name: bmGroup
+  Description_EN: The one-to-many data structure
+  DL_Type: string
+
+- Name: botCmd
+  Description_EN: The bot command
+  DL_Type: string
+
+- Name: botUrl
+  Description_EN: The bot URL
+  DL_Type: string
+
+- Name: bytes
+  Description_EN: The number of transmitted data bytes
+  DL_Type: long
+
+- Name: cat
+  Description_EN: The weighted priority of the incident
+  DL_Type: int
+
+- Name: category
+  Description_EN: The event category
+  DL_Type: string
+
+- Name: cccaDestination
+  Description_EN: The destination domain, IP, URL, or recipient
+  DL_Type: string
+
+- Name: cccaDestinationFormat
+  Description_EN: C&C server access format
+  DL_Type: string
+
+- Name: cccaDetection
+  Description_EN: Is this log identified as a C&C callback address detection
+  DL_Type: string
+
+- Name: cccaDetectionSource
+  Description_EN: Which list defines this CCCA detection rule
+  DL_Type: string
+
+- Name: cccaRiskLevel
+  Description_EN: The severity level of the threat actors associated with the C&C
+    servers
+  DL_Type: int
+
+- Name: censusMaturityValue
+  Description_EN: The CENSUS maturity value
+  DL_Type: int
+
+- Name: censusPrevalenceValue
+  Description_EN: The CENSUS prevalence value
+  DL_Type: int
+
+- Name: channel
+  Description_EN: The channel through which the demanded WinEvent is delivered
+  DL_Type: string
+
+- Name: claimsAppId
+  Description_EN: The Azure Application ID
+  DL_Type: string
+
+- Name: claimsAppIdAcr
+  Description_EN: The Azure application authentication method
+  DL_Type: int
+
+- Name: claimsAud
+  Description_EN: The intended recipient of the authentication token
+  DL_Type: string
+
+- Name: claimsAuthnClassRef
+  Description_EN: The user authentication class reference
+  DL_Type: int
+
+- Name: claimsAuthnMethodsRef
+  Description_EN: The list of authentication methods for a user
+  DL_Type: dynamic
+
+- Name: claimsEmail
+  Description_EN: The email address of the authenticated user
+  DL_Type: string
+
+- Name: claimsExp
+  Description_EN: The authentication token expiration time
+  DL_Type: long
+
+- Name: claimsGroups
+  Description_EN: The Microsoft Entra ID group claim
+  DL_Type: dynamic
+
+- Name: claimsIdentityProvider
+  Description_EN: The IdP that authenticated the user
+  DL_Type: string
+
+- Name: claimsIdType
+  Description_EN: The Microsoft Entra ID identity type
+  DL_Type: string
+
+- Name: claimsInitiatedBy
+  Description_EN: The user name or service principal
+  DL_Type: string
+
+- Name: claimsIpAddr
+  Description_EN: The Microsoft Entra ID user authentication request IP
+  DL_Type: string
+
+- Name: claimsIssuedAt
+  Description_EN: The authentication token timestamp (in Unix format)
+  DL_Type: long
+
+- Name: claimsIssuer
+  Description_EN: The authentication token issuer
+  DL_Type: string
+
+- Name: claimsName
+  Description_EN: The user name
+  DL_Type: string
+
+- Name: claimsNameId
+  Description_EN: The authenticated user Name ID
+  DL_Type: string
+
+- Name: claimsNbf
+  Description_EN: The time an authentication token becomes valid
+  DL_Type: long
+
+- Name: claimsObjectId
+  Description_EN: The Microsoft authenticated user Object ID
+  DL_Type: string
+
+- Name: claimsScope
+  Description_EN: The granted access scope to the application
+  DL_Type: string
+
+- Name: claimsTenantGuid
+  Description_EN: The Microsoft Entra ID Tenant ID
+  DL_Type: string
+
+- Name: clientApp
+  Description_EN: The app that the client accessed
+  DL_Type: string
+
+- Name: clientBrowser
+  Description_EN: The client browser
+  DL_Type: string
+
+- Name: clientCredentialType
+  Description_EN: The user client or service principal credential type
+  DL_Type: string
+
+- Name: clientDisplayName
+  Description_EN: The client display name
+  DL_Type: string
+
+- Name: clientFlag
+  Description_EN: Whether the client is a source or destination
+  DL_Type: string
+
+- Name: clientGroup
+  Description_EN: The client IP network group
+  DL_Type: string
+
+- Name: clientHost
+  Description_EN: The client IP host name
+  DL_Type: string
+
+- Name: clientId
+  Description_EN: The unique client device ID
+  DL_Type: string
+
+- Name: clientIp
+  Description_EN: The IP addresses of the source
+  DL_Type: dynamic
+
+- Name: clientMAC
+  Description_EN: The client MAC address
+  DL_Type: string
+
+- Name: clientOS
+  Description_EN: The client OS
+  DL_Type: string
+
+- Name: clientPort
+  Description_EN: The client port number
+  DL_Type: int
+
+- Name: clientProtocol
+  Description_EN: The client protocol
+  DL_Type: string
+
+- Name: clientStatus
+  Description_EN: The client status when the event occurred
+  DL_Type: string
+
+- Name: clientTls
+  Description_EN: The transport layer security of the client
+  DL_Type: string
+
+- Name: cloudAccountId
+  Description_EN: The owner AWS account ID or Azure Subscription ID of the source
+    network interface
+  DL_Type: string
+
+- Name: cloudAppCat
+  Description_EN: The category of the event in Cloud Reputation Service
+  DL_Type: string
+
+- Name: cloudAppName
+  Description_EN: The cloud app name
+  DL_Type: string
+
+- Name: cloudIdentityAccountId
+  Description_EN: The Cloud Identity account ID used for authorization
+  DL_Type: string
+
+- Name: cloudIdentityId
+  Description_EN: The Cloud Identity ID used for authorization
+  DL_Type: string
+
+- Name: cloudIdentityName
+  Description_EN: The Cloud Identity name used for authorization
+  DL_Type: string
+
+- Name: cloudMachineImageId
+  Description_EN: The cloud machine image ID
+  DL_Type: string
+
+- Name: cloudMachineImageName
+  Description_EN: The cloud machine image name
+  DL_Type: string
+
+- Name: cloudProvider
+  Description_EN: The service provider of the cloud asset
+  DL_Type: string
+
+- Name: cloudResourceDigest
+  Description_EN: The cloud resource digest
+  DL_Type: string
+
+- Name: cloudResourceId
+  Description_EN: The cloud resource ID
+  DL_Type: string
+
+- Name: cloudResourceTags
+  Description_EN: The cloud resource tags
+  DL_Type: string
+
+- Name: cloudResourceType
+  Description_EN: The cloud resource type
+  DL_Type: string
+
+- Name: cloudResourceVersion
+  Description_EN: The cloud resource version
+  DL_Type: string
+
+- Name: cloudServiceApiName
+  Description_EN: The cloud service API
+  DL_Type: string
+
+- Name: cloudServiceName
+  Description_EN: The cloud service
+  DL_Type: string
+
+- Name: cloudStorageId
+  Description_EN: The file or folder location ID
+  DL_Type: string
+
+- Name: cloudStorageName
+  Description_EN: The cloud storage name
+  DL_Type: string
+
+- Name: cloudTrailEventId
+  Description_EN: The GUID generated by AWS CloudTrail to identify events
+  DL_Type: string
+
+- Name: clusterId
+  Description_EN: The cluster ID of the container
+  DL_Type: string
+
+- Name: clusterName
+  Description_EN: The cluster name of the container
+  DL_Type: string
+
+- Name: cnt
+  Description_EN: The total number of logs
+  DL_Type: long
+
+- Name: codeIntegrityOptionEnabled
+  Description_EN: Whether the system enforced signed kernel loading according to DSE(driver
+    signature enforcement)
+  DL_Type: bool
+
+- Name: codeIntegrityOptionTestsign
+  Description_EN: Whether the system bypassed DSE(driver signature enforcement) checks
+    and permitted loading of test-signed drivers
+  DL_Type: bool
+
+- Name: collectorName
+  Description_EN: The log collector name displayed in Data Source and Log Management
+  DL_Type: string
+
+- Name: companyName
+  Description_EN: The company name
+  DL_Type: string
+
+- Name: compressedFileHash
+  Description_EN: The SHA-1 of the decompressed archive
+  DL_Type: string
+
+- Name: compressedFileHashSha256
+  Description_EN: The SHA-256 of the compressed suspicious file
+  DL_Type: string
+
+- Name: compressedFileName
+  Description_EN: The file name of the compressed file
+  DL_Type: string
+
+- Name: compressedFileSize
+  Description_EN: The file size of the decompressed archive file
+  DL_Type: long
+
+- Name: compressedFileType
+  Description_EN: The file type of the decompressed archive file
+  DL_Type: string
+
+- Name: computerDomain
+  Description_EN: The computer domain
+  DL_Type: string
+
+- Name: conditionalAccessStatus
+  Description_EN: The conditional access policy status
+  DL_Type: string
+
+- Name: confidence
+  Description_EN: The confidence rating returned from TrendX Hybrid Model (predictive
+    machine learning). Values from 1-99.
+  DL_Type: int
+
+- Name: containerId
+  Description_EN: The Kubernetes container ID
+  DL_Type: string
+
+- Name: containerImage
+  Description_EN: The Kubernetes container image
+  DL_Type: string
+
+- Name: containerImageDigest
+  Description_EN: The Kubernetes container image digest
+  DL_Type: string
+
+- Name: containerName
+  Description_EN: The Kubernetes container name
+  DL_Type: string
+
+- Name: contentEncoding
+  Description_EN: The content encoding of the request or the response
+  DL_Type: string
+
+- Name: correlatedIntelligence
+  Description_EN: The Correlated Intelligence detection
+  DL_Type: dynamic
+
+- Name: correlationCat
+  Description_EN: The correlation category
+  DL_Type: string
+
+- Name: correlationData
+  Description_EN: The data for correlation
+  DL_Type: dynamic
+
+- Name: correlationId
+  Description_EN: The correlation id
+  DL_Type: string
+
+- Name: crossTenantAccessType
+  Description_EN: The cross-tenant access type
+  DL_Type: string
+
+- Name: customAssetTags
+  Description_EN: The list of custom asset tags
+  DL_Type: dynamic
+
+- Name: customTags
+  Description_EN: The event tags
+  DL_Type: dynamic
+
+- Name: cve
+  Description_EN: The CVE identifier
+  DL_Type: string
+
+- Name: cves
+  Description_EN: The CVEs associated with this filter
+  DL_Type: dynamic
+
+- Name: dacDeviceType
+  Description_EN: The device type
+  DL_Type: string
+
+- Name: data0
+  Description_EN: The value of the DDI Correlation log
+  DL_Type: string
+
+- Name: data0Name
+  Description_EN: The name of the DDI Correlation log
+  DL_Type: string
+
+- Name: data1
+  Description_EN: The Deep Discover Inspector correlation log metadata
+  DL_Type: string
+
+- Name: data1Name
+  Description_EN: The name of the DDI Correlation log
+  DL_Type: string
+
+- Name: data2
+  Description_EN: The value of the DDI Correlation log
+  DL_Type: string
+
+- Name: data2Name
+  Description_EN: The name of the DDI Correlation log
+  DL_Type: string
+
+- Name: data3
+  Description_EN: The value of the DDI Correlation log
+  DL_Type: string
+
+- Name: data4
+  Description_EN: The value of the DDI Correlation log
+  DL_Type: string
+
+- Name: dceArtifactActions
+  Description_EN: The actions performed on Damage Cleanup Engine artifacts
+  DL_Type: dynamic
+
+- Name: dceHash1
+  Description_EN: The Trend Micro Threat Mitigation Server requires the log, but the
+    Trend Micro Threat Mitigation Server is EOL.
+  DL_Type: string
+
+- Name: dceHash2
+  Description_EN: The Trend Micro Threat Mitigation Server requires the log, but the
+    Trend Micro Threat Mitigation Server is EOL.
+  DL_Type: string
+
+- Name: denyListFileHash
+  Description_EN: The SHA-1 of the Virtual Analyzer Suspicious Object
+  DL_Type: string
+
+- Name: denyListFileHashSha256
+  Description_EN: The SHA-256 of User-Defined Suspicious Object
+  DL_Type: string
+
+- Name: denyListHost
+  Description_EN: The domain of the Virtual Analyzer Suspicious Object
+  DL_Type: string
+
+- Name: denyListIp
+  Description_EN: The IP of the Virtual Analyzer Suspicious Object
+  DL_Type: dynamic
+
+- Name: denyListRequest
+  Description_EN: Block list event request
+  DL_Type: string
+
+- Name: denyListType
+  Description_EN: Block list type
+  DL_Type: string
+
+- Name: description
+  Description_EN: The additional event details
+  DL_Type: string
+
+- Name: destinationPath
+  Description_EN: The intended destination of the file containing the digital asset
+    or channel
+  DL_Type: string
+
+- Name: detailTrace
+  Description_EN: Whether the detection comes with a detailed trace footprint
+  DL_Type: int
+
+- Name: detectedActions
+  Description_EN: The actions performed on detected artifacts
+  DL_Type: dynamic
+
+- Name: detectedBackupArtifacts
+  Description_EN: The information about detected artifacts
+  DL_Type: dynamic
+
+- Name: detectedBackupArtifactsStatus
+  Description_EN: The backup status of detected artifacts
+  DL_Type: dynamic
+
+- Name: detectedBackupFolder
+  Description_EN: The folder path for detected backup folders
+  DL_Type: string
+
+- Name: detectedPattern
+  Description_EN: The detected pattern
+  DL_Type: string
+
+- Name: detectionAggregationId
+  Description_EN: The correlation key for detection logs and artifacts
+  DL_Type: string
+
+- Name: detectionAggregationIds
+  Description_EN: The list of detection aggregation IDs
+  DL_Type: dynamic
+
+- Name: detectionAggressivenessLevel
+  Description_EN: The detection aggressiveness level
+  DL_Type: int
+
+- Name: detectionDetail
+  Description_EN: The details about each event type
+  DL_Type: string
+
+- Name: detectionEngineVersion
+  Description_EN: The detection engine version
+  DL_Type: string
+
+- Name: detectionFileList
+  Description_EN: The information about the related files
+  DL_Type: dynamic
+
+- Name: detectionMeta
+  Description_EN: The descriptions of the detected techniques
+  DL_Type: dynamic
+
+- Name: detectionName
+  Description_EN: The general name for the detection
+  DL_Type: string
+
+- Name: detectionNames
+  Description_EN: The rules that triggered the event
+  DL_Type: dynamic
+
+- Name: detectionType
+  Description_EN: The traffic detection type
+  DL_Type: string
+
+- Name: deviceDirection
+  Description_EN: Device Direction. If the source IP is in the internal network (the
+    network monitored by Deep Discovery Inspector) it is tagged as outbound. All other
+    cases are inbound. Internal-to-internal is also tagged as outbound.
+  DL_Type: string
+
+- Name: deviceGUID
+  Description_EN: The GUID of the network appliance which reported the system event
+  DL_Type: string
+
+- Name: deviceMacAddress
+  Description_EN: The device MAC address
+  DL_Type: string
+
+- Name: deviceModel
+  Description_EN: The device model number
+  DL_Type: string
+
+- Name: devicePayloadId
+  Description_EN: The device payload ID
+  DL_Type: string
+
+- Name: deviceProcessName
+  Description_EN: The name of the main process executed during Virtual Analyzer analysis
+  DL_Type: string
+
+- Name: deviceRiskConfidenceLevel
+  Description_EN: The confidence level of device risk
+  DL_Type: int
+
+- Name: deviceSerial
+  Description_EN: The device serial ID
+  DL_Type: string
+
+- Name: deviceType
+  Description_EN: The disk drive type
+  DL_Type: int
+
+- Name: dhost
+  Description_EN: The destination hostname
+  DL_Type: string
+
+- Name: direction
+  Description_EN: The object transfer direction
+  DL_Type: string
+
+- Name: diskPartitionId
+  Description_EN: The cloud volume partition ID
+  DL_Type: string
+
+- Name: dmac
+  Description_EN: The MAC address of the destination IP (dest_ip)
+  DL_Type: string
+
+- Name: dnsQueryType
+  Description_EN: The record type requested by the DNS protocol
+  DL_Type: string
+
+- Name: domainName
+  Description_EN: The detected domain name
+  DL_Type: string
+
+- Name: dOSClass
+  Description_EN: The destination device OS class
+  DL_Type: string
+
+- Name: dOSName
+  Description_EN: The destination host OS
+  DL_Type: string
+
+- Name: dOSVendor
+  Description_EN: The destination device OS vendor
+  DL_Type: string
+
+- Name: dpt
+  Description_EN: The service destination port of the private application server (dstport)
+  DL_Type: int
+
+- Name: dst
+  Description_EN: The destination IP address (dstaddr)
+  DL_Type: dynamic
+
+- Name: dstCity
+  Description_EN: The city name of the destination IP
+  DL_Type: dynamic
+
+- Name: dstCountry
+  Description_EN: The country name of the destination IP
+  DL_Type: dynamic
+
+- Name: dstEndpointGuid
+  Description_EN: The destination host GUID on which the event was detected
+  DL_Type: string
+
+- Name: dstEndpointHostName
+  Description_EN: The hostname of the destination device on which the event was detected
+  DL_Type: string
+
+- Name: dstEquipmentId
+  Description_EN: The destination IMEI
+  DL_Type: string
+
+- Name: dstFamily
+  Description_EN: The destination device family
+  DL_Type: string
+
+- Name: dstGroup
+  Description_EN: The group name defined by the administrator of the destination
+  DL_Type: string
+
+- Name: dstIpType
+  Description_EN: The destination IP address type
+  DL_Type: string
+
+- Name: dstIsp
+  Description_EN: The ISP name of the destination IP
+  DL_Type: dynamic
+
+- Name: dstLocation
+  Description_EN: The destination country
+  DL_Type: string
+
+- Name: dstSubscriberDirNum
+  Description_EN: The destination MSISDN
+  DL_Type: string
+
+- Name: dstSubscriberId
+  Description_EN: The destination IMSI
+  DL_Type: string
+
+- Name: dstType
+  Description_EN: The destination device type
+  DL_Type: string
+
+- Name: dstZone
+  Description_EN: The network zone defined by the destination administrator
+  DL_Type: string
+
+- Name: duration
+  Description_EN: The time it took the scanner to complete the scan, in milliseconds
+  DL_Type: long
+
+- Name: duser
+  Description_EN: The email recipient
+  DL_Type: dynamic
+
+- Name: dUser1
+  Description_EN: The latest sign-in user of the destination
+  DL_Type: string
+
+- Name: dvc
+  Description_EN: The IP address of the Deep Discovery Inspector or Virtual Network
+    Sensor appliance
+  DL_Type: dynamic
+
+- Name: dvchost
+  Description_EN: The computer which installed the Trend Micro product
+  DL_Type: string
+
+- Name: e2eLatency
+  Description_EN: The end-to-end traffic latency time, in milliseconds
+  DL_Type: long
+
+- Name: ecsTaskArn
+  Description_EN: The ECS task Amazon Resource Names(ARNs)
+  DL_Type: string
+
+- Name: ecsTaskId
+  Description_EN: The ID of ECS Task
+  DL_Type: string
+
+- Name: end
+  Description_EN: The time when the last data packet was received (in Unix seconds)
+  DL_Type: datetime
+
+- Name: endpointGUID
+  Description_EN: The GUID of the agent which reported the detection
+  DL_Type: string
+
+- Name: endpointGuid
+  Description_EN: Host GUID of the endpoint on which the event was detected
+  DL_Type: string
+
+- Name: endpointHostName
+  Description_EN: The host name of the endpoint on which the event was detected
+  DL_Type: string
+
+- Name: endpointIp
+  Description_EN: The IP address of the endpoint on which the event was detected
+  DL_Type: dynamic
+
+- Name: endpointMacAddress
+  Description_EN: The MAC address of endpoint
+  DL_Type: dynamic
+
+- Name: endpointModel
+  Description_EN: The endpoint device model
+  DL_Type: string
+
+- Name: endpointStatus
+  Description_EN: The endpoint device status
+  DL_Type: string
+
+- Name: endTime
+  Description_EN: The time when the last event was received (in Unix milliseconds)
+  DL_Type: datetime
+
+- Name: engineOperation
+  Description_EN: The operation of the engine event
+  DL_Type: string
+
+- Name: engType
+  Description_EN: The engine type
+  DL_Type: string
+
+- Name: engVer
+  Description_EN: The engine version
+  DL_Type: string
+
+- Name: errorCode
+  Description_EN: The error code associated with the event
+  DL_Type: string
+
+- Name: errorMessage
+  Description_EN: Description of the error
+  DL_Type: string
+
+- Name: eventAdditionalDetails
+  Description_EN: The raw data string that contains additional information
+  DL_Type: dynamic
+
+- Name: eventCase
+  Description_EN: The AWS service that the request was made to
+  DL_Type: string
+
+- Name: eventCategory
+  Description_EN: The event category used in LookupEvents calls
+  DL_Type: string
+
+- Name: eventClass
+  Description_EN: The event category
+  DL_Type: string
+
+- Name: eventDataAccessList
+  Description_EN: The list of requested access rights
+  DL_Type: string
+
+- Name: eventDataAccessMask
+  Description_EN: The hexadecimal value of the requested or used permissions during
+    an access attempt
+  DL_Type: string
+
+- Name: eventDataActionName
+  Description_EN: The action performed
+  DL_Type: string
+
+- Name: eventDataAdditionalInfo
+  Description_EN: The additional information about the event
+  DL_Type: string
+
+- Name: eventDataAttributeLDAPDisplayName
+  Description_EN: The LDAP display name of the attribute that was accessed
+  DL_Type: string
+
+- Name: eventDataAuthenticationPackageName
+  Description_EN: The authentication package name of the Windows event data
+  DL_Type: string
+
+- Name: eventDataCertIssuerName
+  Description_EN: The name of the Certification Authority that issued the TGT certificate
+  DL_Type: string
+
+- Name: eventDataCertSerialNumber
+  Description_EN: The serial number of the certificate
+  DL_Type: string
+
+- Name: eventDataCertThumbprint
+  Description_EN: The thumbprint of the certificate
+  DL_Type: string
+
+- Name: eventDataConsumer
+  Description_EN: The recipient of the reported event
+  DL_Type: string
+
+- Name: eventDataElevatedToken
+  Description_EN: Whether the session is elevated and has administrator privileges
+  DL_Type: string
+
+- Name: eventDataFullyQualifiedAssemblyName
+  Description_EN: The fully qualified .NET assembly name
+  DL_Type: string
+
+- Name: eventDataImpersonationLevel
+  Description_EN: The sign-in session impersonation level
+  DL_Type: string
+
+- Name: eventDataIpAddress
+  Description_EN: The IP address for Windows event 4624 which is "An account was successfully
+    logged on"
+  DL_Type: string
+
+- Name: eventDataJobOwner
+  Description_EN: The name of the account that initiated the event
+  DL_Type: string
+
+- Name: eventDataLogonProcessName
+  Description_EN: The name of the Windows event sign in process name
+  DL_Type: string
+
+- Name: eventDataLogonType
+  Description_EN: The logon type for Windows event 4624 which is "An account was successfully
+    logged on"
+  DL_Type: string
+
+- Name: eventDataMemberName
+  Description_EN: The distinguished name of the account that was added to the group
+  DL_Type: string
+
+- Name: eventDataMemberSid
+  Description_EN: The security identifier (SID) of the account that was added to the
+    group
+  DL_Type: string
+
+- Name: eventDataModuleILPath
+  Description_EN: The CIL image path of the module or the dynamic module name
+  DL_Type: string
+
+- Name: eventDataObjectClass
+  Description_EN: The class of the object that was accessed
+  DL_Type: string
+
+- Name: eventDataObjectDN
+  Description_EN: The distinguished name of the object that was accessed
+  DL_Type: string
+
+- Name: eventDataObjectGUID
+  Description_EN: The unique identifier of the object that was accessed
+  DL_Type: string
+
+- Name: eventDataObjectName
+  Description_EN: The identifying information about the object for which access was
+    requested
+  DL_Type: string
+
+- Name: eventDataObjectServer
+  Description_EN: The name of the Windows sub-system calling the routine
+  DL_Type: string
+
+- Name: eventDataObjectType
+  Description_EN: The object type
+  DL_Type: string
+
+- Name: eventDataOperation
+  Description_EN: Windows event 11
+  DL_Type: string
+
+- Name: eventDataOperationType
+  Description_EN: The type of operation performed on the object
+  DL_Type: string
+
+- Name: eventDataPath
+  Description_EN: The path of the Windows event data
+  DL_Type: string
+
+- Name: eventDataProcessPath
+  Description_EN: The process path that initiated the event
+  DL_Type: string
+
+- Name: eventDataProperties
+  Description_EN: The properties of the object
+  DL_Type: string
+
+- Name: eventDataProviderName
+  Description_EN: The name of the Windows event data provider
+  DL_Type: string
+
+- Name: eventDataProviderPath
+  Description_EN: The file path of the Windows event data provider
+  DL_Type: string
+
+- Name: eventDataScriptBlockText
+  Description_EN: Windows Event 4104 (the execution of a remote command using PowerShell)
+  DL_Type: string
+
+- Name: eventDataServiceAccount
+  Description_EN: The service account name (Windows Event 4697)
+  DL_Type: string
+
+- Name: eventDataServiceFileName
+  Description_EN: The full file path of the service executable file
+  DL_Type: string
+
+- Name: eventDataServiceName
+  Description_EN: The service name
+  DL_Type: string
+
+- Name: eventDataServiceSid
+  Description_EN: The security identifier (SID) of the service
+  DL_Type: string
+
+- Name: eventDataServiceStartType
+  Description_EN: The service start type (Windows Event ID 4697)
+  DL_Type: string
+
+- Name: eventDataServiceType
+  Description_EN: The service type (Windows Event ID 4697)
+  DL_Type: string
+
+- Name: eventDataStatus
+  Description_EN: The Windows event data status
+  DL_Type: string
+
+- Name: eventDataSubjectDomainName
+  Description_EN: The domain or computer name of the account
+  DL_Type: string
+
+- Name: eventDataSubjectLogonId
+  Description_EN: The account sign-in ID
+  DL_Type: string
+
+- Name: eventDataSubjectUserName
+  Description_EN: The account name
+  DL_Type: string
+
+- Name: eventDataSubjectUserSid
+  Description_EN: The security identifier (SID) of the account
+  DL_Type: string
+
+- Name: eventDataSubStatus
+  Description_EN: The Windows event data sub-status
+  DL_Type: string
+
+- Name: eventDataTargetDomainName
+  Description_EN: The target sign-in account domain or computer name
+  DL_Type: string
+
+- Name: eventDataTargetLogonId
+  Description_EN: The hexadecimal value to correlate this event with events that contain
+    the same sign-in ID
+  DL_Type: string
+
+- Name: eventDataTargetName
+  Description_EN: The service, application, or network resource name
+  DL_Type: string
+
+- Name: eventDataTargetSid
+  Description_EN: The security identifier (SID) of the target account
+  DL_Type: string
+
+- Name: eventDataTargetUserName
+  Description_EN: The user name of the Windows event data target
+  DL_Type: string
+
+- Name: eventDataTargetUserSid
+  Description_EN: The security identifier (SID) of the account for which sign-in was
+    requested
+  DL_Type: string
+
+- Name: eventDataTaskName
+  Description_EN: The task name logged by the Windows event
+  DL_Type: string
+
+- Name: eventDataTicketEncryptionType
+  Description_EN: The cryptographic suite used for the Kerberos TGS
+  DL_Type: string
+
+- Name: eventDataTicketOptions
+  Description_EN: The authentication request Kerberos ticket behavior and permissions
+    flags
+  DL_Type: string
+
+- Name: eventDataUserContext
+  Description_EN: The user context of the Windows event data
+  DL_Type: string
+
+- Name: eventDataUserPrincipalName
+  Description_EN: The user account UPN
+  DL_Type: string
+
+- Name: eventDataWorkstation
+  Description_EN: The computer name from which the sign-in request was received
+  DL_Type: string
+
+- Name: eventDataWorkstationName
+  Description_EN: The name of the computer used in the sign-in attempt
+  DL_Type: string
+
+- Name: eventHashId
+  Description_EN: The event hash ID
+  DL_Type: string
+
+- Name: eventID
+  Description_EN: GUID generated by AWS CloudTrail to identify events
+  DL_Type: string
+
+- Name: eventId
+  Description_EN: The event ID from the logs of each product
+  DL_Type: string
+
+- Name: eventInitiator
+  Description_EN: The event origin
+  DL_Type: string
+
+- Name: eventMessage
+  Description_EN: The event message
+  DL_Type: string
+
+- Name: eventName
+  Description_EN: The name of the log event
+  DL_Type: string
+
+- Name: eventSource
+  Description_EN: The AWS service the request was made to
+  DL_Type: string
+
+- Name: eventSourceType
+  Description_EN: The event source type
+  DL_Type: int
+
+- Name: eventSubClass
+  Description_EN: The category of sub-event class
+  DL_Type: string
+
+- Name: eventSubId
+  Description_EN: The sub-event ID
+  DL_Type: string
+
+- Name: eventSubName
+  Description_EN: The Zero Trust Secure Access - Internet Access cloud app action
+    or the Palo Alto Networks firewall log sub-type
+  DL_Type: string
+
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  DL_Type: datetime
+
+- Name: eventType
+  Description_EN: The type of event that generated the event record
+  DL_Type: string
+
+- Name: eventVersion
+  Description_EN: Version of the log event format
+  DL_Type: string
+
+- Name: extraInfo
+  Description_EN: The additional information about the sharing action
+  DL_Type: dynamic
+
+- Name: failedHTTPSInspection
+  Description_EN: HTTPS traffic inspection failure
+  DL_Type: bool
+
+- Name: fileCreation
+  Description_EN: The file creation date
+  DL_Type: datetime
+
+- Name: fileDesc
+  Description_EN: The file description
+  DL_Type: string
+
+- Name: fileExt
+  Description_EN: The file extension (If the object is a folder, there is no value
+    for this field.)
+  DL_Type: string
+
+- Name: fileHash
+  Description_EN: The SHA-1 of the file that triggered the rule or policy
+  DL_Type: string
+
+- Name: fileHashMd5
+  Description_EN: The MD5 of the file
+  DL_Type: string
+
+- Name: fileHashSha256
+  Description_EN: The SHA-256 of the file that violated the policy
+  DL_Type: string
+
+- Name: fileName
+  Description_EN: The name of the file that violated the policy
+  DL_Type: dynamic
+
+- Name: fileOperation
+  Description_EN: The operation of the file
+  DL_Type: string
+
+- Name: fileOriginIP
+  Description_EN: The IP address from where the file was downloaded
+  DL_Type: string
+
+- Name: fileOriginUrl
+  Description_EN: The URL from where the file was downloaded
+  DL_Type: string
+
+- Name: filePath
+  Description_EN: The file path without the file name
+  DL_Type: string
+
+- Name: filePathName
+  Description_EN: The file path with the file name
+  DL_Type: string
+
+- Name: fileSize
+  Description_EN: The size of the file that is violating the policy
+  DL_Type: long
+
+- Name: fileSystemUuid
+  Description_EN: The file system UUID
+  DL_Type: string
+
+- Name: fileType
+  Description_EN: The type of file which is violating the policy
+  DL_Type: string
+
+- Name: fileVer
+  Description_EN: The file version
+  DL_Type: string
+
+- Name: filterName
+  Description_EN: The filter name
+  DL_Type: string
+
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  DL_Type: string
+
+- Name: filterType
+  Description_EN: The filter type
+  DL_Type: string
+
+- Name: firmalware
+  Description_EN: The firmware version of Deep Discover Inspector
+  DL_Type: dynamic
+
+- Name: firstAct
+  Description_EN: The first scan action
+  DL_Type: string
+
+- Name: firstActResult
+  Description_EN: The first scan action result
+  DL_Type: string
+
+- Name: firstSeen
+  Description_EN: The time when the event started (in milliseconds)
+  DL_Type: datetime
+
+- Name: flowDirection
+  Description_EN: The network interface traffic direction
+  DL_Type: string
+
+- Name: flowId
+  Description_EN: The network analysis flow ID
+  DL_Type: string
+
+- Name: flowType
+  Description_EN: The type of traffic (type)
+  DL_Type: string
+
+- Name: forensicFileHash
+  Description_EN: The hash value of the forensic data file
+  DL_Type: string
+
+- Name: forensicFilePath
+  Description_EN: The file path of the forensic file (When a Data Loss Prevention
+    policy is triggered, the file is encrypted and copied to the OfficeScan server
+    for post-mortem analysis)
+  DL_Type: string
+
+- Name: ftpTrans
+  Description_EN: The transaction information of the FTP protocol
+  DL_Type: dynamic
+
+- Name: ftpUser
+  Description_EN: The FTP login user name
+  DL_Type: string
+
+- Name: fullPath
+  Description_EN: The combination of the file path and the file name
+  DL_Type: string
+
+- Name: groupId
+  Description_EN: The group ID for the management scope filter
+  DL_Type: string
+
+- Name: groupName
+  Description_EN: The group name
+  DL_Type: string
+
+- Name: groups
+  Description_EN: The OSSEC rule group names
+  DL_Type: string
+
+- Name: hasdtasres
+  Description_EN: Whether the log contains a report from Virtual Analyzer
+  DL_Type: string
+
+- Name: heurFlag
+  Description_EN: Whether it has an Advanced Threat Scan Engine detection
+  DL_Type: int
+
+- Name: highlightedFileHashes
+  Description_EN: The SHA-1 hashes of the highlighted file
+  DL_Type: dynamic
+
+- Name: highlightedFileName
+  Description_EN: The file names of suspicious attachments
+  DL_Type: dynamic
+
+- Name: highlightMailMsgSubject
+  Description_EN: The email subject
+  DL_Type: string
+
+- Name: hookId
+  Description_EN: The hook ID
+  DL_Type: string
+
+- Name: hostId
+  Description_EN: The host ID
+  DL_Type: int
+
+- Name: hostName
+  Description_EN: The computer name of the client host (The hostname from the suspicious
+    URL detected by Deep Discovery Inspector)
+  DL_Type: string
+
+- Name: hostSeverity
+  Description_EN: The severity of the threat (specific to the interestedIp)
+  DL_Type: int
+
+- Name: hotFix
+  Description_EN: The applied Deep Discover Inspector hotfix version
+  DL_Type: dynamic
+
+- Name: httpLocation
+  Description_EN: The HTTP location header
+  DL_Type: string
+
+- Name: httpReferer
+  Description_EN: The HTTP referrer header
+  DL_Type: string
+
+- Name: httpRespContentType
+  Description_EN: The HTTP response data content type
+  DL_Type: string
+
+- Name: httpXForwardedFor
+  Description_EN: The HTTP X-Forwarded-For header
+  DL_Type: string
+
+- Name: httpXForwardedForGroup
+  Description_EN: The X-Forwarded-For IP network group
+  DL_Type: string
+
+- Name: httpXForwardedForHost
+  Description_EN: The X-Forwarded-For IP host name
+  DL_Type: string
+
+- Name: httpXForwardedForIp
+  Description_EN: The x-forwarded-for IP used by the network appliance
+  DL_Type: string
+
+- Name: httpXForwardedForPort
+  Description_EN: The patched HTTP server port when the network appliance selects
+    an x-forwarded-for IP address to use
+  DL_Type: int
+
+- Name: icmpCode
+  Description_EN: The ICMP protocol code field
+  DL_Type: int
+
+- Name: icmpType
+  Description_EN: The ICMP protocol type
+  DL_Type: int
+
+- Name: idpId
+  Description_EN: The internal product code of the identity provider
+  DL_Type: string
+
+- Name: idpIssuerName
+  Description_EN: The identity provider that issued the token
+  DL_Type: string
+
+- Name: idpName
+  Description_EN: The identity provider
+  DL_Type: string
+
+- Name: importTable
+  Description_EN: The imported table information
+  DL_Type: dynamic
+
+- Name: importTableFileName
+  Description_EN: The library file name which has imported functions
+  DL_Type: dynamic
+
+- Name: importTableFunctionName
+  Description_EN: The imported function file name
+  DL_Type: dynamic
+
+- Name: incomingTokentype
+  Description_EN: The authentication token types
+  DL_Type: string
+
+- Name: indicatorCount
+  Description_EN: The number of report indicators
+  DL_Type: int
+
+- Name: initiatedByAppDisplayName
+  Description_EN: The application display name
+  DL_Type: string
+
+- Name: initiatedByAppId
+  Description_EN: The resource category targeted by the event
+  DL_Type: string
+
+- Name: initiatedByServicePrincipalId
+  Description_EN: The unique ID of the service principal
+  DL_Type: string
+
+- Name: initiatedByServicePrincipalName
+  Description_EN: The unique ID of the service principal
+  DL_Type: string
+
+- Name: initiatedByUserDisplayName
+  Description_EN: The user display name
+  DL_Type: string
+
+- Name: initiatedByUserHomeTenantId
+  Description_EN: The tenant ID of the user
+  DL_Type: string
+
+- Name: initiatedByUserHomeTenantName
+  Description_EN: The tenant ID of the user
+  DL_Type: string
+
+- Name: initiatedByUserId
+  Description_EN: The unique ID of the user who initiated the event
+  DL_Type: string
+
+- Name: initiatedByUserIpAddress
+  Description_EN: The client IP of the user
+  DL_Type: string
+
+- Name: initiatedByUserPrincipalName
+  Description_EN: The User Principal Name of the user
+  DL_Type: string
+
+- Name: instanceAccountId
+  Description_EN: The cloud account ID of the virtual machine that made the request
+  DL_Type: string
+
+- Name: instanceId
+  Description_EN: The ID of the instance that indicates the meta-cloud or data center
+    VM
+  DL_Type: string
+
+- Name: instanceName
+  Description_EN: The name of the instance that indicates the meta-cloud or data center
+    VM
+  DL_Type: string
+
+- Name: integrityLevel
+  Description_EN: The integrity level of a process
+  DL_Type: int
+
+- Name: interestedGroup
+  Description_EN: The network group associated with the user-defined source IP or
+    destination IP
+  DL_Type: string
+
+- Name: interestedHost
+  Description_EN: The endpoint hostname (For example, if an intranet host accesses
+    a suspicious internet host, the intranet host is the "peerHost" and the internet
+    host is the "interestedHost")
+  DL_Type: string
+
+- Name: interestedIp
+  Description_EN: The IP of the interestedHost
+  DL_Type: dynamic
+
+- Name: interestedIpCity
+  Description_EN: The city name of the interestedHost IP
+  DL_Type: dynamic
+
+- Name: interestedIpCountry
+  Description_EN: The country name of the interestedHost IP
+  DL_Type: dynamic
+
+- Name: interestedIpIsp
+  Description_EN: The ISP name of the interestedHost IP
+  DL_Type: dynamic
+
+- Name: interestedMacAddress
+  Description_EN: The MAC address identified as the log owner's
+  DL_Type: string
+
+- Name: ipAddress
+  Description_EN: The client IP
+  DL_Type: string
+
+- Name: ipProto
+  Description_EN: The protocol number (protocol) in IANA assigned values
+  DL_Type: int
+
+- Name: ircChannelName
+  Description_EN: The IRC channel name
+  DL_Type: string
+
+- Name: ircUserName
+  Description_EN: The IRC user name
+  DL_Type: string
+
+- Name: isEntity
+  Description_EN: The current entity (or after change/modification)
+  DL_Type: string
+
+- Name: isExternalAccess
+  Description_EN: Whether the cmdlet was run by an external user (True=external user,
+    False=internal user in your organization)
+  DL_Type: bool
+
+- Name: isHidden
+  Description_EN: Whether the detection log generated a grey rule match
+  DL_Type: string
+
+- Name: isLocalAdmin
+  Description_EN: Whether the user is a local administrator on the device
+  DL_Type: bool
+
+- Name: isPrivateApp
+  Description_EN: Whether the requested application is private
+  DL_Type: bool
+
+- Name: isProxy
+  Description_EN: Whether something is a proxy
+  DL_Type: bool
+
+- Name: isRetroScan
+  Description_EN: Whether the event matches the Security Analytics Engine filter
+  DL_Type: bool
+
+- Name: isSensitiveInfo
+  Description_EN: Whether the event contains sensitive information
+  DL_Type: bool
+
+- Name: ja3Hash
+  Description_EN: The fingerprint of an SSL/TLS client application as detected via
+    a network sensor or device
+  DL_Type: string
+
+- Name: ja3sHash
+  Description_EN: The fingerprint of an SSL/TLS server application as detected via
+    a network sensor or device
+  DL_Type: string
+
+- Name: ja4Fingerprint
+  Description_EN: The JA4 fingerprint
+  DL_Type: string
+
+- Name: ja4hFingerprint
+  Description_EN: The JA4H fingerprint
+  DL_Type: string
+
+- Name: ja4sFingerprint
+  Description_EN: The JA4S fingerprint
+  DL_Type: string
+
+- Name: k8sNamespace
+  Description_EN: The Kubernetes namespace of the container
+  DL_Type: string
+
+- Name: k8sPodId
+  Description_EN: The Kubernetes pod ID of the container
+  DL_Type: string
+
+- Name: k8sPodName
+  Description_EN: The Kubernetes pod name of the container
+  DL_Type: string
+
+- Name: lastConnectedTime
+  Description_EN: The last time the endpoint was connected (in Unix milliseconds)
+  DL_Type: datetime
+
+- Name: lastSeen
+  Description_EN: The time when the event ended (in milliseconds)
+  DL_Type: datetime
+
+- Name: lineageId
+  Description_EN: The lineage ID
+  DL_Type: string
+
+- Name: locationCity
+  Description_EN: The city where the event happened
+  DL_Type: string
+
+- Name: locationCountry
+  Description_EN: The country where the event happened
+  DL_Type: string
+
+- Name: locationLatitude
+  Description_EN: The latitude of the event location
+  DL_Type: string
+
+- Name: locationLongitude
+  Description_EN: The longitude of the event location
+  DL_Type: string
+
+- Name: locationState
+  Description_EN: The state where the event happened
+  DL_Type: string
+
+- Name: logBatchId
+  Description_EN: The batch data retrieval process ID
+  DL_Type: string
+
+- Name: loggedByService
+  Description_EN: The service that initiated the event
+  DL_Type: string
+
+- Name: logKey
+  Description_EN: The unique key of the event
+  DL_Type: string
+
+- Name: logLevel
+  Description_EN: The event severity level
+  DL_Type: string
+
+- Name: logonUser
+  Description_EN: The sign-in user name
+  DL_Type: dynamic
+
+- Name: logonUsers
+  Description_EN: The telemetry events that match the Security Analytics Engine filter,
+    and logonUsers stores the logonUsers value of the original events
+  DL_Type: dynamic
+
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  DL_Type: datetime
+
+- Name: logStatus
+  Description_EN: The VPC Flow Log status
+  DL_Type: string
+
+- Name: mailAttachmentHash
+  Description_EN: Hash value of the email attachment
+  DL_Type: string
+
+- Name: mailBccAddresses
+  Description_EN: Mail BCC address in the email header
+  DL_Type: dynamic
+
+- Name: mailbox
+  Description_EN: The mailbox that is protected by Trend Micro
+  DL_Type: string
+
+- Name: mailCacheId
+  Description_EN: The internal email cache ID to identify emails in the same group
+    mails
+  DL_Type: string
+
+- Name: mailCcAddresses
+  Description_EN: Mail CC address in the email header
+  DL_Type: dynamic
+
+- Name: mailDeliveryTime
+  Description_EN: The time the email was delivered
+  DL_Type: datetime
+
+- Name: mailDirection
+  Description_EN: The email traffic direction
+  DL_Type: int
+
+- Name: mailEurekaRuleIds
+  Description_EN: The list of rule IDs scanned by Eureka and detected by Trend Micro
+    Anti-Spam Engine
+  DL_Type: dynamic
+
+- Name: mailFeatureId
+  Description_EN: The email protocol detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+
+- Name: mailFolder
+  Description_EN: The email folder name
+  DL_Type: string
+
+- Name: mailFromAddresses
+  Description_EN: The Mail From address in the email header
+  DL_Type: dynamic
+
+- Name: mailHeaderHash
+  Description_EN: The email header hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+
+- Name: mailHelo
+  Description_EN: The HELO command detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+
+- Name: mailMetaText
+  Description_EN: The postman meta text detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+
+- Name: mailMetaTraceId
+  Description_EN: The trace ID generated by Trend Micro Feedback Engine
+  DL_Type: string
+
+- Name: mailMsgDirection
+  Description_EN: The direction of the email message
+  DL_Type: int
+
+- Name: mailMsgId
+  Description_EN: The internet message ID of the email
+  DL_Type: string
+
+- Name: mailMsgSubject
+  Description_EN: The email subject
+  DL_Type: string
+
+- Name: mailReceivedTime
+  Description_EN: The mail received timestamp
+  DL_Type: datetime
+
+- Name: mailReplyToAddresses
+  Description_EN: The Reply To address detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+
+- Name: mailReturnPath
+  Description_EN: The hidden email header that indicates where bounced messages are
+    sent
+  DL_Type: dynamic
+
+- Name: mailRuleId
+  Description_EN: The rule ID of the matched rule detected by Trend Micro Anti-Spam
+    Engine
+  DL_Type: dynamic
+
+- Name: mailScore
+  Description_EN: The score assigned to the email by Trend Micro Anti-Spam Engine
+  DL_Type: long
+
+- Name: mailSenderIp
+  Description_EN: Email sender IP address
+  DL_Type: string
+
+- Name: mailSmtpFromAddresses
+  Description_EN: The envelope address of the sender
+  DL_Type: dynamic
+
+- Name: mailSmtpHelo
+  Description_EN: The domain name of the email server by using the SMTP HELO command
+  DL_Type: string
+
+- Name: mailSmtpOriginalRecipients
+  Description_EN: The envelope addresses of the original recipients
+  DL_Type: dynamic
+
+- Name: mailSmtpRecipients
+  Description_EN: Email recipients in the SMTP envelope after scanning
+  DL_Type: dynamic
+
+- Name: mailSmtpTls
+  Description_EN: The SMTP TLS version, for example, TLS 1.2
+  DL_Type: string
+
+- Name: mailSourceDomain
+  Description_EN: Email domain of the sender
+  DL_Type: string
+
+- Name: mailTagHash
+  Description_EN: The email tag hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+
+- Name: mailTagHashRawSignature
+  Description_EN: The raw signature hash of the email
+  DL_Type: string
+
+- Name: mailTextHash
+  Description_EN: The email text hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+
+- Name: mailThreatType
+  Description_EN: The type of email detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+
+- Name: mailToAddresses
+  Description_EN: The Mail To address in the email header
+  DL_Type: dynamic
+
+- Name: mailUniqueId
+  Description_EN: The unique ID of the email
+  DL_Type: string
+
+- Name: mailUrlHash
+  Description_EN: The email URL hash detected by Trend Micro Anti-Spam Engine
+  DL_Type: string
+
+- Name: mailUrlsOriginalLink
+  Description_EN: The original URL extracted from the email content
+  DL_Type: dynamic
+
+- Name: mailUrlsRealLink
+  Description_EN: The URL extracted from the email content
+  DL_Type: dynamic
+
+- Name: mailUrlsVisibleLink
+  Description_EN: The URL extracted from the email content
+  DL_Type: dynamic
+
+- Name: mailUserAgent
+  Description_EN: The user agent
+  DL_Type: string
+
+- Name: mailWantedHeaderName
+  Description_EN: The WantedHeader key name detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+
+- Name: mailWantedHeaderValue
+  Description_EN: The WantedHeader key value detected by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+
+- Name: mailWholeHeader
+  Description_EN: The name and email address of the sender in the From header detected
+    by Trend Micro Anti-Spam Engine
+  DL_Type: dynamic
+
+- Name: mailXMailer
+  Description_EN: The X-Mailer header of the email
+  DL_Type: string
+
+- Name: majorVirusType
+  Description_EN: The virus type
+  DL_Type: string
+
+- Name: malDst
+  Description_EN: The malware infection destination
+  DL_Type: string
+
+- Name: malFamily
+  Description_EN: The threat family
+  DL_Type: string
+
+- Name: malName
+  Description_EN: The name of the detected malware
+  DL_Type: string
+
+- Name: malSrc
+  Description_EN: The malware infection source
+  DL_Type: string
+
+- Name: malSubType
+  Description_EN: The subsidiary virus type
+  DL_Type: string
+
+- Name: malType
+  Description_EN: The risk type for Network Content Correlation Engine rules
+  DL_Type: string
+
+- Name: malTypeGroup
+  Description_EN: The risk type group for NCCE (Network Content Correlation Engine)
+    rules. This field comes from NCCP (Network Content Correlation Pattern) rule type
+    definitions.
+  DL_Type: string
+
+- Name: managementEvent
+  Description_EN: The management event
+  DL_Type: bool
+
+- Name: marsAccount
+  Description_EN: The account for Trend Micro Mobile Apps Reputation Service
+  DL_Type: string
+
+- Name: matchedContent
+  Description_EN: The one-to-many data structure
+  DL_Type: dynamic
+
+- Name: matchedPolicies
+  Description_EN: The matched policies of detection records
+  DL_Type: dynamic
+
+- Name: mDevice
+  Description_EN: IP of the source
+  DL_Type: dynamic
+
+- Name: mDeviceGUID
+  Description_EN: The GUID of the agent host
+  DL_Type: string
+
+- Name: messageType
+  Description_EN: The message type
+  DL_Type: string
+
+- Name: metaSrcExtra
+  Description_EN: The meta for identifying the source of events
+  DL_Type: string
+
+- Name: mExternalUid
+  Description_EN: The unique ID of the email
+  DL_Type: string
+
+- Name: mimeType
+  Description_EN: The MIME type or content type of the response body
+  DL_Type: string
+
+- Name: minorVirusType
+  Description_EN: Minor virus type
+  DL_Type: string
+
+- Name: mitigationTaskId
+  Description_EN: The unique ID to identify the mitigation request
+  DL_Type: string
+
+- Name: mitreMapping
+  Description_EN: The MITRE tags
+  DL_Type: dynamic
+
+- Name: mitreVersion
+  Description_EN: The MITRE version
+  DL_Type: string
+
+- Name: moduleName
+  Description_EN: The module where a hook procedure was set up
+  DL_Type: string
+
+- Name: moduleScanType
+  Description_EN: The module scan type
+  DL_Type: string
+
+- Name: monitoringLevel
+  Description_EN: The cloud activity monitoring level
+  DL_Type: int
+
+- Name: mpname
+  Description_EN: The management product name
+  DL_Type: string
+
+- Name: mpver
+  Description_EN: The product version
+  DL_Type: string
+
+- Name: msgAct
+  Description_EN: The message action
+  DL_Type: string
+
+- Name: msgId
+  Description_EN: The service provider message ID
+  DL_Type: string
+
+- Name: msgTOCUuid
+  Description_EN: The Time-of-Click log unique ID
+  DL_Type: string
+
+- Name: msgUuid
+  Description_EN: Internal email UUID to identify each email message
+  DL_Type: string
+
+- Name: msgUuidChain
+  Description_EN: The internal UUID chain for each email in Trend Micro Feedback Engine
+  DL_Type: string
+
+- Name: nativeDeviceCharacteristics
+  Description_EN: Additional driver device information
+  DL_Type: int
+
+- Name: nativeDeviceType
+  Description_EN: The underlying hardware type of the driver
+  DL_Type: int
+
+- Name: nativeStorageDeviceBusType
+  Description_EN: The bus type to which the device is connected
+  DL_Type: int
+
+- Name: netBiosDomainName
+  Description_EN: The NetBIOS domain name
+  DL_Type: string
+
+- Name: networkInterfaceId
+  Description_EN: The network interface of the virtual machine that made the request
+  DL_Type: string
+
+- Name: objectActionResults
+  Description_EN: The object process action results
+  DL_Type: dynamic
+
+- Name: objectActionReturnCodes
+  Description_EN: The object process action return codes
+  DL_Type: dynamic
+
+- Name: objectActions
+  Description_EN: The object process actions
+  DL_Type: dynamic
+
+- Name: objectApiHookNum
+  Description_EN: The API hook number of the object
+  DL_Type: int
+
+- Name: objectApiName
+  Description_EN: The name of the executed API
+  DL_Type: string
+
+- Name: objectApiRvInNum
+  Description_EN: The API telemetry return value
+  DL_Type: long
+
+- Name: objectAppBehavior
+  Description_EN: The activity that occurred on the app
+  DL_Type: string
+
+- Name: objectAppBehaviorAttr
+  Description_EN: The attributes of the app activity
+  DL_Type: string
+
+- Name: objectAppDexSha256
+  Description_EN: The SHA-256 hash of the app Dex value
+  DL_Type: string
+
+- Name: objectAppInstalledTime
+  Description_EN: The time of app installation (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectAppIsSystemApp
+  Description_EN: Whether the app is a system app
+  DL_Type: bool
+
+- Name: objectAppLabel
+  Description_EN: The app name
+  DL_Type: string
+
+- Name: objectAppName
+  Description_EN: Name of the app involved in the AMSI event
+  DL_Type: string
+
+- Name: objectAppPackageName
+  Description_EN: The app package name
+  DL_Type: string
+
+- Name: objectAppPublicKeySha1
+  Description_EN: The SHA-1 hash of the app public key
+  DL_Type: string
+
+- Name: objectAppSha256
+  Description_EN: The SHA-256 hash of the app
+  DL_Type: string
+
+- Name: objectAppSize
+  Description_EN: The app size (in bytes)
+  DL_Type: long
+
+- Name: objectAppVerCode
+  Description_EN: The app version code
+  DL_Type: string
+
+- Name: objectAppVerName
+  Description_EN: The app version
+  DL_Type: string
+
+- Name: objectArtifactIds
+  Description_EN: The artifact IDs generated by objectAction
+  DL_Type: dynamic
+
+- Name: objectAttributes
+  Description_EN: The object attributes
+  DL_Type: string
+
+- Name: objectAuthId
+  Description_EN: The object authorization ID
+  DL_Type: string
+
+- Name: objectBmData
+  Description_EN: The data of BM event
+  DL_Type: string
+
+- Name: objectCertAttr
+  Description_EN: The SHA-1 hash of the certificate public key
+  DL_Type: string
+
+- Name: objectCmd
+  Description_EN: The command line entry of the target process
+  DL_Type: dynamic
+
+- Name: objectContentName
+  Description_EN: The AMSI object content name
+  DL_Type: string
+
+- Name: objectCreateDispositions
+  Description_EN: The disposition of CreateFile
+  DL_Type: int
+
+- Name: objectCurrentFileSize
+  Description_EN: Previous size of modified object file
+  DL_Type: long
+
+- Name: objectCurrentPosixPermission
+  Description_EN: The new POSIX permission file used in file events and CHMOD events
+  DL_Type: string
+
+- Name: objectDesiredAccess
+  Description_EN: The desired access of the event
+  DL_Type: int
+
+- Name: objectEntityName
+  Description_EN: The object entity name
+  DL_Type: string
+
+- Name: objectFileAccess
+  Description_EN: The object file access details
+  DL_Type: string
+
+- Name: objectFileAttributes
+  Description_EN: The new file attributes
+  DL_Type: int
+
+- Name: objectFileAttributesHashId
+  Description_EN: The hash ID of the file attribute meta information
+  DL_Type: string
+
+- Name: objectFileCreatedTime
+  Description_EN: The time the object file was created
+  DL_Type: datetime
+
+- Name: objectFileCreation
+  Description_EN: The time the target file was created (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectFileCurrentAttributes
+  Description_EN: The original file attributes
+  DL_Type: int
+
+- Name: objectFileCurrentOwnerName
+  Description_EN: The current owner name of the object file
+  DL_Type: string
+
+- Name: objectFileCurrentOwnerSid
+  Description_EN: The current security identifier owner of the object file
+  DL_Type: string
+
+- Name: objectFileDaclString
+  Description_EN: The discretionary access control list of the object file
+  DL_Type: string
+
+- Name: objectFileExtendedAttribute
+  Description_EN: The extended attributes of the file
+  DL_Type: string
+
+- Name: objectFileGroupName
+  Description_EN: The object file user group name
+  DL_Type: string
+
+- Name: objectFileGroupSid
+  Description_EN: The security identifier of the object file group
+  DL_Type: string
+
+- Name: objectFileHash
+  Description_EN: The cryptographic hash of the target process image or file, with
+    the specific hash algorithm to be determined
+  DL_Type: string
+
+- Name: objectFileHashId
+  Description_EN: The object file hash ID
+  DL_Type: string
+
+- Name: objectFileHashMd5
+  Description_EN: The md5 hash of target process image or target file
+  DL_Type: string
+
+- Name: objectFileHashSha1
+  Description_EN: The SHA1 hash of target process image or target file
+  DL_Type: string
+
+- Name: objectFileHashSha256
+  Description_EN: The SHA256 hash of target process image or target file
+  DL_Type: string
+
+- Name: objectFileIsRemoteAccess
+  Description_EN: The remote access to the object file
+  DL_Type: bool
+
+- Name: objectFileModified
+  Description_EN: The UTC time that the object was modified
+  DL_Type: datetime
+
+- Name: objectFileModifiedTime
+  Description_EN: The modification time of the target file (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectFileName
+  Description_EN: The object file name
+  DL_Type: string
+
+- Name: objectFileOriginalName
+  Description_EN: The original file name of the object image
+  DL_Type: string
+
+- Name: objectFileOwnerName
+  Description_EN: The object file owner name
+  DL_Type: string
+
+- Name: objectFileOwnerSid
+  Description_EN: The security identifier of the object file owner
+  DL_Type: string
+
+- Name: objectFilePath
+  Description_EN: The file path of the target process image or target file
+  DL_Type: string
+
+- Name: objectFileRemoteAccess
+  Description_EN: The remote access for the object file
+  DL_Type: bool
+
+- Name: objectFileSaclString
+  Description_EN: The system access control list of the object file
+  DL_Type: string
+
+- Name: objectFirstRecorded
+  Description_EN: The first time that the object appeared
+  DL_Type: string
+
+- Name: objectFirstSeen
+  Description_EN: The time when the object first appeared (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectHashId
+  Description_EN: https://trendmicro.atlassian.net/browse/DOC-2644
+  DL_Type: string
+
+- Name: objectHostName
+  Description_EN: Server name where Internet event was detected
+  DL_Type: string
+
+- Name: objectId
+  Description_EN: The UUID of the Zero Trust Secure Access private access application
+  DL_Type: string
+
+- Name: objectIntegrityLevel
+  Description_EN: Integrity level of target process
+  DL_Type: int
+
+- Name: objectIp
+  Description_EN: The IP address of the domain
+  DL_Type: dynamic
+
+- Name: objectIps
+  Description_EN: The IP address resolved by the DNS protocol
+  DL_Type: dynamic
+
+- Name: objectLastSeen
+  Description_EN: The time when the object was last seen (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectLaunchTime
+  Description_EN: The object launch time of the Windows event
+  DL_Type: datetime
+
+- Name: objectLoginOutFailureMessage
+  Description_EN: The sign-in/sign-out error message
+  DL_Type: string
+
+- Name: objectLoginOutFirstSeen
+  Description_EN: The first time the object sign-in/sign-out was seen
+  DL_Type: datetime
+
+- Name: objectLoginOutHashId
+  Description_EN: The FNV of the object sign-in/sign-out meta
+  DL_Type: string
+
+- Name: objectLoginOutLastSeen
+  Description_EN: The last time the object sign-in/sign-out was seen
+  DL_Type: datetime
+
+- Name: objectLoginOutMetaType
+  Description_EN: The sign-in/sign-out meta
+  DL_Type: int
+
+- Name: objectLoginOutSessionId
+  Description_EN: The sign-in/sign-out session ID
+  DL_Type: string
+
+- Name: objectLoginOutSourceAddress
+  Description_EN: The sign-in/sign-out source IP
+  DL_Type: string
+
+- Name: objectLoginOutStatus
+  Description_EN: The sign-in/sign-out status
+  DL_Type: int
+
+- Name: objectName
+  Description_EN: The base name of the object file or process
+  DL_Type: string
+
+- Name: objectPayloadFileHashSha1
+  Description_EN: The SHA-1 of the object payload file
+  DL_Type: string
+
+- Name: objectPid
+  Description_EN: The PID of target process
+  DL_Type: int
+
+- Name: objectPipeName
+  Description_EN: The named pipe of the event
+  DL_Type: string
+
+- Name: objectPort
+  Description_EN: The port number used by internet event
+  DL_Type: int
+
+- Name: objectPosixPermission
+  Description_EN: The current POSIX permission for the file
+  DL_Type: string
+
+- Name: objectPosixPermissionHashId
+  Description_EN: The POSIX permission hash ID
+  DL_Type: string
+
+- Name: objectProcessHashId
+  Description_EN: FNV of target process
+  DL_Type: string
+
+- Name: objectRawDataSize
+  Description_EN: The raw data size of the Windows event object
+  DL_Type: dynamic
+
+- Name: objectRawDataStr
+  Description_EN: The data contents of the AMSI event
+  DL_Type: dynamic
+
+- Name: objectRegistryData
+  Description_EN: The registry data contents
+  DL_Type: string
+
+- Name: objectRegistryKeyHandle
+  Description_EN: The registry key path
+  DL_Type: string
+
+- Name: objectRegistryOriginalData
+  Description_EN: The original registry value data before modification
+  DL_Type: string
+
+- Name: objectRegistryOriginalKeyHandle
+  Description_EN: The original registry key before modification
+  DL_Type: string
+
+- Name: objectRegistryOriginalValue
+  Description_EN: The original registry value name before modification
+  DL_Type: string
+
+- Name: objectRegistryRoot
+  Description_EN: The name of the object registry root key
+  DL_Type: string
+
+- Name: objectRegistryValue
+  Description_EN: The registry value name
+  DL_Type: string
+
+- Name: objectRegistryValueType
+  Description_EN: The Windows Registry Type ID
+  DL_Type: int
+
+- Name: objectRegType
+  Description_EN: The Windows Registry Type ID
+  DL_Type: int
+
+- Name: objectRunAsLocalAccount
+  Description_EN: The "runas" command uses a local account
+  DL_Type: bool
+
+- Name: objectServiceType
+  Description_EN: Type of target file
+  DL_Type: string
+
+- Name: objectSessionId
+  Description_EN: The object session ID
+  DL_Type: string
+
+- Name: objectSessionIp
+  Description_EN: The remote device IP address
+  DL_Type: string
+
+- Name: objectSigner
+  Description_EN: Certificate signer of object process or file
+  DL_Type: dynamic
+
+- Name: objectSignerFlagsAdhoc
+  Description_EN: The list of object process or file signature adhoc flags
+  DL_Type: dynamic
+
+- Name: objectSignerFlagsLibValid
+  Description_EN: The list of object process or file signature library validation
+    flags
+  DL_Type: dynamic
+
+- Name: objectSignerFlagsRuntime
+  Description_EN: The list of object process or file signature runtime flags
+  DL_Type: dynamic
+
+- Name: objectSignerValid
+  Description_EN: Whether each signer of the object process is valid
+  DL_Type: dynamic
+
+- Name: objectSubTrueType
+  Description_EN: File object's true sub-type
+  DL_Type: int
+
+- Name: objectSubType
+  Description_EN: The sub-types of the policy event (Displayed when a policy event
+    has sub-types)
+  DL_Type: string
+
+- Name: objectSystemEventAttr
+  Description_EN: The system event attributes
+  DL_Type: string
+
+- Name: objectTargetProcess
+  Description_EN: The file path of the target process that the API performs
+  DL_Type: string
+
+- Name: objectThreadId
+  Description_EN: The object process thread ID
+  DL_Type: string
+
+- Name: objectTrueType
+  Description_EN: File object's true major type
+  DL_Type: int
+
+- Name: objectType
+  Description_EN: The object type
+  DL_Type: string
+
+- Name: objectUri
+  Description_EN: Path of target file
+  DL_Type: string
+
+- Name: objectUser
+  Description_EN: The user name of the target process which is launched by current
+    running process
+  DL_Type: string
+
+- Name: objectUserDomain
+  Description_EN: The owner domain of the target process which is launched by current
+    running process
+  DL_Type: string
+
+- Name: objectUserGroup
+  Description_EN: The user group name
+  DL_Type: string
+
+- Name: objectUserGroupSids
+  Description_EN: The user group SIDs of the object
+  DL_Type: dynamic
+
+- Name: objectVersionInfoOriginalFileName
+  Description_EN: The original file name from the version information of the object
+    image
+  DL_Type: string
+
+- Name: oldFileHash
+  Description_EN: The SHA-1 of the target process image or target file (wasEntity
+    from an IM event)
+  DL_Type: string
+
+- Name: online
+  Description_EN: The flag to identify whether the endpoint is online
+  DL_Type: string
+
+- Name: operationLevel
+  Description_EN: The level that is used to indicate the handler layer at SOC
+  DL_Type: int
+
+- Name: operationType
+  Description_EN: The operation performed in the event
+  DL_Type: string
+
+- Name: orgId
+  Description_EN: The organization ID
+  DL_Type: string
+
+- Name: orgName
+  Description_EN: The tenant name
+  DL_Type: string
+
+- Name: originalFileHashes
+  Description_EN: The hashes of the original file
+  DL_Type: dynamic
+
+- Name: originalFilePaths
+  Description_EN: The paths of the original file
+  DL_Type: dynamic
+
+- Name: originatingServer
+  Description_EN: The server where the operation originated
+  DL_Type: string
+
+- Name: originEventSourceType
+  Description_EN: The event source type of the original events which matches the Security
+    Analytics Engine filter
+  DL_Type: string
+
+- Name: originUUID
+  Description_EN: The UUID of the original events which matches the Security Analytics
+    Engine filter
+  DL_Type: dynamic
+
+- Name: osArch
+  Description_EN: The OS architecture
+  DL_Type: string
+
+- Name: osDescription
+  Description_EN: The OS version
+  DL_Type: string
+
+- Name: osName
+  Description_EN: The host operating system name
+  DL_Type: string
+
+- Name: osType
+  Description_EN: The host operating system type
+  DL_Type: string
+
+- Name: osVer
+  Description_EN: The version of the host operating system
+  DL_Type: string
+
+- Name: out
+  Description_EN: The IP datagram length (in bytes)
+  DL_Type: long
+
+- Name: outcome
+  Description_EN: Whether the event was successful or not
+  DL_Type: string
+
+- Name: overSsl
+  Description_EN: Whether the event was triggered by an SSL decryption stream (Displayed
+    only when SSL Inspection is supported)
+  DL_Type: string
+
+- Name: packets
+  Description_EN: The number of transmitted data packets
+  DL_Type: long
+
+- Name: parameters
+  Description_EN: The names and values of all parameters used in the cmdlet identified
+    in the Operations property
+  DL_Type: string
+
+- Name: parentAuthId
+  Description_EN: The parent authorization ID
+  DL_Type: string
+
+- Name: parentCmd
+  Description_EN: The command line of the subject parent process
+  DL_Type: string
+
+- Name: parentFileCreation
+  Description_EN: The time the parent file was created
+  DL_Type: datetime
+
+- Name: parentFileCurrentOwnerName
+  Description_EN: The current owner name of the parent file
+  DL_Type: string
+
+- Name: parentFileCurrentOwnerSid
+  Description_EN: The current security identifier owner of the parent file
+  DL_Type: string
+
+- Name: parentFileDaclString
+  Description_EN: The discretionary access control list of the parent file
+  DL_Type: string
+
+- Name: parentFileGroupName
+  Description_EN: The name of the parent file user group
+  DL_Type: string
+
+- Name: parentFileGroupSid
+  Description_EN: The security identifier of the parent process file group
+  DL_Type: string
+
+- Name: parentFileHashId
+  Description_EN: The parent file hash ID
+  DL_Type: string
+
+- Name: parentFileHashMd5
+  Description_EN: The MD5 of the subject parent process
+  DL_Type: string
+
+- Name: parentFileHashSha1
+  Description_EN: The SHA-1 of the subject parent process
+  DL_Type: string
+
+- Name: parentFileHashSha256
+  Description_EN: The SHA-256 of the subject parent process
+  DL_Type: string
+
+- Name: parentFileModifiedTime
+  Description_EN: The time the parent file was modified
+  DL_Type: datetime
+
+- Name: parentFileName
+  Description_EN: The parent process name
+  DL_Type: string
+
+- Name: parentFileOriginalName
+  Description_EN: The original file name of the parent image
+  DL_Type: string
+
+- Name: parentFileOwnerName
+  Description_EN: The owner name of the parent file
+  DL_Type: string
+
+- Name: parentFileOwnerSid
+  Description_EN: The security identifier of the parent file owner
+  DL_Type: string
+
+- Name: parentFilePath
+  Description_EN: The full file path of the parent process
+  DL_Type: string
+
+- Name: parentFileRemoteAccess
+  Description_EN: The remote access to the parent file
+  DL_Type: bool
+
+- Name: parentFileSaclString
+  Description_EN: The system access control list of the parent file
+  DL_Type: string
+
+- Name: parentFileSize
+  Description_EN: The file size of the parent file
+  DL_Type: long
+
+- Name: parentHashId
+  Description_EN: The FNV of the parent process
+  DL_Type: string
+
+- Name: parentIntegrityLevel
+  Description_EN: The integrity level of a parent
+  DL_Type: int
+
+- Name: parentLaunchTime
+  Description_EN: The time when the parent process was launched
+  DL_Type: datetime
+
+- Name: parentName
+  Description_EN: The image name of the parent process
+  DL_Type: string
+
+- Name: parentPayloadSigner
+  Description_EN: The signer name list of the parent process payload
+  DL_Type: dynamic
+
+- Name: parentPayloadSignerFlagsAdhoc
+  Description_EN: The list of parent process payload signature adhoc flags
+  DL_Type: dynamic
+
+- Name: parentPayloadSignerFlagsLibValid
+  Description_EN: The list of parent process payload signature library validation
+    flags
+  DL_Type: dynamic
+
+- Name: parentPayloadSignerFlagsRuntime
+  Description_EN: The list of parent process payload signature runtime flags
+  DL_Type: dynamic
+
+- Name: parentPayloadSignerValid
+  Description_EN: Whether each signer of the parent process payload is valid
+  DL_Type: dynamic
+
+- Name: parentPid
+  Description_EN: The PID of the parent process
+  DL_Type: int
+
+- Name: parentSessionId
+  Description_EN: The parent session ID
+  DL_Type: int
+
+- Name: parentSigner
+  Description_EN: The signers of the parent process
+  DL_Type: dynamic
+
+- Name: parentSignerFlagsAdhoc
+  Description_EN: The list of parent process signature adhoc flags
+  DL_Type: dynamic
+
+- Name: parentSignerFlagsLibValid
+  Description_EN: The list of parent process signature library validation flags
+  DL_Type: dynamic
+
+- Name: parentSignerFlagsRuntime
+  Description_EN: The list of parent process signature runtime flags
+  DL_Type: dynamic
+
+- Name: parentSignerValid
+  Description_EN: Whether each signer of the parent process is valid
+  DL_Type: dynamic
+
+- Name: parentSubTrueType
+  Description_EN: The true file subtype of the parent file
+  DL_Type: int
+
+- Name: parentTrueType
+  Description_EN: The true file type of the parent file
+  DL_Type: int
+
+- Name: parentUser
+  Description_EN: The type of user that executed the parent process
+  DL_Type: string
+
+- Name: parentUserDomain
+  Description_EN: The domain name of the parent process
+  DL_Type: string
+
+- Name: parentUserGroupSids
+  Description_EN: The SIDs of the parent user group
+  DL_Type: dynamic
+
+- Name: pAttackPhase
+  Description_EN: The category of the primary Attack Phase
+  DL_Type: string
+
+- Name: patType
+  Description_EN: The pattern type
+  DL_Type: string
+
+- Name: patVer
+  Description_EN: The version of the behavior pattern
+  DL_Type: string
+
+- Name: pcapUUID
+  Description_EN: The PCAP file UUID
+  DL_Type: string
+
+- Name: pComp
+  Description_EN: The component that made the detection
+  DL_Type: string
+
+- Name: peerEndpointGUID
+  Description_EN: The endpoint GUID of the agent peer host
+  DL_Type: string
+
+- Name: peerGroup
+  Description_EN: The peer IP group
+  DL_Type: string
+
+- Name: peerHost
+  Description_EN: The hostname of peerIp
+  DL_Type: string
+
+- Name: peerIp
+  Description_EN: The IP of peerHost
+  DL_Type: dynamic
+
+- Name: peerIpCity
+  Description_EN: The city name of the peerHost IP
+  DL_Type: dynamic
+
+- Name: peerIpCountry
+  Description_EN: The country name of the peerHost IP
+  DL_Type: dynamic
+
+- Name: peerIpIsp
+  Description_EN: The ISP name of the peerHost IP
+  DL_Type: dynamic
+
+- Name: pktDstAddr
+  Description_EN: The packet level destination IP
+  DL_Type: string
+
+- Name: pktDstCloudServiceName
+  Description_EN: The subset IP address range name for the cloud service destination
+    IP (pkt-dst-aws-service)
+  DL_Type: string
+
+- Name: pktSrcAddr
+  Description_EN: The packet level source IP
+  DL_Type: string
+
+- Name: pktSrcCloudServiceName
+  Description_EN: The subset IP address range name for the cloud service source IP
+    (pkt-src-aws-service)
+  DL_Type: string
+
+- Name: plang
+  Description_EN: The product language
+  DL_Type: int
+
+- Name: platformAssetTags
+  Description_EN: The list of platform custom asset tags
+  DL_Type: dynamic
+
+- Name: pname
+  Description_EN: The internal product ID (Deprecated, use productCode)
+  DL_Type: string
+
+- Name: policyId
+  Description_EN: The policy ID of which the event was detected
+  DL_Type: string
+
+- Name: policyIds
+  Description_EN: The Ids of DDR’s data policy
+  DL_Type: string
+
+- Name: policyName
+  Description_EN: The name of the triggered policy
+  DL_Type: string
+
+- Name: policyTemplate
+  Description_EN: The Data Loss Prevention template name
+  DL_Type: dynamic
+
+- Name: policyTreePath
+  Description_EN: The policy tree path (endpoint only)
+  DL_Type: string
+
+- Name: policyUuid
+  Description_EN: The UUID of the cloud access or risk control policy, or the hard-coded
+    string that indicates the rule of the global blocked/approved URL list
+  DL_Type: string
+
+- Name: potentialRisk
+  Description_EN: The tag if it's a potential risk according to heuristics
+  DL_Type: string
+
+- Name: pplat
+  Description_EN: The product platform
+  DL_Type: int
+
+- Name: previousObjectFileName
+  Description_EN: The previous object file name
+  DL_Type: string
+
+- Name: previousObjectFilePath
+  Description_EN: The previous file path of the target process image or target file
+  DL_Type: string
+
+- Name: principalName
+  Description_EN: The user principal name used to sign in to the proxy
+  DL_Type: string
+
+- Name: processActionResults
+  Description_EN: The process action results
+  DL_Type: dynamic
+
+- Name: processActionReturnCodes
+  Description_EN: The process action return codes
+  DL_Type: dynamic
+
+- Name: processActions
+  Description_EN: The process actions
+  DL_Type: dynamic
+
+- Name: processArtifactIds
+  Description_EN: The artifact IDs generated by processAction
+  DL_Type: dynamic
+
+- Name: processCmd
+  Description_EN: The command line entry of the subject process
+  DL_Type: string
+
+- Name: processFileCreation
+  Description_EN: The time the process file was created
+  DL_Type: datetime
+
+- Name: processFileCurrentOwnerName
+  Description_EN: The current owner name of the process file
+  DL_Type: string
+
+- Name: processFileCurrentOwnerSid
+  Description_EN: The owner of the process file current security identifier
+  DL_Type: string
+
+- Name: processFileDaclString
+  Description_EN: The discretionary access control list of the process file
+  DL_Type: string
+
+- Name: processFileGroupName
+  Description_EN: The name of the process file user group
+  DL_Type: string
+
+- Name: processFileGroupSid
+  Description_EN: The security identifier of the process file group
+  DL_Type: string
+
+- Name: processFileHashId
+  Description_EN: The file hash of the process
+  DL_Type: string
+
+- Name: processFileHashMd5
+  Description_EN: The MD5 hash of the subject process image
+  DL_Type: string
+
+- Name: processFileHashSha1
+  Description_EN: The SHA-1 hash of the subject process image
+  DL_Type: string
+
+- Name: processFileHashSha256
+  Description_EN: The SHA-256 of the subject process image file
+  DL_Type: string
+
+- Name: processFileModifiedTime
+  Description_EN: The time the process file was modified
+  DL_Type: datetime
+
+- Name: processFileName
+  Description_EN: The file name of the subject process
+  DL_Type: string
+
+- Name: processFileOriginalName
+  Description_EN: The original file name of the process image
+  DL_Type: string
+
+- Name: processFileOwnerName
+  Description_EN: The process file owner name
+  DL_Type: string
+
+- Name: processFileOwnerSid
+  Description_EN: The security identifier of the process file owner
+  DL_Type: string
+
+- Name: processFilePath
+  Description_EN: The file path of the subject process
+  DL_Type: string
+
+- Name: processFileRemoteAccess
+  Description_EN: The remote access to the process file
+  DL_Type: bool
+
+- Name: processFileSaclString
+  Description_EN: The system access control list of the process file
+  DL_Type: string
+
+- Name: processFileSize
+  Description_EN: The file size of the process file
+  DL_Type: long
+
+- Name: processHashId
+  Description_EN: The FNV of the subject process
+  DL_Type: string
+
+- Name: processImageFileNames
+  Description_EN: The process image file names of detected backup artifacts
+  DL_Type: dynamic
+
+- Name: processImagePath
+  Description_EN: The process triggered by the file event
+  DL_Type: string
+
+- Name: processLaunchTime
+  Description_EN: The time the subject process was launched
+  DL_Type: datetime
+
+- Name: processName
+  Description_EN: The image name of the process that triggered the event
+  DL_Type: string
+
+- Name: processPayloadSigner
+  Description_EN: The signer name list of the process payload
+  DL_Type: dynamic
+
+- Name: processPayloadSignerFlagsAdhoc
+  Description_EN: The list of process payload signature adhoc flags
+  DL_Type: dynamic
+
+- Name: processPayloadSignerFlagsLibValid
+  Description_EN: The list of process payload signature library validation flags
+  DL_Type: dynamic
+
+- Name: processPayloadSignerFlagsRuntime
+  Description_EN: The list of process payload signature runtime flags
+  DL_Type: dynamic
+
+- Name: processPayloadSignerValid
+  Description_EN: Whether each signer of the process payload is valid
+  DL_Type: dynamic
+
+- Name: processPid
+  Description_EN: The PID of the subject process
+  DL_Type: int
+
+- Name: processPkgName
+  Description_EN: The process package name
+  DL_Type: string
+
+- Name: processRemoteSessionDeviceName
+  Description_EN: The remote device name of the process
+  DL_Type: string
+
+- Name: processRemoteSessionIp
+  Description_EN: The remote device IP address of the process
+  DL_Type: string
+
+- Name: processSigner
+  Description_EN: The list of process signers in an endpoint or container
+  DL_Type: dynamic
+
+- Name: processSignerFlagsAdhoc
+  Description_EN: The list of process signature adhoc flags
+  DL_Type: dynamic
+
+- Name: processSignerFlagsLibValid
+  Description_EN: The list of process signature library validation flags
+  DL_Type: dynamic
+
+- Name: processSignerFlagsRuntime
+  Description_EN: The list of process signature runtime flags
+  DL_Type: dynamic
+
+- Name: processSignerValid
+  Description_EN: The validity of the process signer
+  DL_Type: dynamic
+
+- Name: processStackTrace
+  Description_EN: The process stack trace of the telemetry event
+  DL_Type: string
+
+- Name: processSubTrueType
+  Description_EN: The true file subtype of the process
+  DL_Type: int
+
+- Name: processTrueType
+  Description_EN: The true file type of the process
+  DL_Type: int
+
+- Name: processUser
+  Description_EN: The user name of the process or the file creator
+  DL_Type: string
+
+- Name: processUserDomain
+  Description_EN: The owner domain of the subject process image
+  DL_Type: string
+
+- Name: processUserGroupId
+  Description_EN: The process user group ID or file creator
+  DL_Type: string
+
+- Name: processUserGroupName
+  Description_EN: The process user group name or file creator
+  DL_Type: string
+
+- Name: processUserGroupSids
+  Description_EN: The user group SIDs of the process
+  DL_Type: dynamic
+
+- Name: processUserId
+  Description_EN: The process user ID or file creator
+  DL_Type: string
+
+- Name: processVersionInfoOriginalFileName
+  Description_EN: The original file name from the version information of the process
+    image
+  DL_Type: string
+
+- Name: productCode
+  Description_EN: The internal product code of the identity provider (aad=Microsoft
+    Entra ID, opa=Microsoft Active Directory)
+  DL_Type: string
+
+- Name: profile
+  Description_EN: The name of the triggered Threat Protection template or Data Loss
+    Prevention profile triggered
+  DL_Type: string
+
+- Name: proto
+  Description_EN: The exploited layer network protocol
+  DL_Type: string
+
+- Name: protoFlag
+  Description_EN: The data flags
+  DL_Type: string
+
+- Name: providerGUID
+  Description_EN: The GUID of the Windows event provider
+  DL_Type: string
+
+- Name: providerName
+  Description_EN: The name of the Windows event provider
+  DL_Type: string
+
+- Name: proxy
+  Description_EN: The proxy address
+  DL_Type: string
+
+- Name: pTags
+  Description_EN: The event tagging system
+  DL_Type: string
+
+- Name: publicSpt
+  Description_EN: The public port of the endpoint making the request
+  DL_Type: int
+
+- Name: publicSrc
+  Description_EN: The public ip of the endpoint making the request
+  DL_Type: string
+
+- Name: pver
+  Description_EN: The product version
+  DL_Type: string
+
+- Name: quarantineFileId
+  Description_EN: The unique identifier of the quarantined object
+  DL_Type: string
+
+- Name: quarantineFileName
+  Description_EN: The file path of the quarantined object
+  DL_Type: string
+
+- Name: quarantineFilePath
+  Description_EN: The file path of the quarantined object
+  DL_Type: string
+
+- Name: quarantineFileSha256
+  Description_EN: The SHA-256 of the quarantined object
+  DL_Type: string
+
+- Name: quarantineType
+  Description_EN: The descriptive name for the quarantine area
+  DL_Type: string
+
+- Name: rating
+  Description_EN: The credibility level
+  DL_Type: string
+
+- Name: rawDataSize
+  Description_EN: The size of the Windows event log
+  DL_Type: long
+
+- Name: rawDataStr
+  Description_EN: The raw data string that contains additional information
+  DL_Type: string
+
+- Name: rawDstIp
+  Description_EN: The destination IP without replacement
+  DL_Type: string
+
+- Name: rawDstPort
+  Description_EN: The destination port number without replacement
+  DL_Type: int
+
+- Name: rawSrcIp
+  Description_EN: The source IP without replacement
+  DL_Type: string
+
+- Name: rawSrcPort
+  Description_EN: The source port number without replacement
+  DL_Type: int
+
+- Name: readOnly
+  Description_EN: Whether the operation is read-only
+  DL_Type: bool
+
+- Name: recipientAccountId
+  Description_EN: The Account ID that received the event
+  DL_Type: string
+
+- Name: recordType
+  Description_EN: The operation type
+  DL_Type: int
+
+- Name: regionCode
+  Description_EN: The network interface AWS or Azure Region
+  DL_Type: string
+
+- Name: regionId
+  Description_EN: The cloud provider region ID
+  DL_Type: string
+
+- Name: remarks
+  Description_EN: Email explanation through smtp explain.
+  DL_Type: string
+
+- Name: reportGUID
+  Description_EN: The GUID for Workbench to request report page data
+  DL_Type: string
+
+- Name: reqAppVersion
+  Description_EN: The client application version number
+  DL_Type: string
+
+- Name: reqDataSize
+  Description_EN: The data volume transmitted over the transport layer by the client
+    (in bytes)
+  DL_Type: long
+
+- Name: reqScannedBytes
+  Description_EN: The data volume transmitted by the client (in bytes)
+  DL_Type: long
+
+- Name: request
+  Description_EN: The destination URL that the user is accessing
+  DL_Type: string
+
+- Name: requestAccess
+  Description_EN: The access action of the request
+  DL_Type: string
+
+- Name: requestAllowBlobPublicAccess
+  Description_EN: Whether public access is allowed for blobs in response to a request
+  DL_Type: bool
+
+- Name: requestAllowSharedKeyAccess
+  Description_EN: Whether shared key access is allowed in response to a request
+  DL_Type: bool
+
+- Name: requestBase
+  Description_EN: The domain of the request URL
+  DL_Type: string
+
+- Name: requestClientApplication
+  Description_EN: The protocol user agent information
+  DL_Type: string
+
+- Name: requestCrossTenantReplication
+  Description_EN: Whether cross-tenant data replication is allowed in response to
+    a request
+  DL_Type: bool
+
+- Name: requestDate
+  Description_EN: The HTTP date header
+  DL_Type: string
+
+- Name: requestDecision
+  Description_EN: Whether the request was allowed or denied by the authorization system
+  DL_Type: string
+
+- Name: requestDirection
+  Description_EN: The traffic direction of the request
+  DL_Type: string
+
+- Name: requestEnabled
+  Description_EN: Whether the request is enabled
+  DL_Type: bool
+
+- Name: requestHeaders
+  Description_EN: All HTTP headers without sensitive information
+  DL_Type: string
+
+- Name: requestID
+  Description_EN: Value that identifies the request (The service being called generates
+    this value)
+  DL_Type: string
+
+- Name: requestMethod
+  Description_EN: The network protocol request method
+  DL_Type: string
+
+- Name: requestMimeType
+  Description_EN: The type of request content
+  DL_Type: string
+
+- Name: requestParameters
+  Description_EN: The parameters, if any, that were sent with the request (Parameters
+    are documented in the API reference docs for the appropriate AWS service)
+  DL_Type: dynamic
+
+- Name: requestPermissionsActions
+  Description_EN: The list of request permissions actions
+  DL_Type: dynamic
+
+- Name: requestPrincipalId
+  Description_EN: The request principal GUID
+  DL_Type: string
+
+- Name: requestPrincipalType
+  Description_EN: The request principal type
+  DL_Type: string
+
+- Name: requestPublicNetworkAccess
+  Description_EN: The resource public network access setting of the request
+  DL_Type: string
+
+- Name: requestRoleDefinitionId
+  Description_EN: The cloud resource ID of the request
+  DL_Type: string
+
+- Name: requests
+  Description_EN: The URLs of the request
+  DL_Type: dynamic
+
+- Name: requestSize
+  Description_EN: The request length
+  DL_Type: long
+
+- Name: requestSourceAddressPrefix
+  Description_EN: The source IP prefix of the request
+  DL_Type: string
+
+- Name: resolvedUrlGroup
+  Description_EN: The IP address FQDN network group
+  DL_Type: string
+
+- Name: resolvedUrlIp
+  Description_EN: The IP address of the FQDN
+  DL_Type: string
+
+- Name: resolvedUrlPort
+  Description_EN: The HTTP server port
+  DL_Type: int
+
+- Name: resourceCategory
+  Description_EN: The category of the object
+  DL_Type: string
+
+- Name: resourceName
+  Description_EN: The specific name of the object
+  DL_Type: string
+
+- Name: resourceNamespace
+  Description_EN: The namespace where the referenced resource exists
+  DL_Type: string
+
+- Name: resources
+  Description_EN: List of resources accessed in the event
+  DL_Type: dynamic
+
+- Name: respAppVersion
+  Description_EN: The server application version number
+  DL_Type: string
+
+- Name: respArchFiles
+  Description_EN: The file information extracted from files detected in response direction
+  DL_Type: dynamic
+
+- Name: respCode
+  Description_EN: The network protocol response code
+  DL_Type: string
+
+- Name: respDataSize
+  Description_EN: The data volume transmitted over the transport layer by the server
+    (in bytes)
+  DL_Type: long
+
+- Name: respDate
+  Description_EN: The HTTP response date header
+  DL_Type: string
+
+- Name: respFileHash
+  Description_EN: The SHA-1 of the file detected in the response direction
+  DL_Type: string
+
+- Name: respFileHashSha256
+  Description_EN: The SHA-256 of the file detected in the response direction
+  DL_Type: string
+
+- Name: respFileType
+  Description_EN: The file type detected in the response direction
+  DL_Type: string
+
+- Name: respHeaders
+  Description_EN: All HTTP response headers without sensitive information
+  DL_Type: string
+
+- Name: respMethod
+  Description_EN: The response method
+  DL_Type: string
+
+- Name: responseAccess
+  Description_EN: The access action of the response
+  DL_Type: string
+
+- Name: responseAllowBlobPublicAccess
+  Description_EN: Whether public access is allowed for blobs in response to a request
+  DL_Type: bool
+
+- Name: responseAllowSharedKeyAccess
+  Description_EN: Whether shared key access is allowed in response to a request
+  DL_Type: bool
+
+- Name: responseDirection
+  Description_EN: The traffic direction of the response
+  DL_Type: string
+
+- Name: responseElements
+  Description_EN: Response elements for actions that made changes (create, update,
+    or delete actions)
+  DL_Type: dynamic
+
+- Name: responsePublicNetworkAccess
+  Description_EN: The resource public network access setting in response to a request
+  DL_Type: string
+
+- Name: responseSize
+  Description_EN: The response length
+  DL_Type: long
+
+- Name: responseSourceAddressPrefix
+  Description_EN: The source IP prefix of the response
+  DL_Type: string
+
+- Name: respScannedBytes
+  Description_EN: The data volume transmitted by the server (in bytes)
+  DL_Type: long
+
+- Name: result
+  Description_EN: The event result
+  DL_Type: string
+
+- Name: resultReason
+  Description_EN: The cause of event failure or timeout
+  DL_Type: string
+
+- Name: rewrittenUrl
+  Description_EN: The rewritten URL
+  DL_Type: string
+
+- Name: riskConfidenceLevel
+  Description_EN: The risk confidence level
+  DL_Type: string
+
+- Name: riskEventTypes
+  Description_EN: The associated sign-in risk event types
+  DL_Type: dynamic
+
+- Name: riskLevel
+  Description_EN: The risk level
+  DL_Type: string
+
+- Name: rozRating
+  Description_EN: The VA overall rating
+  DL_Type: string
+
+- Name: rt
+  Description_EN: The Unix time of the log generation
+  DL_Type: string
+
+- Name: rtDate
+  Description_EN: The date of the log generation
+  DL_Type: string
+
+- Name: rtHour
+  Description_EN: The hour of the log generation
+  DL_Type: int
+
+- Name: rtWeekDay
+  Description_EN: The weekday of the log generation
+  DL_Type: string
+
+- Name: ruleId
+  Description_EN: The rule ID
+  DL_Type: int
+
+- Name: ruleId64
+  Description_EN: The IPS rule ID
+  DL_Type: long
+
+- Name: ruleIdStr
+  Description_EN: The rule ID
+  DL_Type: string
+
+- Name: ruleName
+  Description_EN: The name of the rule that triggered the event
+  DL_Type: string
+
+- Name: ruleSetId
+  Description_EN: The rule set ID
+  DL_Type: string
+
+- Name: ruleSetName
+  Description_EN: The rule set name
+  DL_Type: string
+
+- Name: ruleType
+  Description_EN: The rule type which is applied to the traffic
+  DL_Type: string
+
+- Name: ruleUuid
+  Description_EN: The risk assessment and control design that is defined by Zero Trust
+    Secure Access risk control rules
+  DL_Type: string
+
+- Name: ruleVer
+  Description_EN: The rule version
+  DL_Type: string
+
+- Name: samUser
+  Description_EN: The user name of the SAM account
+  DL_Type: string
+
+- Name: sandboxCompletedTime
+  Description_EN: The timestamp when Virtual Analyzer completed the sample analysis
+  DL_Type: datetime
+
+- Name: sandboxSubmittedTime
+  Description_EN: The timestamp when the sample was submitted to Virtual Analyzer
+  DL_Type: datetime
+
+- Name: sAttackPhase
+  Description_EN: The category of the second Attack Phase
+  DL_Type: string
+
+- Name: scanTs
+  Description_EN: The time the email was scanned
+  DL_Type: datetime
+
+- Name: scanType
+  Description_EN: Manual or real-time scan
+  DL_Type: string
+
+- Name: schemaVersion
+  Description_EN: The schema version
+  DL_Type: string
+
+- Name: score
+  Description_EN: The Web Reputation Services URL rating
+  DL_Type: int
+
+- Name: secondAct
+  Description_EN: The second scan action
+  DL_Type: string
+
+- Name: secondActResult
+  Description_EN: The result of the second scan action
+  DL_Type: string
+
+- Name: sender
+  Description_EN: The roaming users or the gateway where the web traffic passed
+  DL_Type: string
+
+- Name: senderGUID
+  Description_EN: The sender GUID
+  DL_Type: string
+
+- Name: senderIp
+  Description_EN: The IP address of the device sending the log
+  DL_Type: dynamic
+
+- Name: serverGroup
+  Description_EN: The server IP network group
+  DL_Type: string
+
+- Name: serverHost
+  Description_EN: The server IP host name
+  DL_Type: string
+
+- Name: serverIp
+  Description_EN: The server IP address
+  DL_Type: string
+
+- Name: serverMAC
+  Description_EN: The server MAC address
+  DL_Type: string
+
+- Name: serverPort
+  Description_EN: The server port number
+  DL_Type: int
+
+- Name: serverProtocol
+  Description_EN: The version of the HTTP protocol between the Service Gateway and
+    server/website
+  DL_Type: string
+
+- Name: serverRespTime
+  Description_EN: The time the server took to respond to the request, in milliseconds
+  DL_Type: long
+
+- Name: serverTls
+  Description_EN: The TLS version between the client and server
+  DL_Type: string
+
+- Name: service
+  Description_EN: The Microsoft 365 service where the activity occurred
+  DL_Type: string
+
+- Name: serviceEventDetails
+  Description_EN: The service event (including what triggered the event and the result)
+  DL_Type: dynamic
+
+- Name: servicePrincipalId
+  Description_EN: The service principal ID
+  DL_Type: string
+
+- Name: servicePrincipalName
+  Description_EN: The service principal name
+  DL_Type: string
+
+- Name: sessionElapsedTime
+  Description_EN: The elapsed time of the session (in seconds)
+  DL_Type: long
+
+- Name: sessionEnd
+  Description_EN: The session end time (in seconds)
+  DL_Type: long
+
+- Name: sessionEndReason
+  Description_EN: The reason why a session was terminated
+  DL_Type: string
+
+- Name: sessionId
+  Description_EN: The session ID
+  DL_Type: int
+
+- Name: sessionStart
+  Description_EN: The session start name (in seconds)
+  DL_Type: long
+
+- Name: severity
+  Description_EN: The severity of the event
+  DL_Type: int
+
+- Name: sharedEventID
+  Description_EN: The AWS CloudTrail GUID (from the same AWS action sent to different
+    AWS accounts) events (From the same AWS action that is sent to different AWS accounts)
+  DL_Type: string
+
+- Name: shost
+  Description_EN: The source hostname
+  DL_Type: string
+
+- Name: signer
+  Description_EN: The signer of the file
+  DL_Type: string
+
+- Name: signInCountries
+  Description_EN: The countries from which a user signed in
+  DL_Type: dynamic
+
+- Name: signInEventTypes
+  Description_EN: The sign-in event type
+  DL_Type: dynamic
+
+- Name: signInIdentifierType
+  Description_EN: The sign-in ID type
+  DL_Type: string
+
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  DL_Type: bool
+
+- Name: smac
+  Description_EN: The source MAC address
+  DL_Type: string
+
+- Name: smbSharedName
+  Description_EN: The shared folder name for the server that contains the files to
+    be opened
+  DL_Type: string
+
+- Name: sOSClass
+  Description_EN: The source device OS class
+  DL_Type: string
+
+- Name: sOSName
+  Description_EN: The source OS
+  DL_Type: string
+
+- Name: sOSVendor
+  Description_EN: The source device OS vendor
+  DL_Type: string
+
+- Name: sourceIPAddress
+  Description_EN: IP address the request was made from (For actions that originate
+    from the service console, the address reported is for the underlying customer
+    resource, not the console web server. For services in AWS, only the DNS name is
+    displayed.)
+  DL_Type: string
+
+- Name: sourceType
+  Description_EN: The source type
+  DL_Type: string
+
+- Name: sproc
+  Description_EN: The OSSEC program name
+  DL_Type: string
+
+- Name: spt
+  Description_EN: The virtual port of the source assigned to the Secure Access Module
+    (srcport)
+  DL_Type: int
+
+- Name: src
+  Description_EN: The source IP address (srcaddr)
+  DL_Type: dynamic
+
+- Name: srcCity
+  Description_EN: The city name of the source IP
+  DL_Type: dynamic
+
+- Name: srcCountry
+  Description_EN: The country name of the source IP
+  DL_Type: dynamic
+
+- Name: srcEndpointGuid
+  Description_EN: The source endpoint GUID on which the event was detected
+  DL_Type: string
+
+- Name: srcEndpointHostName
+  Description_EN: The hostname of the source device on which the event was detected
+  DL_Type: string
+
+- Name: srcEquipmentId
+  Description_EN: The source IMEI
+  DL_Type: string
+
+- Name: srcFamily
+  Description_EN: The source device family
+  DL_Type: string
+
+- Name: srcFileCreation
+  Description_EN: The time when the source file was created (in milliseconds)
+  DL_Type: datetime
+
+- Name: srcFileCurrentOwnerName
+  Description_EN: The current owner name of the source file
+  DL_Type: string
+
+- Name: srcFileCurrentOwnerSid
+  Description_EN: The current security identifier owner of the source file
+  DL_Type: string
+
+- Name: srcFileDaclString
+  Description_EN: The discretionary access control list of the source file
+  DL_Type: string
+
+- Name: srcFileGroupName
+  Description_EN: The source file user group name
+  DL_Type: string
+
+- Name: srcFileGroupSid
+  Description_EN: The security identifier of the source file group
+  DL_Type: string
+
+- Name: srcFileHash
+  Description_EN: The cryptographic hash of the source process image or file, with
+    the specific hash algorithm to be determined.
+  DL_Type: string
+
+- Name: srcFileHashId
+  Description_EN: The source file hash ID
+  DL_Type: string
+
+- Name: srcFileHashMd5
+  Description_EN: The md5 hash of source file
+  DL_Type: string
+
+- Name: srcFileHashSha1
+  Description_EN: The SHA-1 of the source file
+  DL_Type: string
+
+- Name: srcFileHashSha256
+  Description_EN: The SHA-256 of the source file
+  DL_Type: string
+
+- Name: srcFileIsRemoteAccess
+  Description_EN: The remote access of the source file
+  DL_Type: bool
+
+- Name: srcFileModifiedTime
+  Description_EN: The time when the source file was modified (in milliseconds)
+  DL_Type: datetime
+
+- Name: srcFileOwnerName
+  Description_EN: The source file owner name
+  DL_Type: string
+
+- Name: srcFileOwnerSid
+  Description_EN: The security identifier of the source file owner
+  DL_Type: string
+
+- Name: srcFilePath
+  Description_EN: The file path which is moved or copied to another path
+  DL_Type: string
+
+- Name: srcFileSaclString
+  Description_EN: The system access control list of the source file
+  DL_Type: string
+
+- Name: srcFileSize
+  Description_EN: The file size of the source file
+  DL_Type: long
+
+- Name: srcFirstSeen
+  Description_EN: The time when the source file first appeared (in milliseconds)
+  DL_Type: datetime
+
+- Name: srcGroup
+  Description_EN: The group named defined by the source administrator
+  DL_Type: string
+
+- Name: srcHashId
+  Description_EN: The source hash ID
+  DL_Type: string
+
+- Name: srcIpType
+  Description_EN: The source IP address type
+  DL_Type: string
+
+- Name: srcIsp
+  Description_EN: The ISP name of the source IP
+  DL_Type: dynamic
+
+- Name: srcLastSeen
+  Description_EN: The time when the source file was last seen (in milliseconds)
+  DL_Type: datetime
+
+- Name: srcLocation
+  Description_EN: The source country
+  DL_Type: string
+
+- Name: srcServiceType
+  Description_EN: Type of source file
+  DL_Type: string
+
+- Name: srcSigner
+  Description_EN: The signer of the source file
+  DL_Type: dynamic
+
+- Name: srcSignerFlagsAdhoc
+  Description_EN: The list of source file signature adhoc flags
+  DL_Type: dynamic
+
+- Name: srcSignerFlagsLibValid
+  Description_EN: The list of source file signature library validation flags
+  DL_Type: dynamic
+
+- Name: srcSignerFlagsRuntime
+  Description_EN: The list of source file signature runtime flags
+  DL_Type: dynamic
+
+- Name: srcSignerValid
+  Description_EN: The validity of the source file signer
+  DL_Type: dynamic
+
+- Name: srcSubscriberDirNum
+  Description_EN: The source MSISDN
+  DL_Type: string
+
+- Name: srcSubscriberId
+  Description_EN: The source IMSI
+  DL_Type: string
+
+- Name: srcSubTrueType
+  Description_EN: The true file subtype of the source file
+  DL_Type: int
+
+- Name: srcTrueType
+  Description_EN: The true file type of the source file
+  DL_Type: int
+
+- Name: srcType
+  Description_EN: The source device type
+  DL_Type: string
+
+- Name: srcUri
+  Description_EN: Path of source file
+  DL_Type: string
+
+- Name: srcUser
+  Description_EN: The owner name of the source process or the login user name
+  DL_Type: string
+
+- Name: srcZone
+  Description_EN: The network zone defined by the source administrator
+  DL_Type: string
+
+- Name: sshHassh
+  Description_EN: The SSH client application fingerprint
+  DL_Type: string
+
+- Name: sshHasshServer
+  Description_EN: The SSH server application fingerprint
+  DL_Type: string
+
+- Name: sslCertCommonName
+  Description_EN: The certificate common name
+  DL_Type: string
+
+- Name: sslCertFingerprint
+  Description_EN: The certificate fingerprint
+  DL_Type: string
+
+- Name: sslCertIssuer
+  Description_EN: The issuer of the certificate
+  DL_Type: string
+
+- Name: sslCertIssuerCommonName
+  Description_EN: The issuer common name
+  DL_Type: string
+
+- Name: sslCertIssuerOrgName
+  Description_EN: The issuer organization name
+  DL_Type: string
+
+- Name: sslCertOrgName
+  Description_EN: The subject organization name
+  DL_Type: string
+
+- Name: sslCertSANs
+  Description_EN: The Subject Alternative Name of the certificate
+  DL_Type: dynamic
+
+- Name: sslCertSerialNumber
+  Description_EN: The certificate serial number
+  DL_Type: string
+
+- Name: sslCertValidFrom
+  Description_EN: The certificate validity start time
+  DL_Type: string
+
+- Name: sslCertValidUntil
+  Description_EN: The certificate validity end time
+  DL_Type: string
+
+- Name: start
+  Description_EN: The time when the first data packet was received (in Unix seconds)
+  DL_Type: datetime
+
+- Name: startTime
+  Description_EN: The time when the first event was received (in Unix milliseconds)
+  DL_Type: datetime
+
+- Name: status
+  Description_EN: The network analysis flow session status
+  DL_Type: string
+
+- Name: statusDetail
+  Description_EN: The additional information about sign-in status
+  DL_Type: string
+
+- Name: statusReason
+  Description_EN: The sign-in status
+  DL_Type: string
+
+- Name: subLocationId
+  Description_EN: The sublocation ID
+  DL_Type: string
+
+- Name: subLocationType
+  Description_EN: The sublocation type
+  DL_Type: string
+
+- Name: subnetId
+  Description_EN: The subnet ID of the virtual machine that made the request
+  DL_Type: string
+
+- Name: subRuleId
+  Description_EN: ID of a subordinate rule
+  DL_Type: string
+
+- Name: subRuleName
+  Description_EN: The subrule name
+  DL_Type: string
+
+- Name: subSystem
+  Description_EN: The sub system information
+  DL_Type: string
+
+- Name: suid
+  Description_EN: The user name or IP address (IPv4)
+  DL_Type: string
+
+- Name: suser
+  Description_EN: The email sender
+  DL_Type: dynamic
+
+- Name: sUser1
+  Description_EN: The latest sign-in user of the source
+  DL_Type: string
+
+- Name: suspiciousObject
+  Description_EN: The matched suspicious object
+  DL_Type: string
+
+- Name: suspiciousObjectType
+  Description_EN: The matched suspicious object type
+  DL_Type: string
+
+- Name: syncType
+  Description_EN: The vulnerability event sync type
+  DL_Type: string
+
+- Name: systemEventAttr
+  Description_EN: The attributes of the system event (if the subject is a system event)
+  DL_Type: string
+
+- Name: tacticId
+  Description_EN: The list of MITRE tactic IDs
+  DL_Type: dynamic
+
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on the
+    alert filter
+  DL_Type: dynamic
+
+- Name: target
+  Description_EN: The object accessed by a user or application
+  DL_Type: string
+
+- Name: targetId
+  Description_EN: The target ID
+  DL_Type: string
+
+- Name: targetName
+  Description_EN: The target name
+  DL_Type: string
+
+- Name: targetResourceDisplayName
+  Description_EN: The target resource display name
+  DL_Type: string
+
+- Name: targetResourceId
+  Description_EN: The target resource ID
+  DL_Type: string
+
+- Name: targetResources
+  Description_EN: The targeted resource of the event
+  DL_Type: dynamic
+
+- Name: targetShare
+  Description_EN: 'For HTTPS protocol: Subject State or Province Name; For SMB protocol:
+    Shared folder'
+  DL_Type: string
+
+- Name: targetType
+  Description_EN: The type of object that was accessed or modified
+  DL_Type: string
+
+- Name: tcpFlags
+  Description_EN: The bitmask value of the FIN/SYN/RST/SYN-ACK TCP flags
+  DL_Type: int
+
+- Name: techniqueId
+  Description_EN: The Technique ID detected by the product agent based on a detection
+    rule
+  DL_Type: dynamic
+
+- Name: tenantId
+  Description_EN: The Microsoft Entra ID Tenant ID of the organization
+  DL_Type: string
+
+- Name: threatName
+  Description_EN: The threat name
+  DL_Type: string
+
+- Name: threatNames
+  Description_EN: The associated threats
+  DL_Type: dynamic
+
+- Name: threatType
+  Description_EN: The log threat type
+  DL_Type: string
+
+- Name: timezone
+  Description_EN: The host time zone
+  DL_Type: string
+
+- Name: tlsDetails
+  Description_EN: The TLS details
+  DL_Type: dynamic
+
+- Name: tlsJA3Fingerprint
+  Description_EN: The JA3 fingerprint
+  DL_Type: string
+
+- Name: tlsJA3SFingerprint
+  Description_EN: The raw JA3S
+  DL_Type: string
+
+- Name: tlsSelectedCipher
+  Description_EN: The selected cipher of the TLS protocol
+  DL_Type: string
+
+- Name: trafficPath
+  Description_EN: The egress traffic path number
+  DL_Type: int
+
+- Name: trafficType
+  Description_EN: The Zero Trust Internet Access gateway service mode
+  DL_Type: string
+
+- Name: trigger
+  Description_EN: The action trigger
+  DL_Type: string
+
+- Name: triggerInfo
+  Description_EN: The trigger information
+  DL_Type: dynamic
+
+- Name: triggerReason
+  Description_EN: The cause of the triggered action
+  DL_Type: string
+
+- Name: trustType
+  Description_EN: The join type of the sign-in device
+  DL_Type: string
+
+- Name: urlCat
+  Description_EN: The requested URL category
+  DL_Type: dynamic
+
+- Name: userAgent
+  Description_EN: The user agent or the agent through which the request was made
+  DL_Type: string
+
+- Name: userDefinedFields
+  Description_EN: The user-defined field for custom detection rules
+  DL_Type: dynamic
+
+- Name: userDepartment
+  Description_EN: The user department request method
+  DL_Type: string
+
+- Name: userDisplayName
+  Description_EN: The display name of the related user account asset
+  DL_Type: string
+
+- Name: userDomain
+  Description_EN: Active directory domain, domain of username for logging in TMAS
+    adminportal adminportal
+  DL_Type: dynamic
+
+- Name: userDomains
+  Description_EN: The telemetry events match the Security Analytics Engine filter,
+    and userDomains stores the userDomains value of the original events
+  DL_Type: dynamic
+
+- Name: userId
+  Description_EN: The user ID
+  DL_Type: string
+
+- Name: userIdentity
+  Description_EN: The information about a user who made a request
+  DL_Type: dynamic
+
+- Name: userSessionId
+  Description_EN: The user session ID
+  DL_Type: string
+
+- Name: userType
+  Description_EN: The tenant user type
+  DL_Type: string
+
+- Name: uuids
+  Description_EN: The UUIDs of detection records
+  DL_Type: dynamic
+
+- Name: vendor
+  Description_EN: The device vendor
+  DL_Type: string
+
+- Name: vendorDeviceId
+  Description_EN: The device ID
+  DL_Type: string
+
+- Name: vendorLogId
+  Description_EN: The vendor event log ID
+  DL_Type: string
+
+- Name: vendorParsed
+  Description_EN: The normalized event log (JSON format)
+  DL_Type: dynamic
+
+- Name: vendorRaw
+  Description_EN: The original event log string
+  DL_Type: string
+
+- Name: vLANId
+  Description_EN: The virtual LAN ID
+  DL_Type: int
+
+- Name: vpcEndpointId
+  Description_EN: VPC endpoint in which requests were made from a VPC to another AWS
+    service (Such as Amazon S3)
+  DL_Type: string
+
+- Name: vpcFlowLogsVersion
+  Description_EN: The VPC Flow Logs version (version)
+  DL_Type: int
+
+- Name: vpcId
+  Description_EN: The virtual private cloud that contains the cloud asset
+  DL_Type: string
+
+- Name: vrmDataSource
+  Description_EN: The data source defined by the upstream vendor
+  DL_Type: string
+
+- Name: vrmLogSourceFrom
+  Description_EN: The log source origin from upstream vendor, used as risk event identifier
+    in CREM Portal
+  DL_Type: string
+
+- Name: vrmSourceType
+  Description_EN: The risk indicator upstream vendor
+  DL_Type: string
+
+- Name: vsysName
+  Description_EN: The virtual system of the session
+  DL_Type: string
+
+- Name: vulnerabilities
+  Description_EN: The list of vulnerability detections for the vulnerability event
+  DL_Type: dynamic
+
+- Name: wasEntity
+  Description_EN: The entity before change/modification
+  DL_Type: string
+
+- Name: winEventId
+  Description_EN: Event ID of Windows event
+  DL_Type: int

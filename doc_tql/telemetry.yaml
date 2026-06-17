@@ -1,0 +1,1235 @@
+- Name: additionalInfo
+  Description_EN: The filter rule info
+  DL_Type: string
+
+- Name: app
+  Description_EN: The layer-7 network protocol being exploited protocol
+  DL_Type: string
+
+- Name: authId
+  Description_EN: The authorization ID
+  DL_Type: string
+
+- Name: azId
+  Description_EN: The Avaliability Zone ID of the virtual machine that made the request
+  DL_Type: string
+
+- Name: channel
+  Description_EN: The channel through which the demanded WinEvent is delivered
+  DL_Type: string
+
+- Name: cloudIdentityAccountId
+  Description_EN: The Cloud Identity account ID used for authorization
+  DL_Type: string
+
+- Name: cloudIdentityId
+  Description_EN: The Cloud Identity ID used for authorization
+  DL_Type: string
+
+- Name: cloudIdentityName
+  Description_EN: The Cloud Identity name used for authorization
+  DL_Type: string
+
+- Name: cloudProvider
+  Description_EN: The service provider of the cloud asset
+  DL_Type: string
+
+- Name: cloudServiceApiName
+  Description_EN: The cloud service API
+  DL_Type: string
+
+- Name: cloudServiceName
+  Description_EN: The cloud service
+  DL_Type: string
+
+- Name: codeIntegrityOptionEnabled
+  Description_EN: Whether the system enforced signed kernel loading according to DSE(driver
+    signature enforcement)
+  DL_Type: bool
+
+- Name: codeIntegrityOptionTestsign
+  Description_EN: Whether the system bypassed DSE(driver signature enforcement) checks
+    and permitted loading of test-signed drivers
+  DL_Type: bool
+
+- Name: correlationData
+  Description_EN: The data for correlation
+  DL_Type: dynamic
+
+- Name: customAssetTags
+  Description_EN: The list of custom asset tags
+  DL_Type: dynamic
+
+- Name: deviceType
+  Description_EN: The disk drive type
+  DL_Type: int
+
+- Name: dpt
+  Description_EN: The service destination port of the private application server (dstport)
+  DL_Type: int
+
+- Name: dst
+  Description_EN: The destination IP address (dstaddr)
+  DL_Type: dynamic
+
+- Name: endpointGuid
+  Description_EN: Host GUID of the endpoint on which the event was detected
+  DL_Type: string
+
+- Name: endpointHostName
+  Description_EN: The host name of the endpoint on which the event was detected
+  DL_Type: string
+
+- Name: endpointIp
+  Description_EN: The IP address of the endpoint on which the event was detected
+  DL_Type: dynamic
+
+- Name: endpointMacAddress
+  Description_EN: The MAC address of endpoint
+  DL_Type: dynamic
+
+- Name: eventDataAccessList
+  Description_EN: The list of requested access rights
+  DL_Type: string
+
+- Name: eventDataAccessMask
+  Description_EN: The hexadecimal value of the requested or used permissions during
+    an access attempt
+  DL_Type: string
+
+- Name: eventDataActionName
+  Description_EN: The action performed
+  DL_Type: string
+
+- Name: eventDataAuthenticationPackageName
+  Description_EN: The authentication package name of the Windows event data
+  DL_Type: string
+
+- Name: eventDataConsumer
+  Description_EN: The recipient of the reported event
+  DL_Type: string
+
+- Name: eventDataElevatedToken
+  Description_EN: Whether the session is elevated and has administrator privileges
+  DL_Type: string
+
+- Name: eventDataFullyQualifiedAssemblyName
+  Description_EN: The fully qualified .NET assembly name
+  DL_Type: string
+
+- Name: eventDataImpersonationLevel
+  Description_EN: The sign-in session impersonation level
+  DL_Type: string
+
+- Name: eventDataIpAddress
+  Description_EN: The IP address for Windows event 4624 which is "An account was successfully
+    logged on"
+  DL_Type: string
+
+- Name: eventDataJobOwner
+  Description_EN: The name of the account that initiated the event
+  DL_Type: string
+
+- Name: eventDataLogonProcessName
+  Description_EN: The name of the Windows event sign in process name
+  DL_Type: string
+
+- Name: eventDataLogonType
+  Description_EN: The logon type for Windows event 4624 which is "An account was successfully
+    logged on"
+  DL_Type: string
+
+- Name: eventDataModuleILPath
+  Description_EN: The CIL image path of the module or the dynamic module name
+  DL_Type: string
+
+- Name: eventDataObjectName
+  Description_EN: The identifying information about the object for which access was
+    requested
+  DL_Type: string
+
+- Name: eventDataObjectType
+  Description_EN: The object type
+  DL_Type: string
+
+- Name: eventDataOperation
+  Description_EN: Windows event 11
+  DL_Type: string
+
+- Name: eventDataPath
+  Description_EN: The path of the Windows event data
+  DL_Type: string
+
+- Name: eventDataProcessPath
+  Description_EN: The process path that initiated the event
+  DL_Type: string
+
+- Name: eventDataProviderName
+  Description_EN: The name of the Windows event data provider
+  DL_Type: string
+
+- Name: eventDataProviderPath
+  Description_EN: The file path of the Windows event data provider
+  DL_Type: string
+
+- Name: eventDataScriptBlockText
+  Description_EN: Windows Event 4104 (the execution of a remote command using PowerShell)
+  DL_Type: string
+
+- Name: eventDataServiceFileName
+  Description_EN: The full file path of the service executable file
+  DL_Type: string
+
+- Name: eventDataServiceName
+  Description_EN: The service name
+  DL_Type: string
+
+- Name: eventDataStatus
+  Description_EN: The Windows event data status
+  DL_Type: string
+
+- Name: eventDataSubjectUserName
+  Description_EN: The account name
+  DL_Type: string
+
+- Name: eventDataSubStatus
+  Description_EN: The Windows event data sub-status
+  DL_Type: string
+
+- Name: eventDataTargetDomainName
+  Description_EN: The target sign-in account domain or computer name
+  DL_Type: string
+
+- Name: eventDataTargetName
+  Description_EN: The service, application, or network resource name
+  DL_Type: string
+
+- Name: eventDataTargetUserName
+  Description_EN: The user name of the Windows event data target
+  DL_Type: string
+
+- Name: eventDataTaskName
+  Description_EN: The task name logged by the Windows event
+  DL_Type: string
+
+- Name: eventDataTicketEncryptionType
+  Description_EN: The cryptographic suite used for the Kerberos TGS
+  DL_Type: string
+
+- Name: eventDataTicketOptions
+  Description_EN: The authentication request Kerberos ticket behavior and permissions
+    flags
+  DL_Type: string
+
+- Name: eventDataUserContext
+  Description_EN: The user context of the Windows event data
+  DL_Type: string
+
+- Name: eventDataWorkstationName
+  Description_EN: The name of the computer used in the sign-in attempt
+  DL_Type: string
+
+- Name: eventHashId
+  Description_EN: The event hash ID
+  DL_Type: string
+
+- Name: eventId
+  Description_EN: The event ID from the logs of each product
+  DL_Type: string
+
+- Name: eventMessage
+  Description_EN: The event message
+  DL_Type: string
+
+- Name: eventSourceType
+  Description_EN: The event source type
+  DL_Type: int
+
+- Name: eventSubId
+  Description_EN: The sub-event ID
+  DL_Type: string
+
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  DL_Type: datetime
+
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  DL_Type: string
+
+- Name: firstSeen
+  Description_EN: The time when the event started (in milliseconds)
+  DL_Type: datetime
+
+- Name: groupId
+  Description_EN: The group ID for the management scope filter
+  DL_Type: string
+
+- Name: hookId
+  Description_EN: The hook ID
+  DL_Type: string
+
+- Name: hostName
+  Description_EN: The computer name of the client host (The hostname from the suspicious
+    URL detected by Deep Discovery Inspector)
+  DL_Type: string
+
+- Name: httpReferer
+  Description_EN: The HTTP referrer header
+  DL_Type: string
+
+- Name: importTable
+  Description_EN: The imported table information
+  DL_Type: dynamic
+
+- Name: importTableFileName
+  Description_EN: The library file name which has imported functions
+  DL_Type: dynamic
+
+- Name: importTableFunctionName
+  Description_EN: The imported function file name
+  DL_Type: dynamic
+
+- Name: instanceAccountId
+  Description_EN: The cloud account ID of the virtual machine that made the request
+  DL_Type: string
+
+- Name: instanceId
+  Description_EN: The ID of the instance that indicates the meta-cloud or data center
+    VM
+  DL_Type: string
+
+- Name: instanceName
+  Description_EN: The name of the instance that indicates the meta-cloud or data center
+    VM
+  DL_Type: string
+
+- Name: integrityLevel
+  Description_EN: The integrity level of a process
+  DL_Type: int
+
+- Name: lastSeen
+  Description_EN: The time when the event ended (in milliseconds)
+  DL_Type: datetime
+
+- Name: logonUser
+  Description_EN: The sign-in user name
+  DL_Type: dynamic
+
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  DL_Type: datetime
+
+- Name: messageType
+  Description_EN: The message type
+  DL_Type: string
+
+- Name: metaSrcExtra
+  Description_EN: The meta for identifying the source of events
+  DL_Type: string
+
+- Name: moduleName
+  Description_EN: The module where a hook procedure was set up
+  DL_Type: string
+
+- Name: nativeDeviceCharacteristics
+  Description_EN: Additional driver device information
+  DL_Type: int
+
+- Name: nativeDeviceType
+  Description_EN: The underlying hardware type of the driver
+  DL_Type: int
+
+- Name: nativeStorageDeviceBusType
+  Description_EN: The bus type to which the device is connected
+  DL_Type: int
+
+- Name: networkInterfaceId
+  Description_EN: The network interface of the virtual machine that made the request
+  DL_Type: string
+
+- Name: objectApiHookNum
+  Description_EN: The API hook number of the object
+  DL_Type: int
+
+- Name: objectApiName
+  Description_EN: The name of the executed API
+  DL_Type: string
+
+- Name: objectApiRvInNum
+  Description_EN: The API telemetry return value
+  DL_Type: long
+
+- Name: objectAppName
+  Description_EN: Name of the app involved in the AMSI event
+  DL_Type: string
+
+- Name: objectAuthId
+  Description_EN: The object authorization ID
+  DL_Type: string
+
+- Name: objectBmData
+  Description_EN: The data of BM event
+  DL_Type: string
+
+- Name: objectCmd
+  Description_EN: The command line entry of the target process
+  DL_Type: dynamic
+
+- Name: objectContentName
+  Description_EN: The AMSI object content name
+  DL_Type: string
+
+- Name: objectCurrentFileSize
+  Description_EN: Previous size of modified object file
+  DL_Type: long
+
+- Name: objectCurrentPosixPermission
+  Description_EN: The new POSIX permission file used in file events and CHMOD events
+  DL_Type: string
+
+- Name: objectFileAttributes
+  Description_EN: The new file attributes
+  DL_Type: int
+
+- Name: objectFileAttributesHashId
+  Description_EN: The hash ID of the file attribute meta information
+  DL_Type: string
+
+- Name: objectFileCreation
+  Description_EN: The time the target file was created (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectFileCurrentAttributes
+  Description_EN: The original file attributes
+  DL_Type: int
+
+- Name: objectFileCurrentOwnerName
+  Description_EN: The current owner name of the object file
+  DL_Type: string
+
+- Name: objectFileCurrentOwnerSid
+  Description_EN: The current security identifier owner of the object file
+  DL_Type: string
+
+- Name: objectFileDaclString
+  Description_EN: The discretionary access control list of the object file
+  DL_Type: string
+
+- Name: objectFileExtendedAttribute
+  Description_EN: The extended attributes of the file
+  DL_Type: string
+
+- Name: objectFileGroupName
+  Description_EN: The object file user group name
+  DL_Type: string
+
+- Name: objectFileGroupSid
+  Description_EN: The security identifier of the object file group
+  DL_Type: string
+
+- Name: objectFileHash
+  Description_EN: The cryptographic hash of the target process image or file, with
+    the specific hash algorithm to be determined
+  DL_Type: string
+
+- Name: objectFileHashId
+  Description_EN: The object file hash ID
+  DL_Type: string
+
+- Name: objectFileHashMd5
+  Description_EN: The md5 hash of target process image or target file
+  DL_Type: string
+
+- Name: objectFileHashSha1
+  Description_EN: The SHA1 hash of target process image or target file
+  DL_Type: string
+
+- Name: objectFileHashSha256
+  Description_EN: The SHA256 hash of target process image or target file
+  DL_Type: string
+
+- Name: objectFileIsRemoteAccess
+  Description_EN: The remote access to the object file
+  DL_Type: bool
+
+- Name: objectFileModifiedTime
+  Description_EN: The modification time of the target file (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectFileOriginalName
+  Description_EN: The original file name of the object image
+  DL_Type: string
+
+- Name: objectFileOwnerName
+  Description_EN: The object file owner name
+  DL_Type: string
+
+- Name: objectFileOwnerSid
+  Description_EN: The security identifier of the object file owner
+  DL_Type: string
+
+- Name: objectFilePath
+  Description_EN: The file path of the target process image or target file
+  DL_Type: string
+
+- Name: objectFileRemoteAccess
+  Description_EN: The remote access for the object file
+  DL_Type: bool
+
+- Name: objectFileSaclString
+  Description_EN: The system access control list of the object file
+  DL_Type: string
+
+- Name: objectFirstSeen
+  Description_EN: The time when the object first appeared (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectHashId
+  Description_EN: https://trendmicro.atlassian.net/browse/DOC-2644
+  DL_Type: string
+
+- Name: objectHostName
+  Description_EN: Server name where Internet event was detected
+  DL_Type: string
+
+- Name: objectIntegrityLevel
+  Description_EN: Integrity level of target process
+  DL_Type: int
+
+- Name: objectIp
+  Description_EN: The IP address of the domain
+  DL_Type: dynamic
+
+- Name: objectIps
+  Description_EN: The IP address resolved by the DNS protocol
+  DL_Type: dynamic
+
+- Name: objectLastSeen
+  Description_EN: The time when the object was last seen (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectLaunchTime
+  Description_EN: The object launch time of the Windows event
+  DL_Type: datetime
+
+- Name: objectLoginOutFailureMessage
+  Description_EN: The sign-in/sign-out error message
+  DL_Type: string
+
+- Name: objectLoginOutFirstSeen
+  Description_EN: The first time the object sign-in/sign-out was seen
+  DL_Type: datetime
+
+- Name: objectLoginOutHashId
+  Description_EN: The FNV of the object sign-in/sign-out meta
+  DL_Type: string
+
+- Name: objectLoginOutLastSeen
+  Description_EN: The last time the object sign-in/sign-out was seen
+  DL_Type: datetime
+
+- Name: objectLoginOutMetaType
+  Description_EN: The sign-in/sign-out meta
+  DL_Type: int
+
+- Name: objectLoginOutSessionId
+  Description_EN: The sign-in/sign-out session ID
+  DL_Type: string
+
+- Name: objectLoginOutSourceAddress
+  Description_EN: The sign-in/sign-out source IP
+  DL_Type: string
+
+- Name: objectLoginOutStatus
+  Description_EN: The sign-in/sign-out status
+  DL_Type: int
+
+- Name: objectName
+  Description_EN: The base name of the object file or process
+  DL_Type: string
+
+- Name: objectPid
+  Description_EN: The PID of target process
+  DL_Type: int
+
+- Name: objectPipeName
+  Description_EN: The named pipe of the event
+  DL_Type: string
+
+- Name: objectPort
+  Description_EN: The port number used by internet event
+  DL_Type: int
+
+- Name: objectPosixPermission
+  Description_EN: The current POSIX permission for the file
+  DL_Type: string
+
+- Name: objectPosixPermissionHashId
+  Description_EN: The POSIX permission hash ID
+  DL_Type: string
+
+- Name: objectProcessHashId
+  Description_EN: FNV of target process
+  DL_Type: string
+
+- Name: objectRawDataSize
+  Description_EN: The raw data size of the Windows event object
+  DL_Type: dynamic
+
+- Name: objectRawDataStr
+  Description_EN: The data contents of the AMSI event
+  DL_Type: dynamic
+
+- Name: objectRegistryData
+  Description_EN: The registry data contents
+  DL_Type: string
+
+- Name: objectRegistryKeyHandle
+  Description_EN: The registry key path
+  DL_Type: string
+
+- Name: objectRegistryRoot
+  Description_EN: The name of the object registry root key
+  DL_Type: string
+
+- Name: objectRegistryValue
+  Description_EN: The registry value name
+  DL_Type: string
+
+- Name: objectRegType
+  Description_EN: The Windows Registry Type ID
+  DL_Type: int
+
+- Name: objectRunAsLocalAccount
+  Description_EN: The "runas" command uses a local account
+  DL_Type: bool
+
+- Name: objectServiceType
+  Description_EN: Type of target file
+  DL_Type: string
+
+- Name: objectSessionId
+  Description_EN: The object session ID
+  DL_Type: string
+
+- Name: objectSigner
+  Description_EN: Certificate signer of object process or file
+  DL_Type: dynamic
+
+- Name: objectSignerFlagsAdhoc
+  Description_EN: The list of object process or file signature adhoc flags
+  DL_Type: dynamic
+
+- Name: objectSignerFlagsLibValid
+  Description_EN: The list of object process or file signature library validation
+    flags
+  DL_Type: dynamic
+
+- Name: objectSignerFlagsRuntime
+  Description_EN: The list of object process or file signature runtime flags
+  DL_Type: dynamic
+
+- Name: objectSignerValid
+  Description_EN: Whether each signer of the object process is valid
+  DL_Type: dynamic
+
+- Name: objectSubTrueType
+  Description_EN: File object's true sub-type
+  DL_Type: int
+
+- Name: objectThreadId
+  Description_EN: The object process thread ID
+  DL_Type: string
+
+- Name: objectTrueType
+  Description_EN: File object's true major type
+  DL_Type: int
+
+- Name: objectUri
+  Description_EN: Path of target file
+  DL_Type: string
+
+- Name: objectUser
+  Description_EN: The user name of the target process which is launched by current
+    running process
+  DL_Type: string
+
+- Name: objectUserDomain
+  Description_EN: The owner domain of the target process which is launched by current
+    running process
+  DL_Type: string
+
+- Name: objectUserGroup
+  Description_EN: The user group name
+  DL_Type: string
+
+- Name: objectUserGroupSids
+  Description_EN: The user group SIDs of the object
+  DL_Type: dynamic
+
+- Name: osDescription
+  Description_EN: The OS version
+  DL_Type: string
+
+- Name: osName
+  Description_EN: The host operating system name
+  DL_Type: string
+
+- Name: osType
+  Description_EN: The host operating system type
+  DL_Type: string
+
+- Name: osVer
+  Description_EN: The version of the host operating system
+  DL_Type: string
+
+- Name: parentAuthId
+  Description_EN: The parent authorization ID
+  DL_Type: string
+
+- Name: parentCmd
+  Description_EN: The command line of the subject parent process
+  DL_Type: string
+
+- Name: parentFileCreation
+  Description_EN: The time the parent file was created
+  DL_Type: datetime
+
+- Name: parentFileCurrentOwnerName
+  Description_EN: The current owner name of the parent file
+  DL_Type: string
+
+- Name: parentFileCurrentOwnerSid
+  Description_EN: The current security identifier owner of the parent file
+  DL_Type: string
+
+- Name: parentFileDaclString
+  Description_EN: The discretionary access control list of the parent file
+  DL_Type: string
+
+- Name: parentFileGroupName
+  Description_EN: The name of the parent file user group
+  DL_Type: string
+
+- Name: parentFileGroupSid
+  Description_EN: The security identifier of the parent process file group
+  DL_Type: string
+
+- Name: parentFileHashId
+  Description_EN: The parent file hash ID
+  DL_Type: string
+
+- Name: parentFileHashMd5
+  Description_EN: The MD5 of the subject parent process
+  DL_Type: string
+
+- Name: parentFileHashSha1
+  Description_EN: The SHA-1 of the subject parent process
+  DL_Type: string
+
+- Name: parentFileHashSha256
+  Description_EN: The SHA-256 of the subject parent process
+  DL_Type: string
+
+- Name: parentFileModifiedTime
+  Description_EN: The time the parent file was modified
+  DL_Type: datetime
+
+- Name: parentFileOriginalName
+  Description_EN: The original file name of the parent image
+  DL_Type: string
+
+- Name: parentFileOwnerName
+  Description_EN: The owner name of the parent file
+  DL_Type: string
+
+- Name: parentFileOwnerSid
+  Description_EN: The security identifier of the parent file owner
+  DL_Type: string
+
+- Name: parentFilePath
+  Description_EN: The full file path of the parent process
+  DL_Type: string
+
+- Name: parentFileRemoteAccess
+  Description_EN: The remote access to the parent file
+  DL_Type: bool
+
+- Name: parentFileSaclString
+  Description_EN: The system access control list of the parent file
+  DL_Type: string
+
+- Name: parentFileSize
+  Description_EN: The file size of the parent file
+  DL_Type: long
+
+- Name: parentHashId
+  Description_EN: The FNV of the parent process
+  DL_Type: string
+
+- Name: parentIntegrityLevel
+  Description_EN: The integrity level of a parent
+  DL_Type: int
+
+- Name: parentLaunchTime
+  Description_EN: The time when the parent process was launched
+  DL_Type: datetime
+
+- Name: parentName
+  Description_EN: The image name of the parent process
+  DL_Type: string
+
+- Name: parentPid
+  Description_EN: The PID of the parent process
+  DL_Type: int
+
+- Name: parentSessionId
+  Description_EN: The parent session ID
+  DL_Type: int
+
+- Name: parentSigner
+  Description_EN: The signers of the parent process
+  DL_Type: dynamic
+
+- Name: parentSignerFlagsAdhoc
+  Description_EN: The list of parent process signature adhoc flags
+  DL_Type: dynamic
+
+- Name: parentSignerFlagsLibValid
+  Description_EN: The list of parent process signature library validation flags
+  DL_Type: dynamic
+
+- Name: parentSignerFlagsRuntime
+  Description_EN: The list of parent process signature runtime flags
+  DL_Type: dynamic
+
+- Name: parentSignerValid
+  Description_EN: Whether each signer of the parent process is valid
+  DL_Type: dynamic
+
+- Name: parentSubTrueType
+  Description_EN: The true file subtype of the parent file
+  DL_Type: int
+
+- Name: parentTrueType
+  Description_EN: The true file type of the parent file
+  DL_Type: int
+
+- Name: parentUser
+  Description_EN: The type of user that executed the parent process
+  DL_Type: string
+
+- Name: parentUserDomain
+  Description_EN: The domain name of the parent process
+  DL_Type: string
+
+- Name: parentUserGroupSids
+  Description_EN: The SIDs of the parent user group
+  DL_Type: dynamic
+
+- Name: plang
+  Description_EN: The product language
+  DL_Type: int
+
+- Name: platformAssetTags
+  Description_EN: The list of platform custom asset tags
+  DL_Type: dynamic
+
+- Name: pname
+  Description_EN: The internal product ID (Deprecated, use productCode)
+  DL_Type: string
+
+- Name: policyIds
+  Description_EN: The Ids of DDR’s data policy
+  DL_Type: string
+
+- Name: policyTreePath
+  Description_EN: The policy tree path (endpoint only)
+  DL_Type: string
+
+- Name: pplat
+  Description_EN: The product platform
+  DL_Type: int
+
+- Name: processCmd
+  Description_EN: The command line entry of the subject process
+  DL_Type: string
+
+- Name: processFileCreation
+  Description_EN: The time the process file was created
+  DL_Type: datetime
+
+- Name: processFileCurrentOwnerName
+  Description_EN: The current owner name of the process file
+  DL_Type: string
+
+- Name: processFileCurrentOwnerSid
+  Description_EN: The owner of the process file current security identifier
+  DL_Type: string
+
+- Name: processFileDaclString
+  Description_EN: The discretionary access control list of the process file
+  DL_Type: string
+
+- Name: processFileGroupName
+  Description_EN: The name of the process file user group
+  DL_Type: string
+
+- Name: processFileGroupSid
+  Description_EN: The security identifier of the process file group
+  DL_Type: string
+
+- Name: processFileHashId
+  Description_EN: The file hash of the process
+  DL_Type: string
+
+- Name: processFileHashMd5
+  Description_EN: The MD5 hash of the subject process image
+  DL_Type: string
+
+- Name: processFileHashSha1
+  Description_EN: The SHA-1 hash of the subject process image
+  DL_Type: string
+
+- Name: processFileHashSha256
+  Description_EN: The SHA-256 of the subject process image file
+  DL_Type: string
+
+- Name: processFileModifiedTime
+  Description_EN: The time the process file was modified
+  DL_Type: datetime
+
+- Name: processFileOriginalName
+  Description_EN: The original file name of the process image
+  DL_Type: string
+
+- Name: processFileOwnerName
+  Description_EN: The process file owner name
+  DL_Type: string
+
+- Name: processFileOwnerSid
+  Description_EN: The security identifier of the process file owner
+  DL_Type: string
+
+- Name: processFilePath
+  Description_EN: The file path of the subject process
+  DL_Type: string
+
+- Name: processFileRemoteAccess
+  Description_EN: The remote access to the process file
+  DL_Type: bool
+
+- Name: processFileSaclString
+  Description_EN: The system access control list of the process file
+  DL_Type: string
+
+- Name: processFileSize
+  Description_EN: The file size of the process file
+  DL_Type: long
+
+- Name: processHashId
+  Description_EN: The FNV of the subject process
+  DL_Type: string
+
+- Name: processLaunchTime
+  Description_EN: The time the subject process was launched
+  DL_Type: datetime
+
+- Name: processName
+  Description_EN: The image name of the process that triggered the event
+  DL_Type: string
+
+- Name: processPid
+  Description_EN: The PID of the subject process
+  DL_Type: int
+
+- Name: processSigner
+  Description_EN: The list of process signers in an endpoint or container
+  DL_Type: dynamic
+
+- Name: processSignerFlagsAdhoc
+  Description_EN: The list of process signature adhoc flags
+  DL_Type: dynamic
+
+- Name: processSignerFlagsLibValid
+  Description_EN: The list of process signature library validation flags
+  DL_Type: dynamic
+
+- Name: processSignerFlagsRuntime
+  Description_EN: The list of process signature runtime flags
+  DL_Type: dynamic
+
+- Name: processSignerValid
+  Description_EN: The validity of the process signer
+  DL_Type: dynamic
+
+- Name: processStackTrace
+  Description_EN: The process stack trace of the telemetry event
+  DL_Type: string
+
+- Name: processSubTrueType
+  Description_EN: The true file subtype of the process
+  DL_Type: int
+
+- Name: processTrueType
+  Description_EN: The true file type of the process
+  DL_Type: int
+
+- Name: processUser
+  Description_EN: The user name of the process or the file creator
+  DL_Type: string
+
+- Name: processUserDomain
+  Description_EN: The owner domain of the subject process image
+  DL_Type: string
+
+- Name: processUserGroupSids
+  Description_EN: The user group SIDs of the process
+  DL_Type: dynamic
+
+- Name: productCode
+  Description_EN: The internal product code of the identity provider (aad=Microsoft
+    Entra ID, opa=Microsoft Active Directory)
+  DL_Type: string
+
+- Name: proto
+  Description_EN: The exploited layer network protocol
+  DL_Type: string
+
+- Name: providerGUID
+  Description_EN: The GUID of the Windows event provider
+  DL_Type: string
+
+- Name: providerName
+  Description_EN: The name of the Windows event provider
+  DL_Type: string
+
+- Name: proxy
+  Description_EN: The proxy address
+  DL_Type: string
+
+- Name: publicSpt
+  Description_EN: The public port of the endpoint making the request
+  DL_Type: int
+
+- Name: publicSrc
+  Description_EN: The public ip of the endpoint making the request
+  DL_Type: string
+
+- Name: pver
+  Description_EN: The product version
+  DL_Type: string
+
+- Name: rawDataSize
+  Description_EN: The size of the Windows event log
+  DL_Type: long
+
+- Name: rawDataStr
+  Description_EN: The raw data string that contains additional information
+  DL_Type: string
+
+- Name: regionId
+  Description_EN: The cloud provider region ID
+  DL_Type: string
+
+- Name: request
+  Description_EN: The destination URL that the user is accessing
+  DL_Type: string
+
+- Name: requestMethod
+  Description_EN: The network protocol request method
+  DL_Type: string
+
+- Name: rt
+  Description_EN: The Unix time of the log generation
+  DL_Type: string
+
+- Name: ruleId
+  Description_EN: The rule ID
+  DL_Type: int
+
+- Name: ruleIdStr
+  Description_EN: The rule ID
+  DL_Type: string
+
+- Name: sessionId
+  Description_EN: The session ID
+  DL_Type: int
+
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  DL_Type: bool
+
+- Name: smbSharedName
+  Description_EN: The shared folder name for the server that contains the files to
+    be opened
+  DL_Type: string
+
+- Name: spt
+  Description_EN: The virtual port of the source assigned to the Secure Access Module
+    (srcport)
+  DL_Type: int
+
+- Name: src
+  Description_EN: The source IP address (srcaddr)
+  DL_Type: dynamic
+
+- Name: srcFileCreation
+  Description_EN: The time when the source file was created (in milliseconds)
+  DL_Type: datetime
+
+- Name: srcFileCurrentOwnerName
+  Description_EN: The current owner name of the source file
+  DL_Type: string
+
+- Name: srcFileCurrentOwnerSid
+  Description_EN: The current security identifier owner of the source file
+  DL_Type: string
+
+- Name: srcFileDaclString
+  Description_EN: The discretionary access control list of the source file
+  DL_Type: string
+
+- Name: srcFileGroupName
+  Description_EN: The source file user group name
+  DL_Type: string
+
+- Name: srcFileGroupSid
+  Description_EN: The security identifier of the source file group
+  DL_Type: string
+
+- Name: srcFileHash
+  Description_EN: The cryptographic hash of the source process image or file, with
+    the specific hash algorithm to be determined.
+  DL_Type: string
+
+- Name: srcFileHashId
+  Description_EN: The source file hash ID
+  DL_Type: string
+
+- Name: srcFileHashMd5
+  Description_EN: The md5 hash of source file
+  DL_Type: string
+
+- Name: srcFileHashSha1
+  Description_EN: The SHA-1 of the source file
+  DL_Type: string
+
+- Name: srcFileHashSha256
+  Description_EN: The SHA-256 of the source file
+  DL_Type: string
+
+- Name: srcFileIsRemoteAccess
+  Description_EN: The remote access of the source file
+  DL_Type: bool
+
+- Name: srcFileModifiedTime
+  Description_EN: The time when the source file was modified (in milliseconds)
+  DL_Type: datetime
+
+- Name: srcFileOwnerName
+  Description_EN: The source file owner name
+  DL_Type: string
+
+- Name: srcFileOwnerSid
+  Description_EN: The security identifier of the source file owner
+  DL_Type: string
+
+- Name: srcFilePath
+  Description_EN: The file path which is moved or copied to another path
+  DL_Type: string
+
+- Name: srcFileSaclString
+  Description_EN: The system access control list of the source file
+  DL_Type: string
+
+- Name: srcFileSize
+  Description_EN: The file size of the source file
+  DL_Type: long
+
+- Name: srcFirstSeen
+  Description_EN: The time when the source file first appeared (in milliseconds)
+  DL_Type: datetime
+
+- Name: srcHashId
+  Description_EN: The source hash ID
+  DL_Type: string
+
+- Name: srcLastSeen
+  Description_EN: The time when the source file was last seen (in milliseconds)
+  DL_Type: datetime
+
+- Name: srcServiceType
+  Description_EN: Type of source file
+  DL_Type: string
+
+- Name: srcSigner
+  Description_EN: The signer of the source file
+  DL_Type: dynamic
+
+- Name: srcSignerFlagsAdhoc
+  Description_EN: The list of source file signature adhoc flags
+  DL_Type: dynamic
+
+- Name: srcSignerFlagsLibValid
+  Description_EN: The list of source file signature library validation flags
+  DL_Type: dynamic
+
+- Name: srcSignerFlagsRuntime
+  Description_EN: The list of source file signature runtime flags
+  DL_Type: dynamic
+
+- Name: srcSignerValid
+  Description_EN: The validity of the source file signer
+  DL_Type: dynamic
+
+- Name: srcSubTrueType
+  Description_EN: The true file subtype of the source file
+  DL_Type: int
+
+- Name: srcTrueType
+  Description_EN: The true file type of the source file
+  DL_Type: int
+
+- Name: srcUri
+  Description_EN: Path of source file
+  DL_Type: string
+
+- Name: srcUser
+  Description_EN: The owner name of the source process or the login user name
+  DL_Type: string
+
+- Name: status
+  Description_EN: The network analysis flow session status
+  DL_Type: string
+
+- Name: subnetId
+  Description_EN: The subnet ID of the virtual machine that made the request
+  DL_Type: string
+
+- Name: subSystem
+  Description_EN: The sub system information
+  DL_Type: string
+
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on the
+    alert filter
+  DL_Type: dynamic
+
+- Name: timezone
+  Description_EN: The host time zone
+  DL_Type: string
+
+- Name: userDomain
+  Description_EN: Active directory domain, domain of username for logging in TMAS
+    adminportal adminportal
+  DL_Type: dynamic
+
+- Name: vpcId
+  Description_EN: The virtual private cloud that contains the cloud asset
+  DL_Type: string
+
+- Name: winEventId
+  Description_EN: Event ID of Windows event
+  DL_Type: int

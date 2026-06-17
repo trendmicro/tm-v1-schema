@@ -80,8 +80,8 @@
   - szn
   - vpc
   - azv
-  Description_EN: The virtual port of the source assigned to the Secure Access 
-    Module (srcport)
+  Description_EN: The virtual port of the source assigned to the Secure Access Module
+    (srcport)
   Sample:
   - 57763
   DL_Type: int
@@ -94,8 +94,7 @@
   - szn
   - vpc
   - azv
-  Description_EN: The service destination port of the private application server
-    (dstport)
+  Description_EN: The service destination port of the private application server (dstport)
   Sample:
   - 443
   DL_Type: int
@@ -106,8 +105,7 @@
 - Name: start
   ProductCode:
   - vpc
-  Description_EN: The time when the first data packet was received (in Unix 
-    seconds)
+  Description_EN: The time when the first data packet was received (in Unix seconds)
   Sample:
   - 1616729292
   DL_Type: real
@@ -117,8 +115,7 @@
 - Name: end
   ProductCode:
   - vpc
-  Description_EN: The time when the last data packet was received (in Unix 
-    seconds)
+  Description_EN: The time when the last data packet was received (in Unix seconds)
   Sample:
   - 1616729349
   DL_Type: long
@@ -312,8 +309,7 @@
 - Name: pktSrcCloudServiceName
   ProductCode:
   - vpc
-  Description_EN: The subset IP address range name for cloud service source IP 
-    (pkt-src-aws-service)
+  Description_EN: The subset IP address range name for cloud service source IP (pkt-src-aws-service)
   Sample:
   - AMAZON
   - EC2
@@ -325,8 +321,8 @@
 - Name: pktDstCloudServiceName
   ProductCode:
   - vpc
-  Description_EN: The subset IP address range name for cloud service destination
-    IP (pkt-dst-aws-service)
+  Description_EN: The subset IP address range name for cloud service destination IP
+    (pkt-dst-aws-service)
   Sample:
   - AMAZON
   - EC2

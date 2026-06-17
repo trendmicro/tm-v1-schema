@@ -5,8 +5,8 @@
   - sds
   - pds
   - ptn
-  Description_EN: The computer name of the client host (The hostname from the 
-    suspicious URL detected by Deep Discovery Inspector)
+  Description_EN: The computer name of the client host (The hostname from the suspicious
+    URL detected by Deep Discovery Inspector)
   Sample:
   - Let's Encrypt
   - 10.10.10.10
@@ -23,9 +23,9 @@
   - xns
   - pds
   - sao
-  Description_EN: The endpoint hostname (For example, if an intranet host 
-    accesses a suspicious internet host, the intranet host is the "peerHost" and
-    the internet host is the "interestedHost")
+  Description_EN: The endpoint hostname (For example, if an intranet host accesses
+    a suspicious internet host, the intranet host is the "peerHost" and the internet
+    host is the "interestedHost")
   Sample:
   - 10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]
   - es-dtc-w-dc02.example.corp
@@ -346,8 +346,8 @@
   ProductCode:
   - sds
   - pds
-  Description_EN: The SHA-1 of the target process image or target file 
-    (wasEntity from an IM event)
+  Description_EN: The SHA-1 of the target process image or target file (wasEntity
+    from an IM event)
   Sample:
   - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
   - 89CE26EAD139D52B8A6B61BFFC6AF89AF246580F
@@ -591,9 +591,9 @@
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
   - 'pam_unix(cron:session): session opened for user root by (uid=0)'
-  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:
-    EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.
-    [CLIENT: 10.10.10.10]  "
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:\
+    \ EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.\
+    \ [CLIENT: 10.10.10.10]  "
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -841,10 +841,9 @@
   - xns
   - pds
   - pan
-  Description_EN: Device Direction. If the source IP is in the internal network 
-    (the network monitored by Deep Discovery Inspector) it is tagged as 
-    outbound. All other cases are inbound. Internal-to-internal is also tagged 
-    as outbound.
+  Description_EN: Device Direction. If the source IP is in the internal network (the
+    network monitored by Deep Discovery Inspector) it is tagged as outbound. All other
+    cases are inbound. Internal-to-internal is also tagged as outbound.
   Sample:
   - outbound
   - inbound
@@ -1464,8 +1463,8 @@
   - pds
   Description_EN: The descriptions of the detected techniques
   Sample:
-  - [T1204 some description about this technique, T1573.001_AES another 
-      description about this technique]
+  - [T1204 some description about this technique, T1573.001_AES another description
+      about this technique]
   DL_Type: dynamic
   DL_Searchable: true
   DL_Aggregable: false

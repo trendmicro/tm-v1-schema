@@ -255,9 +255,9 @@
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
   - 'pam_unix(cron:session): session opened for user root by (uid=0)'
-  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:
-    EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.
-    [CLIENT: 10.10.10.10]  "
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:\
+    \ EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.\
+    \ [CLIENT: 10.10.10.10]  "
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -487,9 +487,9 @@
   - pdi
   - xns
   - sfs
-  Description_EN: The risk type group for NCCE (Network Content Correlation 
-    Engine) rules. This field comes from NCCP (Network Content Correlation 
-    Pattern) rule type definitions.
+  Description_EN: The risk type group for NCCE (Network Content Correlation Engine)
+    rules. This field comes from NCCP (Network Content Correlation Pattern) rule type
+    definitions.
   Sample:
   - Others
   - Malware
@@ -527,8 +527,8 @@
   ProductCode:
   - sao
   - sfs
-  Description_EN: The confidence rating returned from TrendX Hybrid Model 
-    (predictive machine learning). Values from 1-99.
+  Description_EN: The confidence rating returned from TrendX Hybrid Model (predictive
+    machine learning). Values from 1-99.
   Sample:
   - 94
   DL_Type: int
