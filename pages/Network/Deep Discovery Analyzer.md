@@ -217,12 +217,62 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Deep Discovery Analyzer</td>
     </tr>
     <tr>
+      <td class="field-name">actionBy</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The user account or system that triggered the event</td>
+      <td class="example">
+        <ul>
+          <li>admin</li>
+          <li>SYSTEM</li>
+          <li>TREND VISION ONE</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">actorHostName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The hostname of the actor that triggered the event</td>
       <td class="example">CNNJ-WCCP-Pxy-1</td>
+      <td class="products">Deep Discovery Analyzer</td>
+    </tr>
+    <tr>
+      <td class="field-name">actorHostName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The hostname of the actor that triggered the event</td>
+      <td class="example">
+        <ul>
+          <li>host1.example.com</li>
+          <li>Windows-User1</li>
+        </ul>
+      </td>
+      <td class="products">Deep Discovery Analyzer</td>
+    </tr>
+    <tr>
+      <td class="field-name">actorIp</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The IP address of the actor that triggered the event</td>
+      <td class="example">
+        <ul>
+          <li>192.168.1.1</li>
+          <li>10.0.0.1</li>
+          <li>172.16.0.1</li>
+        </ul>
+      </td>
       <td class="products">Deep Discovery Analyzer</td>
     </tr>
     <tr>
@@ -269,6 +319,51 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">assetHostName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The hostname of the asset associated with the event</td>
+      <td class="example">
+        <ul>
+          <li>host1.example.com</li>
+          <li>DDAN-primary-001</li>
+        </ul>
+      </td>
+      <td class="products">Deep Discovery Analyzer</td>
+    </tr>
+    <tr>
+      <td class="field-name">assetIp</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The IP address of the asset associated with the event</td>
+      <td class="example">
+        <ul>
+          <li>172.16.0.1</li>
+          <li>10.0.0.1</li>
+        </ul>
+      </td>
+      <td class="products">Deep Discovery Analyzer</td>
+    </tr>
+    <tr>
+      <td class="field-name">description</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The additional event details</td>
+      <td class="example">Agent upgrade applied manually, automatically, or via scheduled maintenance, reflecting any user-initiated or policy-triggered update</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -323,6 +418,21 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">deviceGUID</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The GUID of the network appliance which reported the system event</td>
+      <td class="example">00000000-0000-0000-0000-000000000000</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">deviceMacAddress</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -334,6 +444,21 @@ This documentation provides detailed information about all fields available for 
           <li>ff:ff:ff:ff:ff:ff</li>
         </ul>
       </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">deviceMacAddress</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The device MAC address</td>
+      <td class="example">00:00:00:00:00:00</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -495,6 +620,21 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">dvc</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The IP address of the network appliance</td>
+      <td class="example">[&#x27;10.10.10.10&#x27;]</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">dvchost</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -509,6 +649,21 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">dvchost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The hostname of the network appliance</td>
+      <td class="example">localhost</td>
+      <td class="products">
+        <ul>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -575,6 +730,29 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">eventId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event ID</td>
+      <td class="example">
+        <ul>
+          <li>1010001</li>
+          <li>1010002</li>
+          <li>1010003</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">eventName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -630,6 +808,67 @@ This documentation provides detailed information about all fields available for 
           <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event type</td>
+      <td class="example">
+        <ul>
+          <li>scan</li>
+          <li>service</li>
+          <li>upgrade</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventTime</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The time the agent or product detected the event</td>
+      <td class="example">
+        <ul>
+          <li>1656324260000</li>
+          <li>1728192606034</li>
+          <li>1758293606034</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The type of event that generated the event record</td>
+      <td class="example">
+        <ul>
+          <li>Account Logon/Logoff</li>
+          <li>System Setting</li>
+          <li>System Update</li>
+        </ul>
+      </td>
+      <td class="products">Deep Discovery Analyzer</td>
     </tr>
     <tr>
       <td class="field-name">fileHash</td>
@@ -850,6 +1089,26 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">outcome</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Whether the event was successful or not</td>
+      <td class="example">
+        <ul>
+          <li>Success</li>
+          <li>Failure</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">pname</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -884,6 +1143,28 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">pname</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The product name</td>
+      <td class="example">
+        <ul>
+          <li>Apex One</li>
+          <li>Server &amp; Workload Protection</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">pver</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -911,6 +1192,26 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">pver</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The product version</td>
+      <td class="example">
+        <ul>
+          <li>6.2.1125</li>
+          <li>1.0.1524</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
@@ -970,6 +1271,20 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">ruleName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the rule that triggered the event</td>
+      <td class="example">
+        <ul>
+          <li>High Memory Usage</li>
+          <li>Long Virtual Analyzer Processing Time</li>
+        </ul>
+      </td>
+      <td class="products">Deep Discovery Analyzer</td>
+    </tr>
+    <tr>
       <td class="field-name">sandboxCompletedTime</td>
       <td class="type">long</td>
       <td class="searchable">true</td>
@@ -1012,6 +1327,34 @@ This documentation provides detailed information about all fields available for 
           <li>Cloud One Network Security</li>
           <li>Container Security</li>
           <li>Mobile Network Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">severity</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event severity</td>
+      <td class="example">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
@@ -1171,7 +1514,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 40
+- **Total Fields:** 59
 - **Layer:** Network
 - **Product:** Deep Discovery Analyzer
 
