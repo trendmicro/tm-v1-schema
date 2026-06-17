@@ -321,8 +321,8 @@
   Sample:
   - $global:?
   - '0'
-  - "$servicename = \"WinRM\"\n$arrService = Get-Service $servicename\n\nif ($arrService.Status
-    -ne \"Running\")\n\n{\n\n\tRestart-Service $servicename\n\n\n}\n"
+  - "$servicename = \"WinRM\"\n$arrService = Get-Service $servicename\n\nif ($arrService.Status\
+    \ -ne \"Running\")\n\n{\n\n\tRestart-Service $servicename\n\n\n}\n"
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
@@ -423,8 +423,8 @@
   ProductCode:
   - xes
   - sao
-  Description_EN: The list of object process or file signature library 
-    validation flags
+  Description_EN: The list of object process or file signature library validation
+    flags
   Sample: []
   DL_Type: dynamic
   DL_CommonKey:
@@ -875,8 +875,7 @@
   Description_EN: The source file path
   Sample:
   - \\cnva-apps\megaclockprod\traveler\travelerprint.accdb
-  - c:\program files\common files\microsoft 
-    shared\clicktorun\officesvcmgrschedule.xml
+  - c:\program files\common files\microsoft shared\clicktorun\officesvcmgrschedule.xml
   - q:\a7_dbs\a4_pkg\a4_packaging.accde
   DL_Type: string
   DL_CommonKey:
@@ -948,8 +947,8 @@
   ProductCode:
   - xes
   - sao
-  Description_EN: The IP address for Windows event 4624 which is "An account was
-    successfully logged on"
+  Description_EN: The IP address for Windows event 4624 which is "An account was successfully
+    logged on"
   Sample:
   - '-'
   - 10.10.10.10
@@ -961,8 +960,8 @@
   ProductCode:
   - xes
   - sao
-  Description_EN: The logon type for Windows event 4624 which is "An account was
-    successfully logged on"
+  Description_EN: The logon type for Windows event 4624 which is "An account was successfully
+    logged on"
   Sample:
   - '3'
   - '5'
@@ -2875,8 +2874,7 @@
   - sao
   Description_EN: The AMSI object content name
   Sample:
-  - C:\Program 
-    Files\WindowsPowerShell\Modules\PowerShellGet\1.2\PowerShellGet.psd1
+  - C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.2\PowerShellGet.psd1
   - c:\synclog\BLAST_SCAN.vbs
   DL_Type: string
   DL_CommonKey:
@@ -3016,8 +3014,7 @@
 - Name: objectCurrentPosixPermission
   ProductCode:
   - sds
-  Description_EN: The new POSIX permission file used in file events and CHMOD 
-    events
+  Description_EN: The new POSIX permission file used in file events and CHMOD events
   Sample:
   - 0x100644
   DL_Type: string
@@ -3082,8 +3079,8 @@
 - Name: codeIntegrityOptionEnabled
   ProductCode:
   - xes
-  Description_EN: Whether the system enforced signed kernel loading according to
-    DSE(driver signature enforcement)
+  Description_EN: Whether the system enforced signed kernel loading according to DSE(driver
+    signature enforcement)
   Sample:
   - 1
   - 0
@@ -3094,8 +3091,8 @@
 - Name: codeIntegrityOptionTestsign
   ProductCode:
   - xes
-  Description_EN: Whether the system bypassed DSE(driver signature enforcement) 
-    checks and permitted loading of test-signed drivers
+  Description_EN: Whether the system bypassed DSE(driver signature enforcement) checks
+    and permitted loading of test-signed drivers
   Sample:
   - 1
   - 0
@@ -3262,8 +3259,7 @@
 - Name: instanceAccountId
   ProductCode:
   - xes
-  Description_EN: The cloud account ID of the virtual machine that made the 
-    request
+  Description_EN: The cloud account ID of the virtual machine that made the request
   Sample:
   - '111111111111'
   DL_Type: string
@@ -3273,8 +3269,7 @@
 - Name: azId
   ProductCode:
   - xes
-  Description_EN: The Avaliability Zone ID of the virtual machine that made the 
-    request
+  Description_EN: The Avaliability Zone ID of the virtual machine that made the request
   Sample:
   - us-east-1b
   - us-west-2a
@@ -3295,8 +3290,7 @@
 - Name: networkInterfaceId
   ProductCode:
   - xes
-  Description_EN: The network interface of the virtual machine that made the 
-    request
+  Description_EN: The network interface of the virtual machine that made the request
   Sample:
   - eni-01234567890abcdef
   DL_Type: string
@@ -3505,8 +3499,8 @@
 - Name: objectFileHash
   ProductCode:
   - ddr
-  Description_EN: The cryptographic hash of the target process image or file, 
-    with the specific hash algorithm to be determined
+  Description_EN: The cryptographic hash of the target process image or file, with
+    the specific hash algorithm to be determined
   Sample:
   - 1ca71017d2fa4775253670e1e55e26912bfdc156
   DL_Type: string
@@ -3538,8 +3532,8 @@
 - Name: srcFileHash
   ProductCode:
   - ddr
-  Description_EN: The cryptographic hash of the source process image or file, 
-    with the specific hash algorithm to be determined.
+  Description_EN: The cryptographic hash of the source process image or file, with
+    the specific hash algorithm to be determined.
   Sample:
   - 1ca71017d2fa4775253670e1e55e26912bfdc156
   DL_Type: string
@@ -3682,12 +3676,9 @@
   - sao
   Description_EN: The fully qualified .NET assembly name
   Sample:
-  - System.Runtime, Version=6.0.0.0, Culture=neutral, 
-    PublicKeyToken=b03f5f7f11d50a3a
-  - System.Xml, Version=4.0.0.0, Culture=neutral, 
-    PublicKeyToken=b77a5c561934e089
-  - System.Diagnostics.Process, Version=8.0.0.0, Culture=neutral, 
-    PublicKeyToken=b03f5f7f11d50a3a
+  - System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  - System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  - System.Diagnostics.Process, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -3735,8 +3726,7 @@
   ProductCode:
   - xes
   - sao
-  Description_EN: Whether the session is elevated and has administrator 
-    privileges
+  Description_EN: Whether the session is elevated and has administrator privileges
   Sample:
   - '%%1842'
   - '%%1843'
@@ -3748,8 +3738,8 @@
   ProductCode:
   - xes
   - sao
-  Description_EN: The identifying information about the object for which access 
-    was requested
+  Description_EN: The identifying information about the object for which access was
+    requested
   Sample:
   - \Device\HarddiskVolume2\Windows\System32\lsass.exe
   - C:\Windows\System32\osk.exe
@@ -3786,8 +3776,8 @@
   ProductCode:
   - xes
   - sao
-  Description_EN: The hexadecimal value of the requested or used permissions 
-    during an access attempt
+  Description_EN: The hexadecimal value of the requested or used permissions during
+    an access attempt
   Sample:
   - 0x10
   - 0x80000000
@@ -3840,8 +3830,7 @@
   - xes
   Description_EN: The process stack trace of the telemetry event
   Sample:
-  - C:\Windows\System32\ntdll.dll?NtCreateUserProcess|ZwCreateUserProcess, 
-    C:\Windows\System32\kernelbase.dll!CreateProcessInternalW
+  - C:\Windows\System32\ntdll.dll?NtCreateUserProcess|ZwCreateUserProcess, C:\Windows\System32\kernelbase.dll!CreateProcessInternalW
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -3874,8 +3863,8 @@
   ProductCode:
   - xes
   - sao
-  Description_EN: The authentication request Kerberos ticket behavior and 
-    permissions flags
+  Description_EN: The authentication request Kerberos ticket behavior and permissions
+    flags
   Sample:
   - '0x40810000'
   - '0x40810010'

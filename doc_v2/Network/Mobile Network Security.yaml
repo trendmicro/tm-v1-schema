@@ -475,8 +475,8 @@
   - sds
   - sss
   - mns
-  Description_EN: The ID of the instance that indicates the meta-cloud or data 
-    center VM
+  Description_EN: The ID of the instance that indicates the meta-cloud or data center
+    VM
   Sample:
   - 52294e7b-f732-c6e9-b2c3-7a6b6f50d101
   - 00030912-c5e7-4348-9012-7c684751c531
@@ -491,8 +491,8 @@
 - Name: instanceName
   ProductCode:
   - mns
-  Description_EN: The name of the instance that indicates the meta-cloud or data
-    center VM
+  Description_EN: The name of the instance that indicates the meta-cloud or data center
+    VM
   Sample:
   - instapecot-1
   DL_Type: string

@@ -1,3 +1,111 @@
+- Name: eventSourceType
+  ProductCode:
+  - aal
+  Description_EN: The event source type
+  Sample:
+  - 14 - EVENT_SOURCE_AUDIT_LOG
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventTime
+  ProductCode:
+  - aal
+  Description_EN: The time the agent or product detected the event
+  Sample:
+  - 1656324260000
+  - 1728192606034
+  - 1758293606034
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tags
+  ProductCode:
+  - aal
+  Description_EN: The detected technique ID based on the alert filter
+  Sample:
+  - [MITREV9.T1090]
+  - [MITRE.T1071]
+  - [MITREV9.T1059.001]
+  DL_Type: dynamic
+  DL_CommonKey:
+  - Technique
+  - Tactic
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: uuid
+  ProductCode:
+  - aal
+  Description_EN: The unique key of the log
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: guid
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: productCode
+  ProductCode:
+  - aal
+  Description_EN: The product code
+  Sample:
+  - aal
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: filterRiskLevel
+  ProductCode:
+  - aal
+  Description_EN: The top level filter risk of the event
+  Sample:
+  - info
+  - low
+  - medium
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: groupId
+  ProductCode:
+  - aal
+  Description_EN: The group ID for the management scope filter
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyTreePath
+  ProductCode:
+  - aal
+  Description_EN: The policy tree path
+  Sample:
+  - policyname1/policyname2/policyname3
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: groupName
+  ProductCode:
+  - aal
+  Description_EN: The group name
+  Sample:
+  - example.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: logReceivedTime
+  ProductCode:
+  - aal
+  Description_EN: The time when the XDR log was received
+  Sample:
+  - 1656324260000
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: eventRawData
   ProductCode:
   - aal
