@@ -245,6 +245,27 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">actionBy</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The user account or system that triggered the event</td>
+      <td class="example">
+        <ul>
+          <li>admin</li>
+          <li>SYSTEM</li>
+          <li>TREND VISION ONE</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">aggregatedCount</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1213,6 +1234,23 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">description</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The additional event details</td>
+      <td class="example">Agent upgrade applied manually, automatically, or via scheduled maintenance, reflecting any user-initiated or policy-triggered update</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">detectionType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1269,6 +1307,21 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The non-endpoint object such as a network appliance</td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">deviceGUID</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">The GUID of the agent which reported the detection</td>
       <td class="example">
         <ul>
@@ -1295,13 +1348,13 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The non-endpoint object such as a network appliance</td>
-      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="description">The GUID of the network appliance which reported the system event</td>
+      <td class="example">00000000-0000-0000-0000-000000000000</td>
       <td class="products">
         <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -1317,6 +1370,21 @@ This documentation provides detailed information about all fields available for 
           <li>ff:ff:ff:ff:ff:ff</li>
         </ul>
       </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">deviceMacAddress</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The device MAC address</td>
+      <td class="example">00:00:00:00:00:00</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -1577,6 +1645,20 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">EmailRecipient</td>
       <td class="description">The email recipient</td>
+      <td class="example">sample_email@trendmicro.com</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">duser</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EmailRecipient</td>
+      <td class="description">The email recipient</td>
       <td class="example">
         <ul>
           <li>(no user)</li>
@@ -1599,12 +1681,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">duser</td>
-      <td class="type">dynamic</td>
+      <td class="field-name">dUser1</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">EmailRecipient</td>
-      <td class="description">The email recipient</td>
-      <td class="example">sample_email@trendmicro.com</td>
+      <td class="general-field">UserAccount</td>
+      <td class="description">The latest sign-in user of the destination</td>
+      <td class="example">user\example</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -1613,12 +1695,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">dUser1</td>
-      <td class="type">string</td>
+      <td class="field-name">dvc</td>
+      <td class="type">dynamic</td>
       <td class="searchable">true</td>
-      <td class="general-field">UserAccount</td>
-      <td class="description">The latest sign-in user of the destination</td>
-      <td class="example">user\example</td>
+      <td class="general-field">-</td>
+      <td class="description">The IP address of the Deep Discovery Inspector or Virtual Network Sensor appliance</td>
+      <td class="example">10.10.10.10</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -1646,8 +1728,28 @@ This documentation provides detailed information about all fields available for 
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The IP address of the Deep Discovery Inspector or Virtual Network Sensor appliance</td>
-      <td class="example">10.10.10.10</td>
+      <td class="description">The IP address of the network appliance</td>
+      <td class="example">[&#x27;10.10.10.10&#x27;]</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">dvchost</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The network device hostname</td>
+      <td class="example">
+        <ul>
+          <li>my-company-xns</li>
+          <li>my-ddi</li>
+        </ul>
+      </td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -1681,17 +1783,13 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The network device hostname</td>
-      <td class="example">
-        <ul>
-          <li>my-company-xns</li>
-          <li>my-ddi</li>
-        </ul>
-      </td>
+      <td class="description">The hostname of the network appliance</td>
+      <td class="example">localhost</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -1712,6 +1810,27 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event ID</td>
+      <td class="example">
+        <ul>
+          <li>200139</li>
+          <li>200140</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Inspector</li>
+          <li>XDR for Cloud - AWS VPC Flow Logs</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -1761,14 +1880,40 @@ This documentation provides detailed information about all fields available for 
       <td class="description">The event ID</td>
       <td class="example">
         <ul>
-          <li>200139</li>
-          <li>200140</li>
+          <li>1010001</li>
+          <li>1010002</li>
+          <li>1010003</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Virtual Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the log event</td>
+      <td class="example">
+        <ul>
+          <li>SWG_ACTIVITY_LOG</li>
+          <li>FIREWALL_ACTIVITY_LOG</li>
+          <li>VPC_ACTIVITY_LOG</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
@@ -1836,22 +1981,21 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The name of the log event</td>
+      <td class="description">The event type</td>
       <td class="example">
         <ul>
-          <li>SWG_ACTIVITY_LOG</li>
-          <li>FIREWALL_ACTIVITY_LOG</li>
-          <li>VPC_ACTIVITY_LOG</li>
+          <li>scan</li>
+          <li>service</li>
+          <li>upgrade</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
-          <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>XDR for Cloud - Azure VNet Flow Logs</li>
+          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -1894,6 +2038,29 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">eventTime</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The time the agent or product detected the event</td>
+      <td class="example">
+        <ul>
+          <li>1656324260000</li>
+          <li>1728192606034</li>
+          <li>1758293606034</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">fileExt</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1908,6 +2075,21 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">fileHash</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA1</td>
+      <td class="description">The SHA-1 of the file that violated the policy</td>
+      <td class="example">1e15bf99022a9164708cebb3eace8fd61ad45cba</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
         </ul>
@@ -1943,12 +2125,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">fileHash</td>
+      <td class="field-name">fileHashSha256</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileSHA1</td>
-      <td class="description">The SHA-1 of the file that violated the policy</td>
-      <td class="example">1e15bf99022a9164708cebb3eace8fd61ad45cba</td>
+      <td class="general-field">FileSHA2</td>
+      <td class="description">The SHA-256 of the file that violated the policy</td>
+      <td class="example">ba9edecdd09de1307714564c24409bd25508e22fe11c768053a08f173f263e93</td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
@@ -1986,12 +2168,17 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">fileHashSha256</td>
+      <td class="field-name">fileName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileSHA2</td>
-      <td class="description">The SHA-256 of the file that violated the policy</td>
-      <td class="example">ba9edecdd09de1307714564c24409bd25508e22fe11c768053a08f173f263e93</td>
+      <td class="general-field">
+        <ul>
+          <li>FileName</li>
+          <li>FileFullPath</li>
+        </ul>
+      </td>
+      <td class="description">The name of the file that violated the policy</td>
+      <td class="example">word.doc</td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
@@ -2026,26 +2213,6 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">fileName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>FileName</li>
-          <li>FileFullPath</li>
-        </ul>
-      </td>
-      <td class="description">The name of the file that violated the policy</td>
-      <td class="example">word.doc</td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2103,6 +2270,21 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The size of the file that is violating the policy</td>
+      <td class="example">12134</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">fileSize</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">The file size of the suspicious file</td>
       <td class="example">
         <ul>
@@ -2125,12 +2307,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">fileSize</td>
+      <td class="field-name">fileType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The size of the file that is violating the policy</td>
-      <td class="example">12134</td>
+      <td class="description">The type of file which is violating the policy</td>
+      <td class="example">Microsoft Words</td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
@@ -2162,21 +2344,6 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Container Security</li>
           <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">fileType</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The type of file which is violating the policy</td>
-      <td class="example">Microsoft Words</td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2324,6 +2491,25 @@ This documentation provides detailed information about all fields available for 
           <li>HostDomain</li>
         </ul>
       </td>
+      <td class="description">The host name</td>
+      <td class="example">NJ-EFFY-ZHAO1</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">hostName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>DomainName</li>
+          <li>HostDomain</li>
+        </ul>
+      </td>
       <td class="description">The computer name of the client host (The hostname from the suspicious URL detected by Deep Discovery Inspector)</td>
       <td class="example">
         <ul>
@@ -2338,25 +2524,6 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Security</li>
           <li>TXOne EdgeOne</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">hostName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>DomainName</li>
-          <li>HostDomain</li>
-        </ul>
-      </td>
-      <td class="description">The host name</td>
-      <td class="example">NJ-EFFY-ZHAO1</td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2419,6 +2586,20 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">URL</td>
+      <td class="description">The HTTP referrer header</td>
+      <td class="example">www.google.com.tw</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">httpReferer</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">URL</td>
       <td class="description">The HTTP referer</td>
       <td class="example">
         <ul>
@@ -2433,20 +2614,6 @@ This documentation provides detailed information about all fields available for 
           <li>Virtual Network Sensor</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">httpReferer</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">URL</td>
-      <td class="description">The HTTP referrer header</td>
-      <td class="example">www.google.com.tw</td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2683,6 +2850,20 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The JA3 hash</td>
+      <td class="example">478e74fad764c966f19c5232c7cdfc5a</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">ja3Hash</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">The fingerprint of an SSL/TLS client application as detected via a network sensor or device</td>
       <td class="example">
         <ul>
@@ -2699,12 +2880,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">ja3Hash</td>
+      <td class="field-name">ja3sHash</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The JA3 hash</td>
-      <td class="example">478e74fad764c966f19c5232c7cdfc5a</td>
+      <td class="description">The JA3S hash</td>
+      <td class="example">6d37fb1b3306d6e9f875650d8eb74b4f</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -2725,20 +2906,6 @@ This documentation provides detailed information about all fields available for 
           <li>ba1b42efc7dc57bb43bf81de59791c1b</li>
         </ul>
       </td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">ja3sHash</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The JA3S hash</td>
-      <td class="example">6d37fb1b3306d6e9f875650d8eb74b4f</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -2824,6 +2991,20 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">EmailSubject</td>
       <td class="description">The email subject</td>
+      <td class="example">test</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">mailMsgSubject</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EmailSubject</td>
+      <td class="description">The email subject</td>
       <td class="example">
         <ul>
           <li>FW. mail subject</li>
@@ -2839,20 +3020,6 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">mailMsgSubject</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">EmailSubject</td>
-      <td class="description">The email subject</td>
-      <td class="example">test</td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -3037,6 +3204,20 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">EmailMessageID</td>
+      <td class="description">The service provider message ID</td>
+      <td class="example">&lt;sample_email@trendmicro.com&gt;</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">msgId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EmailMessageID</td>
       <td class="description">The internet message ID</td>
       <td class="example">
         <ul>
@@ -3058,20 +3239,6 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">msgId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">EmailMessageID</td>
-      <td class="description">The service provider message ID</td>
-      <td class="example">&lt;sample_email@trendmicro.com&gt;</td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
       <td class="field-name">objectIps</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -3083,6 +3250,40 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="description">The IP address resolved by the DNS protocol</td>
       <td class="example">10.10.10.10</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">outcome</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Whether the event was successful or not</td>
+      <td class="example">
+        <ul>
+          <li>Success</li>
+          <li>Failure</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">overSsl</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">SSL protocol connection</td>
+      <td class="example">YES</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -3109,20 +3310,6 @@ This documentation provides detailed information about all fields available for 
           <li>Virtual Network Sensor</li>
           <li>TippingPoint Security Management System</li>
           <li>Cloud One Network Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">overSsl</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">SSL protocol connection</td>
-      <td class="example">YES</td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -3273,6 +3460,28 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The product name</td>
+      <td class="example">
+        <ul>
+          <li>Secure Web Gateway</li>
+          <li>XDR for Cloud - AWS VPC Flow Logs</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>XDR for Cloud - AWS VPC Flow Logs</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">pname</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">The internal product ID</td>
       <td class="example">
         <ul>
@@ -3310,17 +3519,17 @@ This documentation provides detailed information about all fields available for 
       <td class="description">The product name</td>
       <td class="example">
         <ul>
-          <li>Secure Web Gateway</li>
-          <li>XDR for Cloud - AWS VPC Flow Logs</li>
+          <li>Apex One</li>
+          <li>Server &amp; Workload Protection</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
-          <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>XDR for Cloud - Azure VNet Flow Logs</li>
+          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -3376,6 +3585,26 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">pver</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The product version</td>
+      <td class="example">
+        <ul>
+          <li>6.2.1125</li>
+          <li>1.0.1524</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">rating</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -3401,6 +3630,20 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">false</td>
       <td class="general-field">-</td>
+      <td class="description">The raw data string that contains additional information</td>
+      <td class="example">[{ &quot;oid&quot;: &quot;1.2.3.4&quot;, &quot;value_type&quot;: 4, &quot;value&quot;: &quot;MANUFACTURER:SAMPLE\ nMODEL:SAMPLE C1234&quot;, &quot;parse&quot;: 1}]</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">rawDataStr</td>
+      <td class="type">string</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
       <td class="description">The JSON string that contains additional information</td>
       <td class="example">
         <ul>
@@ -3414,20 +3657,6 @@ This documentation provides detailed information about all fields available for 
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Container Security</li>
-          <li>Virtual Network Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">rawDataStr</td>
-      <td class="type">string</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The raw data string that contains additional information</td>
-      <td class="example">[{ &quot;oid&quot;: &quot;1.2.3.4&quot;, &quot;value_type&quot;: 4, &quot;value&quot;: &quot;MANUFACTURER:SAMPLE\ nMODEL:SAMPLE C1234&quot;, &quot;parse&quot;: 1}]</td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
         </ul>
       </td>
@@ -3598,6 +3827,27 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">URL</td>
+      <td class="description">The destination URL that the user is accessing</td>
+      <td class="example">
+        <ul>
+          <li>https://google.com/</li>
+          <li>https://api/example/v1/testit</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">request</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">URL</td>
       <td class="description">The notable URLs</td>
       <td class="example">
         <ul>
@@ -3625,21 +3875,14 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">request</td>
+      <td class="field-name">requestClientApplication</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">URL</td>
-      <td class="description">The destination URL that the user is accessing</td>
-      <td class="example">
-        <ul>
-          <li>https://google.com/</li>
-          <li>https://api/example/v1/testit</li>
-        </ul>
-      </td>
+      <td class="general-field">-</td>
+      <td class="description">The HTTP user agent</td>
+      <td class="example">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36</td>
       <td class="products">
         <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
         </ul>
@@ -3665,20 +3908,6 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
           <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">requestClientApplication</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The HTTP user agent</td>
-      <td class="example">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36</td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -4451,6 +4680,34 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
     </tr>
     <tr>
+      <td class="field-name">severity</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event severity</td>
+      <td class="example">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">shost</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -4626,6 +4883,20 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The SSH hassh</td>
+      <td class="example">45e3942372f42899a63e9080ef25b0ae</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">sshHassh</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">The SSH client application fingerprint</td>
       <td class="example">
         <ul>
@@ -4642,12 +4913,12 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
     </tr>
     <tr>
-      <td class="field-name">sshHassh</td>
+      <td class="field-name">sshHasshServer</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The SSH hassh</td>
-      <td class="example">45e3942372f42899a63e9080ef25b0ae</td>
+      <td class="description">The SSH hassh server</td>
+      <td class="example">4ceb58cad0f415b8fb16de236fa70ec5</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -4676,12 +4947,17 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
     </tr>
     <tr>
-      <td class="field-name">sshHasshServer</td>
+      <td class="field-name">sslCertCommonName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The SSH hassh server</td>
-      <td class="example">4ceb58cad0f415b8fb16de236fa70ec5</td>
+      <td class="general-field">
+        <ul>
+          <li>DomainName</li>
+          <li>HostDomain</li>
+        </ul>
+      </td>
+      <td class="description">The certificate common name</td>
+      <td class="example">*.www.sample.com</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -4701,25 +4977,6 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
       <td class="description">The subject common name</td>
       <td class="example">settings-win.data.microsoft.com</td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">sslCertCommonName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>DomainName</li>
-          <li>HostDomain</li>
-        </ul>
-      </td>
-      <td class="description">The certificate common name</td>
-      <td class="example">*.www.sample.com</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -4878,6 +5135,26 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">UserAccount</td>
+      <td class="description">The user name or IP address (IPv4)</td>
+      <td class="example">
+        <ul>
+          <li>Sample User Name</li>
+          <li>10.10.10.10</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">suid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">UserAccount</td>
       <td class="description">User name or mailbox</td>
       <td class="example">
         <ul>
@@ -4901,20 +5178,14 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
     </tr>
     <tr>
-      <td class="field-name">suid</td>
+      <td class="field-name">suser</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">UserAccount</td>
-      <td class="description">The user name or IP address (IPv4)</td>
-      <td class="example">
-        <ul>
-          <li>Sample User Name</li>
-          <li>10.10.10.10</li>
-        </ul>
-      </td>
+      <td class="general-field">EmailSender</td>
+      <td class="description">The email sender</td>
+      <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
         </ul>
@@ -4936,20 +5207,6 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Apex One as a Service</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">suser</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">EmailSender</td>
-      <td class="description">The email sender</td>
-      <td class="example">sample_email@trendmicro.com</td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -5214,6 +5471,20 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
     <tr>
       <td class="field-name">vLANId</td>
       <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The virtual LAN ID</td>
+      <td class="example">4095</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">vLANId</td>
+      <td class="type">int</td>
       <td class="searchable">false</td>
       <td class="general-field">-</td>
       <td class="description">The virtual LAN ID</td>
@@ -5228,26 +5499,12 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
         </ul>
       </td>
     </tr>
-    <tr>
-      <td class="field-name">vLANId</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The virtual LAN ID</td>
-      <td class="example">4095</td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-        </ul>
-      </td>
-    </tr>
   </tbody>
 </table>
 </div>
 
 ## Field Statistics
-- **Total Fields:** 255
+- **Total Fields:** 268
 - **Layer:** Network
 - **Product:** Deep Discovery Inspector
 

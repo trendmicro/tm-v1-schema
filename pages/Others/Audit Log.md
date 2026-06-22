@@ -210,12 +210,125 @@ This documentation provides detailed information about all fields available for 
       <td class="example">{&quot;type&quot;:&quot;audit&quot;,&quot;timestamp&quot;:&quot;2020-02-20T08:10:01.904Z&quot;,&quot;serviceName&quot;:&quot;uic&quot;,&quot;componentName&quot;:&quot;backend&quot;,&quot;siteName&quot;:&quot;us-east-1-xdr-eks-prod&quot;,&quot;customerId&quot;:&quot;74b629cb-8fc6-4a1b-a00f-b5003ab9f0e3&quot;,&quot;identifier&quot;:{&quot;id&quot;:&quot;db09668d-9d85-42ee-946f-5f8d37f288b2&quot;,&quot;type&quot;:&quot;managedAccount&quot;,&quot;name&quot;:&quot;John Smith&quot;,&quot;email&quot;:&quot;john_smith@abc.com&quot;},&quot;userId&quot;:&quot;db09668d-9d85-42ee-946f-5f8d37f288b2&quot;,&quot;user&quot;:&quot;xdr-stg@trendmicro.com&quot;,&quot;roleId&quot;:&quot;53a580c5-d952-43e1-8ce3-79eac4961ee6&quot;,&quot;role&quot;:&quot;admin&quot;,&quot;sourceIp&quot;:&quot;180.10.1.2&quot;,&quot;access&quot;:0,&quot;category&quot;:&quot;01&quot;,&quot;activity&quot;:&quot;01&quot;,&quot;result&quot;:true,&quot;triggerService&quot;:&quot;awb&quot;,&quot;details&quot;:{&quot;ipAddr&quot;:&quot;10.0.0.1&quot;}}</td>
       <td class="products">Audit Log</td>
     </tr>
+    <tr>
+      <td class="field-name">eventSourceType</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event source type</td>
+      <td class="example">14 - EVENT_SOURCE_AUDIT_LOG</td>
+      <td class="products">Audit Log</td>
+    </tr>
+    <tr>
+      <td class="field-name">eventTime</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The time the agent or product detected the event</td>
+      <td class="example">
+        <ul>
+          <li>1656324260000</li>
+          <li>1728192606034</li>
+          <li>1758293606034</li>
+        </ul>
+      </td>
+      <td class="products">Audit Log</td>
+    </tr>
+    <tr>
+      <td class="field-name">filterRiskLevel</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The top level filter risk of the event</td>
+      <td class="example">
+        <ul>
+          <li>info</li>
+          <li>low</li>
+          <li>medium</li>
+        </ul>
+      </td>
+      <td class="products">Audit Log</td>
+    </tr>
+    <tr>
+      <td class="field-name">groupId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The group ID for the management scope filter</td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="products">Audit Log</td>
+    </tr>
+    <tr>
+      <td class="field-name">groupName</td>
+      <td class="type">string</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The group name</td>
+      <td class="example">example.com</td>
+      <td class="products">Audit Log</td>
+    </tr>
+    <tr>
+      <td class="field-name">logReceivedTime</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The time when the XDR log was received</td>
+      <td class="example">1656324260000</td>
+      <td class="products">Audit Log</td>
+    </tr>
+    <tr>
+      <td class="field-name">policyTreePath</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The policy tree path</td>
+      <td class="example">policyname1/policyname2/policyname3</td>
+      <td class="products">Audit Log</td>
+    </tr>
+    <tr>
+      <td class="field-name">productCode</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The product code</td>
+      <td class="example">aal</td>
+      <td class="products">Audit Log</td>
+    </tr>
+    <tr>
+      <td class="field-name">tags</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>Technique</li>
+          <li>Tactic</li>
+        </ul>
+      </td>
+      <td class="description">The detected technique ID based on the alert filter</td>
+      <td class="example">
+        <ul>
+          <li>[&#x27;MITREV9.T1090&#x27;]</li>
+          <li>[&#x27;MITRE.T1071&#x27;]</li>
+          <li>[&#x27;MITREV9.T1059.001&#x27;]</li>
+        </ul>
+      </td>
+      <td class="products">Audit Log</td>
+    </tr>
+    <tr>
+      <td class="field-name">uuid</td>
+      <td class="type">guid</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The unique key of the log</td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="products">Audit Log</td>
+    </tr>
   </tbody>
 </table>
 </div>
 
 ## Field Statistics
-- **Total Fields:** 1
+- **Total Fields:** 11
 - **Layer:** Others
 - **Product:** Audit Log
 
