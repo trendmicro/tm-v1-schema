@@ -158,8 +158,8 @@
   - pds
   Description_EN: The descriptions of the detected techniques
   Sample:
-  - [T1204 some description about this technique, T1573.001_AES another 
-      description about this technique]
+  - [T1204 some description about this technique, T1573.001_AES another description
+      about this technique]
   DL_Type: dynamic
   DL_Searchable: true
   DL_Aggregable: false

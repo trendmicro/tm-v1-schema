@@ -57,8 +57,8 @@
 - Name: isExternalAccess
   ProductCode:
   - xca
-  Description_EN: Whether the cmdlet was run by an external user (True=external 
-    user, False=internal user in your organization)
+  Description_EN: Whether the cmdlet was run by an external user (True=external user,
+    False=internal user in your organization)
   Sample:
   - true
   DL_Type: bool
@@ -119,8 +119,8 @@
 - Name: parameters
   ProductCode:
   - xca
-  Description_EN: The names and values of all parameters used in the cmdlet 
-    identified in the Operations property
+  Description_EN: The names and values of all parameters used in the cmdlet identified
+    in the Operations property
   Sample:
   - '[{"Name": "AlwaysDeleteOutlookRulesBlob","Value": "False"},{"Name" : "Force","Value":
     "False"}]'
@@ -192,8 +192,8 @@
 - Name: fileExt
   ProductCode:
   - xca
-  Description_EN: The file extension (If the object is a folder, there is no 
-    value for this field.)
+  Description_EN: The file extension (If the object is a folder, there is no value
+    for this field.)
   Sample:
   - jpg
   DL_Type: string
@@ -216,8 +216,8 @@
   - xca
   Description_EN: The user agent
   Sample:
-  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
-    Gecko) Chrome/119.0.0.0 Safari/537.36
+  - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+    Chrome/119.0.0.0 Safari/537.36
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

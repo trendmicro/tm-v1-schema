@@ -1,0 +1,183 @@
+- Name: clusterId
+  Description_EN: The cluster ID of the container
+  DL_Type: string
+
+- Name: clusterName
+  Description_EN: The cluster name of the container
+  DL_Type: string
+
+- Name: containerId
+  Description_EN: The Kubernetes container ID
+  DL_Type: string
+
+- Name: containerImage
+  Description_EN: The Kubernetes container image
+  DL_Type: string
+
+- Name: containerImageDigest
+  Description_EN: The Kubernetes container image digest
+  DL_Type: string
+
+- Name: containerName
+  Description_EN: The Kubernetes container name
+  DL_Type: string
+
+- Name: customAssetTags
+  Description_EN: The list of custom asset tags
+  DL_Type: dynamic
+
+- Name: dpt
+  Description_EN: The service destination port of the private application server (dstport)
+  DL_Type: int
+
+- Name: dst
+  Description_EN: The destination IP address (dstaddr)
+  DL_Type: dynamic
+
+- Name: endpointHostName
+  Description_EN: The host name of the endpoint on which the event was detected
+  DL_Type: string
+
+- Name: eventId
+  Description_EN: The event ID from the logs of each product
+  DL_Type: string
+
+- Name: eventSourceType
+  Description_EN: The event source type
+  DL_Type: int
+
+- Name: eventSubId
+  Description_EN: The sub-event ID
+  DL_Type: string
+
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  DL_Type: datetime
+
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  DL_Type: string
+
+- Name: groupId
+  Description_EN: The group ID (sae), or the Claude group ID (tlc)
+  DL_Type: string
+
+- Name: k8sNamespace
+  Description_EN: The Kubernetes namespace of the container
+  DL_Type: string
+
+- Name: k8sPodId
+  Description_EN: The Kubernetes pod ID of the container
+  DL_Type: string
+
+- Name: k8sPodName
+  Description_EN: The Kubernetes pod name of the container
+  DL_Type: string
+
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  DL_Type: datetime
+
+- Name: objectFilePath
+  Description_EN: The file path of the target process image or target file
+  DL_Type: string
+
+- Name: objectUser
+  Description_EN: The user name of the target process which is launched by current
+    running process
+  DL_Type: string
+
+- Name: osName
+  Description_EN: The host operating system name
+  DL_Type: string
+
+- Name: parentCmd
+  Description_EN: The command line of the subject parent process
+  DL_Type: string
+
+- Name: parentFilePath
+  Description_EN: The full file path of the parent process
+  DL_Type: string
+
+- Name: parentLaunchTime
+  Description_EN: The time when the parent process was launched
+  DL_Type: datetime
+
+- Name: parentName
+  Description_EN: The image name of the parent process
+  DL_Type: string
+
+- Name: parentPid
+  Description_EN: The PID of the parent process
+  DL_Type: int
+
+- Name: platformAssetTags
+  Description_EN: The list of platform custom asset tags
+  DL_Type: dynamic
+
+- Name: policyId
+  Description_EN: The policy ID of which the event was detected
+  DL_Type: string
+
+- Name: policyName
+  Description_EN: The name of the triggered policy
+  DL_Type: string
+
+- Name: processCmd
+  Description_EN: The command line entry of the subject process
+  DL_Type: string
+
+- Name: processFilePath
+  Description_EN: The file path of the subject process
+  DL_Type: string
+
+- Name: processLaunchTime
+  Description_EN: The time the subject process was launched
+  DL_Type: datetime
+
+- Name: processName
+  Description_EN: The image name of the process that triggered the event
+  DL_Type: string
+
+- Name: processPid
+  Description_EN: The PID of the subject process
+  DL_Type: int
+
+- Name: productCode
+  Description_EN: The internal product code of the identity provider (aad=Microsoft
+    Entra ID, opa=Microsoft Active Directory)
+  DL_Type: string
+
+- Name: proto
+  Description_EN: The exploited layer network protocol
+  DL_Type: string
+
+- Name: pver
+  Description_EN: The product version
+  DL_Type: string
+
+- Name: ruleIdStr
+  Description_EN: The rule ID
+  DL_Type: string
+
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  DL_Type: bool
+
+- Name: spt
+  Description_EN: The virtual port of the source assigned to the Secure Access Module
+    (srcport)
+  DL_Type: int
+
+- Name: src
+  Description_EN: The source IP address (srcaddr)
+  DL_Type: dynamic
+
+- Name: srcFilePath
+  Description_EN: The file path which is moved or copied to another path
+  DL_Type: string
+
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on the
+    alert filter
+  DL_Type: dynamic

@@ -219,8 +219,8 @@
   ProductCode:
   - sws
   - sig
-  Description_EN: The name of the triggered Threat Protection template or Data 
-    Loss Prevention profile
+  Description_EN: The name of the triggered Threat Protection template or Data Loss
+    Prevention profile
   Sample:
   - Primary Protection Rule
   - Multibak Scaner Threat
