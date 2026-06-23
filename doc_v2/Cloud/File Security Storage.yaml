@@ -417,8 +417,8 @@
   - sfc
   - sss
   - scs
-  Description_EN: The AWS cloud account ID, Google Cloud product ID, or Azure 
-    subscription ID
+  Description_EN: The AWS cloud account ID, Google Cloud product ID, or Azure subscription
+    ID
   Sample:
   - '123456789012'
   - 00000000-0000-0000-0000-000000000000

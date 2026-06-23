@@ -107,8 +107,7 @@
   - pts
   - pdi
   - xns
-  Description_EN: Technique ID detected by the product agent base on a detection
-    rule
+  Description_EN: Technique ID detected by the product agent base on a detection rule
   Sample: []
   DL_Type: dynamic
   DL_CommonKey:
@@ -367,8 +366,7 @@
   - pts
   Description_EN: The file path of the quarantined object
   Sample:
-  - C:\Program 
-    Files\TXOne\StellarProtect\private\quarantine\00000000-0000-0000-0000-000000000000
+  - C:\Program Files\TXOne\StellarProtect\private\quarantine\00000000-0000-0000-0000-000000000000
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
