@@ -221,8 +221,8 @@
   ProductCode:
   - sig
   - szn
-  Description_EN: The version of the HTTP protocol between the Service Gateway 
-    and server/website
+  Description_EN: The version of the HTTP protocol between the Service Gateway and
+    server/website
   Sample:
   - HTTP/1.1
   DL_Type: string
@@ -340,8 +340,8 @@
   - sig
   - pdi
   - xns
-  Description_EN: Active directory domain, domain of username for logging in 
-    TMAS adminportal adminportal
+  Description_EN: Active directory domain, domain of username for logging in TMAS
+    adminportal adminportal
   Sample:
   - trendmicro.com
   DL_Type: string
@@ -367,8 +367,7 @@
 - Name: duration
   ProductCode:
   - sig
-  Description_EN: The time it took the scanner to complete the scan, in 
-    milliseconds
+  Description_EN: The time it took the scanner to complete the scan, in milliseconds
   Sample:
   - 1599465660123
   DL_Type: string
@@ -378,8 +377,8 @@
 - Name: eventSubName
   ProductCode:
   - sig
-  Description_EN: The Zero Trust Secure Access - Internet Access cloud app 
-    action or the Palo Alto Networks firewall log sub-type
+  Description_EN: The Zero Trust Secure Access - Internet Access cloud app action
+    or the Palo Alto Networks firewall log sub-type
   Sample:
   - OneDrive download file
   - start
@@ -481,8 +480,7 @@
   Description_EN: The Zero Trust Internet Access gateway location
   Sample:
   - Public/Home network: The default cloud gateway.
-  - Anything else: The pre-defined location name of cloud gateway or on-premises
-      gateway.
+  - Anything else: The pre-defined location name of cloud gateway or on-premises gateway.
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -535,8 +533,8 @@
 - Name: profile
   ProductCode:
   - sig
-  Description_EN: The name of the triggered Threat Protection template or Data 
-    Loss Prevention profile triggered
+  Description_EN: The name of the triggered Threat Protection template or Data Loss
+    Prevention profile triggered
   Sample:
   DL_Type: string
   DL_CommonKey:
@@ -702,8 +700,7 @@
 - Name: serverRespTime
   ProductCode:
   - sig
-  Description_EN: The time the server took to respond to the request, in 
-    milliseconds
+  Description_EN: The time the server took to respond to the request, in milliseconds
   Sample:
   - 1599465660123
   DL_Type: string
@@ -715,16 +712,15 @@
   - sig
   Description_EN: The Zero Trust Internet Access gateway service mode
   Sample:
-  - Proxy: Zero Trust Internet Access On-Premises Gateway with forward proxy 
-      mode configured
-  - Forward: Zero Trust Internet Access On-Premises Gateway with forward proxy 
-      mode and port forwarding configured
+  - Proxy: Zero Trust Internet Access On-Premises Gateway with forward proxy mode
+      configured
+  - Forward: Zero Trust Internet Access On-Premises Gateway with forward proxy mode
+      and port forwarding configured
   - ICAP: Zero Trust Internet Access On-Premises Gateway with ICAP configured
-  - Reverse: Zero Trust Internet Access On-Premises Gateway with reverse proxy 
-      mode configured
+  - Reverse: Zero Trust Internet Access On-Premises Gateway with reverse proxy mode
+      configured
   - Proxy (xx): Cloud Gateway in xx PoP with forward proxy mode
-  - Forward (xx): Cloud Gateway in xx PoP with forward proxy mode for port 
-      forwarding
+  - Forward (xx): Cloud Gateway in xx PoP with forward proxy mode for port forwarding
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -752,8 +748,8 @@
 - Name: ruleUuid
   ProductCode:
   - szn
-  Description_EN: The risk assessment and control design that is defined by Zero
-    Trust Secure Access risk control rules
+  Description_EN: The risk assessment and control design that is defined by Zero Trust
+    Secure Access risk control rules
   Sample:
   - 11111111-1111-1111-1111-111111111111
   DL_Type: string
@@ -763,8 +759,7 @@
 - Name: objectId
   ProductCode:
   - szn
-  Description_EN: The UUID of the Zero Trust Secure Access private access 
-    application
+  Description_EN: The UUID of the Zero Trust Secure Access private access application
   Sample:
   - 11111111-1111-1111-1111-111111111111
   DL_Type: string
@@ -776,8 +771,8 @@
   - szn
   - vpc
   - azv
-  Description_EN: The virtual port of the source assigned to the Secure Access 
-    Module (srcport)
+  Description_EN: The virtual port of the source assigned to the Secure Access Module
+    (srcport)
   Sample:
   - 57763
   DL_Type: int
@@ -800,8 +795,7 @@
   - szn
   - vpc
   - azv
-  Description_EN: The service destination port of the private application server
-    (dstport)
+  Description_EN: The service destination port of the private application server (dstport)
   Sample:
   - 443
   DL_Type: int
@@ -822,8 +816,7 @@
 - Name: start
   ProductCode:
   - vpc
-  Description_EN: The time when the first data packet was received (in Unix 
-    seconds)
+  Description_EN: The time when the first data packet was received (in Unix seconds)
   Sample:
   - 1616729292
   DL_Type: real
@@ -833,8 +826,7 @@
 - Name: end
   ProductCode:
   - vpc
-  Description_EN: The time when the last data packet was received (in Unix 
-    seconds)
+  Description_EN: The time when the last data packet was received (in Unix seconds)
   Sample:
   - 1616729349
   DL_Type: long
@@ -1007,8 +999,8 @@
   - xns
   Description_EN: The HTTP user agent
   Sample:
-  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) 
-    Chrome/61.0.3163.100 Safari/537.36
+  - Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100
+    Safari/537.36
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1088,8 +1080,8 @@
   Description_EN: All HTTP response headers without sensitive information
   Sample:
   - "Accept-Ranges: bytes\r\nContent-Length: 68\r\nContent-Type: - text/plain; charset=utf-8\r\
-    \ \nLast-Modified: Thu, 19 Aug 2021 06:23:54 GMT\r\nDate: Thu, 19 Aug 2021 06:24:00
-    GMT\r\n"
+    \ \nLast-Modified: Thu, 19 Aug 2021 06:23:54 GMT\r\nDate: Thu, 19 Aug 2021 06:24:00\
+    \ GMT\r\n"
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1133,8 +1125,7 @@
   ProductCode:
   - pdi
   - xns
-  Description_EN: The file information extracted from files detected in response
-    direction
+  Description_EN: The file information extracted from files detected in response direction
   Sample:
   - 
   DL_Type: dynamic
@@ -1158,8 +1149,8 @@
   ProductCode:
   - pdi
   - xns
-  Description_EN: The patched HTTP server port when the network appliance 
-    selects an x-forwarded-for IP address to use
+  Description_EN: The patched HTTP server port when the network appliance selects
+    an x-forwarded-for IP address to use
   Sample:
   - 65535
   DL_Type: int
@@ -1328,8 +1319,8 @@
   - xns
   Description_EN: The issuer of the certificate
   Sample:
-  - /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance 
-    Server CA
+  - /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server
+    CA
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1558,8 +1549,8 @@
   ProductCode:
   - xns
   - pdi
-  Description_EN: The data volume transmitted over the transport layer by the 
-    client (in bytes)
+  Description_EN: The data volume transmitted over the transport layer by the client
+    (in bytes)
   Sample:
   - 15688
   DL_Type: string
@@ -1568,8 +1559,8 @@
   ProductCode:
   - xns
   - pdi
-  Description_EN: The data volume transmitted over the transport layer by the 
-    server (in bytes)
+  Description_EN: The data volume transmitted over the transport layer by the server
+    (in bytes)
   Sample:
   - 7856
   DL_Type: string
@@ -1691,8 +1682,8 @@
   ProductCode:
   - pdi
   - xns
-  Description_EN: The IP address of the Deep Discovery Inspector or Virtual 
-    Network Sensor appliance
+  Description_EN: The IP address of the Deep Discovery Inspector or Virtual Network
+    Sensor appliance
   Sample:
   - 10.10.10.10
   DL_Type: dynamic
@@ -1942,8 +1933,7 @@
 - Name: pktSrcCloudServiceName
   ProductCode:
   - vpc
-  Description_EN: The subset IP address range name for cloud service source IP 
-    (pkt-src-aws-service)
+  Description_EN: The subset IP address range name for cloud service source IP (pkt-src-aws-service)
   Sample:
   - AMAZON
   - EC2
@@ -1955,8 +1945,8 @@
 - Name: pktDstCloudServiceName
   ProductCode:
   - vpc
-  Description_EN: The subset IP address range name for cloud service destination
-    IP (pkt-dst-aws-service)
+  Description_EN: The subset IP address range name for cloud service destination IP
+    (pkt-dst-aws-service)
   Sample:
   - AMAZON
   - EC2
@@ -2005,8 +1995,8 @@
 - Name: originUUID
   ProductCode:
   - ALL
-  Description_EN: The UUID of the original event which matches the Security 
-    Analytics Engine filter
+  Description_EN: The UUID of the original event which matches the Security Analytics
+    Engine filter
   Sample:
   - 11111111-1111-1111-1111-111111111111
   DL_Type: dynamic
@@ -2016,8 +2006,8 @@
 - Name: originEventSourceType
   ProductCode:
   - ALL
-  Description_EN: The source type of the original event which matches the 
-    Security Analytics Engine filter
+  Description_EN: The source type of the original event which matches the Security
+    Analytics Engine filter
   Sample:
   - EVENT_SOURCE_NETWORK_ACTIVITY
   DL_Type: string

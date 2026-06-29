@@ -31,8 +31,8 @@
   - sds
   - pds
   - ptn
-  Description_EN: The computer name of the client host (The hostname from the 
-    suspicious URL detected by Deep Discovery Inspector)
+  Description_EN: The computer name of the client host (The hostname from the suspicious
+    URL detected by Deep Discovery Inspector)
   Sample:
   - Let's Encrypt
   - 10.10.10.10
@@ -49,9 +49,9 @@
   - xns
   - pds
   - sao
-  Description_EN: The endpoint hostname (For example, if an intranet host 
-    accesses a suspicious internet host, the intranet host is the "peerHost" and
-    the internet host is the "interestedHost")
+  Description_EN: The endpoint hostname (For example, if an intranet host accesses
+    a suspicious internet host, the intranet host is the "peerHost" and the internet
+    host is the "interestedHost")
   Sample:
   - 10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]
   - es-dtc-w-dc02.example.corp
@@ -543,16 +543,13 @@
 - Name: forensicFilePath
   ProductCode:
   - sao
-  Description_EN: The file path of the forensic file (When a Data Loss 
-    Prevention policy is triggered, the file is encrypted and copied to the 
-    OfficeScan server for post-mortem analysis)
+  Description_EN: The file path of the forensic file (When a Data Loss Prevention
+    policy is triggered, the file is encrypted and copied to the OfficeScan server
+    for post-mortem analysis)
   Sample:
-  - C:\Program Files (x86)\Trend Micro\OfficeScan 
-    Client\dlplite\forensic\frnsc_200411DC0594_xml_00000000000_20220314_132326281
-  - C:\Program Files (x86)\Trend Micro\OfficeScan 
-    Client\dlplite\forensic\frnsc_CIL-OPRCOGEN_docx_00000000000_20211025_225445873
-  - C:\Program Files (x86)\Trend Micro\OfficeScan 
-    Client\dlplite\forensic\frnsc_SHA-ESHOU_h265_00000000000_20220601_082417865
+  - C:\Program Files (x86)\Trend Micro\OfficeScan Client\dlplite\forensic\frnsc_200411DC0594_xml_00000000000_20220314_132326281
+  - C:\Program Files (x86)\Trend Micro\OfficeScan Client\dlplite\forensic\frnsc_CIL-OPRCOGEN_docx_00000000000_20211025_225445873
+  - C:\Program Files (x86)\Trend Micro\OfficeScan Client\dlplite\forensic\frnsc_SHA-ESHOU_h265_00000000000_20220601_082417865
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -661,8 +658,8 @@
   ProductCode:
   - sds
   - pds
-  Description_EN: The SHA-1 of the target process image or target file 
-    (wasEntity from an IM event)
+  Description_EN: The SHA-1 of the target process image or target file (wasEntity
+    from an IM event)
   Sample:
   - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
   - 89CE26EAD139D52B8A6B61BFFC6AF89AF246580F
@@ -797,8 +794,8 @@
   Description_EN: The object process command line
   Sample:
   - C:\WINDOWS\system32\wbem\wmiprvse.exe -Embedding
-  - "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\PowerShell.exe\" -NoLogo -Noninteractive
-    -NoProfile  -ExecutionPolicy Bypass \"& 'C:\\WINDOWS\\CCM\\SystemTemp\\afd6f0e5-e491-4764-a20a-9f1d9edf3cce.ps1'\""
+  - "\"C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\PowerShell.exe\" -NoLogo -Noninteractive\
+    \ -NoProfile  -ExecutionPolicy Bypass \"& 'C:\\WINDOWS\\CCM\\SystemTemp\\afd6f0e5-e491-4764-a20a-9f1d9edf3cce.ps1'\""
   - C:\WINDOWS\system32\lsass.exe
   DL_Type: dynamic
   DL_CommonKey:
@@ -983,8 +980,7 @@
   - pts
   - pdi
   - xns
-  Description_EN: Technique ID detected by the product agent base on a detection
-    rule
+  Description_EN: Technique ID detected by the product agent base on a detection rule
   Sample: []
   DL_Type: dynamic
   DL_CommonKey:
@@ -1219,9 +1215,9 @@
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
   - 'pam_unix(cron:session): session opened for user root by (uid=0)'
-  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:
-    EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.
-    [CLIENT: 10.10.10.10]  "
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:\
+    \ EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.\
+    \ [CLIENT: 10.10.10.10]  "
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1906,8 +1902,8 @@
   ProductCode:
   - sws
   - sig
-  Description_EN: The name of the triggered Threat Protection template or Data 
-    Loss Prevention profile
+  Description_EN: The name of the triggered Threat Protection template or Data Loss
+    Prevention profile
   Sample:
   - Primary Protection Rule
   - Multibak Scaner Threat
@@ -2197,8 +2193,8 @@
   - sao
   - pdi
   - xns
-  Description_EN: The severity level of the threat actors associated with the 
-    C&C servers
+  Description_EN: The severity level of the threat actors associated with the C&C
+    servers
   Sample:
   - 0
   - 1
@@ -2384,8 +2380,8 @@
   ProductCode:
   - pdi
   - xns
-  Description_EN: The Trend Micro Threat Mitigation Server requires the log, but
-    the Trend Micro Threat Mitigation Server is EOL.
+  Description_EN: The Trend Micro Threat Mitigation Server requires the log, but the
+    Trend Micro Threat Mitigation Server is EOL.
   Sample:
   - '0'
   DL_Type: string
@@ -2396,8 +2392,8 @@
   ProductCode:
   - pdi
   - xns
-  Description_EN: The Trend Micro Threat Mitigation Server requires the log, but
-    the Trend Micro Threat Mitigation Server is EOL.
+  Description_EN: The Trend Micro Threat Mitigation Server requires the log, but the
+    Trend Micro Threat Mitigation Server is EOL.
   Sample:
   - '0'
   DL_Type: string
@@ -2471,10 +2467,9 @@
   - xns
   - pds
   - pan
-  Description_EN: Device Direction. If the source IP is in the internal network 
-    (the network monitored by Deep Discovery Inspector) it is tagged as 
-    outbound. All other cases are inbound. Internal-to-internal is also tagged 
-    as outbound.
+  Description_EN: Device Direction. If the source IP is in the internal network (the
+    network monitored by Deep Discovery Inspector) it is tagged as outbound. All other
+    cases are inbound. Internal-to-internal is also tagged as outbound.
   Sample:
   - outbound
   - inbound
@@ -2925,8 +2920,8 @@
   ProductCode:
   - pdi
   - xns
-  Description_EN: The network group associated with the user-defined source IP 
-    or destination IP
+  Description_EN: The network group associated with the user-defined source IP or
+    destination IP
   Sample:
   - Default
   - Rede DATACENTER Lumen/FORTIGATE - AD ESTACIO CORP
@@ -3015,7 +3010,7 @@
   - sca
   - sem
   Description_EN: The mail received timestamp
-  Sample: []
+  Sample: '1780476751000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -3082,9 +3077,9 @@
   - pdi
   - xns
   - sfs
-  Description_EN: The risk type group for NCCE (Network Content Correlation 
-    Engine) rules. This field comes from NCCP (Network Content Correlation 
-    Pattern) rule type definitions.
+  Description_EN: The risk type group for NCCE (Network Content Correlation Engine)
+    rules. This field comes from NCCP (Network Content Correlation Pattern) rule type
+    definitions.
   Sample:
   - Others
   - Malware
@@ -3156,9 +3151,7 @@
   - scs
   Description_EN: The UTC time that the object was created
   Sample:
-  - '2014-11-22T01:45:51-06:00'
-  - '2009-07-13T23:31:13-05:00'
-  - '2014-11-21T02:43:28-05:00'
+  - '1420156800000'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -3923,14 +3916,12 @@
   - sao
   Description_EN: The one-to-many data structure
   Sample:
-  - logGenLocalDatetime:2022-07-08T09:21:11+00:00, act:Assessment, 
-    behaviorType:Registry, riskConfidenceLevel:1, ruleId:7, ruleName:New 
-    Service, behaviorCategory:Policy Enforcement, 
-    processFilePath:C:\Windows\SysWOW64\srts\wmipr.exe, aegisOperation:Set Key, 
-    objectFilePath:HKLM\SYSTEM\CurrentControlSet\Services\DpsiBSvc\Start, 
-    policyId:007, objectFileHashSha1:null, objectCmd:null, 
-    processFileHashSha1:null, processCmd:null, objectRegistryData:null, 
-    objectRegistryKeyHandle:null, objectRegistryValue:null
+  - logGenLocalDatetime:2022-07-08T09:21:11+00:00, act:Assessment, behaviorType:Registry,
+    riskConfidenceLevel:1, ruleId:7, ruleName:New Service, behaviorCategory:Policy
+    Enforcement, processFilePath:C:\Windows\SysWOW64\srts\wmipr.exe, aegisOperation:Set
+    Key, objectFilePath:HKLM\SYSTEM\CurrentControlSet\Services\DpsiBSvc\Start, policyId:007,
+    objectFileHashSha1:null, objectCmd:null, processFileHashSha1:null, processCmd:null,
+    objectRegistryData:null, objectRegistryKeyHandle:null, objectRegistryValue:null
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -3964,8 +3955,8 @@
 - Name: destinationPath
   ProductCode:
   - sao
-  Description_EN: The intended destination of the file containing the digital 
-    asset or channel
+  Description_EN: The intended destination of the file containing the digital asset
+    or channel
   Sample:
   - Cloud Storage (OneDrive)
   - Printer
@@ -4016,8 +4007,8 @@
   - sds
   - sss
   - mns
-  Description_EN: The ID of the instance that indicates the meta-cloud or data 
-    center VM
+  Description_EN: The ID of the instance that indicates the meta-cloud or data center
+    VM
   Sample:
   - 52294e7b-f732-c6e9-b2c3-7a6b6f50d101
   - 00030912-c5e7-4348-9012-7c684751c531
@@ -4032,8 +4023,8 @@
 - Name: instanceName
   ProductCode:
   - mns
-  Description_EN: The name of the instance that indicates the meta-cloud or data
-    center VM
+  Description_EN: The name of the instance that indicates the meta-cloud or data center
+    VM
   Sample:
   - instapecot-1
   DL_Type: string
@@ -4069,8 +4060,8 @@
   - sao
   Description_EN: The signer of the file
   Sample:
-  - Shenzhen Smartspace Software technology Co.,Limited;Symantec Class 3 SHA256 
-    Code Signing CA;1429491600;1492649999
+  - Shenzhen Smartspace Software technology Co.,Limited;Symantec Class 3 SHA256 Code
+    Signing CA;1429491600;1492649999
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -4113,8 +4104,8 @@
   ProductCode:
   - sao
   - sfs
-  Description_EN: The confidence rating returned from TrendX Hybrid Model 
-    (predictive machine learning). Values from 1-99.
+  Description_EN: The confidence rating returned from TrendX Hybrid Model (predictive
+    machine learning). Values from 1-99.
   Sample:
   - 94
   DL_Type: int
@@ -4146,9 +4137,8 @@
   ProductCode:
   - sig
   - szn
-  Description_EN: The UUID of the cloud access or risk control policy, or the 
-    hard-coded string that indicates the rule of the global blocked/approved URL
-    list
+  Description_EN: The UUID of the cloud access or risk control policy, or the hard-coded
+    string that indicates the rule of the global blocked/approved URL list
   Sample:
   - 7937cb0b-e598-4c8f-a50f-65c32905ba3a
   - C!7c4433e3-5b2c-449f-b66e-ccaac006b6f1
@@ -4178,8 +4168,8 @@
   - xns
   - ptp
   - stp
-  Description_EN: Whether the event was triggered by an SSL decryption stream 
-    (Displayed only when SSL Inspection is supported)
+  Description_EN: Whether the event was triggered by an SSL decryption stream (Displayed
+    only when SSL Inspection is supported)
   Sample:
   - Not over SSL/TLS
   - '0'
@@ -4359,8 +4349,8 @@
   ProductCode:
   - pdi
   - xns
-  Description_EN: The fingerprint of an SSL/TLS client application as detected 
-    via a network sensor or device
+  Description_EN: The fingerprint of an SSL/TLS client application as detected via
+    a network sensor or device
   Sample:
   - 72a589da586844d7f0818ce684948eea
   - cd08e31494f9531f560d64c695473da9
@@ -4373,8 +4363,8 @@
   ProductCode:
   - pdi
   - xns
-  Description_EN: The fingerprint of an SSL/TLS server application as detected 
-    via a network sensor or device
+  Description_EN: The fingerprint of an SSL/TLS server application as detected via
+    a network sensor or device
   Sample:
   - e54965894d6b45ecb4323c7ea3d6c115
   - ec74a5c51106f0419184d0dd08fb05bc
@@ -4432,8 +4422,8 @@
   ProductCode:
   - sca
   - sem
-  Description_EN: The sub-types of the policy event (Displayed when a policy 
-    event has sub-types)
+  Description_EN: The sub-types of the policy event (Displayed when a policy event
+    has sub-types)
   Sample:
   - Spam Others
   - malware
@@ -4541,8 +4531,7 @@
 - Name: mailSmtpHelo
   ProductCode:
   - sem
-  Description_EN: The domain name of the email server by using the SMTP HELO 
-    command
+  Description_EN: The domain name of the email server by using the SMTP HELO command
   Sample:
   - example.com
   DL_Type: string
@@ -5005,8 +4994,8 @@
 - Name: smbSharedName
   ProductCode:
   - xes
-  Description_EN: The shared folder name for the server that contains the files 
-    to be opened
+  Description_EN: The shared folder name for the server that contains the files to
+    be opened
   Sample:
   - C:\sharedfolder
   DL_Type: string
@@ -5036,8 +5025,8 @@
 - Name: originUUID
   ProductCode:
   - ALL
-  Description_EN: The UUID of the original events which matches the Security 
-    Analytics Engine filter
+  Description_EN: The UUID of the original events which matches the Security Analytics
+    Engine filter
   Sample:
   - 00000000-0000-0000-0000-000000000000
   - 11111111-1111-1111-1111-111111111111
@@ -5049,8 +5038,8 @@
 - Name: originEventSourceType
   ProductCode:
   - ALL
-  Description_EN: The event source type of the original events which matches the
-    Security Analytics Engine filter
+  Description_EN: The event source type of the original events which matches the Security
+    Analytics Engine filter
   Sample:
   - EVENT_SOURCE_TELEMETRY
   DL_Type: string
@@ -5071,8 +5060,8 @@
   ProductCode:
   - ALL
   - ddr
-  Description_EN: The telemetry events that match the Security Analytics Engine 
-    filter, and logonUsers stores the logonUsers value of the original events
+  Description_EN: The telemetry events that match the Security Analytics Engine filter,
+    and logonUsers stores the logonUsers value of the original events
   Sample:
   - BHBShortJ
   DL_Type: dynamic
@@ -5082,8 +5071,8 @@
 - Name: userDomains
   ProductCode:
   - ALL
-  Description_EN: The telemetry events match the Security Analytics Engine 
-    filter, and userDomains stores the userDomains value of the original events
+  Description_EN: The telemetry events match the Security Analytics Engine filter,
+    and userDomains stores the userDomains value of the original events
   Sample:
   - CORP
   DL_Type: dynamic
@@ -5108,8 +5097,7 @@
   - pts
   Description_EN: The file path of the quarantined object
   Sample:
-  - C:\Program 
-    Files\TXOne\StellarProtect\private\quarantine\00000000-0000-0000-0000-000000000000
+  - C:\Program Files\TXOne\StellarProtect\private\quarantine\00000000-0000-0000-0000-000000000000
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -5279,8 +5267,7 @@
 - Name: requestDecision
   ProductCode:
   - scs
-  Description_EN: Whether the request was allowed or denied by the authorization
-    system
+  Description_EN: Whether the request was allowed or denied by the authorization system
   Sample:
   - allow/deny
   DL_Type: string
@@ -5804,8 +5791,8 @@
   - sfc
   - sss
   - scs
-  Description_EN: The AWS cloud account ID, Google Cloud product ID, or Azure 
-    subscription ID
+  Description_EN: The AWS cloud account ID, Google Cloud product ID, or Azure subscription
+    ID
   Sample:
   - '123456789012'
   - 00000000-0000-0000-0000-000000000000
@@ -6240,8 +6227,8 @@
 - Name: parentPayloadSignerFlagsLibValid
   ProductCode:
   - xes
-  Description_EN: The list of parent process payload signature library 
-    validation flags
+  Description_EN: The list of parent process payload signature library validation
+    flags
   Sample: []
   DL_Type: dynamic
   DL_CommonKey:
@@ -6841,16 +6828,15 @@
   - pds
   Description_EN: The descriptions of the detected techniques
   Sample:
-  - [T1204 some description about this technique, T1573.001_AES another 
-      description about this technique]
+  - [T1204 some description about this technique, T1573.001_AES another description
+      about this technique]
   DL_Type: dynamic
   DL_Searchable: true
   DL_Aggregable: false
 - Name: startTime
   ProductCode:
   - sds
-  Description_EN: The time when the first event was received (in Unix 
-    milliseconds)
+  Description_EN: The time when the first event was received (in Unix milliseconds)
   Sample:
   - 1750983848000
   DL_Type: long
@@ -6860,8 +6846,7 @@
 - Name: endTime
   ProductCode:
   - sds
-  Description_EN: The time when the last event was received (in Unix 
-    milliseconds)
+  Description_EN: The time when the last event was received (in Unix milliseconds)
   Sample:
   - 1750983926000
   DL_Type: long
@@ -6955,8 +6940,7 @@
 - Name: lastConnectedTime
   ProductCode:
   - sds
-  Description_EN: The last time the endpoint was connected (in Unix 
-    milliseconds)
+  Description_EN: The last time the endpoint was connected (in Unix milliseconds)
   Sample:
   - 1656324260000
   DL_Type: long
@@ -7142,8 +7126,7 @@
 - Name: deviceProcessName
   ProductCode:
   - pan
-  Description_EN: The name of the main process executed during Virtual Analyzer 
-    analysis
+  Description_EN: The name of the main process executed during Virtual Analyzer analysis
   Sample:
   - explorer.exe
   DL_Type: string
@@ -7153,8 +7136,7 @@
 - Name: sandboxSubmittedTime
   ProductCode:
   - pan
-  Description_EN: The timestamp when the sample was submitted to Virtual 
-    Analyzer
+  Description_EN: The timestamp when the sample was submitted to Virtual Analyzer
   Sample:
   - 1656324260000
   DL_Type: long
@@ -7164,8 +7146,7 @@
 - Name: sandboxCompletedTime
   ProductCode:
   - pan
-  Description_EN: The timestamp when Virtual Analyzer completed the sample 
-    analysis
+  Description_EN: The timestamp when Virtual Analyzer completed the sample analysis
   Sample:
   - 1656324260000
   DL_Type: long

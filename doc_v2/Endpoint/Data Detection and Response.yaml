@@ -1,3 +1,218 @@
+- Name: objectUser
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  - ddr
+  Description_EN: The owner name of the target process or the login user name
+  Sample:
+  - root
+  - SYSTEM
+  - oracle
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dpt
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  - ddr
+  Description_EN: The destination port number
+  Sample: []
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dst
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  - ddr
+  Description_EN: The destination IP address
+  Sample:
+  - '::'
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: spt
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  - ddr
+  Description_EN: The source port number
+  Sample:
+  - 53
+  - 5353
+  - 443
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: src
+  ProductCode:
+  - sds
+  - xes
+  - sao
+  - ddr
+  Description_EN: The source address
+  Sample:
+  - '::'
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: objectFileSize
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  - ddr
+  Description_EN: The file size of the object file
+  Sample:
+  - 0
+  - 59456
+  - 60
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileSize
+  ProductCode:
+  - xes
+  - sao
+  - sds
+  - ddr
+  Description_EN: The file size of the source file
+  Sample:
+  - '0'
+  - '131072'
+  - '196608'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleIdStr
+  ProductCode:
+  - ddr
+  Description_EN: The rule ID
+  Sample:
+  - 0000000-0000-0000-0000-000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectUri
+  ProductCode:
+  - ddr
+  Description_EN: Path of target file
+  Sample:
+  - C://path/of/file.txt
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectFileHash
+  ProductCode:
+  - ddr
+  Description_EN: The cryptographic hash of the target process image or file, with
+    the specific hash algorithm to be determined
+  Sample:
+  - 1ca71017d2fa4775253670e1e55e26912bfdc156
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectServiceType
+  ProductCode:
+  - ddr
+  Description_EN: Type of target file
+  Sample:
+  - local
+  - smb
+  - web
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcUri
+  ProductCode:
+  - ddr
+  Description_EN: Path of source file
+  Sample:
+  - C://path/of/file.txt
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcFileHash
+  ProductCode:
+  - ddr
+  Description_EN: The cryptographic hash of the source process image or file, with
+    the specific hash algorithm to be determined.
+  Sample:
+  - 1ca71017d2fa4775253670e1e55e26912bfdc156
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcServiceType
+  ProductCode:
+  - ddr
+  Description_EN: Type of source file
+  Sample:
+  - local
+  - smb
+  - web
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcUser
+  ProductCode:
+  - ddr
+  Description_EN: The owner name of the source process or the login user name
+  Sample:
+  - root
+  - SYSTEM
+  - oracle
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyIds
+  ProductCode:
+  - ddr
+  Description_EN: The Ids of DDR’s data policy
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: metaSrcExtra
+  ProductCode:
+  - ddr
+  Description_EN: The meta for identifying the source of events
+  Sample:
+  - "[{'metaSrcUri': ...]"
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: endpointHostName
   ProductCode:
   - sds
@@ -277,8 +492,8 @@
   ProductCode:
   - ALL
   - ddr
-  Description_EN: The telemetry events that match the Security Analytics Engine 
-    filter, and logonUsers stores the logonUsers value of the original events
+  Description_EN: The telemetry events that match the Security Analytics Engine filter,
+    and logonUsers stores the logonUsers value of the original events
   Sample:
   - BHBShortJ
   DL_Type: dynamic
@@ -355,220 +570,5 @@
   Sample:
   - '{"fileName": "sample.txt", "edgeId": "00000000-0000-0000-0000-000000000000"}'
   DL_Type: dynamic
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectUser
-  ProductCode:
-  - sds
-  - xes
-  - sao
-  - ddr
-  Description_EN: The owner name of the target process or the login user name
-  Sample:
-  - root
-  - SYSTEM
-  - oracle
-  DL_Type: string
-  DL_CommonKey:
-  - UserAccount
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: dpt
-  ProductCode:
-  - sds
-  - xes
-  - sao
-  - ddr
-  Description_EN: The destination port number
-  Sample: []
-  DL_Type: int
-  DL_CommonKey:
-  - Port
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: dst
-  ProductCode:
-  - sds
-  - xes
-  - sao
-  - ddr
-  Description_EN: The destination IP address
-  Sample:
-  - '::'
-  - 10.10.10.10
-  DL_Type: string
-  DL_CommonKey:
-  - IPv4
-  - IPv6
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: spt
-  ProductCode:
-  - sds
-  - xes
-  - sao
-  - ddr
-  Description_EN: The source port number
-  Sample:
-  - 53
-  - 5353
-  - 443
-  DL_Type: int
-  DL_CommonKey:
-  - Port
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: src
-  ProductCode:
-  - sds
-  - xes
-  - sao
-  - ddr
-  Description_EN: The source address
-  Sample:
-  - '::'
-  - 10.10.10.10
-  DL_Type: string
-  DL_CommonKey:
-  - IPv4
-  - IPv6
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: objectFileSize
-  ProductCode:
-  - xes
-  - sao
-  - sds
-  - ddr
-  Description_EN: The file size of the object file
-  Sample:
-  - 0
-  - 59456
-  - 60
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: srcFileSize
-  ProductCode:
-  - xes
-  - sao
-  - sds
-  - ddr
-  Description_EN: The file size of the source file
-  Sample:
-  - '0'
-  - '131072'
-  - '196608'
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: ruleIdStr
-  ProductCode:
-  - ddr
-  Description_EN: The rule ID
-  Sample:
-  - 0000000-0000-0000-0000-000000000000
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectUri
-  ProductCode:
-  - ddr
-  Description_EN: Path of target file
-  Sample:
-  - C://path/of/file.txt
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectFileHash
-  ProductCode:
-  - ddr
-  Description_EN: The cryptographic hash of the target process image or file, 
-    with the specific hash algorithm to be determined
-  Sample:
-  - 1ca71017d2fa4775253670e1e55e26912bfdc156
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectServiceType
-  ProductCode:
-  - ddr
-  Description_EN: Type of target file
-  Sample:
-  - local
-  - smb
-  - web
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: srcUri
-  ProductCode:
-  - ddr
-  Description_EN: Path of source file
-  Sample:
-  - C://path/of/file.txt
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: srcFileHash
-  ProductCode:
-  - ddr
-  Description_EN: The cryptographic hash of the source process image or file, 
-    with the specific hash algorithm to be determined.
-  Sample:
-  - 1ca71017d2fa4775253670e1e55e26912bfdc156
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: srcServiceType
-  ProductCode:
-  - ddr
-  Description_EN: Type of source file
-  Sample:
-  - local
-  - smb
-  - web
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: srcUser
-  ProductCode:
-  - ddr
-  Description_EN: The owner name of the source process or the login user name
-  Sample:
-  - root
-  - SYSTEM
-  - oracle
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: policyIds
-  ProductCode:
-  - ddr
-  Description_EN: The Ids of DDR’s data policy
-  Sample:
-  - 11111111-1111-1111-1111-111111111111
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: metaSrcExtra
-  ProductCode:
-  - ddr
-  Description_EN: The meta for identifying the source of events
-  Sample:
-  - "[{'metaSrcUri': ...]"
-  DL_Type: string
-  DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false

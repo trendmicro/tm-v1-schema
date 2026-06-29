@@ -95,8 +95,8 @@
   - szn
   - vpc
   - azv
-  Description_EN: The virtual port of the source assigned to the Secure Access 
-    Module (srcport)
+  Description_EN: The virtual port of the source assigned to the Secure Access Module
+    (srcport)
   Sample:
   - 57763
   DL_Type: int
@@ -109,8 +109,7 @@
   - szn
   - vpc
   - azv
-  Description_EN: The service destination port of the private application server
-    (dstport)
+  Description_EN: The service destination port of the private application server (dstport)
   Sample:
   - 443
   DL_Type: int
