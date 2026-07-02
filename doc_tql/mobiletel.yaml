@@ -1,0 +1,257 @@
+- Name: appIsSystem
+  Description_EN: Whether the app is a system app
+  DL_Type: bool
+
+- Name: appLabel
+  Description_EN: The app name (if the subject is an app)
+  DL_Type: string
+
+- Name: appOrSystemEventHashId
+  Description_EN: The event object hash ID
+  DL_Type: string
+
+- Name: appPkgName
+  Description_EN: The app package name (if the subject is an app)
+  DL_Type: string
+
+- Name: appPublicKeySha1
+  Description_EN: The SHA-1 hash of the app public key (if the subject is an app)
+  DL_Type: string
+
+- Name: appSize
+  Description_EN: The app size (in bytes) if the subject is an app
+  DL_Type: long
+
+- Name: appVerCode
+  Description_EN: The app version code (if the subject is an app)
+  DL_Type: long
+
+- Name: endpointGuid
+  Description_EN: Host GUID of the endpoint on which the event was detected
+  DL_Type: string
+
+- Name: endpointHostName
+  Description_EN: The host name of the endpoint on which the event was detected
+  DL_Type: string
+
+- Name: endpointIp
+  Description_EN: The IP address of the endpoint on which the event was detected
+  DL_Type: dynamic
+
+- Name: endpointModel
+  Description_EN: The endpoint device model
+  DL_Type: string
+
+- Name: eventHashId
+  Description_EN: The event hash ID
+  DL_Type: string
+
+- Name: eventId
+  Description_EN: The event ID from the logs of each product
+  DL_Type: string
+
+- Name: eventSourceType
+  Description_EN: The event source type
+  DL_Type: int
+
+- Name: eventSubId
+  Description_EN: The sub-event ID
+  DL_Type: string
+
+- Name: eventTime
+  Description_EN: The time the identity provider detected the event
+  DL_Type: datetime
+
+- Name: extraInfo
+  Description_EN: The additional information about the sharing action
+  DL_Type: dynamic
+
+- Name: filterRiskLevel
+  Description_EN: The top level filter risk of the event
+  DL_Type: string
+
+- Name: firstSeen
+  Description_EN: The time when the event started (in milliseconds)
+  DL_Type: datetime
+
+- Name: groupId
+  Description_EN: The group ID (sae), or the Claude group ID (tlc)
+  DL_Type: string
+
+- Name: lastSeen
+  Description_EN: The time when the event ended (in milliseconds)
+  DL_Type: datetime
+
+- Name: logonUser
+  Description_EN: The sign-in user name
+  DL_Type: dynamic
+
+- Name: logReceivedTime
+  Description_EN: The time when the XDR log was received
+  DL_Type: datetime
+
+- Name: marsAccount
+  Description_EN: The account for Trend Micro Mobile Apps Reputation Service
+  DL_Type: string
+
+- Name: objectAppBehavior
+  Description_EN: The activity that occurred on the app
+  DL_Type: string
+
+- Name: objectAppBehaviorAttr
+  Description_EN: The attributes of the app activity
+  DL_Type: string
+
+- Name: objectAppDexSha256
+  Description_EN: The SHA-256 hash of the app Dex value
+  DL_Type: string
+
+- Name: objectAppInstalledTime
+  Description_EN: The time of app installation (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectAppIsSystemApp
+  Description_EN: Whether the app is a system app
+  DL_Type: bool
+
+- Name: objectAppLabel
+  Description_EN: The app name
+  DL_Type: string
+
+- Name: objectAppPackageName
+  Description_EN: The app package name
+  DL_Type: string
+
+- Name: objectAppPublicKeySha1
+  Description_EN: The SHA-1 hash of the app public key
+  DL_Type: string
+
+- Name: objectAppSha256
+  Description_EN: The SHA-256 hash of the app
+  DL_Type: string
+
+- Name: objectAppSize
+  Description_EN: The app size (in bytes)
+  DL_Type: long
+
+- Name: objectAppVerCode
+  Description_EN: The app version code
+  DL_Type: string
+
+- Name: objectAppVerName
+  Description_EN: The app version
+  DL_Type: string
+
+- Name: objectCertAttr
+  Description_EN: The SHA-1 hash of the certificate public key
+  DL_Type: string
+
+- Name: objectFileCreation
+  Description_EN: The time the target file was created (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectFileHashSha256
+  Description_EN: The SHA256 hash of target process image or target file
+  DL_Type: string
+
+- Name: objectFileModifiedTime
+  Description_EN: The modification time of the target file (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectFilePath
+  Description_EN: The file path of the target process image or target file
+  DL_Type: string
+
+- Name: objectFirstSeen
+  Description_EN: The time when the object first appeared (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectHashId
+  Description_EN: https://trendmicro.atlassian.net/browse/DOC-2644
+  DL_Type: string
+
+- Name: objectLastSeen
+  Description_EN: The time when the object was last seen (in milliseconds)
+  DL_Type: datetime
+
+- Name: objectSystemEventAttr
+  Description_EN: The system event attributes
+  DL_Type: string
+
+- Name: osName
+  Description_EN: The host operating system name
+  DL_Type: string
+
+- Name: osVer
+  Description_EN: The version of the host operating system
+  DL_Type: string
+
+- Name: pname
+  Description_EN: The internal product ID (Deprecated, use productCode)
+  DL_Type: string
+
+- Name: policyTreePath
+  Description_EN: The policy tree path (endpoint only)
+  DL_Type: string
+
+- Name: productCode
+  Description_EN: The internal product code of the identity provider (aad=Microsoft
+    Entra ID, opa=Microsoft Active Directory)
+  DL_Type: string
+
+- Name: pver
+  Description_EN: The product version
+  DL_Type: string
+
+- Name: request
+  Description_EN: The destination URL that the user is accessing
+  DL_Type: string
+
+- Name: simulation
+  Description_EN: Whether a log is a simulation log
+  DL_Type: bool
+
+- Name: srcFileCreation
+  Description_EN: The time when the source file was created (in milliseconds)
+  DL_Type: datetime
+
+- Name: srcFileHashId
+  Description_EN: The source file hash ID
+  DL_Type: string
+
+- Name: srcFileHashSha256
+  Description_EN: The SHA-256 of the source file
+  DL_Type: string
+
+- Name: srcFileModifiedTime
+  Description_EN: The time when the source file was modified (in milliseconds)
+  DL_Type: datetime
+
+- Name: srcFilePath
+  Description_EN: The file path which is moved or copied to another path
+  DL_Type: string
+
+- Name: srcFileSize
+  Description_EN: The file size of the source file
+  DL_Type: long
+
+- Name: srcFirstSeen
+  Description_EN: The time when the source file first appeared (in milliseconds)
+  DL_Type: datetime
+
+- Name: srcLastSeen
+  Description_EN: The time when the source file was last seen (in milliseconds)
+  DL_Type: datetime
+
+- Name: systemEventAttr
+  Description_EN: The attributes of the system event (if the subject is a system event)
+  DL_Type: string
+
+- Name: tags
+  Description_EN: The attack technique ID detected by Trend Vision One based on the
+    alert filter
+  DL_Type: dynamic
+
+- Name: userType
+  Description_EN: The tenant user type
+  DL_Type: string

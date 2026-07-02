@@ -5,8 +5,8 @@
   - sds
   - pds
   - ptn
-  Description_EN: The computer name of the client host (The hostname from the 
-    suspicious URL detected by Deep Discovery Inspector)
+  Description_EN: The computer name of the client host (The hostname from the suspicious
+    URL detected by Deep Discovery Inspector)
   Sample:
   - Let's Encrypt
   - 10.10.10.10
@@ -223,9 +223,9 @@
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
   - 'pam_unix(cron:session): session opened for user root by (uid=0)'
-  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:
-    EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.
-    [CLIENT: 10.10.10.10]  "
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:\
+    \ EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.\
+    \ [CLIENT: 10.10.10.10]  "
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
