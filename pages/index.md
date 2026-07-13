@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">3149</span>
+      <span class="stat-number">3162</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -294,7 +294,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Identity/Active%20Directory%20%28on-premises%29" class="product-link">
         <div class="product-info">
           <span>Active Directory (on-premises)</span>
-          <span class="field-count">95 fields</span>
+          <span class="field-count">96 fields</span>
         </div>
       </a>
     </li>
@@ -332,7 +332,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Deep%20Discovery%20Inspector" class="product-link">
         <div class="product-info">
           <span>Deep Discovery Inspector</span>
-          <span class="field-count">268 fields</span>
+          <span class="field-count">274 fields</span>
         </div>
       </a>
     </li>
@@ -356,7 +356,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Virtual%20Network%20Sensor" class="product-link">
         <div class="product-info">
           <span>Virtual Network Sensor</span>
-          <span class="field-count">269 fields</span>
+          <span class="field-count">275 fields</span>
         </div>
       </a>
     </li>

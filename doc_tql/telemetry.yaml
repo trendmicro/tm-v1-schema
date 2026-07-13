@@ -321,7 +321,7 @@
   DL_Type: datetime
 
 - Name: messageType
-  Description_EN: The message type
+  Description_EN: The application layer message type
   DL_Type: string
 
 - Name: metaSrcExtra

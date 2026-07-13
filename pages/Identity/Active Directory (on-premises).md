@@ -1147,6 +1147,26 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Active Directory (on-premises)</td>
     </tr>
     <tr>
+      <td class="field-name">originUUID</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The UUID of the original events which matches the Security Analytics Engine filter</td>
+      <td class="example">
+        <ul>
+          <li>00000000-0000-0000-0000-000000000000</li>
+          <li>11111111-1111-1111-1111-111111111111</li>
+          <li>22222222-2222-2222-2222-222222222222</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>ALL</li>
+          <li>Active Directory (on-premises)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">osDescription</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1528,7 +1548,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 95
+- **Total Fields:** 96
 - **Layer:** Identity
 - **Product:** Active Directory (on-premises)
 

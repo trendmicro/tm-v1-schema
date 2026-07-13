@@ -30,6 +30,14 @@
   Description_EN: The number of transmitted data bytes
   DL_Type: long
 
+- Name: clientAppName
+  Description_EN: The application layer client application name
+  DL_Type: string
+
+- Name: clientFacility
+  Description_EN: The application layer client facility or organization name
+  DL_Type: string
+
 - Name: clientGroup
   Description_EN: The client IP network group
   DL_Type: string
@@ -285,6 +293,14 @@
   Description_EN: The name of the detected malware
   DL_Type: string
 
+- Name: messageResponseCode
+  Description_EN: The application layer message response or acknowledgment code
+  DL_Type: string
+
+- Name: messageType
+  Description_EN: The application layer message type
+  DL_Type: string
+
 - Name: mimeType
   Description_EN: The MIME type or content type of the response body
   DL_Type: string
@@ -514,6 +530,14 @@
 
 - Name: sender
   Description_EN: The roaming users or the gateway where the web traffic passed
+  DL_Type: string
+
+- Name: serverAppName
+  Description_EN: The application layer server application name
+  DL_Type: string
+
+- Name: serverFacility
+  Description_EN: The application layer server facility or organization name
   DL_Type: string
 
 - Name: serverGroup

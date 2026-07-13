@@ -38,8 +38,24 @@
   Description_EN: The IP address of the actor that triggered the event
   DL_Type: string
 
+- Name: actorPrincipalName
+  Description_EN: The actor UPN or email
+  DL_Type: string
+
 - Name: actorProto
   Description_EN: The protocol used by the actor that triggered the event
+  DL_Type: string
+
+- Name: actorUserDisplayName
+  Description_EN: The user display name
+  DL_Type: string
+
+- Name: actorUserId
+  Description_EN: The user ID
+  DL_Type: string
+
+- Name: actorUserName
+  Description_EN: The username of the actor who performed the action
   DL_Type: string
 
 - Name: actResult
@@ -252,12 +268,20 @@
   Description_EN: The operation performed on a scope
   DL_Type: string
 
+- Name: authDeviceClass
+  Description_EN: The device class used for authentication
+  DL_Type: string
+
 - Name: authenticationProtocol
   Description_EN: The authentication protocol or grant type
   DL_Type: string
 
 - Name: authId
   Description_EN: The authorization ID
+  DL_Type: string
+
+- Name: authMethod
+  Description_EN: The authentication method used
   DL_Type: string
 
 - Name: authPrincipalId
@@ -449,8 +473,12 @@
   Description_EN: The app that the client accessed
   DL_Type: string
 
+- Name: clientAppName
+  Description_EN: The application layer client application name
+  DL_Type: string
+
 - Name: clientBrowser
-  Description_EN: The client browser
+  Description_EN: The client device browser
   DL_Type: string
 
 - Name: clientCredentialType
@@ -459,6 +487,10 @@
 
 - Name: clientDisplayName
   Description_EN: The client display name
+  DL_Type: string
+
+- Name: clientFacility
+  Description_EN: The application layer client facility or organization name
   DL_Type: string
 
 - Name: clientFlag
@@ -486,7 +518,7 @@
   DL_Type: string
 
 - Name: clientOS
-  Description_EN: The client OS
+  Description_EN: The client device OS
   DL_Type: string
 
 - Name: clientPort
@@ -678,7 +710,7 @@
   DL_Type: dynamic
 
 - Name: correlationId
-  Description_EN: The correlation id
+  Description_EN: The correlation ID used to associate related telemetry events
   DL_Type: string
 
 - Name: crossTenantAccessType
@@ -1339,6 +1371,10 @@
   Description_EN: The name of the computer used in the sign-in attempt
   DL_Type: string
 
+- Name: eventExpireTime
+  Description_EN: The expiration time of the event
+  DL_Type: datetime
+
 - Name: eventHashId
   Description_EN: The event hash ID
   DL_Type: string
@@ -1779,6 +1815,10 @@
   Description_EN: Whether the detection log generated a grey rule match
   DL_Type: string
 
+- Name: isKnownDevice
+  Description_EN: Whether the device is a known device
+  DL_Type: bool
+
 - Name: isLocalAdmin
   Description_EN: Whether the user is a local administrator on the device
   DL_Type: bool
@@ -1854,11 +1894,11 @@
   DL_Type: string
 
 - Name: locationLatitude
-  Description_EN: The latitude of the event location
+  Description_EN: The geographic latitude of the event location
   DL_Type: string
 
 - Name: locationLongitude
-  Description_EN: The longitude of the event location
+  Description_EN: The geographic longitude of the event location
   DL_Type: string
 
 - Name: locationState
@@ -2149,12 +2189,16 @@
   Description_EN: The Claude chat/conversation ID
   DL_Type: string
 
+- Name: messageResponseCode
+  Description_EN: The application layer message response or acknowledgment code
+  DL_Type: string
+
 - Name: messageRole
   Description_EN: Whether the user or assistant sent a message in a Claude session
   DL_Type: string
 
 - Name: messageType
-  Description_EN: The message type
+  Description_EN: The application layer message type
   DL_Type: string
 
 - Name: metaSrcExtra
@@ -3543,6 +3587,10 @@
   Description_EN: The resource public network access setting of the request
   DL_Type: string
 
+- Name: requestQuery
+  Description_EN: The query string of the HTTP request
+  DL_Type: string
+
 - Name: requestRoleDefinitionId
   Description_EN: The cloud resource ID of the request
   DL_Type: string
@@ -3798,6 +3846,14 @@
   Description_EN: The IP address of the device sending the log
   DL_Type: dynamic
 
+- Name: serverAppName
+  Description_EN: The application layer server application name
+  DL_Type: string
+
+- Name: serverFacility
+  Description_EN: The application layer server facility or organization name
+  DL_Type: string
+
 - Name: serverGroup
   Description_EN: The server IP network group
   DL_Type: string
@@ -3957,9 +4013,17 @@
   Description_EN: The source IP address (srcaddr)
   DL_Type: dynamic
 
+- Name: srcAsn
+  Description_EN: The source IP ASN
+  DL_Type: long
+
 - Name: srcCity
   Description_EN: The city name of the source IP
   DL_Type: dynamic
+
+- Name: srcContinent
+  Description_EN: The source IP continent
+  DL_Type: string
 
 - Name: srcCountry
   Description_EN: The country name of the source IP
@@ -4080,6 +4144,10 @@
 
 - Name: srcLocation
   Description_EN: The source country
+  DL_Type: string
+
+- Name: srcNetwork
+  Description_EN: The source IP CIDR
   DL_Type: string
 
 - Name: srcServiceType
@@ -4203,7 +4271,7 @@
   DL_Type: string
 
 - Name: statusReason
-  Description_EN: The sign-in status
+  Description_EN: The event status reason
   DL_Type: string
 
 - Name: subLocationId
@@ -4279,6 +4347,10 @@
   Description_EN: The target name
   DL_Type: string
 
+- Name: targetPrincipalName
+  Description_EN: The target user UPN or email
+  DL_Type: string
+
 - Name: targetResourceDisplayName
   Description_EN: The target resource display name
   DL_Type: string
@@ -4288,7 +4360,7 @@
   DL_Type: string
 
 - Name: targetResources
-  Description_EN: The targeted resource of the event
+  Description_EN: The list of resources targeted by the event
   DL_Type: dynamic
 
 - Name: targetShare
@@ -4298,6 +4370,18 @@
 
 - Name: targetType
   Description_EN: The type of object that was accessed or modified
+  DL_Type: string
+
+- Name: targetUserDisplayName
+  Description_EN: The target user display name
+  DL_Type: string
+
+- Name: targetUserId
+  Description_EN: The target user ID
+  DL_Type: string
+
+- Name: targetUserName
+  Description_EN: The username of the target user
   DL_Type: string
 
 - Name: tcpFlags
@@ -4311,6 +4395,10 @@
 
 - Name: tenantId
   Description_EN: The Microsoft Entra ID Tenant ID of the organization
+  DL_Type: string
+
+- Name: tenantName
+  Description_EN: The name of the tenant
   DL_Type: string
 
 - Name: threatName
