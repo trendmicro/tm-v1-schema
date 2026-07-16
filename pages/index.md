@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">3149</span>
+      <span class="stat-number">3150</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -294,7 +294,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Identity/Active%20Directory%20%28on-premises%29" class="product-link">
         <div class="product-info">
           <span>Active Directory (on-premises)</span>
-          <span class="field-count">95 fields</span>
+          <span class="field-count">96 fields</span>
         </div>
       </a>
     </li>

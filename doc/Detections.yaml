@@ -5025,6 +5025,7 @@
 - Name: originUUID
   ProductCode:
   - ALL
+  - opa
   Description_EN: The UUID of the original events which matches the Security Analytics
     Engine filter
   Sample:
