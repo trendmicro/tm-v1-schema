@@ -56,6 +56,22 @@
   Description_EN: The data for correlation
   DL_Type: dynamic
 
+- Name: correlationId
+  Description_EN: The correlation ID (associates related telemetry events)
+  DL_Type: string
+
+- Name: correlationRuleId
+  Description_EN: The correlation rule ID
+  DL_Type: string
+
+- Name: correlationRuleName
+  Description_EN: The correlation rule name
+  DL_Type: string
+
+- Name: correlationRuleVer
+  Description_EN: The correlation rule version
+  DL_Type: string
+
 - Name: customAssetTags
   Description_EN: The list of custom asset tags
   DL_Type: dynamic
@@ -193,7 +209,7 @@
   DL_Type: string
 
 - Name: eventDataSubStatus
-  Description_EN: The Windows event data sub-status
+  Description_EN: The Windows event data sub status
   DL_Type: string
 
 - Name: eventDataTargetDomainName
@@ -321,7 +337,7 @@
   DL_Type: datetime
 
 - Name: messageType
-  Description_EN: The message type
+  Description_EN: The application layer message type
   DL_Type: string
 
 - Name: metaSrcExtra
@@ -1065,6 +1081,10 @@
   Description_EN: The shared folder name for the server that contains the files to
     be opened
   DL_Type: string
+
+- Name: sourceActivities
+  Description_EN: The correlated source activities that generated the event
+  DL_Type: dynamic
 
 - Name: spt
   Description_EN: The virtual port of the source assigned to the Secure Access Module

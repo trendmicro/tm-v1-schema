@@ -496,12 +496,28 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">Collaboration sensor</td>
     </tr>
+    <tr>
+      <td class="field-name">vendorLogId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The vendor event log ID</td>
+      <td class="example">
+        <ul>
+          <li>11</li>
+          <li>211008192</li>
+          <li>98</li>
+          <li>1234567890-abcd-abcd-abcd-abcdef123456_1</li>
+        </ul>
+      </td>
+      <td class="products">Collaboration sensor</td>
+    </tr>
   </tbody>
 </table>
 </div>
 
 ## Field Statistics
-- **Total Fields:** 27
+- **Total Fields:** 28
 - **Layer:** Email
 - **Product:** Collaboration sensor
 

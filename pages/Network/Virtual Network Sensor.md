@@ -622,6 +622,39 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">clientAppName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The application layer client application name</td>
+      <td class="example">
+        <ul>
+          <li>HIS</li>
+          <li>CT_SCANNER_01</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">clientFacility</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The application layer client facility or organization name</td>
+      <td class="example">HOSPITAL_A</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">clientFlag</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -3124,6 +3157,44 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">messageResponseCode</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The application layer message response or acknowledgment code</td>
+      <td class="example">
+        <ul>
+          <li>AA</li>
+          <li>0000</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">messageType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The application layer message type</td>
+      <td class="example">
+        <ul>
+          <li>ORM</li>
+          <li>C-STORE</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">mimeType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -4523,6 +4594,39 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
     </tr>
     <tr>
+      <td class="field-name">serverAppName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The application layer server application name</td>
+      <td class="example">
+        <ul>
+          <li>ReceivingApp</li>
+          <li>PACS_SERVER</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">serverFacility</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The application layer server facility or organization name</td>
+      <td class="example">HOSPITAL_B</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">serverGroup</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -5526,7 +5630,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
 </div>
 
 ## Field Statistics
-- **Total Fields:** 269
+- **Total Fields:** 275
 - **Layer:** Network
 - **Product:** Virtual Network Sensor
 

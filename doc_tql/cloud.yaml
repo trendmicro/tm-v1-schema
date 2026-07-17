@@ -115,7 +115,7 @@
   DL_Type: string
 
 - Name: correlationId
-  Description_EN: The correlation ID used to associate related telemetry events
+  Description_EN: The correlation ID (associates related telemetry events)
   DL_Type: string
 
 - Name: eventCategory

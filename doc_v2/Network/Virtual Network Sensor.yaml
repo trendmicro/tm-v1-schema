@@ -857,6 +857,76 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: clientAppName
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The application layer client application name
+  Sample:
+  - HIS
+  - CT_SCANNER_01
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serverAppName
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The application layer server application name
+  Sample:
+  - ReceivingApp
+  - PACS_SERVER
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: messageType
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The application layer message type
+  Sample:
+  - ORM
+  - C-STORE
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: messageResponseCode
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The application layer message response or acknowledgment code
+  Sample:
+  - AA
+  - '0000'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: clientFacility
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The application layer client facility or organization name
+  Sample:
+  - HOSPITAL_A
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serverFacility
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The application layer server facility or organization name
+  Sample:
+  - HOSPITAL_B
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: ftpTrans
   ProductCode:
   - pdi

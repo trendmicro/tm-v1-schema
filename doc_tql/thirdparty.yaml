@@ -14,6 +14,22 @@
   Description_EN: The Claude activity event ID
   DL_Type: string
 
+- Name: actorPrincipalName
+  Description_EN: The actor UPN or email
+  DL_Type: string
+
+- Name: actorUserDisplayName
+  Description_EN: The user display name
+  DL_Type: string
+
+- Name: actorUserId
+  Description_EN: The user ID
+  DL_Type: string
+
+- Name: actorUserName
+  Description_EN: The username of the actor who performed the action
+  DL_Type: string
+
 - Name: actResult
   Description_EN: The result of an action
   DL_Type: dynamic
@@ -83,6 +99,14 @@
   Description_EN: The URLs and URL sources extracted from the email attachment
   DL_Type: dynamic
 
+- Name: authDeviceClass
+  Description_EN: The device class used for authentication
+  DL_Type: string
+
+- Name: authMethod
+  Description_EN: The authentication method used
+  DL_Type: string
+
 - Name: authType
   Description_EN: The authentication method
   DL_Type: string
@@ -101,6 +125,14 @@
 
 - Name: category
   Description_EN: The event category
+  DL_Type: string
+
+- Name: clientBrowser
+  Description_EN: The client device browser
+  DL_Type: string
+
+- Name: clientOS
+  Description_EN: The client device OS
   DL_Type: string
 
 - Name: cloudAccountId
@@ -270,6 +302,10 @@
     logged on"
   DL_Type: string
 
+- Name: eventExpireTime
+  Description_EN: The expiration time of the event
+  DL_Type: datetime
+
 - Name: eventId
   Description_EN: The event ID from the logs of each product
   DL_Type: string
@@ -413,6 +449,10 @@
   Description_EN: The protocol number (protocol) in IANA assigned values
   DL_Type: int
 
+- Name: isKnownDevice
+  Description_EN: Whether the device is a known device
+  DL_Type: bool
+
 - Name: isLocalAdmin
   Description_EN: Whether the user is a local administrator on the device
   DL_Type: bool
@@ -427,6 +467,18 @@
 
 - Name: k8sPodName
   Description_EN: The Kubernetes pod name of the container
+  DL_Type: string
+
+- Name: locationLatitude
+  Description_EN: The geographic latitude of the event location
+  DL_Type: string
+
+- Name: locationLongitude
+  Description_EN: The geographic longitude of the event location
+  DL_Type: string
+
+- Name: loggedByService
+  Description_EN: The service that initiated the event
   DL_Type: string
 
 - Name: logonUser
@@ -615,6 +667,10 @@
 - Name: oldFileHash
   Description_EN: The SHA-1 of the target process image or target file (wasEntity
     from an IM event)
+  DL_Type: string
+
+- Name: operationType
+  Description_EN: The operation performed in the event
   DL_Type: string
 
 - Name: organizationId
@@ -830,6 +886,10 @@
     are documented in the API reference docs for the appropriate AWS service)
   DL_Type: dynamic
 
+- Name: requestQuery
+  Description_EN: The query string of the HTTP request
+  DL_Type: string
+
 - Name: requests
   Description_EN: The URLs of the request
   DL_Type: dynamic
@@ -893,7 +953,7 @@
   DL_Type: string
 
 - Name: sessionStart
-  Description_EN: The session start name (in seconds)
+  Description_EN: The session start time (in seconds)
   DL_Type: long
 
 - Name: sessionSubject
@@ -949,6 +1009,14 @@
   Description_EN: The source IP address (srcaddr)
   DL_Type: dynamic
 
+- Name: srcAsn
+  Description_EN: The source IP ASN
+  DL_Type: long
+
+- Name: srcContinent
+  Description_EN: The source IP continent
+  DL_Type: string
+
 - Name: srcEndpointGuid
   Description_EN: The source endpoint GUID on which the event was detected
   DL_Type: string
@@ -967,6 +1035,10 @@
 
 - Name: srcLocation
   Description_EN: The source country
+  DL_Type: string
+
+- Name: srcNetwork
+  Description_EN: The source IP CIDR
   DL_Type: string
 
 - Name: srcZone
@@ -1000,6 +1072,10 @@
 - Name: start
   Description_EN: The time when the first data packet was received (in Unix seconds)
   DL_Type: datetime
+
+- Name: statusReason
+  Description_EN: The event status reason
+  DL_Type: string
 
 - Name: subLocationId
   Description_EN: The sublocation ID
@@ -1042,6 +1118,26 @@
   Description_EN: The Claude admin action target user or entity
   DL_Type: string
 
+- Name: targetPrincipalName
+  Description_EN: The target user UPN or email
+  DL_Type: string
+
+- Name: targetResources
+  Description_EN: The list of resources targeted by the event
+  DL_Type: dynamic
+
+- Name: targetUserDisplayName
+  Description_EN: The target user display name
+  DL_Type: string
+
+- Name: targetUserId
+  Description_EN: The target user ID
+  DL_Type: string
+
+- Name: targetUserName
+  Description_EN: The username of the target user
+  DL_Type: string
+
 - Name: tcpFlags
   Description_EN: The bitmask value of the FIN/SYN/RST/SYN-ACK TCP flags
   DL_Type: int
@@ -1050,6 +1146,10 @@
   Description_EN: The Technique ID detected by the product agent based on a detection
     rule
   DL_Type: dynamic
+
+- Name: tenantName
+  Description_EN: The name of the tenant
+  DL_Type: string
 
 - Name: tlsDetails
   Description_EN: The TLS details
@@ -1087,6 +1187,10 @@
 - Name: userIdentity
   Description_EN: The information about a user who made a request
   DL_Type: dynamic
+
+- Name: userSessionId
+  Description_EN: The user session ID
+  DL_Type: string
 
 - Name: userType
   Description_EN: The tenant user type

@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">3150</span>
+      <span class="stat-number">3169</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -210,7 +210,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Email/Collaboration%20sensor" class="product-link">
         <div class="product-info">
           <span>Collaboration sensor</span>
-          <span class="field-count">27 fields</span>
+          <span class="field-count">28 fields</span>
         </div>
       </a>
     </li>
@@ -280,7 +280,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Endpoint/Endpoint%20Sensor" class="product-link">
         <div class="product-info">
           <span>Endpoint Sensor</span>
-          <span class="field-count">382 fields</span>
+          <span class="field-count">387 fields</span>
         </div>
       </a>
     </li>
@@ -302,7 +302,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Identity/Microsoft%20Entra%20ID" class="product-link">
         <div class="product-info">
           <span>Microsoft Entra ID</span>
-          <span class="field-count">68 fields</span>
+          <span class="field-count">69 fields</span>
         </div>
       </a>
     </li>
@@ -332,7 +332,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Deep%20Discovery%20Inspector" class="product-link">
         <div class="product-info">
           <span>Deep Discovery Inspector</span>
-          <span class="field-count">268 fields</span>
+          <span class="field-count">274 fields</span>
         </div>
       </a>
     </li>
@@ -356,7 +356,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Network/Virtual%20Network%20Sensor" class="product-link">
         <div class="product-info">
           <span>Virtual Network Sensor</span>
-          <span class="field-count">269 fields</span>
+          <span class="field-count">275 fields</span>
         </div>
       </a>
     </li>

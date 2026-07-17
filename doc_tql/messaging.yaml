@@ -67,7 +67,7 @@
   DL_Type: string
 
 - Name: correlationId
-  Description_EN: The correlation ID used to associate related telemetry events
+  Description_EN: The correlation ID (associates related telemetry events)
   DL_Type: string
 
 - Name: eventId
@@ -379,4 +379,8 @@
 
 - Name: userType
   Description_EN: The tenant user type
+  DL_Type: string
+
+- Name: vendorLogId
+  Description_EN: The vendor event log ID
   DL_Type: string
