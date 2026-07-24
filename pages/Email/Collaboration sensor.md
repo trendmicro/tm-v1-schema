@@ -315,6 +315,15 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Collaboration sensor</td>
     </tr>
     <tr>
+      <td class="field-name">externalForwardingTargets</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The external mailbox-forwarding target addresses</td>
+      <td class="example">attacker@evil-exfil.com</td>
+      <td class="products">Collaboration sensor</td>
+    </tr>
+    <tr>
       <td class="field-name">extraInfo</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -347,6 +356,15 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">Whether the cmdlet was run by an external user (True=external user, False=internal user in your organization)</td>
+      <td class="example">True</td>
+      <td class="products">Collaboration sensor</td>
+    </tr>
+    <tr>
+      <td class="field-name">isExternalForwarding</td>
+      <td class="type">bool</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Whether the mailbox-forwarding operation has at least one external target</td>
       <td class="example">True</td>
       <td class="products">Collaboration sensor</td>
     </tr>
@@ -496,12 +514,28 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">Collaboration sensor</td>
     </tr>
+    <tr>
+      <td class="field-name">vendorLogId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The vendor event log ID</td>
+      <td class="example">
+        <ul>
+          <li>11</li>
+          <li>211008192</li>
+          <li>98</li>
+          <li>1234567890-abcd-abcd-abcd-abcdef123456_1</li>
+        </ul>
+      </td>
+      <td class="products">Collaboration sensor</td>
+    </tr>
   </tbody>
 </table>
 </div>
 
 ## Field Statistics
-- **Total Fields:** 27
+- **Total Fields:** 30
 - **Layer:** Email
 - **Product:** Collaboration sensor
 

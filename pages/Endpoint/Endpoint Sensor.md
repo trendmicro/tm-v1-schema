@@ -459,6 +459,42 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">correlationId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The correlation ID (associates related telemetry events)</td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="products">Endpoint Sensor</td>
+    </tr>
+    <tr>
+      <td class="field-name">correlationRuleId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The correlation rule ID</td>
+      <td class="example">ERC1102</td>
+      <td class="products">Endpoint Sensor</td>
+    </tr>
+    <tr>
+      <td class="field-name">correlationRuleName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The correlation rule name</td>
+      <td class="example">DLLHijacking</td>
+      <td class="products">Endpoint Sensor</td>
+    </tr>
+    <tr>
+      <td class="field-name">correlationRuleVer</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The correlation rule version</td>
+      <td class="example">1</td>
+      <td class="products">Endpoint Sensor</td>
+    </tr>
+    <tr>
       <td class="field-name">customAssetTags</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -6424,6 +6460,15 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">Endpoint Sensor</td>
     </tr>
     <tr>
+      <td class="field-name">sourceActivities</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The correlated source activities that generated the event</td>
+      <td class="example">&quot;{\&quot;CreateProc\&quot;:{\&quot;correlationId\&quot;:\&quot;11111111-1111-1111-1111-111111111111\&quot;,\&quot;outputFields\&quot;: {\&quot;parentCmd\&quot;:[\&quot;cmd.exe /c copy powershell.exe updater.exe\&quot;],\&quot;parentFilePath\&quot;:[\&quot;c:\\\\Windows\\\\System32\\\\cmd.exe\&quot;]},\&quot;aggregateCount\&quot;:1}}&quot;</td>
+      <td class="products">Endpoint Sensor</td>
+    </tr>
+    <tr>
       <td class="field-name">sourceType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -7205,6 +7250,21 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
+      <td class="field-name">trafficSize</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event traffic size (in bytes)</td>
+      <td class="example">
+        <ul>
+          <li>123</li>
+          <li>0</li>
+          <li>-1</li>
+        </ul>
+      </td>
+      <td class="products">Endpoint Sensor</td>
+    </tr>
+    <tr>
       <td class="field-name">triggerReason</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -7287,7 +7347,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 382
+- **Total Fields:** 388
 - **Layer:** Endpoint
 - **Product:** Endpoint Sensor
 

@@ -1,393 +1,3 @@
-- Name: eventTime
-  ProductCode:
-  - sig
-  - szn
-  - pdi
-  - xns
-  - vpc
-  - azv
-  Description_EN: The time the agent or product detected the event
-  Sample:
-  - 1657135700000
-  DL_Type: real
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: endpointHostName
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The host name of the device on which the event was detected
-  Sample:
-  - my_machine
-  - jeremy-mbp
-  DL_Type: string
-  DL_CommonKey:
-  - EndpointName
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: osName
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The host operating system name
-  Sample:
-  - Windows 10
-  - macos 12.1
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: dst
-  ProductCode:
-  - sig
-  - szn
-  - vpc
-  - azv
-  Description_EN: The destination IP address (dstaddr)
-  Sample:
-  - 10.10.10.10
-  DL_Type: string
-  DL_CommonKey:
-  - IPv4
-  - IPv6
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: endpointGuid
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The device GUID
-  Sample:
-  - 11111111-1111-1111-1111-111111111111
-  - DSP84573ULLJHM5GK2R7
-  DL_Type: string
-  DL_CommonKey:
-  - EndpointID
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: principalName
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The User Principal Name
-  Sample:
-  - sample_email@trendmicro.com
-  DL_Type: string
-  DL_CommonKey:
-  - UserAccount
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: request
-  ProductCode:
-  - sig
-  - szn
-  - pdi
-  - xns
-  Description_EN: The destination URL that the user is accessing
-  Sample:
-  - https://google.com/
-  - https://api/example/v1/testit
-  DL_Type: string
-  DL_CommonKey:
-  - URL
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: act
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The action
-  Sample:
-  - Allow
-  - Block
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: src
-  ProductCode:
-  - sig
-  - szn
-  - vpc
-  - azv
-  Description_EN: The source IP address (srcaddr)
-  Sample:
-  - 10.10.10.10
-  DL_Type: string
-  DL_CommonKey:
-  - IPv4
-  - IPv6
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: serverTls
-  ProductCode:
-  - sig
-  - szn
-  - pdi
-  - xns
-  Description_EN: The TLS version between the client and server
-  Sample:
-  - TLS 1.2
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: serverProtocol
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The version of the HTTP protocol between the Service Gateway and
-    server/website
-  Sample:
-  - HTTP/1.1
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: userAgent
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The user agent or the agent through which the request was made
-  Sample:
-  - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0)
-  - Chrome/74.0.3729.108 Safari/537.36
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: rt
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The UTC timestamp
-  Sample:
-  - 1599465660
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: eventName
-  ProductCode:
-  - sig
-  - szn
-  - pdi
-  - xns
-  - vpc
-  - azv
-  Description_EN: The name of the log event
-  Sample:
-  - SWG_ACTIVITY_LOG
-  - FIREWALL_ACTIVITY_LOG
-  - VPC_ACTIVITY_LOG
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: application
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The name of the requested application
-  Sample:
-  - Facebook
-  - wiki
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: ruleName
-  ProductCode:
-  - sig
-  - szn
-  - azv
-  Description_EN: The name of the triggered cloud access rule
-  Sample:
-  - ETL_Access Rules_Web_Host
-  - block_wiki_for_guest
-  - BlockHighRiskTCPPortsFromInternet
-  - unspecified
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: clientIp
-  ProductCode:
-  - sig
-  - szn
-  - pdi
-  - xns
-  Description_EN: The endpoint IP address
-  Sample:
-  - 10.10.10.10
-  DL_Type: string
-  DL_CommonKey:
-  - IPv4
-  - IPv6
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: requestBase
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The URL domain
-  Sample:
-  - www.facebook.com
-  - gary.webserver64.com
-  DL_Type: string
-  DL_CommonKey:
-  - DomainName
-  - HostDomain
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: detectionType
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The traffic detection type
-  Sample:
-  - No matched Zero Trust Secure Access rule
-  - Missing or invalid client certificate
-  - Untrusted server certificate
-  - Zero Trust Secure Access
-  - HTTPS inspection exception
-  - HTTPS inspection failure
-  - HTTPS bypass at inspection failure
-  - Approved URLs
-  - Blocked URLs
-  - Private IP address access
-  - Web Reputation
-  - URL Filtering
-  - Restricted file type
-  - Restricted MIME type
-  - Restricted file extension type
-  - Anti-malware scan
-  - File scan exception
-  - Predictive Machine Learning
-  - Botnet
-  - Application Control
-  - Virtual Analyzer submission
-  - Tenancy Restriction
-  - Suspicious Object Blocked List
-  - Data Loss Prevention
-  - Ransomware
-  - Risk Control
-  - AI Service Risk Control
-  - Non-compliant device
-  - AI Service Access
-  - AI Service Sensitive Data Prevention
-  - AI Service Prompt Injection
-  - AI Service Improper Answer
-  - AI Service Malicious URL Answer
-  - AI Service File Upload Detection
-  - AI Service Rate Limiting
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: ruleType
-  ProductCode:
-  - szn
-  Description_EN: The rule type which is applied to the traffic
-  Sample:
-  - access
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: ruleUuid
-  ProductCode:
-  - szn
-  Description_EN: The risk assessment and control design that is defined by Zero Trust
-    Secure Access risk control rules
-  Sample:
-  - 11111111-1111-1111-1111-111111111111
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: objectId
-  ProductCode:
-  - szn
-  Description_EN: The UUID of the Zero Trust Secure Access private access application
-  Sample:
-  - 11111111-1111-1111-1111-111111111111
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: spt
-  ProductCode:
-  - szn
-  - vpc
-  - azv
-  Description_EN: The virtual port of the source assigned to the Secure Access Module
-    (srcport)
-  Sample:
-  - 57763
-  DL_Type: int
-  DL_CommonKey:
-  - Port
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: policyUuid
-  ProductCode:
-  - szn
-  Description_EN: The policy UUID
-  Sample:
-  - 11111111-1111-1111-1111-111111111111
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: dpt
-  ProductCode:
-  - szn
-  - vpc
-  - azv
-  Description_EN: The service destination port of the private application server (dstport)
-  Sample:
-  - 443
-  DL_Type: int
-  DL_CommonKey:
-  - Port
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: companyName
-  ProductCode:
-  - szn
-  Description_EN: The company name
-  Sample:
-  - Trend Micro
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: sessionStart
-  ProductCode:
-  - szn
-  - pdi
-  - xns
-  Description_EN: The session start time (in seconds)
-  Sample:
-  - 1575462989
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: sessionEnd
-  ProductCode:
-  - szn
-  - pdi
-  - xns
-  Description_EN: The session end time, in seconds
-  Sample:
-  - 1575462989
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: endpointHostName
   ProductCode:
   - sds
@@ -878,6 +488,396 @@
 - Name: sessionEnd
   ProductCode:
   - szn
+  Description_EN: The session end time, in seconds
+  Sample:
+  - 1575462989
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventTime
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  - vpc
+  - azv
+  Description_EN: The time the agent or product detected the event
+  Sample:
+  - 1657135700000
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointHostName
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The host name of the device on which the event was detected
+  Sample:
+  - my_machine
+  - jeremy-mbp
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: osName
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The host operating system name
+  Sample:
+  - Windows 10
+  - macos 12.1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dst
+  ProductCode:
+  - sig
+  - szn
+  - vpc
+  - azv
+  Description_EN: The destination IP address (dstaddr)
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointGuid
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The device GUID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  - DSP84573ULLJHM5GK2R7
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: principalName
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The User Principal Name
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: request
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  Description_EN: The destination URL that the user is accessing
+  Sample:
+  - https://google.com/
+  - https://api/example/v1/testit
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: act
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The action
+  Sample:
+  - Allow
+  - Block
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: src
+  ProductCode:
+  - sig
+  - szn
+  - vpc
+  - azv
+  Description_EN: The source IP address (srcaddr)
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: serverTls
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  Description_EN: The TLS version between the client and server
+  Sample:
+  - TLS 1.2
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serverProtocol
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The version of the HTTP protocol between the Service Gateway and
+    server/website
+  Sample:
+  - HTTP/1.1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userAgent
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The user agent or the agent through which the request was made
+  Sample:
+  - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0)
+  - Chrome/74.0.3729.108 Safari/537.36
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: rt
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The UTC timestamp
+  Sample:
+  - 1599465660
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: eventName
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  - vpc
+  - azv
+  Description_EN: The name of the log event
+  Sample:
+  - SWG_ACTIVITY_LOG
+  - FIREWALL_ACTIVITY_LOG
+  - VPC_ACTIVITY_LOG
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: application
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The name of the requested application
+  Sample:
+  - Facebook
+  - wiki
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: ruleName
+  ProductCode:
+  - sig
+  - szn
+  - azv
+  Description_EN: The name of the triggered cloud access rule
+  Sample:
+  - ETL_Access Rules_Web_Host
+  - block_wiki_for_guest
+  - BlockHighRiskTCPPortsFromInternet
+  - unspecified
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: clientIp
+  ProductCode:
+  - sig
+  - szn
+  - pdi
+  - xns
+  Description_EN: The endpoint IP address
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: requestBase
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The URL domain
+  Sample:
+  - www.facebook.com
+  - gary.webserver64.com
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  - HostDomain
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: detectionType
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The traffic detection type
+  Sample:
+  - No matched Zero Trust Secure Access rule
+  - Missing or invalid client certificate
+  - Untrusted server certificate
+  - Zero Trust Secure Access
+  - HTTPS inspection exception
+  - HTTPS inspection failure
+  - HTTPS bypass at inspection failure
+  - Approved URLs
+  - Blocked URLs
+  - Private IP address access
+  - Web Reputation
+  - URL Filtering
+  - Restricted file type
+  - Restricted MIME type
+  - Restricted file extension type
+  - Anti-malware scan
+  - File scan exception
+  - Predictive Machine Learning
+  - Botnet
+  - Application Control
+  - Virtual Analyzer submission
+  - Tenancy Restriction
+  - Suspicious Object Blocked List
+  - Data Loss Prevention
+  - Ransomware
+  - Risk Control
+  - AI Service Risk Control
+  - Non-compliant device
+  - AI Service Access
+  - AI Service Sensitive Data Prevention
+  - AI Service Prompt Injection
+  - AI Service Improper Answer
+  - AI Service Malicious URL Answer
+  - AI Service File Upload Detection
+  - AI Service Rate Limiting
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleType
+  ProductCode:
+  - szn
+  Description_EN: The rule type which is applied to the traffic
+  Sample:
+  - access
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: ruleUuid
+  ProductCode:
+  - szn
+  Description_EN: The risk assessment and control design that is defined by Zero Trust
+    Secure Access risk control rules
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: objectId
+  ProductCode:
+  - szn
+  Description_EN: The UUID of the Zero Trust Secure Access private access application
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: spt
+  ProductCode:
+  - szn
+  - vpc
+  - azv
+  Description_EN: The virtual port of the source assigned to the Secure Access Module
+    (srcport)
+  Sample:
+  - 57763
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: policyUuid
+  ProductCode:
+  - szn
+  Description_EN: The policy UUID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dpt
+  ProductCode:
+  - szn
+  - vpc
+  - azv
+  Description_EN: The service destination port of the private application server (dstport)
+  Sample:
+  - 443
+  DL_Type: int
+  DL_CommonKey:
+  - Port
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: companyName
+  ProductCode:
+  - szn
+  Description_EN: The company name
+  Sample:
+  - Trend Micro
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sessionStart
+  ProductCode:
+  - szn
+  - pdi
+  - xns
+  Description_EN: The session start time (in seconds)
+  Sample:
+  - 1575462989
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sessionEnd
+  ProductCode:
+  - szn
+  - pdi
+  - xns
   Description_EN: The session end time, in seconds
   Sample:
   - 1575462989

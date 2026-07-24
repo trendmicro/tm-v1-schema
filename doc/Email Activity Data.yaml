@@ -822,6 +822,16 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: protectionManager
+  ProductCode:
+  - ALL
+  Description_EN: The Server & Workload Protection Manager instance name
+  Sample:
+  - Protection Manager 01
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: mailReturnPath
   ProductCode:
   - sca
@@ -1128,3 +1138,37 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: vendorLogId
+  ProductCode:
+  - xca
+  Description_EN: The vendor event log ID
+  Sample:
+  - 0000000011
+  - 0211008192
+  - 98
+  - 1234567890-abcd-abcd-abcd-abcdef123456_1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: externalForwardingTargets
+  ProductCode:
+  - xca
+  Description_EN: The external mailbox-forwarding target addresses
+  Sample:
+  - attacker@evil-exfil.com
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isExternalForwarding
+  ProductCode:
+  - xca
+  Description_EN: Whether the mailbox-forwarding operation has at least one external
+    target
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

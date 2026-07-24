@@ -1049,6 +1049,57 @@
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
+- Name: correlationId
+  ProductCode:
+  - xes
+  Description_EN: The correlation ID (associates related telemetry events)
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: correlationRuleId
+  ProductCode:
+  - xes
+  Description_EN: The correlation rule ID
+  Sample:
+  - ERC1102
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: correlationRuleName
+  ProductCode:
+  - xes
+  Description_EN: The correlation rule name
+  Sample:
+  - DLLHijacking
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: correlationRuleVer
+  ProductCode:
+  - xes
+  Description_EN: The correlation rule version
+  Sample:
+  - '1'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sourceActivities
+  ProductCode:
+  - xes
+  Description_EN: The correlated source activities that generated the event
+  Sample:
+  - '"{\"CreateProc\":{\"correlationId\":\"11111111-1111-1111-1111-111111111111\",\"outputFields\":
+    {\"parentCmd\":[\"cmd.exe /c copy powershell.exe updater.exe\"],\"parentFilePath\":[\"c:\\\\Windows\\\\System32\\\\cmd.exe\"]},\"aggregateCount\":1}}"'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: endpointMacAddress
   ProductCode:
   - sds
@@ -5104,6 +5155,18 @@
   - ErrorProcessNotFound
   - N/A
   DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: trafficSize
+  ProductCode:
+  - xes
+  Description_EN: The event traffic size (in bytes)
+  Sample:
+  - '123'
+  - '0'
+  - '-1'
+  DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false

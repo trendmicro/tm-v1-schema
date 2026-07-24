@@ -114,6 +114,16 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: protectionManager
+  ProductCode:
+  - ALL
+  Description_EN: The Server & Workload Protection Manager instance name
+  Sample:
+  - Protection Manager 01
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: vendor
   ProductCode:
   - tlc
@@ -1639,6 +1649,280 @@
   Sample:
   - My Firewall Collector
   DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: loggedByService
+  ProductCode:
+  - tlc
+  Description_EN: The service that recorded the event
+  Sample:
+  - authentik
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userSessionId
+  ProductCode:
+  - tlc
+  Description_EN: The user session ID
+  Sample:
+  - abc123xyz
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientOS
+  ProductCode:
+  - tlc
+  Description_EN: The client device OS
+  Sample:
+  - Windows 11
+  - macOS 14
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientBrowser
+  ProductCode:
+  - tlc
+  Description_EN: The client device browser
+  Sample:
+  - Chrome 120
+  - Safari 17
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: statusReason
+  ProductCode:
+  - tlc
+  Description_EN: The event status reason
+  Sample:
+  - incorrect_password
+  - account_locked
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: operationType
+  ProductCode:
+  - tlc
+  Description_EN: The type of operation performed
+  Sample:
+  - login
+  - logout
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationLatitude
+  ProductCode:
+  - tlc
+  Description_EN: The geographic latitude of the event location
+  Sample:
+  - '25.0330'
+  - '37.7749'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationLongitude
+  ProductCode:
+  - tlc
+  Description_EN: The geographic longitude of the event location
+  Sample:
+  - '121.5654'
+  - '-122.4194'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: targetResources
+  ProductCode:
+  - tlc
+  Description_EN: The list of resources targeted by the event
+  Sample:
+  - [{name: My App, module: authentik.providers.oauth2}]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: actorUserName
+  ProductCode:
+  - tlc
+  Description_EN: The username of the actor who performed the action
+  Sample:
+  - john.doe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actorPrincipalName
+  ProductCode:
+  - tlc
+  Description_EN: The actor UPN or email
+  Sample:
+  - john.doe@example.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actorUserId
+  ProductCode:
+  - tlc
+  Description_EN: The user ID
+  Sample:
+  - user-abc123
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actorUserDisplayName
+  ProductCode:
+  - tlc
+  Description_EN: The user display name
+  Sample:
+  - John Doe
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: targetUserName
+  ProductCode:
+  - tlc
+  Description_EN: The username of the target user
+  Sample:
+  - jane.smith
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: targetPrincipalName
+  ProductCode:
+  - tlc
+  Description_EN: The target user UPN or email
+  Sample:
+  - jane.smith@example.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: targetUserId
+  ProductCode:
+  - tlc
+  Description_EN: The target user ID
+  Sample:
+  - user-def456
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: targetUserDisplayName
+  ProductCode:
+  - tlc
+  Description_EN: The target user display name
+  Sample:
+  - Jane Smith
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: authMethod
+  ProductCode:
+  - tlc
+  Description_EN: The authentication method used
+  Sample:
+  - password
+  - totp
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: authDeviceClass
+  ProductCode:
+  - tlc
+  Description_EN: The device class used for authentication
+  Sample:
+  - mobile
+  - desktop
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isKnownDevice
+  ProductCode:
+  - tlc
+  Description_EN: Whether the device is a known device
+  Sample:
+  - true
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcContinent
+  ProductCode:
+  - tlc
+  Description_EN: The source IP continent
+  Sample:
+  - AS
+  - NA
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcNetwork
+  ProductCode:
+  - tlc
+  Description_EN: The source IP CIDR
+  Sample:
+  - 192.168.1.0/24
+  - 10.0.0.0/8
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: srcAsn
+  ProductCode:
+  - tlc
+  Description_EN: The source IP ASN
+  Sample:
+  - 4134
+  - 15169
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestQuery
+  ProductCode:
+  - tlc
+  Description_EN: The query string of the HTTP request
+  Sample:
+  - ?redirect_uri=https://app.example.com
+  - ?client_id=abc123&response_type=code
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tenantName
+  ProductCode:
+  - tlc
+  Description_EN: The name of the tenant
+  Sample:
+  - my-org
+  - acme-corp
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventExpireTime
+  ProductCode:
+  - tlc
+  Description_EN: The expiration time of the event
+  Sample:
+  - 1656324260000
+  DL_Type: long
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false

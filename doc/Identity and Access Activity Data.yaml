@@ -114,6 +114,19 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: vendorLogId
+  ProductCode:
+  - aad
+  Description_EN: The vendor event log ID
+  Sample:
+  - 0000000011
+  - 0211008192
+  - 98
+  - 1234567890-abcd-abcd-abcd-abcdef123456_1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: idpName
   ProductCode:
   - aad
@@ -546,6 +559,16 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: protectionManager
+  ProductCode:
+  - ALL
+  Description_EN: The Server & Workload Protection Manager instance name
+  Sample:
+  - Protection Manager 01
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: pname
   ProductCode:
   - aad

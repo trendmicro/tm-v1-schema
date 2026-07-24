@@ -76,6 +76,10 @@
     Entra ID, opa=Microsoft Active Directory)
   DL_Type: string
 
+- Name: protectionManager
+  Description_EN: The Server & Workload Protection Manager instance name
+  DL_Type: string
+
 - Name: readOnly
   Description_EN: Whether the operation is read-only
   DL_Type: bool

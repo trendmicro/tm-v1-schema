@@ -1,15 +1,3 @@
-- Name: signInCountries
-  ProductCode:
-  - sca
-  - aad
-  Description_EN: The countries from which a user signed in
-  Sample:
-  - PH
-  - AU
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: eventTime
   ProductCode:
   - aad
@@ -55,6 +43,19 @@
   - EVENT_SOURCE_AAD_SIGN_INS
   - EVENT_SOURCE_AAD_DIR_AUDIT
   - EVENT_SOURCE_OPA_WINDOWS_EVENT
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: vendorLogId
+  ProductCode:
+  - aad
+  Description_EN: The vendor event log ID
+  Sample:
+  - 0000000011
+  - 0211008192
+  - 98
+  - 1234567890-abcd-abcd-abcd-abcdef123456_1
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -733,6 +734,18 @@
   - ServerAd
   - Workplace
   DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: signInCountries
+  ProductCode:
+  - sca
+  - aad
+  Description_EN: The countries from which a user signed in
+  Sample:
+  - PH
+  - AU
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
