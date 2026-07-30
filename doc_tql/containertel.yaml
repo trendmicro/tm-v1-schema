@@ -148,6 +148,10 @@
     Entra ID, opa=Microsoft Active Directory)
   DL_Type: string
 
+- Name: protectionManager
+  Description_EN: The Server & Workload Protection Manager instance name
+  DL_Type: string
+
 - Name: proto
   Description_EN: The exploited layer network protocol
   DL_Type: string

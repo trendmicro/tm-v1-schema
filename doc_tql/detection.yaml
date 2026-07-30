@@ -511,7 +511,7 @@
   DL_Type: string
 
 - Name: deviceMacAddress
-  Description_EN: The device MAC address
+  Description_EN: The device mac address
   DL_Type: string
 
 - Name: deviceModel
@@ -1202,10 +1202,6 @@
   Description_EN: The object file access details
   DL_Type: string
 
-- Name: objectFileCreatedTime
-  Description_EN: The time the object file was created
-  DL_Type: datetime
-
 - Name: objectFileCreation
   Description_EN: The time the target file was created (in milliseconds)
   DL_Type: datetime
@@ -1686,6 +1682,10 @@
     Prevention profile triggered
   DL_Type: string
 
+- Name: protectionManager
+  Description_EN: The Server & Workload Protection Manager instance name
+  DL_Type: string
+
 - Name: proto
   Description_EN: The exploited layer network protocol
   DL_Type: string
@@ -2002,7 +2002,7 @@
   DL_Type: string
 
 - Name: srcFileHashSha256
-  Description_EN: The SHA-256 of the source file
+  Description_EN: The SHA256 hash of source file
   DL_Type: string
 
 - Name: srcFileModifiedTime
@@ -2139,6 +2139,10 @@
 - Name: threatType
   Description_EN: The log threat type
   DL_Type: string
+
+- Name: trafficSize
+  Description_EN: The event traffic size (in bytes)
+  DL_Type: long
 
 - Name: trigger
   Description_EN: The action trigger

@@ -27,7 +27,7 @@
   DL_Type: string
 
 - Name: clientBrowser
-  Description_EN: The client browser
+  Description_EN: The client device browser
   DL_Type: string
 
 - Name: clientCredentialType
@@ -43,7 +43,7 @@
   DL_Type: string
 
 - Name: clientOS
-  Description_EN: The client OS
+  Description_EN: The client device OS
   DL_Type: string
 
 - Name: conditionalAccessStatus
@@ -55,7 +55,7 @@
   DL_Type: dynamic
 
 - Name: correlationId
-  Description_EN: The correlation ID used to associate related telemetry events
+  Description_EN: The correlation ID (associates related telemetry events)
   DL_Type: string
 
 - Name: crossTenantAccessType
@@ -428,11 +428,11 @@
   DL_Type: string
 
 - Name: locationLatitude
-  Description_EN: The latitude of the event location
+  Description_EN: The geographic latitude of the event location
   DL_Type: string
 
 - Name: locationLongitude
-  Description_EN: The longitude of the event location
+  Description_EN: The geographic longitude of the event location
   DL_Type: string
 
 - Name: locationState
@@ -544,6 +544,10 @@
     Entra ID, opa=Microsoft Active Directory)
   DL_Type: string
 
+- Name: protectionManager
+  Description_EN: The Server & Workload Protection Manager instance name
+  DL_Type: string
+
 - Name: providerGUID
   Description_EN: The GUID of the Windows event provider
   DL_Type: string
@@ -609,7 +613,7 @@
   DL_Type: string
 
 - Name: statusReason
-  Description_EN: The sign-in status
+  Description_EN: The event status reason
   DL_Type: string
 
 - Name: tags
@@ -626,7 +630,7 @@
   DL_Type: string
 
 - Name: targetResources
-  Description_EN: The targeted resource of the event
+  Description_EN: The list of resources targeted by the event
   DL_Type: dynamic
 
 - Name: tenantId
@@ -659,7 +663,11 @@
   DL_Type: string
 
 - Name: userType
-  Description_EN: The tenant user type
+  Description_EN: The Claude user type
+  DL_Type: string
+
+- Name: vendorLogId
+  Description_EN: The vendor event log ID
   DL_Type: string
 
 - Name: winEventId

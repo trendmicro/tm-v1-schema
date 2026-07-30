@@ -365,6 +365,16 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: protectionManager
+  ProductCode:
+  - ALL
+  Description_EN: The Server & Workload Protection Manager instance name
+  Sample:
+  - Protection Manager 01
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: groupId
   ProductCode:
   - ALL
@@ -373,5 +383,29 @@
   - 11111111-1111-1111-1111-111111111111
   DL_Type: string
   DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: instanceIds
+  ProductCode:
+  - ALL
+  Description_EN: The SendCommand target instance IDs extracted from request parameters
+    (EC2 i-... / SSM managed-instance mi-...)
+  Sample:
+  - [i-1234567890abcdef0, mi-1234567890abcdef0]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: endpointGuids
+  ProductCode:
+  - ALL
+  Description_EN: The endpoint GUIDs resolved from instance IDs via the cloud endpoint
+    Linker, index-aligned with instanceIds, a lookup miss is padded with "" to keep
+    both arrays the same length.
+  Sample:
+  - [11111111-1111-1111-1111-111111111111, '']
+  DL_Type: dynamic
+  DL_CommonKey:
+  - EndpointID
   DL_Searchable: true
   DL_Aggregable: false

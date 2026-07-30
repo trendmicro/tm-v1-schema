@@ -499,6 +499,16 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: protectionManager
+  ProductCode:
+  - ALL
+  Description_EN: The Server & Workload Protection Manager instance name
+  Sample:
+  - Protection Manager 01
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: customAssetTags
   ProductCode:
   - scs

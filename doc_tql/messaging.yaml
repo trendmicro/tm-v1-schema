@@ -67,7 +67,7 @@
   DL_Type: string
 
 - Name: correlationId
-  Description_EN: The correlation ID used to associate related telemetry events
+  Description_EN: The correlation ID (associates related telemetry events)
   DL_Type: string
 
 - Name: eventId
@@ -90,6 +90,10 @@
 - Name: eventTime
   Description_EN: The time the identity provider detected the event
   DL_Type: datetime
+
+- Name: externalForwardingTargets
+  Description_EN: The external mailbox-forwarding target addresses
+  DL_Type: dynamic
 
 - Name: extraInfo
   Description_EN: The additional information about the sharing action
@@ -115,6 +119,11 @@
 - Name: isExternalAccess
   Description_EN: Whether the cmdlet was run by an external user (True=external user,
     False=internal user in your organization)
+  DL_Type: bool
+
+- Name: isExternalForwarding
+  Description_EN: Whether the mailbox-forwarding operation has at least one external
+    target
   DL_Type: bool
 
 - Name: isSensitiveInfo
@@ -336,6 +345,10 @@
     Entra ID, opa=Microsoft Active Directory)
   DL_Type: string
 
+- Name: protectionManager
+  Description_EN: The Server & Workload Protection Manager instance name
+  DL_Type: string
+
 - Name: recordType
   Description_EN: The operation type
   DL_Type: int
@@ -378,5 +391,9 @@
   DL_Type: string
 
 - Name: userType
-  Description_EN: The tenant user type
+  Description_EN: The Claude user type
+  DL_Type: string
+
+- Name: vendorLogId
+  Description_EN: The vendor event log ID
   DL_Type: string

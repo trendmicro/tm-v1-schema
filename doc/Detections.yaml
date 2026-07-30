@@ -3168,17 +3168,6 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
-- Name: objectFileCreatedTime
-  ProductCode: []
-  Description_EN: The time the object file was created
-  Sample:
-  - 1652131848000
-  - 1577865600000
-  - 1648279273000
-  DL_Type: long
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: objectFileModifiedTime
   ProductCode:
   - scs
@@ -5737,6 +5726,16 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: protectionManager
+  ProductCode:
+  - ALL
+  Description_EN: The Server & Workload Protection Manager instance name
+  Sample:
+  - Protection Manager 01
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: mailDirection
   ProductCode:
   - sca
@@ -7177,3 +7176,15 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: trafficSize
+  ProductCode:
+  - xes
+  Description_EN: The event traffic size (in bytes)
+  Sample:
+  - '123'
+  - '0'
+  - '-1'
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

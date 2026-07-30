@@ -115,7 +115,7 @@
   DL_Type: string
 
 - Name: correlationId
-  Description_EN: The correlation ID used to associate related telemetry events
+  Description_EN: The correlation ID (associates related telemetry events)
   DL_Type: string
 
 - Name: eventCategory
@@ -169,6 +169,10 @@
 - Name: productCode
   Description_EN: The internal product code of the identity provider (aad=Microsoft
     Entra ID, opa=Microsoft Active Directory)
+  DL_Type: string
+
+- Name: protectionManager
+  Description_EN: The Server & Workload Protection Manager instance name
   DL_Type: string
 
 - Name: regionId
