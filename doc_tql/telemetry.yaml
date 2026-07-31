@@ -224,6 +224,11 @@
   Description_EN: The user name of the Windows event data target
   DL_Type: string
 
+- Name: eventDataTargetUserSid
+  Description_EN: The security identifier (SID) of the account for which sign-in was
+    requested
+  DL_Type: string
+
 - Name: eventDataTaskName
   Description_EN: The task name logged by the Windows event
   DL_Type: string
@@ -371,6 +376,10 @@
 - Name: objectApiName
   Description_EN: The name of the executed API
   DL_Type: string
+
+- Name: objectApiNames
+  Description_EN: The list of APIs the process invoked
+  DL_Type: dynamic
 
 - Name: objectApiRvInNum
   Description_EN: The API telemetry return value

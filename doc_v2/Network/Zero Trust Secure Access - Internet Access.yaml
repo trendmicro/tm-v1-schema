@@ -1,14 +1,3 @@
-- Name: authType
-  ProductCode:
-  - sig
-  Description_EN: The authorization type
-  Sample:
-  - Cookie JWT
-  - No Auth
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: endpointHostName
   ProductCode:
   - sds
@@ -1559,7 +1548,7 @@
   - sig
   Description_EN: The time the server took to respond to the request, in milliseconds
   Sample:
-  - 1599465660123
+  - 199
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -1653,3 +1642,14 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: authType
+  ProductCode:
+  - sig
+  Description_EN: The authorization type
+  Sample:
+  - Cookie JWT
+  - No Auth
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

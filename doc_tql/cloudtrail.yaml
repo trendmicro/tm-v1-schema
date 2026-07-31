@@ -11,6 +11,12 @@
   Description_EN: AWS region that the request was made to
   DL_Type: string
 
+- Name: endpointGuids
+  Description_EN: The endpoint GUIDs resolved from instance IDs via the cloud endpoint
+    Linker, index-aligned with instanceIds, a lookup miss is padded with "" to keep
+    both arrays the same length.
+  DL_Type: dynamic
+
 - Name: errorCode
   Description_EN: The error code associated with the event
   DL_Type: string
@@ -62,6 +68,11 @@
 - Name: groupId
   Description_EN: The group ID (sae), or the Claude group ID (tlc)
   DL_Type: string
+
+- Name: instanceIds
+  Description_EN: The SendCommand target instance IDs extracted from request parameters
+    (EC2 i-... / SSM managed-instance mi-...)
+  DL_Type: dynamic
 
 - Name: logReceivedTime
   Description_EN: The time when the XDR log was received

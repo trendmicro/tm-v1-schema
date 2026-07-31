@@ -2063,6 +2063,20 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Apex One as a Service</td>
     </tr>
     <tr>
+      <td class="field-name">eventDataTargetUserSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The account SID for which sign-in was requested</td>
+      <td class="example">S-1-5-21-3623811015-3361044348-30300820-1013</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">eventDataTaskName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -9431,7 +9445,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 464
+- **Total Fields:** 465
 - **Layer:** Endpoint
 - **Product:** Apex One as a Service
 

@@ -571,7 +571,7 @@
 
 - Name: serverRespTime
   Description_EN: The time the server took to respond to the request, in milliseconds
-  DL_Type: datetime
+  DL_Type: long
 
 - Name: serverTls
   Description_EN: The TLS version between the client and server
