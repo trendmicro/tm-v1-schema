@@ -1,3 +1,28 @@
+- Name: originUUID
+  ProductCode:
+  - ALL
+  - opa
+  Description_EN: The UUID of the original events which matches the Security Analytics
+    Engine filter
+  Sample:
+  - 00000000-0000-0000-0000-000000000000
+  - 11111111-1111-1111-1111-111111111111
+  - 22222222-2222-2222-2222-222222222222
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: netBiosDomainName
+  ProductCode:
+  - opa
+  Description_EN: The NetBIOS domain name
+  Sample:
+  - TREND
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: eventTime
   ProductCode:
   - aad
@@ -1092,30 +1117,5 @@
   - C:\Windows\System32\ntdll.dll?NtCreateUserProcess|ZwCreateUserProcess, C:\Windows\System32\kernelbase.dll!CreateProcessInternalW
   DL_Type: string
   DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: originUUID
-  ProductCode:
-  - ALL
-  - opa
-  Description_EN: The UUID of the original events which matches the Security Analytics
-    Engine filter
-  Sample:
-  - 00000000-0000-0000-0000-000000000000
-  - 11111111-1111-1111-1111-111111111111
-  - 22222222-2222-2222-2222-222222222222
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: netBiosDomainName
-  ProductCode:
-  - opa
-  Description_EN: The NetBIOS domain name
-  Sample:
-  - TREND
-  DL_Type: string
-  DL_CommonKey:
-  - DomainName
   DL_Searchable: true
   DL_Aggregable: false

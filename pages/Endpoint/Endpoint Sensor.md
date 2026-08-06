@@ -1370,6 +1370,20 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">eventDataTargetUserSid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The account SID for which sign-in was requested</td>
+      <td class="example">S-1-5-21-3623811015-3361044348-30300820-1013</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">eventDataTaskName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -2101,6 +2115,21 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The API name</td>
       <td class="example">GetIpNetTable</td>
+      <td class="products">Endpoint Sensor</td>
+    </tr>
+    <tr>
+      <td class="field-name">objectApiNames</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of APIs the process invoked</td>
+      <td class="example">
+        <ul>
+          <li>NtOpenProcess</li>
+          <li>NtAllocateVirtualMemory</li>
+          <li>NtWriteVirtualMemory</li>
+        </ul>
+      </td>
       <td class="products">Endpoint Sensor</td>
     </tr>
     <tr>
@@ -7347,7 +7376,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 388
+- **Total Fields:** 390
 - **Layer:** Endpoint
 - **Product:** Endpoint Sensor
 

@@ -3508,6 +3508,17 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: eventDataTargetUserSid
+  ProductCode:
+  - xes
+  - sao
+  Description_EN: The account SID for which sign-in was requested
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: interestedHost
   ProductCode:
   - sds

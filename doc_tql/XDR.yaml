@@ -1079,6 +1079,12 @@
   Description_EN: Host GUID of the endpoint on which the event was detected
   DL_Type: string
 
+- Name: endpointGuids
+  Description_EN: The endpoint GUIDs resolved from instance IDs via the cloud endpoint
+    Linker, index-aligned with instanceIds, a lookup miss is padded with "" to keep
+    both arrays the same length.
+  DL_Type: dynamic
+
 - Name: endpointHostName
   Description_EN: The host name of the endpoint on which the event was detected
   DL_Type: string
@@ -1758,6 +1764,11 @@
     VM
   DL_Type: string
 
+- Name: instanceIds
+  Description_EN: The SendCommand target instance IDs extracted from request parameters
+    (EC2 i-... / SSM managed-instance mi-...)
+  DL_Type: dynamic
+
 - Name: instanceName
   Description_EN: The name of the instance that indicates the meta-cloud or data center
     VM
@@ -2329,6 +2340,10 @@
 - Name: objectApiName
   Description_EN: The name of the executed API
   DL_Type: string
+
+- Name: objectApiNames
+  Description_EN: The list of APIs the process invoked
+  DL_Type: dynamic
 
 - Name: objectApiRvInNum
   Description_EN: The API telemetry return value
@@ -3902,7 +3917,7 @@
 
 - Name: serverRespTime
   Description_EN: The time the server took to respond to the request, in milliseconds
-  DL_Type: datetime
+  DL_Type: long
 
 - Name: serverTls
   Description_EN: The TLS version between the client and server

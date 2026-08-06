@@ -1,3 +1,484 @@
+- Name: endpointHostName
+  ProductCode:
+  - sds
+  - pds
+  - sao
+  - xes
+  - sig
+  - ams
+  - szn
+  - pts
+  - scs
+  - sss
+  - ddr
+  Description_EN: The endpoint hostname or node where the event was detected
+  Sample:
+  - 10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]
+  - ip-10-10-10-10.us-west-1.compute.internal
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointGUID
+  ProductCode:
+  - sds
+  - sao
+  - pds
+  - xes
+  - sig
+  - ams
+  - szn
+  - pts
+  - scs
+  - ddr
+  Description_EN: The GUID of the agent which reported the detection
+  Sample:
+  - ae4d64aa-f8b8-bb36-b265-f59272ed342f
+  - 8fb979f6-1376-bed3-227f-f2886e66194e
+  - ca2b3a7e-8415-c571-cc19-e45f69470026
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: request
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - ptp
+  - sds
+  - sig
+  - sca
+  - stp
+  - sem
+  - pds
+  - ams
+  - szn
+  - pan
+  Description_EN: The notable URLs
+  Sample:
+  - http://example.page.com/canonical.html
+  - http://10.10.10.10
+  - https://drive.google.com/
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventName
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - ptp
+  - sca
+  - sem
+  - xes
+  - stp
+  - sig
+  - ptn
+  - szn
+  - pts
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - ams
+  - mns
+  - ddr
+  - pan
+  Description_EN: The event type
+  Sample:
+  - LOG_INSPECTION_EVENT
+  - SECURITY_RISK_DETECTION
+  - WEB_THREAT_DETECTION
+  - LOG_INSPECTION_EVENT
+  - MALWARE_DETECTION
+  - PROCESS_ACTIVITY
+  - WEB_POLICY_VIOLATION
+  - DEEP_PACKET_INSPECTION_EVENT
+  - INTEGRITY_MONITORING_EVENT
+  - DISRUPTIVE_APPLICATION_DETECTION
+  - PRODUCT_SUMMARY
+  - PRODUCT_UPDATE
+  - BEHAVIORAL_VIOLATION
+  - FIREWALL_POLICY_VIOLATION
+  - SUSPICIOUS_BEHAVIOUR_DETECTION
+  - DENYLIST_CHANGE
+  - MACHINE_LEARNING_DETECTION
+  - DLP_VIOLATION
+  - MALWARE_OUTBREAK_DETECTION
+  - SENSITIVE_DATA_DETECTION
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: act
+  ProductCode:
+  - scs
+  - pdi
+  - xns
+  - sao
+  - sds
+  - sca
+  - ptp
+  - xes
+  - sws
+  - sem
+  - pds
+  - stp
+  - sig
+  - ptn
+  - szn
+  - xms
+  - ams
+  - mns
+  - sss
+  Description_EN: The actions taken to mitigate the event
+  Sample:
+  - log
+  - isolate
+  - terminate
+  - not blocked
+  - Block
+  - No action
+  - Reset
+  - Pass
+  - User Decision
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actResult
+  ProductCode:
+  - sao
+  - sca
+  - sds
+  - pds
+  - pts
+  - ams
+  Description_EN: The result of an action
+  Sample:
+  - Dropped
+  - Successful
+  - Accepted
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pname
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - sem
+  - ptp
+  - xes
+  - sws
+  - stp
+  - sig
+  - ams
+  - scs
+  - xms
+  - pan
+  Description_EN: The internal product ID
+  Sample:
+  - Trend Micro Deep Security
+  - Deep Discovery Inspector
+  - Apex One
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: urlCat
+  ProductCode:
+  - pdi
+  - xns
+  - sws
+  - sao
+  - sig
+  - sca
+  - ams
+  - sds
+  Description_EN: The requested URL category
+  Sample:
+  - Untested
+  - '158'
+  - Web Advertisement
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: majorVirusType
+  ProductCode:
+  - pds
+  - sds
+  - ams
+  - ptn
+  - pts
+  - sfc
+  Description_EN: The virus type
+  Sample:
+  - Virus
+  - Suspicious Activity
+  - Trojan
+  - TROJ
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionName
+  ProductCode:
+  - sao
+  - ams
+  Description_EN: The general name for the detection
+  Sample:
+  - Troj.Win32.TRX.XXPE50F13017
+  - Troj.Win32.TRX.XXPE50FFF059
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionType
+  ProductCode:
+  - pdi
+  - xns
+  - sds
+  - sws
+  - sao
+  - sca
+  - pds
+  - sem
+  - sig
+  - ams
+  - szn
+  - scs
+  Description_EN: The detection type
+  Sample:
+  - '1'
+  - File
+  - Process
+  - net
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventId
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - xes
+  - sem
+  - pts
+  - scs
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - ams
+  - mns
+  - ddr
+  - pan
+  Description_EN: The event ID from the logs of each product
+  Sample:
+  - 100100
+  - 100101
+  - 100116
+  - 100117
+  - 100119
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: osName
+  ProductCode:
+  - sig
+  - ams
+  - szn
+  - ddr
+  - sss
+  Description_EN: The host OS name
+  Sample:
+  - Linux
+  - windows 10.0.22000
+  - windows 10.0.19044
+  - windows 10.0.19043
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pver
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - ptp
+  - stp
+  - sig
+  - ams
+  - scs
+  - sfs
+  - sfc
+  - sss
+  - pan
+  Description_EN: The product version
+  Sample:
+  - 20.0.0.4726
+  - 20.0.0.4416
+  - 6.2.1125
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: score
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sca
+  - ams
+  - sds
+  Description_EN: The Web Reputation Services URL rating
+  Sample:
+  - 71
+  - 81
+  - 0
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: mailbox
+  ProductCode:
+  - sca
+  - sem
+  - ams
+  - xms
+  Description_EN: The mailbox that is protected by Trend Micro
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointModel
+  ProductCode:
+  - ams
+  Description_EN: Mobile device model
+  Sample:
+  - M2101K9G
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appPkgName
+  ProductCode:
+  - ams
+  Description_EN: The app package name
+  Sample:
+  - com.example.app_pkg_name_file
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appLabel
+  ProductCode:
+  - ams
+  Description_EN: App name
+  Sample:
+  - Mobile Security Virus Test Application
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appVerCode
+  ProductCode:
+  - ams
+  Description_EN: The app version code
+  Sample:
+  - 1
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appPublicKeySha1
+  ProductCode:
+  - ams
+  Description_EN: The app public key (SHA-1)
+  Sample:
+  - 72080A6B4EB11105B28E31C4753BC91414500AD4
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appSize
+  ProductCode:
+  - ams
+  Description_EN: The app size (in bytes)
+  Sample:
+  - '28461'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: appDexSha256
+  ProductCode:
+  - ams
+  Description_EN: The app dex encoded using SHA-256
+  Sample:
+  - 08736EDDD3682AC26D9FD42DA2A20B0BADB5C85A5456A0AE85B52D60C564F290
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: appIsSystem
+  ProductCode:
+  - ams
+  Description_EN: Whether the app is a system app
+  Sample:
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osVer
+  ProductCode:
+  - ams
+  - szn
+  - ddr
+  Description_EN: The OS version
+  Sample:
+  - '11'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: minorVirusType
+  ProductCode:
+  - ams
+  Description_EN: Minor virus type
+  Sample:
+  - RANSOMWARE
+  - BANKER
+  - CREDENTIAL
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: endpointGuid
   ProductCode:
   - ams
@@ -638,487 +1119,6 @@
   Description_EN: The SHA-1 hash of the certificate public key
   Sample:
   - 05FC638156219800DADAC48D8E621E0BCBD3C321
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: endpointHostName
-  ProductCode:
-  - sds
-  - pds
-  - sao
-  - xes
-  - sig
-  - ams
-  - szn
-  - pts
-  - scs
-  - sss
-  - ddr
-  Description_EN: The endpoint hostname or node where the event was detected
-  Sample:
-  - 10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]
-  - ip-10-10-10-10.us-west-1.compute.internal
-  DL_Type: string
-  DL_CommonKey:
-  - EndpointName
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: endpointGUID
-  ProductCode:
-  - sds
-  - sao
-  - pds
-  - xes
-  - sig
-  - ams
-  - szn
-  - pts
-  - scs
-  - ddr
-  Description_EN: The GUID of the agent which reported the detection
-  Sample:
-  - ae4d64aa-f8b8-bb36-b265-f59272ed342f
-  - 8fb979f6-1376-bed3-227f-f2886e66194e
-  - ca2b3a7e-8415-c571-cc19-e45f69470026
-  DL_Type: string
-  DL_CommonKey:
-  - EndpointID
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: request
-  ProductCode:
-  - pdi
-  - xns
-  - sao
-  - ptp
-  - sds
-  - sig
-  - sca
-  - stp
-  - sem
-  - pds
-  - ams
-  - szn
-  - pan
-  Description_EN: The notable URLs
-  Sample:
-  - http://example.page.com/canonical.html
-  - http://10.10.10.10
-  - https://drive.google.com/
-  DL_Type: string
-  DL_CommonKey:
-  - URL
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: eventName
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - sao
-  - pds
-  - ptp
-  - sca
-  - sem
-  - xes
-  - stp
-  - sig
-  - ptn
-  - szn
-  - pts
-  - xms
-  - sfs
-  - sfc
-  - sss
-  - ams
-  - mns
-  - ddr
-  - pan
-  Description_EN: The event type
-  Sample:
-  - LOG_INSPECTION_EVENT
-  - SECURITY_RISK_DETECTION
-  - WEB_THREAT_DETECTION
-  - LOG_INSPECTION_EVENT
-  - MALWARE_DETECTION
-  - PROCESS_ACTIVITY
-  - WEB_POLICY_VIOLATION
-  - DEEP_PACKET_INSPECTION_EVENT
-  - INTEGRITY_MONITORING_EVENT
-  - DISRUPTIVE_APPLICATION_DETECTION
-  - PRODUCT_SUMMARY
-  - PRODUCT_UPDATE
-  - BEHAVIORAL_VIOLATION
-  - FIREWALL_POLICY_VIOLATION
-  - SUSPICIOUS_BEHAVIOUR_DETECTION
-  - DENYLIST_CHANGE
-  - MACHINE_LEARNING_DETECTION
-  - DLP_VIOLATION
-  - MALWARE_OUTBREAK_DETECTION
-  - SENSITIVE_DATA_DETECTION
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: act
-  ProductCode:
-  - scs
-  - pdi
-  - xns
-  - sao
-  - sds
-  - sca
-  - ptp
-  - xes
-  - sws
-  - sem
-  - pds
-  - stp
-  - sig
-  - ptn
-  - szn
-  - xms
-  - ams
-  - mns
-  - sss
-  Description_EN: The actions taken to mitigate the event
-  Sample:
-  - log
-  - isolate
-  - terminate
-  - not blocked
-  - Block
-  - No action
-  - Reset
-  - Pass
-  - User Decision
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: actResult
-  ProductCode:
-  - sao
-  - sca
-  - sds
-  - pds
-  - pts
-  - ams
-  Description_EN: The result of an action
-  Sample:
-  - Dropped
-  - Successful
-  - Accepted
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: pname
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - sao
-  - pds
-  - sca
-  - sem
-  - ptp
-  - xes
-  - sws
-  - stp
-  - sig
-  - ams
-  - scs
-  - xms
-  - pan
-  Description_EN: The internal product ID
-  Sample:
-  - Trend Micro Deep Security
-  - Deep Discovery Inspector
-  - Apex One
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: urlCat
-  ProductCode:
-  - pdi
-  - xns
-  - sws
-  - sao
-  - sig
-  - sca
-  - ams
-  - sds
-  Description_EN: The requested URL category
-  Sample:
-  - Untested
-  - '158'
-  - Web Advertisement
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: majorVirusType
-  ProductCode:
-  - pds
-  - sds
-  - ams
-  - ptn
-  - pts
-  - sfc
-  Description_EN: The virus type
-  Sample:
-  - Virus
-  - Suspicious Activity
-  - Trojan
-  - TROJ
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: detectionName
-  ProductCode:
-  - sao
-  - ams
-  Description_EN: The general name for the detection
-  Sample:
-  - Troj.Win32.TRX.XXPE50F13017
-  - Troj.Win32.TRX.XXPE50FFF059
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: detectionType
-  ProductCode:
-  - pdi
-  - xns
-  - sds
-  - sws
-  - sao
-  - sca
-  - pds
-  - sem
-  - sig
-  - ams
-  - szn
-  - scs
-  Description_EN: The detection type
-  Sample:
-  - '1'
-  - File
-  - Process
-  - net
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: eventId
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - sao
-  - pds
-  - sca
-  - xes
-  - sem
-  - pts
-  - scs
-  - xms
-  - sfs
-  - sfc
-  - sss
-  - ams
-  - mns
-  - ddr
-  - pan
-  Description_EN: The event ID from the logs of each product
-  Sample:
-  - 100100
-  - 100101
-  - 100116
-  - 100117
-  - 100119
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: osName
-  ProductCode:
-  - sig
-  - ams
-  - szn
-  - ddr
-  - sss
-  Description_EN: The host OS name
-  Sample:
-  - Linux
-  - windows 10.0.22000
-  - windows 10.0.19044
-  - windows 10.0.19043
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: pver
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - pds
-  - sao
-  - ptp
-  - stp
-  - sig
-  - ams
-  - scs
-  - sfs
-  - sfc
-  - sss
-  - pan
-  Description_EN: The product version
-  Sample:
-  - 20.0.0.4726
-  - 20.0.0.4416
-  - 6.2.1125
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: score
-  ProductCode:
-  - pdi
-  - xns
-  - sao
-  - sca
-  - ams
-  - sds
-  Description_EN: The Web Reputation Services URL rating
-  Sample:
-  - 71
-  - 81
-  - 0
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: mailbox
-  ProductCode:
-  - sca
-  - sem
-  - ams
-  - xms
-  Description_EN: The mailbox that is protected by Trend Micro
-  Sample:
-  - sample_email@trendmicro.com
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: endpointModel
-  ProductCode:
-  - ams
-  Description_EN: Mobile device model
-  Sample:
-  - M2101K9G
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: appPkgName
-  ProductCode:
-  - ams
-  Description_EN: The app package name
-  Sample:
-  - com.example.app_pkg_name_file
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: appLabel
-  ProductCode:
-  - ams
-  Description_EN: App name
-  Sample:
-  - Mobile Security Virus Test Application
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: appVerCode
-  ProductCode:
-  - ams
-  Description_EN: The app version code
-  Sample:
-  - 1
-  DL_Type: int
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: appPublicKeySha1
-  ProductCode:
-  - ams
-  Description_EN: The app public key (SHA-1)
-  Sample:
-  - 72080A6B4EB11105B28E31C4753BC91414500AD4
-  DL_Type: string
-  DL_CommonKey:
-  - FileSHA1
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: appSize
-  ProductCode:
-  - ams
-  Description_EN: The app size (in bytes)
-  Sample:
-  - '28461'
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: appDexSha256
-  ProductCode:
-  - ams
-  Description_EN: The app dex encoded using SHA-256
-  Sample:
-  - 08736EDDD3682AC26D9FD42DA2A20B0BADB5C85A5456A0AE85B52D60C564F290
-  DL_Type: string
-  DL_CommonKey:
-  - FileSHA2
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: appIsSystem
-  ProductCode:
-  - ams
-  Description_EN: Whether the app is a system app
-  Sample:
-  - false
-  DL_Type: bool
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: osVer
-  ProductCode:
-  - ams
-  - szn
-  - ddr
-  Description_EN: The OS version
-  Sample:
-  - '11'
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: minorVirusType
-  ProductCode:
-  - ams
-  Description_EN: Minor virus type
-  Sample:
-  - RANSOMWARE
-  - BANKER
-  - CREDENTIAL
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
