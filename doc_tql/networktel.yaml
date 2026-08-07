@@ -50,6 +50,10 @@
   Description_EN: The IP addresses of the source
   DL_Type: dynamic
 
+- Name: clientKexAlgorithms
+  Description_EN: The list of key exchange algorithms/groups offered by the client
+  DL_Type: dynamic
+
 - Name: clientMAC
   Description_EN: The client MAC address
   DL_Type: string
@@ -275,6 +279,10 @@
 
 - Name: ja4sFingerprint
   Description_EN: The JA4S fingerprint
+  DL_Type: string
+
+- Name: keyExchangeAlgorithm
+  Description_EN: The key exchange algorithm/group
   DL_Type: string
 
 - Name: logReceivedTime
@@ -556,6 +564,10 @@
   Description_EN: The server IP address
   DL_Type: string
 
+- Name: serverKexAlgorithms
+  Description_EN: The list of server key exchange algorithms
+  DL_Type: dynamic
+
 - Name: serverMAC
   Description_EN: The server MAC address
   DL_Type: string
@@ -606,12 +618,38 @@
   Description_EN: The source country
   DL_Type: string
 
+- Name: sshClientCipher
+  Description_EN: The SSH cipher used for client-to-server traffic on the SSH connection
+  DL_Type: string
+
+- Name: sshClientCompression
+  Description_EN: The compression method used for client-to-server traffic on the
+    SSH connection
+  DL_Type: string
+
+- Name: sshClientMessageAuthenticationCode
+  Description_EN: The MAC algorithm used for client-to-server traffic on the SSH connection
+  DL_Type: string
+
 - Name: sshHassh
   Description_EN: The SSH client application fingerprint
   DL_Type: string
 
 - Name: sshHasshServer
   Description_EN: The SSH server application fingerprint
+  DL_Type: string
+
+- Name: sshServerCipher
+  Description_EN: The SSH cipher used for server-to-client traffic on the SSH connection
+  DL_Type: string
+
+- Name: sshServerCompression
+  Description_EN: The compression method used for server-to-client traffic on the
+    SSH connection
+  DL_Type: string
+
+- Name: sshServerMessageAuthenticationCode
+  Description_EN: The MAC algorithm used for server-to-client traffic on the SSH connection
   DL_Type: string
 
 - Name: sslCertCommonName
