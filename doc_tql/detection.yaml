@@ -2002,7 +2002,7 @@
   DL_Type: string
 
 - Name: srcFileHashSha256
-  Description_EN: The SHA256 hash of source file
+  Description_EN: The SHA-256 of the source file
   DL_Type: string
 
 - Name: srcFileModifiedTime

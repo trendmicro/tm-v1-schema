@@ -1934,6 +1934,21 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">logonUsers</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The telemetry events that match the Security Analytics Engine filter, and logonUsers stores the logonUsers value of the original events</td>
+      <td class="example">BHBShortJ</td>
+      <td class="products">
+        <ul>
+          <li>ALL</li>
+          <li>Data Detection and Response</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">messageType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -6410,6 +6425,21 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
+      <td class="field-name">ruleIdStr</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The rule ID</td>
+      <td class="example">TM-00000043</td>
+      <td class="products">
+        <ul>
+          <li>Container Security</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">ruleName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -6447,6 +6477,30 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Email Sensor</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">ruleType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The access rule type</td>
+      <td class="example">
+        <ul>
+          <li>udso</li>
+          <li>point of entry</li>
+          <li>unknown</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Container Security</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -7338,6 +7392,33 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
+      <td class="field-name">userDomain</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>EndpointName</li>
+          <li>DomainName</li>
+          <li>AccountDomain</li>
+        </ul>
+      </td>
+      <td class="description">The user domain</td>
+      <td class="example">
+        <ul>
+          <li>example.com.pa</li>
+          <li>DOMAIN</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Web Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">vpcId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -7376,7 +7457,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 390
+- **Total Fields:** 394
 - **Layer:** Endpoint
 - **Product:** Endpoint Sensor
 

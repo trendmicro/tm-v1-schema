@@ -438,7 +438,7 @@
   DL_Type: string
 
 - Name: integrationType
-  Description_EN: The Claude integration type
+  Description_EN: The AI service access integration type
   DL_Type: string
 
 - Name: interestedIp

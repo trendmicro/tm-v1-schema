@@ -492,6 +492,7 @@
   ProductCode:
   - ALL
   - ddr
+  - xes
   Description_EN: The telemetry events that match the Security Analytics Engine filter,
     and logonUsers stores the logonUsers value of the original events
   Sample:

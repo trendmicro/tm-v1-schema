@@ -733,6 +733,26 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">clientKexAlgorithms</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of key exchange algorithms/groups offered by the client</td>
+      <td class="example">
+        <ul>
+          <li>X25519MLKEM768</li>
+          <li>x25519</li>
+          <li>secp256r1</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">clientMAC</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -2989,6 +3009,20 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">keyExchangeAlgorithm</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The key exchange algorithm/group</td>
+      <td class="example">x25519</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">logKey</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -4684,6 +4718,25 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
     </tr>
     <tr>
+      <td class="field-name">serverKexAlgorithms</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of server key exchange algorithms</td>
+      <td class="example">
+        <ul>
+          <li>curve25519-sha256</li>
+          <li>ecdh-sha2-nistp256</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">serverMAC</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -5005,6 +5058,48 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       </td>
     </tr>
     <tr>
+      <td class="field-name">sshClientCipher</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The SSH cipher used for client-to-server traffic on the SSH connection</td>
+      <td class="example">chacha20-poly1305@openssh.com</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">sshClientCompression</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The compression method used for client-to-server traffic on the SSH connection</td>
+      <td class="example">zlib@openssh.com</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">sshClientMessageAuthenticationCode</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The MAC algorithm used for client-to-server traffic on the SSH connection</td>
+      <td class="example">hmac-sha2-256-etm@openssh.com</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">sshHassh</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -5065,6 +5160,48 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
       <td class="general-field">-</td>
       <td class="description">The SSH hassh server</td>
       <td class="example">4ceb58cad0f415b8fb16de236fa70ec5</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">sshServerCipher</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The SSH cipher used for server-to-client traffic on the SSH connection</td>
+      <td class="example">chacha20-poly1305@openssh.com</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">sshServerCompression</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The compression method used for server-to-client traffic on the SSH connection</td>
+      <td class="example">zlib@openssh.com</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">sshServerMessageAuthenticationCode</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The MAC algorithm used for server-to-client traffic on the SSH connection</td>
+      <td class="example">hmac-sha2-256-etm@openssh.com</td>
       <td class="products">
         <ul>
           <li>Deep Discovery Inspector</li>
@@ -5630,7 +5767,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
 </div>
 
 ## Field Statistics
-- **Total Fields:** 275
+- **Total Fields:** 284
 - **Layer:** Network
 - **Product:** Virtual Network Sensor
 

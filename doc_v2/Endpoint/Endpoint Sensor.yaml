@@ -3654,6 +3654,23 @@
   - EndpointName
   DL_Searchable: true
   DL_Aggregable: true
+- Name: userDomain
+  ProductCode:
+  - sao
+  - sws
+  - sig
+  - xes
+  Description_EN: The user domain
+  Sample:
+  - example.com.pa
+  - DOMAIN
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  - DomainName
+  - AccountDomain
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: endpointGUID
   ProductCode:
   - sds
@@ -4538,6 +4555,23 @@
   DL_CommonKey:
   DL_Searchable: false
   DL_Aggregable: false
+- Name: ruleType
+  ProductCode:
+  - sds
+  - sao
+  - sca
+  - szn
+  - scs
+  - xes
+  Description_EN: The access rule type
+  Sample:
+  - udso
+  - point of entry
+  - unknown
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: instanceId
   ProductCode:
   - sao
@@ -4784,6 +4818,31 @@
     be opened
   Sample:
   - C:\sharedfolder
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logonUsers
+  ProductCode:
+  - ALL
+  - ddr
+  - xes
+  Description_EN: The telemetry events that match the Security Analytics Engine filter,
+    and logonUsers stores the logonUsers value of the original events
+  Sample:
+  - BHBShortJ
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleIdStr
+  ProductCode:
+  - scs
+  - sao
+  - xes
+  Description_EN: The rule ID
+  Sample:
+  - TM-00000043
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

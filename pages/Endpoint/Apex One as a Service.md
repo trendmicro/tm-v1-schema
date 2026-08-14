@@ -7989,6 +7989,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
         <ul>
           <li>Container Security</li>
           <li>Apex One as a Service</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -8053,6 +8054,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Cloud App Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -9389,6 +9391,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Apex One as a Service</li>
           <li>Web Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>

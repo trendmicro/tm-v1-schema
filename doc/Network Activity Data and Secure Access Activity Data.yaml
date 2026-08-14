@@ -1496,6 +1496,110 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: keyExchangeAlgorithm
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The key exchange algorithm/group
+  Sample:
+  - x25519
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientKexAlgorithms
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The list of key exchange algorithms/groups offered by the client
+  Sample:
+  - X25519MLKEM768
+  - x25519
+  - secp256r1
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serverKexAlgorithms
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The list of server key exchange algorithms
+  Sample:
+  - curve25519-sha256
+  - ecdh-sha2-nistp256
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sshClientCipher
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The SSH cipher used for client-to-server traffic on the SSH connection
+  Sample:
+  - chacha20-poly1305@openssh.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sshServerCipher
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The SSH cipher used for server-to-client traffic on the SSH connection
+  Sample:
+  - chacha20-poly1305@openssh.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sshClientMessageAuthenticationCode
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The MAC algorithm used for client-to-server traffic on the SSH connection
+  Sample:
+  - hmac-sha2-256-etm@openssh.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sshServerMessageAuthenticationCode
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The MAC algorithm used for server-to-client traffic on the SSH connection
+  Sample:
+  - hmac-sha2-256-etm@openssh.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sshClientCompression
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The compression method used for client-to-server traffic on the
+    SSH connection
+  Sample:
+  - zlib@openssh.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sshServerCompression
+  ProductCode:
+  - pdi
+  - xns
+  Description_EN: The compression method used for server-to-client traffic on the
+    SSH connection
+  Sample:
+  - zlib@openssh.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: clientFacility
   ProductCode:
   - pdi

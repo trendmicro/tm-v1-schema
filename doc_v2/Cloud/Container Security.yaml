@@ -786,6 +786,7 @@
   - sca
   - szn
   - scs
+  - xes
   Description_EN: The access rule type
   Sample:
   - udso
@@ -1059,6 +1060,7 @@
   ProductCode:
   - scs
   - sao
+  - xes
   Description_EN: The rule ID
   Sample:
   - TM-00000043

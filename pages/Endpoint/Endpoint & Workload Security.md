@@ -5952,6 +5952,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Cloud App Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
