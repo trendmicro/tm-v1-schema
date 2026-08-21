@@ -1,933 +1,3 @@
-- Name: endpointHostName
-  ProductCode:
-  - sds
-  - pds
-  - sao
-  - xes
-  - sig
-  - ams
-  - szn
-  - pts
-  - scs
-  - sss
-  - ddr
-  Description_EN: The endpoint hostname or node where the event was detected
-  Sample:
-  - 10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]
-  - ip-10-10-10-10.us-west-1.compute.internal
-  DL_Type: string
-  DL_CommonKey:
-  - EndpointName
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: userDomain
-  ProductCode:
-  - sao
-  - sws
-  - sig
-  Description_EN: The user domain
-  Sample:
-  - example.com.pa
-  - DOMAIN
-  DL_Type: string
-  DL_CommonKey:
-  - EndpointName
-  - DomainName
-  - AccountDomain
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: endpointGUID
-  ProductCode:
-  - sds
-  - sao
-  - pds
-  - xes
-  - sig
-  - ams
-  - szn
-  - pts
-  - scs
-  - ddr
-  Description_EN: The GUID of the agent which reported the detection
-  Sample:
-  - ae4d64aa-f8b8-bb36-b265-f59272ed342f
-  - 8fb979f6-1376-bed3-227f-f2886e66194e
-  - ca2b3a7e-8415-c571-cc19-e45f69470026
-  DL_Type: string
-  DL_CommonKey:
-  - EndpointID
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: request
-  ProductCode:
-  - pdi
-  - xns
-  - sao
-  - ptp
-  - sds
-  - sig
-  - sca
-  - stp
-  - sem
-  - pds
-  - ams
-  - szn
-  - pan
-  Description_EN: The notable URLs
-  Sample:
-  - http://example.page.com/canonical.html
-  - http://10.10.10.10
-  - https://drive.google.com/
-  DL_Type: string
-  DL_CommonKey:
-  - URL
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: src
-  ProductCode:
-  - pdi
-  - xns
-  - sao
-  - sds
-  - ptp
-  - pds
-  - stp
-  - xes
-  - sig
-  - ptn
-  - szn
-  - scs
-  - mns
-  - pan
-  Description_EN: The source IP
-  Sample:
-  - 10.10.10.10
-  DL_Type: dynamic
-  DL_CommonKey:
-  - IPv4
-  - IPv6
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: dst
-  ProductCode:
-  - pdi
-  - xns
-  - sao
-  - sds
-  - ptp
-  - pds
-  - stp
-  - xes
-  - sig
-  - ptn
-  - szn
-  - scs
-  - mns
-  - pan
-  Description_EN: The destination IP
-  Sample:
-  - 10.10.10.10
-  DL_Type: dynamic
-  DL_CommonKey:
-  - IPv4
-  - IPv6
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: fileName
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - sao
-  - pds
-  - sig
-  - pts
-  - sfs
-  - sfc
-  - sss
-  - pan
-  Description_EN: The file name
-  Sample:
-  - spoolss
-  - hosts
-  - svcrestarttask
-  DL_Type: dynamic
-  DL_CommonKey:
-  - FileName
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: fileHash
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - pds
-  - sao
-  - sig
-  - sfs
-  - sfc
-  - sss
-  - ddr
-  - pan
-  Description_EN: The SHA-1 of the file that triggered the rule or policy
-  Sample:
-  - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
-  - 89CE26EAD139D52B8A6B61BFFC6AF89AF246580F
-  - 3AD1F4E7CAA11E5199EE80B8983677ADDD065450
-  DL_Type: string
-  DL_CommonKey:
-  - FileSHA1
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: fileHashSha256
-  ProductCode:
-  - pdi
-  - xns
-  - sao
-  - sig
-  - sds
-  - sfs
-  - sfc
-  - sss
-  - scs
-  - pan
-  Description_EN: The SHA-256 of the file (fileName)
-  Sample:
-  - 6A6EB2D717CEA041B4444193B45EDFB6CA1287518203B7230B3C4B8FFB031EAB
-  - BFF703FF836196644586014DA13A097C2EE9A08E4D596DFB7C8E0F685FE01294
-  - 12327F460AC9CBBC34D39EB3CF89C7FECCA37F08773A04566840F73F6ECC4104
-  DL_Type: string
-  DL_CommonKey:
-  - FileSHA2
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: suid
-  ProductCode:
-  - sds
-  - sca
-  - sao
-  - pdi
-  - xns
-  - sws
-  - pds
-  - stp
-  - sig
-  Description_EN: User name or mailbox
-  Sample:
-  - root
-  - US EXAMPLE\TEST
-  - sample_email@trendmicro.com
-  DL_Type: string
-  DL_CommonKey:
-  - UserAccount
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: eventName
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - sao
-  - pds
-  - ptp
-  - sca
-  - sem
-  - xes
-  - stp
-  - sig
-  - ptn
-  - szn
-  - pts
-  - xms
-  - sfs
-  - sfc
-  - sss
-  - ams
-  - mns
-  - ddr
-  - pan
-  Description_EN: The event type
-  Sample:
-  - LOG_INSPECTION_EVENT
-  - SECURITY_RISK_DETECTION
-  - WEB_THREAT_DETECTION
-  - LOG_INSPECTION_EVENT
-  - MALWARE_DETECTION
-  - PROCESS_ACTIVITY
-  - WEB_POLICY_VIOLATION
-  - DEEP_PACKET_INSPECTION_EVENT
-  - INTEGRITY_MONITORING_EVENT
-  - DISRUPTIVE_APPLICATION_DETECTION
-  - PRODUCT_SUMMARY
-  - PRODUCT_UPDATE
-  - BEHAVIORAL_VIOLATION
-  - FIREWALL_POLICY_VIOLATION
-  - SUSPICIOUS_BEHAVIOUR_DETECTION
-  - DENYLIST_CHANGE
-  - MACHINE_LEARNING_DETECTION
-  - DLP_VIOLATION
-  - MALWARE_OUTBREAK_DETECTION
-  - SENSITIVE_DATA_DETECTION
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: eventSubName
-  ProductCode:
-  - sao
-  - sca
-  - sds
-  - sem
-  - xes
-  - sig
-  - sss
-  Description_EN: The event type sub-name
-  Sample:
-  - IPS Detection
-  - Personal Firewall
-  - Attack Discovery
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: remarks
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - pds
-  - sca
-  - sao
-  - sem
-  - stp
-  - ptn
-  - xms
-  - sfs
-  - sss
-  - sig
-  Description_EN: The additional information
-  Sample:
-  - 'warning: fork: Resource temporarily unavailable'
-  - 'pam_unix(cron:session): session opened for user root by (uid=0)'
-  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:\
-    \ EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.\
-    \ [CLIENT: 10.10.10.10]  "
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: act
-  ProductCode:
-  - scs
-  - pdi
-  - xns
-  - sao
-  - sds
-  - sca
-  - ptp
-  - xes
-  - sws
-  - sem
-  - pds
-  - stp
-  - sig
-  - ptn
-  - szn
-  - xms
-  - ams
-  - mns
-  - sss
-  Description_EN: The actions taken to mitigate the event
-  Sample:
-  - log
-  - isolate
-  - terminate
-  - not blocked
-  - Block
-  - No action
-  - Reset
-  - Pass
-  - User Decision
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: pname
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - sao
-  - pds
-  - sca
-  - sem
-  - ptp
-  - xes
-  - sws
-  - stp
-  - sig
-  - ams
-  - scs
-  - xms
-  - pan
-  Description_EN: The internal product ID
-  Sample:
-  - Trend Micro Deep Security
-  - Deep Discovery Inspector
-  - Apex One
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: deviceGUID
-  ProductCode:
-  - pdi
-  - xns
-  - sao
-  - ptp
-  - xes
-  - stp
-  - sig
-  - pan
-  Description_EN: The GUID of the agent which reported the detection
-  Sample:
-  - 00000000-0000-0000-0000-000000000000
-  - 11111111-1111-1111-1111-111111111111
-  - 22222222-2222-2222-2222-222222222222
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: requestBase
-  ProductCode:
-  - sws
-  - sig
-  - szn
-  Description_EN: The domain of the request URL
-  Sample:
-  - weather.service.msn.com
-  - test.domain.com
-  DL_Type: string
-  DL_CommonKey:
-  - DomainName
-  - HostDomain
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: urlCat
-  ProductCode:
-  - pdi
-  - xns
-  - sws
-  - sao
-  - sig
-  - sca
-  - ams
-  - sds
-  Description_EN: The requested URL category
-  Sample:
-  - Untested
-  - '158'
-  - Web Advertisement
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: userDepartment
-  ProductCode:
-  - sws
-  - sig
-  Description_EN: User department
-  Sample:
-  - Operations
-  - BANCA CONSTRUCCION
-  - CONTACT CENTER
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: sender
-  ProductCode:
-  - sws
-  - sig
-  Description_EN: The roaming users or the gateway where the web traffic passed
-  Sample:
-  - test user
-  - VE C&W - 10.10.10.10
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: policyName
-  ProductCode:
-  - sao
-  - sca
-  - sws
-  - sem
-  - sig
-  - ptn
-  - scs
-  - mns
-  Description_EN: The name of the triggered policy
-  Sample:
-  - Steelcase
-  - Cabot
-  - Tigre - Medium Policy
-  - apiPostedPolicy
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: principalName
-  ProductCode:
-  - sws
-  - sig
-  - sca
-  - szn
-  - scs
-  Description_EN: The user principal name used to sign in to the proxy
-  Sample:
-  - sample_email@trendmicro.com
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: profile
-  ProductCode:
-  - sws
-  - sig
-  Description_EN: The name of the triggered Threat Protection template or Data Loss
-    Prevention profile
-  Sample:
-  - Primary Protection Rule
-  - Multibak Scaner Threat
-  - default
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: application
-  ProductCode:
-  - sws
-  - sig
-  - szn
-  - sao
-  Description_EN: The name of the requested application
-  Sample:
-  - HyperText Transfer Protocol
-  - DoubleClick
-  - The Secure HyperText Transfer Protocol
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: aggregatedCount
-  ProductCode:
-  - pdi
-  - xns
-  - sao
-  - ptp
-  - sws
-  - stp
-  - sig
-  - pts
-  - ddr
-  - sds
-  Description_EN: The number of aggregated events
-  Sample:
-  - '1'
-  - '2'
-  - '3'
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: detectionType
-  ProductCode:
-  - pdi
-  - xns
-  - sds
-  - sws
-  - sao
-  - sca
-  - pds
-  - sem
-  - sig
-  - ams
-  - szn
-  - scs
-  Description_EN: The detection type
-  Sample:
-  - '1'
-  - File
-  - Process
-  - net
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: fileSize
-  ProductCode:
-  - pdi
-  - xns
-  - sig
-  - sao
-  - sfs
-  - sfc
-  - sss
-  - pan
-  Description_EN: The file size of the suspicious file
-  Sample:
-  - '0'
-  - '1255856'
-  - '1237880'
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: fileType
-  ProductCode:
-  - pdi
-  - xns
-  - sig
-  - sfs
-  - sfc
-  - sss
-  - scs
-  - pan
-  Description_EN: The file type of the suspicious file
-  Sample:
-  - EXE
-  - LNK
-  - MIME
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: osName
-  ProductCode:
-  - sig
-  - ams
-  - szn
-  - ddr
-  - sss
-  Description_EN: The host OS name
-  Sample:
-  - Linux
-  - windows 10.0.22000
-  - windows 10.0.19044
-  - windows 10.0.19043
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: pver
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - pds
-  - sao
-  - ptp
-  - stp
-  - sig
-  - ams
-  - scs
-  - sfs
-  - sfc
-  - sss
-  - pan
-  Description_EN: The product version
-  Sample:
-  - 20.0.0.4726
-  - 20.0.0.4416
-  - 6.2.1125
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: rt
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - sao
-  - pds
-  - sca
-  - sem
-  - ptp
-  - xes
-  - sws
-  - stp
-  - sig
-  - szn
-  - xms
-  Description_EN: The Unix time of the log generation
-  Sample:
-  - 1656324260000
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: false
-  DL_Aggregable: false
-- Name: policyTemplate
-  ProductCode:
-  - sao
-  - sca
-  - sig
-  Description_EN: The one-to-many data structure
-  Sample:
-  - policyName:Monitoreo All Files, template:Managed - All files
-  - policyName:HSS DLP, template:All File Extension
-  - 'India: Mobile Numbers'
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: policyUuid
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The UUID of the cloud access or risk control policy, or the hard-coded
-    string that indicates the rule of the global blocked/approved URL list
-  Sample:
-  - 7937cb0b-e598-4c8f-a50f-65c32905ba3a
-  - C!7c4433e3-5b2c-449f-b66e-ccaac006b6f1
-  - 8d265639-7202-4455-b640-48683aa2b57d
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: logKey
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - sao
-  - pds
-  - sca
-  - sem
-  - ptp
-  - xes
-  - sws
-  - stp
-  - sig
-  Description_EN: The unique key of the event
-  Sample:
-  - 123e4567-e89b-12d3-a456-426614174000
-  - 987f6543-21ba-43cd-9e8f-123456789abc
-  - 456789ab-cdef-1234-5678-9abcdef01234
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: mimeType
-  ProductCode:
-  - sig
-  Description_EN: The MIME type or content type of the response body
-  Sample:
-  - application/octet-stream
-  - application/json; charset=utf-8
-  - application/json
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: clientIp
-  ProductCode:
-  - sig
-  - szn
-  Description_EN: The IP addresses of the source
-  Sample:
-  - 10.10.10.10
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: authType
-  ProductCode:
-  - sig
-  Description_EN: The authorization type
-  Sample:
-  - Cookie JWT
-  - No Auth
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: cloudAppCat
-  ProductCode:
-  - sig
-  Description_EN: The category of the event in Cloud Reputation Service
-  Sample:
-  - All
-  - Online Service
-  - Application Suite
-  - Business Intelligence and Analytics
-  - Cloud Computing Platform
-  DL_Type: string
-  DL_Searchable: true
-- Name: srcLocation
-  ProductCode:
-  - sig
-  Description_EN: The source country
-  Sample:
-  - JP
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: dstLocation
-  ProductCode:
-  - sig
-  Description_EN: The destination country
-  Sample:
-  - JP
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: isPrivateApp
-  ProductCode:
-  - sig
-  Description_EN: Whether the requested application is private
-  Sample:
-  - true
-  - false
-  DL_Type: bool
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: srcCountry
-  ProductCode:
-  - sig
-  Description_EN: The country name of the source IP
-  Sample:
-  - TW
-  - AU
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: srcIsp
-  ProductCode:
-  - sig
-  Description_EN: The ISP name of the source IP
-  Sample:
-  - Chunghwa Telecom
-  - Akamai Technologies
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: srcCity
-  ProductCode:
-  - sig
-  Description_EN: The city name of the source IP
-  Sample:
-  - Taipei
-  - Sydney
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: dstCountry
-  ProductCode:
-  - sig
-  Description_EN: The country name of the destination IP
-  Sample:
-  - TW
-  - AU
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: dstIsp
-  ProductCode:
-  - sig
-  Description_EN: The ISP name of the destination IP
-  Sample:
-  - Chunghwa Telecom
-  - Akamai Technologies
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: dstCity
-  ProductCode:
-  - sig
-  Description_EN: The city name of the destination IP
-  Sample:
-  - Taipei
-  - Sydney
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: peerIpCountry
-  ProductCode:
-  - sig
-  Description_EN: The country name of the peerHost IP
-  Sample:
-  - TW
-  - AU
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: peerIpIsp
-  ProductCode:
-  - sig
-  Description_EN: The ISP name of the peerHost IP
-  Sample:
-  - Chunghwa Telecom
-  - Akamai Technologies
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: peerIpCity
-  ProductCode:
-  - sig
-  Description_EN: The city name of the peerHost IP
-  Sample:
-  - Taipei
-  - Sydney
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: interestedIpCountry
-  ProductCode:
-  - sig
-  Description_EN: The country name of the interestedHost IP
-  Sample:
-  - TW
-  - AU
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: interestedIpIsp
-  ProductCode:
-  - sig
-  Description_EN: The ISP name of the interestedHost IP
-  Sample:
-  - Chunghwa Telecom
-  - Akamai Technologies
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
-- Name: interestedIpCity
-  ProductCode:
-  - sig
-  Description_EN: The city name of the interestedHost IP
-  Sample:
-  - Taipei
-  - Sydney
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: true
 - Name: eventTime
   ProductCode:
   - sig
@@ -1639,6 +709,938 @@
   - true
   - false
   DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: endpointHostName
+  ProductCode:
+  - sds
+  - pds
+  - sao
+  - xes
+  - sig
+  - ams
+  - szn
+  - pts
+  - scs
+  - sss
+  - ddr
+  Description_EN: The endpoint hostname or node where the event was detected
+  Sample:
+  - 10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]
+  - ip-10-10-10-10.us-west-1.compute.internal
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: userDomain
+  ProductCode:
+  - sao
+  - sws
+  - sig
+  - xes
+  Description_EN: The user domain
+  Sample:
+  - example.com.pa
+  - DOMAIN
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  - DomainName
+  - AccountDomain
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: endpointGUID
+  ProductCode:
+  - sds
+  - sao
+  - pds
+  - xes
+  - sig
+  - ams
+  - szn
+  - pts
+  - scs
+  - ddr
+  Description_EN: The GUID of the agent which reported the detection
+  Sample:
+  - ae4d64aa-f8b8-bb36-b265-f59272ed342f
+  - 8fb979f6-1376-bed3-227f-f2886e66194e
+  - ca2b3a7e-8415-c571-cc19-e45f69470026
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointID
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: request
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - ptp
+  - sds
+  - sig
+  - sca
+  - stp
+  - sem
+  - pds
+  - ams
+  - szn
+  - pan
+  Description_EN: The notable URLs
+  Sample:
+  - http://example.page.com/canonical.html
+  - http://10.10.10.10
+  - https://drive.google.com/
+  DL_Type: string
+  DL_CommonKey:
+  - URL
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: src
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - ptp
+  - pds
+  - stp
+  - xes
+  - sig
+  - ptn
+  - szn
+  - scs
+  - mns
+  - pan
+  Description_EN: The source IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dst
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sds
+  - ptp
+  - pds
+  - stp
+  - xes
+  - sig
+  - ptn
+  - szn
+  - scs
+  - mns
+  - pan
+  Description_EN: The destination IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileName
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sig
+  - pts
+  - sfs
+  - sfc
+  - sss
+  - pan
+  Description_EN: The file name
+  Sample:
+  - spoolss
+  - hosts
+  - svcrestarttask
+  DL_Type: dynamic
+  DL_CommonKey:
+  - FileName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileHash
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - sig
+  - sfs
+  - sfc
+  - sss
+  - ddr
+  - pan
+  Description_EN: The SHA-1 of the file that triggered the rule or policy
+  Sample:
+  - DA39A3EE5E6B4B0D3255BFEF95601890AFD80709
+  - 89CE26EAD139D52B8A6B61BFFC6AF89AF246580F
+  - 3AD1F4E7CAA11E5199EE80B8983677ADDD065450
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA1
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: fileHashSha256
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - sig
+  - sds
+  - sfs
+  - sfc
+  - sss
+  - scs
+  - pan
+  Description_EN: The SHA-256 of the file (fileName)
+  Sample:
+  - 6A6EB2D717CEA041B4444193B45EDFB6CA1287518203B7230B3C4B8FFB031EAB
+  - BFF703FF836196644586014DA13A097C2EE9A08E4D596DFB7C8E0F685FE01294
+  - 12327F460AC9CBBC34D39EB3CF89C7FECCA37F08773A04566840F73F6ECC4104
+  DL_Type: string
+  DL_CommonKey:
+  - FileSHA2
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: suid
+  ProductCode:
+  - sds
+  - sca
+  - sao
+  - pdi
+  - xns
+  - sws
+  - pds
+  - stp
+  - sig
+  Description_EN: User name or mailbox
+  Sample:
+  - root
+  - US EXAMPLE\TEST
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventName
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - ptp
+  - sca
+  - sem
+  - xes
+  - stp
+  - sig
+  - ptn
+  - szn
+  - pts
+  - xms
+  - sfs
+  - sfc
+  - sss
+  - ams
+  - mns
+  - ddr
+  - pan
+  Description_EN: The event type
+  Sample:
+  - LOG_INSPECTION_EVENT
+  - SECURITY_RISK_DETECTION
+  - WEB_THREAT_DETECTION
+  - LOG_INSPECTION_EVENT
+  - MALWARE_DETECTION
+  - PROCESS_ACTIVITY
+  - WEB_POLICY_VIOLATION
+  - DEEP_PACKET_INSPECTION_EVENT
+  - INTEGRITY_MONITORING_EVENT
+  - DISRUPTIVE_APPLICATION_DETECTION
+  - PRODUCT_SUMMARY
+  - PRODUCT_UPDATE
+  - BEHAVIORAL_VIOLATION
+  - FIREWALL_POLICY_VIOLATION
+  - SUSPICIOUS_BEHAVIOUR_DETECTION
+  - DENYLIST_CHANGE
+  - MACHINE_LEARNING_DETECTION
+  - DLP_VIOLATION
+  - MALWARE_OUTBREAK_DETECTION
+  - SENSITIVE_DATA_DETECTION
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSubName
+  ProductCode:
+  - sao
+  - sca
+  - sds
+  - sem
+  - xes
+  - sig
+  - sss
+  Description_EN: The event type sub-name
+  Sample:
+  - IPS Detection
+  - Personal Firewall
+  - Attack Discovery
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: remarks
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sca
+  - sao
+  - sem
+  - stp
+  - ptn
+  - xms
+  - sfs
+  - sss
+  - sig
+  - xes
+  Description_EN: The additional information
+  Sample:
+  - 'warning: fork: Resource temporarily unavailable'
+  - 'pam_unix(cron:session): session opened for user root by (uid=0)'
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:\
+    \ EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.\
+    \ [CLIENT: 10.10.10.10]  "
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: act
+  ProductCode:
+  - scs
+  - pdi
+  - xns
+  - sao
+  - sds
+  - sca
+  - ptp
+  - xes
+  - sws
+  - sem
+  - pds
+  - stp
+  - sig
+  - ptn
+  - szn
+  - xms
+  - ams
+  - mns
+  - sss
+  Description_EN: The actions taken to mitigate the event
+  Sample:
+  - log
+  - isolate
+  - terminate
+  - not blocked
+  - Block
+  - No action
+  - Reset
+  - Pass
+  - User Decision
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: pname
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - sem
+  - ptp
+  - xes
+  - sws
+  - stp
+  - sig
+  - ams
+  - scs
+  - xms
+  - pan
+  Description_EN: The internal product ID
+  Sample:
+  - Trend Micro Deep Security
+  - Deep Discovery Inspector
+  - Apex One
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: deviceGUID
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - ptp
+  - xes
+  - stp
+  - sig
+  - pan
+  Description_EN: The GUID of the agent which reported the detection
+  Sample:
+  - 00000000-0000-0000-0000-000000000000
+  - 11111111-1111-1111-1111-111111111111
+  - 22222222-2222-2222-2222-222222222222
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: requestBase
+  ProductCode:
+  - sws
+  - sig
+  - szn
+  Description_EN: The domain of the request URL
+  Sample:
+  - weather.service.msn.com
+  - test.domain.com
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  - HostDomain
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: urlCat
+  ProductCode:
+  - pdi
+  - xns
+  - sws
+  - sao
+  - sig
+  - sca
+  - ams
+  - sds
+  Description_EN: The requested URL category
+  Sample:
+  - Untested
+  - '158'
+  - Web Advertisement
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userDepartment
+  ProductCode:
+  - sws
+  - sig
+  Description_EN: User department
+  Sample:
+  - Operations
+  - BANCA CONSTRUCCION
+  - CONTACT CENTER
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: sender
+  ProductCode:
+  - sws
+  - sig
+  Description_EN: The roaming users or the gateway where the web traffic passed
+  Sample:
+  - test user
+  - VE C&W - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyName
+  ProductCode:
+  - sao
+  - sca
+  - sws
+  - sem
+  - sig
+  - ptn
+  - scs
+  - mns
+  Description_EN: The name of the triggered policy
+  Sample:
+  - Steelcase
+  - Cabot
+  - Tigre - Medium Policy
+  - apiPostedPolicy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: principalName
+  ProductCode:
+  - sws
+  - sig
+  - sca
+  - szn
+  - scs
+  Description_EN: The user principal name used to sign in to the proxy
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: profile
+  ProductCode:
+  - sws
+  - sig
+  Description_EN: The name of the triggered Threat Protection template or Data Loss
+    Prevention profile
+  Sample:
+  - Primary Protection Rule
+  - Multibak Scaner Threat
+  - default
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: application
+  ProductCode:
+  - sws
+  - sig
+  - szn
+  - sao
+  Description_EN: The name of the requested application
+  Sample:
+  - HyperText Transfer Protocol
+  - DoubleClick
+  - The Secure HyperText Transfer Protocol
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: aggregatedCount
+  ProductCode:
+  - pdi
+  - xns
+  - sao
+  - ptp
+  - sws
+  - stp
+  - sig
+  - pts
+  - ddr
+  - sds
+  Description_EN: The number of aggregated events
+  Sample:
+  - '1'
+  - '2'
+  - '3'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: detectionType
+  ProductCode:
+  - pdi
+  - xns
+  - sds
+  - sws
+  - sao
+  - sca
+  - pds
+  - sem
+  - sig
+  - ams
+  - szn
+  - scs
+  Description_EN: The detection type
+  Sample:
+  - '1'
+  - File
+  - Process
+  - net
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileSize
+  ProductCode:
+  - pdi
+  - xns
+  - sig
+  - sao
+  - sfs
+  - sfc
+  - sss
+  - pan
+  Description_EN: The file size of the suspicious file
+  Sample:
+  - '0'
+  - '1255856'
+  - '1237880'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: fileType
+  ProductCode:
+  - pdi
+  - xns
+  - sig
+  - sfs
+  - sfc
+  - sss
+  - scs
+  - pan
+  Description_EN: The file type of the suspicious file
+  Sample:
+  - EXE
+  - LNK
+  - MIME
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osName
+  ProductCode:
+  - sig
+  - ams
+  - szn
+  - ddr
+  - sss
+  Description_EN: The host OS name
+  Sample:
+  - Linux
+  - windows 10.0.22000
+  - windows 10.0.19044
+  - windows 10.0.19043
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pver
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sao
+  - ptp
+  - stp
+  - sig
+  - ams
+  - scs
+  - sfs
+  - sfc
+  - sss
+  - pan
+  Description_EN: The product version
+  Sample:
+  - 20.0.0.4726
+  - 20.0.0.4416
+  - 6.2.1125
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: rt
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - sem
+  - ptp
+  - xes
+  - sws
+  - stp
+  - sig
+  - szn
+  - xms
+  Description_EN: The Unix time of the log generation
+  Sample:
+  - 1656324260000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: policyTemplate
+  ProductCode:
+  - sao
+  - sca
+  - sig
+  Description_EN: The one-to-many data structure
+  Sample:
+  - policyName:Monitoreo All Files, template:Managed - All files
+  - policyName:HSS DLP, template:All File Extension
+  - 'India: Mobile Numbers'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: policyUuid
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The UUID of the cloud access or risk control policy, or the hard-coded
+    string that indicates the rule of the global blocked/approved URL list
+  Sample:
+  - 7937cb0b-e598-4c8f-a50f-65c32905ba3a
+  - C!7c4433e3-5b2c-449f-b66e-ccaac006b6f1
+  - 8d265639-7202-4455-b640-48683aa2b57d
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: logKey
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - sao
+  - pds
+  - sca
+  - sem
+  - ptp
+  - xes
+  - sws
+  - stp
+  - sig
+  Description_EN: The unique key of the event
+  Sample:
+  - 123e4567-e89b-12d3-a456-426614174000
+  - 987f6543-21ba-43cd-9e8f-123456789abc
+  - 456789ab-cdef-1234-5678-9abcdef01234
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mimeType
+  ProductCode:
+  - sig
+  Description_EN: The MIME type or content type of the response body
+  Sample:
+  - application/octet-stream
+  - application/json; charset=utf-8
+  - application/json
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientIp
+  ProductCode:
+  - sig
+  - szn
+  Description_EN: The IP addresses of the source
+  Sample:
+  - 10.10.10.10
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: authType
+  ProductCode:
+  - sig
+  Description_EN: The authorization type
+  Sample:
+  - Cookie JWT
+  - No Auth
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudAppCat
+  ProductCode:
+  - sig
+  Description_EN: The category of the event in Cloud Reputation Service
+  Sample:
+  - All
+  - Online Service
+  - Application Suite
+  - Business Intelligence and Analytics
+  - Cloud Computing Platform
+  DL_Type: string
+  DL_Searchable: true
+- Name: srcLocation
+  ProductCode:
+  - sig
+  Description_EN: The source country
+  Sample:
+  - JP
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: dstLocation
+  ProductCode:
+  - sig
+  Description_EN: The destination country
+  Sample:
+  - JP
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: isPrivateApp
+  ProductCode:
+  - sig
+  Description_EN: Whether the requested application is private
+  Sample:
+  - true
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcCountry
+  ProductCode:
+  - sig
+  Description_EN: The country name of the source IP
+  Sample:
+  - TW
+  - AU
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcIsp
+  ProductCode:
+  - sig
+  Description_EN: The ISP name of the source IP
+  Sample:
+  - Chunghwa Telecom
+  - Akamai Technologies
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcCity
+  ProductCode:
+  - sig
+  Description_EN: The city name of the source IP
+  Sample:
+  - Taipei
+  - Sydney
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dstCountry
+  ProductCode:
+  - sig
+  Description_EN: The country name of the destination IP
+  Sample:
+  - TW
+  - AU
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dstIsp
+  ProductCode:
+  - sig
+  Description_EN: The ISP name of the destination IP
+  Sample:
+  - Chunghwa Telecom
+  - Akamai Technologies
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: dstCity
+  ProductCode:
+  - sig
+  Description_EN: The city name of the destination IP
+  Sample:
+  - Taipei
+  - Sydney
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: peerIpCountry
+  ProductCode:
+  - sig
+  Description_EN: The country name of the peerHost IP
+  Sample:
+  - TW
+  - AU
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: peerIpIsp
+  ProductCode:
+  - sig
+  Description_EN: The ISP name of the peerHost IP
+  Sample:
+  - Chunghwa Telecom
+  - Akamai Technologies
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: peerIpCity
+  ProductCode:
+  - sig
+  Description_EN: The city name of the peerHost IP
+  Sample:
+  - Taipei
+  - Sydney
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: interestedIpCountry
+  ProductCode:
+  - sig
+  Description_EN: The country name of the interestedHost IP
+  Sample:
+  - TW
+  - AU
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: interestedIpIsp
+  ProductCode:
+  - sig
+  Description_EN: The ISP name of the interestedHost IP
+  Sample:
+  - Chunghwa Telecom
+  - Akamai Technologies
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: interestedIpCity
+  ProductCode:
+  - sig
+  Description_EN: The city name of the interestedHost IP
+  Sample:
+  - Taipei
+  - Sydney
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true

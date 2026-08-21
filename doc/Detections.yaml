@@ -132,6 +132,7 @@
   - sao
   - sws
   - sig
+  - xes
   Description_EN: The user domain
   Sample:
   - example.com.pa
@@ -1211,6 +1212,7 @@
   - sfs
   - sss
   - sig
+  - xes
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -3679,6 +3681,7 @@
   - sca
   - szn
   - scs
+  - xes
   Description_EN: The access rule type
   Sample:
   - udso
@@ -5050,6 +5053,7 @@
   ProductCode:
   - ALL
   - ddr
+  - xes
   Description_EN: The telemetry events that match the Security Analytics Engine filter,
     and logonUsers stores the logonUsers value of the original events
   Sample:
@@ -5291,6 +5295,7 @@
   ProductCode:
   - scs
   - sao
+  - xes
   Description_EN: The rule ID
   Sample:
   - TM-00000043

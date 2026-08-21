@@ -1006,6 +1006,7 @@
   - sfs
   - sss
   - sig
+  - xes
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -1397,6 +1398,7 @@
   - sca
   - szn
   - scs
+  - xes
   Description_EN: The access rule type
   Sample:
   - udso

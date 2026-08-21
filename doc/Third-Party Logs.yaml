@@ -3347,6 +3347,239 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: true
+- Name: eventDataSubjectUserSid
+  ProductCode:
+  - tlc
+  Description_EN: The account SID
+  Sample:
+  - S-1-5-18
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataSubjectDomainName
+  ProductCode:
+  - tlc
+  Description_EN: The account domain or computer name
+  Sample:
+  - NT AUTHORITY
+  - WORKGROUP
+  - CONTOSO
+  DL_Type: string
+  DL_CommonKey:
+  - DomainName
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataSubjectLogonId
+  ProductCode:
+  - tlc
+  Description_EN: The account sign-in ID
+  Sample:
+  - '0x3e7'
+  - '0x3e4'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectServer
+  ProductCode:
+  - tlc
+  Description_EN: The Windows sub-system calling the routine
+  Sample:
+  - Security
+  - LSA
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataOperationType
+  ProductCode:
+  - tlc
+  Description_EN: The type of operation performed on the object
+  Sample:
+  - Object Access
+  - Object Open
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataProperties
+  ProductCode:
+  - tlc
+  Description_EN: The object properties
+  Sample:
+  - '%%8278'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTargetSid
+  ProductCode:
+  - tlc
+  Description_EN: The target account SID
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataMemberName
+  ProductCode:
+  - tlc
+  Description_EN: The distinguished name of the account that was added to the group
+  Sample:
+  - CN=User1,CN=Users,DC=contoso,DC=local
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventDataMemberSid
+  ProductCode:
+  - tlc
+  Description_EN: The account SID that was added to the group
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataWorkstation
+  ProductCode:
+  - tlc
+  Description_EN: The computer name from which the sign-in request was received
+  Sample:
+  - WORKSTATION01
+  DL_Type: string
+  DL_CommonKey:
+  - EndpointName
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventDataTargetLogonId
+  ProductCode:
+  - tlc
+  Description_EN: The hexadecimal value used to correlate the event with events of
+    the same sign-in ID
+  Sample:
+  - '0x3e7'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataTargetUserSid
+  ProductCode:
+  - tlc
+  Description_EN: The account SID for which sign-in was requested
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataUserPrincipalName
+  ProductCode:
+  - tlc
+  Description_EN: The user account UPN
+  Sample:
+  - user@contoso.local
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataServiceSid
+  ProductCode:
+  - tlc
+  Description_EN: The service SID
+  Sample:
+  - S-1-5-21-3623811015-3361044348-30300820-1013
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectDN
+  ProductCode:
+  - tlc
+  Description_EN: The distinguished name of the object that was accessed
+  Sample:
+  - CN=User1,CN=Users,DC=contoso,DC=local
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectGUID
+  ProductCode:
+  - tlc
+  Description_EN: The unique identifier of the object that was accessed
+  Sample:
+  - '{11111111-1111-1111-1111-111111111111}'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataObjectClass
+  ProductCode:
+  - tlc
+  Description_EN: The class of the object that was accessed
+  Sample:
+  - user
+  - group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventDataCertIssuerName
+  ProductCode:
+  - tlc
+  Description_EN: The certification authority that issued the TGT certificate
+  Sample:
+  - CN=contoso-DC-CA, DC=contoso, DC=local
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataCertSerialNumber
+  ProductCode:
+  - tlc
+  Description_EN: The certificate serial number
+  Sample:
+  - 1D0000000120F1D8A3094A82760000000001
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataCertThumbprint
+  ProductCode:
+  - tlc
+  Description_EN: The certificate thumbprint
+  Sample:
+  - 1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A0B
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataAdditionalInfo
+  ProductCode:
+  - tlc
+  Description_EN: The additional information about the event
+  Sample:
+  - Restrictions
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventDataAttributeLDAPDisplayName
+  ProductCode:
+  - tlc
+  Description_EN: The LDAP display name of the attribute that was accessed
+  Sample:
+  - sAMAccountName
+  - memberOf
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
 - Name: authType
   ProductCode:
   - sig
@@ -3470,6 +3703,106 @@
   - '[{"cve":"CVE-2021-34527","cvssScore":9.8,"severityLevel":"CRITICAL","firstSeen":1776751436000,"lastSeen":1776751437698,"mitigationStatus":"NEW","patchFlag":false,"softwareList":[{"softwareName":"Windows
     10 Version 21H1","softwareVersion":"21H1","softwareVendor":"Microsoft","softwareType":"OS","productId":"11896","kbList":["5016616"],"fixVersion":"10.0.19044.1889","installPaths":["/Applications/Safari.app"]}],"extensions":"{\"affectedType\":1}"}]'
   DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: timezone
+  ProductCode:
+  - tlc
+  Description_EN: The host time zone
+  Sample:
+  - UTC+00:00
+  - UTC-05:00
+  - UTC+08:00
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: plang
+  ProductCode:
+  - tlc
+  Description_EN: The product language
+  Sample:
+  - 1
+  - 0
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: pplat
+  ProductCode:
+  - tlc
+  Description_EN: The product platform
+  Sample:
+  - 5889
+  - 9217
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: false
+  DL_Aggregable: false
+- Name: osDescription
+  ProductCode:
+  - tlc
+  Description_EN: The OS version
+  Sample:
+  - Windows 10 (64 bit)
+  - Windows 10 Pro (64 bit) build 19044
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: osType
+  ProductCode:
+  - tlc
+  Description_EN: The host OS type
+  Sample:
+  - '0x00000030'
+  - '4'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: providerName
+  ProductCode:
+  - tlc
+  Description_EN: The Windows event provider
+  Sample:
+  - Microsoft-Windows-Security-Auditing
+  - Microsoft-Windows-WMI-Activity
+  - Microsoft-Windows-TaskScheduler
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: providerGUID
+  ProductCode:
+  - tlc
+  Description_EN: The Windows event provider GUID
+  Sample:
+  - '{11111111-1111-1111-1111-111111111111}'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: channel
+  ProductCode:
+  - tlc
+  Description_EN: The Windows event channel
+  Sample:
+  - Security
+  - Microsoft-Windows-WMI-Activity/Trace
+  - Microsoft-Windows-TaskScheduler/Operational
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: lastSeen
+  ProductCode:
+  - tlc
+  Description_EN: The last time the event was seen
+  Sample:
+  - 1656355418449
+  DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
