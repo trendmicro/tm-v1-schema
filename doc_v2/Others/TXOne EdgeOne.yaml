@@ -219,6 +219,7 @@
   - sfs
   - sss
   - sig
+  - xes
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'

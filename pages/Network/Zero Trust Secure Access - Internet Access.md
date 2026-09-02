@@ -203,6 +203,25 @@ This documentation provides detailed information about all fields available for 
   <tbody>
     <tr>
       <td class="field-name">act</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The action</td>
+      <td class="example">
+        <ul>
+          <li>Allow</li>
+          <li>Block</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">act</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
@@ -245,25 +264,6 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">act</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The action</td>
-      <td class="example">
-        <ul>
-          <li>Allow</li>
-          <li>Block</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
       <td class="field-name">aggregatedCount</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -299,6 +299,25 @@ This documentation provides detailed information about all fields available for 
       <td class="description">The name of the requested application</td>
       <td class="example">
         <ul>
+          <li>Facebook</li>
+          <li>wiki</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">application</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the requested application</td>
+      <td class="example">
+        <ul>
           <li>HyperText Transfer Protocol</li>
           <li>DoubleClick</li>
           <li>The Secure HyperText Transfer Protocol</li>
@@ -312,39 +331,6 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">application</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The name of the requested application</td>
-      <td class="example">
-        <ul>
-          <li>Facebook</li>
-          <li>wiki</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">authType</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The authorization type</td>
-      <td class="example">
-        <ul>
-          <li>Cookie JWT</li>
-          <li>No Auth</li>
-        </ul>
-      </td>
-      <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
       <td class="field-name">authType</td>
@@ -377,18 +363,18 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
-      <td class="field-name">clientIp</td>
-      <td class="type">dynamic</td>
+      <td class="field-name">authType</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The IP addresses of the source</td>
-      <td class="example">10.10.10.10</td>
-      <td class="products">
+      <td class="description">The authorization type</td>
+      <td class="example">
         <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Cookie JWT</li>
+          <li>No Auth</li>
         </ul>
       </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
       <td class="field-name">clientIp</td>
@@ -408,6 +394,20 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">clientIp</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The IP addresses of the source</td>
+      <td class="example">10.10.10.10</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
         </ul>
       </td>
     </tr>
@@ -483,37 +483,6 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The detection type</td>
-      <td class="example">
-        <ul>
-          <li>1</li>
-          <li>File</li>
-          <li>Process</li>
-          <li>net</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Web Security</li>
-          <li>Apex One as a Service</li>
-          <li>Cloud App Security</li>
-          <li>Deep Security</li>
-          <li>Email Security</li>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Mobile Security</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-          <li>Container Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">detectionType</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
       <td class="description">The traffic detection type</td>
       <td class="example">
         <ul>
@@ -562,6 +531,52 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">detectionType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The detection type</td>
+      <td class="example">
+        <ul>
+          <li>1</li>
+          <li>File</li>
+          <li>Process</li>
+          <li>net</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Web Security</li>
+          <li>Apex One as a Service</li>
+          <li>Cloud App Security</li>
+          <li>Deep Security</li>
+          <li>Email Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Mobile Security</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">deviceGUID</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The non-endpoint object such as a network appliance</td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">deviceGUID</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -588,17 +603,23 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">deviceGUID</td>
+      <td class="field-name">dst</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The non-endpoint object such as a network appliance</td>
-      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="general-field">
+        <ul>
+          <li>IPv4</li>
+          <li>IPv6</li>
+        </ul>
+      </td>
+      <td class="description">The destination IP address (dstaddr)</td>
+      <td class="example">10.10.10.10</td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>XDR for Cloud - AWS VPC Flow Logs</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -630,27 +651,6 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">dst</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
-        </ul>
-      </td>
-      <td class="description">The destination IP address (dstaddr)</td>
-      <td class="example">10.10.10.10</td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-          <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -733,6 +733,25 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
+      <td class="field-name">endpointGuid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EndpointID</td>
+      <td class="description">The device GUID</td>
+      <td class="example">
+        <ul>
+          <li>11111111-1111-1111-1111-111111111111</li>
+          <li>DSP84573ULLJHM5GK2R7</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">endpointGUID</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -761,15 +780,15 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">endpointGuid</td>
+      <td class="field-name">endpointHostName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">EndpointID</td>
-      <td class="description">The device GUID</td>
+      <td class="general-field">EndpointName</td>
+      <td class="description">The host name of the device on which the event was detected</td>
       <td class="example">
         <ul>
-          <li>11111111-1111-1111-1111-111111111111</li>
-          <li>DSP84573ULLJHM5GK2R7</li>
+          <li>my_machine</li>
+          <li>jeremy-mbp</li>
         </ul>
       </td>
       <td class="products">
@@ -808,21 +827,26 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">endpointHostName</td>
+      <td class="field-name">eventName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">EndpointName</td>
-      <td class="description">The host name of the device on which the event was detected</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the log event</td>
       <td class="example">
         <ul>
-          <li>my_machine</li>
-          <li>jeremy-mbp</li>
+          <li>SWG_ACTIVITY_LOG</li>
+          <li>FIREWALL_ACTIVITY_LOG</li>
+          <li>VPC_ACTIVITY_LOG</li>
         </ul>
       </td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>XDR for Cloud - AWS VPC Flow Logs</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -884,28 +908,21 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">eventName</td>
+      <td class="field-name">eventSubName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The name of the log event</td>
+      <td class="description">The Zero Trust Secure Access - Internet Access cloud app action or the Palo Alto Networks firewall log sub-type</td>
       <td class="example">
         <ul>
-          <li>SWG_ACTIVITY_LOG</li>
-          <li>FIREWALL_ACTIVITY_LOG</li>
-          <li>VPC_ACTIVITY_LOG</li>
+          <li>OneDrive download file</li>
+          <li>start</li>
+          <li>end</li>
+          <li>drop</li>
+          <li>deny</li>
         </ul>
       </td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-          <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>XDR for Cloud - Azure VNet Flow Logs</li>
-        </ul>
-      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
       <td class="field-name">eventSubName</td>
@@ -931,23 +948,6 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">eventSubName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The Zero Trust Secure Access - Internet Access cloud app action or the Palo Alto Networks firewall log sub-type</td>
-      <td class="example">
-        <ul>
-          <li>OneDrive download file</li>
-          <li>start</li>
-          <li>end</li>
-          <li>drop</li>
-          <li>deny</li>
-        </ul>
-      </td>
-      <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
       <td class="field-name">eventTime</td>
@@ -981,6 +981,21 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">FileSHA1</td>
+      <td class="description">The SHA-1 of the file that violated the policy</td>
+      <td class="example">1e15bf99022a9164708cebb3eace8fd61ad45cba</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">fileHash</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA1</td>
       <td class="description">The SHA-1 of the file that triggered the rule or policy</td>
       <td class="example">
         <ul>
@@ -1006,12 +1021,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">fileHash</td>
+      <td class="field-name">fileHashSha256</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileSHA1</td>
-      <td class="description">The SHA-1 of the file that violated the policy</td>
-      <td class="example">1e15bf99022a9164708cebb3eace8fd61ad45cba</td>
+      <td class="general-field">FileSHA2</td>
+      <td class="description">The SHA-256 of the file that violated the policy</td>
+      <td class="example">ba9edecdd09de1307714564c24409bd25508e22fe11c768053a08f173f263e93</td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
@@ -1049,12 +1064,17 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">fileHashSha256</td>
+      <td class="field-name">fileName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileSHA2</td>
-      <td class="description">The SHA-256 of the file that violated the policy</td>
-      <td class="example">ba9edecdd09de1307714564c24409bd25508e22fe11c768053a08f173f263e93</td>
+      <td class="general-field">
+        <ul>
+          <li>FileName</li>
+          <li>FileFullPath</li>
+        </ul>
+      </td>
+      <td class="description">The name of the file that violated the policy</td>
+      <td class="example">word.doc</td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
@@ -1093,17 +1113,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">fileName</td>
+      <td class="field-name">fileSize</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>FileName</li>
-          <li>FileFullPath</li>
-        </ul>
-      </td>
-      <td class="description">The name of the file that violated the policy</td>
-      <td class="example">word.doc</td>
+      <td class="general-field">-</td>
+      <td class="description">The size of the file that is violating the policy</td>
+      <td class="example">12134</td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
@@ -1139,12 +1154,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">fileSize</td>
+      <td class="field-name">fileType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The size of the file that is violating the policy</td>
-      <td class="example">12134</td>
+      <td class="description">The type of file which is violating the policy</td>
+      <td class="example">Microsoft Words</td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
@@ -1176,21 +1191,6 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Container Security</li>
           <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">fileType</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The type of file which is violating the policy</td>
-      <td class="example">Microsoft Words</td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -1307,6 +1307,21 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The MIME type or content type of the response body</td>
+      <td class="example">text/html</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">mimeType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The MIME type or content type of the response body</td>
       <td class="example">
         <ul>
           <li>application/octet-stream</li>
@@ -1317,17 +1332,21 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
-      <td class="field-name">mimeType</td>
+      <td class="field-name">osName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The MIME type or content type of the response body</td>
-      <td class="example">text/html</td>
+      <td class="description">The host operating system name</td>
+      <td class="example">
+        <ul>
+          <li>Windows 10</li>
+          <li>macos 12.1</li>
+        </ul>
+      </td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
+          <li>Zero Trust Secure Access - Private Access</li>
         </ul>
       </td>
     </tr>
@@ -1352,25 +1371,6 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Data Detection and Response</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">osName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The host operating system name</td>
-      <td class="example">
-        <ul>
-          <li>Windows 10</li>
-          <li>macos 12.1</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
         </ul>
       </td>
     </tr>
@@ -1421,6 +1421,28 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The product name</td>
+      <td class="example">
+        <ul>
+          <li>Secure Web Gateway</li>
+          <li>XDR for Cloud - AWS VPC Flow Logs</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>XDR for Cloud - AWS VPC Flow Logs</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">pname</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">The internal product ID</td>
       <td class="example">
         <ul>
@@ -1447,28 +1469,6 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">pname</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The product name</td>
-      <td class="example">
-        <ul>
-          <li>Secure Web Gateway</li>
-          <li>XDR for Cloud - AWS VPC Flow Logs</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-          <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -1504,6 +1504,15 @@ This documentation provides detailed information about all fields available for 
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The Data Loss Prevention template name</td>
+      <td class="example">Australia, New Zealand: Healthcare Template,Germany: Banking and Financial Information</td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">policyTemplate</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">The one-to-many data structure</td>
       <td class="example">
         <ul>
@@ -1519,15 +1528,6 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">policyTemplate</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The Data Loss Prevention template name</td>
-      <td class="example">Australia, New Zealand: Healthcare Template,Germany: Banking and Financial Information</td>
-      <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
       <td class="field-name">policyUuid</td>
@@ -1553,6 +1553,20 @@ This documentation provides detailed information about all fields available for 
       <td class="field-name">principalName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
+      <td class="general-field">UserAccount</td>
+      <td class="description">The User Principal Name</td>
+      <td class="example">sample_email@trendmicro.com</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">principalName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The user principal name used to sign in to the proxy</td>
       <td class="example">sample_email@trendmicro.com</td>
@@ -1567,18 +1581,13 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">principalName</td>
+      <td class="field-name">profile</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">UserAccount</td>
-      <td class="description">The User Principal Name</td>
-      <td class="example">sample_email@trendmicro.com</td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-        </ul>
-      </td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the triggered Threat Protection template or Data Loss Prevention profile triggered</td>
+      <td class="example">-</td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
       <td class="field-name">profile</td>
@@ -1601,12 +1610,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">profile</td>
+      <td class="field-name">pver</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The name of the triggered Threat Protection template or Data Loss Prevention profile triggered</td>
-      <td class="example">-</td>
+      <td class="description">The product version</td>
+      <td class="example">1.0</td>
       <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
@@ -1642,15 +1651,6 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">pver</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The product version</td>
-      <td class="example">1.0</td>
-      <td class="products">Zero Trust Secure Access - Internet Access</td>
-    </tr>
-    <tr>
       <td class="field-name">remarks</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1678,6 +1678,28 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">request</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">URL</td>
+      <td class="description">The destination URL that the user is accessing</td>
+      <td class="example">
+        <ul>
+          <li>https://google.com/</li>
+          <li>https://api/example/v1/testit</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -1713,23 +1735,26 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">request</td>
+      <td class="field-name">requestBase</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">URL</td>
-      <td class="description">The destination URL that the user is accessing</td>
+      <td class="general-field">
+        <ul>
+          <li>DomainName</li>
+          <li>HostDomain</li>
+        </ul>
+      </td>
+      <td class="description">The URL domain</td>
       <td class="example">
         <ul>
-          <li>https://google.com/</li>
-          <li>https://api/example/v1/testit</li>
+          <li>www.facebook.com</li>
+          <li>gary.webserver64.com</li>
         </ul>
       </td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -1753,30 +1778,6 @@ This documentation provides detailed information about all fields available for 
       <td class="products">
         <ul>
           <li>Web Security</li>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">requestBase</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>DomainName</li>
-          <li>HostDomain</li>
-        </ul>
-      </td>
-      <td class="description">The URL domain</td>
-      <td class="example">
-        <ul>
-          <li>www.facebook.com</li>
-          <li>gary.webserver64.com</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
         </ul>
@@ -1835,6 +1836,20 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">false</td>
       <td class="general-field">-</td>
+      <td class="description">The UTC timestamp</td>
+      <td class="example">1599465660</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">rt</td>
+      <td class="type">string</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
       <td class="description">The Unix time of the log generation</td>
       <td class="example">1656324260000</td>
       <td class="products">
@@ -1853,20 +1868,6 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">rt</td>
-      <td class="type">string</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The UTC timestamp</td>
-      <td class="example">1599465660</td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
         </ul>
       </td>
     </tr>
@@ -1906,6 +1907,20 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The Zero Trust Internet Access gateway location</td>
+      <td class="example">
+        <ul>
+          <li>ordereddict({&#x27;Public/Home network&#x27;: &#x27;The default cloud gateway.&#x27;})</li>
+          <li>ordereddict({&#x27;Anything else&#x27;: &#x27;The pre-defined location name of cloud gateway or on-premises gateway.&#x27;})</li>
+        </ul>
+      </td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">sender</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">The roaming users or the gateway where the web traffic passed</td>
       <td class="example">
         <ul>
@@ -1919,20 +1934,6 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">sender</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The Zero Trust Internet Access gateway location</td>
-      <td class="example">
-        <ul>
-          <li>ordereddict({&#x27;Public/Home network&#x27;: &#x27;The default cloud gateway.&#x27;})</li>
-          <li>ordereddict({&#x27;Anything else&#x27;: &#x27;The pre-defined location name of cloud gateway or on-premises gateway.&#x27;})</li>
-        </ul>
-      </td>
-      <td class="products">Zero Trust Secure Access - Internet Access</td>
     </tr>
     <tr>
       <td class="field-name">serverProtocol</td>
@@ -1975,6 +1976,27 @@ This documentation provides detailed information about all fields available for 
     </tr>
     <tr>
       <td class="field-name">src</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>IPv4</li>
+          <li>IPv6</li>
+        </ul>
+      </td>
+      <td class="description">The source IP address (srcaddr)</td>
+      <td class="example">10.10.10.10</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>XDR for Cloud - AWS VPC Flow Logs</li>
+          <li>XDR for Cloud - Azure VNet Flow Logs</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">src</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
       <td class="general-field">
@@ -2001,27 +2023,6 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">src</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
-        </ul>
-      </td>
-      <td class="description">The source IP address (srcaddr)</td>
-      <td class="example">10.10.10.10</td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-          <li>XDR for Cloud - AWS VPC Flow Logs</li>
-          <li>XDR for Cloud - Azure VNet Flow Logs</li>
         </ul>
       </td>
     </tr>
@@ -2090,6 +2091,26 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">UserAccount</td>
+      <td class="description">The user name or IP address (IPv4)</td>
+      <td class="example">
+        <ul>
+          <li>Sample User Name</li>
+          <li>10.10.10.10</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">suid</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">UserAccount</td>
       <td class="description">User name or mailbox</td>
       <td class="example">
         <ul>
@@ -2109,26 +2130,6 @@ This documentation provides detailed information about all fields available for 
           <li>Deep Security</li>
           <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">suid</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">UserAccount</td>
-      <td class="description">The user name or IP address (IPv4)</td>
-      <td class="example">
-        <ul>
-          <li>Sample User Name</li>
-          <li>10.10.10.10</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2167,6 +2168,15 @@ This documentation provides detailed information about all fields available for 
     </tr>
     <tr>
       <td class="field-name">urlCat</td>
+      <td class="type">string</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The URL category</td>
+      <td class="example">Social Networking</td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">urlCat</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
@@ -2192,15 +2202,6 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">urlCat</td>
-      <td class="type">string</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The URL category</td>
-      <td class="example">Social Networking</td>
-      <td class="products">Zero Trust Secure Access - Internet Access</td>
-    </tr>
-    <tr>
       <td class="field-name">userAgent</td>
       <td class="type">string</td>
       <td class="searchable">false</td>
@@ -2224,6 +2225,15 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The user department request method</td>
+      <td class="example">Sales</td>
+      <td class="products">Zero Trust Secure Access - Internet Access</td>
+    </tr>
+    <tr>
+      <td class="field-name">userDepartment</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">User department</td>
       <td class="example">
         <ul>
@@ -2240,13 +2250,24 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">userDepartment</td>
+      <td class="field-name">userDomain</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The user department request method</td>
-      <td class="example">Sales</td>
-      <td class="products">Zero Trust Secure Access - Internet Access</td>
+      <td class="general-field">
+        <ul>
+          <li>DomainName</li>
+          <li>AccountDomain</li>
+        </ul>
+      </td>
+      <td class="description">Active directory domain, domain of username for logging in TMAS adminportal adminportal</td>
+      <td class="example">trendmicro.com</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">userDomain</td>
@@ -2271,26 +2292,7 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Web Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">userDomain</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>DomainName</li>
-          <li>AccountDomain</li>
-        </ul>
-      </td>
-      <td class="description">Active directory domain, domain of username for logging in TMAS adminportal adminportal</td>
-      <td class="example">trendmicro.com</td>
-      <td class="products">
-        <ul>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>

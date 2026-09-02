@@ -1868,6 +1868,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>

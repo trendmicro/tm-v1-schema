@@ -127,6 +127,10 @@
   Description_EN: The event category
   DL_Type: string
 
+- Name: channel
+  Description_EN: The channel through which the demanded WinEvent is delivered
+  DL_Type: string
+
 - Name: clientBrowser
   Description_EN: The client device browser
   DL_Type: string
@@ -297,9 +301,100 @@
   Description_EN: The event category used in LookupEvents calls
   DL_Type: string
 
+- Name: eventDataAdditionalInfo
+  Description_EN: The additional information about the event
+  DL_Type: string
+
+- Name: eventDataAttributeLDAPDisplayName
+  Description_EN: The LDAP display name of the attribute that was accessed
+  DL_Type: string
+
+- Name: eventDataCertIssuerName
+  Description_EN: The name of the Certification Authority that issued the TGT certificate
+  DL_Type: string
+
+- Name: eventDataCertSerialNumber
+  Description_EN: The serial number of the certificate
+  DL_Type: string
+
+- Name: eventDataCertThumbprint
+  Description_EN: The thumbprint of the certificate
+  DL_Type: string
+
 - Name: eventDataLogonType
   Description_EN: The logon type for Windows event 4624 which is "An account was successfully
     logged on"
+  DL_Type: string
+
+- Name: eventDataMemberName
+  Description_EN: The distinguished name of the account that was added to the group
+  DL_Type: string
+
+- Name: eventDataMemberSid
+  Description_EN: The security identifier (SID) of the account that was added to the
+    group
+  DL_Type: string
+
+- Name: eventDataObjectClass
+  Description_EN: The class of the object that was accessed
+  DL_Type: string
+
+- Name: eventDataObjectDN
+  Description_EN: The distinguished name of the object that was accessed
+  DL_Type: string
+
+- Name: eventDataObjectGUID
+  Description_EN: The unique identifier of the object that was accessed
+  DL_Type: string
+
+- Name: eventDataObjectServer
+  Description_EN: The name of the Windows sub-system calling the routine
+  DL_Type: string
+
+- Name: eventDataOperationType
+  Description_EN: The type of operation performed on the object
+  DL_Type: string
+
+- Name: eventDataProperties
+  Description_EN: The properties of the object
+  DL_Type: string
+
+- Name: eventDataServiceSid
+  Description_EN: The security identifier (SID) of the service
+  DL_Type: string
+
+- Name: eventDataSubjectDomainName
+  Description_EN: The domain or computer name of the account
+  DL_Type: string
+
+- Name: eventDataSubjectLogonId
+  Description_EN: The account sign-in ID
+  DL_Type: string
+
+- Name: eventDataSubjectUserSid
+  Description_EN: The security identifier (SID) of the account
+  DL_Type: string
+
+- Name: eventDataTargetLogonId
+  Description_EN: The hexadecimal value to correlate this event with events that contain
+    the same sign-in ID
+  DL_Type: string
+
+- Name: eventDataTargetSid
+  Description_EN: The security identifier (SID) of the target account
+  DL_Type: string
+
+- Name: eventDataTargetUserSid
+  Description_EN: The security identifier (SID) of the account for which sign-in was
+    requested
+  DL_Type: string
+
+- Name: eventDataUserPrincipalName
+  Description_EN: The user account UPN
+  DL_Type: string
+
+- Name: eventDataWorkstation
+  Description_EN: The computer name from which the sign-in request was received
   DL_Type: string
 
 - Name: eventExpireTime
@@ -438,7 +533,7 @@
   DL_Type: string
 
 - Name: integrationType
-  Description_EN: The Claude integration type
+  Description_EN: The AI service access integration type
   DL_Type: string
 
 - Name: interestedIp
@@ -468,6 +563,10 @@
 - Name: k8sPodName
   Description_EN: The Kubernetes pod name of the container
   DL_Type: string
+
+- Name: lastSeen
+  Description_EN: The time when the event ended (in milliseconds)
+  DL_Type: datetime
 
 - Name: locationLatitude
   Description_EN: The geographic latitude of the event location
@@ -681,6 +780,14 @@
   Description_EN: The OS architecture
   DL_Type: string
 
+- Name: osDescription
+  Description_EN: The OS version
+  DL_Type: string
+
+- Name: osType
+  Description_EN: The host operating system type
+  DL_Type: string
+
 - Name: osVer
   Description_EN: The version of the host operating system
   DL_Type: string
@@ -723,6 +830,10 @@
     (pkt-src-aws-service)
   DL_Type: string
 
+- Name: plang
+  Description_EN: The product language
+  DL_Type: int
+
 - Name: pname
   Description_EN: The internal product ID (Deprecated, use productCode)
   DL_Type: string
@@ -739,6 +850,10 @@
   Description_EN: The UUID of the cloud access or risk control policy, or the hard-coded
     string that indicates the rule of the global blocked/approved URL list
   DL_Type: string
+
+- Name: pplat
+  Description_EN: The product platform
+  DL_Type: int
 
 - Name: previousObjectFileName
   Description_EN: The previous object file name
@@ -837,6 +952,14 @@
 
 - Name: proto
   Description_EN: The exploited layer network protocol
+  DL_Type: string
+
+- Name: providerGUID
+  Description_EN: The GUID of the Windows event provider
+  DL_Type: string
+
+- Name: providerName
+  Description_EN: The name of the Windows event provider
   DL_Type: string
 
 - Name: pver
@@ -1153,6 +1276,10 @@
 
 - Name: tenantName
   Description_EN: The name of the tenant
+  DL_Type: string
+
+- Name: timezone
+  Description_EN: The host time zone
   DL_Type: string
 
 - Name: tlsDetails

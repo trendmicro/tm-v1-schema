@@ -573,6 +573,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>ALL</li>
           <li>Data Detection and Response</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
