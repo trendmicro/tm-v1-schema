@@ -749,3 +749,47 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: riskState
+  ProductCode:
+  - aad
+  Description_EN: The sign-in event risk state
+  Sample:
+  - none
+  - confirmedCompromised
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: riskLevelAggregated
+  ProductCode:
+  - aad
+  Description_EN: The sign-in event risk level aggregated across all related detections
+  Sample:
+  - none
+  - high
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: riskLevelDuringSignIn
+  ProductCode:
+  - aad
+  Description_EN: The sign-in event risk level calculated at sign-in time
+  Sample:
+  - none
+  - high
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: riskDetail
+  ProductCode:
+  - aad
+  Description_EN: The sign-in event risk state reason
+  Sample:
+  - none
+  - adminConfirmedSigninCompromised
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
