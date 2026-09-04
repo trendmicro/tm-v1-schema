@@ -4987,6 +4987,7 @@
   - sao
   - sfs
   - pan
+  - xes
   Description_EN: The engine type
   Sample:
   - Virus Scan Engine (Windows XP/Server 2003, x64)

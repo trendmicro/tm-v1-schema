@@ -3773,12 +3773,28 @@
   Description_EN: The risk confidence level
   DL_Type: string
 
+- Name: riskDetail
+  Description_EN: The sign-in event risk state reason
+  DL_Type: string
+
 - Name: riskEventTypes
   Description_EN: The associated sign-in risk event types
   DL_Type: dynamic
 
 - Name: riskLevel
   Description_EN: The risk level
+  DL_Type: string
+
+- Name: riskLevelAggregated
+  Description_EN: The sign-in event risk level aggregated across all related detections
+  DL_Type: string
+
+- Name: riskLevelDuringSignIn
+  Description_EN: The sign-in event risk level calculated at sign-in time
+  DL_Type: string
+
+- Name: riskState
+  Description_EN: The sign-in event risk state
   DL_Type: string
 
 - Name: rozRating

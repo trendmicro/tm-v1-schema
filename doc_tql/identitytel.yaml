@@ -576,9 +576,25 @@
   Description_EN: The cause of event failure or timeout
   DL_Type: string
 
+- Name: riskDetail
+  Description_EN: The sign-in event risk state reason
+  DL_Type: string
+
 - Name: riskEventTypes
   Description_EN: The associated sign-in risk event types
   DL_Type: dynamic
+
+- Name: riskLevelAggregated
+  Description_EN: The sign-in event risk level aggregated across all related detections
+  DL_Type: string
+
+- Name: riskLevelDuringSignIn
+  Description_EN: The sign-in event risk level calculated at sign-in time
+  DL_Type: string
+
+- Name: riskState
+  Description_EN: The sign-in event risk state
+  DL_Type: string
 
 - Name: rt
   Description_EN: The Unix time of the log generation

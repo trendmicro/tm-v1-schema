@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">3198</span>
+      <span class="stat-number">3203</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -280,7 +280,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Endpoint/Endpoint%20Sensor" class="product-link">
         <div class="product-info">
           <span>Endpoint Sensor</span>
-          <span class="field-count">395 fields</span>
+          <span class="field-count">396 fields</span>
         </div>
       </a>
     </li>
@@ -302,7 +302,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Identity/Microsoft%20Entra%20ID" class="product-link">
         <div class="product-info">
           <span>Microsoft Entra ID</span>
-          <span class="field-count">69 fields</span>
+          <span class="field-count">73 fields</span>
         </div>
       </a>
     </li>
