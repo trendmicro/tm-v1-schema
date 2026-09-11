@@ -1562,6 +1562,7 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>File Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>

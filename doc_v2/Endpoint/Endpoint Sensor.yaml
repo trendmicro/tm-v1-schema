@@ -4381,6 +4381,21 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: engType
+  ProductCode:
+  - sao
+  - sfs
+  - pan
+  - xes
+  Description_EN: The engine type
+  Sample:
+  - Virus Scan Engine (Windows XP/Server 2003, x64)
+  - Virus Scan NT Kernel Engine
+  - Spyware/Grayware Scan Engine v.6 (64-bit)
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: engVer
   ProductCode:
   - xes

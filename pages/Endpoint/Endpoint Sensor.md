@@ -879,6 +879,28 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">engType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The engine type</td>
+      <td class="example">
+        <ul>
+          <li>Virus Scan Engine (Windows XP/Server 2003, x64)</li>
+          <li>Virus Scan NT Kernel Engine</li>
+          <li>Spyware/Grayware Scan Engine v.6 (64-bit)</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>File Security</li>
+          <li>Deep Discovery Analyzer</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">engVer</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -7489,7 +7511,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 395
+- **Total Fields:** 396
 - **Layer:** Endpoint
 - **Product:** Endpoint Sensor
 

@@ -779,12 +779,68 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Microsoft Entra ID</td>
     </tr>
     <tr>
+      <td class="field-name">riskDetail</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sign-in event risk state reason</td>
+      <td class="example">
+        <ul>
+          <li>none</li>
+          <li>adminConfirmedSigninCompromised</li>
+        </ul>
+      </td>
+      <td class="products">Microsoft Entra ID</td>
+    </tr>
+    <tr>
       <td class="field-name">riskEventTypes</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The associated sign-in risk event types</td>
       <td class="example">[&#x27;unlikelyTravel&#x27;, &#x27;anonymizedIPAddress&#x27;]</td>
+      <td class="products">Microsoft Entra ID</td>
+    </tr>
+    <tr>
+      <td class="field-name">riskLevelAggregated</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sign-in event risk level aggregated across all related detections</td>
+      <td class="example">
+        <ul>
+          <li>none</li>
+          <li>high</li>
+        </ul>
+      </td>
+      <td class="products">Microsoft Entra ID</td>
+    </tr>
+    <tr>
+      <td class="field-name">riskLevelDuringSignIn</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sign-in event risk level calculated at sign-in time</td>
+      <td class="example">
+        <ul>
+          <li>none</li>
+          <li>high</li>
+        </ul>
+      </td>
+      <td class="products">Microsoft Entra ID</td>
+    </tr>
+    <tr>
+      <td class="field-name">riskState</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sign-in event risk state</td>
+      <td class="example">
+        <ul>
+          <li>none</li>
+          <li>confirmedCompromised</li>
+        </ul>
+      </td>
       <td class="products">Microsoft Entra ID</td>
     </tr>
     <tr>
@@ -1011,7 +1067,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 69
+- **Total Fields:** 73
 - **Layer:** Identity
 - **Product:** Microsoft Entra ID
 
