@@ -269,6 +269,42 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">analysisResult</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The verdict determined by analyzing the user-reported email</td>
+      <td class="example">threat;high</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">analysisStage</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The stage of the analysis for the user-reported email (e.g. solution_ready)</td>
+      <td class="example">solution_ready</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">analysisSummary</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The user-reported email analysis summary</td>
+      <td class="example">This email impersonates an official security notice.</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">analysisSuspiciousIndicators</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The indicators identified by user-reported email analysis</td>
+      <td class="example">[&quot;Sender address does not match any known security provider&quot;,&quot;Urgent language pressuring the recipient to click a link&quot;]</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
       <td class="field-name">attachment</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -286,13 +322,12 @@ This documentation provides detailed information about all fields available for 
       <td class="field-name">attachmentFileHashes</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileSHA1</td>
-      <td class="description">SHA-1 hash of the email attachment</td>
+      <td class="general-field">-</td>
+      <td class="description">The SHA-1 of the email attachment</td>
       <td class="example">
         <ul>
-          <li>acedb7898338a46f38d148d1d0456e644576d41b</li>
-          <li>ea6fcc4c0c1f10d71742b29e98a977d995473dd1</li>
-          <li>03d8fb85556edf397d8afcafc0b13f11ecbde50c</li>
+          <li>056a2975edffe7188c03c324ae4335f9380b57e3</li>
+          <li>05fd3ac8f9d8407e6637e0f91cd2ff5ab076658a</li>
         </ul>
       </td>
       <td class="products">
@@ -307,12 +342,13 @@ This documentation provides detailed information about all fields available for 
       <td class="field-name">attachmentFileHashes</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The SHA-1 of the email attachment</td>
+      <td class="general-field">FileSHA1</td>
+      <td class="description">SHA-1 hash of the email attachment</td>
       <td class="example">
         <ul>
-          <li>056a2975edffe7188c03c324ae4335f9380b57e3</li>
-          <li>05fd3ac8f9d8407e6637e0f91cd2ff5ab076658a</li>
+          <li>acedb7898338a46f38d148d1d0456e644576d41b</li>
+          <li>ea6fcc4c0c1f10d71742b29e98a977d995473dd1</li>
+          <li>03d8fb85556edf397d8afcafc0b13f11ecbde50c</li>
         </ul>
       </td>
       <td class="products">
@@ -404,27 +440,6 @@ This documentation provides detailed information about all fields available for 
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
       <td class="general-field">FileName</td>
-      <td class="description">File name of the email attachment</td>
-      <td class="example">
-        <ul>
-          <li>image001.png</li>
-          <li>image002.png</li>
-          <li>image003.png</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Cloud App Security</li>
-          <li>Email Security</li>
-          <li>Email Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">attachmentFileName</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">FileName</td>
       <td class="description">The file name of an attachment</td>
       <td class="example">
         <ul>
@@ -444,16 +459,22 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">attachmentFileTlshes</td>
+      <td class="field-name">attachmentFileName</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The TLSH hash detected by Trend Micro Anti-Spam Engine</td>
-      <td class="example">-</td>
+      <td class="general-field">FileName</td>
+      <td class="description">File name of the email attachment</td>
+      <td class="example">
+        <ul>
+          <li>image001.png</li>
+          <li>image002.png</li>
+          <li>image003.png</li>
+        </ul>
+      </td>
       <td class="products">
         <ul>
-          <li>Email Security</li>
           <li>Cloud App Security</li>
+          <li>Email Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -474,6 +495,21 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Cloud App Security</li>
           <li>Email Security</li>
+          <li>Email Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">attachmentFileTlshes</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The TLSH hash detected by Trend Micro Anti-Spam Engine</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Email Security</li>
+          <li>Cloud App Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -614,6 +650,24 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">chatGroupName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Microsoft Teams group/meeting chat where the detection occurred (null if no name)</td>
+      <td class="example">Sales Discussion Group</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">chatParticipants</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The comma-separated list of the Microsoft Teams group/meeting chat participants where the detection occurred</td>
+      <td class="example">Jane Smith, John Doe, Mary Major</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
       <td class="field-name">cloudAppName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -732,27 +786,6 @@ This documentation provides detailed information about all fields available for 
     </tr>
     <tr>
       <td class="field-name">eventId</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The event ID</td>
-      <td class="example">
-        <ul>
-          <li>1 - MESSAGING_EMAIL_META</li>
-          <li>2 - MESSAGING_COLLABORATION_ACTIVITY</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Cloud App Security</li>
-          <li>Email Security</li>
-          <li>Email Sensor</li>
-          <li>Collaboration sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">eventId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
@@ -786,6 +819,27 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventId</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event ID</td>
+      <td class="example">
+        <ul>
+          <li>1 - MESSAGING_EMAIL_META</li>
+          <li>2 - MESSAGING_COLLABORATION_ACTIVITY</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email Security</li>
+          <li>Email Sensor</li>
+          <li>Collaboration sensor</li>
         </ul>
       </td>
     </tr>
@@ -885,6 +939,15 @@ This documentation provides detailed information about all fields available for 
           <li>Email Sensor</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">feedbackId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The internal record ID of the user-reported email feedback</td>
+      <td class="example">12345</td>
+      <td class="products">Cloud App Security</td>
     </tr>
     <tr>
       <td class="field-name">filterName</td>
@@ -1072,11 +1135,13 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">Primary email address</td>
+      <td class="description">The mailbox that is protected by Trend Micro</td>
       <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
           <li>Cloud App Security</li>
+          <li>Email Security</li>
+          <li>Mobile Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1086,13 +1151,11 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The mailbox that is protected by Trend Micro</td>
+      <td class="description">Primary email address</td>
       <td class="example">sample_email@trendmicro.com</td>
       <td class="products">
         <ul>
           <li>Cloud App Security</li>
-          <li>Email Security</li>
-          <li>Mobile Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1134,7 +1197,7 @@ This documentation provides detailed information about all fields available for 
     <tr>
       <td class="field-name">mailDirection</td>
       <td class="type">int</td>
-      <td class="searchable">true</td>
+      <td class="searchable">false</td>
       <td class="general-field">-</td>
       <td class="description">Email traffic direction</td>
       <td class="example">
@@ -1155,7 +1218,7 @@ This documentation provides detailed information about all fields available for 
     <tr>
       <td class="field-name">mailDirection</td>
       <td class="type">int</td>
-      <td class="searchable">false</td>
+      <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">Email traffic direction</td>
       <td class="example">
@@ -1217,6 +1280,21 @@ This documentation provides detailed information about all fields available for 
       <td class="description">The email folder name</td>
       <td class="example">
         <ul>
+          <li>CATEGORY_PROMOTIONS, UNREAD, INBOX</li>
+          <li>UNREAD, CATEGORY_PERSONAL, INBOX</li>
+          <li>UNREAD, CATEGORY_UPDATES, INBOX</li>
+        </ul>
+      </td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">mailFolder</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The email folder name</td>
+      <td class="example">
+        <ul>
           <li>Inbox</li>
           <li>Bandeja de entrada</li>
           <li>Sent Items</li>
@@ -1228,21 +1306,6 @@ This documentation provides detailed information about all fields available for 
           <li>Email Sensor</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">mailFolder</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The email folder name</td>
-      <td class="example">
-        <ul>
-          <li>CATEGORY_PROMOTIONS, UNREAD, INBOX</li>
-          <li>UNREAD, CATEGORY_PERSONAL, INBOX</li>
-          <li>UNREAD, CATEGORY_UPDATES, INBOX</li>
-        </ul>
-      </td>
-      <td class="products">Cloud App Security</td>
     </tr>
     <tr>
       <td class="field-name">mailFromAddresses</td>
@@ -1314,6 +1377,15 @@ This documentation provides detailed information about all fields available for 
       <td class="field-name">mailMsgId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The internet message ID of the email</td>
+      <td class="example">&lt;sample_email@trendmicro.com&gt;</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">mailMsgId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
       <td class="general-field">EmailMessageID</td>
       <td class="description">Email ID</td>
       <td class="example">&lt;sample-id@trendmicro.com&gt;</td>
@@ -1322,35 +1394,6 @@ This documentation provides detailed information about all fields available for 
           <li>Cloud App Security</li>
           <li>Email Security</li>
           <li>Collaboration sensor</li>
-          <li>Email Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">mailMsgId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The internet message ID of the email</td>
-      <td class="example">&lt;sample_email@trendmicro.com&gt;</td>
-      <td class="products">Cloud App Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">mailMsgSubject</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">EmailSubject</td>
-      <td class="description">Email subject</td>
-      <td class="example">
-        <ul>
-          <li>Your daily briefing</li>
-          <li>Security alert for DeleteSecurityGroup on Account 549918006255 in Region: ap-southeast-1</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Cloud App Security</li>
-          <li>Email Security</li>
           <li>Email Sensor</li>
         </ul>
       </td>
@@ -1376,6 +1419,26 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">mailMsgSubject</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EmailSubject</td>
+      <td class="description">Email subject</td>
+      <td class="example">
+        <ul>
+          <li>Your daily briefing</li>
+          <li>Security alert for DeleteSecurityGroup on Account 549918006255 in Region: ap-southeast-1</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email Security</li>
+          <li>Email Sensor</li>
         </ul>
       </td>
     </tr>
@@ -1789,6 +1852,15 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">mitigationMsgIds</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The remediated message IDs of the user-reported email</td>
+      <td class="example">[&quot;&lt;sample-id@trendmicro.com&gt;&quot;]</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
       <td class="field-name">msgId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1838,8 +1910,14 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">Internal email UUID to identify each email message</td>
-      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="description">The unique email ID</td>
+      <td class="example">
+        <ul>
+          <li>00000000-0000-0000-0000-000000000000</li>
+          <li>11111111-1111-1111-1111-111111111111</li>
+          <li>22222222-2222-2222-2222-222222222222</li>
+        </ul>
+      </td>
       <td class="products">
         <ul>
           <li>Cloud App Security</li>
@@ -1853,14 +1931,8 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The unique email ID</td>
-      <td class="example">
-        <ul>
-          <li>00000000-0000-0000-0000-000000000000</li>
-          <li>11111111-1111-1111-1111-111111111111</li>
-          <li>22222222-2222-2222-2222-222222222222</li>
-        </ul>
-      </td>
+      <td class="description">Internal email UUID to identify each email message</td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
       <td class="products">
         <ul>
           <li>Cloud App Security</li>
@@ -1919,7 +1991,13 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The organization ID</td>
-      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="example">
+        <ul>
+          <li>00000000-0000-0000-0000-000000000000</li>
+          <li>11111111-1111-1111-1111-111111111111</li>
+          <li>22222222-2222-2222-2222-222222222222</li>
+        </ul>
+      </td>
       <td class="products">
         <ul>
           <li>Cloud App Security</li>
@@ -1933,13 +2011,7 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The organization ID</td>
-      <td class="example">
-        <ul>
-          <li>00000000-0000-0000-0000-000000000000</li>
-          <li>11111111-1111-1111-1111-111111111111</li>
-          <li>22222222-2222-2222-2222-222222222222</li>
-        </ul>
-      </td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
       <td class="products">
         <ul>
           <li>Cloud App Security</li>
@@ -1965,27 +2037,6 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
           <li>Cloud App Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">pname</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">Internal product code (depricated)</td>
-      <td class="example">
-        <ul>
-          <li>733</li>
-          <li>742</li>
-          <li>TMEMS</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Cloud App Security</li>
-          <li>Email Security</li>
-          <li>Email Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2020,6 +2071,27 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">pname</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Internal product code (depricated)</td>
+      <td class="example">
+        <ul>
+          <li>733</li>
+          <li>742</li>
+          <li>TMEMS</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email Security</li>
+          <li>Email Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2085,6 +2157,7 @@ This documentation provides detailed information about all fields available for 
           <li>Cloud App Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>
@@ -2117,8 +2190,27 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Endpoint Sensor</li>
+          <li>Okta</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">reportCategory</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The user-reported email analysis category</td>
+      <td class="example">phishing</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">reporter</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The email address of the user who reported an email for analysis</td>
+      <td class="example">sample_email@trendmicro.com</td>
+      <td class="products">Cloud App Security</td>
     </tr>
     <tr>
       <td class="field-name">reportGUID</td>
@@ -2390,21 +2482,6 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The time the email was scanned</td>
-      <td class="example">1657135700000</td>
-      <td class="products">
-        <ul>
-          <li>Cloud App Security</li>
-          <li>Email Sensor</li>
-          <li>Email Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">scanTs</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
       <td class="description">The mail scan time</td>
       <td class="example">-</td>
       <td class="products">
@@ -2417,24 +2494,17 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">scanType</td>
+      <td class="field-name">scanTs</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">Manual or real-time scan</td>
-      <td class="example">
-        <ul>
-          <li>realtime_mailmeta-exchange</li>
-          <li>realtime_mailmeta-gmail</li>
-          <li>gateway_mailmetadata</li>
-          <li>gateway_realtime_accepted_mail_traffic</li>
-        </ul>
-      </td>
+      <td class="description">The time the email was scanned</td>
+      <td class="example">1657135700000</td>
       <td class="products">
         <ul>
           <li>Cloud App Security</li>
-          <li>Email Security</li>
           <li>Email Sensor</li>
+          <li>Email Security</li>
         </ul>
       </td>
     </tr>
@@ -2466,6 +2536,28 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">scanType</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Manual or real-time scan</td>
+      <td class="example">
+        <ul>
+          <li>realtime_mailmeta-exchange</li>
+          <li>realtime_mailmeta-gmail</li>
+          <li>gateway_mailmetadata</li>
+          <li>gateway_realtime_accepted_mail_traffic</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Cloud App Security</li>
+          <li>Email Security</li>
+          <li>Email Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2517,6 +2609,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Cloud App Security</li>
           <li>Microsoft Entra ID</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>
@@ -2643,7 +2736,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 119
+- **Total Fields:** 129
 - **Layer:** Email
 - **Product:** Cloud App Security
 

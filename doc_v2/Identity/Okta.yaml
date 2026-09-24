@@ -1,0 +1,283 @@
+- Name: remarks
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sca
+  - sao
+  - sem
+  - stp
+  - ptn
+  - xms
+  - sfs
+  - sss
+  - sig
+  - xes
+  - okt
+  Description_EN: The additional information
+  Sample:
+  - 'warning: fork: Resource temporarily unavailable'
+  - 'pam_unix(cron:session): session opened for user root by (uid=0)'
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:\
+    \ EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.\
+    \ [CLIENT: 10.10.10.10]  "
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: principalName
+  ProductCode:
+  - sws
+  - sig
+  - sca
+  - szn
+  - scs
+  - okt
+  Description_EN: The user principal name used to sign in to the proxy
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: signInCountries
+  ProductCode:
+  - sca
+  - aad
+  - okt
+  Description_EN: The countries from which a user signed in
+  Sample:
+  - PH
+  - AU
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventTime
+  ProductCode:
+  - aad
+  - opa
+  - okt
+  Description_EN: The time the identity provider detected the event
+  Sample:
+  - 1657781088000
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventId
+  ProductCode:
+  - aad
+  - opa
+  - okt
+  Description_EN: The identity provider event ID
+  Sample:
+  - 1 - EVENT_SOURCE_AAD_SIGN_INS
+  - 2 - EVENT_SOURCE_AAD_DIR_AUDIT
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventName
+  ProductCode:
+  - aad
+  - opa
+  - okt
+  Description_EN: The event type
+  Sample:
+  - EVENT_SOURCE_AAD_SIGN_INS
+  - EVENT_SOURCE_AAD_DIR_AUDIT
+  - EVENT_SOURCE_OPA_WINDOWS_EVENT
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: idpName
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The identity provider
+  Sample:
+  - Microsoft Entra ID
+  - Microsoft Active Directory
+  - google
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationCountry
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The country where the event happened
+  Sample:
+  - US
+  - TW
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationCity
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The city where the event happened
+  Sample:
+  - Singapore
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationState
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The state where the event happened
+  Sample:
+  - Central Singapore
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationLongitude
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The longitude of the event location
+  Sample:
+  - 121.568
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: locationLatitude
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The latitude of the event location
+  Sample:
+  - 121.568
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientOS
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The client OS
+  Sample:
+  - Windows
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientBrowser
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The client browser
+  Sample:
+  - Chrome 119.0.0
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ipAddress
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The client IP
+  Sample:
+  - 10.10.10.10
+  DL_Type: string
+  DL_CommonKey:
+  - IPv4
+  - IPv6
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userId
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The user ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: userDisplayName
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The user display name
+  Sample:
+  - Test User(RD-TW)
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: status
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The sign-in status result
+  Sample:
+  - 0
+  - 50126
+  - 50155
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: statusReason
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The sign-in status
+  Sample:
+  - Error validating credentials due to invalid username or password.
+  - Others.
+  - ''
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: principalName
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The User Principal Name
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  - UserAccount
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: orgId
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The organization ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tenantId
+  ProductCode:
+  - aad
+  - okt
+  Description_EN: The Microsoft Entra ID Tenant ID of the organization
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false

@@ -3883,6 +3883,7 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Endpoint Sensor</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>

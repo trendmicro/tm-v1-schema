@@ -1213,6 +1213,7 @@
   - sss
   - sig
   - xes
+  - okt
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -1893,6 +1894,7 @@
   - sca
   - szn
   - scs
+  - okt
   Description_EN: The user principal name used to sign in to the proxy
   Sample:
   - sample_email@trendmicro.com
@@ -3030,6 +3032,28 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: chatGroupName
+  ProductCode:
+  - sca
+  Description_EN: The Microsoft Teams group/meeting chat where the detection occurred
+    (null if no name)
+  Sample:
+  - Sales Discussion Group
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: chatParticipants
+  ProductCode:
+  - sca
+  Description_EN: The comma-separated list of the Microsoft Teams group/meeting chat
+    participants where the detection occurred
+  Sample:
+  - Jane Smith, John Doe, Mary Major
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: malFamily
   ProductCode:
   - pdi
@@ -3932,7 +3956,7 @@
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: computerDomain
   ProductCode:
   - sao
@@ -4598,6 +4622,87 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: reporter
+  ProductCode:
+  - sca
+  Description_EN: The email address of the user who reported an email for analysis
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: reportCategory
+  ProductCode:
+  - sca
+  Description_EN: The user-reported email analysis category
+  Sample:
+  - phishing
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: analysisResult
+  ProductCode:
+  - sca
+  Description_EN: The verdict determined by analyzing the user-reported email
+  Sample:
+  - threat;high
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: analysisSummary
+  ProductCode:
+  - sca
+  Description_EN: The user-reported email analysis summary
+  Sample:
+  - This email impersonates an official security notice.
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: analysisSuspiciousIndicators
+  ProductCode:
+  - sca
+  Description_EN: The indicators identified by user-reported email analysis
+  Sample:
+  - '["Sender address does not match any known security provider","Urgent language
+    pressuring the recipient to click a link"]'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mitigationMsgIds
+  ProductCode:
+  - sca
+  Description_EN: The remediated message IDs of the user-reported email
+  Sample:
+  - '["<sample-id@trendmicro.com>"]'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: feedbackId
+  ProductCode:
+  - sca
+  Description_EN: The internal record ID of the user-reported email feedback
+  Sample:
+  - '12345'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: analysisStage
+  ProductCode:
+  - sca
+  Description_EN: The stage of the analysis for the user-reported email (e.g. solution_ready)
+  Sample:
+  - solution_ready
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: detectionDetail
   ProductCode:
   - sem
@@ -4834,6 +4939,7 @@
   ProductCode:
   - sca
   - aad
+  - okt
   Description_EN: The countries from which a user signed in
   Sample:
   - PH

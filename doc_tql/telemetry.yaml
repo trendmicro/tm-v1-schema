@@ -209,7 +209,7 @@
   DL_Type: string
 
 - Name: eventDataSubStatus
-  Description_EN: The Windows event data sub-status
+  Description_EN: The Windows event data sub status
   DL_Type: string
 
 - Name: eventDataTargetDomainName
@@ -523,7 +523,7 @@
   DL_Type: int
 
 - Name: objectIp
-  Description_EN: The IP address of the domain
+  Description_EN: IP address of internet event
   DL_Type: dynamic
 
 - Name: objectIps
@@ -846,7 +846,7 @@
   DL_Type: string
 
 - Name: parentUserDomain
-  Description_EN: The domain name of the parent process
+  Description_EN: The user domain of the parent process
   DL_Type: string
 
 - Name: parentUserGroupSids
@@ -1146,11 +1146,11 @@
   DL_Type: string
 
 - Name: srcFileHashSha1
-  Description_EN: The SHA-1 of the source file
+  Description_EN: The SHA1 hash of source file
   DL_Type: string
 
 - Name: srcFileHashSha256
-  Description_EN: The SHA-256 of the source file
+  Description_EN: The SHA256 hash of source file
   DL_Type: string
 
 - Name: srcFileIsRemoteAccess

@@ -660,7 +660,7 @@
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: e2eLatency
   ProductCode:
   - sig
@@ -1021,6 +1021,7 @@
   - sss
   - sig
   - xes
+  - okt
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -1200,6 +1201,7 @@
   - sca
   - szn
   - scs
+  - okt
   Description_EN: The user principal name used to sign in to the proxy
   Sample:
   - sample_email@trendmicro.com
@@ -1397,7 +1399,7 @@
   DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: policyUuid
   ProductCode:
   - sig

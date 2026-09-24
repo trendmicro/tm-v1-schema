@@ -864,6 +864,7 @@ This documentation provides detailed information about all fields available for 
           <li>Cloud App Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>

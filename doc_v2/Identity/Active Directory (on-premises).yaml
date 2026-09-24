@@ -27,6 +27,7 @@
   ProductCode:
   - aad
   - opa
+  - okt
   Description_EN: The time the identity provider detected the event
   Sample:
   - 1657781088000
@@ -38,6 +39,7 @@
   ProductCode:
   - aad
   - opa
+  - okt
   Description_EN: The identity provider event ID
   Sample:
   - 1 - EVENT_SOURCE_AAD_SIGN_INS
@@ -50,6 +52,7 @@
   ProductCode:
   - aad
   - opa
+  - okt
   Description_EN: The event type
   Sample:
   - EVENT_SOURCE_AAD_SIGN_INS
