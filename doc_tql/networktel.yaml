@@ -598,7 +598,7 @@
   DL_Type: string
 
 - Name: sessionStart
-  Description_EN: The session start name (in seconds)
+  Description_EN: The session start time (in seconds)
   DL_Type: long
 
 - Name: simulation

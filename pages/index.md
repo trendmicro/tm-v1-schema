@@ -120,11 +120,11 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Layers</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">34</span>
+      <span class="stat-number">35</span>
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">3203</span>
+      <span class="stat-number">3235</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -202,7 +202,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Email/Cloud%20App%20Security" class="product-link">
         <div class="product-info">
           <span>Cloud App Security</span>
-          <span class="field-count">119 fields</span>
+          <span class="field-count">129 fields</span>
         </div>
       </a>
     </li>
@@ -303,6 +303,14 @@ This page provides links to detailed field documentation for all products organi
         <div class="product-info">
           <span>Microsoft Entra ID</span>
           <span class="field-count">73 fields</span>
+        </div>
+      </a>
+    </li>
+    <li class="product-item">
+      <a href="Identity/Okta" class="product-link">
+        <div class="product-info">
+          <span>Okta</span>
+          <span class="field-count">22 fields</span>
         </div>
       </a>
     </li>

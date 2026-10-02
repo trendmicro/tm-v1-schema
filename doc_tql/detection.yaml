@@ -46,6 +46,22 @@
   Description_EN: The metric unit
   DL_Type: string
 
+- Name: analysisResult
+  Description_EN: The verdict determined by analyzing the user-reported email
+  DL_Type: string
+
+- Name: analysisStage
+  Description_EN: The stage of the analysis for the user-reported email (e.g. solution_ready)
+  DL_Type: string
+
+- Name: analysisSummary
+  Description_EN: The user-reported email analysis summary
+  DL_Type: string
+
+- Name: analysisSuspiciousIndicators
+  Description_EN: The indicators identified by user-reported email analysis
+  DL_Type: dynamic
+
 - Name: appDexSha256
   Description_EN: The app dex encoded using SHA-256
   DL_Type: string
@@ -213,6 +229,16 @@
 
 - Name: channel
   Description_EN: The channel through which the demanded WinEvent is delivered
+  DL_Type: string
+
+- Name: chatGroupName
+  Description_EN: The Microsoft Teams group/meeting chat where the detection occurred
+    (null if no name)
+  DL_Type: string
+
+- Name: chatParticipants
+  Description_EN: The comma-separated list of the Microsoft Teams group/meeting chat
+    participants where the detection occurred
   DL_Type: string
 
 - Name: clientFlag
@@ -511,7 +537,7 @@
   DL_Type: string
 
 - Name: deviceMacAddress
-  Description_EN: The device mac address
+  Description_EN: The device MAC address
   DL_Type: string
 
 - Name: deviceModel
@@ -639,8 +665,8 @@
   Description_EN: The computer which installed the Trend Micro product
   DL_Type: string
 
-- Name: endpointGUID
-  Description_EN: The GUID of the agent which reported the detection
+- Name: endpointGuid
+  Description_EN: Host GUID of the endpoint on which the event was detected
   DL_Type: string
 
 - Name: endpointHostName
@@ -711,6 +737,10 @@
 - Name: extraInfo
   Description_EN: The additional information about the sharing action
   DL_Type: dynamic
+
+- Name: feedbackId
+  Description_EN: The internal record ID of the user-reported email feedback
+  DL_Type: string
 
 - Name: fileCreation
   Description_EN: The file creation date
@@ -1110,6 +1140,10 @@
   Description_EN: Minor virus type
   DL_Type: string
 
+- Name: mitigationMsgIds
+  Description_EN: The remediated message IDs of the user-reported email
+  DL_Type: dynamic
+
 - Name: mitigationTaskId
   Description_EN: The unique ID to identify the mitigation request
   DL_Type: string
@@ -1243,7 +1277,7 @@
   DL_Type: string
 
 - Name: objectIp
-  Description_EN: The IP address of the domain
+  Description_EN: IP address of internet event
   DL_Type: dynamic
 
 - Name: objectName
@@ -1460,7 +1494,7 @@
   DL_Type: string
 
 - Name: parentUserDomain
-  Description_EN: The domain name of the parent process
+  Description_EN: The user domain of the parent process
   DL_Type: string
 
 - Name: pAttackPhase
@@ -1758,6 +1792,14 @@
   Description_EN: Email explanation through smtp explain.
   DL_Type: string
 
+- Name: reportCategory
+  Description_EN: The user-reported email analysis category
+  DL_Type: string
+
+- Name: reporter
+  Description_EN: The email address of the user who reported an email for analysis
+  DL_Type: string
+
 - Name: reportGUID
   Description_EN: The GUID for Workbench to request report page data
   DL_Type: string
@@ -1916,7 +1958,7 @@
   DL_Type: long
 
 - Name: sessionStart
-  Description_EN: The session start name (in seconds)
+  Description_EN: The session start time (in seconds)
   DL_Type: long
 
 - Name: severity
@@ -1998,11 +2040,11 @@
   DL_Type: string
 
 - Name: srcFileHashSha1
-  Description_EN: The SHA-1 of the source file
+  Description_EN: The SHA1 hash of source file
   DL_Type: string
 
 - Name: srcFileHashSha256
-  Description_EN: The SHA-256 of the source file
+  Description_EN: The SHA256 hash of source file
   DL_Type: string
 
 - Name: srcFileModifiedTime

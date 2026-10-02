@@ -996,6 +996,7 @@
   - sss
   - sig
   - xes
+  - okt
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -1151,7 +1152,7 @@
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
-  DL_Aggregable: false
+  DL_Aggregable: true
 - Name: eventId
   ProductCode:
   - sds

@@ -1076,6 +1076,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Microsoft Entra ID</li>
           <li>Active Directory (on-premises)</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>
@@ -1096,6 +1097,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Microsoft Entra ID</li>
           <li>Active Directory (on-premises)</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>
@@ -1110,6 +1112,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Microsoft Entra ID</li>
           <li>Active Directory (on-premises)</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>

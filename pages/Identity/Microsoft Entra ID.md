@@ -278,7 +278,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The client browser</td>
       <td class="example">Chrome 119.0.0</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">clientCredentialType</td>
@@ -319,7 +324,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The client OS</td>
       <td class="example">Windows</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">conditionalAccessStatus</td>
@@ -397,6 +407,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Microsoft Entra ID</li>
           <li>Active Directory (on-premises)</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>
@@ -417,6 +428,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Microsoft Entra ID</li>
           <li>Active Directory (on-premises)</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>
@@ -431,6 +443,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Microsoft Entra ID</li>
           <li>Active Directory (on-premises)</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>
@@ -470,7 +483,12 @@ This documentation provides detailed information about all fields available for 
           <li>google</li>
         </ul>
       </td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">incomingTokentype</td>
@@ -597,7 +615,12 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="description">The client IP</td>
       <td class="example">10.10.10.10</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">locationCity</td>
@@ -606,7 +629,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The city where the event happened</td>
       <td class="example">Singapore</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">locationCountry</td>
@@ -620,7 +648,12 @@ This documentation provides detailed information about all fields available for 
           <li>TW</li>
         </ul>
       </td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">locationLatitude</td>
@@ -629,7 +662,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The latitude of the event location</td>
       <td class="example">121.568</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">locationLongitude</td>
@@ -638,7 +676,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The longitude of the event location</td>
       <td class="example">121.568</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">locationState</td>
@@ -647,7 +690,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The state where the event happened</td>
       <td class="example">Central Singapore</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">logBatchId</td>
@@ -689,7 +737,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The organization ID</td>
       <td class="example">11111111-1111-1111-1111-111111111111</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">pname</td>
@@ -718,7 +771,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">UserAccount</td>
       <td class="description">The User Principal Name</td>
       <td class="example">sample_email@trendmicro.com</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">productCode</td>
@@ -877,6 +935,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Cloud App Security</li>
           <li>Microsoft Entra ID</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>
@@ -915,7 +974,12 @@ This documentation provides detailed information about all fields available for 
           <li>50155</li>
         </ul>
       </td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">statusDetail</td>
@@ -938,7 +1002,12 @@ This documentation provides detailed information about all fields available for 
           <li>Others.</li>
         </ul>
       </td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">targetResourceDisplayName</td>
@@ -974,7 +1043,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The Microsoft Entra ID Tenant ID of the organization</td>
       <td class="example">11111111-1111-1111-1111-111111111111</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">trustType</td>
@@ -1012,7 +1086,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">UserAccount</td>
       <td class="description">The user display name</td>
       <td class="example">Test User(RD-TW)</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">userId</td>
@@ -1021,7 +1100,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">UserAccount</td>
       <td class="description">The user ID</td>
       <td class="example">11111111-1111-1111-1111-111111111111</td>
-      <td class="products">Microsoft Entra ID</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
+          <li>Okta</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">userSessionId</td>

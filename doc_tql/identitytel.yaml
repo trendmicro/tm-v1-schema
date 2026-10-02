@@ -272,7 +272,7 @@
   DL_Type: string
 
 - Name: eventDataSubStatus
-  Description_EN: The Windows event data sub-status
+  Description_EN: The Windows event data sub status
   DL_Type: string
 
 - Name: eventDataTargetDomainName

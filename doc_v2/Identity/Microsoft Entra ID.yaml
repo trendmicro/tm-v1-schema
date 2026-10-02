@@ -1,19 +1,8 @@
-- Name: signInCountries
-  ProductCode:
-  - sca
-  - aad
-  Description_EN: The countries from which a user signed in
-  Sample:
-  - PH
-  - AU
-  DL_Type: dynamic
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
 - Name: eventTime
   ProductCode:
   - aad
   - opa
+  - okt
   Description_EN: The time the identity provider detected the event
   Sample:
   - 1657781088000
@@ -38,6 +27,7 @@
   ProductCode:
   - aad
   - opa
+  - okt
   Description_EN: The identity provider event ID
   Sample:
   - 1 - EVENT_SOURCE_AAD_SIGN_INS
@@ -50,6 +40,7 @@
   ProductCode:
   - aad
   - opa
+  - okt
   Description_EN: The event type
   Sample:
   - EVENT_SOURCE_AAD_SIGN_INS
@@ -75,6 +66,7 @@
 - Name: idpName
   ProductCode:
   - aad
+  - okt
   Description_EN: The identity provider
   Sample:
   - Microsoft Entra ID
@@ -98,6 +90,7 @@
 - Name: locationCountry
   ProductCode:
   - aad
+  - okt
   Description_EN: The country where the event happened
   Sample:
   - US
@@ -109,6 +102,7 @@
 - Name: locationCity
   ProductCode:
   - aad
+  - okt
   Description_EN: The city where the event happened
   Sample:
   - Singapore
@@ -119,6 +113,7 @@
 - Name: locationState
   ProductCode:
   - aad
+  - okt
   Description_EN: The state where the event happened
   Sample:
   - Central Singapore
@@ -129,6 +124,7 @@
 - Name: locationLongitude
   ProductCode:
   - aad
+  - okt
   Description_EN: The longitude of the event location
   Sample:
   - 121.568
@@ -139,6 +135,7 @@
 - Name: locationLatitude
   ProductCode:
   - aad
+  - okt
   Description_EN: The latitude of the event location
   Sample:
   - 121.568
@@ -170,6 +167,7 @@
 - Name: clientOS
   ProductCode:
   - aad
+  - okt
   Description_EN: The client OS
   Sample:
   - Windows
@@ -180,6 +178,7 @@
 - Name: clientBrowser
   ProductCode:
   - aad
+  - okt
   Description_EN: The client browser
   Sample:
   - Chrome 119.0.0
@@ -201,6 +200,7 @@
 - Name: ipAddress
   ProductCode:
   - aad
+  - okt
   Description_EN: The client IP
   Sample:
   - 10.10.10.10
@@ -213,6 +213,7 @@
 - Name: userId
   ProductCode:
   - aad
+  - okt
   Description_EN: The user ID
   Sample:
   - 11111111-1111-1111-1111-111111111111
@@ -224,6 +225,7 @@
 - Name: userDisplayName
   ProductCode:
   - aad
+  - okt
   Description_EN: The user display name
   Sample:
   - Test User(RD-TW)
@@ -245,6 +247,7 @@
 - Name: status
   ProductCode:
   - aad
+  - okt
   Description_EN: The sign-in status result
   Sample:
   - 0
@@ -257,6 +260,7 @@
 - Name: statusReason
   ProductCode:
   - aad
+  - okt
   Description_EN: The sign-in status
   Sample:
   - Error validating credentials due to invalid username or password.
@@ -532,6 +536,7 @@
 - Name: principalName
   ProductCode:
   - aad
+  - okt
   Description_EN: The User Principal Name
   Sample:
   - sample_email@trendmicro.com
@@ -553,6 +558,7 @@
 - Name: orgId
   ProductCode:
   - aad
+  - okt
   Description_EN: The organization ID
   Sample:
   - 11111111-1111-1111-1111-111111111111
@@ -563,6 +569,7 @@
 - Name: tenantId
   ProductCode:
   - aad
+  - okt
   Description_EN: The Microsoft Entra ID Tenant ID of the organization
   Sample:
   - 11111111-1111-1111-1111-111111111111
@@ -790,6 +797,19 @@
   - none
   - adminConfirmedSigninCompromised
   DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: signInCountries
+  ProductCode:
+  - sca
+  - aad
+  - okt
+  Description_EN: The countries from which a user signed in
+  Sample:
+  - PH
+  - AU
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
