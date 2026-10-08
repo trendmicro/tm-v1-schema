@@ -450,25 +450,6 @@ This documentation provides detailed information about all fields available for 
       <td class="description">The service provider of the cloud asset</td>
       <td class="example">
         <ul>
-          <li>aws</li>
-          <li>azure</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">cloudProvider</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The service provider of the cloud asset</td>
-      <td class="example">
-        <ul>
           <li>alibaba cloud</li>
           <li>aws</li>
           <li>azure</li>
@@ -483,6 +464,25 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">cloudProvider</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The service provider of the cloud asset</td>
+      <td class="example">
+        <ul>
+          <li>aws</li>
+          <li>azure</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -575,6 +575,7 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint Sensor</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -590,7 +591,6 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint Sensor</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
-          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -921,22 +921,6 @@ This documentation provides detailed information about all fields available for 
       <td class="type">int</td>
       <td class="searchable">true</td>
       <td class="general-field">Port</td>
-      <td class="description">The destination port number</td>
-      <td class="example">-</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-          <li>Data Detection and Response</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">dpt</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">Port</td>
       <td class="description">The destination port</td>
       <td class="example">
         <ul>
@@ -963,22 +947,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">dst</td>
-      <td class="type">string</td>
+      <td class="field-name">dpt</td>
+      <td class="type">int</td>
       <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
-        </ul>
-      </td>
-      <td class="description">The destination IP address</td>
-      <td class="example">
-        <ul>
-          <li>::</li>
-          <li>10.10.10.10</li>
-        </ul>
-      </td>
+      <td class="general-field">Port</td>
+      <td class="description">The destination port number</td>
+      <td class="example">-</td>
       <td class="products">
         <ul>
           <li>Endpoint &amp; Workload Security</li>
@@ -1020,6 +994,32 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">dst</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>IPv4</li>
+          <li>IPv6</li>
+        </ul>
+      </td>
+      <td class="description">The destination IP address</td>
+      <td class="example">
+        <ul>
+          <li>::</li>
+          <li>10.10.10.10</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Data Detection and Response</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">duser</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -1043,6 +1043,34 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">endpointGUID</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EndpointID</td>
+      <td class="description">The GUID of the agent which reported the detection</td>
+      <td class="example">
+        <ul>
+          <li>ae4d64aa-f8b8-bb36-b265-f59272ed342f</li>
+          <li>8fb979f6-1376-bed3-227f-f2886e66194e</li>
+          <li>ca2b3a7e-8415-c571-cc19-e45f69470026</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Mobile Security</li>
+          <li>Zero Trust Secure Access - Private Access</li>
+          <li>TXOne StellarOne</li>
+          <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1076,29 +1104,29 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">endpointGUID</td>
+      <td class="field-name">endpointHostName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">EndpointID</td>
-      <td class="description">The GUID of the agent which reported the detection</td>
+      <td class="general-field">EndpointName</td>
+      <td class="description">The endpoint hostname or node where the event was detected</td>
       <td class="example">
         <ul>
-          <li>ae4d64aa-f8b8-bb36-b265-f59272ed342f</li>
-          <li>8fb979f6-1376-bed3-227f-f2886e66194e</li>
-          <li>ca2b3a7e-8415-c571-cc19-e45f69470026</li>
+          <li>10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]</li>
+          <li>ip-10-10-10-10.us-west-1.compute.internal</li>
         </ul>
       </td>
       <td class="products">
         <ul>
           <li>Endpoint &amp; Workload Security</li>
-          <li>Apex One as a Service</li>
           <li>Deep Security</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>TXOne StellarOne</li>
           <li>Container Security</li>
+          <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Data Detection and Response</li>
         </ul>
       </td>
@@ -1145,28 +1173,25 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">endpointHostName</td>
-      <td class="type">string</td>
+      <td class="field-name">endpointIp</td>
+      <td class="type">dynamic</td>
       <td class="searchable">true</td>
-      <td class="general-field">EndpointName</td>
-      <td class="description">The endpoint hostname or node where the event was detected</td>
-      <td class="example">
+      <td class="general-field">
         <ul>
-          <li>10.10.10.10 (swpos-aws-aza02) [i-0f0f0f0f0f0f0f0f0]</li>
-          <li>ip-10-10-10-10.us-west-1.compute.internal</li>
+          <li>IPv4</li>
+          <li>IPv6</li>
         </ul>
       </td>
+      <td class="description">The IP address of the endpoint on which the event was detected</td>
+      <td class="example">10.10.10.10</td>
       <td class="products">
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
-          <li>Endpoint Sensor</li>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Mobile Security</li>
-          <li>Zero Trust Secure Access - Private Access</li>
-          <li>TXOne StellarOne</li>
-          <li>Container Security</li>
+          <li>TippingPoint Security Management System</li>
+          <li>Cloud One Network Security</li>
+          <li>TXOne EdgeOne</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Data Detection and Response</li>
         </ul>
@@ -1195,31 +1220,6 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">endpointIp</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
-        </ul>
-      </td>
-      <td class="description">The IP address of the endpoint on which the event was detected</td>
-      <td class="example">10.10.10.10</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Deep Security</li>
-          <li>Apex One as a Service</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Cloud One Network Security</li>
-          <li>TXOne EdgeOne</li>
-          <li>Agentless Vulnerability &amp; Threat Detection</li>
-          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1311,44 +1311,6 @@ This documentation provides detailed information about all fields available for 
     </tr>
     <tr>
       <td class="field-name">eventId</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">Event type</td>
-      <td class="example">-</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">eventId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The event ID</td>
-      <td class="example">
-        <ul>
-          <li>1010001</li>
-          <li>1010002</li>
-          <li>1010003</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-          <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">eventId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
@@ -1386,6 +1348,44 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">eventId</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Event type</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event ID</td>
+      <td class="example">
+        <ul>
+          <li>1010001</li>
+          <li>1010002</li>
+          <li>1010003</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">eventInitiator</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1402,29 +1402,6 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">eventName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The event type</td>
-      <td class="example">
-        <ul>
-          <li>scan</li>
-          <li>service</li>
-          <li>upgrade</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -1486,6 +1463,29 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">eventName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event type</td>
+      <td class="example">
+        <ul>
+          <li>scan</li>
+          <li>service</li>
+          <li>upgrade</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">eventSourceType</td>
       <td class="type">int</td>
       <td class="searchable">true</td>
@@ -1496,6 +1496,26 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventSubId</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The access type</td>
+      <td class="example">
+        <ul>
+          <li>4</li>
+          <li>101</li>
+          <li>102</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>TXOne StellarOne</li>
         </ul>
       </td>
     </tr>
@@ -1541,46 +1561,6 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">eventSubId</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The access type</td>
-      <td class="example">
-        <ul>
-          <li>4</li>
-          <li>101</li>
-          <li>102</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>TXOne StellarOne</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">eventSubName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The sub-event type</td>
-      <td class="example">
-        <ul>
-          <li>All scan-related operations and results</li>
-          <li>Manual Malware Scan Failure Resolved</li>
-          <li>Agent Version Changed</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
       <td class="field-name">eventSubName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1602,6 +1582,26 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint Sensor</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventSubName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sub-event type</td>
+      <td class="example">
+        <ul>
+          <li>All scan-related operations and results</li>
+          <li>Manual Malware Scan Failure Resolved</li>
+          <li>Agent Version Changed</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -1981,32 +1981,6 @@ This documentation provides detailed information about all fields available for 
           <li>HostDomain</li>
         </ul>
       </td>
-      <td class="description">The domain name</td>
-      <td class="example">
-        <ul>
-          <li>localhost</li>
-          <li>wpad</li>
-          <li>settings-win.data.microsoft.com</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint Sensor</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">hostName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>DomainName</li>
-          <li>HostDomain</li>
-        </ul>
-      </td>
       <td class="description">The computer name of the client host (The hostname from the suspicious URL detected by Deep Discovery Inspector)</td>
       <td class="example">
         <ul>
@@ -2021,6 +1995,32 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Security</li>
           <li>TXOne EdgeOne</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">hostName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>DomainName</li>
+          <li>HostDomain</li>
+        </ul>
+      </td>
+      <td class="description">The domain name</td>
+      <td class="example">
+        <ul>
+          <li>localhost</li>
+          <li>wpad</li>
+          <li>settings-win.data.microsoft.com</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2051,20 +2051,6 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The virtual machine instance ID on the cloud platform</td>
-      <td class="example">i-01234567890abcdef</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">instanceId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
       <td class="description">The ID of the instance that indicates the meta-cloud or data center VM</td>
       <td class="example">
         <ul>
@@ -2083,6 +2069,20 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Mobile Network Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">instanceId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The virtual machine instance ID on the cloud platform</td>
+      <td class="example">i-01234567890abcdef</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -2540,27 +2540,6 @@ This documentation provides detailed information about all fields available for 
     </tr>
     <tr>
       <td class="field-name">objectCmd</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">CLICommand</td>
-      <td class="description">Command line entry of target process</td>
-      <td class="example">
-        <ul>
-          <li>wc -l</li>
-          <li>runc init</li>
-          <li>docker-init --version</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">objectCmd</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
       <td class="general-field">CLICommand</td>
@@ -2577,6 +2556,27 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectCmd</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">CLICommand</td>
+      <td class="description">Command line entry of target process</td>
+      <td class="example">
+        <ul>
+          <li>wc -l</li>
+          <li>runc init</li>
+          <li>docker-init --version</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2648,6 +2648,21 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The UTC time that the object was created</td>
+      <td class="example">1420156800000</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileCreation</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">The time the object file was created</td>
       <td class="example">
         <ul>
@@ -2661,21 +2676,6 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">objectFileCreation</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The UTC time that the object was created</td>
-      <td class="example">1420156800000</td>
-      <td class="products">
-        <ul>
-          <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -2726,27 +2726,6 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">FileMD5</td>
-      <td class="description">The md5 hash of target process image or target file</td>
-      <td class="example">
-        <ul>
-          <li>7ac47235c7bb452a03d3afd872f44c9e</li>
-          <li>c9873d83a969645a97f21adc1b164cc5</li>
-          <li>3b32b378c8b288de6f15e1607a8c2145</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">objectFileHashMd5</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">FileMD5</td>
       <td class="description">The MD5 of the object</td>
       <td class="example">
         <ul>
@@ -2764,16 +2743,16 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectFileHashSha1</td>
+      <td class="field-name">objectFileHashMd5</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileSHA1</td>
-      <td class="description">The SHA1 hash of target process image or target file</td>
+      <td class="general-field">FileMD5</td>
+      <td class="description">The md5 hash of target process image or target file</td>
       <td class="example">
         <ul>
-          <li>ded3833f145989fd86c1f4811b61497298ebc7fd</li>
-          <li>c4fa06404142f1994431f9eef3df2cbe0f1998f1</li>
-          <li>3c01d486ed5aa1ecc2d8f33dc24b0ed59b3e609e</li>
+          <li>7ac47235c7bb452a03d3afd872f44c9e</li>
+          <li>c9873d83a969645a97f21adc1b164cc5</li>
+          <li>3b32b378c8b288de6f15e1607a8c2145</li>
         </ul>
       </td>
       <td class="products">
@@ -2807,16 +2786,16 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectFileHashSha256</td>
+      <td class="field-name">objectFileHashSha1</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileSHA2</td>
-      <td class="description">The SHA256 hash of target process image or target file</td>
+      <td class="general-field">FileSHA1</td>
+      <td class="description">The SHA1 hash of target process image or target file</td>
       <td class="example">
         <ul>
-          <li>39109eef00821658893b45634fe2f4664f880da9242712df907f1327d4ceefb8</li>
-          <li>49fa3e206abf6a1f4546417dbe09f3f06b38847866a4a66de75bd90f39cb6c1c</li>
-          <li>0969321ad5a0923f0f03896ad2c10e49290515c44b721d773942a37f62a24893</li>
+          <li>ded3833f145989fd86c1f4811b61497298ebc7fd</li>
+          <li>c4fa06404142f1994431f9eef3df2cbe0f1998f1</li>
+          <li>3c01d486ed5aa1ecc2d8f33dc24b0ed59b3e609e</li>
         </ul>
       </td>
       <td class="products">
@@ -2846,6 +2825,27 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint Sensor</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFileHashSha256</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA2</td>
+      <td class="description">The SHA256 hash of target process image or target file</td>
+      <td class="example">
+        <ul>
+          <li>39109eef00821658893b45634fe2f4664f880da9242712df907f1327d4ceefb8</li>
+          <li>49fa3e206abf6a1f4546417dbe09f3f06b38847866a4a66de75bd90f39cb6c1c</li>
+          <li>0969321ad5a0923f0f03896ad2c10e49290515c44b721d773942a37f62a24893</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2971,6 +2971,28 @@ This documentation provides detailed information about all fields available for 
       <td class="field-name">objectFilePath</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
+      <td class="general-field">FileFullPath</td>
+      <td class="description">The file path of the target process image or target file</td>
+      <td class="example">
+        <ul>
+          <li>c:\windows\system32\windowspowershell\v1.0\powershell.exe</li>
+          <li>zwwritevirtualmemory</li>
+          <li>c:\windows\system32\wbem\wmiprvse.exe</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFilePath</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
       <td class="general-field">
         <ul>
           <li>FileFullPath</li>
@@ -2994,23 +3016,21 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectFilePath</td>
-      <td class="type">string</td>
+      <td class="field-name">objectFileSize</td>
+      <td class="type">long</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileFullPath</td>
-      <td class="description">The file path of the target process image or target file</td>
+      <td class="general-field">-</td>
+      <td class="description">The object file size</td>
       <td class="example">
         <ul>
-          <li>c:\windows\system32\windowspowershell\v1.0\powershell.exe</li>
-          <li>zwwritevirtualmemory</li>
-          <li>c:\windows\system32\wbem\wmiprvse.exe</li>
+          <li>0</li>
+          <li>59456</li>
+          <li>60</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
           <li>Container Security</li>
         </ul>
       </td>
@@ -3033,26 +3053,6 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Data Detection and Response</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">objectFileSize</td>
-      <td class="type">long</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The object file size</td>
-      <td class="example">
-        <ul>
-          <li>0</li>
-          <li>59456</li>
-          <li>60</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -3185,27 +3185,6 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The object name</td>
-      <td class="example">
-        <ul>
-          <li>/usr/bin/bash</li>
-          <li>/bin/bash</li>
-          <li>/opt/folder1/probes/system/processes/processes</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">objectName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
       <td class="description">The base name of the object file or process</td>
       <td class="example">net.exe</td>
       <td class="products">
@@ -3217,12 +3196,18 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectPid</td>
-      <td class="type">int</td>
+      <td class="field-name">objectName</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The PID of target process</td>
-      <td class="example">-</td>
+      <td class="description">The object name</td>
+      <td class="example">
+        <ul>
+          <li>/usr/bin/bash</li>
+          <li>/bin/bash</li>
+          <li>/opt/folder1/probes/system/processes/processes</li>
+        </ul>
+      </td>
       <td class="products">
         <ul>
           <li>Endpoint &amp; Workload Security</li>
@@ -3248,6 +3233,21 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectPid</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The PID of target process</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3348,27 +3348,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">RegistryValueData</td>
-      <td class="description">The registry value data</td>
-      <td class="example">
-        <ul>
-          <li>{11111111-1111-1111-1111-111111111111}</li>
-          <li>1</li>
-          <li>0</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint Sensor</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">objectRegistryData</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">RegistryValueData</td>
       <td class="description">The registry data contents</td>
       <td class="example">C:\Program Files\AlertMedia\AlertMedia Desktop Notifications\AlertMedia.exe</td>
       <td class="products">
@@ -3380,16 +3359,16 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectRegistryKeyHandle</td>
+      <td class="field-name">objectRegistryData</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">RegistryKey</td>
-      <td class="description">The registry key</td>
+      <td class="general-field">RegistryValueData</td>
+      <td class="description">The registry value data</td>
       <td class="example">
         <ul>
-          <li>HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters</li>
-          <li>HKLM\system\currentcontrolset\services\w32time\config</li>
-          <li>HKLM\system\currentcontrolset\services\tcpip\parameters</li>
+          <li>{11111111-1111-1111-1111-111111111111}</li>
+          <li>1</li>
+          <li>0</li>
         </ul>
       </td>
       <td class="products">
@@ -3422,16 +3401,16 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectRegistryRoot</td>
-      <td class="type">int</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The Windows Registry Root ID</td>
+      <td class="field-name">objectRegistryKeyHandle</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">RegistryKey</td>
+      <td class="description">The registry key</td>
       <td class="example">
         <ul>
-          <li>3</li>
-          <li>1</li>
-          <li>2</li>
+          <li>HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters</li>
+          <li>HKLM\system\currentcontrolset\services\w32time\config</li>
+          <li>HKLM\system\currentcontrolset\services\tcpip\parameters</li>
         </ul>
       </td>
       <td class="products">
@@ -3463,22 +3442,22 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectRegistryValue</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">RegistryValue</td>
-      <td class="description">Registry value name</td>
+      <td class="field-name">objectRegistryRoot</td>
+      <td class="type">int</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The Windows Registry Root ID</td>
       <td class="example">
         <ul>
-          <li>lastknowngoodtime</li>
-          <li>threadingmodel</li>
-          <li>epoch</li>
+          <li>3</li>
+          <li>1</li>
+          <li>2</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
         </ul>
       </td>
@@ -3501,6 +3480,27 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectRegistryValue</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">RegistryValue</td>
+      <td class="description">Registry value name</td>
+      <td class="example">
+        <ul>
+          <li>lastknowngoodtime</li>
+          <li>threadingmodel</li>
+          <li>epoch</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3680,6 +3680,26 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="description">The owner name of the target process or the login user name</td>
       <td class="example">
         <ul>
+          <li>Système</li>
+          <li>SYSTEM</li>
+          <li>SISTEMA</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">objectUser</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">UserAccount</td>
+      <td class="description">The owner name of the target process or the login user name</td>
+      <td class="example">
+        <ul>
           <li>root</li>
           <li>SYSTEM</li>
           <li>oracle</li>
@@ -3695,22 +3715,21 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
-      <td class="field-name">objectUser</td>
+      <td class="field-name">objectUserDomain</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">UserAccount</td>
-      <td class="description">The owner name of the target process or the login user name</td>
+      <td class="general-field">-</td>
+      <td class="description">The owner domain of the target process</td>
       <td class="example">
         <ul>
-          <li>Système</li>
-          <li>SYSTEM</li>
-          <li>SISTEMA</li>
+          <li>NT AUTHORITY</li>
+          <li>UNEB</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -3731,25 +3750,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">objectUserDomain</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The owner domain of the target process</td>
-      <td class="example">
-        <ul>
-          <li>NT AUTHORITY</li>
-          <li>UNEB</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4261,6 +4261,22 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The PID of the parent process</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Deep Security</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">parentPid</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The PID of the parent process</td>
       <td class="example">
         <ul>
           <li>1</li>
@@ -4273,22 +4289,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">parentPid</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The PID of the parent process</td>
-      <td class="example">-</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Deep Security</li>
-          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -4378,6 +4378,15 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
+      <td class="description">The account name of the parent process</td>
+      <td class="example">Administrator</td>
+      <td class="products">Endpoint &amp; Workload Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">parentUser</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
       <td class="description">The type of user that executed the parent process</td>
       <td class="example">
         <ul>
@@ -4395,12 +4404,12 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
-      <td class="field-name">parentUser</td>
+      <td class="field-name">parentUserDomain</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The account name of the parent process</td>
-      <td class="example">Administrator</td>
+      <td class="description">The domain name of the parent process</td>
+      <td class="example">builtindomain</td>
       <td class="products">Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
@@ -4422,15 +4431,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">parentUserDomain</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The domain name of the parent process</td>
-      <td class="example">builtindomain</td>
-      <td class="products">Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
       <td class="field-name">plang</td>
@@ -4463,6 +4463,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint Sensor</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
+          <li>Container Security</li>
         </ul>
       </td>
     </tr>
@@ -4478,7 +4479,40 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint Sensor</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">pname</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The internal product ID</td>
+      <td class="example">
+        <ul>
+          <li>Trend Micro Deep Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Apex One</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Security</li>
+          <li>Cloud App Security</li>
+          <li>Email Security</li>
+          <li>TippingPoint Security Management System</li>
+          <li>Endpoint Sensor</li>
+          <li>Web Security</li>
+          <li>Cloud One Network Security</li>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>Mobile Security</li>
           <li>Container Security</li>
+          <li>Email Sensor</li>
+          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -4521,40 +4555,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
-          <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">pname</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The internal product ID</td>
-      <td class="example">
-        <ul>
-          <li>Trend Micro Deep Security</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Apex One</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-          <li>Apex One as a Service</li>
-          <li>Deep Security</li>
-          <li>Cloud App Security</li>
-          <li>Email Security</li>
-          <li>TippingPoint Security Management System</li>
-          <li>Endpoint Sensor</li>
-          <li>Web Security</li>
-          <li>Cloud One Network Security</li>
-          <li>Zero Trust Secure Access - Internet Access</li>
-          <li>Mobile Security</li>
-          <li>Container Security</li>
-          <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
@@ -4644,27 +4644,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">CLICommand</td>
-      <td class="description">The command line entry of the subject process</td>
-      <td class="example">
-        <ul>
-          <li>C:\Windows\system32\lsass.exe</li>
-          <li>C:\WINDOWS\system32\lsass.exe</li>
-          <li>nimbus(processes)</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint Sensor</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">processCmd</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">CLICommand</td>
       <td class="description">The subject process command line</td>
       <td class="example">
         <ul>
@@ -4682,6 +4661,42 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Container Security</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">processCmd</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">CLICommand</td>
+      <td class="description">The command line entry of the subject process</td>
+      <td class="example">
+        <ul>
+          <li>C:\Windows\system32\lsass.exe</li>
+          <li>C:\WINDOWS\system32\lsass.exe</li>
+          <li>nimbus(processes)</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processFileCreation</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Unix time of object creation</td>
+      <td class="example">
+        <ul>
+          <li>1645828113585</li>
+          <li>1655412594237</li>
+          <li>1647162053219</li>
+        </ul>
+      </td>
+      <td class="products">Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
       <td class="field-name">processFileCreation</td>
@@ -4703,21 +4718,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">processFileCreation</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The Unix time of object creation</td>
-      <td class="example">
-        <ul>
-          <li>1645828113585</li>
-          <li>1655412594237</li>
-          <li>1647162053219</li>
-        </ul>
-      </td>
-      <td class="products">Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
       <td class="field-name">processFileGroupName</td>
@@ -4766,27 +4766,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">FileMD5</td>
-      <td class="description">The MD5 hash of the subject process image</td>
-      <td class="example">
-        <ul>
-          <li>cd10cb894be2128fca0bf0e2b0c27c16</li>
-          <li>7ac47235c7bb452a03d3afd872f44c9e</li>
-          <li>cfd65bed18a1fae631091c3a4c4dd533</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">processFileHashMd5</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">FileMD5</td>
       <td class="description">The MD5 of the subject process</td>
       <td class="example">
         <ul>
@@ -4803,16 +4782,16 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
-      <td class="field-name">processFileHashSha1</td>
+      <td class="field-name">processFileHashMd5</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileSHA1</td>
-      <td class="description">The SHA1 hash of subject process image</td>
+      <td class="general-field">FileMD5</td>
+      <td class="description">The MD5 hash of the subject process image</td>
       <td class="example">
         <ul>
-          <li>1f912d4bec338ef10b7c9f19976286f8acc4eb97</li>
-          <li>ded3833f145989fd86c1f4811b61497298ebc7fd</li>
-          <li>9ad737cbd8bbdddc96726156dbd3bc03936bf02f</li>
+          <li>cd10cb894be2128fca0bf0e2b0c27c16</li>
+          <li>7ac47235c7bb452a03d3afd872f44c9e</li>
+          <li>cfd65bed18a1fae631091c3a4c4dd533</li>
         </ul>
       </td>
       <td class="products">
@@ -4845,16 +4824,16 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
-      <td class="field-name">processFileHashSha256</td>
+      <td class="field-name">processFileHashSha1</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">FileSHA2</td>
-      <td class="description">The SHA256 hash of subject process image</td>
+      <td class="general-field">FileSHA1</td>
+      <td class="description">The SHA1 hash of subject process image</td>
       <td class="example">
         <ul>
-          <li>f3feb95e7bcfb0766a694d93fca29eda7e2ca977c2395b4be75242814eb6d881</li>
-          <li>39109eef00821658893b45634fe2f4664f880da9242712df907f1327d4ceefb8</li>
-          <li>00f8cbc5b3a6640af5ac18d01bc5a666f6f583b1379b9491e0bcc28ba78c92e9</li>
+          <li>1f912d4bec338ef10b7c9f19976286f8acc4eb97</li>
+          <li>ded3833f145989fd86c1f4811b61497298ebc7fd</li>
+          <li>9ad737cbd8bbdddc96726156dbd3bc03936bf02f</li>
         </ul>
       </td>
       <td class="products">
@@ -4882,6 +4861,27 @@ if ($arrService.Status -ne &quot;Running&quot;)
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processFileHashSha256</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">FileSHA2</td>
+      <td class="description">The SHA256 hash of subject process image</td>
+      <td class="example">
+        <ul>
+          <li>f3feb95e7bcfb0766a694d93fca29eda7e2ca977c2395b4be75242814eb6d881</li>
+          <li>39109eef00821658893b45634fe2f4664f880da9242712df907f1327d4ceefb8</li>
+          <li>00f8cbc5b3a6640af5ac18d01bc5a666f6f583b1379b9491e0bcc28ba78c92e9</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -4955,6 +4955,33 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="general-field">
         <ul>
           <li>ProcessFullPath</li>
+          <li>FileFullPath</li>
+          <li>FileName</li>
+        </ul>
+      </td>
+      <td class="description">The file path of the subject process</td>
+      <td class="example">
+        <ul>
+          <li>c:\windows\system32\svchost.exe</li>
+          <li>c:\windows\system32\windowspowershell\v1.0\powershell.exe</li>
+          <li>c:\windows\syswow64\srts\wmipr.exe</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processFilePath</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>ProcessFullPath</li>
           <li>ProcessName</li>
           <li>FileFullPath</li>
           <li>FileName</li>
@@ -4973,33 +5000,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">processFilePath</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>ProcessFullPath</li>
-          <li>FileFullPath</li>
-          <li>FileName</li>
-        </ul>
-      </td>
-      <td class="description">The file path of the subject process</td>
-      <td class="example">
-        <ul>
-          <li>c:\windows\system32\svchost.exe</li>
-          <li>c:\windows\system32\windowspowershell\v1.0\powershell.exe</li>
-          <li>c:\windows\syswow64\srts\wmipr.exe</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -5088,27 +5088,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
     </tr>
     <tr>
       <td class="field-name">processLaunchTime</td>
-      <td class="type">real</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The time the subject process was launched</td>
-      <td class="example">
-        <ul>
-          <li>1653614775212</li>
-          <li>1656118626642</li>
-          <li>1652098160298</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">processLaunchTime</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
@@ -5123,16 +5102,16 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
-      <td class="field-name">processName</td>
-      <td class="type">string</td>
+      <td class="field-name">processLaunchTime</td>
+      <td class="type">real</td>
       <td class="searchable">true</td>
-      <td class="general-field">ProcessName</td>
-      <td class="description">The image name of the process that triggered the event</td>
+      <td class="general-field">-</td>
+      <td class="description">The time the subject process was launched</td>
       <td class="example">
         <ul>
-          <li>/usr/bin/bash</li>
-          <li>c:\windows\system32\svchost.exe</li>
-          <li>c:\windows\system32\lsass.exe</li>
+          <li>1653614775212</li>
+          <li>1656118626642</li>
+          <li>1652098160298</li>
         </ul>
       </td>
       <td class="products">
@@ -5167,17 +5146,16 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
-      <td class="field-name">processPid</td>
-      <td class="type">int</td>
+      <td class="field-name">processName</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The PID of the subject process</td>
+      <td class="general-field">ProcessName</td>
+      <td class="description">The image name of the process that triggered the event</td>
       <td class="example">
         <ul>
-          <li>4</li>
-          <li>1</li>
-          <li>784</li>
-          <li>792</li>
+          <li>/usr/bin/bash</li>
+          <li>c:\windows\system32\svchost.exe</li>
+          <li>c:\windows\system32\lsass.exe</li>
         </ul>
       </td>
       <td class="products">
@@ -5205,23 +5183,24 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
-      <td class="field-name">processSigner</td>
-      <td class="type">dynamic</td>
+      <td class="field-name">processPid</td>
+      <td class="type">int</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The process file signer</td>
+      <td class="description">The PID of the subject process</td>
       <td class="example">
         <ul>
-          <li>Microsoft Windows</li>
-          <li>Microsoft Windows Publisher</li>
-          <li>Microsoft Corporation</li>
+          <li>4</li>
+          <li>1</li>
+          <li>784</li>
+          <li>792</li>
         </ul>
       </td>
       <td class="products">
         <ul>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -5240,6 +5219,27 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="products">
         <ul>
           <li>Endpoint Sensor</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processSigner</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The process file signer</td>
+      <td class="example">
+        <ul>
+          <li>Microsoft Windows</li>
+          <li>Microsoft Windows Publisher</li>
+          <li>Microsoft Corporation</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
@@ -5298,27 +5298,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">UserAccount</td>
-      <td class="description">The owner name of subject process image</td>
-      <td class="example">
-        <ul>
-          <li>root</li>
-          <li>SYSTEM</li>
-          <li>SISTEMA</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">processUser</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">UserAccount</td>
       <td class="description">The user name of the process or the file creator</td>
       <td class="example">
         <ul>
@@ -5336,22 +5315,23 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
-      <td class="field-name">processUserDomain</td>
+      <td class="field-name">processUser</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The process user domain</td>
+      <td class="general-field">UserAccount</td>
+      <td class="description">The owner name of subject process image</td>
       <td class="example">
         <ul>
-          <li>NT AUTHORITY</li>
-          <li>AUTORIDADE NT</li>
+          <li>root</li>
+          <li>SYSTEM</li>
+          <li>SISTEMA</li>
         </ul>
       </td>
       <td class="products">
         <ul>
+          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -5372,6 +5352,26 @@ if ($arrService.Status -ne &quot;Running&quot;)
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">processUserDomain</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The process user domain</td>
+      <td class="example">
+        <ul>
+          <li>NT AUTHORITY</li>
+          <li>AUTORIDADE NT</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -5438,26 +5438,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
     </tr>
     <tr>
       <td class="field-name">proto</td>
-      <td class="type">int</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The protocol type</td>
-      <td class="example">
-        <ul>
-          <li>TELEMETRY_CONNECTION_TCP</li>
-          <li>TELEMETRY_CONNECTION_UDP</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">proto</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
@@ -5476,6 +5456,26 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>TXOne EdgeOne</li>
           <li>Container Security</li>
           <li>Mobile Network Security</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">proto</td>
+      <td class="type">int</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The protocol type</td>
+      <td class="example">
+        <ul>
+          <li>TELEMETRY_CONNECTION_TCP</li>
+          <li>TELEMETRY_CONNECTION_UDP</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
         </ul>
       </td>
@@ -5508,27 +5508,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="description">The product version</td>
       <td class="example">
         <ul>
-          <li>1.2.0.2752</li>
-          <li>1.0.345</li>
-          <li>1.2.0.2657</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">pver</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The product version</td>
-      <td class="example">
-        <ul>
           <li>20.0.0.4726</li>
           <li>20.0.0.4416</li>
           <li>6.2.1125</li>
@@ -5550,6 +5529,27 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">pver</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The product version</td>
+      <td class="example">
+        <ul>
+          <li>1.2.0.2752</li>
+          <li>1.0.345</li>
+          <li>1.2.0.2657</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -5613,12 +5613,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Europe (Frankfurt)</li>
         </ul>
       </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-        </ul>
-      </td>
+      <td class="products">Endpoint &amp; Workload Security</td>
     </tr>
     <tr>
       <td class="field-name">regionId</td>
@@ -5632,7 +5627,12 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Europe (Frankfurt)</li>
         </ul>
       </td>
-      <td class="products">Endpoint &amp; Workload Security</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">remarks</td>
@@ -5663,6 +5663,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Endpoint Sensor</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>
@@ -6080,20 +6081,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The sender GUID</td>
-      <td class="example">1A00203B-CDEF-45GH-IJ67-8901K2LM3456</td>
-      <td class="products">
-        <ul>
-          <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">senderGUID</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The sender GUID</td>
       <td class="example">
         <ul>
           <li>346648FC-9862-D2F0-F94C-FAB1A838ABD7</li>
@@ -6108,6 +6095,20 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">senderGUID</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sender GUID</td>
+      <td class="example">1A00203B-CDEF-45GH-IJ67-8901K2LM3456</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -6136,34 +6137,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="type">int</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The event severity</td>
-      <td class="example">
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-          <li>Deep Discovery Analyzer</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">severity</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
       <td class="description">The severity of the event</td>
       <td class="example">
         <ul>
@@ -6184,6 +6157,34 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Cloud One Network Security</li>
           <li>Container Security</li>
           <li>Mobile Network Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">severity</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event severity</td>
+      <td class="example">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
@@ -6262,28 +6263,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="type">int</td>
       <td class="searchable">true</td>
       <td class="general-field">Port</td>
-      <td class="description">The source port number</td>
-      <td class="example">
-        <ul>
-          <li>53</li>
-          <li>5353</li>
-          <li>443</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-          <li>Data Detection and Response</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">spt</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">Port</td>
       <td class="description">The source port</td>
       <td class="example">
         <ul>
@@ -6310,20 +6289,16 @@ if ($arrService.Status -ne &quot;Running&quot;)
       </td>
     </tr>
     <tr>
-      <td class="field-name">src</td>
-      <td class="type">string</td>
+      <td class="field-name">spt</td>
+      <td class="type">int</td>
       <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
-        </ul>
-      </td>
-      <td class="description">The source address</td>
+      <td class="general-field">Port</td>
+      <td class="description">The source port number</td>
       <td class="example">
         <ul>
-          <li>::</li>
-          <li>10.10.10.10</li>
+          <li>53</li>
+          <li>5353</li>
+          <li>443</li>
         </ul>
       </td>
       <td class="products">
@@ -6363,6 +6338,32 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">src</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>IPv4</li>
+          <li>IPv6</li>
+        </ul>
+      </td>
+      <td class="description">The source address</td>
+      <td class="example">
+        <ul>
+          <li>::</li>
+          <li>10.10.10.10</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -6761,15 +6762,19 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="description">The detected technique ID based on the alert filter</td>
       <td class="example">
         <ul>
-          <li>[&#x27;MITREV9.T1090&#x27;]</li>
-          <li>[&#x27;MITRE.T1071&#x27;]</li>
-          <li>[&#x27;MITREV9.T1059.001&#x27;]</li>
+          <li>MITREV9.T1090</li>
+          <li>MITRE.T1071</li>
+          <li>MITREV9.T1059.001</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Apex One as a Service</li>
+          <li>ALL</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>Apex One as a Service</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>
@@ -6786,19 +6791,15 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="description">The detected technique ID based on the alert filter</td>
       <td class="example">
         <ul>
-          <li>MITREV9.T1090</li>
-          <li>MITRE.T1071</li>
-          <li>MITREV9.T1059.001</li>
+          <li>[&#x27;MITREV9.T1090&#x27;]</li>
+          <li>[&#x27;MITRE.T1071&#x27;]</li>
+          <li>[&#x27;MITREV9.T1059.001&#x27;]</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>ALL</li>
-          <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
-          <li>Deep Discovery Inspector</li>
-          <li>Virtual Network Sensor</li>
-          <li>Endpoint Sensor</li>
+          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -6869,15 +6870,16 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="description">The target object type</td>
       <td class="example">
         <ul>
-          <li>Administrator</li>
-          <li>AgentInstaller</li>
-          <li>Host</li>
+          <li>File System</li>
+          <li>Uncategorized</li>
+          <li>Exploit</li>
         </ul>
       </td>
       <td class="products">
         <ul>
-          <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>Deep Security</li>
+          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -6889,16 +6891,15 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="description">The target object type</td>
       <td class="example">
         <ul>
-          <li>File System</li>
-          <li>Uncategorized</li>
-          <li>Exploit</li>
+          <li>Administrator</li>
+          <li>AgentInstaller</li>
+          <li>Host</li>
         </ul>
       </td>
       <td class="products">
         <ul>
+          <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
-          <li>Deep Security</li>
-          <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
     </tr>
@@ -7060,20 +7061,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The virtual private cloud that contains the cloud asset</td>
-      <td class="example">vpc-01234567890abcdef</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">vpcId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The virtual private cloud that contains the cloud asset</td>
       <td class="example">
         <ul>
           <li>vpc-01234567890abcdef</li>
@@ -7085,6 +7072,20 @@ if ($arrService.Status -ne &quot;Running&quot;)
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">vpcId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The virtual private cloud that contains the cloud asset</td>
+      <td class="example">vpc-01234567890abcdef</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
         </ul>
       </td>
     </tr>

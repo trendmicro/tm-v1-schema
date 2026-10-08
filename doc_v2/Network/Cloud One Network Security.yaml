@@ -296,6 +296,7 @@
   - sss
   - sig
   - xes
+  - okt
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'

@@ -269,6 +269,42 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">analysisResult</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The verdict determined by analyzing the user-reported email</td>
+      <td class="example">threat;high</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">analysisStage</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The stage of the analysis for the user-reported email (e.g. solution_ready)</td>
+      <td class="example">solution_ready</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">analysisSummary</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The user-reported email analysis summary</td>
+      <td class="example">This email impersonates an official security notice.</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">analysisSuspiciousIndicators</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The indicators identified by user-reported email analysis</td>
+      <td class="example">[&quot;Sender address does not match any known security provider&quot;,&quot;Urgent language pressuring the recipient to click a link&quot;]</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
       <td class="field-name">attachment</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -614,6 +650,24 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">chatGroupName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Microsoft Teams group/meeting chat where the detection occurred (null if no name)</td>
+      <td class="example">Sales Discussion Group</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">chatParticipants</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The comma-separated list of the Microsoft Teams group/meeting chat participants where the detection occurred</td>
+      <td class="example">Jane Smith, John Doe, Mary Major</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
       <td class="field-name">cloudAppName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -885,6 +939,15 @@ This documentation provides detailed information about all fields available for 
           <li>Email Sensor</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">feedbackId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The internal record ID of the user-reported email feedback</td>
+      <td class="example">12345</td>
+      <td class="products">Cloud App Security</td>
     </tr>
     <tr>
       <td class="field-name">filterName</td>
@@ -1789,6 +1852,15 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">mitigationMsgIds</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The remediated message IDs of the user-reported email</td>
+      <td class="example">[&quot;&lt;sample-id@trendmicro.com&gt;&quot;]</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
       <td class="field-name">msgId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -2085,6 +2157,7 @@ This documentation provides detailed information about all fields available for 
           <li>Cloud App Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>
@@ -2117,8 +2190,27 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Endpoint Sensor</li>
+          <li>Okta</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">reportCategory</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The user-reported email analysis category</td>
+      <td class="example">phishing</td>
+      <td class="products">Cloud App Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">reporter</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The email address of the user who reported an email for analysis</td>
+      <td class="example">sample_email@trendmicro.com</td>
+      <td class="products">Cloud App Security</td>
     </tr>
     <tr>
       <td class="field-name">reportGUID</td>
@@ -2517,6 +2609,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Cloud App Security</li>
           <li>Microsoft Entra ID</li>
+          <li>Okta</li>
         </ul>
       </td>
     </tr>
@@ -2643,7 +2736,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 119
+- **Total Fields:** 129
 - **Layer:** Email
 - **Product:** Cloud App Security
 
