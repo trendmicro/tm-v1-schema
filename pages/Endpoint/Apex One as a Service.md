@@ -262,6 +262,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -300,6 +301,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
         </ul>
       </td>
     </tr>
@@ -798,6 +800,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -1183,6 +1186,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -1230,6 +1234,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -2267,6 +2272,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -2361,6 +2367,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -2381,6 +2388,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -2398,6 +2406,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
         </ul>
       </td>
     </tr>
@@ -2439,6 +2448,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
         </ul>
       </td>
     </tr>
@@ -2484,6 +2494,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
         </ul>
       </td>
     </tr>
@@ -2519,6 +2530,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -7366,6 +7378,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
         </ul>
       </td>
     </tr>
@@ -7964,6 +7977,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
           <li>Mobile Network Security</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -8034,6 +8048,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Email Sensor</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -8281,6 +8296,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -8369,6 +8385,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -8422,6 +8439,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
