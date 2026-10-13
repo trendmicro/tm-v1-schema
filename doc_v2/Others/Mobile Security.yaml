@@ -735,6 +735,7 @@
   - mns
   - ddr
   - pan
+  - ips
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -782,6 +783,7 @@
   - ams
   - mns
   - sss
+  - ips
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log

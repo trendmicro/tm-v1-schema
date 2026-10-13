@@ -485,6 +485,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -766,6 +767,7 @@ This documentation provides detailed information about all fields available for 
           <li>Email Sensor</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>

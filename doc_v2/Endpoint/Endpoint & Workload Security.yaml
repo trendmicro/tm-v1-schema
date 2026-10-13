@@ -126,6 +126,7 @@
   - ptp
   - mns
   - sds
+  - ips
   Description_EN: The event category
   Sample:
   - Exploits
@@ -152,6 +153,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -177,6 +179,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The destination IP
   Sample:
   - 10.10.10.10
@@ -239,6 +242,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The destination port
   Sample:
   - 0
@@ -264,6 +268,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The source port
   Sample:
   - 53
@@ -732,6 +737,7 @@
   - xms
   - mns
   - ddr
+  - ips
   Description_EN: The name of the rule that triggered the event
   Sample:
   - Directory Server - Microsoft Windows Active Directory
@@ -757,6 +763,7 @@
   - pds
   - sao
   - mns
+  - ips
   Description_EN: The rule ID
   Sample:
   - 1002795
@@ -813,6 +820,7 @@
   - mns
   - ddr
   - pan
+  - ips
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -1022,6 +1030,7 @@
   - ams
   - mns
   - sss
+  - ips
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -4608,6 +4617,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   Description_EN: The event source type
   Sample:
   - 13 - EVENT_SOURCE_SYSTEM_EVENT
@@ -4619,6 +4629,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -4661,6 +4672,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   Description_EN: The product code
   Sample:
   - sao
@@ -4745,6 +4757,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -4761,6 +4774,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -4777,6 +4791,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   Description_EN: The sub-event ID
   Sample:
   - 1
@@ -4790,6 +4805,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   Description_EN: The sub-event type
   Sample:
   - All scan-related operations and results
@@ -4903,6 +4919,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -4918,6 +4935,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   Description_EN: The additional event information that was not part of the request
     or response
   Sample:
@@ -4931,6 +4949,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan

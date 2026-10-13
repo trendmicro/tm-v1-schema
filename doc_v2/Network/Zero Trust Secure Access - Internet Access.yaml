@@ -111,6 +111,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -136,6 +137,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The destination IP
   Sample:
   - 10.10.10.10
@@ -258,6 +260,7 @@
   - mns
   - ddr
   - pan
+  - ips
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -351,6 +354,7 @@
   - ams
   - mns
   - sss
+  - ips
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log

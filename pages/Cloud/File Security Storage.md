@@ -214,7 +214,12 @@ This documentation provides detailed information about all fields available for 
           <li>arn:aws:s3:::bucket-name/folder-name/file-name</li>
         </ul>
       </td>
-      <td class="products">File Security Storage</td>
+      <td class="products">
+        <ul>
+          <li>File Security Storage</li>
+          <li>Cloud IPS</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">cloudAccountId</td>
@@ -234,6 +239,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Container Security</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -485,6 +491,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
