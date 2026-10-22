@@ -2513,6 +2513,293 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: workspacePath
+  ProductCode:
+  - tlc
+  Description_EN: The local file system paths of the agent workspace
+  Sample:
+  - [C:\Users\user\Projects\example]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: terminalType
+  ProductCode:
+  - tlc
+  Description_EN: The session terminal or client
+  Sample:
+  - non-interactive
+  - vscode
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: agentSessionId
+  ProductCode:
+  - tlc
+  Description_EN: The agent session ID
+  Sample:
+  - session_000000000000000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: promptId
+  ProductCode:
+  - tlc
+  Description_EN: The user prompt ID
+  Sample:
+  - prompt_000000000000000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: modelName
+  ProductCode:
+  - tlc
+  Description_EN: The LLM model used for the call
+  Sample:
+  - claude-sonnet-5
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: cost
+  ProductCode:
+  - tlc
+  Description_EN: The call cost (in USD)
+  Sample:
+  - 0.0976406
+  DL_Type: real
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: inputTokens
+  ProductCode:
+  - tlc
+  Description_EN: The input token count of the call
+  Sample:
+  - 2
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: outputTokens
+  ProductCode:
+  - tlc
+  Description_EN: The output token count of the call
+  Sample:
+  - 192
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: durationMs
+  ProductCode:
+  - tlc
+  Description_EN: The duration of the call/tool/hook (in milliseconds)
+  Sample:
+  - 3544
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: toolName
+  ProductCode:
+  - tlc
+  Description_EN: The invoked agent tool
+  Sample:
+  - Bash
+  - Read
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: toolInput
+  ProductCode:
+  - tlc
+  Description_EN: The arguments passed to the tool (sensitive, content-gated)
+  Sample:
+  - '{"command":"example command"}'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mcpToolName
+  ProductCode:
+  - tlc
+  Description_EN: The specific action invoked on the connected MCP server
+  Sample:
+  - navigate
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: toolUseId
+  ProductCode:
+  - tlc
+  Description_EN: The per-invocation tool call ID (joins a tool_decision to a matching
+    tool_result)
+  Sample:
+  - tooluse_000000000000000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: toolSource
+  ProductCode:
+  - tlc
+  Description_EN: The tool provenance
+  Sample:
+  - builtin
+  - mcp
+  - sdk_host_builtin_mcp
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: decisionSource
+  ProductCode:
+  - tlc
+  Description_EN: The reason for a tool use decision
+  Sample:
+  - config
+  - user_permanent
+  - user_temporary
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: success
+  ProductCode:
+  - tlc
+  Description_EN: Whether the tool execution succeeded
+  Sample:
+  - true
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: clientApp
+  ProductCode:
+  - tlc
+  Description_EN: The AI client application
+  Sample:
+  - cowork
+  - claude-code
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: toolServerScope
+  ProductCode:
+  - tlc
+  Description_EN: The connected MCP server scope
+  Sample:
+  - user
+  - project
+  - dynamic
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: connectionStatus
+  ProductCode:
+  - tlc
+  Description_EN: The MCP server connection attempt result
+  Sample:
+  - connected
+  - failed
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: pluginName
+  ProductCode:
+  - tlc
+  Description_EN: The installed/loaded plugin name
+  Sample:
+  - telemetry
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: pluginScope
+  ProductCode:
+  - tlc
+  Description_EN: The plugin provenance or trust scope
+  Sample:
+  - official
+  - community
+  - user-local
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: marketplaceName
+  ProductCode:
+  - tlc
+  Description_EN: The marketplace the plugin is from
+  Sample:
+  - builtin
+  - inline
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: skillSource
+  ProductCode:
+  - tlc
+  Description_EN: The activated skill source
+  Sample:
+  - plugin
+  - bundled
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: subagentType
+  ProductCode:
+  - tlc
+  Description_EN: The spawned sub-agent type
+  Sample:
+  - general-purpose
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: previousPermissionMode
+  ProductCode:
+  - tlc
+  Description_EN: The prior agent permission mode before a change
+  Sample:
+  - default
+  - plan
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: currentPermissionMode
+  ProductCode:
+  - tlc
+  Description_EN: The new agent permission mode after a change
+  Sample:
+  - auto
+  - bypassPermissions
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: safeMode
+  ProductCode:
+  - tlc
+  Description_EN: Whether the plugin/session ran in a restricted safe mode
+  Sample:
+  - false
+  DL_Type: bool
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: fileOriginUrl
   ProductCode:
   - tlc
@@ -3803,6 +4090,226 @@
   Sample:
   - 1656355418449
   DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: webAclId
+  ProductCode:
+  - tlc
+  Description_EN: The AWS WAF web ACL GUID/ARN
+  Sample:
+  - arn:aws:wafv2:us-east-1:011528259929:regional/webacl/waf-test-acl/af7b9392-db0f-439f-8ec0-eca5441066e5
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleType
+  ProductCode:
+  - tlc
+  Description_EN: The type of rule that terminated request processing
+  Sample:
+  - REGULAR
+  - MANAGED_RULE_GROUP
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: extraInfo
+  ProductCode:
+  - tlc
+  Description_EN: The request rule match details
+  Sample:
+  - '{"conditionType":"XSS","location":"ALL_QUERY_ARGS","matchedData":["<","script"],"matchedFieldName":"q"}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: cloudResourceType
+  ProductCode:
+  - tlc
+  Description_EN: The AWS resource type
+  Sample:
+  - APIGW
+  - CF
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: cloudResourceId
+  ProductCode:
+  - tlc
+  Description_EN: The web ACL resource ID
+  Sample:
+  - 011528259929:5gw3gfte22:test
+  - E258L0H6VZIZMA
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: autonomousSystemNumber
+  ProductCode:
+  - tlc
+  Description_EN: The request origin IP ASN
+  Sample:
+  - 16509
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: forwardedAutonomousSystemNumber
+  ProductCode:
+  - tlc
+  Description_EN: The ASN of the IP that forwarded the request
+  Sample:
+  - 64512
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tlsJA3Fingerprint
+  ProductCode:
+  - tlc
+  Description_EN: The JA3 fingerprint of the request
+  Sample:
+  - 375c6162a492dfbf2795909110ce8424
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: tlsJA4Fingerprint
+  ProductCode:
+  - tlc
+  Description_EN: The JA4 fingerprint of the request
+  Sample:
+  - t13d4907h2_0d8feac7bc37_7395dae3b2f3
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestHeaders
+  ProductCode:
+  - tlc
+  Description_EN: The HTTP headers of the request
+  Sample:
+  - '[{"name":"Host","value":"5gw3gfte22.execute-api.us-east-1.amazonaws.com"}]'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: serverProtocol
+  ProductCode:
+  - tlc
+  Description_EN: The HTTP version of the request
+  Sample:
+  - HTTP/1.1
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestHeadersInserted
+  ProductCode:
+  - tlc
+  Description_EN: The headers inserted for custom request handling
+  Sample:
+  - '[{"name":"x-amzn-waf-test","value":"count-uri"}]'
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: requestOversizeFields
+  ProductCode:
+  - tlc
+  Description_EN: The fields in the request that were over the AWS WAF inspection
+    size limit
+  Sample:
+  - [REQUEST_BODY]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleGroupList
+  ProductCode:
+  - tlc
+  Description_EN: The rule groups that acted on the request, with match information
+  Sample:
+  - '{"excludedRules": {"exclusionType": "EXCLUDED_AS_COUNT","ruleId": "NoUserAgent_HEADER"},"ruleGroupId":"AWS#AWSManagedRulesCommonRuleSet,AWS#AWSManagedRulesSQLiRuleSet"}'
+  - '{"terminatingRule": {"action": "BLOCK","ruleId": "CrossSiteScripting_QUERYARGUMENTS","ruleMatchDetails":""},"ruleGroupId":"AWS#AWSManagedRulesCommonRuleSet"}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: nonTerminatingMatchingRule
+  ProductCode:
+  - tlc
+  Description_EN: The rules that matched but didn't terminate the request
+  Sample:
+  - '{"ruleId": "test-count-sqli","act": "COUNT","extraInfo": {"sensitivityLevel":
+    "LOW","conditionType": "SQL_INJECTION","matchedData": "id=1,OR,1,=,1","matchedFieldName":
+    "","location": "QUERY_STRING"}}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: excludedRules
+  ProductCode:
+  - tlc
+  Description_EN: The rule-group rules that were excluded (set to Count) for the request
+  Sample:
+  - '{"ruleId":"NoUserAgent_HEADER","ruleType":"EXCLUDED_AS_COUNT","act":"BLOCKED"}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: rateBasedRuleList
+  ProductCode:
+  - tlc
+  Description_EN: The rate-based rules that acted on the request
+  Sample:
+  - '{"limitValue": "10.10.10.10","ruleName": "test-rate-limit","maxRate": 100,"ruleId":
+    "arn:aws:wafv2:us-east-1:012528259929_MANAGED:regional/ipset/af7b9392-db0f-429f-8ec0-eca5441066e5_c2223423-d935-44d9-9017-c1ba196bc5a1_IPV4/dewewwe-d935-44d9-9017-c1ba196bc5a1","limitKey":
+    "IP"}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleLabel
+  ProductCode:
+  - tlc
+  Description_EN: The labels applied to the request
+  Sample:
+  - [awswaf:managed:aws:sql-database:SQLi_QueryArguments]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: captchaResponse
+  ProductCode:
+  - tlc
+  Description_EN: The CAPTCHA action status for the request
+  Sample:
+  - '{"responseCode":405,"failureReason":"TOKEN_MISSING"}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: challengeResponse
+  ProductCode:
+  - tlc
+  Description_EN: The Challenge action status for the request
+  Sample:
+  - '{"responseCode":202}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: monetizeVerifyResponse
+  ProductCode:
+  - tlc
+  Description_EN: The payment verification result when a Monetize action triggers
+    payment verification
+  Sample:
+  - '{"verificationStatus":"SERVICE_ERROR","chainName":"BASE_SEPOLIA","network":"eip155:84532","amount":"0.001000","currency":"USDC","asset":"0x036CbD53842c5426634e7929541eC2318f3dCF7e","currencyMode":"TEST"}'
+  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false

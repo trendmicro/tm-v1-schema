@@ -1,3 +1,16 @@
+- Name: signInCountries
+  ProductCode:
+  - sca
+  - aad
+  - okt
+  Description_EN: The countries from which a user signed in
+  Sample:
+  - PH
+  - AU
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: eventTime
   ProductCode:
   - aad
@@ -797,19 +810,6 @@
   - none
   - adminConfirmedSigninCompromised
   DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: signInCountries
-  ProductCode:
-  - sca
-  - aad
-  - okt
-  Description_EN: The countries from which a user signed in
-  Sample:
-  - PH
-  - AU
-  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
