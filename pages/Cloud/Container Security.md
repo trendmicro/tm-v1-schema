@@ -241,6 +241,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -277,6 +278,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Container Security</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -311,7 +313,7 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The cluster ID of the container</td>
-      <td class="example">ben_eks_test-20k90A3jGa4d3YMYfrdGIgs7g9u</td>
+      <td class="example">TestCluster-2HJdImvH6eO1fgTnCBK3xYA7Sph</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -320,16 +322,7 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The cluster ID of the container</td>
-      <td class="example">TestCluster-2HJdImvH6eO1fgTnCBK3xYA7Sph</td>
-      <td class="products">Container Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">clusterName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The cluster name of the container</td>
-      <td class="example">ben_eks_test</td>
+      <td class="example">ben_eks_test-20k90A3jGa4d3YMYfrdGIgs7g9u</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -339,6 +332,15 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The cluster name of the container</td>
       <td class="example">TestCluster</td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">clusterName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The cluster name of the container</td>
+      <td class="example">ben_eks_test</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -374,7 +376,7 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The Kubernetes container ID</td>
-      <td class="example">4102001853b8</td>
+      <td class="example">7d1e00176d78</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -383,16 +385,7 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The Kubernetes container ID</td>
-      <td class="example">7d1e00176d78</td>
-      <td class="products">Container Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">containerImage</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The Kubernetes container image</td>
-      <td class="example">dockerhub.io/ubuntu:latest</td>
+      <td class="example">4102001853b8</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -405,12 +398,12 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Container Security</td>
     </tr>
     <tr>
-      <td class="field-name">containerImageDigest</td>
+      <td class="field-name">containerImage</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The Kubernetes container image digest</td>
-      <td class="example">sha256:626ffe58f6e7566e00254b638eb7e0f3b11d4da9675088f4781a50ae288f3322</td>
+      <td class="description">The Kubernetes container image</td>
+      <td class="example">dockerhub.io/ubuntu:latest</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -423,12 +416,12 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Container Security</td>
     </tr>
     <tr>
-      <td class="field-name">containerName</td>
+      <td class="field-name">containerImageDigest</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The Kubernetes container name</td>
-      <td class="example">k8s_ubuntu_ubuntu-ds-fp2jk_default_00000000-0000-0000-0000-000000000000_2</td>
+      <td class="description">The Kubernetes container image digest</td>
+      <td class="example">sha256:626ffe58f6e7566e00254b638eb7e0f3b11d4da9675088f4781a50ae288f3322</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -438,6 +431,24 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The Kubernetes container name</td>
       <td class="example">k8s_democon_longrunl_default_11111111-1111-1111-1111-111111111111_0</td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">containerName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Kubernetes container name</td>
+      <td class="example">k8s_ubuntu_ubuntu-ds-fp2jk_default_00000000-0000-0000-0000-000000000000_2</td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">customAssetTags</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of custom asset tags</td>
+      <td class="example">{&quot;os&quot;:[&quot;linux&quot;, &quot;windows&quot;], &quot;org&quot;:[&quot;bu1&quot;]}</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -455,15 +466,6 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">customAssetTags</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The list of custom asset tags</td>
-      <td class="example">{&quot;os&quot;:[&quot;linux&quot;, &quot;windows&quot;], &quot;org&quot;:[&quot;bu1&quot;]}</td>
-      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">customTags</td>
@@ -520,6 +522,15 @@ This documentation provides detailed information about all fields available for 
       <td class="type">int</td>
       <td class="searchable">true</td>
       <td class="general-field">Port</td>
+      <td class="description">The destination port number</td>
+      <td class="example">-</td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">dpt</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">Port</td>
       <td class="description">The destination port</td>
       <td class="example">
         <ul>
@@ -542,16 +553,27 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">dpt</td>
-      <td class="type">int</td>
+      <td class="field-name">dst</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">Port</td>
-      <td class="description">The destination port number</td>
-      <td class="example">-</td>
+      <td class="general-field">
+        <ul>
+          <li>IPv4</li>
+          <li>IPv6</li>
+        </ul>
+      </td>
+      <td class="description">The destination IP address</td>
+      <td class="example">
+        <ul>
+          <li>::</li>
+          <li>10.10.10.10</li>
+        </ul>
+      </td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -582,27 +604,9 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">dst</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
-        </ul>
-      </td>
-      <td class="description">The destination IP address</td>
-      <td class="example">
-        <ul>
-          <li>::</li>
-          <li>10.10.10.10</li>
-        </ul>
-      </td>
-      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">endpointGUID</td>
@@ -635,6 +639,21 @@ This documentation provides detailed information about all fields available for 
     <tr>
       <td class="field-name">endpointHostName</td>
       <td class="type">string</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The host name of the container or node</td>
+      <td class="example">
+        <ul>
+          <li>PHILIPSIBE09</li>
+          <li>WHAM6WK8XG2</li>
+          <li>MacBook-Pro-del-Meno</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">endpointHostName</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">EndpointName</td>
       <td class="description">The endpoint hostname or node where the event was detected</td>
@@ -661,18 +680,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">endpointHostName</td>
-      <td class="type">string</td>
-      <td class="searchable">false</td>
+      <td class="field-name">eventId</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The host name of the container or node</td>
-      <td class="example">
-        <ul>
-          <li>PHILIPSIBE09</li>
-          <li>WHAM6WK8XG2</li>
-          <li>MacBook-Pro-del-Meno</li>
-        </ul>
-      </td>
+      <td class="description">Event type</td>
+      <td class="example">-</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -712,15 +725,6 @@ This documentation provides detailed information about all fields available for 
           <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">eventId</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">Event type</td>
-      <td class="example">-</td>
-      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">eventSubId</td>
@@ -928,6 +932,15 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The Kubernetes pod ID of the container</td>
+      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">k8sPodId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Kubernetes pod ID of the container</td>
       <td class="example">
         <ul>
           <li>00000000-0000-0000-0000-000000000000</li>
@@ -938,12 +951,12 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Container Security</td>
     </tr>
     <tr>
-      <td class="field-name">k8sPodId</td>
+      <td class="field-name">k8sPodName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The Kubernetes pod ID of the container</td>
-      <td class="example">11111111-1111-1111-1111-111111111111</td>
+      <td class="description">The Kubernetes pod name of the container</td>
+      <td class="example">longrunl</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -953,15 +966,6 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The Kubernetes pod name of the container</td>
       <td class="example">ubuntu-ds-fp2jk</td>
-      <td class="products">Container Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">k8sPodName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The Kubernetes pod name of the container</td>
-      <td class="example">longrunl</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -1119,6 +1123,26 @@ This documentation provides detailed information about all fields available for 
       <td class="field-name">objectFilePath</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
+      <td class="general-field">
+        <ul>
+          <li>FileFullPath</li>
+          <li>FileName</li>
+        </ul>
+      </td>
+      <td class="description">The file path of the target process image or target file</td>
+      <td class="example">
+        <ul>
+          <li>/usr/bin/bash</li>
+          <li>/bin/bash</li>
+          <li>/opt/folder1/probes/system/processes/processes</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">objectFilePath</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
       <td class="general-field">FileFullPath</td>
       <td class="description">The file path of the target process image or target file</td>
       <td class="example">
@@ -1136,26 +1160,6 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">objectFilePath</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>FileFullPath</li>
-          <li>FileName</li>
-        </ul>
-      </td>
-      <td class="description">The file path of the target process image or target file</td>
-      <td class="example">
-        <ul>
-          <li>/usr/bin/bash</li>
-          <li>/bin/bash</li>
-          <li>/opt/folder1/probes/system/processes/processes</li>
-        </ul>
-      </td>
-      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">objectFileSize</td>
@@ -1206,6 +1210,21 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">CLICommand</td>
+      <td class="description">The command line entry of the parent process</td>
+      <td class="example">
+        <ul>
+          <li>C:\WINDOWS\system32\services.exe</li>
+          <li>C:\Windows\system32\services.exe</li>
+          <li>/sbin/launchd</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">parentCmd</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">CLICommand</td>
       <td class="description">The command line of the subject parent process</td>
       <td class="example">
         <ul>
@@ -1220,21 +1239,6 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">parentCmd</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">CLICommand</td>
-      <td class="description">The command line entry of the parent process</td>
-      <td class="example">
-        <ul>
-          <li>C:\WINDOWS\system32\services.exe</li>
-          <li>C:\Windows\system32\services.exe</li>
-          <li>/sbin/launchd</li>
-        </ul>
-      </td>
-      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">parentFilePath</td>
@@ -1274,26 +1278,6 @@ This documentation provides detailed information about all fields available for 
     <tr>
       <td class="field-name">parentName</td>
       <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The image name of the parent process</td>
-      <td class="example">
-        <ul>
-          <li>explorer.exe</li>
-          <li>startup.exe</li>
-          <li>svchost.exe</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint Sensor</li>
-          <li>Container Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">parentName</td>
-      <td class="type">string</td>
       <td class="searchable">false</td>
       <td class="general-field">-</td>
       <td class="description">The image name of the parent process</td>
@@ -1307,17 +1291,21 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Container Security</td>
     </tr>
     <tr>
-      <td class="field-name">parentPid</td>
-      <td class="type">int</td>
+      <td class="field-name">parentName</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The PID of the parent process</td>
-      <td class="example">-</td>
+      <td class="description">The image name of the parent process</td>
+      <td class="example">
+        <ul>
+          <li>explorer.exe</li>
+          <li>startup.exe</li>
+          <li>svchost.exe</li>
+        </ul>
+      </td>
       <td class="products">
         <ul>
-          <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
-          <li>Deep Security</li>
           <li>Container Security</li>
         </ul>
       </td>
@@ -1339,6 +1327,31 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Container Security</td>
     </tr>
     <tr>
+      <td class="field-name">parentPid</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The PID of the parent process</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Deep Security</li>
+          <li>Container Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">platformAssetTags</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The list of platform custom asset tags</td>
+      <td class="example">{&quot;Asset group&quot;:[&quot;finance&quot;], &quot;some.ip&quot;: [&quot;10.1.0.1&quot;]}</td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
       <td class="field-name">platformAssetTags</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -1353,15 +1366,6 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">platformAssetTags</td>
-      <td class="type">dynamic</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The list of platform custom asset tags</td>
-      <td class="example">{&quot;Asset group&quot;:[&quot;finance&quot;], &quot;some.ip&quot;: [&quot;10.1.0.1&quot;]}</td>
-      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">pname</td>
@@ -1400,6 +1404,15 @@ This documentation provides detailed information about all fields available for 
     <tr>
       <td class="field-name">policyId</td>
       <td class="type">string</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The policy ID</td>
+      <td class="example">TestPolicy-2HJe25H4GY4upSuNNAG1pci2BIm</td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">policyId</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The policy ID of which the event was detected</td>
@@ -1424,12 +1437,12 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">policyId</td>
+      <td class="field-name">policyName</td>
       <td class="type">string</td>
       <td class="searchable">false</td>
       <td class="general-field">-</td>
-      <td class="description">The policy ID</td>
-      <td class="example">TestPolicy-2HJe25H4GY4upSuNNAG1pci2BIm</td>
+      <td class="description">The name of the triggered policy</td>
+      <td class="example">TestPolicy</td>
       <td class="products">Container Security</td>
     </tr>
     <tr>
@@ -1460,15 +1473,6 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">policyName</td>
-      <td class="type">string</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The name of the triggered policy</td>
-      <td class="example">TestPolicy</td>
-      <td class="products">Container Security</td>
-    </tr>
-    <tr>
       <td class="field-name">principalName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1485,6 +1489,21 @@ This documentation provides detailed information about all fields available for 
           <li>Okta</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">processCmd</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">CLICommand</td>
+      <td class="description">Command line entry of subject process</td>
+      <td class="example">
+        <ul>
+          <li>C:\WINDOWS\system32\services.exe</li>
+          <li>C:\Windows\system32\services.exe</li>
+          <li>/sbin/launchd</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">processCmd</td>
@@ -1508,21 +1527,6 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">processCmd</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">CLICommand</td>
-      <td class="description">Command line entry of subject process</td>
-      <td class="example">
-        <ul>
-          <li>C:\WINDOWS\system32\services.exe</li>
-          <li>C:\Windows\system32\services.exe</li>
-          <li>/sbin/launchd</li>
-        </ul>
-      </td>
-      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">processFilePath</td>
@@ -1584,6 +1588,21 @@ This documentation provides detailed information about all fields available for 
       <td class="description">The image name of the process that triggered the event</td>
       <td class="example">
         <ul>
+          <li>/usr/bin/bash</li>
+          <li>c:\windows\system32\svchost.exe</li>
+          <li>c:\windows\system32\lsass.exe</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">processName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">ProcessName</td>
+      <td class="description">The image name of the process that triggered the event</td>
+      <td class="example">
+        <ul>
           <li>c:\windows\system32\svchost.exe</li>
           <li>/usr/bin/python2.7</li>
           <li>/usr/bin/sed</li>
@@ -1594,37 +1613,6 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Deep Security</li>
-          <li>Container Security</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">processName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">ProcessName</td>
-      <td class="description">The image name of the process that triggered the event</td>
-      <td class="example">
-        <ul>
-          <li>/usr/bin/bash</li>
-          <li>c:\windows\system32\svchost.exe</li>
-          <li>c:\windows\system32\lsass.exe</li>
-        </ul>
-      </td>
-      <td class="products">Container Security</td>
-    </tr>
-    <tr>
-      <td class="field-name">processPid</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The PID of the subject process</td>
-      <td class="example">-</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
           <li>Container Security</li>
           <li>Apex One as a Service</li>
         </ul>
@@ -1647,6 +1635,22 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Container Security</td>
     </tr>
     <tr>
+      <td class="field-name">processPid</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The PID of the subject process</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Container Security</li>
+          <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">processUser</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1666,6 +1670,20 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">proto</td>
+      <td class="type">string</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The protocol type</td>
+      <td class="example">
+        <ul>
+          <li>TELEMETRY_CONNECTION_TCP</li>
+          <li>TELEMETRY_CONNECTION_UDP</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">proto</td>
@@ -1692,15 +1710,16 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">proto</td>
+      <td class="field-name">pver</td>
       <td class="type">string</td>
-      <td class="searchable">false</td>
+      <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The protocol type</td>
+      <td class="description">The product version</td>
       <td class="example">
         <ul>
-          <li>TELEMETRY_CONNECTION_TCP</li>
-          <li>TELEMETRY_CONNECTION_UDP</li>
+          <li>1.2.0.2752</li>
+          <li>1.0.345</li>
+          <li>1.2.0.2657</li>
         </ul>
       </td>
       <td class="products">Container Security</td>
@@ -1738,21 +1757,6 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
-      <td class="field-name">pver</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The product version</td>
-      <td class="example">
-        <ul>
-          <li>1.2.0.2752</li>
-          <li>1.0.345</li>
-          <li>1.2.0.2657</li>
-        </ul>
-      </td>
-      <td class="products">Container Security</td>
-    </tr>
-    <tr>
       <td class="field-name">rawDataStr</td>
       <td class="type">string</td>
       <td class="searchable">false</td>
@@ -1771,6 +1775,7 @@ This documentation provides detailed information about all fields available for 
           <li>Virtual Network Sensor</li>
           <li>Container Security</li>
           <li>Virtual Network Sensor</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -1853,6 +1858,15 @@ This documentation provides detailed information about all fields available for 
     <tr>
       <td class="field-name">ruleIdStr</td>
       <td class="type">string</td>
+      <td class="searchable">false</td>
+      <td class="general-field">-</td>
+      <td class="description">The rule ID</td>
+      <td class="example">TM-00000036</td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">ruleIdStr</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The rule ID</td>
@@ -1864,15 +1878,6 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint Sensor</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">ruleIdStr</td>
-      <td class="type">string</td>
-      <td class="searchable">false</td>
-      <td class="general-field">-</td>
-      <td class="description">The rule ID</td>
-      <td class="example">TM-00000036</td>
-      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">ruleName</td>
@@ -1912,6 +1917,7 @@ This documentation provides detailed information about all fields available for 
           <li>Email Sensor</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -2050,6 +2056,21 @@ This documentation provides detailed information about all fields available for 
       <td class="type">int</td>
       <td class="searchable">true</td>
       <td class="general-field">Port</td>
+      <td class="description">The source port number</td>
+      <td class="example">
+        <ul>
+          <li>53</li>
+          <li>5353</li>
+          <li>443</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">spt</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">Port</td>
       <td class="description">The source port</td>
       <td class="example">
         <ul>
@@ -2072,20 +2093,25 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td class="field-name">spt</td>
-      <td class="type">int</td>
+      <td class="field-name">src</td>
+      <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">Port</td>
-      <td class="description">The source port number</td>
+      <td class="general-field">
+        <ul>
+          <li>IPv4</li>
+          <li>IPv6</li>
+        </ul>
+      </td>
+      <td class="description">The source address</td>
       <td class="example">
         <ul>
-          <li>53</li>
-          <li>5353</li>
-          <li>443</li>
+          <li>::</li>
+          <li>10.10.10.10</li>
         </ul>
       </td>
       <td class="products">Container Security</td>
@@ -2118,27 +2144,9 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-      <td class="field-name">src</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">
-        <ul>
-          <li>IPv4</li>
-          <li>IPv6</li>
-        </ul>
-      </td>
-      <td class="description">The source address</td>
-      <td class="example">
-        <ul>
-          <li>::</li>
-          <li>10.10.10.10</li>
-        </ul>
-      </td>
-      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">srcFileHashSha1</td>

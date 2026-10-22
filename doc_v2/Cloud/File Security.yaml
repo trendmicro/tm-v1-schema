@@ -210,6 +210,7 @@
   - mns
   - ddr
   - pan
+  - ips
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -565,3 +566,185 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: eventSourceType
+  ProductCode:
+  - sao
+  - sds
+  - sfs
+  Description_EN: The event source type
+  Sample:
+  - 13 - EVENT_SOURCE_SYSTEM_EVENT
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventTime
+  ProductCode:
+  - sao
+  - sds
+  - sfs
+  - pdi
+  - xns
+  - pan
+  Description_EN: The time the agent or product detected the event
+  Sample:
+  - 1656324260000
+  - 1728192606034
+  - 1758293606034
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: productCode
+  ProductCode:
+  - sao
+  - sds
+  - sfs
+  Description_EN: The product code
+  Sample:
+  - sao
+  - sds
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventId
+  ProductCode:
+  - sao
+  - sds
+  - sfs
+  - pdi
+  - xns
+  - pan
+  Description_EN: The event ID
+  Sample:
+  - 1010001
+  - 1010002
+  - 1010003
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventName
+  ProductCode:
+  - sao
+  - sds
+  - sfs
+  - pdi
+  - xns
+  - pan
+  Description_EN: The event type
+  Sample:
+  - scan
+  - service
+  - upgrade
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: eventSubId
+  ProductCode:
+  - sao
+  - sds
+  - sfs
+  Description_EN: The sub-event ID
+  Sample:
+  - 1
+  - 2
+  - 732
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: eventSubName
+  ProductCode:
+  - sao
+  - sds
+  - sfs
+  Description_EN: The sub-event type
+  Sample:
+  - All scan-related operations and results
+  - Manual Malware Scan Failure Resolved
+  - Agent Version Changed
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: description
+  ProductCode:
+  - sao
+  - sds
+  - sfs
+  - pdi
+  - xns
+  - pan
+  Description_EN: The additional event details
+  Sample:
+  - Agent upgrade applied manually, automatically, or via scheduled maintenance, reflecting
+    any user-initiated or policy-triggered update
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: additionalEventData
+  ProductCode:
+  - sao
+  - sds
+  - sfs
+  Description_EN: The additional event information that was not part of the request
+    or response
+  Sample:
+  - '{"AU_source":"https://activeupdate.trendmicro.com/server.ini","New Version":{"1234567800":"20.123.00","1234567820":"3.456.00","1234567840":
+    "32"}}'
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: severity
+  ProductCode:
+  - sao
+  - sds
+  - sfs
+  - pdi
+  - xns
+  - pan
+  Description_EN: The event severity
+  Sample:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  DL_Type: int
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: pver
+  ProductCode:
+  - sfs
+  - pdi
+  - xns
+  - pan
+  Description_EN: The product version
+  Sample:
+  - 6.2.1125
+  - 1.0.1524
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleName
+  ProductCode:
+  - sfs
+  - pan
+  Description_EN: The name of the rule that triggered the event
+  Sample:
+  - High Memory Usage
+  - Long Virtual Analyzer Processing Time
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true

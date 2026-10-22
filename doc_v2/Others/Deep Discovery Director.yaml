@@ -1,6 +1,7 @@
 - Name: flowId
   ProductCode:
   - sna
+  - ips
   Description_EN: The connection ID
   Sample:
   - '6717474604962545666'
