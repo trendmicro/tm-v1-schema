@@ -63,7 +63,7 @@
   DL_Type: string
 
 - Name: cloudStorageName
-  Description_EN: The cloud storage name
+  Description_EN: The file or folder URL
   DL_Type: string
 
 - Name: correlationId
@@ -391,7 +391,7 @@
   DL_Type: string
 
 - Name: userType
-  Description_EN: The Claude user type
+  Description_EN: The tenant user type
   DL_Type: string
 
 - Name: vendorLogId

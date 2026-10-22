@@ -241,6 +241,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -351,11 +352,13 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The authorization type</td>
+      <td class="description">The authentication method</td>
       <td class="example">
         <ul>
-          <li>Cookie JWT</li>
-          <li>No Auth</li>
+          <li>ordereddict({&#x27;Cookie JWT&#x27;: &#x27;Authenticated by browser cookie with JWT token&#x27;})</li>
+          <li>ordereddict({&#x27;Agent JWT&#x27;: &#x27;Authenticated by Secure Access Module with JWT token&#x27;})</li>
+          <li>ordereddict({&#x27;IP&#x27;: &#x27;Authentication bypassed by private IP.&#x27;})</li>
+          <li>ordereddict({&#x27;No Auth&#x27;: &#x27;No authentication.&#x27;})</li>
         </ul>
       </td>
       <td class="products">Zero Trust Secure Access - Internet Access</td>
@@ -365,13 +368,11 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The authentication method</td>
+      <td class="description">The authorization type</td>
       <td class="example">
         <ul>
-          <li>ordereddict({&#x27;Cookie JWT&#x27;: &#x27;Authenticated by browser cookie with JWT token&#x27;})</li>
-          <li>ordereddict({&#x27;Agent JWT&#x27;: &#x27;Authenticated by Secure Access Module with JWT token&#x27;})</li>
-          <li>ordereddict({&#x27;IP&#x27;: &#x27;Authentication bypassed by private IP.&#x27;})</li>
-          <li>ordereddict({&#x27;No Auth&#x27;: &#x27;No authentication.&#x27;})</li>
+          <li>Cookie JWT</li>
+          <li>No Auth</li>
         </ul>
       </td>
       <td class="products">Zero Trust Secure Access - Internet Access</td>
@@ -630,6 +631,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -880,6 +882,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -2004,6 +2007,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>

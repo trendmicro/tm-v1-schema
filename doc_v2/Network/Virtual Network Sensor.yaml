@@ -162,6 +162,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -187,6 +188,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The destination IP
   Sample:
   - 10.10.10.10
@@ -257,6 +259,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The destination port
   Sample:
   - 0
@@ -282,6 +285,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The source port
   Sample:
   - 53
@@ -676,6 +680,7 @@
   - xms
   - mns
   - ddr
+  - ips
   Description_EN: The name of the rule that triggered the event
   Sample:
   - Directory Server - Microsoft Windows Active Directory
@@ -701,6 +706,7 @@
   - pds
   - sao
   - mns
+  - ips
   Description_EN: The rule ID
   Sample:
   - 1002795
@@ -757,6 +763,7 @@
   - mns
   - ddr
   - pan
+  - ips
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -854,6 +861,7 @@
   - ams
   - mns
   - sss
+  - ips
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -2539,6 +2547,7 @@
   - xns
   - scs
   - xns
+  - ips
   Description_EN: The JSON string that contains additional information
   Sample: &id002
   - '{"TLS version": "0x0303", "Cipher Suite": "0xc030"}'
@@ -3884,6 +3893,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -3915,6 +3925,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -3931,6 +3942,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -3947,6 +3959,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -3962,6 +3975,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -4029,6 +4043,7 @@
   DL_Aggregable: true
 - Name: pver
   ProductCode:
+  - sfs
   - pdi
   - xns
   - pan
