@@ -241,6 +241,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -1297,6 +1298,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -1617,6 +1619,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -1648,6 +1651,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -1942,6 +1946,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -2002,6 +2007,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -2046,6 +2052,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -2107,6 +2114,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -3703,6 +3711,7 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -3749,6 +3758,7 @@ This documentation provides detailed information about all fields available for 
           <li>Virtual Network Sensor</li>
           <li>Container Security</li>
           <li>Virtual Network Sensor</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -4466,6 +4476,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
           <li>Mobile Network Security</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -4507,6 +4518,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Email Sensor</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -4860,6 +4872,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -4963,6 +4976,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -4994,6 +5008,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>

@@ -71,6 +71,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -96,6 +97,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The destination IP
   Sample:
   - 10.10.10.10
@@ -120,6 +122,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The destination port
   Sample:
   - 0
@@ -145,6 +148,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The source port
   Sample:
   - 53
@@ -346,6 +350,7 @@
   - mns
   - ddr
   - pan
+  - ips
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -762,6 +767,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -793,6 +799,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -809,6 +816,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -825,6 +833,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -840,6 +849,7 @@
   ProductCode:
   - sao
   - sds
+  - sfs
   - pdi
   - xns
   - pan
@@ -907,6 +917,7 @@
   DL_Aggregable: true
 - Name: pver
   ProductCode:
+  - sfs
   - pdi
   - xns
   - pan
@@ -982,6 +993,7 @@
   DL_Aggregable: true
 - Name: ruleName
   ProductCode:
+  - sfs
   - pan
   Description_EN: The name of the rule that triggered the event
   Sample:

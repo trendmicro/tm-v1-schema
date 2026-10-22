@@ -528,7 +528,7 @@
   DL_Type: string
 
 - Name: ruleType
-  Description_EN: The rule type which is applied to the traffic
+  Description_EN: The type of rule that terminated request processing
   DL_Type: string
 
 - Name: ruleUuid
@@ -598,7 +598,7 @@
   DL_Type: string
 
 - Name: sessionStart
-  Description_EN: The session start time (in seconds)
+  Description_EN: The session start name (in seconds)
   DL_Type: long
 
 - Name: simulation
@@ -718,7 +718,7 @@
   DL_Type: int
 
 - Name: tlsJA3Fingerprint
-  Description_EN: The JA3 fingerprint
+  Description_EN: The JA3 fingerprint of the request
   DL_Type: string
 
 - Name: tlsJA3SFingerprint

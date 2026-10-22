@@ -283,7 +283,7 @@
   DL_Type: string
 
 - Name: cloudResourceId
-  Description_EN: The cloud resource ID
+  Description_EN: The web ACL resource ID
   DL_Type: string
 
 - Name: cloudResourceTags
@@ -299,7 +299,7 @@
   DL_Type: string
 
 - Name: cloudStorageName
-  Description_EN: The cloud storage name
+  Description_EN: The file or folder URL
   DL_Type: string
 
 - Name: clusterId
@@ -356,7 +356,7 @@
   DL_Type: string
 
 - Name: containerName
-  Description_EN: The Kubernetes container name
+  Description_EN: The Kubernetes container name associated with the event
   DL_Type: string
 
 - Name: correlatedIntelligence
@@ -990,7 +990,7 @@
   DL_Type: string
 
 - Name: k8sNamespace
-  Description_EN: The Kubernetes namespace of the container
+  Description_EN: The Kubernetes namespace associated with the event
   DL_Type: string
 
 - Name: k8sPodId
@@ -998,7 +998,7 @@
   DL_Type: string
 
 - Name: k8sPodName
-  Description_EN: The Kubernetes pod name of the container
+  Description_EN: The Kubernetes pod name associated with the event
   DL_Type: string
 
 - Name: lastConnectedTime
@@ -1893,7 +1893,7 @@
   DL_Type: string
 
 - Name: ruleType
-  Description_EN: The rule type which is applied to the traffic
+  Description_EN: The type of rule that terminated request processing
   DL_Type: string
 
 - Name: ruleUuid
@@ -1958,7 +1958,7 @@
   DL_Type: long
 
 - Name: sessionStart
-  Description_EN: The session start time (in seconds)
+  Description_EN: The session start name (in seconds)
   DL_Type: long
 
 - Name: severity

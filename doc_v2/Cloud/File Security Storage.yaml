@@ -193,6 +193,7 @@
   - mns
   - ddr
   - pan
+  - ips
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -417,6 +418,7 @@
   - sfc
   - sss
   - scs
+  - ips
   Description_EN: The AWS cloud account ID, Google Cloud product ID, or Azure subscription
     ID
   Sample:
@@ -442,6 +444,7 @@
 - Name: awsResourceArn
   ProductCode:
   - sfc
+  - ips
   Description_EN: The Amazon Resource Name
   Sample:
   - arn:aws:s3:::bucket-name/object-key

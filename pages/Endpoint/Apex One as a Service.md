@@ -262,6 +262,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -300,6 +301,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
         </ul>
       </td>
     </tr>
@@ -798,6 +800,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -1183,6 +1186,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -1230,6 +1234,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -1336,6 +1341,20 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">endpointGUID</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EndpointID</td>
+      <td class="description">The GUID of the agent which reported the event</td>
+      <td class="example">1A00203B-CDEF-45GH-IJ67-8901K2LM3456</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">endpointGuid</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1347,20 +1366,6 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">endpointGUID</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">EndpointID</td>
-      <td class="description">The GUID of the agent which reported the event</td>
-      <td class="example">1A00203B-CDEF-45GH-IJ67-8901K2LM3456</td>
-      <td class="products">
-        <ul>
-          <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -1397,6 +1402,26 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">EndpointName</td>
+      <td class="description">The endpoint hostname</td>
+      <td class="example">
+        <ul>
+          <li>PHILIPSIBE09</li>
+          <li>WHAM6WK8XG2</li>
+          <li>MacBook-Pro-del-Meno</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">endpointHostName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">EndpointName</td>
       <td class="description">The host name of the endpoint on which the event was detected</td>
       <td class="example">
         <ul>
@@ -1410,26 +1435,6 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">endpointHostName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">EndpointName</td>
-      <td class="description">The endpoint hostname</td>
-      <td class="example">
-        <ul>
-          <li>PHILIPSIBE09</li>
-          <li>WHAM6WK8XG2</li>
-          <li>MacBook-Pro-del-Meno</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -2237,21 +2242,6 @@ This documentation provides detailed information about all fields available for 
     </tr>
     <tr>
       <td class="field-name">eventId</td>
-      <td class="type">int</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">Event type</td>
-      <td class="example">-</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">eventId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
@@ -2267,9 +2257,25 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventId</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Event type</td>
+      <td class="example">-</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -2361,6 +2367,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -2381,6 +2388,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -2398,6 +2406,28 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventSubId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sub-event ID</td>
+      <td class="example">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>732</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
         </ul>
       </td>
     </tr>
@@ -2419,26 +2449,6 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">eventSubId</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The sub-event ID</td>
-      <td class="example">
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>732</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Apex One as a Service</li>
-          <li>Endpoint &amp; Workload Security</li>
         </ul>
       </td>
     </tr>
@@ -2484,21 +2494,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">eventTime</td>
-      <td class="type">real</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
-      <td class="description">The time the agent detected the event</td>
-      <td class="example">1657781088000</td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
+          <li>File Security</li>
         </ul>
       </td>
     </tr>
@@ -2519,9 +2515,25 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventTime</td>
+      <td class="type">real</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The time the agent detected the event</td>
+      <td class="example">1657781088000</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -6338,27 +6350,6 @@ if ($arrService.Status -ne &quot;Running&quot;)
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">Internal product ID (Deprecated, use productCode)</td>
-      <td class="example">
-        <ul>
-          <li>2200</li>
-          <li>751</li>
-          <li>533</li>
-        </ul>
-      </td>
-      <td class="products">
-        <ul>
-          <li>Endpoint &amp; Workload Security</li>
-          <li>Endpoint Sensor</li>
-          <li>Apex One as a Service</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">pname</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
-      <td class="general-field">-</td>
       <td class="description">The product name</td>
       <td class="example">
         <ul>
@@ -6373,6 +6364,27 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">pname</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">Internal product ID (Deprecated, use productCode)</td>
+      <td class="example">
+        <ul>
+          <li>2200</li>
+          <li>751</li>
+          <li>533</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>Endpoint Sensor</li>
+          <li>Apex One as a Service</li>
         </ul>
       </td>
     </tr>
@@ -7366,6 +7378,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
         </ul>
       </td>
     </tr>
@@ -7964,6 +7977,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
           <li>Mobile Network Security</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -8034,6 +8048,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Email Sensor</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -8281,6 +8296,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -8369,6 +8385,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -8422,6 +8439,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>

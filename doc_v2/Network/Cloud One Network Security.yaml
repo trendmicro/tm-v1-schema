@@ -39,6 +39,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -64,6 +65,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The destination IP
   Sample:
   - 10.10.10.10
@@ -126,6 +128,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The destination port
   Sample:
   - 0
@@ -151,6 +154,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The source port
   Sample:
   - 53
@@ -199,6 +203,7 @@
   - xms
   - mns
   - ddr
+  - ips
   Description_EN: The name of the rule that triggered the event
   Sample:
   - Directory Server - Microsoft Windows Active Directory
@@ -240,6 +245,7 @@
   - mns
   - ddr
   - pan
+  - ips
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -348,6 +354,7 @@
   - ams
   - mns
   - sss
+  - ips
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log

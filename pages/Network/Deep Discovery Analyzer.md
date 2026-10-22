@@ -364,6 +364,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -543,6 +544,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -574,6 +576,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -747,6 +750,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -807,6 +811,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -827,6 +832,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -850,6 +856,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -1211,6 +1218,7 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="products">
         <ul>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -1283,7 +1291,12 @@ This documentation provides detailed information about all fields available for 
           <li>Long Virtual Analyzer Processing Time</li>
         </ul>
       </td>
-      <td class="products">Deep Discovery Analyzer</td>
+      <td class="products">
+        <ul>
+          <li>File Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">sandboxCompletedTime</td>
@@ -1354,6 +1367,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
@@ -1436,6 +1450,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
@@ -1467,6 +1482,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
         </ul>
       </td>
     </tr>
