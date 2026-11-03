@@ -1,3 +1,59 @@
+- Name: remarks
+  ProductCode:
+  - sds
+  - pdi
+  - xns
+  - pds
+  - sca
+  - sao
+  - sem
+  - stp
+  - ptn
+  - xms
+  - sfs
+  - sss
+  - sig
+  - xes
+  - okt
+  Description_EN: The additional information
+  Sample:
+  - 'warning: fork: Resource temporarily unavailable'
+  - 'pam_unix(cron:session): session opened for user root by (uid=0)'
+  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:\
+    \ EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.\
+    \ [CLIENT: 10.10.10.10]  "
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: principalName
+  ProductCode:
+  - sws
+  - sig
+  - sca
+  - szn
+  - scs
+  - okt
+  Description_EN: The user principal name used to sign in to the proxy
+  Sample:
+  - sample_email@trendmicro.com
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: signInCountries
+  ProductCode:
+  - sca
+  - aad
+  - okt
+  Description_EN: The countries from which a user signed in
+  Sample:
+  - PH
+  - AU
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: eventTime
   ProductCode:
   - aad
@@ -222,62 +278,6 @@
   Sample:
   - 11111111-1111-1111-1111-111111111111
   DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: remarks
-  ProductCode:
-  - sds
-  - pdi
-  - xns
-  - pds
-  - sca
-  - sao
-  - sem
-  - stp
-  - ptn
-  - xms
-  - sfs
-  - sss
-  - sig
-  - xes
-  - okt
-  Description_EN: The additional information
-  Sample:
-  - 'warning: fork: Resource temporarily unavailable'
-  - 'pam_unix(cron:session): session opened for user root by (uid=0)'
-  - "WinEvtLog: Application: AUDIT_FAILURE(18470): MSSQL$SA: (no user): no domain:\
-    \ EXAMPLE.com: Login failed for user 'example_user'. Reason: The account is disabled.\
-    \ [CLIENT: 10.10.10.10]  "
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: principalName
-  ProductCode:
-  - sws
-  - sig
-  - sca
-  - szn
-  - scs
-  - okt
-  Description_EN: The user principal name used to sign in to the proxy
-  Sample:
-  - sample_email@trendmicro.com
-  DL_Type: string
-  DL_CommonKey:
-  DL_Searchable: true
-  DL_Aggregable: false
-- Name: signInCountries
-  ProductCode:
-  - sca
-  - aad
-  - okt
-  Description_EN: The countries from which a user signed in
-  Sample:
-  - PH
-  - AU
-  DL_Type: dynamic
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false

@@ -33,7 +33,7 @@
   DL_Type: string
 
 - Name: deviceMacAddress
-  Description_EN: The device MAC address
+  Description_EN: The device mac address
   DL_Type: string
 
 - Name: dvc

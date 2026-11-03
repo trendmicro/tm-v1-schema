@@ -111,7 +111,7 @@
   DL_Type: string
 
 - Name: cloudResourceId
-  Description_EN: The cloud resource ID
+  Description_EN: The web ACL resource ID
   DL_Type: string
 
 - Name: correlationId

@@ -272,7 +272,7 @@
   DL_Type: string
 
 - Name: eventDataSubStatus
-  Description_EN: The Windows event data sub status
+  Description_EN: The Windows event data sub-status
   DL_Type: string
 
 - Name: eventDataTargetDomainName
@@ -679,7 +679,7 @@
   DL_Type: string
 
 - Name: userType
-  Description_EN: The Claude user type
+  Description_EN: The tenant user type
   DL_Type: string
 
 - Name: vendorLogId

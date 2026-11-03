@@ -202,6 +202,21 @@ This documentation provides detailed information about all fields available for 
   </thead>
   <tbody>
     <tr>
+      <td class="field-name">additionalEventData</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The additional event information that was not part of the request or response</td>
+      <td class="example">{&quot;AU_source&quot;:&quot;https://activeupdate.trendmicro.com/server.ini&quot;,&quot;New Version&quot;:{&quot;1234567800&quot;:&quot;20.123.00&quot;,&quot;1234567820&quot;:&quot;3.456.00&quot;,&quot;1234567840&quot;: &quot;32&quot;}}</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">compressedFileHash</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -357,6 +372,24 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">description</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The additional event details</td>
+      <td class="example">Agent upgrade applied manually, automatically, or via scheduled maintenance, reflecting any user-initiated or policy-triggered update</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">engType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -439,6 +472,30 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">eventId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event ID</td>
+      <td class="example">
+        <ul>
+          <li>1010001</li>
+          <li>1010002</li>
+          <li>1010003</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">eventName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -491,6 +548,112 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
+          <li>Deep Discovery Analyzer</li>
+          <li>Cloud IPS</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event type</td>
+      <td class="example">
+        <ul>
+          <li>scan</li>
+          <li>service</li>
+          <li>upgrade</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventSourceType</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event source type</td>
+      <td class="example">13 - EVENT_SOURCE_SYSTEM_EVENT</td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventSubId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sub-event ID</td>
+      <td class="example">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>732</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventSubName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The sub-event type</td>
+      <td class="example">
+        <ul>
+          <li>All scan-related operations and results</li>
+          <li>Manual Malware Scan Failure Resolved</li>
+          <li>Agent Version Changed</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">eventTime</td>
+      <td class="type">long</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The time the agent or product detected the event</td>
+      <td class="example">
+        <ul>
+          <li>1656324260000</li>
+          <li>1728192606034</li>
+          <li>1758293606034</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
@@ -826,6 +989,26 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">productCode</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The product code</td>
+      <td class="example">
+        <ul>
+          <li>sao</li>
+          <li>sds</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">pver</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -853,6 +1036,27 @@ This documentation provides detailed information about all fields available for 
           <li>File Security</li>
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">pver</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The product version</td>
+      <td class="example">
+        <ul>
+          <li>6.2.1125</li>
+          <li>1.0.1524</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>File Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
         </ul>
       </td>
@@ -913,6 +1117,25 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">ruleName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The name of the rule that triggered the event</td>
+      <td class="example">
+        <ul>
+          <li>High Memory Usage</li>
+          <li>Long Virtual Analyzer Processing Time</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>File Security</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td class="field-name">scanType</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -943,12 +1166,41 @@ This documentation provides detailed information about all fields available for 
         </ul>
       </td>
     </tr>
+    <tr>
+      <td class="field-name">severity</td>
+      <td class="type">int</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The event severity</td>
+      <td class="example">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Apex One as a Service</li>
+          <li>Endpoint &amp; Workload Security</li>
+          <li>File Security</li>
+          <li>Deep Discovery Inspector</li>
+          <li>Virtual Network Sensor</li>
+          <li>Deep Discovery Analyzer</li>
+        </ul>
+      </td>
+    </tr>
   </tbody>
 </table>
 </div>
 
 ## Field Statistics
-- **Total Fields:** 28
+- **Total Fields:** 40
 - **Layer:** Cloud
 - **Product:** File Security
 

@@ -74,6 +74,14 @@
   Description_EN: Whether the app is a system app
   DL_Type: bool
 
+- Name: appJobExecutionName
+  Description_EN: The Azure container app job execution name
+  DL_Type: string
+
+- Name: appJobName
+  Description_EN: The Azure container app job name
+  DL_Type: string
+
 - Name: appLabel
   Description_EN: The app name (if the subject is an app)
   DL_Type: string
@@ -82,12 +90,24 @@
   Description_EN: The name of the requested application
   DL_Type: string
 
+- Name: appName
+  Description_EN: The Azure container app
+  DL_Type: string
+
 - Name: appPkgName
   Description_EN: The app package name (if the subject is an app)
   DL_Type: string
 
 - Name: appPublicKeySha1
   Description_EN: The SHA-1 hash of the app public key (if the subject is an app)
+  DL_Type: string
+
+- Name: appReplicaName
+  Description_EN: The Azure container app replica name
+  DL_Type: string
+
+- Name: appRevisionName
+  Description_EN: The Azure container app revision name
   DL_Type: string
 
 - Name: appSize
@@ -283,7 +303,7 @@
   DL_Type: string
 
 - Name: cloudResourceId
-  Description_EN: The cloud resource ID
+  Description_EN: The web ACL resource ID
   DL_Type: string
 
 - Name: cloudResourceTags
@@ -356,7 +376,7 @@
   DL_Type: string
 
 - Name: containerName
-  Description_EN: The Kubernetes container name
+  Description_EN: The Kubernetes container name associated with the event
   DL_Type: string
 
 - Name: correlatedIntelligence
@@ -537,7 +557,7 @@
   DL_Type: string
 
 - Name: deviceMacAddress
-  Description_EN: The device MAC address
+  Description_EN: The device mac address
   DL_Type: string
 
 - Name: deviceModel
@@ -703,6 +723,14 @@
 
 - Name: engVer
   Description_EN: The engine version
+  DL_Type: string
+
+- Name: environmentId
+  Description_EN: The Azure environment ID
+  DL_Type: string
+
+- Name: environmentName
+  Description_EN: The Azure environment name
   DL_Type: string
 
 - Name: eventClass
@@ -990,7 +1018,7 @@
   DL_Type: string
 
 - Name: k8sNamespace
-  Description_EN: The Kubernetes namespace of the container
+  Description_EN: The Kubernetes namespace associated with the event
   DL_Type: string
 
 - Name: k8sPodId
@@ -998,7 +1026,7 @@
   DL_Type: string
 
 - Name: k8sPodName
-  Description_EN: The Kubernetes pod name of the container
+  Description_EN: The Kubernetes pod name associated with the event
   DL_Type: string
 
 - Name: lastConnectedTime
@@ -1277,7 +1305,7 @@
   DL_Type: string
 
 - Name: objectIp
-  Description_EN: IP address of internet event
+  Description_EN: The IP address of the domain
   DL_Type: dynamic
 
 - Name: objectName
@@ -1494,7 +1522,7 @@
   DL_Type: string
 
 - Name: parentUserDomain
-  Description_EN: The user domain of the parent process
+  Description_EN: The domain name of the parent process
   DL_Type: string
 
 - Name: pAttackPhase
@@ -1824,6 +1852,10 @@
   Description_EN: The category of the object
   DL_Type: string
 
+- Name: resourceGroup
+  Description_EN: The Azure resource group
+  DL_Type: string
+
 - Name: resourceName
   Description_EN: The specific name of the object
   DL_Type: string
@@ -1893,7 +1925,7 @@
   DL_Type: string
 
 - Name: ruleType
-  Description_EN: The rule type which is applied to the traffic
+  Description_EN: The type of rule that terminated request processing
   DL_Type: string
 
 - Name: ruleUuid
@@ -2040,11 +2072,11 @@
   DL_Type: string
 
 - Name: srcFileHashSha1
-  Description_EN: The SHA1 hash of source file
+  Description_EN: The SHA-1 of the source file
   DL_Type: string
 
 - Name: srcFileHashSha256
-  Description_EN: The SHA256 hash of source file
+  Description_EN: The SHA-256 of the source file
   DL_Type: string
 
 - Name: srcFileModifiedTime
