@@ -120,11 +120,11 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Layers</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">35</span>
+      <span class="stat-number">36</span>
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">3235</span>
+      <span class="stat-number">3261</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -145,6 +145,14 @@ This page provides links to detailed field documentation for all products organi
       </a>
     </li>
     <li class="product-item">
+      <a href="Cloud/Cloud%20IPS" class="product-link">
+        <div class="product-info">
+          <span>Cloud IPS</span>
+          <span class="field-count">14 fields</span>
+        </div>
+      </a>
+    </li>
+    <li class="product-item">
       <a href="Cloud/Container%20Security" class="product-link">
         <div class="product-info">
           <span>Container Security</span>
@@ -156,7 +164,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Cloud/File%20Security" class="product-link">
         <div class="product-info">
           <span>File Security</span>
-          <span class="field-count">28 fields</span>
+          <span class="field-count">40 fields</span>
         </div>
       </a>
     </li>

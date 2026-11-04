@@ -210,6 +210,7 @@
   - ptp
   - mns
   - sds
+  - ips
   Description_EN: The event category
   Sample:
   - Exploits
@@ -250,6 +251,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -275,6 +277,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The destination IP
   Sample:
   - 10.10.10.10
@@ -364,6 +367,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The destination port
   Sample:
   - 0
@@ -389,6 +393,7 @@
   - scs
   - mns
   - pan
+  - ips
   Description_EN: The source port
   Sample:
   - 53
@@ -1040,6 +1045,7 @@
   - xms
   - mns
   - ddr
+  - ips
   Description_EN: The name of the rule that triggered the event
   Sample:
   - Directory Server - Microsoft Windows Active Directory
@@ -1065,6 +1071,7 @@
   - pds
   - sao
   - mns
+  - ips
   Description_EN: The rule ID
   Sample:
   - 1002795
@@ -1121,6 +1128,7 @@
   - mns
   - ddr
   - pan
+  - ips
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -1397,6 +1405,7 @@
   - ams
   - mns
   - sss
+  - ips
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -5057,6 +5066,7 @@
 - Name: flowId
   ProductCode:
   - sna
+  - ips
   Description_EN: The connection ID
   Sample:
   - '6717474604962545666'
@@ -5876,6 +5886,7 @@
   - xns
   - scs
   - xns
+  - ips
   Description_EN: The JSON string that contains additional information
   Sample:
   - '{"TLS version": "0x0303", "Cipher Suite": "0xc030"}'
@@ -5903,6 +5914,7 @@
   - sfc
   - sss
   - scs
+  - ips
   Description_EN: The AWS cloud account ID, Google Cloud product ID, or Azure subscription
     ID
   Sample:
@@ -5951,6 +5963,7 @@
 - Name: awsResourceArn
   ProductCode:
   - sfc
+  - ips
   Description_EN: The Amazon Resource Name
   Sample:
   - arn:aws:s3:::bucket-name/object-key
@@ -6490,6 +6503,7 @@
 - Name: azId
   ProductCode:
   - sss
+  - ips
   Description_EN: The virtual machine Availability Zone ID
   Sample:
   - us-east-1b

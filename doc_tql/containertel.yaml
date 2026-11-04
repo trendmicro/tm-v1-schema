@@ -19,7 +19,7 @@
   DL_Type: string
 
 - Name: containerName
-  Description_EN: The Kubernetes container name
+  Description_EN: The Kubernetes container name associated with the event
   DL_Type: string
 
 - Name: customAssetTags
@@ -63,7 +63,7 @@
   DL_Type: string
 
 - Name: k8sNamespace
-  Description_EN: The Kubernetes namespace of the container
+  Description_EN: The Kubernetes namespace associated with the event
   DL_Type: string
 
 - Name: k8sPodId
@@ -71,7 +71,7 @@
   DL_Type: string
 
 - Name: k8sPodName
-  Description_EN: The Kubernetes pod name of the container
+  Description_EN: The Kubernetes pod name associated with the event
   DL_Type: string
 
 - Name: logReceivedTime

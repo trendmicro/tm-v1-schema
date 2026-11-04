@@ -417,20 +417,6 @@ This documentation provides detailed information about all fields available for 
       <td class="field-name">principalName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
-      <td class="general-field">UserAccount</td>
-      <td class="description">The User Principal Name</td>
-      <td class="example">sample_email@trendmicro.com</td>
-      <td class="products">
-        <ul>
-          <li>Microsoft Entra ID</li>
-          <li>Okta</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td class="field-name">principalName</td>
-      <td class="type">string</td>
-      <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The user principal name used to sign in to the proxy</td>
       <td class="example">sample_email@trendmicro.com</td>
@@ -441,6 +427,20 @@ This documentation provides detailed information about all fields available for 
           <li>Cloud App Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
+          <li>Okta</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">principalName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">UserAccount</td>
+      <td class="description">The User Principal Name</td>
+      <td class="example">sample_email@trendmicro.com</td>
+      <td class="products">
+        <ul>
+          <li>Microsoft Entra ID</li>
           <li>Okta</li>
         </ul>
       </td>

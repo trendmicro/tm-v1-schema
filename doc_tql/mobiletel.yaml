@@ -257,5 +257,5 @@
   DL_Type: dynamic
 
 - Name: userType
-  Description_EN: The Claude user type
+  Description_EN: The tenant user type
   DL_Type: string

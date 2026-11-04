@@ -214,7 +214,12 @@ This documentation provides detailed information about all fields available for 
           <li>6915244908215815814</li>
         </ul>
       </td>
-      <td class="products">Deep Discovery Director</td>
+      <td class="products">
+        <ul>
+          <li>Deep Discovery Director</li>
+          <li>Cloud IPS</li>
+        </ul>
+      </td>
     </tr>
   </tbody>
 </table>

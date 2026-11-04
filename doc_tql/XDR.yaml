@@ -71,6 +71,10 @@
   Description_EN: The filter rule info
   DL_Type: string
 
+- Name: agentSessionId
+  Description_EN: The agent session ID
+  DL_Type: string
+
 - Name: agentStatus
   Description_EN: The Endpoint Security agent status
   DL_Type: string
@@ -364,6 +368,10 @@
   Description_EN: The number of transmitted data bytes
   DL_Type: long
 
+- Name: captchaResponse
+  Description_EN: The CAPTCHA action status for the request
+  DL_Type: dynamic
+
 - Name: cat
   Description_EN: The weighted priority of the incident
   DL_Type: int
@@ -400,6 +408,10 @@
 - Name: censusPrevalenceValue
   Description_EN: The CENSUS prevalence value
   DL_Type: int
+
+- Name: challengeResponse
+  Description_EN: The Challenge action status for the request
+  DL_Type: dynamic
 
 - Name: channel
   Description_EN: The channel through which the demanded WinEvent is delivered
@@ -609,7 +621,7 @@
   DL_Type: string
 
 - Name: cloudResourceId
-  Description_EN: The cloud resource ID
+  Description_EN: The web ACL resource ID
   DL_Type: string
 
 - Name: cloudResourceTags
@@ -637,7 +649,7 @@
   DL_Type: string
 
 - Name: cloudStorageName
-  Description_EN: The cloud storage name
+  Description_EN: The file or folder URL
   DL_Type: string
 
 - Name: cloudTrailEventId
@@ -707,6 +719,10 @@
     machine learning). Values from 1-99.
   DL_Type: int
 
+- Name: connectionStatus
+  Description_EN: The MCP server connection attempt result
+  DL_Type: string
+
 - Name: containerId
   Description_EN: The Kubernetes container ID
   DL_Type: string
@@ -720,7 +736,7 @@
   DL_Type: string
 
 - Name: containerName
-  Description_EN: The Kubernetes container name
+  Description_EN: The Kubernetes container name associated with the event
   DL_Type: string
 
 - Name: contentEncoding
@@ -755,8 +771,16 @@
   Description_EN: The correlation rule version
   DL_Type: string
 
+- Name: cost
+  Description_EN: The call cost (in USD)
+  DL_Type: real
+
 - Name: crossTenantAccessType
   Description_EN: The cross-tenant access type
+  DL_Type: string
+
+- Name: currentPermissionMode
+  Description_EN: The new agent permission mode after a change
   DL_Type: string
 
 - Name: currentRole
@@ -827,6 +851,10 @@
 - Name: dceHash2
   Description_EN: The Trend Micro Threat Mitigation Server requires the log, but the
     Trend Micro Threat Mitigation Server is EOL.
+  DL_Type: string
+
+- Name: decisionSource
+  Description_EN: The reason for a tool use decision
   DL_Type: string
 
 - Name: denyListFileHash
@@ -1066,6 +1094,10 @@
 
 - Name: duration
   Description_EN: The time it took the scanner to complete the scan, in milliseconds
+  DL_Type: long
+
+- Name: durationMs
+  Description_EN: The duration of the call/tool/hook (in milliseconds)
   DL_Type: long
 
 - Name: duser
@@ -1472,6 +1504,10 @@
   Description_EN: Version of the log event format
   DL_Type: string
 
+- Name: excludedRules
+  Description_EN: The rule-group rules that were excluded (set to Count) for the request
+  DL_Type: dynamic
+
 - Name: externalForwardingTargets
   Description_EN: The external mailbox-forwarding target addresses
   DL_Type: dynamic
@@ -1602,6 +1638,10 @@
     policy is triggered, the file is encrypted and copied to the OfficeScan server
     for post-mortem analysis)
   DL_Type: string
+
+- Name: forwardedAutonomousSystemNumber
+  Description_EN: The ASN of the IP that forwarded the request
+  DL_Type: int
 
 - Name: ftpTrans
   Description_EN: The transaction information of the FTP protocol
@@ -1781,6 +1821,10 @@
   Description_EN: The User Principal Name of the user
   DL_Type: string
 
+- Name: inputTokens
+  Description_EN: The input token count of the call
+  DL_Type: long
+
 - Name: instanceAccountId
   Description_EN: The cloud account ID of the virtual machine that made the request
   DL_Type: string
@@ -1920,7 +1964,7 @@
   DL_Type: string
 
 - Name: k8sNamespace
-  Description_EN: The Kubernetes namespace of the container
+  Description_EN: The Kubernetes namespace associated with the event
   DL_Type: string
 
 - Name: k8sPodId
@@ -1928,7 +1972,7 @@
   DL_Type: string
 
 - Name: k8sPodName
-  Description_EN: The Kubernetes pod name of the container
+  Description_EN: The Kubernetes pod name associated with the event
   DL_Type: string
 
 - Name: keyExchangeAlgorithm
@@ -2223,6 +2267,10 @@
   Description_EN: The management event
   DL_Type: bool
 
+- Name: marketplaceName
+  Description_EN: The marketplace the plugin is from
+  DL_Type: string
+
 - Name: marsAccount
   Description_EN: The account for Trend Micro Mobile Apps Reputation Service
   DL_Type: string
@@ -2234,6 +2282,10 @@
 - Name: matchedPolicies
   Description_EN: The matched policies of detection records
   DL_Type: dynamic
+
+- Name: mcpToolName
+  Description_EN: The specific action invoked on the connected MCP server
+  DL_Type: string
 
 - Name: mDevice
   Description_EN: IP of the source
@@ -2295,6 +2347,10 @@
   Description_EN: The MITRE version
   DL_Type: string
 
+- Name: modelName
+  Description_EN: The LLM model used for the call
+  DL_Type: string
+
 - Name: moduleName
   Description_EN: The module where a hook procedure was set up
   DL_Type: string
@@ -2302,6 +2358,11 @@
 - Name: moduleScanType
   Description_EN: The module scan type
   DL_Type: string
+
+- Name: monetizeVerifyResponse
+  Description_EN: The payment verification result when a Monetize action triggers
+    payment verification
+  DL_Type: dynamic
 
 - Name: monitoringLevel
   Description_EN: The cloud activity monitoring level
@@ -2354,6 +2415,10 @@
 - Name: networkInterfaceId
   Description_EN: The network interface of the virtual machine that made the request
   DL_Type: string
+
+- Name: nonTerminatingMatchingRule
+  Description_EN: The rules that matched but didn't terminate the request
+  DL_Type: dynamic
 
 - Name: objectActionResults
   Description_EN: The object process action results
@@ -2908,6 +2973,10 @@
   Description_EN: Whether the event was successful or not
   DL_Type: string
 
+- Name: outputTokens
+  Description_EN: The output token count of the call
+  DL_Type: long
+
 - Name: overSsl
   Description_EN: Whether the event was triggered by an SSL decryption stream (Displayed
     only when SSL Inspection is supported)
@@ -3165,6 +3234,14 @@
   Description_EN: The list of platform custom asset tags
   DL_Type: dynamic
 
+- Name: pluginName
+  Description_EN: The installed/loaded plugin name
+  DL_Type: string
+
+- Name: pluginScope
+  Description_EN: The plugin provenance or trust scope
+  DL_Type: string
+
 - Name: pname
   Description_EN: The internal product ID (Deprecated, use productCode)
   DL_Type: string
@@ -3208,6 +3285,10 @@
 
 - Name: previousObjectFilePath
   Description_EN: The previous file path of the target process image or target file
+  DL_Type: string
+
+- Name: previousPermissionMode
+  Description_EN: The prior agent permission mode before a change
   DL_Type: string
 
 - Name: previousRole
@@ -3445,6 +3526,10 @@
   Description_EN: The Claude project ID
   DL_Type: string
 
+- Name: promptId
+  Description_EN: The user prompt ID
+  DL_Type: string
+
 - Name: protectionManager
   Description_EN: The Server & Workload Protection Manager instance name
   DL_Type: string
@@ -3504,6 +3589,10 @@
 - Name: quarantineType
   Description_EN: The descriptive name for the quarantine area
   DL_Type: string
+
+- Name: rateBasedRuleList
+  Description_EN: The rate-based rules that acted on the request
+  DL_Type: dynamic
 
 - Name: rating
   Description_EN: The credibility level
@@ -3631,6 +3720,10 @@
   Description_EN: All HTTP headers without sensitive information
   DL_Type: string
 
+- Name: requestHeadersInserted
+  Description_EN: The headers inserted for custom request handling
+  DL_Type: string
+
 - Name: requestID
   Description_EN: Value that identifies the request (The service being called generates
     this value)
@@ -3643,6 +3736,11 @@
 - Name: requestMimeType
   Description_EN: The type of request content
   DL_Type: string
+
+- Name: requestOversizeFields
+  Description_EN: The fields in the request that were over the AWS WAF inspection
+    size limit
+  DL_Type: dynamic
 
 - Name: requestParameters
   Description_EN: The parameters, if any, that were sent with the request (Parameters
@@ -3851,6 +3949,10 @@
   Description_EN: The weekday of the log generation
   DL_Type: string
 
+- Name: ruleGroupList
+  Description_EN: The rule groups that acted on the request, with match information
+  DL_Type: dynamic
+
 - Name: ruleId
   Description_EN: The rule ID
   DL_Type: int
@@ -3862,6 +3964,10 @@
 - Name: ruleIdStr
   Description_EN: The rule ID
   DL_Type: string
+
+- Name: ruleLabel
+  Description_EN: The labels applied to the request
+  DL_Type: dynamic
 
 - Name: ruleName
   Description_EN: The name of the rule that triggered the event
@@ -3876,7 +3982,7 @@
   DL_Type: string
 
 - Name: ruleType
-  Description_EN: The rule type which is applied to the traffic
+  Description_EN: The type of rule that terminated request processing
   DL_Type: string
 
 - Name: ruleUuid
@@ -3887,6 +3993,10 @@
 - Name: ruleVer
   Description_EN: The rule version
   DL_Type: string
+
+- Name: safeMode
+  Description_EN: Whether the plugin/session ran in a restricted safe mode
+  DL_Type: bool
 
 - Name: samUser
   Description_EN: The user name of the SAM account
@@ -4018,7 +4128,7 @@
   DL_Type: int
 
 - Name: sessionStart
-  Description_EN: The session start time (in seconds)
+  Description_EN: The session start name (in seconds)
   DL_Type: long
 
 - Name: sessionSubject
@@ -4064,6 +4174,10 @@
 
 - Name: skillName
   Description_EN: The Claude skill name
+  DL_Type: string
+
+- Name: skillSource
+  Description_EN: The activated skill source
   DL_Type: string
 
 - Name: smac
@@ -4402,6 +4516,10 @@
   Description_EN: The event status reason
   DL_Type: string
 
+- Name: subagentType
+  Description_EN: The spawned sub-agent type
+  DL_Type: string
+
 - Name: subLocationId
   Description_EN: The sublocation ID
   DL_Type: string
@@ -4425,6 +4543,10 @@
 - Name: subSystem
   Description_EN: The sub system information
   DL_Type: string
+
+- Name: success
+  Description_EN: Whether the tool execution succeeded
+  DL_Type: bool
 
 - Name: suid
   Description_EN: The user name or IP address (IPv4)
@@ -4529,6 +4651,10 @@
   Description_EN: The name of the tenant
   DL_Type: string
 
+- Name: terminalType
+  Description_EN: The session terminal or client
+  DL_Type: string
+
 - Name: threatName
   Description_EN: The threat name
   DL_Type: string
@@ -4550,15 +4676,27 @@
   DL_Type: dynamic
 
 - Name: tlsJA3Fingerprint
-  Description_EN: The JA3 fingerprint
+  Description_EN: The JA3 fingerprint of the request
   DL_Type: string
 
 - Name: tlsJA3SFingerprint
   Description_EN: The raw JA3S
   DL_Type: string
 
+- Name: tlsJA4Fingerprint
+  Description_EN: The JA4 fingerprint of the request
+  DL_Type: string
+
 - Name: tlsSelectedCipher
   Description_EN: The selected cipher of the TLS protocol
+  DL_Type: string
+
+- Name: toolInput
+  Description_EN: The arguments passed to the tool (sensitive, content-gated)
+  DL_Type: string
+
+- Name: toolName
+  Description_EN: The invoked agent tool
   DL_Type: string
 
 - Name: toolServerId
@@ -4567,6 +4705,19 @@
 
 - Name: toolServerName
   Description_EN: The Claude tool or MCP server name
+  DL_Type: string
+
+- Name: toolServerScope
+  Description_EN: The connected MCP server scope
+  DL_Type: string
+
+- Name: toolSource
+  Description_EN: The tool provenance
+  DL_Type: string
+
+- Name: toolUseId
+  Description_EN: The per-invocation tool call ID (joins a tool_decision to a matching
+    tool_result)
   DL_Type: string
 
 - Name: trafficPath
@@ -4640,7 +4791,7 @@
   DL_Type: string
 
 - Name: userType
-  Description_EN: The Claude user type
+  Description_EN: The tenant user type
   DL_Type: string
 
 - Name: uuids
@@ -4709,6 +4860,14 @@
   Description_EN: The entity before change/modification
   DL_Type: string
 
+- Name: webAclId
+  Description_EN: The AWS WAF web ACL GUID/ARN
+  DL_Type: string
+
 - Name: winEventId
   Description_EN: Event ID of Windows event
   DL_Type: int
+
+- Name: workspacePath
+  Description_EN: The local file system paths of the agent workspace
+  DL_Type: dynamic
