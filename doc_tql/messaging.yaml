@@ -391,7 +391,7 @@
   DL_Type: string
 
 - Name: userType
-  Description_EN: The tenant user type
+  Description_EN: The Claude user type
   DL_Type: string
 
 - Name: vendorLogId
