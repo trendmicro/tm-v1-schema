@@ -261,6 +261,81 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Container Security</td>
     </tr>
     <tr>
+      <td class="field-name">appJobExecutionName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Azure container app job execution name</td>
+      <td class="example">
+        <ul>
+          <li>aca-test-security-manager-job-29885190</li>
+          <li>cleanup-job-29885175</li>
+          <li>db-backup-29885160</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">appJobName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Azure container app job name</td>
+      <td class="example">
+        <ul>
+          <li>gc-job</li>
+          <li>cleanup-job</li>
+          <li>db-backup</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">appName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Azure container app</td>
+      <td class="example">
+        <ul>
+          <li>nginx-server</li>
+          <li>mysqlnode</li>
+          <li>apiproxy</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">appReplicaName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Azure container app replica name</td>
+      <td class="example">
+        <ul>
+          <li>nginx-server--0000005-7f94df695f-gprvn</li>
+          <li>mysqlnode--0000002-e5c17c4cac-p95zs</li>
+          <li>apiproxy--0000001-82e3cb362d-cd34e</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">appRevisionName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Azure container app revision name</td>
+      <td class="example">
+        <ul>
+          <li>nginx-server--0000005</li>
+          <li>mysqlnode--0000002</li>
+          <li>apiproxy--0000001</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
       <td class="field-name">cloudAccountId</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -678,6 +753,36 @@ This documentation provides detailed information about all fields available for 
           <li>Data Detection and Response</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">environmentId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Azure environment ID</td>
+      <td class="example">
+        <ul>
+          <li>ab3aefff491585d9a2587d9fe60f7d216de48a7349e15dc05353d1faa6a03d76</li>
+          <li>82a753d9d4efa7e9a61dd34f37a44f449faa4a9b280a1522ea007f1dd37f1687</li>
+          <li>006bf544187a04fce3fd17dc69669263f9bc76bd455ad0cc95b6531a7342253a</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">environmentName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Azure environment name</td>
+      <td class="example">
+        <ul>
+          <li>production</li>
+          <li>staging</li>
+          <li>qa-test</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
     </tr>
     <tr>
       <td class="field-name">eventId</td>
@@ -1813,6 +1918,21 @@ This documentation provides detailed information about all fields available for 
       <td class="products">Container Security</td>
     </tr>
     <tr>
+      <td class="field-name">resourceGroup</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Azure resource group</td>
+      <td class="example">
+        <ul>
+          <li>production-rg</li>
+          <li>staging-rg</li>
+          <li>qa-test-rg</li>
+        </ul>
+      </td>
+      <td class="products">Container Security</td>
+    </tr>
+    <tr>
       <td class="field-name">resourceName</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -2275,7 +2395,7 @@ This documentation provides detailed information about all fields available for 
 </div>
 
 ## Field Statistics
-- **Total Fields:** 115
+- **Total Fields:** 123
 - **Layer:** Cloud
 - **Product:** Container Security
 
