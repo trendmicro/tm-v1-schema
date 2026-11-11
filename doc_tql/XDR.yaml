@@ -139,6 +139,14 @@
   Description_EN: Whether the app is a system app
   DL_Type: bool
 
+- Name: appJobExecutionName
+  Description_EN: The Azure container app job execution name
+  DL_Type: string
+
+- Name: appJobName
+  Description_EN: The Azure container app job name
+  DL_Type: string
+
 - Name: appLabel
   Description_EN: The app name (if the subject is an app)
   DL_Type: string
@@ -151,6 +159,10 @@
   Description_EN: The Microsoft Entra ID application ID
   DL_Type: string
 
+- Name: appName
+  Description_EN: The Azure container app
+  DL_Type: string
+
 - Name: appOrSystemEventHashId
   Description_EN: The event object hash ID
   DL_Type: string
@@ -161,6 +173,14 @@
 
 - Name: appPublicKeySha1
   Description_EN: The SHA-1 hash of the app public key (if the subject is an app)
+  DL_Type: string
+
+- Name: appReplicaName
+  Description_EN: The Azure container app replica name
+  DL_Type: string
+
+- Name: appRevisionName
+  Description_EN: The Azure container app revision name
   DL_Type: string
 
 - Name: appSize
@@ -965,7 +985,7 @@
   DL_Type: string
 
 - Name: deviceMacAddress
-  Description_EN: The device MAC address
+  Description_EN: The device mac address
   DL_Type: string
 
 - Name: deviceModel
@@ -1179,6 +1199,14 @@
   Description_EN: The engine version
   DL_Type: string
 
+- Name: environmentId
+  Description_EN: The Azure environment ID
+  DL_Type: string
+
+- Name: environmentName
+  Description_EN: The Azure environment name
+  DL_Type: string
+
 - Name: errorCode
   Description_EN: The error code associated with the event
   DL_Type: string
@@ -1389,7 +1417,7 @@
   DL_Type: string
 
 - Name: eventDataSubStatus
-  Description_EN: The Windows event data sub status
+  Description_EN: The Windows event data sub-status
   DL_Type: string
 
 - Name: eventDataTargetDomainName
@@ -2678,7 +2706,7 @@
   DL_Type: int
 
 - Name: objectIp
-  Description_EN: IP address of internet event
+  Description_EN: The IP address of the domain
   DL_Type: dynamic
 
 - Name: objectIps
@@ -3153,7 +3181,7 @@
   DL_Type: string
 
 - Name: parentUserDomain
-  Description_EN: The user domain of the parent process
+  Description_EN: The domain name of the parent process
   DL_Type: string
 
 - Name: parentUserGroupSids
@@ -3799,6 +3827,10 @@
   Description_EN: The category of the object
   DL_Type: string
 
+- Name: resourceGroup
+  Description_EN: The Azure resource group
+  DL_Type: string
+
 - Name: resourceName
   Description_EN: The specific name of the object
   DL_Type: string
@@ -4128,7 +4160,7 @@
   DL_Type: int
 
 - Name: sessionStart
-  Description_EN: The session start name (in seconds)
+  Description_EN: The session start time (in seconds)
   DL_Type: long
 
 - Name: sessionSubject
@@ -4299,7 +4331,7 @@
   DL_Type: string
 
 - Name: srcFileHashSha1
-  Description_EN: The SHA1 hash of source file
+  Description_EN: The SHA-1 of the source file
   DL_Type: string
 
 - Name: srcFileHashSha256
@@ -4791,7 +4823,7 @@
   DL_Type: string
 
 - Name: userType
-  Description_EN: The tenant user type
+  Description_EN: The Claude user type
   DL_Type: string
 
 - Name: uuids

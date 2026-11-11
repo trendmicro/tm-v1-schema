@@ -1223,7 +1223,7 @@
   DL_Type: string
 
 - Name: sessionStart
-  Description_EN: The session start name (in seconds)
+  Description_EN: The session start time (in seconds)
   DL_Type: long
 
 - Name: sessionSubject
@@ -1512,7 +1512,7 @@
   DL_Type: string
 
 - Name: userType
-  Description_EN: The tenant user type
+  Description_EN: The Claude user type
   DL_Type: string
 
 - Name: vendor
