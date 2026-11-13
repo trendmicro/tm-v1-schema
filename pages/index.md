@@ -124,7 +124,7 @@ This page provides links to detailed field documentation for all products organi
       <div class="stat-label">Products</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number">3269</span>
+      <span class="stat-number">3270</span>
       <div class="stat-label">Total Fields</div>
     </div>
   </div>
@@ -156,7 +156,7 @@ This page provides links to detailed field documentation for all products organi
       <a href="Cloud/Container%20Security" class="product-link">
         <div class="product-info">
           <span>Container Security</span>
-          <span class="field-count">123 fields</span>
+          <span class="field-count">124 fields</span>
         </div>
       </a>
     </li>
