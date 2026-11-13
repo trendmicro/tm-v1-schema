@@ -38,6 +38,10 @@
   Description_EN: The host name of the endpoint on which the event was detected
   DL_Type: string
 
+- Name: environmentId
+  Description_EN: The Azure environment ID
+  DL_Type: string
+
 - Name: eventId
   Description_EN: The event ID from the logs of each product
   DL_Type: string

@@ -529,3 +529,15 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: environmentId
+  ProductCode:
+  - scs
+  Description_EN: The Azure environment ID
+  Sample:
+  - ab3aefff491585d9a2587d9fe60f7d216de48a7349e15dc05353d1faa6a03d76
+  - 82a753d9d4efa7e9a61dd34f37a44f449faa4a9b280a1522ea007f1dd37f1687
+  - 006bf544187a04fce3fd17dc69669263f9bc76bd455ad0cc95b6531a7342253a
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
