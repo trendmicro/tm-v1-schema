@@ -202,6 +202,20 @@ This documentation provides detailed information about all fields available for 
   </thead>
   <tbody>
     <tr>
+      <td class="field-name">actResult</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The result of an action</td>
+      <td class="example">
+        <ul>
+          <li>[&#x27;firing&#x27;]</li>
+          <li>[&#x27;resolved&#x27;]</li>
+        </ul>
+      </td>
+      <td class="products">File Security</td>
+    </tr>
+    <tr>
       <td class="field-name">additionalEventData</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -353,6 +367,24 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">containerName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Kubernetes container name associated with the event</td>
+      <td class="example">v1fs-backend-communicator</td>
+      <td class="products">File Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">correlationId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The correlation ID for related events</td>
+      <td class="example">0607182930415a6b</td>
+      <td class="products">File Security</td>
+    </tr>
+    <tr>
       <td class="field-name">customTags</td>
       <td class="type">dynamic</td>
       <td class="searchable">true</td>
@@ -368,8 +400,18 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Container Security</li>
           <li>File Security</li>
+          <li>dan</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td class="field-name">deploymentGUID</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The GUID of the Kubernetes deployment registered in the Trend Micro system</td>
+      <td class="example">00000000-0000-0000-0000-000000000000</td>
+      <td class="products">File Security</td>
     </tr>
     <tr>
       <td class="field-name">description</td>
@@ -430,6 +472,7 @@ This documentation provides detailed information about all fields available for 
           <li>Cloud App Security</li>
           <li>Apex One as a Service</li>
           <li>File Security</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -468,6 +511,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -550,6 +594,7 @@ This documentation provides detailed information about all fields available for 
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -851,6 +896,24 @@ This documentation provides detailed information about all fields available for 
       </td>
     </tr>
     <tr>
+      <td class="field-name">k8sNamespace</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Kubernetes namespace associated with the event</td>
+      <td class="example">v1fs-prod</td>
+      <td class="products">File Security</td>
+    </tr>
+    <tr>
+      <td class="field-name">k8sPodName</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The Kubernetes pod name associated with the event</td>
+      <td class="example">v1fs-activity-7d9f6c8d9b-x2k4m</td>
+      <td class="products">File Security</td>
+    </tr>
+    <tr>
       <td class="field-name">malFamily</td>
       <td class="type">string</td>
       <td class="searchable">true</td>
@@ -1037,6 +1100,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1091,6 +1155,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Endpoint Sensor</li>
           <li>Okta</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1195,12 +1260,21 @@ This documentation provides detailed information about all fields available for 
         </ul>
       </td>
     </tr>
+    <tr>
+      <td class="field-name">srcComponent</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The component that generated the event</td>
+      <td class="example">backend-communicator</td>
+      <td class="products">File Security</td>
+    </tr>
   </tbody>
 </table>
 </div>
 
 ## Field Statistics
-- **Total Fields:** 40
+- **Total Fields:** 47
 - **Layer:** Cloud
 - **Product:** File Security
 

@@ -652,6 +652,10 @@
   Description_EN: The time when the XDR log was received
   DL_Type: datetime
 
+- Name: logRepoId
+  Description_EN: The log repository ID
+  DL_Type: string
+
 - Name: logStatus
   Description_EN: The VPC Flow Log status
   DL_Type: string

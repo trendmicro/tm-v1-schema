@@ -242,6 +242,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -255,12 +256,14 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Allow</li>
           <li>Block</li>
+          <li>Error</li>
         </ul>
       </td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -302,6 +305,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -377,6 +381,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -475,6 +480,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -680,6 +686,7 @@ This documentation provides detailed information about all fields available for 
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -694,6 +701,9 @@ This documentation provides detailed information about all fields available for 
           <li>SWG_ACTIVITY_LOG</li>
           <li>FIREWALL_ACTIVITY_LOG</li>
           <li>VPC_ACTIVITY_LOG</li>
+          <li>AI_ACCESS_EVENT</li>
+          <li>AI_INVOKE_EVENT</li>
+          <li>AI_ROUTING_EVENT</li>
         </ul>
       </td>
       <td class="products">
@@ -704,6 +714,7 @@ This documentation provides detailed information about all fields available for 
           <li>Virtual Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -855,6 +866,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
           <li>Okta</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -869,6 +881,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -900,6 +913,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Deep Discovery Analyzer</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -921,6 +935,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -946,6 +961,7 @@ This documentation provides detailed information about all fields available for 
           <li>Web Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -970,6 +986,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1052,6 +1069,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1074,6 +1092,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>

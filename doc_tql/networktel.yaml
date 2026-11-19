@@ -6,12 +6,28 @@
   Description_EN: The traffic processing action
   DL_Type: string
 
+- Name: aiModelName
+  Description_EN: The detected AI model name (empty if not detected)
+  DL_Type: dynamic
+
+- Name: aiOperation
+  Description_EN: The AI operation of the call
+  DL_Type: string
+
+- Name: aiSessionId
+  Description_EN: The AI session ID
+  DL_Type: string
+
 - Name: app
   Description_EN: The layer-7 network protocol being exploited protocol
   DL_Type: string
 
 - Name: application
   Description_EN: The name of the requested application
+  DL_Type: string
+
+- Name: appName
+  Description_EN: The application name
   DL_Type: string
 
 - Name: archFiles
@@ -82,6 +98,24 @@
   Description_EN: The content encoding of the request or the response
   DL_Type: string
 
+- Name: correlationId
+  Description_EN: The correlation ID that links related detections and activity records
+    of the same request
+  DL_Type: string
+
+- Name: deploymentGUID
+  Description_EN: The GUID of the Kubernetes deployment registered in the Trend Micro
+    system
+  DL_Type: string
+
+- Name: deploymentName
+  Description_EN: The name of the deployment that produced the log
+  DL_Type: string
+
+- Name: deploymentType
+  Description_EN: The runtime of the deployment that produced the log
+  DL_Type: string
+
 - Name: detectionType
   Description_EN: The traffic detection type
   DL_Type: string
@@ -141,6 +175,10 @@
 
 - Name: endpointHostName
   Description_EN: The host name of the endpoint on which the event was detected
+  DL_Type: string
+
+- Name: errorCode
+  Description_EN: The error code associated with the event
   DL_Type: string
 
 - Name: eventId
@@ -246,6 +284,10 @@
     an x-forwarded-for IP address to use
   DL_Type: int
 
+- Name: inputTokens
+  Description_EN: The input token count of the call
+  DL_Type: long
+
 - Name: instanceId
   Description_EN: The ID of the instance that indicates the meta-cloud or data center
     VM
@@ -301,6 +343,10 @@
   Description_EN: The name of the detected malware
   DL_Type: string
 
+- Name: mcpToolName
+  Description_EN: The specific action invoked on the connected MCP server
+  DL_Type: string
+
 - Name: messageResponseCode
   Description_EN: The application layer message response or acknowledgment code
   DL_Type: string
@@ -338,6 +384,10 @@
 - Name: osName
   Description_EN: The host operating system name
   DL_Type: string
+
+- Name: outputTokens
+  Description_EN: The output token count of the call
+  DL_Type: long
 
 - Name: overSsl
   Description_EN: Whether the event was triggered by an SSL decryption stream (Displayed
@@ -521,6 +571,10 @@
 
 - Name: rt
   Description_EN: The Unix time of the log generation
+  DL_Type: string
+
+- Name: ruleIdStr
+  Description_EN: The rule ID
   DL_Type: string
 
 - Name: ruleName

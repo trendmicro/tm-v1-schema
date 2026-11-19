@@ -958,6 +958,17 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: logRepoId
+  ProductCode:
+  - tlc
+  - ALL
+  Description_EN: The log repository ID
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
 - Name: vpcFlowLogsVersion
   ProductCode:
   - tlc

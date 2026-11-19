@@ -82,6 +82,7 @@
   - mns
   - sss
   - ips
+  - dan
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -129,6 +130,7 @@
   - sws
   - sig
   - szn
+  - dan
   Description_EN: The domain of the request URL
   Sample:
   - weather.service.msn.com
@@ -193,6 +195,7 @@
   - ptn
   - scs
   - mns
+  - dan
   Description_EN: The name of the triggered policy
   Sample:
   - Steelcase
@@ -211,6 +214,7 @@
   - szn
   - scs
   - okt
+  - dan
   Description_EN: The user principal name used to sign in to the proxy
   Sample:
   - sample_email@trendmicro.com
@@ -282,6 +286,7 @@
   - ams
   - szn
   - scs
+  - dan
   Description_EN: The detection type
   Sample:
   - '1'

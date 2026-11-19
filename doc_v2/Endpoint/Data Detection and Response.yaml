@@ -102,6 +102,7 @@
   - mns
   - ddr
   - ips
+  - dan
   Description_EN: The name of the rule that triggered the event
   Sample:
   - Directory Server - Microsoft Windows Active Directory
@@ -144,6 +145,7 @@
   - ddr
   - pan
   - ips
+  - dan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -211,6 +213,7 @@
   - mns
   - ddr
   - pan
+  - dan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100

@@ -13,6 +13,7 @@
   - ams
   - szn
   - pan
+  - dan
   Description_EN: The notable URLs
   Sample:
   - http://example.page.com/canonical.html
@@ -179,6 +180,7 @@
   - mns
   - ddr
   - ips
+  - dan
   Description_EN: The name of the rule that triggered the event
   Sample:
   - Directory Server - Microsoft Windows Active Directory
@@ -221,6 +223,7 @@
   - ddr
   - pan
   - ips
+  - dan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -300,6 +303,7 @@
   - sig
   - xes
   - okt
+  - dan
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -333,6 +337,7 @@
   - mns
   - sss
   - ips
+  - dan
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -423,6 +428,7 @@
   - ptn
   - scs
   - mns
+  - dan
   Description_EN: The name of the triggered policy
   Sample:
   - Steelcase
@@ -447,6 +453,7 @@
   - ams
   - szn
   - scs
+  - dan
   Description_EN: The detection type
   Sample:
   - '1'
@@ -477,6 +484,7 @@
   - mns
   - ddr
   - pan
+  - dan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100
