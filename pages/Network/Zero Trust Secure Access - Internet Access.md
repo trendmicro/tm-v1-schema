@@ -242,6 +242,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -255,12 +256,14 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Allow</li>
           <li>Block</li>
+          <li>Error</li>
         </ul>
       </td>
       <td class="products">
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -330,6 +333,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -507,6 +511,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -585,6 +590,7 @@ This documentation provides detailed information about all fields available for 
           <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Deep Discovery Analyzer</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -600,6 +606,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -732,7 +739,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The end-to-end traffic latency time, in milliseconds</td>
       <td class="example">10000</td>
-      <td class="products">Zero Trust Secure Access - Internet Access</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>dan</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">endpointGUID</td>
@@ -883,6 +895,7 @@ This documentation provides detailed information about all fields available for 
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -897,6 +910,9 @@ This documentation provides detailed information about all fields available for 
           <li>SWG_ACTIVITY_LOG</li>
           <li>FIREWALL_ACTIVITY_LOG</li>
           <li>VPC_ACTIVITY_LOG</li>
+          <li>AI_ACCESS_EVENT</li>
+          <li>AI_INVOKE_EVENT</li>
+          <li>AI_ROUTING_EVENT</li>
         </ul>
       </td>
       <td class="products">
@@ -907,6 +923,7 @@ This documentation provides detailed information about all fields available for 
           <li>Virtual Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -948,9 +965,18 @@ This documentation provides detailed information about all fields available for 
           <li>end</li>
           <li>drop</li>
           <li>deny</li>
+          <li>AI_ACCESS_EVENT_ALLOW</li>
+          <li>AI_ACCESS_EVENT_DENY</li>
+          <li>AI_INVOKE_EVENT_LLM</li>
+          <li>AI_INVOKE_EVENT_MCP</li>
         </ul>
       </td>
-      <td class="products">Zero Trust Secure Access - Internet Access</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>dan</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">eventTime</td>
@@ -1499,6 +1525,7 @@ This documentation provides detailed information about all fields available for 
           <li>TXOne EdgeOne</li>
           <li>Container Security</li>
           <li>Mobile Network Security</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1567,6 +1594,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
           <li>Okta</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1581,6 +1609,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1642,6 +1671,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1684,6 +1714,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Endpoint Sensor</li>
           <li>Okta</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1715,6 +1746,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Deep Discovery Analyzer</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1736,6 +1768,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1761,6 +1794,7 @@ This documentation provides detailed information about all fields available for 
           <li>Web Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1785,6 +1819,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1895,6 +1930,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1961,7 +1997,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The time the server took to respond to the request, in milliseconds</td>
       <td class="example">199</td>
-      <td class="products">Zero Trust Secure Access - Internet Access</td>
+      <td class="products">
+        <ul>
+          <li>Zero Trust Secure Access - Internet Access</li>
+          <li>dan</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">serverTls</td>

@@ -168,6 +168,7 @@
   - mns
   - ddr
   - ips
+  - dan
   Description_EN: The name of the rule that triggered the event
   Sample:
   - Directory Server - Microsoft Windows Active Directory
@@ -227,6 +228,7 @@
   - ddr
   - pan
   - ips
+  - dan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -275,6 +277,7 @@
   - mns
   - sss
   - ips
+  - dan
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -316,6 +319,7 @@
   - scs
   - mns
   - pan
+  - dan
   Description_EN: The severity of the event
   Sample:
   - 2
@@ -336,6 +340,7 @@
   - ptn
   - scs
   - mns
+  - dan
   Description_EN: The name of the triggered policy
   Sample:
   - Steelcase
@@ -409,6 +414,7 @@
   - mns
   - ddr
   - pan
+  - dan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100

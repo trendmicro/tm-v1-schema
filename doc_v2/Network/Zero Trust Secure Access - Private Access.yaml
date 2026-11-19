@@ -57,6 +57,7 @@
   - ams
   - szn
   - pan
+  - dan
   Description_EN: The notable URLs
   Sample:
   - http://example.page.com/canonical.html
@@ -189,6 +190,7 @@
   - mns
   - ddr
   - ips
+  - dan
   Description_EN: The name of the rule that triggered the event
   Sample:
   - Directory Server - Microsoft Windows Active Directory
@@ -231,6 +233,7 @@
   - ddr
   - pan
   - ips
+  - dan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -279,6 +282,7 @@
   - mns
   - sss
   - ips
+  - dan
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -299,6 +303,7 @@
   - sws
   - sig
   - szn
+  - dan
   Description_EN: The domain of the request URL
   Sample:
   - weather.service.msn.com
@@ -317,6 +322,7 @@
   - szn
   - scs
   - okt
+  - dan
   Description_EN: The user principal name used to sign in to the proxy
   Sample:
   - sample_email@trendmicro.com
@@ -353,6 +359,7 @@
   - ams
   - szn
   - scs
+  - dan
   Description_EN: The detection type
   Sample:
   - '1'
@@ -576,6 +583,7 @@
   ProductCode:
   - sig
   - szn
+  - dan
   Description_EN: The User Principal Name
   Sample:
   - sample_email@trendmicro.com
@@ -590,6 +598,7 @@
   - szn
   - pdi
   - xns
+  - dan
   Description_EN: The destination URL that the user is accessing
   Sample:
   - https://google.com/
@@ -603,10 +612,12 @@
   ProductCode:
   - sig
   - szn
+  - dan
   Description_EN: The action
   Sample:
   - Allow
   - Block
+  - Error
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -682,11 +693,15 @@
   - xns
   - vpc
   - azv
+  - dan
   Description_EN: The name of the log event
   Sample:
   - SWG_ACTIVITY_LOG
   - FIREWALL_ACTIVITY_LOG
   - VPC_ACTIVITY_LOG
+  - AI_ACCESS_EVENT
+  - AI_INVOKE_EVENT
+  - AI_ROUTING_EVENT
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -695,6 +710,7 @@
   ProductCode:
   - sig
   - szn
+  - dan
   Description_EN: The name of the requested application
   Sample:
   - Facebook
@@ -708,6 +724,7 @@
   - sig
   - szn
   - azv
+  - dan
   Description_EN: The name of the triggered cloud access rule
   Sample:
   - ETL_Access Rules_Web_Host
@@ -737,6 +754,7 @@
   ProductCode:
   - sig
   - szn
+  - dan
   Description_EN: The URL domain
   Sample:
   - www.facebook.com
@@ -852,6 +870,7 @@
   - szn
   - vpc
   - azv
+  - dan
   Description_EN: The service destination port of the private application server (dstport)
   Sample:
   - 443

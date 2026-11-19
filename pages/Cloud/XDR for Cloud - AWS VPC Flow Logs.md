@@ -245,6 +245,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -288,6 +289,9 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>200139</li>
           <li>200140</li>
+          <li>200186</li>
+          <li>200187</li>
+          <li>200188</li>
         </ul>
       </td>
       <td class="products">
@@ -296,6 +300,7 @@ This documentation provides detailed information about all fields available for 
           <li>Deep Discovery Inspector</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -310,6 +315,9 @@ This documentation provides detailed information about all fields available for 
           <li>SWG_ACTIVITY_LOG</li>
           <li>FIREWALL_ACTIVITY_LOG</li>
           <li>VPC_ACTIVITY_LOG</li>
+          <li>AI_ACCESS_EVENT</li>
+          <li>AI_INVOKE_EVENT</li>
+          <li>AI_ROUTING_EVENT</li>
         </ul>
       </td>
       <td class="products">
@@ -320,6 +328,7 @@ This documentation provides detailed information about all fields available for 
           <li>Virtual Network Sensor</li>
           <li>XDR for Cloud - AWS VPC Flow Logs</li>
           <li>XDR for Cloud - Azure VNet Flow Logs</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>

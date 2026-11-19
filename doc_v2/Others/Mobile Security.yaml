@@ -57,6 +57,7 @@
   - ams
   - szn
   - pan
+  - dan
   Description_EN: The notable URLs
   Sample:
   - http://example.page.com/canonical.html
@@ -92,6 +93,7 @@
   - ddr
   - pan
   - ips
+  - dan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -140,6 +142,7 @@
   - mns
   - sss
   - ips
+  - dan
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -262,6 +265,7 @@
   - ams
   - szn
   - scs
+  - dan
   Description_EN: The detection type
   Sample:
   - '1'
@@ -292,6 +296,7 @@
   - mns
   - ddr
   - pan
+  - dan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100
@@ -336,6 +341,7 @@
   - sfc
   - sss
   - pan
+  - dan
   Description_EN: The product version
   Sample:
   - 20.0.0.4726

@@ -46,6 +46,18 @@
   Description_EN: The metric unit
   DL_Type: string
 
+- Name: aiModelName
+  Description_EN: The detected AI model name (empty if not detected)
+  DL_Type: dynamic
+
+- Name: aiScanSurface
+  Description_EN: The part of the AI exchange that was scanned
+  DL_Type: string
+
+- Name: aiSessionId
+  Description_EN: The AI session ID
+  DL_Type: string
+
 - Name: analysisResult
   Description_EN: The verdict determined by analyzing the user-reported email
   DL_Type: string
@@ -91,7 +103,7 @@
   DL_Type: string
 
 - Name: appName
-  Description_EN: The Azure container app
+  Description_EN: The application name
   DL_Type: string
 
 - Name: appPkgName
@@ -387,6 +399,11 @@
   Description_EN: The correlation category
   DL_Type: string
 
+- Name: correlationId
+  Description_EN: The correlation ID that links related detections and activity records
+    of the same request
+  DL_Type: string
+
 - Name: customAssetTags
   Description_EN: The list of custom asset tags
   DL_Type: dynamic
@@ -475,6 +492,19 @@
 
 - Name: denyListType
   Description_EN: Block list type
+  DL_Type: string
+
+- Name: deploymentGUID
+  Description_EN: The GUID of the Kubernetes deployment registered in the Trend Micro
+    system
+  DL_Type: string
+
+- Name: deploymentName
+  Description_EN: The name of the deployment that produced the log
+  DL_Type: string
+
+- Name: deploymentType
+  Description_EN: The runtime of the deployment that produced the log
   DL_Type: string
 
 - Name: destinationPath
@@ -1151,6 +1181,10 @@
 - Name: matchedPolicies
   Description_EN: The matched policies of detection records
   DL_Type: dynamic
+
+- Name: mcpToolName
+  Description_EN: The specific action invoked on the connected MCP server
+  DL_Type: string
 
 - Name: mDevice
   Description_EN: IP of the source

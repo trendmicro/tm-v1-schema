@@ -51,11 +51,15 @@
   - xns
   - vpc
   - azv
+  - dan
   Description_EN: The name of the log event
   Sample:
   - SWG_ACTIVITY_LOG
   - FIREWALL_ACTIVITY_LOG
   - VPC_ACTIVITY_LOG
+  - AI_ACCESS_EVENT
+  - AI_INVOKE_EVENT
+  - AI_ROUTING_EVENT
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -94,6 +98,7 @@
   - szn
   - vpc
   - azv
+  - dan
   Description_EN: The service destination port of the private application server (dstport)
   Sample:
   - 443
@@ -128,10 +133,14 @@
   - pdi
   - vpc
   - azv
+  - dan
   Description_EN: The event ID
   Sample:
   - '200139'
   - '200140'
+  - '200186'
+  - '200187'
+  - '200188'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

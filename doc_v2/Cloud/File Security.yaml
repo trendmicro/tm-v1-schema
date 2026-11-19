@@ -211,6 +211,7 @@
   - ddr
   - pan
   - ips
+  - dan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -254,6 +255,7 @@
   - sig
   - xes
   - okt
+  - dan
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -363,6 +365,7 @@
   - sca
   - sao
   - sfs
+  - dan
   Description_EN: The engine version
   Sample:
   - 1.0.0.1123_1.0.0.1101
@@ -392,6 +395,7 @@
   - mns
   - ddr
   - pan
+  - dan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100
@@ -518,6 +522,7 @@
   - sfc
   - sss
   - pan
+  - dan
   Description_EN: The product version
   Sample:
   - 20.0.0.4726
@@ -558,6 +563,7 @@
   ProductCode:
   - scs
   - sfs
+  - dan
   Description_EN: The event tags
   Sample:
   - network
@@ -744,6 +750,78 @@
   Sample:
   - High Memory Usage
   - Long Virtual Analyzer Processing Time
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: actResult
+  ProductCode:
+  - sfs
+  Description_EN: The result of an action
+  Sample:
+  - [firing]
+  - [resolved]
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: correlationId
+  ProductCode:
+  - sfs
+  Description_EN: The correlation ID for related events
+  Sample:
+  - 0607182930415a6b
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: k8sPodName
+  ProductCode:
+  - sfs
+  Description_EN: The Kubernetes pod name associated with the event
+  Sample:
+  - v1fs-activity-7d9f6c8d9b-x2k4m
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: containerName
+  ProductCode:
+  - sfs
+  Description_EN: The Kubernetes container name associated with the event
+  Sample:
+  - v1fs-backend-communicator
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: k8sNamespace
+  ProductCode:
+  - sfs
+  Description_EN: The Kubernetes namespace associated with the event
+  Sample:
+  - v1fs-prod
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: srcComponent
+  ProductCode:
+  - sfs
+  Description_EN: The component that generated the event
+  Sample:
+  - backend-communicator
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: deploymentGUID
+  ProductCode:
+  - sfs
+  Description_EN: The GUID of the Kubernetes deployment registered in the Trend Micro
+    system
+  Sample:
+  - 00000000-0000-0000-0000-000000000000
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
