@@ -243,6 +243,7 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Cloud IPS</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -465,6 +466,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -867,6 +869,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Okta</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -914,6 +917,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -962,6 +966,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1013,6 +1018,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1266,6 +1272,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1313,6 +1320,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>

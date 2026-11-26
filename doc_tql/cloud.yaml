@@ -14,6 +14,10 @@
   Description_EN: The entity ID
   DL_Type: string
 
+- Name: authPrincipalSubject
+  Description_EN: The full string representation of the requesting principal identity
+  DL_Type: string
+
 - Name: authPrincipalType
   Description_EN: The entity type
   DL_Type: string
@@ -30,8 +34,12 @@
   Description_EN: The Azure resource or resource group
   DL_Type: string
 
+- Name: authServiceAccountKeyName
+  Description_EN: The service account key name
+  DL_Type: string
+
 - Name: claimsAppId
-  Description_EN: The Azure Application ID
+  Description_EN: The application ID or OAuth client ID
   DL_Type: string
 
 - Name: claimsAppIdAcr
@@ -51,7 +59,7 @@
   DL_Type: dynamic
 
 - Name: claimsEmail
-  Description_EN: The email address of the authenticated user
+  Description_EN: The email address of the authenticated user or service account
   DL_Type: string
 
 - Name: claimsExp
@@ -110,8 +118,25 @@
   Description_EN: The Microsoft Entra ID Tenant ID
   DL_Type: string
 
+- Name: cloudAccountId
+  Description_EN: The owner AWS account ID or Azure Subscription ID of the source
+    network interface
+  DL_Type: string
+
+- Name: cloudMonitoredResourceType
+  Description_EN: The type of the monitored resource that generated the log entry
+  DL_Type: string
+
 - Name: cloudResourceId
   Description_EN: The web ACL resource ID
+  DL_Type: string
+
+- Name: cloudServiceName
+  Description_EN: The API service performing the operation
+  DL_Type: string
+
+- Name: clusterName
+  Description_EN: The Kubernetes cluster name involved in the activity
   DL_Type: string
 
 - Name: correlationId

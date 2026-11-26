@@ -230,6 +230,7 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>

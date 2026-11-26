@@ -2,6 +2,7 @@
   ProductCode:
   - aml
   - ALL
+  - sgm
   Description_EN: The time the agent or product detected the event
   Sample:
   - 1656324260000
@@ -24,9 +25,11 @@
   ProductCode:
   - aml
   - ALL
+  - sgm
   Description_EN: The internal product code
   Sample:
   - aml
+  - sgm
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -34,9 +37,11 @@
 - Name: vendor
   ProductCode:
   - aml
+  - sgm
   Description_EN: The device vendor
   Sample:
   - Microsoft
+  - Google
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -44,9 +49,11 @@
 - Name: pname
   ProductCode:
   - aml
+  - sgm
   Description_EN: The product name
   Sample:
   - Azure Activity Log
+  - XDR for Cloud - Google Cloud Audit Logs
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -54,6 +61,7 @@
 - Name: vendorParsed
   ProductCode:
   - aml
+  - sgm
   Description_EN: The normalized event log (JSON format)
   Sample: '{"RoleLocation": "Japan East", "Stamp": "FDWorker", "ReleaseVersion": "6.2024.42.16+5d1e2c2.release_2024w42",
     "time": "2025-01-13T01:27:41.8080097Z"}'
@@ -84,9 +92,12 @@
 - Name: eventCategory
   ProductCode:
   - aml
-  Description_EN: The event category used in LookupEvents calls
+  - sgm
+  Description_EN: The event category
   Sample:
   - Administrative
+  - ADMIN_ACTIVITY
+  - DATA_ACCESS
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -114,6 +125,7 @@
 - Name: src
   ProductCode:
   - aml
+  - sgm
   Description_EN: The source IP address
   Sample:
   - [10.10.10.10]
@@ -126,9 +138,11 @@
 - Name: regionId
   ProductCode:
   - aml
+  - sgm
   Description_EN: The cloud asset region
   Sample:
   - Japan East
+  - asia-east1
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -136,9 +150,11 @@
 - Name: operationType
   ProductCode:
   - aml
+  - sgm
   Description_EN: The operation performed in the event
   Sample:
   - MICROSOFT.KUSTO/CLUSTERS/READ
+  - v1.compute.instances.insert
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -146,9 +162,12 @@
 - Name: actionStatus
   ProductCode:
   - aml
+  - sgm
   Description_EN: The status of the event operation
   Sample:
   - MICROSOFT.KUSTO/CLUSTERS/READ
+  - Success
+  - Failure
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -156,10 +175,13 @@
 - Name: actionSubStatus
   ProductCode:
   - aml
+  - sgm
   Description_EN: The HTTP status or action status
   Sample:
   - Running.
   - Bad Request
+  - OK
+  - PERMISSION_DENIED
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -167,9 +189,11 @@
 - Name: cloudResourceId
   ProductCode:
   - aml
+  - sgm
   Description_EN: The cloud resource ID
   Sample:
   - /SUBSCRIPTIONS/11111111-1111-1111-1111-111111111111/RESOURCEGROUPS/GROUP/PROVIDERS/MICROSOFT.KUSTO/CLUSTERS/TEST
+  - projects/my-project-123456/zones/asia-east1-a/instances/my-vm
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -187,9 +211,12 @@
 - Name: logLevel
   ProductCode:
   - aml
+  - sgm
   Description_EN: The event severity level
   Sample:
   - Information
+  - NOTICE
+  - ERROR
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -237,9 +264,11 @@
 - Name: authPrincipalId
   ProductCode:
   - aml
+  - sgm
   Description_EN: The entity ID
   Sample:
   - 123abc2a6c314b0ab03a891259123abc
+  - my-sa@my-project-123456.iam.gserviceaccount.com
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -247,9 +276,12 @@
 - Name: authPrincipalType
   ProductCode:
   - aml
+  - sgm
   Description_EN: The entity type
   Sample:
   - Group
+  - ServiceAccount
+  - FederatedIdentity
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -307,9 +339,11 @@
 - Name: claimsAppId
   ProductCode:
   - aml
-  Description_EN: The Azure Application ID
+  - sgm
+  Description_EN: The application ID or OAuth client ID
   Sample:
   - 11111111-1111-1111-1111-111111111111
+  - 11111111111.apps.googleusercontent.com
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -390,9 +424,11 @@
 - Name: claimsEmail
   ProductCode:
   - aml
-  Description_EN: The email address of the authenticated user
+  - sgm
+  Description_EN: The email address of the authenticated user or service account
   Sample:
   - sample_email@trendmicro.com
+  - my-sa@my-project-123456.iam.gserviceaccount.com
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true

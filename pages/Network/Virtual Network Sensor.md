@@ -243,6 +243,7 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Cloud IPS</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1383,6 +1384,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1624,6 +1626,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1724,6 +1727,7 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1817,6 +1821,7 @@ This documentation provides detailed information about all fields available for 
           <li>Deep Discovery Inspector</li>
           <li>Virtual Network Sensor</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2268,6 +2273,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2314,6 +2320,7 @@ This documentation provides detailed information about all fields available for 
           <li>TXOne StellarOne</li>
           <li>File Security</li>
           <li>File Security Storage</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2363,6 +2370,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2816,6 +2824,7 @@ This documentation provides detailed information about all fields available for 
           <li>Virtual Network Sensor</li>
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -3095,6 +3104,7 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -3613,6 +3623,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -3709,6 +3720,7 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4010,6 +4022,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4435,6 +4448,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4452,6 +4466,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4474,6 +4489,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4497,6 +4513,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4645,6 +4662,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4661,6 +4679,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Email Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4893,6 +4912,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4971,6 +4991,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Deep Security</li>
           <li>TXOne EdgeOne</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -5023,6 +5044,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -5055,6 +5077,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -5497,6 +5520,7 @@ Date: Thu, 19 Aug 2021 06:24:00 GMT
           <li>Apex One as a Service</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>

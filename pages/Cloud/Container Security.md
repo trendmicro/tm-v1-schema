@@ -243,6 +243,7 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Cloud IPS</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -638,6 +639,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1014,6 +1016,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>ALL</li>
           <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1188,6 +1191,7 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint Sensor</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1288,6 +1292,7 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1308,6 +1313,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1528,6 +1534,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1564,6 +1571,7 @@ This documentation provides detailed information about all fields available for 
           <li>Deep Security</li>
           <li>Container Security</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1601,6 +1609,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1620,6 +1629,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Okta</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1658,6 +1668,7 @@ This documentation provides detailed information about all fields available for 
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
           <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1780,6 +1791,7 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint Sensor</li>
           <li>Container Security</li>
           <li>Apex One as a Service</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1801,6 +1813,7 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
           <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1887,6 +1900,7 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2027,6 +2041,7 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2180,6 +2195,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2247,6 +2263,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2298,6 +2315,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2308,7 +2326,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">FileSHA1</td>
       <td class="description">The SHA-1 of the source file</td>
       <td class="example">-</td>
-      <td class="products">Container Security</td>
+      <td class="products">
+        <ul>
+          <li>Container Security</li>
+          <li>Data Detection and Response</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">srcFileHashSha256</td>
@@ -2366,7 +2389,12 @@ This documentation provides detailed information about all fields available for 
           <li>1237880</li>
         </ul>
       </td>
-      <td class="products">Container Security</td>
+      <td class="products">
+        <ul>
+          <li>Container Security</li>
+          <li>Data Detection and Response</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">tags</td>

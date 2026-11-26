@@ -58,6 +58,7 @@
   - szn
   - pan
   - dan
+  - ddr
   Description_EN: The notable URLs
   Sample:
   - http://example.page.com/canonical.html
@@ -143,6 +144,7 @@
   - sss
   - ips
   - dan
+  - ddr
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -193,6 +195,7 @@
   - scs
   - xms
   - pan
+  - ddr
   Description_EN: The internal product ID
   Sample:
   - Trend Micro Deep Security
@@ -342,6 +345,7 @@
   - sss
   - pan
   - dan
+  - ddr
   Description_EN: The product version
   Sample:
   - 20.0.0.4726

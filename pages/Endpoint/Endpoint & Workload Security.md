@@ -264,6 +264,7 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Cloud IPS</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -835,6 +836,7 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -950,6 +952,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1051,6 +1054,7 @@ This documentation provides detailed information about all fields available for 
           <li>Apex One as a Service</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1743,6 +1747,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1790,6 +1795,7 @@ This documentation provides detailed information about all fields available for 
           <li>TXOne StellarOne</li>
           <li>File Security</li>
           <li>File Security Storage</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2122,6 +2128,7 @@ This documentation provides detailed information about all fields available for 
           <li>Virtual Network Sensor</li>
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2396,6 +2403,7 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2455,6 +2463,7 @@ This documentation provides detailed information about all fields available for 
           <li>TippingPoint Security Management System</li>
           <li>Endpoint Sensor</li>
           <li>Cloud One Network Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2477,6 +2486,7 @@ This documentation provides detailed information about all fields available for 
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -2799,6 +2809,7 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint Sensor</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -3003,6 +3014,7 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -3049,6 +3061,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -3686,6 +3699,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Email Security</li>
           <li>Endpoint Sensor</li>
           <li>File Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -3706,6 +3720,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
         <ul>
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4530,6 +4545,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Container Security</li>
           <li>Email Sensor</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4600,6 +4616,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Deep Security</li>
           <li>Container Security</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4677,6 +4694,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Deep Security</li>
           <li>Apex One as a Service</li>
           <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4838,6 +4856,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -4990,6 +5009,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Apex One as a Service</li>
           <li>Endpoint &amp; Workload Security</li>
           <li>Endpoint Sensor</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -5197,6 +5217,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint Sensor</li>
           <li>Container Security</li>
           <li>Apex One as a Service</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -5329,6 +5350,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
           <li>Container Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -5549,6 +5571,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -5717,6 +5740,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -5811,6 +5835,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Email Sensor</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -5828,6 +5853,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -5850,6 +5876,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -5873,6 +5900,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -6120,6 +6148,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Virtual Network Sensor</li>
           <li>Apex One as a Service</li>
           <li>Deep Security</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -6184,6 +6213,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -6262,6 +6292,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Deep Security</li>
           <li>TXOne EdgeOne</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -6313,6 +6344,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -6367,6 +6399,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -6969,6 +7002,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
         <ul>
           <li>Endpoint &amp; Workload Security</li>
           <li>Apex One as a Service</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>

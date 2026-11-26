@@ -55,6 +55,7 @@
   - sfc
   - sss
   - pan
+  - ddr
   Description_EN: The file name
   Sample:
   - spoolss
@@ -75,6 +76,7 @@
   - pts
   - sfs
   - sfc
+  - ddr
   Description_EN: The file path without the file name
   Sample:
   - security

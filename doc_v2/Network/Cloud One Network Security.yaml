@@ -14,6 +14,7 @@
   - szn
   - pan
   - dan
+  - ddr
   Description_EN: The notable URLs
   Sample:
   - http://example.page.com/canonical.html
@@ -41,6 +42,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -130,6 +132,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The destination port
   Sample:
   - 0
@@ -156,6 +159,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The source port
   Sample:
   - 53
@@ -328,6 +332,7 @@
   - pds
   - scs
   - dan
+  - ddr
   Description_EN: The policy ID of which the event was detected
   Sample:
   - 00000001-0001-0001-0001-000000007610
@@ -361,6 +366,7 @@
   - sss
   - ips
   - dan
+  - ddr
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -394,6 +400,7 @@
   - scs
   - xms
   - pan
+  - ddr
   Description_EN: The internal product ID
   Sample:
   - Trend Micro Deep Security
@@ -414,6 +421,7 @@
   - sig
   - pan
   - dan
+  - ddr
   Description_EN: The GUID of the agent which reported the detection
   Sample:
   - 00000000-0000-0000-0000-000000000000
@@ -436,6 +444,7 @@
   - mns
   - pan
   - dan
+  - ddr
   Description_EN: The severity of the event
   Sample:
   - 2
@@ -475,6 +484,7 @@
   - ptp
   - xes
   - stp
+  - ddr
   Description_EN: The management product name
   Sample:
   - Cloud One - Workload Security
@@ -501,6 +511,7 @@
   - sss
   - pan
   - dan
+  - ddr
   Description_EN: The product version
   Sample:
   - 20.0.0.4726
@@ -526,6 +537,7 @@
   - sig
   - szn
   - xms
+  - ddr
   Description_EN: The Unix time of the log generation
   Sample:
   - 1656324260000

@@ -33,6 +33,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -122,6 +123,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The destination port
   Sample:
   - 0
@@ -148,6 +150,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The source port
   Sample:
   - 53
@@ -262,6 +265,7 @@
   - sss
   - ips
   - dan
+  - ddr
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -288,6 +292,7 @@
   - scs
   - mns
   - dan
+  - ddr
   Description_EN: The name of the triggered policy
   Sample:
   - Steelcase
@@ -441,6 +446,7 @@
   - pds
   - ptn
   - pan
+  - ddr
   Description_EN: The source MAC address
   Sample:
   - 00:11:22:33:44:55

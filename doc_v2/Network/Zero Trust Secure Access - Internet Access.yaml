@@ -26,6 +26,7 @@
   - sws
   - sig
   - xes
+  - ddr
   Description_EN: The user domain
   Sample:
   - example.com.pa
@@ -75,6 +76,7 @@
   - szn
   - pan
   - dan
+  - ddr
   Description_EN: The notable URLs
   Sample:
   - http://example.page.com/canonical.html
@@ -102,6 +104,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -150,6 +153,7 @@
   - sfc
   - sss
   - pan
+  - ddr
   Description_EN: The file name
   Sample:
   - spoolss
@@ -348,6 +352,7 @@
   - sss
   - ips
   - dan
+  - ddr
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -381,6 +386,7 @@
   - scs
   - xms
   - pan
+  - ddr
   Description_EN: The internal product ID
   Sample:
   - Trend Micro Deep Security
@@ -401,6 +407,7 @@
   - sig
   - pan
   - dan
+  - ddr
   Description_EN: The GUID of the agent which reported the detection
   Sample:
   - 00000000-0000-0000-0000-000000000000
@@ -416,6 +423,7 @@
   - sig
   - szn
   - dan
+  - ddr
   Description_EN: The domain of the request URL
   Sample:
   - weather.service.msn.com
@@ -481,6 +489,7 @@
   - scs
   - mns
   - dan
+  - ddr
   Description_EN: The name of the triggered policy
   Sample:
   - Steelcase
@@ -500,6 +509,7 @@
   - scs
   - okt
   - dan
+  - ddr
   Description_EN: The user principal name used to sign in to the proxy
   Sample:
   - sample_email@trendmicro.com
@@ -592,6 +602,7 @@
   - sfc
   - sss
   - pan
+  - ddr
   Description_EN: The file size of the suspicious file
   Sample:
   - '0'
@@ -654,6 +665,7 @@
   - sss
   - pan
   - dan
+  - ddr
   Description_EN: The product version
   Sample:
   - 20.0.0.4726
@@ -679,6 +691,7 @@
   - sig
   - szn
   - xms
+  - ddr
   Description_EN: The Unix time of the log generation
   Sample:
   - 1656324260000
@@ -691,6 +704,7 @@
   - sao
   - sca
   - sig
+  - ddr
   Description_EN: The one-to-many data structure
   Sample:
   - policyName:Monitoreo All Files, template:Managed - All files

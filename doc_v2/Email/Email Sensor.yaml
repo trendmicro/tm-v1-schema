@@ -39,6 +39,7 @@
   - sao
   - xms
   - pan
+  - ddr
   Description_EN: The email sender
   Sample:
   - sample_email@trendmicro.com
@@ -58,6 +59,7 @@
   - sao
   - xms
   - pan
+  - ddr
   Description_EN: The email recipient
   Sample:
   - (no user)
@@ -77,6 +79,7 @@
   - sao
   - xms
   - pan
+  - ddr
   Description_EN: The email subject
   Sample:
   - FW. mail subject
@@ -287,6 +290,7 @@
   - sss
   - ips
   - dan
+  - ddr
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -344,6 +348,7 @@
   - scs
   - xms
   - pan
+  - ddr
   Description_EN: The internal product ID
   Sample:
   - Trend Micro Deep Security
@@ -452,6 +457,7 @@
   - sig
   - szn
   - xms
+  - ddr
   Description_EN: The Unix time of the log generation
   Sample:
   - 1656324260000
