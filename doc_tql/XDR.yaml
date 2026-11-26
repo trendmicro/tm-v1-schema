@@ -91,6 +91,22 @@
   Description_EN: The metric unit
   DL_Type: string
 
+- Name: aiModelName
+  Description_EN: The detected AI model name (empty if not detected)
+  DL_Type: dynamic
+
+- Name: aiOperation
+  Description_EN: The AI operation of the call
+  DL_Type: string
+
+- Name: aiScanSurface
+  Description_EN: The part of the AI exchange that was scanned
+  DL_Type: string
+
+- Name: aiSessionId
+  Description_EN: The AI session ID
+  DL_Type: string
+
 - Name: alertCategories
   Description_EN: The list of alert categories
   DL_Type: dynamic
@@ -160,7 +176,7 @@
   DL_Type: string
 
 - Name: appName
-  Description_EN: The Azure container app
+  Description_EN: The application name
   DL_Type: string
 
 - Name: appOrSystemEventHashId
@@ -776,7 +792,8 @@
   DL_Type: dynamic
 
 - Name: correlationId
-  Description_EN: The correlation ID (associates related telemetry events)
+  Description_EN: The correlation ID that links related detections and activity records
+    of the same request
   DL_Type: string
 
 - Name: correlationRuleId
@@ -899,6 +916,19 @@
 
 - Name: denyListType
   Description_EN: Block list type
+  DL_Type: string
+
+- Name: deploymentGUID
+  Description_EN: The GUID of the Kubernetes deployment registered in the Trend Micro
+    system
+  DL_Type: string
+
+- Name: deploymentName
+  Description_EN: The name of the deployment that produced the log
+  DL_Type: string
+
+- Name: deploymentType
+  Description_EN: The runtime of the deployment that produced the log
   DL_Type: string
 
 - Name: description
@@ -2067,6 +2097,10 @@
 - Name: logReceivedTime
   Description_EN: The time when the XDR log was received
   DL_Type: datetime
+
+- Name: logRepoId
+  Description_EN: The log repository ID
+  DL_Type: string
 
 - Name: logStatus
   Description_EN: The VPC Flow Log status
@@ -4268,6 +4302,10 @@
 - Name: srcCity
   Description_EN: The city name of the source IP
   DL_Type: dynamic
+
+- Name: srcComponent
+  Description_EN: The component that generated the event
+  DL_Type: string
 
 - Name: srcContinent
   Description_EN: The source IP continent

@@ -154,6 +154,7 @@
   ProductCode:
   - sig
   - szn
+  - dan
   Description_EN: The User Principal Name
   Sample:
   - sample_email@trendmicro.com
@@ -168,6 +169,7 @@
   - szn
   - pdi
   - xns
+  - dan
   Description_EN: The destination URL that the user is accessing
   Sample:
   - https://google.com/
@@ -181,10 +183,12 @@
   ProductCode:
   - sig
   - szn
+  - dan
   Description_EN: The action
   Sample:
   - Allow
   - Block
+  - Error
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -260,11 +264,15 @@
   - xns
   - vpc
   - azv
+  - dan
   Description_EN: The name of the log event
   Sample:
   - SWG_ACTIVITY_LOG
   - FIREWALL_ACTIVITY_LOG
   - VPC_ACTIVITY_LOG
+  - AI_ACCESS_EVENT
+  - AI_INVOKE_EVENT
+  - AI_ROUTING_EVENT
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -273,6 +281,7 @@
   ProductCode:
   - sig
   - szn
+  - dan
   Description_EN: The name of the requested application
   Sample:
   - Facebook
@@ -286,6 +295,7 @@
   - sig
   - szn
   - azv
+  - dan
   Description_EN: The name of the triggered cloud access rule
   Sample:
   - ETL_Access Rules_Web_Host
@@ -315,6 +325,7 @@
   ProductCode:
   - sig
   - szn
+  - dan
   Description_EN: The URL domain
   Sample:
   - www.facebook.com
@@ -377,6 +388,7 @@
 - Name: eventSubName
   ProductCode:
   - sig
+  - dan
   Description_EN: The Zero Trust Secure Access - Internet Access cloud app action
     or the Palo Alto Networks firewall log sub-type
   Sample:
@@ -385,6 +397,10 @@
   - end
   - drop
   - deny
+  - AI_ACCESS_EVENT_ALLOW
+  - AI_ACCESS_EVENT_DENY
+  - AI_INVOKE_EVENT_LLM
+  - AI_INVOKE_EVENT_MCP
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -592,6 +608,7 @@
   - sig
   - pdi
   - xns
+  - dan
   Description_EN: The non-endpoint object such as a network appliance
   Sample:
   - 11111111-1111-1111-1111-111111111111
@@ -700,6 +717,7 @@
 - Name: serverRespTime
   ProductCode:
   - sig
+  - dan
   Description_EN: The time the server took to respond to the request, in milliseconds
   Sample:
   - 199
@@ -795,6 +813,7 @@
   - szn
   - vpc
   - azv
+  - dan
   Description_EN: The service destination port of the private application server (dstport)
   Sample:
   - 443
@@ -1825,6 +1844,7 @@
 - Name: e2eLatency
   ProductCode:
   - sig
+  - dan
   Description_EN: The end-to-end traffic latency time, in milliseconds
   Sample:
   - 10000
@@ -1854,6 +1874,7 @@
   ProductCode:
   - pdi
   - xns
+  - dan
   Description_EN: The raw data string that contains additional information
   Sample:
   - '[{ "oid": "1.2.3.4", "value_type": 4, "value": "MANUFACTURER:SAMPLE\ nMODEL:SAMPLE
@@ -1904,10 +1925,14 @@
   - pdi
   - vpc
   - azv
+  - dan
   Description_EN: The event ID
   Sample:
   - '200139'
   - '200140'
+  - '200186'
+  - '200187'
+  - '200188'
   DL_Type: string
   DL_CommonKey:
   DL_Searchable: true
@@ -2208,3 +2233,144 @@
   DL_CommonKey:
   DL_Searchable: true
   DL_Aggregable: false
+- Name: appName
+  ProductCode:
+  - dan
+  Description_EN: The application name
+  Sample:
+  - nginx-server
+  - customer-support-bot
+  - mysqlnode
+  - apiproxy
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: deploymentGUID
+  ProductCode:
+  - dan
+  Description_EN: The TrendAI™ deployment GUID
+  Sample:
+  - 00000000-0000-0000-0000-000000000000
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: deploymentName
+  ProductCode:
+  - dan
+  Description_EN: The name of the deployment that produced the log
+  Sample:
+  - prod-gateway-eu
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: deploymentType
+  ProductCode:
+  - dan
+  Description_EN: The runtime of the deployment that produced the log
+  Sample:
+  - k8s
+  - docker
+  - binary
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true
+- Name: correlationId
+  ProductCode:
+  - dan
+  Description_EN: The correlation ID that links related detections and activity records
+    of the same request
+  Sample:
+  - 11111111-1111-1111-1111-111111111111
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: aiSessionId
+  ProductCode:
+  - dan
+  Description_EN: The AI session ID
+  Sample:
+  - conv_abc123xyz
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: aiModelName
+  ProductCode:
+  - dan
+  Description_EN: The detected AI model name (empty if not detected)
+  Sample:
+  - gpt-4o
+  - gpt-4o-2024-11-20
+  DL_Type: dynamic
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: mcpToolName
+  ProductCode:
+  - dan
+  Description_EN: The MCP tool that was called
+  Sample:
+  - navigate
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: ruleIdStr
+  ProductCode:
+  - dan
+  Description_EN: The rule ID
+  Sample:
+  - 01a10e20-0000-7000-8000-000000000001
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: inputTokens
+  ProductCode:
+  - dan
+  Description_EN: The input token count of the call
+  Sample:
+  - 214
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: outputTokens
+  ProductCode:
+  - dan
+  Description_EN: The output token count of the call
+  Sample:
+  - 88
+  DL_Type: long
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: errorCode
+  ProductCode:
+  - dan
+  Description_EN: The error code associated with the event
+  Sample:
+  - upstream_unavailable
+  - invalid_request
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: false
+- Name: aiOperation
+  ProductCode:
+  - dan
+  Description_EN: The AI operation of the call
+  Sample:
+  - chat
+  - responses
+  - execute_tool
+  - tools/list
+  DL_Type: string
+  DL_CommonKey:
+  DL_Searchable: true
+  DL_Aggregable: true

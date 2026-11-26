@@ -10,6 +10,10 @@
   Description_EN: The IP address of the actor that triggered the event
   DL_Type: string
 
+- Name: actResult
+  Description_EN: The result of an action
+  DL_Type: dynamic
+
 - Name: additionalEventData
   Description_EN: The additional event information that was not part of the request
     or response
@@ -22,6 +26,20 @@
 - Name: assetIp
   Description_EN: The host IP of the asset or related entity involved in the risk
     event
+  DL_Type: string
+
+- Name: containerName
+  Description_EN: The Kubernetes container name associated with the event
+  DL_Type: string
+
+- Name: correlationId
+  Description_EN: The correlation ID that links related detections and activity records
+    of the same request
+  DL_Type: string
+
+- Name: deploymentGUID
+  Description_EN: The GUID of the Kubernetes deployment registered in the Trend Micro
+    system
   DL_Type: string
 
 - Name: description
@@ -102,6 +120,14 @@
   Description_EN: The group name
   DL_Type: string
 
+- Name: k8sNamespace
+  Description_EN: The Kubernetes namespace associated with the event
+  DL_Type: string
+
+- Name: k8sPodName
+  Description_EN: The Kubernetes pod name associated with the event
+  DL_Type: string
+
 - Name: logReceivedTime
   Description_EN: The time when the XDR log was received
   DL_Type: datetime
@@ -146,6 +172,10 @@
 - Name: simulation
   Description_EN: Whether a log is a simulation log
   DL_Type: bool
+
+- Name: srcComponent
+  Description_EN: The component that generated the event
+  DL_Type: string
 
 - Name: srcType
   Description_EN: The source device type

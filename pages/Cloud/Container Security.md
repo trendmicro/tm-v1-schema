@@ -242,6 +242,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -295,15 +296,21 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The Azure container app</td>
+      <td class="description">The application name</td>
       <td class="example">
         <ul>
           <li>nginx-server</li>
+          <li>customer-support-bot</li>
           <li>mysqlnode</li>
           <li>apiproxy</li>
         </ul>
       </td>
-      <td class="products">Container Security</td>
+      <td class="products">
+        <ul>
+          <li>Container Security</li>
+          <li>dan</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">appReplicaName</td>
@@ -558,6 +565,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Container Security</li>
           <li>File Security</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -589,6 +597,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Security</li>
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -843,6 +852,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1553,6 +1563,7 @@ This documentation provides detailed information about all fields available for 
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Security</li>
           <li>Container Security</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1589,6 +1600,7 @@ This documentation provides detailed information about all fields available for 
           <li>TXOne EdgeOne</li>
           <li>Container Security</li>
           <li>Mobile Network Security</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1607,6 +1619,7 @@ This documentation provides detailed information about all fields available for 
           <li>Zero Trust Secure Access - Private Access</li>
           <li>Container Security</li>
           <li>Okta</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1873,6 +1886,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1896,6 +1910,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Virtual Network Sensor</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -2011,6 +2026,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -2053,6 +2069,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -2162,6 +2179,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>

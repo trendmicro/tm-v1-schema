@@ -55,7 +55,8 @@
   DL_Type: dynamic
 
 - Name: correlationId
-  Description_EN: The correlation ID (associates related telemetry events)
+  Description_EN: The correlation ID that links related detections and activity records
+    of the same request
   DL_Type: string
 
 - Name: crossTenantAccessType

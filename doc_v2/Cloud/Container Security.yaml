@@ -761,6 +761,7 @@
   - mns
   - ddr
   - ips
+  - dan
   Description_EN: The name of the rule that triggered the event
   Sample:
   - Directory Server - Microsoft Windows Active Directory
@@ -847,6 +848,7 @@
   - sds
   - pds
   - scs
+  - dan
   Description_EN: The policy ID of which the event was detected
   Sample:
   - 00000001-0001-0001-0001-000000007610
@@ -879,6 +881,7 @@
   - mns
   - sss
   - ips
+  - dan
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -957,6 +960,7 @@
   - scs
   - mns
   - pan
+  - dan
   Description_EN: The severity of the event
   Sample:
   - 2
@@ -992,6 +996,7 @@
   - ptn
   - scs
   - mns
+  - dan
   Description_EN: The name of the triggered policy
   Sample:
   - Steelcase
@@ -1010,6 +1015,7 @@
   - szn
   - scs
   - okt
+  - dan
   Description_EN: The user principal name used to sign in to the proxy
   Sample:
   - sample_email@trendmicro.com
@@ -1060,6 +1066,7 @@
   - ams
   - szn
   - scs
+  - dan
   Description_EN: The detection type
   Sample:
   - '1'
@@ -1090,6 +1097,7 @@
   - mns
   - ddr
   - pan
+  - dan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100
@@ -1238,6 +1246,7 @@
   - sfc
   - sss
   - pan
+  - dan
   Description_EN: The product version
   Sample:
   - 20.0.0.4726
@@ -1348,6 +1357,7 @@
   ProductCode:
   - scs
   - sfs
+  - dan
   Description_EN: The event tags
   Sample:
   - network
@@ -1529,6 +1539,7 @@
   - scs
   - sao
   - xes
+  - dan
   Description_EN: The rule ID
   Sample:
   - TM-00000043
@@ -1602,6 +1613,7 @@
   - scs
   - xns
   - ips
+  - dan
   Description_EN: The JSON string that contains additional information
   Sample:
   - '{"TLS version": "0x0303", "Cipher Suite": "0xc030"}'
@@ -1730,9 +1742,11 @@
 - Name: appName
   ProductCode:
   - scs
-  Description_EN: The Azure container app
+  - dan
+  Description_EN: The application name
   Sample:
   - nginx-server
+  - customer-support-bot
   - mysqlnode
   - apiproxy
   DL_Type: string

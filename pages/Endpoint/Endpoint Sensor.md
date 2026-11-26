@@ -242,6 +242,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -256,6 +257,39 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Endpoint Sensor</li>
           <li>Apex One as a Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">aiModelName</td>
+      <td class="type">dynamic</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The detected AI model name (empty if not detected)</td>
+      <td class="example">
+        <ul>
+          <li>gpt-4o</li>
+          <li>claude-3-5-sonnet</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>dan</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="field-name">aiSessionId</td>
+      <td class="type">string</td>
+      <td class="searchable">true</td>
+      <td class="general-field">-</td>
+      <td class="description">The AI session ID</td>
+      <td class="example">conv_abc123xyz</td>
+      <td class="products">
+        <ul>
+          <li>Endpoint Sensor</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -601,6 +635,7 @@ This documentation provides detailed information about all fields available for 
           <li>Cloud One Network Security</li>
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Deep Discovery Analyzer</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -922,6 +957,7 @@ This documentation provides detailed information about all fields available for 
           <li>Cloud App Security</li>
           <li>Apex One as a Service</li>
           <li>File Security</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1563,6 +1599,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -1650,6 +1687,7 @@ This documentation provides detailed information about all fields available for 
           <li>Data Detection and Response</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -5071,6 +5109,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Endpoint &amp; Workload Security</li>
           <li>Deep Security</li>
           <li>Container Security</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -6361,6 +6400,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Zero Trust Secure Access - Internet Access</li>
           <li>Endpoint Sensor</li>
           <li>Okta</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -6495,6 +6535,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Container Security</li>
           <li>Apex One as a Service</li>
           <li>Endpoint Sensor</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -6537,6 +6578,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
           <li>Mobile Network Security</li>
           <li>Data Detection and Response</li>
           <li>Cloud IPS</li>
+          <li>dan</li>
         </ul>
       </td>
     </tr>
@@ -7519,7 +7561,7 @@ if ($arrService.Status -ne &quot;Running&quot;)
 </div>
 
 ## Field Statistics
-- **Total Fields:** 396
+- **Total Fields:** 398
 - **Layer:** Endpoint
 - **Product:** Endpoint Sensor
 

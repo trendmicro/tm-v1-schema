@@ -123,6 +123,7 @@
   - mns
   - ddr
   - ips
+  - dan
   Description_EN: The name of the rule that triggered the event
   Sample:
   - Directory Server - Microsoft Windows Active Directory
@@ -189,6 +190,7 @@
   - ddr
   - pan
   - ips
+  - dan
   Description_EN: The event type
   Sample:
   - LOG_INSPECTION_EVENT
@@ -250,6 +252,7 @@
   - sig
   - xes
   - okt
+  - dan
   Description_EN: The additional information
   Sample:
   - 'warning: fork: Resource temporarily unavailable'
@@ -283,6 +286,7 @@
   - mns
   - sss
   - ips
+  - dan
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -420,6 +424,7 @@
   - mns
   - ddr
   - pan
+  - dan
   Description_EN: The event ID from the logs of each product
   Sample:
   - 100100
