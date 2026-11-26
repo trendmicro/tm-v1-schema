@@ -243,6 +243,7 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Cloud IPS</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -374,6 +375,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -675,6 +677,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Mobile Network Security</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -816,6 +819,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -910,6 +914,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -942,6 +947,7 @@ This documentation provides detailed information about all fields available for 
           <li>Mobile Network Security</li>
           <li>Deep Discovery Analyzer</li>
           <li>Cloud IPS</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -1008,7 +1014,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The source device type</td>
       <td class="example">Desktop/Laptop</td>
-      <td class="products">Mobile Network Security</td>
+      <td class="products">
+        <ul>
+          <li>Mobile Network Security</li>
+          <li>Data Detection and Response</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">vLANId</td>

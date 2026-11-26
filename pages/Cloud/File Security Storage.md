@@ -580,6 +580,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -606,6 +607,7 @@ This documentation provides detailed information about all fields available for 
           <li>TXOne StellarOne</li>
           <li>File Security</li>
           <li>File Security Storage</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -632,6 +634,7 @@ This documentation provides detailed information about all fields available for 
           <li>File Security Storage</li>
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>
@@ -775,6 +778,7 @@ This documentation provides detailed information about all fields available for 
           <li>Agentless Vulnerability &amp; Threat Detection</li>
           <li>Deep Discovery Analyzer</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>

@@ -144,6 +144,7 @@
   - pao
   - sds
   - pds
+  - ddr
   Description_EN: The rules that triggered the event
   Sample:
   - [HS_EMOTET.SMAA, HM_AVEDOWN.SMZTIG-A, HE_DOCQRPHISH.SM]

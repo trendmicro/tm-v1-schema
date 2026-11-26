@@ -429,6 +429,7 @@ This documentation provides detailed information about all fields available for 
           <li>Container Security</li>
           <li>Okta</li>
           <li>dan</li>
+          <li>Data Detection and Response</li>
         </ul>
       </td>
     </tr>

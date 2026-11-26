@@ -11,6 +11,7 @@
   - sfc
   - sss
   - pan
+  - ddr
   Description_EN: The file name
   Sample:
   - spoolss
@@ -52,6 +53,7 @@
   - pts
   - sfs
   - sfc
+  - ddr
   Description_EN: The file path without the file name
   Sample:
   - security
@@ -153,6 +155,7 @@
   - sem
   - xes
   - sfs
+  - ddr
   Description_EN: The object type
   Sample:
   - file
@@ -417,6 +420,7 @@
   - sfc
   - sss
   - pan
+  - ddr
   Description_EN: The file size of the suspicious file
   Sample:
   - '0'
@@ -523,6 +527,7 @@
   - sss
   - pan
   - dan
+  - ddr
   Description_EN: The product version
   Sample:
   - 20.0.0.4726

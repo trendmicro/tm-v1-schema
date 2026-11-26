@@ -37,6 +37,7 @@
   - xns
   - pds
   - sao
+  - ddr
   Description_EN: The endpoint hostname (For example, if an intranet host accesses
     a suspicious internet host, the intranet host is the "peerHost" and the internet
     host is the "interestedHost")
@@ -109,6 +110,7 @@
   - szn
   - pan
   - dan
+  - ddr
   Description_EN: The notable URLs
   Sample:
   - http://example.page.com/canonical.html
@@ -164,6 +166,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -261,6 +264,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The destination port
   Sample:
   - 0
@@ -287,6 +291,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The source port
   Sample:
   - 53
@@ -310,6 +315,7 @@
   - sfc
   - sss
   - pan
+  - ddr
   Description_EN: The file name
   Sample:
   - spoolss
@@ -368,6 +374,7 @@
   - pts
   - sfs
   - sfc
+  - ddr
   Description_EN: The file path without the file name
   Sample:
   - security
@@ -551,6 +558,7 @@
   - sao
   - xms
   - pan
+  - ddr
   Description_EN: The email sender
   Sample:
   - sample_email@trendmicro.com
@@ -570,6 +578,7 @@
   - sao
   - xms
   - pan
+  - ddr
   Description_EN: The email recipient
   Sample:
   - (no user)
@@ -589,6 +598,7 @@
   - sao
   - xms
   - pan
+  - ddr
   Description_EN: The email subject
   Sample:
   - FW. mail subject
@@ -867,6 +877,7 @@
   - sss
   - ips
   - dan
+  - ddr
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -900,6 +911,7 @@
   - scs
   - xms
   - pan
+  - ddr
   Description_EN: The internal product ID
   Sample:
   - Trend Micro Deep Security
@@ -920,6 +932,7 @@
   - sig
   - pan
   - dan
+  - ddr
   Description_EN: The GUID of the agent which reported the detection
   Sample:
   - 00000000-0000-0000-0000-000000000000
@@ -954,6 +967,7 @@
   - mns
   - pan
   - dan
+  - ddr
   Description_EN: The severity of the event
   Sample:
   - 2
@@ -1608,6 +1622,7 @@
   - pdi
   - xns
   - pan
+  - ddr
   Description_EN: The computer which installed the Trend Micro product
   Sample:
   - CU-PRO1-9039-2
@@ -1697,6 +1712,7 @@
   - sfc
   - sss
   - pan
+  - ddr
   Description_EN: The file size of the suspicious file
   Sample:
   - '0'
@@ -1974,6 +1990,7 @@
   - sss
   - pan
   - dan
+  - ddr
   Description_EN: The product version
   Sample:
   - 20.0.0.4726
@@ -2059,6 +2076,7 @@
   - sig
   - szn
   - xms
+  - ddr
   Description_EN: The Unix time of the log generation
   Sample:
   - 1656324260000
@@ -2073,6 +2091,7 @@
   - xns
   - sao
   - pds
+  - ddr
   Description_EN: The date of the log generation
   Sample:
   - 1655337600000
@@ -2087,6 +2106,7 @@
   - xns
   - sao
   - pds
+  - ddr
   Description_EN: The hour of the log generation
   Sample:
   - 9
@@ -2102,6 +2122,7 @@
   - xns
   - sao
   - pds
+  - ddr
   Description_EN: The weekday of the log generation
   Sample:
   - Monday
@@ -2173,6 +2194,7 @@
   - xns
   - sao
   - pds
+  - ddr
   Description_EN: The sender GUID
   Sample:
   - 346648FC-9862-D2F0-F94C-FAB1A838ABD7
@@ -2188,6 +2210,7 @@
   - xns
   - sao
   - sem
+  - ddr
   Description_EN: The sender IP
   Sample:
   - 10.10.10.10
@@ -2204,6 +2227,7 @@
   - pds
   - ptn
   - pan
+  - ddr
   Description_EN: The source MAC address
   Sample:
   - 00:11:22:33:44:55

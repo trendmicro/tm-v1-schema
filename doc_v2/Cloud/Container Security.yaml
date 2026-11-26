@@ -520,6 +520,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The source IP
   Sample:
   - 10.10.10.10
@@ -571,6 +572,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The destination port
   Sample:
   - 0
@@ -597,6 +599,7 @@
   - mns
   - pan
   - ips
+  - ddr
   Description_EN: The source port
   Sample:
   - 53
@@ -626,6 +629,7 @@
   ProductCode:
   - sds
   - scs
+  - ddr
   Description_EN: The object file size
   Sample:
   - '0'
@@ -662,6 +666,7 @@
   - sds
   - xes
   - scs
+  - ddr
   Description_EN: The file path of the target process image or target file
   Sample:
   - c:\windows\system32\windowspowershell\v1.0\powershell.exe
@@ -678,6 +683,7 @@
   - xes
   - sds
   - scs
+  - ddr
   Description_EN: The SHA-1 of the objectFilePath object
   Sample:
   - 51B8646308EE0B68AD1F7F1291B85395434DE49A
@@ -733,6 +739,7 @@
   - pds
   - sao
   - scs
+  - ddr
   Description_EN: The subject process command line
   Sample:
   - '"C:\Program Files (x86)\AADM\AADM.exe" '
@@ -849,6 +856,7 @@
   - pds
   - scs
   - dan
+  - ddr
   Description_EN: The policy ID of which the event was detected
   Sample:
   - 00000001-0001-0001-0001-000000007610
@@ -882,6 +890,7 @@
   - sss
   - ips
   - dan
+  - ddr
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -939,6 +948,7 @@
   - scs
   - xms
   - pan
+  - ddr
   Description_EN: The internal product ID
   Sample:
   - Trend Micro Deep Security
@@ -961,6 +971,7 @@
   - mns
   - pan
   - dan
+  - ddr
   Description_EN: The severity of the event
   Sample:
   - 2
@@ -976,6 +987,7 @@
   - sds
   - sao
   - scs
+  - ddr
   Description_EN: The user name of the process or the file creator
   Sample:
   - SYSTEM
@@ -997,6 +1009,7 @@
   - scs
   - mns
   - dan
+  - ddr
   Description_EN: The name of the triggered policy
   Sample:
   - Steelcase
@@ -1016,6 +1029,7 @@
   - scs
   - okt
   - dan
+  - ddr
   Description_EN: The user principal name used to sign in to the proxy
   Sample:
   - sample_email@trendmicro.com
@@ -1027,6 +1041,7 @@
   ProductCode:
   - ALL
   - scs
+  - ddr
   Description_EN: The group ID for the management scope filter
   Sample:
   - 00000000-0000-0000-0000-000000000000
@@ -1207,6 +1222,7 @@
   - xes
   - scs
   - sao
+  - ddr
   Description_EN: The PID of the subject process
   Sample: []
   DL_Type: int
@@ -1247,6 +1263,7 @@
   - sss
   - pan
   - dan
+  - ddr
   Description_EN: The product version
   Sample:
   - 20.0.0.4726
@@ -1540,6 +1557,7 @@
   - sao
   - xes
   - dan
+  - ddr
   Description_EN: The rule ID
   Sample:
   - TM-00000043
@@ -1565,6 +1583,7 @@
 - Name: srcFileSize
   ProductCode:
   - scs
+  - ddr
   Description_EN: The file size of the source file
   Sample:
   - 0
@@ -1589,6 +1608,7 @@
 - Name: srcFileHashSha1
   ProductCode:
   - scs
+  - ddr
   Description_EN: The SHA-1 of the source file
   Sample: []
   DL_Type: string

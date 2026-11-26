@@ -36,6 +36,7 @@
   - scs
   - okt
   - dan
+  - ddr
   Description_EN: The user principal name used to sign in to the proxy
   Sample:
   - sample_email@trendmicro.com

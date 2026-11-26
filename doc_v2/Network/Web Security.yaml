@@ -4,6 +4,7 @@
   - sws
   - sig
   - xes
+  - ddr
   Description_EN: The user domain
   Sample:
   - example.com.pa
@@ -83,6 +84,7 @@
   - sss
   - ips
   - dan
+  - ddr
   Description_EN: The actions taken to mitigate the event
   Sample:
   - log
@@ -116,6 +118,7 @@
   - scs
   - xms
   - pan
+  - ddr
   Description_EN: The internal product ID
   Sample:
   - Trend Micro Deep Security
@@ -131,6 +134,7 @@
   - sig
   - szn
   - dan
+  - ddr
   Description_EN: The domain of the request URL
   Sample:
   - weather.service.msn.com
@@ -196,6 +200,7 @@
   - scs
   - mns
   - dan
+  - ddr
   Description_EN: The name of the triggered policy
   Sample:
   - Steelcase
@@ -215,6 +220,7 @@
   - scs
   - okt
   - dan
+  - ddr
   Description_EN: The user principal name used to sign in to the proxy
   Sample:
   - sample_email@trendmicro.com
@@ -313,6 +319,7 @@
   - sig
   - szn
   - xms
+  - ddr
   Description_EN: The Unix time of the log generation
   Sample:
   - 1656324260000

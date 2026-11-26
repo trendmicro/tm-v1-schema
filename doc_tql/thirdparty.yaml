@@ -181,7 +181,7 @@
   DL_Type: string
 
 - Name: clusterName
-  Description_EN: The cluster name of the container
+  Description_EN: The Kubernetes cluster name involved in the activity
   DL_Type: string
 
 - Name: cnt
@@ -1227,7 +1227,7 @@
   DL_Type: string
 
 - Name: sessionStart
-  Description_EN: The session start time (in seconds)
+  Description_EN: The session start name (in seconds)
   DL_Type: long
 
 - Name: sessionSubject

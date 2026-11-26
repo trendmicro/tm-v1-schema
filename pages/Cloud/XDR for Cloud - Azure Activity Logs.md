@@ -207,8 +207,19 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The status of the event operation</td>
-      <td class="example">MICROSOFT.KUSTO/CLUSTERS/READ</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="example">
+        <ul>
+          <li>MICROSOFT.KUSTO/CLUSTERS/READ</li>
+          <li>Success</li>
+          <li>Failure</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">actionSubStatus</td>
@@ -220,9 +231,16 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>Running.</li>
           <li>Bad Request</li>
+          <li>OK</li>
+          <li>PERMISSION_DENIED</li>
         </ul>
       </td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">authAction</td>
@@ -239,8 +257,18 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The entity ID</td>
-      <td class="example">123abc2a6c314b0ab03a891259123abc</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="example">
+        <ul>
+          <li>123abc2a6c314b0ab03a891259123abc</li>
+          <li>my-sa@my-project-123456.iam.gserviceaccount.com</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">authPrincipalType</td>
@@ -248,8 +276,19 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The entity type</td>
-      <td class="example">Group</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="example">
+        <ul>
+          <li>Group</li>
+          <li>ServiceAccount</li>
+          <li>FederatedIdentity</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">authRole</td>
@@ -283,9 +322,19 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The Azure Application ID</td>
-      <td class="example">11111111-1111-1111-1111-111111111111</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="description">The application ID or OAuth client ID</td>
+      <td class="example">
+        <ul>
+          <li>11111111-1111-1111-1111-111111111111</li>
+          <li>11111111111.apps.googleusercontent.com</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">claimsAppIdAcr</td>
@@ -333,9 +382,19 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The email address of the authenticated user</td>
-      <td class="example">sample_email@trendmicro.com</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="description">The email address of the authenticated user or service account</td>
+      <td class="example">
+        <ul>
+          <li>sample_email@trendmicro.com</li>
+          <li>my-sa@my-project-123456.iam.gserviceaccount.com</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">claimsExp</td>
@@ -475,8 +534,18 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The cloud resource ID</td>
-      <td class="example">/SUBSCRIPTIONS/11111111-1111-1111-1111-111111111111/RESOURCEGROUPS/GROUP/PROVIDERS/MICROSOFT.KUSTO/CLUSTERS/TEST</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="example">
+        <ul>
+          <li>/SUBSCRIPTIONS/11111111-1111-1111-1111-111111111111/RESOURCEGROUPS/GROUP/PROVIDERS/MICROSOFT.KUSTO/CLUSTERS/TEST</li>
+          <li>projects/my-project-123456/zones/asia-east1-a/instances/my-vm</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">correlationId</td>
@@ -492,9 +561,20 @@ This documentation provides detailed information about all fields available for 
       <td class="type">string</td>
       <td class="searchable">true</td>
       <td class="general-field">-</td>
-      <td class="description">The event category used in LookupEvents calls</td>
-      <td class="example">Administrative</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="description">The event category</td>
+      <td class="example">
+        <ul>
+          <li>Administrative</li>
+          <li>ADMIN_ACTIVITY</li>
+          <li>DATA_ACCESS</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">eventId</td>
@@ -516,6 +596,7 @@ This documentation provides detailed information about all fields available for 
         <ul>
           <li>XDR for Cloud - Azure Activity Logs</li>
           <li>ALL</li>
+          <li>sgm</li>
         </ul>
       </td>
     </tr>
@@ -534,8 +615,19 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The event severity level</td>
-      <td class="example">Information</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="example">
+        <ul>
+          <li>Information</li>
+          <li>NOTICE</li>
+          <li>ERROR</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">operationType</td>
@@ -543,8 +635,18 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The operation performed in the event</td>
-      <td class="example">MICROSOFT.KUSTO/CLUSTERS/READ</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="example">
+        <ul>
+          <li>MICROSOFT.KUSTO/CLUSTERS/READ</li>
+          <li>v1.compute.instances.insert</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">pname</td>
@@ -552,8 +654,18 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The product name</td>
-      <td class="example">Azure Activity Log</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="example">
+        <ul>
+          <li>Azure Activity Log</li>
+          <li>XDR for Cloud - Google Cloud Audit Logs</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">productCode</td>
@@ -561,11 +673,17 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The internal product code</td>
-      <td class="example">aml</td>
+      <td class="example">
+        <ul>
+          <li>aml</li>
+          <li>sgm</li>
+        </ul>
+      </td>
       <td class="products">
         <ul>
           <li>XDR for Cloud - Azure Activity Logs</li>
           <li>ALL</li>
+          <li>sgm</li>
         </ul>
       </td>
     </tr>
@@ -575,8 +693,18 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The cloud asset region</td>
-      <td class="example">Japan East</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="example">
+        <ul>
+          <li>Japan East</li>
+          <li>asia-east1</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">requestAccess</td>
@@ -757,7 +885,12 @@ This documentation provides detailed information about all fields available for 
       </td>
       <td class="description">The source IP address</td>
       <td class="example">[&#x27;10.10.10.10&#x27;]</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">tenantId</td>
@@ -788,8 +921,18 @@ This documentation provides detailed information about all fields available for 
       <td class="searchable">true</td>
       <td class="general-field">-</td>
       <td class="description">The device vendor</td>
-      <td class="example">Microsoft</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="example">
+        <ul>
+          <li>Microsoft</li>
+          <li>Google</li>
+        </ul>
+      </td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">vendorParsed</td>
@@ -798,7 +941,12 @@ This documentation provides detailed information about all fields available for 
       <td class="general-field">-</td>
       <td class="description">The normalized event log (JSON format)</td>
       <td class="example">{&quot;RoleLocation&quot;: &quot;Japan East&quot;, &quot;Stamp&quot;: &quot;FDWorker&quot;, &quot;ReleaseVersion&quot;: &quot;6.2024.42.16+5d1e2c2.release_2024w42&quot;, &quot;time&quot;: &quot;2025-01-13T01:27:41.8080097Z&quot;}</td>
-      <td class="products">XDR for Cloud - Azure Activity Logs</td>
+      <td class="products">
+        <ul>
+          <li>XDR for Cloud - Azure Activity Logs</li>
+          <li>sgm</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td class="field-name">vendorRaw</td>
